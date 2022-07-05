@@ -1,81 +1,55 @@
-
-
 <!DOCTYPE html>
 <html class="writer-html5" lang="en" >
 <head>
-  <meta charset="utf-8" />
-  
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+<meta content="gamepad" name="keywords" />
+<meta content="JMRI Engine Driver Throttle" name="description" />
+<meta content="DCC Engine Driver EngineDriver JMRI manual help model railroad railway train" name="keywords" />
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  <title>Gamepads &mdash; Engine Driver Test  documentation</title>
-  
-
-  
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
-  <link rel="stylesheet" href="../_static/css/dccex_theme.css" type="text/css" />
-
-  
-  
+  <title>Gamepads &mdash; Engine Driver Home  documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/engine_driver_home_theme.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
-  
-
-  
-  
-
-  
-
-  
+    <link rel="canonical" href="https://flash62au.github.io/EngineDriver_Home/operation/gamepads.html" />
   <!--[if lt IE 9]>
     <script src="../_static/js/html5shiv.min.js"></script>
   <![endif]-->
   
-    
-      <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
         <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
         <script src="../_static/jquery.js"></script>
         <script src="../_static/underscore.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
         <script src="../_static/js/platform.js"></script>
         <script src="../_static/js/extra.js"></script>
-    
-    <script type="text/javascript" src="../_static/js/theme.js"></script>
-
-    
+    <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Configuration" href="../configuration/index.html" />
-    <link rel="prev" title="WiFi Issues" href="wifi_issues.html" /> 
+    <link rel="next" title="ESU MobileControl II" href="esu_mcii.html" />
+    <link rel="prev" title="WiFi Issues" href="wifi_issues.html" />
+ 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-E6NVYGXLEP"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-E6NVYGXLEP');
+    </script>
+
 </head>
 
-<body class="wy-body-for-nav">
-
-   
+<body class="wy-body-for-nav"> 
   <div class="wy-grid-for-nav">
-    
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
         <div class="wy-side-nav-search"  style="background: white" >
-          
-
-          
             <a href="../index.html">
-          
-
-          
-            
             <img src="../_static/logo.png" class="logo" alt="Logo"/>
-          
           </a>
-
-          
-            
-            
-          
-
-          
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
     <input type="text" name="q" placeholder="Search docs" />
@@ -83,239 +57,521 @@
     <input type="hidden" name="area" value="default" />
   </form>
 </div>
-
-          
-        </div>
-
-        
-        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
-          
-            
-            
-              
-            
-            
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../downloads/index.html">Downloads</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../prerequisites/index.html">Prerequisites</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Operation</a><ul class="current">
-<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Gamepads</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Engine Driver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#what-is-engine-driver">What is ‘Engine Driver’</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#what-s-a-withrottle-server">What’s a ‘WiThrottle Server’?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#roadmap">Roadmap</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#alternates-to-engine-driver">Alternates to Engine Driver</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../prerequisites/index.html">Prerequisites for Using Engine Driver</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prerequisites/index.html#to-use-engine-driver-you-must">To Use Engine Driver You must…</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../prerequisites/index.html#android-device-phone">Android Device/Phone</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#esu-mobilecontrol-ii">ESU MobileControl II</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../prerequisites/index.html#withrottle-servers">WiThrottle Servers</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-jmri">For JMRI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-dcc-ex-wifi">For DCC++EX WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-mrc-wifi">For MRC WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-digitrax-lnwi">For Digitrax LnWi</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Operation - Using Engine Driver</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="getting_started.html">Quick Start / Getting Started</a></li>
+<li class="toctree-l2"><a class="reference internal" href="operation.html">Detailed Instructions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#connecting">Connecting</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#disconnections">Disconnections</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#turn-track-power-on">Turn Track Power On</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#selecting-releasing-locos">Selecting &amp; Releasing Locos</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#selecting-a-single-loco">Selecting a Single loco</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#on-the-fly-in-phone-consists-multiple-units">On the fly / In Phone Consists (Multiple Units)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#running-trains">Running Trains</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#controlling-speed">Controlling Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#controlling-direction">Controlling Direction</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#dcc-functions">DCC Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds - In Phone Loco Sounds (IPLS)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#action-bar-and-menu">Action Bar and Menu</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#turnouts-points">Turnouts / Points</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#dcc-address">DCC Address</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#jmri-defined-turnout-point-list">JMRI Defined Turnout/Point list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#recent-turnout-point-list">Recent Turnout/Point list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#overflow-menu-turnouts-points-screen">Overflow Menu (Turnouts/Points Screen)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#routes">Routes</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#from-the-withrottle-server">From the WiThrottle server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#overflow-menu-routes-screen">Overflow Menu (Routes Screen)</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#panels-and-web-pages">Panels and Web Pages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#throttle-web-view-vs-web-view-screen">Throttle Web View VS Web View Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#overflow-menu-web-view-screen">Overflow Menu (Web View Screen)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#swipe-web-view-screen">Swipe (Web View Screen)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#auto-web-orientation">Auto Web Orientation</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#pushing-the-app-to-the-background">Pushing the app to the Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#exiting-engine-driver">Exiting Engine Driver</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="interface.html">User Interface</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="interface.html#main-screens">Main Screens</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#connection-screen">Connection Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#throttle-screen">Throttle Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#turnouts-points-screen">Turnouts/Points Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#routes-screen">Routes Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#id30">Web View Screen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="interface.html#secondary-support-screens">Secondary / Support Screens</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#intro-setup-wizard-screen">Intro/Setup Wizard Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#loco-select-screen">Loco Select Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#consist-edit-screen">Consist Edit Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#consist-lights-edit-screen">Consist Lights Edit Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#power-screen">Power Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#preferences-screen">Preferences Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#in-phone-loco-sounds-screen">In Phone Loco Sounds Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#function-defaults-screen">Function Defaults Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#gamepad-test-screen">Gamepad Test Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#view-log-screen">View Log Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#about-screen">About Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#reconnecting-screen">Reconnecting Screen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="interface.html#common-elements-and-features">Common Elements and Features</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#theme-styles">Theme / Styles</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#localisation">Localisation</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#action-bar">Action Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#overflow-menu">Overflow Menu</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
+</ul>
+</li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Gamepads</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#connecting-your-gamepad">Connecting your Gamepad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-engine-driver-with-the-gamepad">Running Engine Driver with the Gamepad</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remapping-gamepad-buttons">Remapping gamepad buttons</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#multiple-gamepads">Multiple gamepads</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-gamepads">Example Gamepads</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#tested-gamepads">Tested Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#not-recommended-gamepads">Not Recommended Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#unsupported-gamepads">Unsupported Gamepads</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#keyboard-commands">Keyboard Commands</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="esu_mcii.html">ESU MobileControl II</a></li>
+<li class="toctree-l2"><a class="reference internal" href="advanced.html">Advanced Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#consist-follow-functions">Consist Follow Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#direction-buttons">Direction Buttons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="advanced.html#renaming-direction-buttons">Renaming Direction Buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="advanced.html#swapping-direction-buttons">Swapping Direction Buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="advanced.html#conserving-power">Conserving Power</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="advanced.html#children-s-timer">Children’s Timer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#connecting-wifi-and-withrottle">Connecting - Wifi and WiThrottle</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#connecting-to-different-servers-railroads">Connecting to different servers/railroads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#save-load-preferences-for-different-servers">Save/load preferences for different servers</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#selecting-locomotives-to-control">Selecting locomotives to control</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-appearance-of-engine-driver">Changing the appearance of Engine Driver</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#global-changes-themes">Global changes (Themes)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#changing-the-throttle-screen">Changing the Throttle screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#speed-slider-vs-speed-buttons">Speed slider VS speed buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#direction-buttons">Direction Buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#hiding-the-title-bar-and-navigation-bar">Hiding the title bar and navigation bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#immersive-mode-full-screen">Immersive mode (Full Screen)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#swiping-up-or-down">Swiping up or Down</a></li>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#showing-the-web-page-at-the-bottom-of-the-throttle-screen">Showing the web page at the bottom of the throttle screen</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#loco-selection-screen">Loco selection screen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="faq.html#locos-in-the-roster-not-showing">Locos in the roster not showing</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-connection-screen">Changing the connection screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-turnouts-screen">Changing the turnouts screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../configuration/index.html">Configuration</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../configuration/preferences.html">Preferences</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration/functions.html">Function Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration/ipls.html">In Phone Loco Sounds</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration/gamepads.html">Gamepads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration/configuration.html">Configuring Engine Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration/configuration_withrottle.html">Configuring the WiThrottle server</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#jmri">JMRI</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#dcc-ex-wifi">DCC++EX WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#mrc-wifi">MRC WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#digitrax-lnwi">Digitrax LnWi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#wifitrax">WifiTrax</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../screenshots/index.html">Screenshots</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../videos/index.html">Videos</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../contact/index.html">Support &amp; Contact</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration/preferences_index.html">Detailed Information</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/preferences.html">Preferences</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#advanced-preferences">Advanced Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#device-preferences">Device Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-appearance-preferences">Throttle Screen Appearance Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-action-bar-preferences">Throttle Screen Action Bar Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-control-preferences">Throttle Control Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#consist-function-follow-preferences">Consist Function Follow Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#additional-throttle-control-source-preferences">Additional Throttle Control Source Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#select-loco-preferences">Select Loco Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#in-phone-loco-sounds">In Phone Loco Sounds</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#connect-preferences">Connect Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#web-screen-preferences">Web Screen Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#turnouts-points-and-routes-preferences">Turnouts/Points and Routes Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#children-s-timer-preferences">Children’s (Timer) Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#import-export-reset-log-preferences">Import/Export/Reset &amp; Log Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/functions.html">Function Buttons</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#dcc-functions">DCC Functions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-functions-to-ipls-buttons">Linking Functions to IPLS buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#advanced-consist-function-mapping">Advanced Consist Function Mapping</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/ipls.html">In Phone Loco Sounds (IPLS)</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/ipls.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds / In Phone Loco Sounds (IPLS)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/ipls.html#custom-ipls-files">Custom IPLS Files</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/gamepads.html">Gamepads</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/gamepads.html#selecting-a-gamepad-type">Selecting a Gamepad Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/gamepads.html#configuring-the-buttons">Configuring the buttons</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/loco_icons.html">Loco Icons in the Roster</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/setup_wizard.html">Setup Wizard</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#initial-screen">Initial Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#permissions">Permissions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#android-11-changes">Android 11 Changes</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#throttle-name">Throttle Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#theme-style">Theme / Style</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#throttle-screen-layout">Throttle Screen Layout</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#speed-sliders-and-buttons">Speed Sliders and Buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#ready">Ready</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/new_device.html">Moving to a new phone/device</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/conserving_power.html">Conserving Power</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../videos/index.html">Videos</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#connecting">Connecting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#preferences">Preferences</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../videos/index.html#appearance">Appearance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#gamepads">Gamepads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#turnouts-points-and-routes">Turnouts/Points and Routes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#default-functions">Default Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#import-export-reset-preferences">Import/Export/Reset Preferences</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../videos/index.html#server-specific-preferences">Server Specific Preferences</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#preserving-the-battery-in-your-device">Preserving the battery in your device</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../downloads/index.html">Downloads</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#play-store">Play Store</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#current-published-version">Current published version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#older-or-other-versions">Older or other versions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes / Updates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../changes/index.html#production-version-changes">Production Version Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changes/index.html#changes-for-the-beta-version">Changes for the Beta Version</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../changes/index.html#full-change-history">Full Change History</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/index.html#contributing-to-the-code">Contributing to the Code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/index.html#contributing-to-the-localisation-languages">Contributing to the Localisation (Languages)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/index.html#contributing-to-the-documentation">Contributing to the Documentation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../contributing/index.html#style-guidelines">Style Guidelines</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary / References / Copyright</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#glossary">Glossary</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#references">References</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#screenshots">Screenshots</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../contact/index.html">Support &amp; Contact</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../contact/index.html#email">email</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contact/index.html#forums">Forums</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../contact/index.html#facebook">Facebook</a></li>
+</ul>
+</li>
 </ul>
 
-            
-          
         </div>
-        
       </div>
     </nav>
 
-    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
-
-      
-      <nav class="wy-nav-top" aria-label="top navigation">
-        
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: white" >
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">Engine Driver Test</a>
-        
+          <a href="../index.html">Engine Driver Home</a>
       </nav>
 
-
       <div class="wy-nav-content">
-        
         <div class="rst-content">
-        
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div role="navigation" aria-label="breadcrumbs navigation">
-
+          <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
-    
       <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
-        
-          <li><a href="index.html">Operation</a> &raquo;</li>
-        
+          <li><a href="index.html">Operation - Using Engine Driver</a> &raquo;</li>
       <li>Gamepads</li>
-    
-    
       <li class="wy-breadcrumbs-aside">
-        
-          
-            
               <a href="https://github.com/flash62au/EngineDriver_Home/blob/main/docs/operation/gamepads.rst" class="fa fa-github"> Edit on GitHub</a>
-            
-          
-        
       </li>
-    
   </ul>
-
-  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
-            
-  <div class="section" id="gamepads">
-<h1>Gamepads<a class="headerlink" href="#gamepads" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="connecting-your-device">
-<h2>Connecting your device<a class="headerlink" href="#connecting-your-device" title="Permalink to this headline">¶</a></h2>
-<p>The following instructions work for the <strong>mocute</strong> devices.
+             
+  <section id="gamepads">
+<h1>Gamepads<a class="headerlink" href="#gamepads" title="Permalink to this heading"></a></h1>
+<aside class="sidebar">
+<div class="contents local topic" id="on-this-page">
+<p class="topic-title">On This Page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#connecting-your-gamepad" id="id2">Connecting your Gamepad</a></p></li>
+<li><p><a class="reference internal" href="#running-engine-driver-with-the-gamepad" id="id3">Running Engine Driver with the Gamepad</a></p></li>
+<li><p><a class="reference internal" href="#remapping-gamepad-buttons" id="id4">Remapping gamepad buttons</a></p></li>
+<li><p><a class="reference internal" href="#multiple-gamepads" id="id5">Multiple gamepads</a></p></li>
+<li><p><a class="reference internal" href="#example-gamepads" id="id6">Example Gamepads</a></p>
+<ul>
+<li><p><a class="reference internal" href="#tested-gamepads" id="id7">Tested Gamepads</a></p></li>
+<li><p><a class="reference internal" href="#not-recommended-gamepads" id="id8">Not Recommended Gamepads</a></p></li>
+<li><p><a class="reference internal" href="#unsupported-gamepads" id="id9">Unsupported Gamepads</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#keyboard-commands" id="id10">Keyboard Commands</a></p></li>
+</ul>
+</div>
+</aside>
+<section id="connecting-your-gamepad">
+<h2><a class="toc-backref" href="#id2">Connecting your Gamepad</a><a class="headerlink" href="#connecting-your-gamepad" title="Permalink to this heading"></a></h2>
+<p>The following instructions work for the <strong>Mocute 032</strong> and <strong>MagicSeeR1</strong> gamepads.
 Other devices require similar steps, but the mechanism to change the <code class="docutils literal notranslate"><span class="pre">mode</span></code> may be different.</p>
 <ul class="simple">
+<li><p>Turn on</p>
+<ul>
+<li><p>For the <strong>Mocute 032</strong> gamepads</p>
+<ul>
 <li><p>On the gamepad, the small button is Start/Power. Press for a couple seconds until LED comes on.</p></li>
+</ul>
+</li>
+<li><p>For the <strong>MagicSeeR1</strong> gamepads (Mode B)</p>
+<ul>
+<li><p>There is a dedicated on/off switch.</p></li>
+</ul>
+</li>
+</ul>
+</li>
 <li><p>On your <strong>Android device</strong> go to the settings, then Bluetooth, and make sure Bluetooth is turned ON.</p></li>
 <li><p>Now click <code class="docutils literal notranslate"><span class="pre">More</span> <span class="pre">Settings</span></code>. Within a few seconds a new device should appear in the <code class="docutils literal notranslate"><span class="pre">Available</span> <span class="pre">devices</span></code> section. (The name of the device may make it apparent that it is the gamepad, but it may just be a string of hexadecimal numbers.)</p></li>
 <li><p>Select the new device. Many devices will be paired at this point, but if it asks for a pairing code try <code class="docutils literal notranslate"><span class="pre">0000</span></code> or <code class="docutils literal notranslate"><span class="pre">1234</span></code> (check the instructions that came with the gamepad.)</p></li>
 <li><p>After pairing you should see an item in the Notifications regarding the gamepad. Click that item and make sure that “Show virtual keyboard” is ON.</p></li>
-<li><p>Configuring the gamepad for MTK mode</p></li>
+<li><p>Set the mode of the gamepad:</p>
+<ul>
+<li><p>For the <strong>Mocute 032</strong> gamepads (MTK mode)</p>
+<ul>
 <li><p>Turn your gamepad OFF by holding the Start/Power button for about 5 seconds until the LED goes out and stays out.</p></li>
 <li><p>Move the slide switch on the side to the <code class="docutils literal notranslate"><span class="pre">GAME</span></code> position (towards the joystick).</p></li>
-<li><p>Hold down the button specified in your gamepad instructions for MTK mode. Typically this is the <code class="docutils literal notranslate"><span class="pre">Y</span></code> button. While still holding that button down, press the Start/Power button until the LED turns on. Release the buttons as soon as the LED turns on.</p></li>
-</ul>
-<p>This configuration procedure should only be required once. In the future your gamepad should be in MTK mode when you turn it on.   <strong>(Not true of the MagicSeeR1)</strong></p>
-<p>We have found that some gamepads work well in iCade mode as well. Feel free to experiment. To use iCade mode, follow the steps above but use the button your instructions specify for iCade (typically “X”).</p>
-</div>
-<div class="section" id="running-engine-driver-with-the-gamepad">
-<h2>Running Engine Driver with the Gamepad<a class="headerlink" href="#running-engine-driver-with-the-gamepad" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>In Engine Driver,</p>
-<ul>
-<li><p>Set up the device (see above)</p></li>
-<li><p>Start Engine Driver</p></li>
-<li><p>In the preferences select a gamepad type.</p></li>
-<li><p>Select a loco as normal and return to the Throttle page.</p></li>
-<li><p>In the Gamepad section of Engine Driver’s Preferences, select a gamepad corresponding to the gamepad mode you configured on the device (above). We recommend <code class="docutils literal notranslate"><span class="pre">MTK-rotate</span></code> for MKT mode, and <code class="docutils literal notranslate"><span class="pre">iCade+DPAD-rotate</span></code> for iCade mode.</p></li>
-<li><p>You can optionally change what the gamepad buttons do - see below.</p></li>
+<li><p>Hold down the button specified in your gamepad instructions for MTK mode. Typically this is the <span class="guilabel">Y</span> button. While still holding that button down, press the Start/Power button until the LED turns on. Release the buttons as soon as the LED turns on. <br /><br />This configuration procedure should only be required once. In the future your gamepad should be in MTK mode when you turn it on. <br /> <em>(This not true of the MagicSeeR1 which must be set every time you turn it on)</em> <br /><br /></p></li>
 </ul>
 </li>
-<li><p>On the Throtttle Screen</p>
+<li><p>For the <strong>MagicSeeR1</strong> gamepads (Mode B)</p>
 <ul>
-<li><p>When you press any of the buttons on the gamepad for the first time, a test page will appear.  Press all four DPad buttons in turn and the Four main buttons to pass the test, and return to the throttle page.</p></li>
+<li><p>Turn the device on by moving the slide switch on the side to the <code class="docutils literal notranslate"><span class="pre">ON</span></code> position</p></li>
+<li><p>Wait for the gamepad to connect to Android device (the LED will stop blinking)</p></li>
+<li><p>Hold down the <span class="guilabel">Mode</span> button and press the <span class="guilabel">B</span> button. <br /><br /><strong>This configuration procedure which must be done every time you turn it on</strong></p></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<p>We have found that some gamepads work well in <strong>iCade</strong> mode as well. Feel free to experiment. To use iCade mode, follow the steps above but use the button your instructions specify for iCade (typically “X”).</p>
+</section>
+<section id="running-engine-driver-with-the-gamepad">
+<h2><a class="toc-backref" href="#id3">Running Engine Driver with the Gamepad</a><a class="headerlink" href="#running-engine-driver-with-the-gamepad" title="Permalink to this heading"></a></h2>
+<ul>
+<li><p>Set up the gamepad and connect to the Android device (see above)</p></li>
+<li><p>Start <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span></p></li>
+<li><p>Connect to a <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a></p></li>
+<li><p>Select a loco as normal and return to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p></li>
+<li><p>In the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>
+* Select a gamepad type. <br />In the Gamepad section of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> Preferences, select a gamepad corresponding to the gamepad mode you configured on the device (above).</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>For the <strong>Mocute 032</strong> gamepads we recommend <code class="docutils literal notranslate"><span class="pre">MTK-rotate</span></code> for MKT mode, and <code class="docutils literal notranslate"><span class="pre">iCade+DPAD-rotate</span></code> for iCade mode.</p></li>
+<li><p>For the <strong>MagicSeeR1</strong> you must use <code class="docutils literal notranslate"><span class="pre">MagicSeeR1</span> <span class="pre">Android-Game</span> <span class="pre">B</span></code>.</p></li>
+</ul>
+</div></blockquote>
+<ul class="simple">
+<li><p>You can optionally change what the gamepad buttons do. (<a class="reference external" href="../configuration/gamepads.html">See Gamepad Configuration</a> for details.)</p></li>
+</ul>
+</li>
+<li><p>On the Throttle Screen</p>
+<ul class="simple">
+<li><p>When you press any of the buttons on the gamepad for the first time, a test screen will appear.  Press all four DPad buttons in turn and the Four main buttons to pass the test, and return to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
+<ul>
+<li><p>Pressing <span class="guilabel">Skip</span> will complete the test and allow you to use the gamepad, even if it is not functioning correctly.  (e.g. The mode is incorrect)</p></li>
+<li><p>Pressing <span class="guilabel">Reset</span> will reset all the gamepads you have connected, and will force you back to the test screen when attempt to use them again.</p></li>
+</ul>
+</li>
 <li><p>By default, The DPAD (joystick) on the gamepad will control throttle up, down and direction.</p></li>
 <li><p>By default, The four individual Buttons on the gamepad will control functions F0, F1, F2 and STOP for the selected throttle.</p></li>
-<li><p>If you have engines assigned to more than one Engine Driver throttle, by default a short press of the Start Button will move the gamepad to the next assigned throttle. If you have changed the Preferences for the Start Button Action to ESTOP, then a short press will set the speed for all your Engine Driver throttles to zero.</p></li>
-<li><p>If the Select Button is present on your gamepad, by default, pressing it will move the gamepad to the next assigned throttle.</p></li>
-<li><p>Engine Driver’s on-screen buttons continue to function as before. Use them to add or drop locos, and to access any additional function buttons.</p></li>
+<li><p>If you have engines assigned to more than one <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> throttle, by default a short press of the <span class="guilabel">Start</span> Button will move the gamepad to the next assigned throttle. If you have changed the Preferences for the <span class="guilabel">Start</span> Button Action to <code class="docutils literal notranslate"><span class="pre">ESTOP</span></code>, then a short press will set the speed for all your Engine Driver throttles to zero.</p></li>
+<li><p>If the <span class="guilabel">Select</span> Button is present on your gamepad, by default, pressing it will move the gamepad to the next assigned throttle.</p></li>
+<li><p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> on-screen buttons continue to function as before. Use them to add or drop locos, and to access any additional function buttons.</p></li>
 </ul>
 </li>
 </ul>
-</div>
-<div class="section" id="remapping-gamepad-buttons">
-<h2>Remapping gamepad buttons<a class="headerlink" href="#remapping-gamepad-buttons" title="Permalink to this headline">¶</a></h2>
-<p>All the buttons of the gamepad that can be assessed by Engine Driver can be remapped to perform most of the features and functions of the Engine Driver Throttle Screen.</p>
-<p>TBA</p>
-</div>
-<div class="section" id="multiple-gamepads">
-<h2>Multiple gamepads<a class="headerlink" href="#multiple-gamepads" title="Permalink to this headline">¶</a></h2>
-<p>TBA</p>
-</div>
-<div class="section" id="sample-gamepads">
-<h2>Sample gamepads<a class="headerlink" href="#sample-gamepads" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="tested-gamepads">
-<h3>Tested gamepads<a class="headerlink" href="#tested-gamepads" title="Permalink to this headline">¶</a></h3>
+</section>
+<section id="remapping-gamepad-buttons">
+<h2><a class="toc-backref" href="#id4">Remapping gamepad buttons</a><a class="headerlink" href="#remapping-gamepad-buttons" title="Permalink to this heading"></a></h2>
+<p>All the buttons of the gamepad that can be accessed by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can be remapped to perform most of the features and functions of the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
+<p><a class="reference external" href="../configuration/gamepads.html">See Gamepad Configuration</a> for details.</p>
+</section>
+<section id="multiple-gamepads">
+<h2><a class="toc-backref" href="#id5">Multiple gamepads</a><a class="headerlink" href="#multiple-gamepads" title="Permalink to this heading"></a></h2>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> supports up to 4 gamepads at the same time.  All the gamepads must be of the same type.</p>
+<p>As you connect each gamepad, you will be force to go to the gamepad test screen.  The new gamepad will be automatically assigned to the next throttle that does not have a gamepad assigned to it.</p>
+<p>An indicator <code class="docutils literal notranslate"><span class="pre">1</span></code>, <code class="docutils literal notranslate"><span class="pre">2</span></code> etc. will show near the throttle speed to indicate which throttle each gamepad is controlling.  Only one gamepad can be active on a single throttle at one time.</p>
+</section>
+<section id="example-gamepads">
+<h2><a class="toc-backref" href="#id6">Example Gamepads</a><a class="headerlink" href="#example-gamepads" title="Permalink to this heading"></a></h2>
+<section id="tested-gamepads">
+<h3><a class="toc-backref" href="#id7">Tested Gamepads</a><a class="headerlink" href="#tested-gamepads" title="Permalink to this heading"></a></h3>
 <p>These we have had the most success with…</p>
-<p><strong>Mocute …</strong></p>
+<p><strong>Mocute 032</strong></p>
 <a class="reference internal image-reference" href="../_images/bt_controller1.jpg"><img alt="../_images/bt_controller1.jpg" src="../_images/bt_controller1.jpg" style="width: 188.5px; height: 158.0px;" /></a>
-<p>They are available from a variety of different sellers on ebay and elsewhere.
+<p>They are available from a variety of different sellers on eBay and elsewhere.
 Their quality is not brilliant which is reflected in the price, so don’t expect a long life from them.</p>
 <p><strong>MagicSeeR1</strong></p>
-<a class="reference internal image-reference" href="../_images/bt_controller2.jpg"><img alt="../_images/bt_controller2.jpg" src="../_images/bt_controller2.jpg" style="width: 273.5px; height: 254.5px;" /></a>
-<p>This has been successful, but you need to re-select the mode every time you switch it on.
+<a class="reference internal image-reference" href="../_images/bt_controller2.jpg"><img alt="../_images/bt_controller2.jpg" src="../_images/bt_controller2.jpg" style="width: 218.8px; height: 203.60000000000002px;" /></a>
+<p>This has been successful, <strong>but you need to re-select ‘mode B’ every time you switch it on.</strong>
 These seem to be slightly better quality than the one above, but are more expensive.</p>
-<p><strong>Flydigi Wee 2</strong>
-This has been successful.</p>
-</div>
-<div class="section" id="not-recommended-gamepads">
-<h3>Not Recommended gamepads<a class="headerlink" href="#not-recommended-gamepads" title="Permalink to this headline">¶</a></h3>
+<p><strong>Flydigi Wee 2</strong></p>
+<a class="reference internal image-reference" href="../_images/flydigi_wee_2.png"><img alt="../_images/flydigi_wee_2.png" src="../_images/flydigi_wee_2.png" style="width: 254.0px; height: 148.8px;" /></a>
+<p>This has been successful.</p>
+<p><strong>Utopia 360</strong></p>
+<a class="reference internal image-reference" href="../_images/utopia_360.png"><img alt="../_images/utopia_360.png" src="../_images/utopia_360.png" style="width: 255.75px; height: 129.0px;" /></a>
+<p>This has been successful with the ‘Android C’ mode.</p>
+<p><strong>DIY Arduino ESP32 + keypad + Rotary Encoder</strong></p>
+<p>This is a DIY gamepad with a keypad and physical dial.</p>
+<p>See <a class="reference external" href="https://github.com/flash62au/WiTcontroller">https://github.com/flash62au/WiTcontroller</a> for details.</p>
+<p><strong>Normal Keyboard</strong></p>
+<p>This has been successful.  See below for the keystroke meanings when using a keyboard.</p>
+<p>Note: In the gamepad test screen, just select ‘Skip’ to use the keyboard.</p>
+</section>
+<section id="not-recommended-gamepads">
+<h3><a class="toc-backref" href="#id8">Not Recommended Gamepads</a><a class="headerlink" href="#not-recommended-gamepads" title="Permalink to this heading"></a></h3>
 <p>These work, but have issues which make them not recommended.</p>
-<p>TBA</p>
-</div>
-<div class="section" id="unsupported-gamepads">
-<h3>Unsupported gamepads<a class="headerlink" href="#unsupported-gamepads" title="Permalink to this headline">¶</a></h3>
-<p><strong>VR Box</strong>
-<a class="reference external" href="http://www.ebay.com.au/itm/Bluetooth-Self-timer-Remote-Controller-Gamepad-for-Android-IOS-VR-3D-White-SB/311834056448?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2060353.m2749.l2649">http://www.ebay.com.au/itm/Bluetooth-Self-timer-Remote-Controller-Gamepad-for-Android-IOS-VR-3D-White-SB/311834056448?ssPageName=STRK%3AMEBIDX%3AIT&amp;_trksid=p2060353.m2749.l2649</a></p>
-</div>
-</div>
-</div>
+<p><span style="color:red">TODO</span></p>
+</section>
+<section id="unsupported-gamepads">
+<h3><a class="toc-backref" href="#id9">Unsupported Gamepads</a><a class="headerlink" href="#unsupported-gamepads" title="Permalink to this heading"></a></h3>
+<p><strong>VR Box</strong></p>
+<p>Support for this type of gamepad was removed from <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> as the device was so unreliable.  However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.</p>
+<a class="reference internal image-reference" href="../_images/vrbox.png"><img alt="../_images/vrbox.png" src="../_images/vrbox.png" style="width: 219.79999999999998px; height: 119.69999999999999px;" /></a>
+</section>
+</section>
+<section id="keyboard-commands">
+<h2><a class="toc-backref" href="#id10">Keyboard Commands</a><a class="headerlink" href="#keyboard-commands" title="Permalink to this heading"></a></h2>
+<p>For use when <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code> is selected as the gamepad type:</p>
+<ul class="simple">
+<li><p><span class="guilabel">Up</span> or <span class="guilabel">Page Up</span> or <span class="guilabel">+</span> or <span class="guilabel">=</span> = Increase Speed</p></li>
+<li><p><span class="guilabel">Media Next</span> = Increase Speed * 2</p></li>
+<li><p><span class="guilabel">Down</span> or <span class="guilabel">Page Down</span> or <span class="guilabel">-</span> = Decrease Speed</p></li>
+<li><p><span class="guilabel">Media Previous</span> = Decrease Speed * 2</p></li>
+<li><p><span class="guilabel">Home</span> or <span class="guilabel">X</span> = Stop</p></li>
+<li><p><span class="guilabel">Left</span> or <span class="guilabel">[</span> = Reverse (Forward if buttons swapped in preferences)</p></li>
+<li><p><span class="guilabel">Right</span> or <span class="guilabel">]</span> = Forward (Ahead) (Reverse if buttons swapped in preferences)</p></li>
+<li><p><span class="guilabel">D</span> = Direction - Toggle Forward/Reverse</p></li>
+<li><p><span class="guilabel">N</span> = Next Throttle</p></li>
+<li><p><span class="guilabel">End</span> or <span class="guilabel">Z</span> = Emergency stop <br /></p></li>
+<li><p>F00 - F28 = Function <br />Must be <span class="guilabel">F</span> followed by two digits <br /> or <span class="guilabel">F11</span> followed by two <span class="guilabel">F</span> button equivalents F10=0, F1-F9=1-9 <br />e.g. <span class="guilabel">F</span> <span class="guilabel">0</span> <span class="guilabel">5</span> = Function F05, or  <span class="guilabel">F11</span> <span class="guilabel">F10</span> <span class="guilabel">F5</span> = Function F05</p></li>
+<li><p><span class="guilabel">0</span> - <span class="guilabel">9</span> = Functions 0-9 <br />Without a preceding <span class="guilabel">F</span>, <span class="guilabel">S</span> or <span class="guilabel">L</span> <br />or <span class="guilabel">F10</span> - <span class="guilabel">F9</span>  F10=0, F1-F9=1-9 <br /></p></li>
+<li><p>S000 - S100 = Speed <br />Must be <span class="guilabel">S</span> followed by three digits <br /> or <span class="guilabel">F12</span> followed by three <span class="guilabel">F</span> button equivalents F10=0, F1-F9=1-9 <br />e.g. <span class="guilabel">S</span> <span class="guilabel">0</span> <span class="guilabel">5</span> <span class="guilabel">6</span> = Speed 056, or  <span class="guilabel">F12</span> <span class="guilabel">F10</span> <span class="guilabel">F5</span> <span class="guilabel">F6</span> = Speed 056</p></li>
+<li><p><span class="guilabel">L</span> = Limit Speed</p></li>
+<li><p><span class="guilabel">P</span> = Pause Speed</p></li>
+<li><p>In Phone Loco Sounds (IPLS)
+* <span class="guilabel">B</span> = Bell
+* <span class="guilabel">H</span> = Horn / Whistle
+* <span class="guilabel">Shift</span> + <span class="guilabel">H</span> = Short Horn
+* <span class="guilabel">M</span> or <span class="guilabel">Volume Mute</span> = Mute IPLS</p></li>
+<li><p>T0 - T5 = Specify a throttle for next command <br />Must be <span class="guilabel">T</span> followed by one digit <br />or <span class="guilabel">Esc</span> followed by two <span class="guilabel">F</span> button equivalents F10=0, F1-F9=1-9 <br />The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.</p></li>
+</ul>
+<p>All other keyCodes are ignored.</p>
+<p>These same keycodes are used by the DIY Arduino controllers.</p>
+</section>
+</section>
 
 
            </div>
-           
           </div>
-          <footer>
-    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
-        <a href="../configuration/index.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="wifi_issues.html" class="btn btn-neutral float-left" title="WiFi Issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="esu_mcii.html" class="btn btn-neutral float-right" title="ESU MobileControl II" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
 
   <div role="contentinfo">
-    <p>
-        &#169; Copyright M Steve Todd.
-
-    </p>
+    <p>&#169; Copyright M Steve Todd.</p>
   </div>
-    
-    
-    
-    Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
-    
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
-    
-    provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
 
 </footer>
         </div>
       </div>
-
     </section>
-
   </div>
-  
-
-  <script type="text/javascript">
+  <script>
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-
-  
-  
-    
-   
+  </script> 
 
 </body>
 </html>
