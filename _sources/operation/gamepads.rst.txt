@@ -39,7 +39,7 @@ Other devices require similar steps, but the mechanism to change the ``mode`` ma
   
     * Turn your gamepad OFF by holding the Start/Power button for about 5 seconds until the LED goes out and stays out. 
     * Move the slide switch on the side to the ``GAME`` position (towards the joystick). 
-    * Hold down the button specified in your gamepad instructions for MTK mode. Typically this is the :guilabel:`Y` button. While still holding that button down, press the Start/Power button until the LED turns on. Release the buttons as soon as the LED turns on. |br|\ |br|\ This configuration procedure should only be required once. In the future your gamepad should be in MTK mode when you turn it on. |br|\  *(This not true of the MagicSeeR1 which must be set every time you turn it on)* |br|\ |br|\
+    * Hold down the button specified in your gamepad instructions for MTK mode. (Typically this is the :guilabel:`Triangle` button but can be different on different devices.) While still holding that button down, press the Start/Power button until the LED turns on. Release the buttons as soon as the LED turns on. |br|\ |br|\ This configuration procedure should only be required once. In the future your gamepad should be in MTK mode when you turn it on. |br|\  *(This not true of the MagicSeeR1 which must be set every time you turn it on)* |br|\ |br|\
   
   * For the **MagicSeeR1** gamepads (Mode B)
   
@@ -59,7 +59,7 @@ Running Engine Driver with the Gamepad
 * In the |ed|
   * Select a gamepad type. |br|\ In the Gamepad section of |EDs| Preferences, select a gamepad corresponding to the gamepad mode you configured on the device (above).
 
-    * For the **Mocute 032** gamepads we recommend ``MTK-rotate`` for MKT mode, and ``iCade+DPAD-rotate`` for iCade mode. 
+    * For the **Mocute 032** gamepads we recommend ``Mocute MTK`` for MKT mode, (or ``Mocute iCade+DPAD`` for iCade mode). 
     * For the **MagicSeeR1** you must use ``MagicSeeR1 Android-Game B``.
 
   * You can optionally change what the gamepad buttons do. (`See Gamepad Configuration <../configuration/gamepads.html>`_ for details.)
@@ -89,9 +89,13 @@ Multiple gamepads
 
 |ed| supports up to 4 gamepads at the same time.  All the gamepads must be of the same type.
 
+.. todo:: As of version 4.???, by default |ed| assumes you will only use 1 gamepad.  To allow for more than one you must...
+
 As you connect each gamepad, you will be force to go to the gamepad test screen.  The new gamepad will be automatically assigned to the next throttle that does not have a gamepad assigned to it.
 
 An indicator ``1``, ``2`` etc. will show near the throttle speed to indicate which throttle each gamepad is controlling.  Only one gamepad can be active on a single throttle at one time.
+
+.. todo:: If you turn the gamepad off...
 
 Example Gamepads 
 -----------------
@@ -149,7 +153,7 @@ Not Recommended Gamepads
 
 These work, but have issues which make them not recommended. 
 
-|todo|
+.. todo:: Not Recommended Gamepads
 
 Unsupported Gamepads
 ^^^^^^^^^^^^^^^^^^^^

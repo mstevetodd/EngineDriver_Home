@@ -15,31 +15,34 @@ Advanced Operation
 
 ----
  
-|todo|
+.. todo:: Advanced Operation 
 
 
 Consist Follow Functions
 ------------------------
 
-|todo|
+By default, in |ed|, if you activate a DCC function while controlling a Consist/Multiple Unit train only the function on the lead loco will actually be activated.
+Engine Driver provides options (preferences) that will activate the functions on the other locos in the consist/multiple unit train given a number of possible rules.
+The following document provides information on the different rule types and how to use them.
 
-* see Functions in the Configuration
+See the :doc:`Consist Follow Functions <consist-follow-functions>` page for details.
 
 
 Direction Buttons
 -----------------
 
-|todo|
+.. todo:: Direction Buttons
+
 
 Renaming Direction Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|todo|
+.. todo:: Renaming Direction Buttons
 
 Swapping Direction Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-|todo|
+.. todo:: Swapping Direction Buttons
 
 * Preferences
 * long press
@@ -49,7 +52,9 @@ different settings
 Conserving Power 
 ^^^^^^^^^^^^^^^^
 
-|todo|
+.. todo:: Conserving Power 
+
+See :doc:`Conserving Power <../configuration/conserving_power>` for more information.
 
 Children's Timer
 ----------------
@@ -77,6 +82,4 @@ Recommendations:
 - Disable `Swipe Through Turnouts/Points? <./configuration/preferences.html#swipe-through-turnouts-points>`_ 
 - Disable `Swipe Through Routes? <./configuration/preferences.html#swipe-through-routes>`_
 - Disable the `Emergency Stop button? <./configuration/preferences.html#throttle-screen-action-bar-preferences>`_
-
-The following preferences allow you to change the way the *Children's (Timer)* behave.
 

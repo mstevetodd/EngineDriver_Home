@@ -250,6 +250,27 @@ Throttle Screen Layout
       - see note
       - 0-100
       - ✓
+    * - Tablet Shunting Left
+      - 1 \- 6
+      - V
+      - ✓
+      - ✓
+      - \-100 - 0 - +100
+      - 🗴
+    * - Tablet Vertical Left
+      - 1 \- 6
+      - V
+      - ✓
+      - ✓
+      - 0-100
+      - ✓
+    * - Semi-Realistic Left
+      - 1
+      - V
+      - ✓
+      - 🗴
+      - 0-100
+      - ✓
 
 
 .. list-table::
@@ -819,6 +840,13 @@ Show Server Description
 
 Setting this preference will display the description of the current server on the Action Bar.
 
+DCC-EX button?
+""""""""""""""
+
+Enabling this preference will cause |ED| to show an additional button on the Action Bar that allows to to quickly to the DCC-EX screen.
+
+Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
+
 Throttle Control Preferences
 ----------------------------
 
@@ -851,7 +879,7 @@ Maximum throttle Change
 
 This preference allows you to set the Maximum allowed throttle change in % on all the throttles on the |T-S|.  
 
-|todo| *Can't remember when this is used.*
+.. todo::  Maximum throttle Change *Can't remember when this is used.*
 
 Speed button Change Amount
 """"""""""""""""""""""""""
@@ -935,7 +963,7 @@ These preferences allow for change the way DCC functions will behave in a consis
 Consist Functions - Follow Rule Style
 """""""""""""""""""""""""""""""""""""
 
-|todo|
+.. todo::  Consist Functions - Follow Rule Style
 
 See the `Advanced Consist Function Mapping <./configuration/functions.html#advanced-consist-function-mapping>` section of the Functions page for more information.
 
@@ -954,7 +982,7 @@ Options
 Selective Lead Unit Sound?
 """"""""""""""""""""""""""
 
-|todo|
+.. todo:: Selective Lead Unit Sound?
 
 Send Horn/Bell functions to only the Lead unit in an EngineDriver consist. 
 
@@ -963,21 +991,21 @@ Send Horn/Bell functions to only the Lead unit in an EngineDriver consist.
 Always treat F1 as Sound?
 """""""""""""""""""""""""
 
-|todo|
+.. todo:: Always treat F1 as Sound?
 
 For the 'Selective Lead Unit Sound' option
 
 Always treat F2 as Sound?
 """""""""""""""""""""""""
 
-|todo|
+.. todo:: Always treat F2 as Sound?
 
 For the 'Selective Lead Unit Sound' option
 
 If All matches Fail Action
 """"""""""""""""""""""""""
 
-|todo|
+.. todo:: If All matches Fail Action
 
 Which locos in the consist should react to the function buttons if none of the rules below are meet.
 
@@ -986,7 +1014,7 @@ For the 'Simple' and 'Complex' options only.
 Headlight specific String 1
 """""""""""""""""""""""""""
 
-|todo|
+.. todo:: Headlight specific String 1
 
 Comma separated string(s) to look for in the function labels of the locos in the consist to recognise the \'Headlight\' function (normally F0).
 
@@ -995,7 +1023,7 @@ For the 'Simple' and 'Complex' options only.
 Headlight specific Action 1
 """""""""""""""""""""""""""
 
-|todo|
+.. todo:: Headlight specific Action 1
 
 Which locos in the consist should react to the found headlight functions.
 
@@ -1004,14 +1032,14 @@ For the 'Simple' and 'Complex' options only.
 String 2, 3, 4, 5
 """""""""""""""""
 
-|todo|
+.. todo:: String 2, 3, 4, 5
 
 For the 'Simple' and 'Complex' options only.
 
 Action for String 2, 3, 4, 5
 """"""""""""""""""""""""""""
 
-|todo|
+.. todo:: Action for String 2, 3, 4, 5
 
 For the 'Simple' and 'Complex' options only.
 
@@ -1085,6 +1113,13 @@ Choose the option that best supports your gamepad, 'None' to disable gamepad sup
   :class: note-ed-hidden-title
 
    See the `Gamepads page <../operation/gamepads.html#example-gamepads>`_ page for more information on selecting a gamepad.
+
+Only One Gamepad?
+'''''''''''''''''
+
+.. todo:: Only One Gamepad?
+
+If enabled Engine Driver will not check for multiple gamepads.
 
 Test Gamepad settings now!
 ''''''''''''''''''''''''''
@@ -1269,9 +1304,7 @@ The following preferences allow you to change the way the *Device Side button* o
 Top-left button action
 '''''''''''''''''''''''''''''''''''
 
-|todo|
-
-Choose the action when you press the button
+Use this preference to choose the action when you press the Top-left button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1281,9 +1314,7 @@ Choose the action when you press the button
 Bottom-left button action
 '''''''''''''''''''''''''''''''''''
 
-|todo|
-
-Choose the action when you press the button
+Use this preference to choose the action when you press the Bottom-left button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1293,9 +1324,7 @@ Choose the action when you press the button
 Top-right button action
 '''''''''''''''''''''''''''''''''''
 
-|todo|
-
-Choose the action when you press the button
+Use this preference to choose the action when you press the Top-right button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1305,9 +1334,7 @@ Choose the action when you press the button
 Bottom-right button action
 '''''''''''''''''''''''''''''''''''
 
-|todo|
-
-Choose the action when you press the button
+Use this preference to choose the action when you press the Bottom-right button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1327,23 +1354,17 @@ The following preferences allow you to change the way the *Control Knob* on a ES
 Control Knob Zero Trim
 '''''''''''''''''''''''''''''''''''
 
-|todo|
-
-Set the Control Knob zero trim setting. Smaller is closer to counter-clockwise end-stop position.  Permitted range 0-255.
+Use this preference to set the Control Knob zero trim setting. Smaller is closer to counter-clockwise end-stop position.  Permitted range 0-255.
 
 Direction Change at end-stop
 '''''''''''''''''''''''''''''''''''
 
-|todo|
-
-Allow Loco direction to change when control knob at counter-clockwise end-stop position
+Enable this preference to allow Loco direction to change when control knob at counter-clockwise end-stop position
 
 Show disable Knob button
 ''''''''''''''''''''''''
 
-|todo|
-
-Allow the control knob to be disabled by an action button on the |T-S|
+Enable this preference to allow the control knob to be disabled by an action button on the |T-S|
 
 ----
 
@@ -1465,12 +1486,10 @@ Enable this preference to include roster selections in *Recent Locos list*.
 Roster Names in Recent Locos?
 """""""""""""""""""""""""""""
 
-|todo|
-
-Enable this preference to include Loco names from the witServer roster in *Recent list* if a matching address is found.
+Enable this preference to include Loco names from the witServer roster in *Recent list* in the |LS-S| screen.
 
 Maximum Recent Locos
-"""""""""""""""""""""""""
+""""""""""""""""""""
 
 Use the preference to set the maximum number of *Recent Locos* to show in the Recent Locos list on the *Loco Select* screen.
 
@@ -1561,17 +1580,17 @@ If this preference is enabled, the Loco step sounds will play till their end, be
 In Phone Loco Sounds Volume
 '''''''''''''''''''''''''''
 
-Use this preference to set the volume for *Loco/Engine sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
+Use this preference to set the volume for *Loco/Engine sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
 
 In Phone Bell Sounds Volume
 '''''''''''''''''''''''''''
 
-Use this preference to set the volume for *Bell sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
+Use this preference to set the volume for *Bell sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
 
 In Phone Horn/Whistle Sounds Volume
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set the volume for *Horn/Whistle sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
+Use this preference to set the volume for *Horn/Whistle sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
 
 Bell button Latching/Momentary
 ''''''''''''''''''''''''''''''
@@ -1611,12 +1630,12 @@ Initial Connection Timeout
 Use this preference to set the initial connection timeout in milliseconds.
 
 Socket Timeout
-"""""""""""""""""""""""""
+""""""""""""""
 
 Use this preference to set the socket read timeout in milliseconds.
 
 Mobile Data connection?
-"""""""""""""""""""""""""
+"""""""""""""""""""""""
 
 Use this preference to allow your device to connect to JMRI, or any |WTS|, using your phone's Mobile Data.
 
@@ -1644,6 +1663,27 @@ If this preference is enabled |ed| will play a sound (Audible alert) when the ap
     :class: note-ed-hidden-title
 
     See the `Pushing the app to the Background <../operation/operation.html#pushing-the-app-to-the-background>`_ section of the Operation - Details Instructions page for more information.
+
+DCC-EX EX-CommandStation Preferences
+""""""""""""""""""""""""""""""""""""
+
+Use Native DCC-EX command
+'''''''''''''''''''''''''
+
+If this preference is enabled |ED| will attempt to connect to all Command Stations using the DCC-EX Native Protocol not the WiThrottle protocol.
+
+This can ONLY when connecting to a DCC-EX EX-CommandStation. Using this with any other brand of Command Station will cause |ED| to fail to connect. 
+
+When enabled, this provides additional features specific the DCC-EX EX-CommandStation.
+
+Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the Native DCC-EX Protocol when connecting to a **DCC-EX EX-CommandStation**.
+
+Show protocol option
+''''''''''''''''''''
+
+Enabling this preference will cause |ED| to show and additional question on the |C-S| which allows you to easily change the `Use Native DCC-EX command` preference when connecting to different brands of Command Station.
+
+Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
 
 Web Screen Preferences
 ----------------------
@@ -1790,6 +1830,7 @@ Options:
 
   You can transfer the preferences to a different phone by copying the file. See the :doc:`Moving to a New Device/Phone <../configuration/new_device>` page for more information.
 
+
 Auto import from all Servers?
 """""""""""""""""""""""""""""
 
@@ -1828,7 +1869,7 @@ When enabled:
 Manual host specific import/export
 """"""""""""""""""""""""""""""""""
 
-|todo|
+.. todo:: Manual host specific import/export
 
 'Import' or 'Export' your preferences for a specific host to the  ``/Android/data/jmri.enginedriver/files/`` folder. The host must be in your recent connection list.
 

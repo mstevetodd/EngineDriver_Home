@@ -11,6 +11,8 @@
       <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="../_static/css/engine_driver_home_theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/general.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/dark_mode_css/dark.css" type="text/css" />
     <link rel="shortcut icon" href="../_static/favicon.ico"/>
     <link rel="canonical" href="https://flash62au.github.io/EngineDriver_Home/operation/interface.html" />
   <!--[if lt IE 9]>
@@ -22,8 +24,11 @@
         <script src="../_static/underscore.js"></script>
         <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
         <script src="../_static/js/platform.js"></script>
         <script src="../_static/js/extra.js"></script>
+        <script src="../_static/dark_mode_js/default_dark.js"></script>
+        <script src="../_static/dark_mode_js/theme_switcher.js"></script>
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
@@ -62,6 +67,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../about/index.html">About Engine Driver</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#what-is-engine-driver">What is ‘Engine Driver’</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#what-s-a-withrottle-server">What’s a ‘WiThrottle Server’?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol">WiThrottle protocol VS DCC-EX Native protocol</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#roadmap">Roadmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#alternates-to-engine-driver">Alternates to Engine Driver</a></li>
 </ul>
@@ -72,9 +78,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#esu-mobilecontrol-ii">ESU MobileControl II</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../prerequisites/index.html#withrottle-servers">WiThrottle Servers</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../prerequisites/index.html#withrottle-and-dcc-ex-native-servers">WiThrottle and DCC-EX Native Servers</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-jmri">For JMRI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-dcc-ex-wifi">For DCC++EX WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-dcc-ex-wifi">For DCC-EX WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-mrc-wifi">For MRC WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../prerequisites/index.html#for-digitrax-lnwi">For Digitrax LnWi</a></li>
 </ul>
@@ -86,7 +92,12 @@
 <li class="toctree-l2"><a class="reference internal" href="operation.html">Detailed Instructions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="operation.html#connecting">Connecting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="operation.html#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#discover-servers">Discover Servers</a></li>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#recent-server-list">Recent Server List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#ip-address-and-port">IP Address and Port</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="operation.html#disconnections">Disconnections</a></li>
 </ul>
 </li>
@@ -99,9 +110,19 @@
 <li class="toctree-l3"><a class="reference internal" href="operation.html#running-trains">Running Trains</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="operation.html#controlling-speed">Controlling Speed</a></li>
 <li class="toctree-l4"><a class="reference internal" href="operation.html#controlling-direction">Controlling Direction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="operation.html#dcc-functions">DCC Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="operation.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds - In Phone Loco Sounds (IPLS)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="operation.html#action-bar-and-menu">Action Bar and Menu</a></li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#dcc-functions">DCC Functions</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#activating-the-dcc-function-via-the-function-buttons">Activating the DCC Function via the Function Buttons</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds - In Phone Loco Sounds (IPLS)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#automatic-loco-speed-step-sounds">Automatic Loco Speed Step Sounds</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="operation.html#action-bar-and-menu">Action Bar and Menu</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#action-bar">Action Bar</a></li>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#overflow-menu-throttle-screen">Overflow Menu (Throttle Screen)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="operation.html#turnouts-points">Turnouts / Points</a><ul>
@@ -124,27 +145,98 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="operation.html#pushing-the-app-to-the-background">Pushing the app to the Background</a></li>
+<li class="toctree-l3"><a class="reference internal" href="operation.html#dcc-ex-features-when-using-the-native-dcc-ex-protocol">DCC-EX - Features when using the Native DCC-EX Protocol</a></li>
 <li class="toctree-l3"><a class="reference internal" href="operation.html#exiting-engine-driver">Exiting Engine Driver</a></li>
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">User Interface</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#main-screens">Main Screens</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#connection-screen">Connection Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#throttle-screen">Throttle Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#turnouts-points-screen">Turnouts/Points Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#routes-screen">Routes Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id30">Web View Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#connection-screen">Connection Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#connection-method-options">Connection Method Options</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#ip-address-and-port">IP Address and Port</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#discovered-servers">Discovered Servers</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#recent-servers">Recent servers</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#action-bar-connection-screen">Action Bar (Connection Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#overflow-menu-connection-screen">Overflow Menu (Connection Screen)</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#throttle-screen">Throttle Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#throttle-area">Throttle Area</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#loco-select-button">Loco Select Button</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#speed-indicator">Speed indicator</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#speed-slider-area">Speed Slider Area</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#stop-button">Stop Button</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#speed-buttons">Speed Buttons</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#direction-buttons-area">Direction Buttons Area</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#function-buttons-scroll-area">Function Buttons Scroll Area</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#dcc-function-buttons">DCC Function buttons</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#pause-and-limit-speed-buttons">Pause and Limit Speed buttons</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#in-phone-loco-sounds-buttons">In Phone Loco Sounds buttons</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="#web-view-area-throttle-web-view">Web View Area (Throttle Web View)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#action-bar-throttle-screen">Action Bar (Throttle Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#overflow-menu-throttle-screen">Overflow Menu (Throttle Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#immersive-mode-full-screen">Immersive Mode (Full Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#swipe-left-right-from-throttle">Swipe Left / Right (From Throttle)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#swipe-up-down">Swipe Up / Down</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#accelerometer-shake">Accelerometer (Shake)</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#turnouts-points-screen">Turnouts/Points Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#action-bar-turnouts-points-screen">Action Bar (Turnouts/Points Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#overflow-menu-turnouts-points-screen">Overflow Menu (Turnouts/Points Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#swipe-left-right-from-turnouts-points">Swipe Left / Right (From Turnouts/Points)</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#routes-screen">Routes Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#action-bar-routes-screen">Action Bar (Routes Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#overflow-menu-routes-screen">Overflow Menu (Routes Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#swipe-left-right-from-routes">Swipe Left / Right (From Routes)</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#id46">Web View Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#action-bar-web-view-screen">Action Bar (Web View Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#overflow-menu-web-view-screen">Overflow Menu (Web View Screen)</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#swipe-left-right-web-view-screen">Swipe Left / Right (Web View Screen)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#secondary-support-screens">Secondary / Support Screens</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#intro-setup-wizard-screen">Intro/Setup Wizard Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#loco-select-screen">Loco Select Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#consist-edit-screen">Consist Edit Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#loco-select-screen">Loco Select Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#selection-method">Selection Method</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-by-dcc-address">Select by DCC Address</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-from-sever-roster">Select from Sever Roster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-from-recent-locos-list">Select from Recent Locos List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-from-recent-consists-list">Select from Recent Consists List</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#select-loco-on-screen-buttons">Select Loco On Screen Buttons</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="#acquire">Acquire</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#release">Release</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#edit-order-facing">Edit Order &amp; Facing</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#edit-lights">Edit Lights</a></li>
+<li class="toctree-l6"><a class="reference internal" href="#id62">Loco Sounds</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#consist-edit-screen">Consist Edit Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#lead-loco">Lead Loco</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#trailing-loco">Trailing Loco</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#consist-top">Consist Top</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#consist-lights-edit-screen">Consist Lights Edit Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#power-screen">Power Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#preferences-screen">Preferences Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#in-phone-loco-sounds-screen">In Phone Loco Sounds Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#function-defaults-screen">Function Defaults Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id69">Function Defaults Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dcc-ex-function-settings-screen">DCC-EX Function Settings Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dcc-ex-screen">DCC-EX Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#gamepad-test-screen">Gamepad Test Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#view-log-screen">View Log Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#about-screen">About Screen</a></li>
@@ -154,7 +246,20 @@
 <li class="toctree-l3"><a class="reference internal" href="#common-elements-and-features">Common Elements and Features</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#theme-styles">Theme / Styles</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#localisation">Localisation</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#action-bar">Action Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#action-bar">Action Bar</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#emergency-stop-button">Emergency Stop Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#track-power-button">Track Power Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#flashlight-button">Flashlight Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#throttle-web-view-button">Throttle Web View Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#layout-switch-button">Layout Switch Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#in-phone-loco-sound-button">In Phone Loco Sound Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#children-s-timer-button">Children’s Timer Button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#fast-clock">Fast Clock</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#children-s-timer-status-and-countdown">Children’s Timer Status and Countdown</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#full-screen-or-action-bar-only-left-right-swipe">Full Screen or Action Bar Only left/right swipe</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#withrottle-server-name">WiThrottle Server Name</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#overflow-menu">Overflow Menu</a></li>
 </ul>
 </li>
@@ -226,7 +331,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../configuration/configuration.html">Configuring Engine Driver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../configuration/configuration_withrottle.html">Configuring the WiThrottle server</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#jmri">JMRI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#dcc-ex-wifi">DCC++EX WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#dcc-ex-wifi">DCC-EX WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#mrc-wifi">MRC WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#digitrax-lnwi">Digitrax LnWi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#wifitrax">WifiTrax</a></li>
@@ -234,20 +339,272 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../configuration/preferences_index.html">Detailed Information</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/preferences.html">Preferences</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#advanced-preferences">Advanced Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#device-preferences">Device Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-appearance-preferences">Throttle Screen Appearance Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-action-bar-preferences">Throttle Screen Action Bar Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-control-preferences">Throttle Control Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#consist-function-follow-preferences">Consist Function Follow Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#additional-throttle-control-source-preferences">Additional Throttle Control Source Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#select-loco-preferences">Select Loco Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#in-phone-loco-sounds">In Phone Loco Sounds</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#connect-preferences">Connect Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#web-screen-preferences">Web Screen Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#turnouts-points-and-routes-preferences">Turnouts/Points and Routes Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#children-s-timer-preferences">Children’s (Timer) Preferences</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#import-export-reset-log-preferences">Import/Export/Reset &amp; Log Preferences</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#advanced-preferences">Advanced Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#show-advanced-preferences">Show Advanced Preferences?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#device-preferences">Device Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#throttle-name">Throttle Name</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#screen-orientation">Screen orientation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#theme-style">Theme/Style</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#localisation">Localisation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#left-right-swipe-preferences">Left/Right Swipe Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#disable-full-screen-swipe">Disable full screen Swipe?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swipe-through-web">Swipe through Web?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swipe-through-turnouts-points">Swipe Through Turnouts/Points?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swipe-through-routes">Swipe through Routes?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-appearance-preferences">Throttle Screen Appearance Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-layout">Throttle Screen Layout</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#number-of-throttles">Number of throttles</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#speed-slider-and-buttons-preferences">Speed Slider and Buttons Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#increase-slider-speed-height">Increase Slider/Speed Height?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#throttle-speed-slider-margin">Throttle Speed Slider Margin</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#display-speed-buttons">Display Speed buttons?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#hide-speed-slider">Hide Speed Slider?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#hide-slider-and-speed-buttons">Hide Slider AND Speed Buttons?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#tick-marks-on-speed-sliders">Tick Marks on Speed Sliders?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#switching-throttle-dead-zone">Switching throttle Dead Zone</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#stop-button-vertical-margins">Stop Button Vertical Margins</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#haptic-feedback-vibration-preferences">Haptic Feedback (Vibration) Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#haptic-feedback-vibration">Haptic Feedback (Vibration)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#haptic-feedback-duration">Haptic Feedback Duration</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#haptic-feedback-on-button-presses">Haptic Feedback on Button Presses</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#direction-button-preferences">Direction Button Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swap-direction-buttons">Swap Direction buttons?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#long-press-swap-direction-buttons">Long press Swap Direction buttons?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#direction-button-long-press-delay">Direction button Long Press Delay</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#left-direction-button-label">Left Direction button Label</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#right-direction-button-label">Right Direction button Label</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#short-left-direction-button-label">Short Left Direction button Label</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#short-right-direction-button-label">Short Right Direction button Label</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#decrease-loco-no-height">Decrease Loco No. height?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#loco-address-instead-of-name">Loco Address instead of Name?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#default-function-preferences">Default Function Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#use-default-function-labels">Use default function labels?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#number-of-default-functions">Number of Default Functions</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#number-of-default-functions-for-roster">Number of Default Functions for Roster</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#function-buttons-area-size">Function Buttons Area size</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#throttle-web-view-preferences">Throttle Web View Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#throttle-web-view">Throttle Web View?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#larger-throttle-web-view">Larger Throttle Web View?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#initial-throttle-web-page">Initial throttle Web Page</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#swipe-up-down-preferences">Swipe Up-Down Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#use-immersive-mode-for-throttle-view">Use Immersive Mode for Throttle view?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#hide-toolbar-in-immersive-mode">Hide Toolbar in Immersive Mode?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swipe-down-action-in-the-throttle-view">Swipe down action in the Throttle view?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swipe-up-action-in-the-throttle-screen">Swipe up action in the Throttle screen?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#screen-dimming-value">Screen Dimming % Value</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#accelerometer-shake-preferences">Accelerometer (Shake) Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#shake-action">Shake Action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#shake-threshold">Shake Threshold</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#background-image-preferences">Background Image Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#background-image">Background Image</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#background-image-file-name">Background Image File Name</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#background-image-position">Background Image Position</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-action-bar-preferences">Throttle Screen Action Bar Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#emergency-stop-button">Emergency Stop button?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#layout-power-button">Layout Power button?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#flashlight-button">Flashlight button?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#fast-clock-display">Fast Clock Display</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#throttle-web-view-button">Throttle Web View button?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#layout-switch-button-preferences">Layout Switch Button Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#show-layout-switch-button">Show Layout Switch button?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#first-screen-layout">First Screen Layout</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#second-screen-layout">Second Screen Layout</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#in-phone-sounds-button">In phone sounds button</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#show-server-description">Show Server Description</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#dcc-ex-button">DCC-EX button?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-control-preferences">Throttle Control Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#speed-units">Speed Units</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#maximum-throttle-percentage">Maximum throttle Percentage</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#maximum-throttle-change">Maximum throttle Change</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#speed-button-change-amount">Speed button Change Amount</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#speed-button-repeat-delay">Speed button Repeat Delay</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#speed-step-on-decrement">Speed step on Decrement?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#stop-on-phone-call">Stop on Phone call?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#direction-change-while-moving">Direction change while moving?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#stop-on-direction-change">Stop on direction change?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#limit-speed-pause-button-preferences">‘Limit Speed’ &amp; ‘Pause’ button Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#show-limit-speed-button">Show ‘Limit Speed’ button?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#limit-speed-button">‘Limit Speed’ button</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#show-pause-button">Show ‘Pause’ button?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#pause-button-rate">‘Pause’ button Rate</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#pause-button-step">‘Pause’ button Step</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#consist-function-follow-preferences">Consist Function Follow Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#consist-functions-follow-rule-style">Consist Functions - Follow Rule Style</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#selective-lead-unit-sound">Selective Lead Unit Sound?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#always-treat-f1-as-sound">Always treat F1 as Sound?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#always-treat-f2-as-sound">Always treat F2 as Sound?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#if-all-matches-fail-action">If All matches Fail Action</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#headlight-specific-string-1">Headlight specific String 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#headlight-specific-action-1">Headlight specific Action 1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#string-2-3-4-5">String 2, 3, 4, 5</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#action-for-string-2-3-4-5">Action for String 2, 3, 4, 5</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#additional-throttle-control-source-preferences">Additional Throttle Control Source Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#volume-button-preferences">Volume Button Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#speed-button-change-amount-volume">Speed button Change Amount (Volume)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#disable-volume-keys">Disable Volume keys?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#volume-keys-follow-touch">Volume keys follow touch?</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#gamepad-preferences">Gamepad Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-type">Gamepad type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#only-one-gamepad">Only One Gamepad?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#test-gamepad-settings-now">Test Gamepad settings now!</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#speed-button-change-amount-gamepad">Speed button Change Amount (Gamepad)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-click-volume">Gamepad Button Click Volume %</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#speed-button-repeat-delay-gamepad">Speed button Repeat Delay (gamepad)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-action-x">Gamepad button action &lt;!– X –&gt;</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-action-y">Gamepad button action &lt;!– Y –&gt;</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-action-a">Gamepad button action &lt;!– A –&gt;</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-action-b">Gamepad button action &lt;!– B –&gt;</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-action-start-lower">Gamepad button action &lt;!– Start(Lower) –&gt;</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-button-action-return-upper">Gamepad button action &lt;!– Return(Upper) –&gt;</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-dpad-up-action">Gamepad DPAD Up action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-dpad-right-action">Gamepad DPAD Right action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-dpad-down-action">Gamepad DPAD Down action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#gamepad-dpad-left-action">Gamepad DPAD Left action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#swap-direction-buttons-with-screen-buttons">Swap Direction buttons with Screen buttons?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#enforce-gamepad-testing">Enforce Gamepad Testing?</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#use-simple-test">Use Simple Test?</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#esu-mobilecontrol-ii-options">ESU MobileControl II Options</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#device-stop-button-options">Device Stop button options</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#stop-button-long-press-delay">Stop Button long-press delay</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#enable-short-press">Enable Short Press</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#device-side-button-options">Device side button options</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#top-left-button-action">Top-left button action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#bottom-left-button-action">Bottom-left button action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#top-right-button-action">Top-right button action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#bottom-right-button-action">Bottom-right button action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#button-repeat-delay">Button repeat delay</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#control-knob-options">Control Knob options</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#control-knob-zero-trim">Control Knob Zero Trim</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#direction-change-at-end-stop">Direction Change at end-stop</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#show-disable-knob-button">Show disable Knob button</a></li>
+</ul>
+</li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#additional-selected-loco-indicator">Additional selected loco Indicator</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#voice-response-preferences">Voice Response Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#voice-response">Voice Response</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#on-gamepad-throttle-change">On Gamepad Throttle change</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#on-gamepad-speeds">On Gamepad Speeds</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#on-gamepad-test-start">On Gamepad Test start</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#on-gamepad-test-complete">On Gamepad Test complete</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#on-gamepad-test-key-press">On Gamepad Test key press</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#select-loco-preferences">Select Loco Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#stop-on-release">Stop on Release?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#drop-loco-before-acquire">Drop Loco before acquire?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#allow-loco-select-while-moving">Allow loco select while moving?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#default-address-length">Default Address Length</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#roster-in-recent-locos">Roster in Recent Locos?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#roster-names-in-recent-locos">Roster Names in Recent Locos?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#maximum-recent-locos">Maximum Recent Locos</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#control-consist-lights-on-long-click">Control consist Lights on long click</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#filter-roster">Filter Roster</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#in-phone-loco-sounds">In Phone Loco Sounds</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#throttle-1-loco-sounds">Throttle 1 Loco Sounds</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#throttle-2-loco-sounds">Throttle 2 Loco Sounds</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#additional-preferences">Additional Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#in-phone-momentum">In Phone Momentum</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#don-t-clip-loco-step-sounds">Don’t clip loco step sounds</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#in-phone-loco-sounds-volume">In Phone Loco Sounds Volume</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#in-phone-bell-sounds-volume">In Phone Bell Sounds Volume</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#in-phone-horn-whistle-sounds-volume">In Phone Horn/Whistle Sounds Volume</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#bell-button-latching-momentary">Bell button Latching/Momentary</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#f1-and-f2-activate-bell-and-horn">F1 and F2 activate Bell and Horn?</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#connect-preferences">Connect Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#maximum-recent-connections">Maximum Recent Connections</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#auto-connect-to-withrottle-server">Auto-Connect to WiThrottle Server?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#hide-demo-server">Hide Demo Server</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#initial-connection-timeout">Initial Connection Timeout</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#socket-timeout">Socket Timeout</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#mobile-data-connection">Mobile Data connection?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#feedback-on-disconnect">Feedback on Disconnect</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#background-alert">Background Alert</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#dcc-ex-ex-commandstation-preferences">DCC-EX EX-CommandStation Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#use-native-dcc-ex-command">Use Native DCC-EX command</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#show-protocol-option">Show protocol option</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#web-screen-preferences">Web Screen Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#web-screen-orientation">Web Screen Orientation</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#initial-web-screen-page">Initial Web Screen Page</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#turnouts-points-and-routes-preferences">Turnouts/Points and Routes Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#hide-sys-route-names">Hide Sys Route Names?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#location-delimiter">Location Delimiter</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#hide-if-no-user-name">Hide if no user name?</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#children-s-timer-preferences">Children’s (Timer) Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#time-limited-running">Time limited running</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#restart-password">Restart Password</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#reset-disable-password">Reset/Disable Password</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#allow-reverse">Allow Reverse?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#show-timer-button">Show Timer button?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#default-time-for-button">Default time for Button</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#import-export-reset-log-preferences">Import/Export/Reset &amp; Log Preferences</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#import-export-or-reset">Import, Export or Reset</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#auto-import-from-all-servers">Auto import from all Servers?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#include-recent-loco-list">Include recent loco list?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#auto-host-specific-import-export">Auto host specific import/export?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#manual-host-specific-import-export">Manual host specific import/export</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#show-timestamps-on-log">Show Timestamps on Log?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/functions.html">Function Buttons</a><ul>
@@ -258,8 +615,17 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/ipls.html">In Phone Loco Sounds (IPLS)</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/ipls.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds / In Phone Loco Sounds (IPLS)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/ipls.html#custom-ipls-files">Custom IPLS Files</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/ipls.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds / In Phone Loco Sounds (IPLS)</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/ipls.html#loco-sounds">Loco Sounds</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/ipls.html#bell-horn-whistle">Bell, Horn/Whistle</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/ipls.html#custom-ipls-files">Custom .ipls Files</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/ipls.html#ipls-file-format">.ipls File Format</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/ipls.html#sample-ipls">Sample .ipls</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/ipls.html#sourcing-sound-files-to-use-in-custom-ipls">Sourcing sound files to use in custom .ipls</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/gamepads.html">Gamepads</a><ul>
@@ -303,13 +669,10 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../downloads/index.html">Downloads</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#play-store">Play Store</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#current-published-version">Current published version</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#older-or-other-versions">Older or other versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#older-or-other-versions">Older or Other Versions</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes / Updates</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../changes/index.html#production-version-changes">Production Version Changes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../changes/index.html#changes-for-the-beta-version">Changes for the Beta Version</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../changes/index.html#full-change-history">Full Change History</a></li>
 </ul>
 </li>
@@ -320,6 +683,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../contributing/index.html#style-guidelines">Style Guidelines</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../contributing/index.html#todo">TODO</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary / References / Copyright</a><ul>
@@ -368,122 +732,131 @@
 <div class="contents local topic" id="on-this-page">
 <p class="topic-title">On This Page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#main-screens" id="id57">Main Screens</a></p>
+<li><p><a class="reference internal" href="#main-screens" id="id99">Main Screens</a></p>
 <ul>
-<li><p><a class="reference internal" href="#connection-screen" id="id58">Connection Screen</a></p>
+<li><p><a class="reference internal" href="#connection-screen" id="id100">Connection Screen</a></p>
 <ul>
-<li><p><a class="reference internal" href="#ip-address-and-port" id="id59">IP Address and Port</a></p></li>
-<li><p><a class="reference internal" href="#discovered-servers" id="id60">Discovered Servers</a></p></li>
-<li><p><a class="reference internal" href="#recent-servers" id="id61">Recent servers</a></p></li>
-<li><p><a class="reference internal" href="#action-bar-connection-screen" id="id62">Action Bar (Connection Screen)</a></p></li>
-<li><p><a class="reference internal" href="#overflow-menu-connection-screen" id="id63">Overflow Menu (Connection Screen)</a></p></li>
+<li><p><a class="reference internal" href="#connection-method-options" id="id101">Connection Method Options</a></p>
+<ul>
+<li><p><a class="reference internal" href="#ip-address-and-port" id="id102">IP Address and Port</a></p></li>
+<li><p><a class="reference internal" href="#discovered-servers" id="id103">Discovered Servers</a></p></li>
+<li><p><a class="reference internal" href="#recent-servers" id="id104">Recent servers</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#throttle-screen" id="id64">Throttle Screen</a></p>
-<ul>
-<li><p><a class="reference internal" href="#throttle-area" id="id65">Throttle Area</a></p>
-<ul>
-<li><p><a class="reference internal" href="#loco-select-button" id="id66">Loco Select Button</a></p></li>
-<li><p><a class="reference internal" href="#speed-indicator" id="id67">Speed indicator</a></p></li>
-<li><p><a class="reference internal" href="#speed-slider-area" id="id68">Speed Slider Area</a></p></li>
-<li><p><a class="reference internal" href="#stop-button" id="id69">Stop Button</a></p></li>
-<li><p><a class="reference internal" href="#speed-buttons" id="id70">Speed Buttons</a></p></li>
-<li><p><a class="reference internal" href="#direction-buttons-area" id="id71">Direction Buttons Area</a></p></li>
-<li><p><a class="reference internal" href="#function-buttons-scroll-area" id="id72">Function Buttons Scroll Area</a></p></li>
+<li><p><a class="reference internal" href="#action-bar-connection-screen" id="id105">Action Bar (Connection Screen)</a></p></li>
+<li><p><a class="reference internal" href="#overflow-menu-connection-screen" id="id106">Overflow Menu (Connection Screen)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#web-view-area-throttle-web-view" id="id73">Web View Area (Throttle Web View)</a></p></li>
-<li><p><a class="reference internal" href="#action-bar-throttle-screen" id="id74">Action Bar (Throttle Screen)</a></p></li>
-<li><p><a class="reference internal" href="#overflow-menu-throttle-screen" id="id75">Overflow Menu (Throttle Screen)</a></p></li>
-<li><p><a class="reference internal" href="#background" id="id76">Background</a></p></li>
-<li><p><a class="reference internal" href="#immersive-mode-full-screen" id="id77">Immersive Mode (Full Screen)</a></p></li>
-<li><p><a class="reference internal" href="#swipe-left-right-from-throttle" id="id78">Swipe Left / Right (From Throttle)</a></p></li>
-<li><p><a class="reference internal" href="#swipe-up-down" id="id79">Swipe Up / Down</a></p></li>
-<li><p><a class="reference internal" href="#accelerometer-shake" id="id80">Accelerometer (Shake)</a></p></li>
+<li><p><a class="reference internal" href="#throttle-screen" id="id107">Throttle Screen</a></p>
+<ul>
+<li><p><a class="reference internal" href="#throttle-area" id="id108">Throttle Area</a></p>
+<ul>
+<li><p><a class="reference internal" href="#loco-select-button" id="id109">Loco Select Button</a></p></li>
+<li><p><a class="reference internal" href="#speed-indicator" id="id110">Speed indicator</a></p></li>
+<li><p><a class="reference internal" href="#speed-slider-area" id="id111">Speed Slider Area</a></p></li>
+<li><p><a class="reference internal" href="#stop-button" id="id112">Stop Button</a></p></li>
+<li><p><a class="reference internal" href="#speed-buttons" id="id113">Speed Buttons</a></p></li>
+<li><p><a class="reference internal" href="#direction-buttons-area" id="id114">Direction Buttons Area</a></p></li>
+<li><p><a class="reference internal" href="#function-buttons-scroll-area" id="id115">Function Buttons Scroll Area</a></p></li>
+<li><p><a class="reference internal" href="#dcc-function-buttons" id="id116">DCC Function buttons</a></p></li>
+<li><p><a class="reference internal" href="#pause-and-limit-speed-buttons" id="id117">Pause and Limit Speed buttons</a></p></li>
+<li><p><a class="reference internal" href="#in-phone-loco-sounds-buttons" id="id118">In Phone Loco Sounds buttons</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#turnouts-points-screen" id="id81">Turnouts/Points Screen</a></p>
-<ul>
-<li><p><a class="reference internal" href="#action-bar-turnouts-points-screen" id="id82">Action Bar (Turnouts/Points Screen)</a></p></li>
-<li><p><a class="reference internal" href="#overflow-menu-turnouts-points-screen" id="id83">Overflow Menu (Turnouts/Points Screen)</a></p></li>
-<li><p><a class="reference internal" href="#swipe-left-right-from-turnouts-points" id="id84">Swipe Left / Right (From Turnouts/Points)</a></p></li>
+<li><p><a class="reference internal" href="#web-view-area-throttle-web-view" id="id119">Web View Area (Throttle Web View)</a></p></li>
+<li><p><a class="reference internal" href="#action-bar-throttle-screen" id="id120">Action Bar (Throttle Screen)</a></p></li>
+<li><p><a class="reference internal" href="#overflow-menu-throttle-screen" id="id121">Overflow Menu (Throttle Screen)</a></p></li>
+<li><p><a class="reference internal" href="#background" id="id122">Background</a></p></li>
+<li><p><a class="reference internal" href="#immersive-mode-full-screen" id="id123">Immersive Mode (Full Screen)</a></p></li>
+<li><p><a class="reference internal" href="#swipe-left-right-from-throttle" id="id124">Swipe Left / Right (From Throttle)</a></p></li>
+<li><p><a class="reference internal" href="#swipe-up-down" id="id125">Swipe Up / Down</a></p></li>
+<li><p><a class="reference internal" href="#accelerometer-shake" id="id126">Accelerometer (Shake)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#routes-screen" id="id85">Routes Screen</a></p>
+<li><p><a class="reference internal" href="#turnouts-points-screen" id="id127">Turnouts/Points Screen</a></p>
 <ul>
-<li><p><a class="reference internal" href="#action-bar-routes-screen" id="id86">Action Bar (Routes Screen)</a></p></li>
-<li><p><a class="reference internal" href="#overflow-menu-routes-screen" id="id87">Overflow Menu (Routes Screen)</a></p></li>
-<li><p><a class="reference internal" href="#swipe-left-right-from-routes" id="id88">Swipe Left / Right (From Routes)</a></p></li>
+<li><p><a class="reference internal" href="#action-bar-turnouts-points-screen" id="id128">Action Bar (Turnouts/Points Screen)</a></p></li>
+<li><p><a class="reference internal" href="#overflow-menu-turnouts-points-screen" id="id129">Overflow Menu (Turnouts/Points Screen)</a></p></li>
+<li><p><a class="reference internal" href="#swipe-left-right-from-turnouts-points" id="id130">Swipe Left / Right (From Turnouts/Points)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#id30" id="id89">Web View Screen</a></p>
+<li><p><a class="reference internal" href="#routes-screen" id="id131">Routes Screen</a></p>
 <ul>
-<li><p><a class="reference internal" href="#action-bar-web-view-screen" id="id90">Action Bar (Web View Screen)</a></p></li>
-<li><p><a class="reference internal" href="#overflow-menu-web-view-screen" id="id91">Overflow Menu (Web View Screen)</a></p></li>
-<li><p><a class="reference internal" href="#swipe-left-right-web-view-screen" id="id92">Swipe Left / Right (Web View Screen)</a></p></li>
+<li><p><a class="reference internal" href="#action-bar-routes-screen" id="id132">Action Bar (Routes Screen)</a></p></li>
+<li><p><a class="reference internal" href="#overflow-menu-routes-screen" id="id133">Overflow Menu (Routes Screen)</a></p></li>
+<li><p><a class="reference internal" href="#swipe-left-right-from-routes" id="id134">Swipe Left / Right (From Routes)</a></p></li>
 </ul>
 </li>
-</ul>
-</li>
-<li><p><a class="reference internal" href="#secondary-support-screens" id="id93">Secondary / Support Screens</a></p>
+<li><p><a class="reference internal" href="#id46" id="id135">Web View Screen</a></p>
 <ul>
-<li><p><a class="reference internal" href="#intro-setup-wizard-screen" id="id94">Intro/Setup Wizard Screen</a></p></li>
-<li><p><a class="reference internal" href="#loco-select-screen" id="id95">Loco Select Screen</a></p>
-<ul>
-<li><p><a class="reference internal" href="#selection-method" id="id96">Selection Method</a></p></li>
-<li><p><a class="reference internal" href="#select-by-dcc-address" id="id97">Select by DCC Address</a></p></li>
-<li><p><a class="reference internal" href="#select-from-sever-roster" id="id98">Select from Sever Roster</a></p></li>
-<li><p><a class="reference internal" href="#select-from-recent-locos-list" id="id99">Select from Recent Locos List</a></p></li>
-<li><p><a class="reference internal" href="#select-from-recent-consists-list" id="id100">Select from Recent Consists List</a></p></li>
-<li><p><a class="reference internal" href="#select-loco-on-screen-buttons" id="id101">Select Loco On Screen Buttons</a></p>
-<ul>
-<li><p><a class="reference internal" href="#acquire" id="id102">Acquire</a></p></li>
-<li><p><a class="reference internal" href="#release" id="id103">Release</a></p></li>
-<li><p><a class="reference internal" href="#edit-order-facing" id="id104">Edit Order &amp; Facing</a></p></li>
-<li><p><a class="reference internal" href="#edit-lights" id="id105">Edit Lights</a></p></li>
-<li><p><a class="reference internal" href="#id40" id="id106">Loco Sounds</a></p></li>
+<li><p><a class="reference internal" href="#action-bar-web-view-screen" id="id136">Action Bar (Web View Screen)</a></p></li>
+<li><p><a class="reference internal" href="#overflow-menu-web-view-screen" id="id137">Overflow Menu (Web View Screen)</a></p></li>
+<li><p><a class="reference internal" href="#swipe-left-right-web-view-screen" id="id138">Swipe Left / Right (Web View Screen)</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#consist-edit-screen" id="id107">Consist Edit Screen</a></p>
+<li><p><a class="reference internal" href="#secondary-support-screens" id="id139">Secondary / Support Screens</a></p>
 <ul>
-<li><p><a class="reference internal" href="#lead-loco" id="id108">Lead Loco</a></p></li>
-<li><p><a class="reference internal" href="#trailing-loco" id="id109">Trailing Loco</a></p></li>
-<li><p><a class="reference internal" href="#consist-top" id="id110">Consist Top</a></p></li>
+<li><p><a class="reference internal" href="#intro-setup-wizard-screen" id="id140">Intro/Setup Wizard Screen</a></p></li>
+<li><p><a class="reference internal" href="#loco-select-screen" id="id141">Loco Select Screen</a></p>
+<ul>
+<li><p><a class="reference internal" href="#selection-method" id="id142">Selection Method</a></p></li>
+<li><p><a class="reference internal" href="#select-by-dcc-address" id="id143">Select by DCC Address</a></p></li>
+<li><p><a class="reference internal" href="#select-from-sever-roster" id="id144">Select from Sever Roster</a></p></li>
+<li><p><a class="reference internal" href="#select-from-recent-locos-list" id="id145">Select from Recent Locos List</a></p></li>
+<li><p><a class="reference internal" href="#select-from-recent-consists-list" id="id146">Select from Recent Consists List</a></p></li>
+<li><p><a class="reference internal" href="#select-loco-on-screen-buttons" id="id147">Select Loco On Screen Buttons</a></p>
+<ul>
+<li><p><a class="reference internal" href="#acquire" id="id148">Acquire</a></p></li>
+<li><p><a class="reference internal" href="#release" id="id149">Release</a></p></li>
+<li><p><a class="reference internal" href="#edit-order-facing" id="id150">Edit Order &amp; Facing</a></p></li>
+<li><p><a class="reference internal" href="#edit-lights" id="id151">Edit Lights</a></p></li>
+<li><p><a class="reference internal" href="#id62" id="id152">Loco Sounds</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#consist-lights-edit-screen" id="id111">Consist Lights Edit Screen</a></p></li>
-<li><p><a class="reference internal" href="#power-screen" id="id112">Power Screen</a></p></li>
-<li><p><a class="reference internal" href="#preferences-screen" id="id113">Preferences Screen</a></p></li>
-<li><p><a class="reference internal" href="#in-phone-loco-sounds-screen" id="id114">In Phone Loco Sounds Screen</a></p></li>
-<li><p><a class="reference internal" href="#function-defaults-screen" id="id115">Function Defaults Screen</a></p></li>
-<li><p><a class="reference internal" href="#gamepad-test-screen" id="id116">Gamepad Test Screen</a></p></li>
-<li><p><a class="reference internal" href="#view-log-screen" id="id117">View Log Screen</a></p></li>
-<li><p><a class="reference internal" href="#about-screen" id="id118">About Screen</a></p></li>
-<li><p><a class="reference internal" href="#reconnecting-screen" id="id119">Reconnecting Screen</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#common-elements-and-features" id="id120">Common Elements and Features</a></p>
+<li><p><a class="reference internal" href="#consist-edit-screen" id="id153">Consist Edit Screen</a></p>
 <ul>
-<li><p><a class="reference internal" href="#theme-styles" id="id121">Theme / Styles</a></p></li>
-<li><p><a class="reference internal" href="#localisation" id="id122">Localisation</a></p></li>
-<li><p><a class="reference internal" href="#action-bar" id="id123">Action Bar</a></p>
-<ul>
-<li><p><a class="reference internal" href="#emergency-stop-button" id="id124">Emergency Stop Button</a></p></li>
-<li><p><a class="reference internal" href="#track-power-button" id="id125">Track Power Button</a></p></li>
-<li><p><a class="reference internal" href="#flashlight-button" id="id126">Flashlight Button</a></p></li>
-<li><p><a class="reference internal" href="#throttle-web-view-button" id="id127">Throttle Web View Button</a></p></li>
-<li><p><a class="reference internal" href="#layout-switch-button" id="id128">Layout Switch Button</a></p></li>
-<li><p><a class="reference internal" href="#in-phone-loco-sound-button" id="id129">In Phone Loco Sound Button</a></p></li>
-<li><p><a class="reference internal" href="#children-s-timer-button" id="id130">Children’s Timer Button</a></p></li>
-<li><p><a class="reference internal" href="#fast-clock" id="id131">Fast Clock</a></p></li>
-<li><p><a class="reference internal" href="#children-s-timer-status-and-countdown" id="id132">Children’s Timer Status and Countdown</a></p></li>
-<li><p><a class="reference internal" href="#full-screen-or-action-bar-only-left-right-swipe" id="id133">Full Screen or Action Bar Only left/right swipe</a></p></li>
-<li><p><a class="reference internal" href="#withrottle-server-name" id="id134">WiThrottle Server Name</a></p></li>
+<li><p><a class="reference internal" href="#lead-loco" id="id154">Lead Loco</a></p></li>
+<li><p><a class="reference internal" href="#trailing-loco" id="id155">Trailing Loco</a></p></li>
+<li><p><a class="reference internal" href="#consist-top" id="id156">Consist Top</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#overflow-menu" id="id135">Overflow Menu</a></p></li>
+<li><p><a class="reference internal" href="#consist-lights-edit-screen" id="id157">Consist Lights Edit Screen</a></p></li>
+<li><p><a class="reference internal" href="#power-screen" id="id158">Power Screen</a></p></li>
+<li><p><a class="reference internal" href="#preferences-screen" id="id159">Preferences Screen</a></p></li>
+<li><p><a class="reference internal" href="#in-phone-loco-sounds-screen" id="id160">In Phone Loco Sounds Screen</a></p></li>
+<li><p><a class="reference internal" href="#id69" id="id161">Function Defaults Screen</a></p></li>
+<li><p><a class="reference internal" href="#dcc-ex-function-settings-screen" id="id162">DCC-EX Function Settings Screen</a></p></li>
+<li><p><a class="reference internal" href="#dcc-ex-screen" id="id163">DCC-EX Screen</a></p></li>
+<li><p><a class="reference internal" href="#gamepad-test-screen" id="id164">Gamepad Test Screen</a></p></li>
+<li><p><a class="reference internal" href="#view-log-screen" id="id165">View Log Screen</a></p></li>
+<li><p><a class="reference internal" href="#about-screen" id="id166">About Screen</a></p></li>
+<li><p><a class="reference internal" href="#reconnecting-screen" id="id167">Reconnecting Screen</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#common-elements-and-features" id="id168">Common Elements and Features</a></p>
+<ul>
+<li><p><a class="reference internal" href="#theme-styles" id="id169">Theme / Styles</a></p></li>
+<li><p><a class="reference internal" href="#localisation" id="id170">Localisation</a></p></li>
+<li><p><a class="reference internal" href="#action-bar" id="id171">Action Bar</a></p>
+<ul>
+<li><p><a class="reference internal" href="#emergency-stop-button" id="id172">Emergency Stop Button</a></p></li>
+<li><p><a class="reference internal" href="#track-power-button" id="id173">Track Power Button</a></p></li>
+<li><p><a class="reference internal" href="#flashlight-button" id="id174">Flashlight Button</a></p></li>
+<li><p><a class="reference internal" href="#throttle-web-view-button" id="id175">Throttle Web View Button</a></p></li>
+<li><p><a class="reference internal" href="#layout-switch-button" id="id176">Layout Switch Button</a></p></li>
+<li><p><a class="reference internal" href="#in-phone-loco-sound-button" id="id177">In Phone Loco Sound Button</a></p></li>
+<li><p><a class="reference internal" href="#children-s-timer-button" id="id178">Children’s Timer Button</a></p></li>
+<li><p><a class="reference internal" href="#fast-clock" id="id179">Fast Clock</a></p></li>
+<li><p><a class="reference internal" href="#children-s-timer-status-and-countdown" id="id180">Children’s Timer Status and Countdown</a></p></li>
+<li><p><a class="reference internal" href="#full-screen-or-action-bar-only-left-right-swipe" id="id181">Full Screen or Action Bar Only left/right swipe</a></p></li>
+<li><p><a class="reference internal" href="#withrottle-server-name" id="id182">WiThrottle Server Name</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#overflow-menu" id="id183">Overflow Menu</a></p></li>
 </ul>
 </li>
 </ul>
@@ -497,7 +870,7 @@
 <li><p>Localisation</p></li>
 </ul>
 <section id="main-screens">
-<h2><a class="toc-backref" href="#id57">Main Screens</a><a class="headerlink" href="#main-screens" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id99">Main Screens</a><a class="headerlink" href="#main-screens" title="Permalink to this heading"></a></h2>
 <p>There are four main screens:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#connection-screen">Connection Screen</a></p></li>
@@ -507,7 +880,7 @@
 </ul>
 <hr class="docutils" />
 <section id="connection-screen">
-<h3><a class="toc-backref" href="#id58">Connection Screen</a><a class="headerlink" href="#connection-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id100">Connection Screen</a><a class="headerlink" href="#connection-screen" title="Permalink to this heading"></a></h3>
 <img alt="../_images/connect.png" class="align-right" src="../_images/connect.png" />
 <p>This screen is the first screen you normally see when starting <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
 <p>It allows you choose which <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> to connect to, which you must do to control your trains.</p>
@@ -519,37 +892,36 @@
 </ul>
 <p>Once you select a server the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be automatically displayed.</p>
 <p>If you only ever connect to one <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> you can effectively bypass this screen by enabling the <a class="reference external" href="../configuration/preferences.html#auto-connect-to-withrottle-server">Auto-Connect to WiThrottle Server?</a> preference.</p>
-<section id="ip-address-and-port">
-<h4><a class="toc-backref" href="#id59">IP Address and Port</a><a class="headerlink" href="#ip-address-and-port" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
-<p>Enter the IP address or URI of the server in the first field, and the port in the second field, then click <span class="guilabel">Connect</span>. <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to connect to it, and the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be displayed.</p>
-<p>failed connections…</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="wifi_issues.html"><span class="doc">WiFi Issues</span></a> for more assistance with connection difficulties.</p>
 </div>
+<section id="connection-method-options">
+<h4><a class="toc-backref" href="#id101">Connection Method Options</a><a class="headerlink" href="#connection-method-options" title="Permalink to this heading"></a></h4>
+<section id="ip-address-and-port">
+<h5><a class="toc-backref" href="#id102">IP Address and Port</a><a class="headerlink" href="#ip-address-and-port" title="Permalink to this heading"></a></h5>
+<blockquote>
+<div><p>Enter the IP address or URI of the server in the first field, and the port in the second field, then click <span class="guilabel">Connect</span>. <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to connect to it, and the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be displayed.</p>
+</div></blockquote>
 </section>
 <section id="discovered-servers">
-<h4><a class="toc-backref" href="#id60">Discovered Servers</a><a class="headerlink" href="#discovered-servers" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
-<p>This is the most common way to connect.</p>
+<h5><a class="toc-backref" href="#id103">Discovered Servers</a><a class="headerlink" href="#discovered-servers" title="Permalink to this heading"></a></h5>
+<blockquote>
+<div><p>This is the most common way to connect.</p>
 <p>Your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> will attempt to broadcast its details so that apps like <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can automatically find it.  If <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> does find it, it will be listed here.</p>
 <p>To connect to any <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> in this list, simply click on the row.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to connect to it, and the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be displayed.</p>
-<p>failed connections…</p>
-<div class="note-ed-hidden-title admonition note">
-<p class="admonition-title">Note</p>
-<p>See <a class="reference internal" href="wifi_issues.html"><span class="doc">WiFi Issues</span></a> for more assistance with connection difficulties.</p>
-</div>
+</div></blockquote>
 </section>
 <section id="recent-servers">
-<h4><a class="toc-backref" href="#id61">Recent servers</a><a class="headerlink" href="#recent-servers" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
-<p>To connect to any <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> in this list, simply click on the row.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to connect to it.  If successful the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be displayed.</p>
+<h5><a class="toc-backref" href="#id104">Recent servers</a><a class="headerlink" href="#recent-servers" title="Permalink to this heading"></a></h5>
+<blockquote>
+<div><p>To connect to any <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> in this list, simply click on the row.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to connect to it.  If successful the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be displayed.</p>
 <p>Note that, just because it is in this list, it does not mean that you can connect to it now. It only means that you have successfully connected to it in the past.</p>
-<p>failed connections…</p>
+</div></blockquote>
+</section>
 </section>
 <section id="action-bar-connection-screen">
-<h4><a class="toc-backref" href="#id62">Action Bar (Connection Screen)</a><a class="headerlink" href="#action-bar-connection-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id105">Action Bar (Connection Screen)</a><a class="headerlink" href="#action-bar-connection-screen" title="Permalink to this heading"></a></h4>
 <p>The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.</p>
 <p>In the <a class="reference internal" href="#connection-screen"><span class="std std-ref">Connection Screen</span></a> the Action Bar only displays:</p>
 <ul class="simple">
@@ -558,13 +930,25 @@
 <p>See the <a class="reference internal" href="#action-bar">Action Bar</a> section of this page for more information.</p>
 </section>
 <section id="overflow-menu-connection-screen">
-<h4><a class="toc-backref" href="#id63">Overflow Menu (Connection Screen)</a><a class="headerlink" href="#overflow-menu-connection-screen" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id106">Overflow Menu (Connection Screen)</a><a class="headerlink" href="#overflow-menu-connection-screen" title="Permalink to this heading"></a></h4>
+<p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the <a class="reference external" href="../operation/interface.html#main-screens">main screens</a> is normally three dots (⁞) or three bars (≡).
+It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
+<p>Specific to the <a class="reference internal" href="#connection-screen"><span class="std std-ref">Connection Screen</span></a>, the Overflow Menu can display:</p>
+<ul class="simple">
+<li><p><a class="reference external" href="../configuration/preferences.html">Preferences</a></p></li>
+<li><p><a class="reference external" href="../operation/interface.html#view-log-screen">View Log</a></p></li>
+<li><p><a class="reference external" href="../operation/operation.html#exiting-engine-driver">Exit</a></p></li>
+<li><p><a class="reference external" href="../operation/interface.html#about-screen">About</a></p></li>
+</ul>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference internal" href="#overflow-menu">Overflow Menu</a>  section for more information.</p>
+</div>
 </section>
 </section>
 <hr class="docutils" />
 <section id="throttle-screen">
-<h3><a class="toc-backref" href="#id64">Throttle Screen</a><a class="headerlink" href="#throttle-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id107">Throttle Screen</a><a class="headerlink" href="#throttle-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/throttle_vertical_outline.png"><img alt="../_images/throttle_vertical_outline.png" class="align-right" src="../_images/throttle_vertical_outline.png" style="width: 115.2px; height: 204.8px;" /></a>
 <p>The <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> has two distinct areas:</p>
 <ul class="simple">
@@ -585,7 +969,7 @@
 </ul>
 <p>The <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> contains between 1 and 6 Throttle areas depending on the Throttle layout chosen and the number of throttles for that layout (only some allow this to be changed).</p>
 <section id="throttle-area">
-<h4><a class="toc-backref" href="#id65">Throttle Area</a><a class="headerlink" href="#throttle-area" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id108">Throttle Area</a><a class="headerlink" href="#throttle-area" title="Permalink to this heading"></a></h4>
 <p>Each Throttle on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will display different information and buttons depending on the <code class="docutils literal notranslate"><span class="pre">Throttle</span> <span class="pre">Screen</span> <span class="pre">Layout</span></code> in the  <a class="reference external" href="../configuration/preferences.html#throttle-screen-layout">Throttle Screen Layout</a> preference.</p>
 <p>Each <em>Throttle Area</em> allows you to:</p>
 <ul class="simple">
@@ -595,7 +979,7 @@
 <li><p>Activate Virtual (IPLS) Sounds (bell, horn, short horn) (if enabled)</p></li>
 </ul>
 <section id="loco-select-button">
-<h5><a class="toc-backref" href="#id66">Loco Select Button</a><a class="headerlink" href="#loco-select-button" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id109">Loco Select Button</a><a class="headerlink" href="#loco-select-button" title="Permalink to this heading"></a></h5>
 <blockquote>
 <div><p>The loco <span class="guilabel">Select</span> button in the Throttle Area allows to select or release locos for that particular Throttle.  Click on the button and you will be taken to the Select Loco screen.</p>
 <p>Once you have selected a loco, the label on the button change to the DCC Address(s) or the Roster name(s) of the Loco depending on how you select the loco in the <a class="reference internal" href="#loco-select-screen"><span class="std std-ref">Loco Select Screen</span></a>, and if you have the enabled the <a class="reference external" href="../preferences.html#loco-address-instead-of-name">Loco Address instead of Name?</a> preference.</p>
@@ -607,7 +991,7 @@
 </div></blockquote>
 </section>
 <section id="speed-indicator">
-<h5><a class="toc-backref" href="#id67">Speed indicator</a><a class="headerlink" href="#speed-indicator" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id110">Speed indicator</a><a class="headerlink" href="#speed-indicator" title="Permalink to this heading"></a></h5>
 <blockquote>
 <div><p>The <em>Speed Indicator</em> or <em>Speed</em> area of each throttle of the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> indicates the throttle amount/setting (rather than the actual speed of the locos controlled by the the throttle).</p>
 <p>Depending on the <a class="reference external" href="../configuration/preferences.html#speed-units">Speed Units Preference</a> the upper value show will be different:</p>
@@ -675,13 +1059,13 @@ Touch another <em>Speed Indicator</em> to change which Throttle the Hardware Vol
 </div></blockquote>
 </section>
 <section id="speed-slider-area">
-<h5><a class="toc-backref" href="#id68">Speed Slider Area</a><a class="headerlink" href="#speed-slider-area" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id111">Speed Slider Area</a><a class="headerlink" href="#speed-slider-area" title="Permalink to this heading"></a></h5>
 <blockquote>
 <div><a class="reference internal image-reference" href="../_images/slider_horizontal.png"><img alt="../_images/slider_horizontal.png" src="../_images/slider_horizontal.png" style="width: 480.0px; height: 65.0px;" /></a>
 <p>The Throttle areas can be configured with a <em>Speed Slider</em>.  (All Throttle Screen layouts except the ‘Big Button’ layouts include sliders by default.) Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to slowly increase or decrease the speed of the loco(s) selected for that Throttle till it gets to that point.</p>
 <p>Depending on the <code class="docutils literal notranslate"><span class="pre">Throttle</span> <span class="pre">Screen</span> <span class="pre">Layout</span></code> chosen in the  <a class="reference external" href="../configuration/preferences.html#throttle-screen-layout">Throttle Screen Layout</a> preference, all sliders on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will be either:</p>
 <ul class="simple">
-<li><p>one-directional (0% - 100%) <a class="footnote-reference brackets" href="#pct" id="id3">1</a>  <br />or</p></li>
+<li><p>one-directional (0% - 100%) <a class="footnote-reference brackets" href="#pct" id="id4">1</a>  <br />or</p></li>
 <li><p>bi-directional (-100% - 0 - +100%) <br /> <br /></p></li>
 </ul>
 <p>Bi-directional sliders are useful for when you are switching/shunting. i.e. moving your locos backwards and forwards a lot.</p>
@@ -694,23 +1078,32 @@ Touch another <em>Speed Indicator</em> to change which Throttle the Hardware Vol
 <li><p><a class="reference external" href="../configuration/preferences.html#switching-throttle-dead-zone">Switching throttle Dead Zone</a> <br /> When this preferences is set, Engine Driver will set the size of the dead zone, or detent, on the slider of the Switching/Shunting <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a></p></li>
 <li><p><a class="reference external" href="../configuration/preferences.html#stop-button-vertical-margins">Stop Button Vertical Margins</a> <br /> When this preferences is set, Engine Driver will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen</p></li>
 </ul>
-<p><br /></p>
-<dl class="footnote brackets">
-<dt class="label" id="pct"><span class="brackets"><a class="fn-backref" href="#id3">1</a></span></dt>
+<blockquote>
+<div><dl class="footnote brackets">
+<dt class="label" id="pct"><span class="brackets"><a class="fn-backref" href="#id4">1</a></span></dt>
 <dd><p>The actual amounts shown in the <em>Speed Indicator</em> will depend on the <code class="docutils literal notranslate"><span class="pre">Speed</span> <span class="pre">Units</span></code> chosen in the  <a class="reference external" href="../configuration/preferences.html#speed-units">Speed Units preference</a>.</p>
 </dd>
 </dl>
 </div></blockquote>
+</div></blockquote>
 </section>
 <section id="stop-button">
-<h5><a class="toc-backref" href="#id69">Stop Button</a><a class="headerlink" href="#stop-button" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id112">Stop Button</a><a class="headerlink" href="#stop-button" title="Permalink to this heading"></a></h5>
 <blockquote>
+<div><blockquote>
 <div><a class="reference internal image-reference" href="../_images/stop_button_horizontal.png"><img alt="../_images/stop_button_horizontal.png" src="../_images/stop_button_horizontal.png" style="width: 141.6px; height: 59.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+</div></blockquote>
+<p>Clicking the <code class="docutils literal notranslate"><span class="pre">Stop</span></code> button of a throttle will the loco or consists / multiple unit controlled by that throttle.  If the locos have momentum configured in the decoded it/they will slow then stop.</p>
+<blockquote>
+<div><div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference external" href="emergencystopbutton">Emergeny Stop Action Bar button</a> for information on stopping locos immediately, overriding the momentum setting.</p>
+</div>
+</div></blockquote>
 </div></blockquote>
 </section>
 <section id="speed-buttons">
-<h5><a class="toc-backref" href="#id70">Speed Buttons</a><a class="headerlink" href="#speed-buttons" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id113">Speed Buttons</a><a class="headerlink" href="#speed-buttons" title="Permalink to this heading"></a></h5>
 <blockquote>
 <div><a class="reference internal image-reference" href="../_images/speed_buttons_horizontal.png"><img alt="../_images/speed_buttons_horizontal.png" src="../_images/speed_buttons_horizontal.png" style="width: 490.0px; height: 61.0px;" /></a>
 <p>The Throttles may optionally be configured have simple buttons that allow you to increase or decrease the loco’s speed in pre-defined steps. The buttons are displayed at either end of the <em>speed sliders</em>.</p>
@@ -719,59 +1112,117 @@ Touch another <em>Speed Indicator</em> to change which Throttle the Hardware Vol
 <li><p>the <span class="guilabel">++</span> will <strong>increase</strong> the throttle speed by the <a class="reference external" href="../configuration/preferences.html#speed-button-change-amount">Speed Button Change Amount</a>.</p></li>
 <li><p>the <span class="guilabel">–</span> will <strong>decrease</strong> the throttle speed by the <a class="reference external" href="../configuration/preferences.html#speed-button-change-amount">Speed Button Change Amount</a>.</p></li>
 </ul>
-<p>For the Horizontal Sliders only, The position of these buttons in relation to the speed sliders (the space between), can be altered with the <a class="reference external" href="configuration/preferences.html#throttle-speed-slider-margin">Speed Slider Margin</a> preference.</p>
+<p>For the Horizontal Sliders only, The position of these buttons in relation to the speed sliders (the space between), can be altered with the <a class="reference internal" href="../configuration/preferences.html#throttle-speed-slider-margin"><span class="std std-ref">Speed Slider Margin</span></a> preference.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
-<p>See the <a class="reference external" href="../configuration/preferences.html#display-speed-buttons">Display Speed Buttons?</a> preference for more information o enabling these buttons.</p>
-<p>See the <a class="reference external" href="../configuration/preferences.html#speed-button-change-amount">Speed Button Change Amount</a> preference for information on the abount that</p>
+<p>See the <a class="reference internal" href="../configuration/preferences.html#display-speed-buttons"><span class="std std-ref">Display Speed Buttons?</span></a> preference for more information on enabling these buttons.</p>
+<p>See the <a class="reference internal" href="../configuration/preferences.html#speed-button-change-amount"><span class="std std-ref">Speed Button Change Amount</span></a> preference for information on the abount that</p>
 </div>
 </div></blockquote>
 </section>
 <section id="direction-buttons-area">
-<h5><a class="toc-backref" href="#id71">Direction Buttons Area</a><a class="headerlink" href="#direction-buttons-area" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id114">Direction Buttons Area</a><a class="headerlink" href="#direction-buttons-area" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
-<a class="reference internal image-reference" href="../_images/direction_buttons.png"><img alt="../_images/direction_buttons.png" src="../_images/direction_buttons.png" style="width: 396.0px; height: 97.60000000000001px;" /></a>
-<p>Each Throttle on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will display <span class="guilabel">Forward</span> and <span class="guilabel">Reverse</span> direction buttons, depending on the <code class="docutils literal notranslate"><span class="pre">Throttle</span> <span class="pre">Screen</span> <span class="pre">Layout</span></code> in the  <a class="reference external" href="../configuration/preferences.html#throttle-screen-layout">Throttle Screen Layout</a> preference.  ‘Shunting/Switching’ layouts do not show the direction buttons.</p>
+<div><a class="reference internal image-reference" href="../_images/direction_buttons.png"><img alt="../_images/direction_buttons.png" src="../_images/direction_buttons.png" style="width: 396.0px; height: 97.60000000000001px;" /></a>
+<p>Each Throttle on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will display <span class="guilabel">Forward</span> and <span class="guilabel">Reverse</span> direction buttons, depending on the <code class="docutils literal notranslate"><span class="pre">Throttle</span> <span class="pre">Screen</span> <span class="pre">Layout</span></code> in the  <a class="reference internal" href="../configuration/preferences.html#throttle-screen-layout"><span class="std std-ref">Throttle Screen Layout</span></a> preference.  ‘Shunting/Switching’ layouts do not show the direction buttons.</p>
 <p>Change direction while moving preference.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference internal" href="../configuration/preferences.html#direction-change-while-moving"><span class="std std-ref">Direction change while moving?</span></a>  and <a class="reference internal" href="../configuration/preferences.html#stop-on-direction-change"><span class="std std-ref">Stop on Direction change?</span></a> preferences for information on preferences which alter when the buttons are available and the way the they work.</p>
+</div>
 </div></blockquote>
 </section>
 <section id="function-buttons-scroll-area">
-<h5><a class="toc-backref" href="#id72">Function Buttons Scroll Area</a><a class="headerlink" href="#function-buttons-scroll-area" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id115">Function Buttons Scroll Area</a><a class="headerlink" href="#function-buttons-scroll-area" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
-<p>DCC Function Buttons are displayed here.  If there are too many to display in the screen area allocated, then the area becomes scrollable (without scroll bars) so that they can all be viewed and pressed as needed.</p>
-<p>All throttle layouts other the the ‘Simple’ layout show a <em>Function Buttons Scroll Area</em> by default.  For the ‘Simple’ layout it must be enable in the preferences if required.</p>
-<p>Will show 0-26 function buttons, which show either:</p>
+<div><p>The <em>Function Buttons Scroll Area</em> will show form 0 (zero) to 26 function buttons depending on a number of factors. Each button will show either:</p>
 <ul class="simple">
-<li><p>labels provided from the roster</p></li>
+<li><p>Labels provided from the roster, which can be individually specified for each loco in the roster</p></li>
 <li><p>The default labels for <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>  (which can be changed)</p></li>
 </ul>
-<p>For roster Entries you need to edit the Function buttons in the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>, or configure <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to use the default labels.</p>
 <p>The <em>Function Button area</em> can also show:</p>
 <ul class="simple">
 <li><p>IPLS buttons  (In Phone Loco Sounds)</p></li>
 <li><p>Pause</p></li>
 <li><p>Limit Speed</p></li>
 </ul>
+<p>The <em>Function Buttons Scroll Area</em> is shown by default on all Throttle Screen layouts except <code class="docutils literal notranslate"><span class="pre">Simple</span></code>.  It can be enable fot the <code class="docutils literal notranslate"><span class="pre">Simple</span></code> layout</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
-<p>see IPLS</p>
-<p>see Defualt Functions</p>
-<p>see pause and Limit speed</p>
-<p>see the function button size preference for the simple layout</p>
+<p>See the <a class="reference internal" href="../configuration/preferences.html#function-buttons-area-size"><span class="std std-ref">Function Button Area Size</span></a> preference for information on how to show the <em>Function Button Scroll Area</em> on the simple layout.</p>
 </div>
 </div></blockquote>
 </section>
+<section id="dcc-function-buttons">
+<h5><a class="toc-backref" href="#id116">DCC Function buttons</a><a class="headerlink" href="#dcc-function-buttons" title="Permalink to this heading"></a></h5>
+<div class="admonition-todo admonition" id="id7">
+<p class="admonition-title">Todo</p>
+<p>DCC Function buttons</p>
+<p>DCC Function Buttons are displayed here.  If there are too many to display in the screen area allocated, then the area becomes scrollable (without scroll bars) so that they can all be viewed and pressed as needed.</p>
+<p>All throttle layouts other than the ‘Simple’ layout show a <em>Function Buttons Scroll Area</em> by default.  For the ‘Simple’ layout it must be enable in the preferences if required.</p>
+<p>Will show from 0 (zero) to 26 DCC function buttons, depending on a number of factors. Each button will show either:</p>
+<ul class="simple">
+<li><p>Labels provided from the roster, which can be individually specified for each loco in the roster</p></li>
+<li><p>The default labels for <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>  (which can be changed)</p></li>
+</ul>
+<p>If the loco (or first loco of a consist/multiple unit) was selected from the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>.  This is also trun if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.</p>
+<p>If the loco (or first loco of a consist/multiple unit) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> in the Default Functions.</p>
+<p>The behaviour of the Function Buttons for locos selected from the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> roster can be overridden with the <a class="reference internal" href="../configuration/preferences.html#use-default-function-labels"><span class="std std-ref">Use default function labels?</span></a> preference.  If this is enabled, the locos selected from the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> roster will also show the Default Functions labels.</p>
+<p>Clicking on any button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of differnt ways.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference external" href="FunctionDefaultsScreen">Function Defaults Screen</a> section for more information on configuring the labels and number of <em>default function</em> buttons.</p>
+<p>See the <a class="reference internal" href="../configuration/functions.html"><span class="doc">Function Buttons</span></a> page for more information on the DCC Function buttons.</p>
+<p>For labels from Roster Entries you need to edit the Function buttons in the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>, or configure <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to use the default labels.</p>
+</div>
+</div>
+</section>
+<section id="pause-and-limit-speed-buttons">
+<h5><a class="toc-backref" href="#id117">Pause and Limit Speed buttons</a><a class="headerlink" href="#pause-and-limit-speed-buttons" title="Permalink to this heading"></a></h5>
+<div class="admonition-todo admonition" id="id8">
+<p class="admonition-title">Todo</p>
+<p>Pause and Limit Speed buttons</p>
+<blockquote>
+<div><p>The <em>Function Button area</em> can also show:
+* Pause
+* Limit Speed</p>
+</div></blockquote>
+<p>These are optional buttons</p>
+<blockquote>
+<div><div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference internal" href="../configuration/preferences.html#limit-speed-pause-button-preferences"><span class="std std-ref">‘Limit Speed’ &amp; ‘Pause’ button Preferences</span></a> section on the Preferences page for more information on these buttons.</p>
+</div>
+</div></blockquote>
+</div>
+</section>
+<section id="in-phone-loco-sounds-buttons">
+<h5><a class="toc-backref" href="#id118">In Phone Loco Sounds buttons</a><a class="headerlink" href="#in-phone-loco-sounds-buttons" title="Permalink to this heading"></a></h5>
+<div class="admonition-todo admonition" id="id9">
+<p class="admonition-title">Todo</p>
+<p>In Phone Loco Sounds buttons</p>
+<blockquote>
+<div><p>The <em>Function Button area</em> can also show the IPLS buttons  (In Phone Loco Sounds)</p>
+</div></blockquote>
+<p>These are optional buttons</p>
+<blockquote>
+<div><div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See the <a class="reference external" href="../configuration/ipls.html">In Phone Loco Sounds (IPLS)</a> page for more information on the IPLS buttons</p>
+</div>
+</div></blockquote>
+</div>
+</section>
 </section>
 <section id="web-view-area-throttle-web-view">
-<h4><a class="toc-backref" href="#id73">Web View Area (Throttle Web View)</a><a class="headerlink" href="#web-view-area-throttle-web-view" title="Permalink to this heading"></a></h4>
-<blockquote>
-<div><p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id119">Web View Area (Throttle Web View)</a><a class="headerlink" href="#web-view-area-throttle-web-view" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id10">
+<p class="admonition-title">Todo</p>
+<p>Web View Area (Throttle Web View)</p>
+</div>
 <p>Shows a web browser in the lower half of the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
 <p>Your JMRI Layout panels can be displayed here if you have configured them in JMRI.</p>
 <p>Anything that can be shown in the <a class="reference external" href="./operation/interface.html#web-view-screen">Web View Screen</a> can equally be shown here, just in a smaller space.</p>
-</div></blockquote>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>see preference</p>
@@ -781,7 +1232,7 @@ Touch another <em>Speed Indicator</em> to change which Throttle the Hardware Vol
 </div>
 </section>
 <section id="action-bar-throttle-screen">
-<h4><a class="toc-backref" href="#id74">Action Bar (Throttle Screen)</a><a class="headerlink" href="#action-bar-throttle-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id120">Action Bar (Throttle Screen)</a><a class="headerlink" href="#action-bar-throttle-screen" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/action_bar.png"><img alt="../_images/action_bar.png" class="align-right" src="../_images/action_bar.png" style="width: 237.60000000000002px; height: 33.0px;" /></a>
 <p>The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.</p>
 <p>In the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> the Action Bar can display:</p>
@@ -814,7 +1265,7 @@ Touch another <em>Speed Indicator</em> to change which Throttle the Hardware Vol
 </div>
 </section>
 <section id="overflow-menu-throttle-screen">
-<h4><a class="toc-backref" href="#id75">Overflow Menu (Throttle Screen)</a><a class="headerlink" href="#overflow-menu-throttle-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id121">Overflow Menu (Throttle Screen)</a><a class="headerlink" href="#overflow-menu-throttle-screen" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/menu_throttle.png"><img alt="../_images/menu_throttle.png" class="align-right" src="../_images/menu_throttle.png" style="width: 92.73px; height: 197.34px;" /></a>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the <a class="reference external" href="../operation/interface.html#main-screens">main screens</a> is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
@@ -843,7 +1294,7 @@ It will show different options depending on a) the particular screen, b) prefere
 <a class="reference internal image-reference" href="../_images/background_fill.png"><img alt="../_images/background_fill.png" class="align-right" src="../_images/background_fill.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
 </section>
 <section id="background">
-<h4><a class="toc-backref" href="#id76">Background</a><a class="headerlink" href="#background" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id122">Background</a><a class="headerlink" href="#background" title="Permalink to this heading"></a></h4>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can show a background image of your choosing on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.  Any image/photo on your device/phone can be used.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -851,14 +1302,17 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="immersive-mode-full-screen">
-<h4><a class="toc-backref" href="#id77">Immersive Mode (Full Screen)</a><a class="headerlink" href="#immersive-mode-full-screen" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id123">Immersive Mode (Full Screen)</a><a class="headerlink" href="#immersive-mode-full-screen" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id17">
+<p class="admonition-title">Todo</p>
+<p>Immersive Mode (Full Screen)</p>
+</div>
 </section>
 <section id="swipe-left-right-from-throttle">
-<h4><a class="toc-backref" href="#id78">Swipe Left / Right (From Throttle)</a><a class="headerlink" href="#swipe-left-right-from-throttle" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id124">Swipe Left / Right (From Throttle)</a><a class="headerlink" href="#swipe-left-right-from-throttle" title="Permalink to this heading"></a></h4>
 <p>Swiping Left from the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will take you to the <a class="reference internal" href="#routes-screen">Routes Screen</a>, unless it has been disabled in the preferences</p>
 <p>Swiping Right from the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will take you to the <a class="reference internal" href="#turnouts-points-screen">Turnouts/Points Screen</a>, unless it has been disabled in the preferences</p>
-<p>By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the <a class="reference internal" href="#id30"><span class="std std-ref">Web View Screen</span></a> and <em>Throttle Web view</em> causes problems.</p>
+<p>By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the <a class="reference internal" href="#id46"><span class="std std-ref">Web View Screen</span></a> and <em>Throttle Web view</em> causes problems.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference external" href="./configuration/preferences.html#left-right-swipe-preferences">Left right swipe preferences</a> for information on how to enable and disable which screens are in the Left / Right swipe sequence.</p>
@@ -866,18 +1320,27 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="swipe-up-down">
-<h4><a class="toc-backref" href="#id79">Swipe Up / Down</a><a class="headerlink" href="#swipe-up-down" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id125">Swipe Up / Down</a><a class="headerlink" href="#swipe-up-down" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id18">
+<p class="admonition-title">Todo</p>
+<p>Swipe Up / Down</p>
+</div>
 </section>
 <section id="accelerometer-shake">
-<h4><a class="toc-backref" href="#id80">Accelerometer (Shake)</a><a class="headerlink" href="#accelerometer-shake" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id126">Accelerometer (Shake)</a><a class="headerlink" href="#accelerometer-shake" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id19">
+<p class="admonition-title">Todo</p>
+<p>Accelerometer (Shake)</p>
+</div>
 </section>
 </section>
 <hr class="docutils" />
 <section id="turnouts-points-screen">
-<h3><a class="toc-backref" href="#id81">Turnouts/Points Screen</a><a class="headerlink" href="#turnouts-points-screen" title="Permalink to this heading"></a></h3>
-<p><span style="color:red">TODO</span></p>
+<h3><a class="toc-backref" href="#id127">Turnouts/Points Screen</a><a class="headerlink" href="#turnouts-points-screen" title="Permalink to this heading"></a></h3>
+<div class="admonition-todo admonition" id="id20">
+<p class="admonition-title">Todo</p>
+<p>Turnouts/Points Screen</p>
+</div>
 <p>Accessed from any of the main screens by the <span class="menuselection">Menu ‣ Turnouts`</span> or <span class="menuselection">Menu ‣ Points</span> or by swiping right from the Throttle Screen if enabled in the Left with the <code class="docutils literal notranslate"><span class="pre">Swipe</span> <span class="pre">through</span> <span class="pre">Turnouts?</span></code> or <code class="docutils literal notranslate"><span class="pre">Swipe</span> <span class="pre">through</span> <span class="pre">Points?</span></code> preference: <span class="menuselection">Menu ‣ Preferences ‣ Left/Right Swipe Preferences ‣ Swipe through Turnouts/Points</span></p>
 <p>This screen allows you to display all Turnouts/Points that have been defined in JMRI.</p>
 <p>Turnouts/Points can be changed from Closed to Thrown and vice versa be pressing on either the <code class="docutils literal notranslate"><span class="pre">Closed</span></code> or <code class="docutils literal notranslate"><span class="pre">Thrown</span></code> buttons</p>
@@ -887,13 +1350,16 @@ It will show different options depending on a) the particular screen, b) prefere
 <li><p>CLose</p></li>
 </ul>
 <p><strong>Entry</strong></p>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id21">
+<p class="admonition-title">Todo</p>
+<p>Turnouts/Points Screen - Entry</p>
+</div>
 <p><strong>Filter by location</strong></p>
 <p>The ‘Turnout/Points List’ can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name is a ‘Location’, followed by a common separator, then the actual name for the Turnout/Point name.  The ‘filter’ then allows you to select one of those locations and <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can just show the Turnout/Points at the ‘Location’.</p>
 <p>The <a class="reference external" href="../configuration/preferences.html#location-delimiter">Location Delimiter</a> preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (“:”) but any character can be used.</p>
 <p><strong>Hide if no user name? preference</strong></p>
 <section id="action-bar-turnouts-points-screen">
-<h4><a class="toc-backref" href="#id82">Action Bar (Turnouts/Points Screen)</a><a class="headerlink" href="#action-bar-turnouts-points-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id128">Action Bar (Turnouts/Points Screen)</a><a class="headerlink" href="#action-bar-turnouts-points-screen" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/action_bar.png"><img alt="../_images/action_bar.png" class="align-right" src="../_images/action_bar.png" style="width: 237.60000000000002px; height: 33.0px;" /></a>
 <p>The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.</p>
 <p>In the <a class="reference internal" href="#turnouts-points-screen"><span class="std std-ref">Turnouts/Points Screen</span></a> the Action Bar can display:</p>
@@ -921,7 +1387,7 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="overflow-menu-turnouts-points-screen">
-<h4><a class="toc-backref" href="#id83">Overflow Menu (Turnouts/Points Screen)</a><a class="headerlink" href="#overflow-menu-turnouts-points-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id129">Overflow Menu (Turnouts/Points Screen)</a><a class="headerlink" href="#overflow-menu-turnouts-points-screen" title="Permalink to this heading"></a></h4>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the <a class="reference external" href="../operation/interface.html#main-screens">main screens</a> is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
 <p>Specific to the <em>Turnouts/Points  Screen</em>, the Overflow Menu can display:</p>
@@ -940,10 +1406,10 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="swipe-left-right-from-turnouts-points">
-<h4><a class="toc-backref" href="#id84">Swipe Left / Right (From Turnouts/Points)</a><a class="headerlink" href="#swipe-left-right-from-turnouts-points" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id130">Swipe Left / Right (From Turnouts/Points)</a><a class="headerlink" href="#swipe-left-right-from-turnouts-points" title="Permalink to this heading"></a></h4>
 <p>Swiping Left from the <a class="reference internal" href="#turnouts-points-screen"><span class="std std-ref">Turnouts/Points Screen</span></a> will take you to the <a class="reference internal" href="#throttle-screen">Throttle Screen</a>, unless it has been disabled in the preferences</p>
 <p>Swiping Right from the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> will take you to the <a class="reference external" href="./operation/interface.html#web-view-screen">Web View Screen</a>, unless it has been disabled in the preferences</p>
-<p>By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the <a class="reference internal" href="#id30"><span class="std std-ref">Web View Screen</span></a> and <em>Throttle Web view</em> causes problems.</p>
+<p>By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the <a class="reference internal" href="#id46"><span class="std std-ref">Web View Screen</span></a> and <em>Throttle Web view</em> causes problems.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference external" href="./configuration/preferences.html#left-right-swipe-preferences">Left right swipe preferences</a> for information on how to enable and disable which screens are in the Left / Right swipe sequence.</p>
@@ -953,22 +1419,34 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 <hr class="docutils" />
 <section id="routes-screen">
-<h3><a class="toc-backref" href="#id85">Routes Screen</a><a class="headerlink" href="#routes-screen" title="Permalink to this heading"></a></h3>
-<p><span style="color:red">TODO</span></p>
+<h3><a class="toc-backref" href="#id131">Routes Screen</a><a class="headerlink" href="#routes-screen" title="Permalink to this heading"></a></h3>
+<div class="admonition-todo admonition" id="id31">
+<p class="admonition-title">Todo</p>
+<p>Routes Screen</p>
+</div>
 <p>Accessed from any of the main screens by the menu <span class="menuselection">Menu ‣ Routes</span> or by swiping left from the Throttle Screen if enabled in the Left with the <code class="docutils literal notranslate"><span class="pre">Swipe</span> <span class="pre">through</span> <span class="pre">Routes?</span></code> preference: <span class="menuselection">Menu ‣ Preferences ‣ Left/Right Swipe Preferences ‣ Swipe through Routes</span></p>
-<p>This screen allows you to display all Routes that have been defined in JMRI or DCC++EX.</p>
+<p>This screen allows you to display all Routes that have been defined in JMRI or DCC-EX EX-CommandStation.</p>
 <p><strong>Enter</strong></p>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id32">
+<p class="admonition-title">Todo</p>
+<p>Routes Screen - Enter</p>
+</div>
 <p><strong>List</strong></p>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id33">
+<p class="admonition-title">Todo</p>
+<p>Routes Screen - List</p>
+</div>
 <p><strong>Filter by location</strong></p>
 <p>The ‘Routes List’ can be filtered.  The filtering relies on the idea that the first part of every Route name is a ‘Location’, followed by a common separator, then the actual name for the Route name.  The ‘filter’ then allows you to select one of those locations and <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can just show the Routes at the ‘Location’.</p>
 <p>The <a class="reference external" href="../configuration/preferences.html#location-delimiter">Location Delimiter</a> preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (“:”) but any character can be used.</p>
 <p>Hide Sys Route Names? preference</p>
 <p>Hide if no user name? preference</p>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id35">
+<p class="admonition-title">Todo</p>
+<p>Routes Screen - Filter</p>
+</div>
 <section id="action-bar-routes-screen">
-<h4><a class="toc-backref" href="#id86">Action Bar (Routes Screen)</a><a class="headerlink" href="#action-bar-routes-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id132">Action Bar (Routes Screen)</a><a class="headerlink" href="#action-bar-routes-screen" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/action_bar.png"><img alt="../_images/action_bar.png" class="align-right" src="../_images/action_bar.png" style="width: 237.60000000000002px; height: 33.0px;" /></a>
 <p>The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.</p>
 <p>In the <a class="reference internal" href="#routes-screen"><span class="std std-ref">Routes Screen</span></a> the Action Bar can display:</p>
@@ -995,7 +1473,7 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="overflow-menu-routes-screen">
-<h4><a class="toc-backref" href="#id87">Overflow Menu (Routes Screen)</a><a class="headerlink" href="#overflow-menu-routes-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id133">Overflow Menu (Routes Screen)</a><a class="headerlink" href="#overflow-menu-routes-screen" title="Permalink to this heading"></a></h4>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the <a class="reference external" href="../operation/interface.html#main-screens">main screens</a> is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
 <p>Specific to the <a class="reference internal" href="#routes-screen"><span class="std std-ref">Routes Screen</span></a>, the Overflow Menu can display:</p>
@@ -1014,10 +1492,10 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="swipe-left-right-from-routes">
-<h4><a class="toc-backref" href="#id88">Swipe Left / Right (From Routes)</a><a class="headerlink" href="#swipe-left-right-from-routes" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id134">Swipe Left / Right (From Routes)</a><a class="headerlink" href="#swipe-left-right-from-routes" title="Permalink to this heading"></a></h4>
 <p>Swiping Left from the <a class="reference internal" href="#routes-screen"><span class="std std-ref">Routes Screen</span></a> will take you to the <a class="reference external" href="./operation/interface.html#web-view-screen">Web View Screen</a>, unless it has been disabled in the preferences</p>
 <p>Swiping Right from the <a class="reference internal" href="#routes-screen"><span class="std std-ref">Routes Screen</span></a> will take you to the <a class="reference internal" href="#throttle-screen">Throttle Screen</a>, unless it has been disabled in the preferences</p>
-<p>By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the <a class="reference internal" href="#id30"><span class="std std-ref">Web View Screen</span></a> and <em>Throttle Web view</em> causes problems.</p>
+<p>By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the <a class="reference internal" href="#id46"><span class="std std-ref">Web View Screen</span></a> and <em>Throttle Web view</em> causes problems.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference external" href="./configuration/preferences.html#left-right-swipe-preferences">Left right swipe preferences</a> for information on how to enable and disable which screens are in the Left / Right swipe sequence.</p>
@@ -1026,11 +1504,14 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 </section>
 <hr class="docutils" />
-<section id="id30">
-<h3><a class="toc-backref" href="#id89">Web View Screen</a><a class="headerlink" href="#id30" title="Permalink to this heading"></a></h3>
+<section id="id46">
+<h3><a class="toc-backref" href="#id135">Web View Screen</a><a class="headerlink" href="#id46" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/web_view_screen.png"><img alt="../_images/web_view_screen.png" class="align-right" src="../_images/web_view_screen.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
 <a class="reference internal image-reference" href="../_images/web_view_screen2.png"><img alt="../_images/web_view_screen2.png" class="align-right" src="../_images/web_view_screen2.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id47">
+<p class="admonition-title">Todo</p>
+<p>Web View Screen</p>
+</div>
 <p>Accessed from any of the main screens by the menu <span class="menuselection">Menu ‣ Web</span> or by swiping left or right twice from the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> if enabled in the Left with the <code class="docutils literal notranslate"><span class="pre">Swipe</span> <span class="pre">through</span> <span class="pre">Web?</span></code> preference: <span class="menuselection">Menu ‣ Preferences ‣ Left/Right Swipe Preferences ‣ Swipe through Web</span>
 It can also be accessed, if the <code class="docutils literal notranslate"><span class="pre">Screen</span> <span class="pre">orientation</span></code> preference is set to <code class="docutils literal notranslate"><span class="pre">Auto</span> <span class="pre">Web</span></code>, by rotating the Android Device/Phone.</p>
 <p>This screen displays a web browser interface that lets you view any web page. Normally this will be a web page on your JMRI server.</p>
@@ -1063,10 +1544,10 @@ It can also be accessed, if the <code class="docutils literal notranslate"><span
 </ul>
 <p>Tap on any of the Open Windows to expand its view.  You can then resize the panel by pinching and zooming.  It is sometimes useful to rotate your device to landscape mode, so as to better view your layout.</p>
 <section id="action-bar-web-view-screen">
-<h4><a class="toc-backref" href="#id90">Action Bar (Web View Screen)</a><a class="headerlink" href="#action-bar-web-view-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id136">Action Bar (Web View Screen)</a><a class="headerlink" href="#action-bar-web-view-screen" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/action_bar.png"><img alt="../_images/action_bar.png" class="align-right" src="../_images/action_bar.png" style="width: 237.60000000000002px; height: 33.0px;" /></a>
 <p>The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.</p>
-<p>In the <a class="reference internal" href="#id30"><span class="std std-ref">Web View Screen</span></a> the Action Bar can display:</p>
+<p>In the <a class="reference internal" href="#id46"><span class="std std-ref">Web View Screen</span></a> the Action Bar can display:</p>
 <ul class="simple">
 <li><p>The app name (<span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>)</p></li>
 <li><p>Optionally configured information:</p>
@@ -1090,10 +1571,10 @@ It can also be accessed, if the <code class="docutils literal notranslate"><span
 </div>
 </section>
 <section id="overflow-menu-web-view-screen">
-<h4><a class="toc-backref" href="#id91">Overflow Menu (Web View Screen)</a><a class="headerlink" href="#overflow-menu-web-view-screen" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id137">Overflow Menu (Web View Screen)</a><a class="headerlink" href="#overflow-menu-web-view-screen" title="Permalink to this heading"></a></h4>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the <a class="reference external" href="../operation/interface.html#main-screens">main screens</a> is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
-<p>Specific to the <a class="reference internal" href="#id30"><span class="std std-ref">Web View Screen</span></a>, the Overflow Menu can display:</p>
+<p>Specific to the <a class="reference internal" href="#id46"><span class="std std-ref">Web View Screen</span></a>, the Overflow Menu can display:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="../operation/interface.html#throttle-screen">Throttle</a> (All except the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> only)</p></li>
 <li><p><a class="reference external" href="../operation/interface.html#turnouts-points-screen">Turnouts/Points</a> (All except the <em>Turnout/Points Screen</em> only)</p></li>
@@ -1110,13 +1591,16 @@ It will show different options depending on a) the particular screen, b) prefere
 </div>
 </section>
 <section id="swipe-left-right-web-view-screen">
-<h4><a class="toc-backref" href="#id92">Swipe Left / Right (Web View Screen)</a><a class="headerlink" href="#swipe-left-right-web-view-screen" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id138">Swipe Left / Right (Web View Screen)</a><a class="headerlink" href="#swipe-left-right-web-view-screen" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id57">
+<p class="admonition-title">Todo</p>
+<p>Swipe Left / Right (Web View Screen)</p>
+</div>
 </section>
 </section>
 </section>
 <section id="secondary-support-screens">
-<h2><a class="toc-backref" href="#id93">Secondary / Support Screens</a><a class="headerlink" href="#secondary-support-screens" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id139">Secondary / Support Screens</a><a class="headerlink" href="#secondary-support-screens" title="Permalink to this heading"></a></h2>
 <p>The follow additional screens will be shown at different times and for various reasons:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#intro-setup-wizard-screen">Intro/Setup Wizard Screen</a></p></li>
@@ -1126,7 +1610,7 @@ It will show different options depending on a) the particular screen, b) prefere
 <li><p><a class="reference internal" href="#power-screen">Power Screen</a></p></li>
 <li><p><a class="reference internal" href="#preferences-screen">Preferences Screen</a></p></li>
 <li><p><a class="reference internal" href="#in-phone-loco-sounds-screen">In Phone Loco Sounds Screen</a></p></li>
-<li><p><a class="reference internal" href="#function-defaults-screen">Function Defaults Screen</a></p></li>
+<li><p><a class="reference external" href="FunctionDefaultsScreen">Function Defaults Screen</a></p></li>
 <li><p><a class="reference internal" href="#gamepad-test-screen">Gamepad Test Screen</a></p></li>
 <li><p><a class="reference internal" href="#view-log-screen">View Log Screen</a></p></li>
 <li><p><a class="reference internal" href="#about-screen">About Screen</a></p></li>
@@ -1134,7 +1618,7 @@ It will show different options depending on a) the particular screen, b) prefere
 </ul>
 <hr class="docutils" />
 <section id="intro-setup-wizard-screen">
-<h3><a class="toc-backref" href="#id94">Intro/Setup Wizard Screen</a><a class="headerlink" href="#intro-setup-wizard-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id140">Intro/Setup Wizard Screen</a><a class="headerlink" href="#intro-setup-wizard-screen" title="Permalink to this heading"></a></h3>
 <p>The <em>Setup Wizard</em> will start automatically the first time you run <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> after you install it.  It sets some basic preferences and asks for the necessary permissions.  These preferences can be subsequently be changed use the : <span class="menuselection">Menu ‣ Preferences</span>, or by re-running the wizard, which can only be done from the menu on the <a class="reference internal" href="#connection-screen"><span class="std std-ref">Connection Screen</span></a>.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -1143,13 +1627,13 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 <hr class="docutils" />
 <section id="loco-select-screen">
-<h3><a class="toc-backref" href="#id95">Loco Select Screen</a><a class="headerlink" href="#loco-select-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id141">Loco Select Screen</a><a class="headerlink" href="#loco-select-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/select_roster_existing_consist.png"><img alt="../_images/select_roster_existing_consist.png" class="align-right" src="../_images/select_roster_existing_consist.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
 <p>The <a class="reference internal" href="#loco-select-screen"><span class="std std-ref">Loco Select Screen</span></a> allows you add locos to a (one of) throttle on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.  It also provides access to the additional screens for ‘Editing the Consist’, ‘Editing Lights’ and editing the ‘In Phone Locos Sounds’.</p>
 <p>The <a class="reference internal" href="#loco-select-screen"><span class="std std-ref">Loco Select Screen</span></a> is only shown when you click a <span class="guilabel">Select</span> button on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
 <p>Not that the <span class="guilabel">Select</span> button will should the Address(es) or the Name(s) of a Loco or Consist/Multiple Unit Train only the first loco is selected.  Click on the button will (while it is in this state) will again take to this screen to allow to you add additional Locos to the Consist/Multiple Unit Train, or make other changes to the  Consist/Multiple Unit Train.</p>
 <section id="selection-method">
-<h4><a class="toc-backref" href="#id96">Selection Method</a><a class="headerlink" href="#selection-method" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id142">Selection Method</a><a class="headerlink" href="#selection-method" title="Permalink to this heading"></a></h4>
 <p>There are four ways you can choose a loco for the Throttle.  Select one of the radio buttons depending on how you want to the choose the loco:</p>
 <ul class="simple">
 <li><p>DCC Address</p></li>
@@ -1159,82 +1643,127 @@ It will show different options depending on a) the particular screen, b) prefere
 </ul>
 </section>
 <section id="select-by-dcc-address">
-<h4><a class="toc-backref" href="#id97">Select by DCC Address</a><a class="headerlink" href="#select-by-dcc-address" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id143">Select by DCC Address</a><a class="headerlink" href="#select-by-dcc-address" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id58">
+<p class="admonition-title">Todo</p>
+<p>Select by DCC Address</p>
+</div>
 <p>Shown if you select <code class="docutils literal notranslate"><span class="pre">DCC</span> <span class="pre">Address</span></code> in the <a class="reference internal" href="#selection-method">Selection Method</a>.</p>
+<p>You can enter the loco’s DCC address (verify short or long), and press <span class="guilabel">Acquire</span> to select the loco.  You will then be taken back to the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
 </section>
 <section id="select-from-sever-roster">
-<h4><a class="toc-backref" href="#id98">Select from Sever Roster</a><a class="headerlink" href="#select-from-sever-roster" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id144">Select from Sever Roster</a><a class="headerlink" href="#select-from-sever-roster" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id59">
+<p class="admonition-title">Todo</p>
+<p>Select from Sever Roster</p>
+</div>
 <p>Shown if you select <code class="docutils literal notranslate"><span class="pre">Server</span> <span class="pre">Roster</span></code> in the <a class="reference internal" href="#selection-method">Selection Method</a>.</p>
-<p>Filter</p>
+<p>If the loco you want to control is in the list, simply click on it and you will be taken back to the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
+<p>For this to be possible, the Loco you want to control needs to be in the roster of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>.  Not all <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> support rosters.  Refer to the JMRI documentation or your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> device’s documentation for creating a roster.</p>
+<blockquote>
+<div><p>Filter</p>
 <p>Icons</p>
+<p>Icons - adding a local image</p>
+<p>Long Press to see details… (and add icon)</p>
+</div></blockquote>
 </section>
 <section id="select-from-recent-locos-list">
-<h4><a class="toc-backref" href="#id99">Select from Recent Locos List</a><a class="headerlink" href="#select-from-recent-locos-list" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id145">Select from Recent Locos List</a><a class="headerlink" href="#select-from-recent-locos-list" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id60">
+<p class="admonition-title">Todo</p>
+<p>Select from Recent Locos List</p>
+</div>
 <p>Shown if you select <code class="docutils literal notranslate"><span class="pre">Recent</span> <span class="pre">Locos</span></code> in the <a class="reference internal" href="#selection-method">Selection Method</a>.</p>
-<p>Icons</p>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> remembers the last 10 locos that you have selected. (That number can be increased or decreased with <a class="reference external" href="../configuration/preferences.html#maximum-recent-locos">Maximum Recent Locos</a> preference.)</p>
+<p>If the loco you want to control to is in the list, simply click on it and you will be taken back to the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
+<blockquote>
+<div><p>Icons - From Roster</p>
+<p>Long Press to see details…</p>
+<p>Swipe to remove entry…</p>
+</div></blockquote>
 </section>
 <section id="select-from-recent-consists-list">
-<h4><a class="toc-backref" href="#id100">Select from Recent Consists List</a><a class="headerlink" href="#select-from-recent-consists-list" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id146">Select from Recent Consists List</a><a class="headerlink" href="#select-from-recent-consists-list" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id61">
+<p class="admonition-title">Todo</p>
+<p>Select from Recent Consists List</p>
+</div>
 <p>Shown if you select <code class="docutils literal notranslate"><span class="pre">Recent</span> <span class="pre">Consists</span></code> in the <a class="reference internal" href="#selection-method">Selection Method</a>.</p>
+<p>Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.</p>
+<blockquote>
+<div><p>Swipe to remove entry…</p>
+</div></blockquote>
 </section>
 <section id="select-loco-on-screen-buttons">
-<h4><a class="toc-backref" href="#id101">Select Loco On Screen Buttons</a><a class="headerlink" href="#select-loco-on-screen-buttons" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id147">Select Loco On Screen Buttons</a><a class="headerlink" href="#select-loco-on-screen-buttons" title="Permalink to this heading"></a></h4>
 <section id="acquire">
-<h5><a class="toc-backref" href="#id102">Acquire</a><a class="headerlink" href="#acquire" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id148">Acquire</a><a class="headerlink" href="#acquire" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
+<div><p>Shown if you select <code class="docutils literal notranslate"><span class="pre">DCC</span> <span class="pre">Address</span></code> in the <a class="reference internal" href="#selection-method">Selection Method</a>.</p>
+<p>After you enter a loco’s DCC address you press <span class="guilabel">Acquire</span> to select the loco.  You will then be taken back to the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
 </div></blockquote>
 </section>
 <section id="release">
-<h5><a class="toc-backref" href="#id103">Release</a><a class="headerlink" href="#release" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id149">Release</a><a class="headerlink" href="#release" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
+<div><p>Shown if you have one or locos already selected (acquired) for that throttle.</p>
+<p>Clicking this button will release all the locos currently controlled by the throttle.</p>
 </div></blockquote>
 </section>
 <section id="edit-order-facing">
-<h5><a class="toc-backref" href="#id104">Edit Order &amp; Facing</a><a class="headerlink" href="#edit-order-facing" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id150">Edit Order &amp; Facing</a><a class="headerlink" href="#edit-order-facing" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
+<div><p>Shown if you have one or locos already selected (acquired) for that throttle.</p>
+<p>Clicking this button will show the <a class="reference external" href="ConsistEditScreen">ConsistEditScreen</a>.</p>
 </div></blockquote>
 </section>
 <section id="edit-lights">
-<h5><a class="toc-backref" href="#id105">Edit Lights</a><a class="headerlink" href="#edit-lights" title="Permalink to this heading"></a></h5>
+<h5><a class="toc-backref" href="#id151">Edit Lights</a><a class="headerlink" href="#edit-lights" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
+<div><p>Shown if you have one or locos already selected (acquired) for that throttle.</p>
+<p>Clicking this button will show the <a class="reference external" href="ConsistLightsEditScreen">ConsistLightsEditScreen</a>.</p>
 </div></blockquote>
 </section>
-<section id="id40">
-<h5><a class="toc-backref" href="#id106">Loco Sounds</a><a class="headerlink" href="#id40" title="Permalink to this heading"></a></h5>
+<section id="id62">
+<h5><a class="toc-backref" href="#id152">Loco Sounds</a><a class="headerlink" href="#id62" title="Permalink to this heading"></a></h5>
 <blockquote>
-<div><p><span style="color:red">TODO</span></p>
+<div><p>Shown if you have one or locos already selected (acquired) for that throttle.</p>
+<p>Clicking this button will show <a class="reference external" href="InPhoneLocoSoundsScreen">InPhoneLocoSoundsScreen</a>.</p>
 </div></blockquote>
 </section>
 </section>
 </section>
 <hr class="docutils" />
 <section id="consist-edit-screen">
-<h3><a class="toc-backref" href="#id107">Consist Edit Screen</a><a class="headerlink" href="#consist-edit-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id153">Consist Edit Screen</a><a class="headerlink" href="#consist-edit-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/consist_edit2.png"><img alt="../_images/consist_edit2.png" class="align-right" src="../_images/consist_edit2.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id63">
+<p class="admonition-title">Todo</p>
+<p>Consist Edit Screen</p>
+</div>
 <p>Shown if you add a second, or subsequent, loco to a throttle via the <span class="guilabel">Select</span> button, or if you click on the <span class="guilabel">Edit Order &amp; Facing</span> button on the <em>Select Loco Screen</em> (which will only be available if you have already acquired more than one loco on the throttle.)</p>
 <p><br /></p>
 <p><br /></p>
 <section id="lead-loco">
-<h4><a class="toc-backref" href="#id108">Lead Loco</a><a class="headerlink" href="#lead-loco" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id154">Lead Loco</a><a class="headerlink" href="#lead-loco" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id64">
+<p class="admonition-title">Todo</p>
+<p>Lead Loco</p>
+</div>
 </section>
 <section id="trailing-loco">
-<h4><a class="toc-backref" href="#id109">Trailing Loco</a><a class="headerlink" href="#trailing-loco" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id155">Trailing Loco</a><a class="headerlink" href="#trailing-loco" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id65">
+<p class="admonition-title">Todo</p>
+<p>Trailing Loco</p>
+</div>
 </section>
 <section id="consist-top">
-<h4><a class="toc-backref" href="#id110">Consist Top</a><a class="headerlink" href="#consist-top" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id156">Consist Top</a><a class="headerlink" href="#consist-top" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id66">
+<p class="admonition-title">Todo</p>
+<p>Consist Top</p>
+</div>
 <ul class="simple">
 <li><p>Change Facing</p></li>
 </ul>
@@ -1242,9 +1771,12 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 <hr class="docutils" />
 <section id="consist-lights-edit-screen">
-<h3><a class="toc-backref" href="#id111">Consist Lights Edit Screen</a><a class="headerlink" href="#consist-lights-edit-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id157">Consist Lights Edit Screen</a><a class="headerlink" href="#consist-lights-edit-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/consist_lights_edit2.png"><img alt="../_images/consist_lights_edit2.png" class="align-right" src="../_images/consist_lights_edit2.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id67">
+<p class="admonition-title">Todo</p>
+<p>Consist Lights Edit Screen</p>
+</div>
 <ul class="simple">
 <li><p>Unknown</p></li>
 <li><p>Follow Fn Btn</p></li>
@@ -1256,7 +1788,7 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 <hr class="docutils" />
 <section id="power-screen">
-<h3><a class="toc-backref" href="#id112">Power Screen</a><a class="headerlink" href="#power-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id158">Power Screen</a><a class="headerlink" href="#power-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/power.png"><img alt="../_images/power.png" class="align-right" src="../_images/power.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
 <p>Accessed from any of the main screen via : <span class="menuselection">Menu ‣ Preferences ‣ Left/Right Swipe Preferences ‣ Power</span> or from the Action Bar if enabled with the <a class="reference external" href="./configuration/preferences.html#layout-power-button">Layout Power button? preference</a> : <span class="menuselection">Menu ‣ Preferences ‣ Throttle Screen Action Bar Preferences ‣ Layout Power button?</span>.</p>
 <p>This screen allows you to toggle the state of track power to your layout.</p>
@@ -1270,7 +1802,7 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 <hr class="docutils" />
 <section id="preferences-screen">
-<h3><a class="toc-backref" href="#id113">Preferences Screen</a><a class="headerlink" href="#preferences-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id159">Preferences Screen</a><a class="headerlink" href="#preferences-screen" title="Permalink to this heading"></a></h3>
 <p>Accessed from any of the main screens via <span class="menuselection">Menu ‣ Preferences</span>.</p>
 <p>This screen allows you to personalise  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> for how you want it to use it.</p>
 <div class="note-ed-hidden-title admonition note">
@@ -1283,36 +1815,66 @@ It will show different options depending on a) the particular screen, b) prefere
 </section>
 <hr class="docutils" />
 <section id="in-phone-loco-sounds-screen">
-<h3><a class="toc-backref" href="#id114">In Phone Loco Sounds Screen</a><a class="headerlink" href="#in-phone-loco-sounds-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id160">In Phone Loco Sounds Screen</a><a class="headerlink" href="#in-phone-loco-sounds-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/ipls_screen.png"><img alt="../_images/ipls_screen.png" class="align-right" src="../_images/ipls_screen.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id68">
+<p class="admonition-title">Todo</p>
+<p>In Phone Loco Sounds Screen</p>
+</div>
 <p>Accessed from <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> by the <span class="menuselection">Menu ‣ Loco Sounds</span> or from the Status Bar if enabled with the <a class="reference external" href="./configuration/preferences.html#in-phone-sounds-button">In phone sounds button</a> preference.</p>
 <p><br /></p>
 <p><br /></p>
 <p><br /></p>
 </section>
 <hr class="docutils" />
-<section id="function-defaults-screen">
-<h3><a class="toc-backref" href="#id115">Function Defaults Screen</a><a class="headerlink" href="#function-defaults-screen" title="Permalink to this heading"></a></h3>
+<section id="id69">
+<h3><a class="toc-backref" href="#id161">Function Defaults Screen</a><a class="headerlink" href="#id69" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/function_defaults.png"><img alt="../_images/function_defaults.png" class="align-right" src="../_images/function_defaults.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id70">
+<p class="admonition-title">Todo</p>
+<p>Function Defaults Screen</p>
+</div>
 <p>Accessed from the menu on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> as <span class="menuselection">Menu ‣ Function Defaults</span>.</p>
 <p><br /></p>
 <p><br /></p>
 </section>
 <hr class="docutils" />
+<section id="dcc-ex-function-settings-screen">
+<h3><a class="toc-backref" href="#id162">DCC-EX Function Settings Screen</a><a class="headerlink" href="#dcc-ex-function-settings-screen" title="Permalink to this heading"></a></h3>
+<div class="admonition-todo admonition" id="id71">
+<p class="admonition-title">Todo</p>
+<p>DCC-EX Function Settings Screen</p>
+</div>
+<p>Accessed from the menu on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> as <span class="menuselection">Menu ‣ DCC-EX Function Settings</span>.</p>
+</section>
+<hr class="docutils" />
+<section id="dcc-ex-screen">
+<h3><a class="toc-backref" href="#id163">DCC-EX Screen</a><a class="headerlink" href="#dcc-ex-screen" title="Permalink to this heading"></a></h3>
+<div class="admonition-todo admonition" id="id72">
+<p class="admonition-title">Todo</p>
+<p>DCC-EX Screen</p>
+</div>
+<p>Accessed from the menu on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> as <span class="menuselection">Menu ‣ DCC-EX</span>.</p>
+</section>
+<hr class="docutils" />
 <section id="gamepad-test-screen">
-<h3><a class="toc-backref" href="#id116">Gamepad Test Screen</a><a class="headerlink" href="#gamepad-test-screen" title="Permalink to this heading"></a></h3>
-<p><span style="color:red">TODO</span></p>
+<h3><a class="toc-backref" href="#id164">Gamepad Test Screen</a><a class="headerlink" href="#gamepad-test-screen" title="Permalink to this heading"></a></h3>
+<div class="admonition-todo admonition" id="id73">
+<p class="admonition-title">Todo</p>
+<p>Gamepad Test Screen</p>
+</div>
 <p>Accessed from the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> via the <span class="menuselection">Menu ‣ Gamepads -&gt; Gamepad Test X</span>. (where ‘X’ is the number of the gamepad.)</p>
 <p><br /></p>
 <p><br /></p>
 </section>
 <hr class="docutils" />
 <section id="view-log-screen">
-<h3><a class="toc-backref" href="#id117">View Log Screen</a><a class="headerlink" href="#view-log-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id165">View Log Screen</a><a class="headerlink" href="#view-log-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/log_view.png"><img alt="../_images/log_view.png" class="align-right" src="../_images/log_view.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id74">
+<p class="admonition-title">Todo</p>
+<p>View Log Screen</p>
+</div>
 <p>Accessed from any of the main screens via <span class="menuselection">Menu ‣ View Log</span>.</p>
 <p>This screen allows you to view the internal Engine Driver log of events.
 This is sometimes useful for analysing problems.</p>
@@ -1323,9 +1885,12 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </section>
 <hr class="docutils" />
 <section id="about-screen">
-<h3><a class="toc-backref" href="#id118">About Screen</a><a class="headerlink" href="#about-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id166">About Screen</a><a class="headerlink" href="#about-screen" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/about.png"><img alt="../_images/about.png" class="align-right" src="../_images/about.png" style="width: 172.79999999999998px; height: 307.2px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id75">
+<p class="admonition-title">Todo</p>
+<p>About Screen</p>
+</div>
 <p>This screen displays</p>
 <ul class="simple">
 <li><p>Information about <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span></p></li>
@@ -1335,13 +1900,16 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </section>
 <hr class="docutils" />
 <section id="reconnecting-screen">
-<h3><a class="toc-backref" href="#id119">Reconnecting Screen</a><a class="headerlink" href="#reconnecting-screen" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id167">Reconnecting Screen</a><a class="headerlink" href="#reconnecting-screen" title="Permalink to this heading"></a></h3>
 <p>This screen displays if <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> has not been able to communicate with the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> within a specified time.</p>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id76">
+<p class="admonition-title">Todo</p>
+<p>Reconnecting Screen</p>
+</div>
 </section>
 </section>
 <section id="common-elements-and-features">
-<h2><a class="toc-backref" href="#id120">Common Elements and Features</a><a class="headerlink" href="#common-elements-and-features" title="Permalink to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id168">Common Elements and Features</a><a class="headerlink" href="#common-elements-and-features" title="Permalink to this heading"></a></h2>
 <p>This section describes some of the elements and features that appear throughout or affect the entire <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> app.</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#theme-styles">Theme / Styles</a></p></li>
@@ -1351,7 +1919,7 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </ul>
 <hr class="docutils" />
 <section id="theme-styles">
-<h3><a class="toc-backref" href="#id121">Theme / Styles</a><a class="headerlink" href="#theme-styles" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id169">Theme / Styles</a><a class="headerlink" href="#theme-styles" title="Permalink to this heading"></a></h3>
 <p>Themes provide different colours and textures to the buttons, backgrounds, sliders etc. for all the screens in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.  i.e. It changes the appearance of the entire app.</p>
 <p>There are five themes to choose from:</p>
 <table class="colwidths-given docutils align-default" style="width: 100%">
@@ -1394,7 +1962,7 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </section>
 <hr class="docutils" />
 <section id="localisation">
-<h3><a class="toc-backref" href="#id122">Localisation</a><a class="headerlink" href="#localisation" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id170">Localisation</a><a class="headerlink" href="#localisation" title="Permalink to this heading"></a></h3>
 <p>Changing the <em>Localisation</em> primarily changes the language used in the menus, buttons and messages throughout <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
 <p>Supported localisations are:</p>
 <ul class="simple">
@@ -1418,7 +1986,7 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </section>
 <hr class="docutils" />
 <section id="action-bar">
-<h3><a class="toc-backref" href="#id123">Action Bar</a><a class="headerlink" href="#action-bar" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id171">Action Bar</a><a class="headerlink" href="#action-bar" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/action_bar.png"><img alt="../_images/action_bar.png" class="align-right" src="../_images/action_bar.png" style="width: 360.0px; height: 50.0px;" /></a>
 <p>The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.</p>
 <p>The Action Bar can display:</p>
@@ -1446,13 +2014,13 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </ul>
 <p>The optional buttons are enabled and configured via the corresponding preferences in the <a class="reference external" href="../configuration/preferences.html#throttle-screen-action-bar-preferences">Throttle Screen Action Bar</a> preference group.  (Other than the Children’s Timer which is configured in the <a class="reference external" href="../configuration/preferences.html#children-s-timer-preferences">Children’s Timer</a> preference group.)</p>
 <section id="emergency-stop-button">
-<h4><a class="toc-backref" href="#id124">Emergency Stop Button</a><a class="headerlink" href="#emergency-stop-button" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id172">Emergency Stop Button</a><a class="headerlink" href="#emergency-stop-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/estop.png"><img alt="../_images/estop.png" class="align-right" src="../_images/estop.png" style="width: 48.0px; height: 48.0px;" /></a>
 <p>The <em>Emergency Stop</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#emergency-stop-button">Emergency Stop button?</a> preference.</p>
 <p>Clicking this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.</p>
 </section>
 <section id="track-power-button">
-<h4><a class="toc-backref" href="#id125">Track Power Button</a><a class="headerlink" href="#track-power-button" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id173">Track Power Button</a><a class="headerlink" href="#track-power-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/power_green.png"><img alt="../_images/power_green.png" class="align-right" src="../_images/power_green.png" style="width: 48.0px; height: 48.0px;" /></a>
 <p>The <em>Track Power</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#layout-power-button">Layout Power button?</a> preference.</p>
 <p><em>Track Power</em>, when pressed will turn on/off the power to the track.  The colour of the button will change colour:</p>
@@ -1463,35 +2031,41 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </ul>
 </section>
 <section id="flashlight-button">
-<h4><a class="toc-backref" href="#id126">Flashlight Button</a><a class="headerlink" href="#flashlight-button" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id174">Flashlight Button</a><a class="headerlink" href="#flashlight-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/flashlight_on.png"><img alt="../_images/flashlight_on.png" class="align-right" src="../_images/flashlight_on.png" style="width: 48.0px; height: 48.0px;" /></a>
 <p>The <em>Flashlight</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#flashlight-button">Flashlight button?</a> preference.</p>
 <p><em>Flashlight</em>, when pressed will turn on/off the Device’s camera light.</p>
 <p>The device / phone must have a camera to be able to use this feature.</p>
 </section>
 <section id="throttle-web-view-button">
-<h4><a class="toc-backref" href="#id127">Throttle Web View Button</a><a class="headerlink" href="#throttle-web-view-button" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id175">Throttle Web View Button</a><a class="headerlink" href="#throttle-web-view-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/web_view.png"><img alt="../_images/web_view.png" class="align-right" src="../_images/web_view.png" style="width: 48.0px; height: 48.0px;" /></a>
 <p>The <em>Throttle Web View</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#throttle-web-view-button">Throttle Web View button?</a> preference.</p>
 <p><em>Throttle Web View</em>, when pressed will show or hide the <a class="reference external" href="../operation/interface.html#web-view-area-throttle-web-view">Throttle Web View</a> panel on the <a class="reference internal" href="#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
 <p>Note: the <cite>Throttle Web View? &lt;../configuration/preferences.html#throttle-web-view&gt;</cite> preference must be enabled for this to have an effect.</p>
 </section>
 <section id="layout-switch-button">
-<h4><a class="toc-backref" href="#id128">Layout Switch Button</a><a class="headerlink" href="#layout-switch-button" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id176">Layout Switch Button</a><a class="headerlink" href="#layout-switch-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/throttle_switch_button.png"><img alt="../_images/throttle_switch_button.png" class="align-right" src="../_images/throttle_switch_button.png" style="width: 48.0px; height: 48.0px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id80">
+<p class="admonition-title">Todo</p>
+<p>Layout Switch Button</p>
+</div>
 <p>The <em>Layout Switch</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#show-layout-switch-button">Show Layout Switch button</a> preference.</p>
 <p>The <em>Layout Switch</em> buttons, when pressed …</p>
 </section>
 <section id="in-phone-loco-sound-button">
-<h4><a class="toc-backref" href="#id129">In Phone Loco Sound Button</a><a class="headerlink" href="#in-phone-loco-sound-button" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id177">In Phone Loco Sound Button</a><a class="headerlink" href="#in-phone-loco-sound-button" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id81">
+<p class="admonition-title">Todo</p>
+<p>In Phone Loco Sound Button</p>
+</div>
 <a class="reference internal image-reference" href="../_images/in_device_sounds_outline.png"><img alt="../_images/in_device_sounds_outline.png" class="align-right" src="../_images/in_device_sounds_outline.png" style="width: 48.0px; height: 48.0px;" /></a>
 <p>The <em>In Phone Loco Sounds</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#in-phone-sounds-button">In Phone sounbds Button</a> preference.</p>
 <p><em>In Phone Loco Sounds</em>, when clicked …</p>
 </section>
 <section id="children-s-timer-button">
-<h4><a class="toc-backref" href="#id130">Children’s Timer Button</a><a class="headerlink" href="#children-s-timer-button" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id178">Children’s Timer Button</a><a class="headerlink" href="#children-s-timer-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/timer.png"><img alt="../_images/timer.png" class="align-right" src="../_images/timer.png" style="width: 48.0px; height: 48.0px;" /></a>
 <p>The <em>Children’s Timer Button</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#show-timer-button">Show Timer Button?</a> preference.</p>
 <p>The <em>Children’s Timer Button</em>, when pressed will activate the Timer for the preset time period.</p>
@@ -1501,9 +2075,12 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 </div>
 </section>
 <section id="fast-clock">
-<h4><a class="toc-backref" href="#id131">Fast Clock</a><a class="headerlink" href="#fast-clock" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id179">Fast Clock</a><a class="headerlink" href="#fast-clock" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/fast_clock.png"><img alt="../_images/fast_clock.png" class="align-right" src="../_images/fast_clock.png" style="width: 123.5px; height: 45.0px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id82">
+<p class="admonition-title">Todo</p>
+<p>Fast Clock</p>
+</div>
 <p>The <em>Fast Clock</em> Action Bar button is enabled with the <a class="reference external" href="../configuration/preferences.html#fast-clock-display">Fast Clock Display</a> preference.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -1512,9 +2089,12 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 <p><br /></p>
 </section>
 <section id="children-s-timer-status-and-countdown">
-<h4><a class="toc-backref" href="#id132">Children’s Timer Status and Countdown</a><a class="headerlink" href="#children-s-timer-status-and-countdown" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id180">Children’s Timer Status and Countdown</a><a class="headerlink" href="#children-s-timer-status-and-countdown" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/childrens_timer_countdown.png"><img alt="../_images/childrens_timer_countdown.png" class="align-right" src="../_images/childrens_timer_countdown.png" style="width: 359.5px; height: 49.0px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id83">
+<p class="admonition-title">Todo</p>
+<p>Children’s Timer Status and Countdown</p>
+</div>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference external" href="../operation/advanced.html#children-s-timer">Children’s Timer part</a> of the Advance Operation page for more information.</p>
@@ -1522,20 +2102,26 @@ Internal storage <code class="docutils literal notranslate"><span class="pre">/A
 <p><br /></p>
 </section>
 <section id="full-screen-or-action-bar-only-left-right-swipe">
-<h4><a class="toc-backref" href="#id133">Full Screen or Action Bar Only left/right swipe</a><a class="headerlink" href="#full-screen-or-action-bar-only-left-right-swipe" title="Permalink to this heading"></a></h4>
-<p><span style="color:red">TODO</span></p>
+<h4><a class="toc-backref" href="#id181">Full Screen or Action Bar Only left/right swipe</a><a class="headerlink" href="#full-screen-or-action-bar-only-left-right-swipe" title="Permalink to this heading"></a></h4>
+<div class="admonition-todo admonition" id="id84">
+<p class="admonition-title">Todo</p>
+<p>Full Screen or Action Bar Only left/right swipe</p>
+</div>
 </section>
 <section id="withrottle-server-name">
-<h4><a class="toc-backref" href="#id134">WiThrottle Server Name</a><a class="headerlink" href="#withrottle-server-name" title="Permalink to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id182">WiThrottle Server Name</a><a class="headerlink" href="#withrottle-server-name" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/action_bar_server_name.png"><img alt="../_images/action_bar_server_name.png" class="align-right" src="../_images/action_bar_server_name.png" style="width: 320.0px; height: 53.0px;" /></a>
-<p><span style="color:red">TODO</span></p>
+<div class="admonition-todo admonition" id="id85">
+<p class="admonition-title">Todo</p>
+<p>WiThrottle Server Name</p>
+</div>
 <p><br /></p>
 <p><br /></p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="overflow-menu">
-<h3><a class="toc-backref" href="#id135">Overflow Menu</a><a class="headerlink" href="#overflow-menu" title="Permalink to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id183">Overflow Menu</a><a class="headerlink" href="#overflow-menu" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="../_images/menu_throttle.png"><img alt="../_images/menu_throttle.png" class="align-right" src="../_images/menu_throttle.png" style="width: 140.5px; height: 299.0px;" /></a>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the <a class="reference external" href="../operation/interface.html#main-screens">main screens</a> is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>

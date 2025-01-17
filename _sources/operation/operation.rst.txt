@@ -1,6 +1,6 @@
-*******************************************
+**********************
 Detailed Instructions
-*******************************************
+**********************
 
 .. meta::
    :keywords: operation
@@ -176,7 +176,7 @@ There three ways select a loco:
 
   If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-  The Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or you |WTS| device's documentation for creating a roster.
+  For this to be possible, the Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or your |WTS| device's documentation for creating a roster.
 
   Also see `Locomotive Icons <#locomotive-icons-in-the-roster>`_ below.
 
@@ -201,9 +201,9 @@ There two ways create a Consist / Multiple Unit train:
 
   **One at a time**
 
-  Adding additional locos the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
+  Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
 
-  After selecting each additional loco, you the Consist Edit screen will be shown. This allows you to:
+  After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:
 
   * Change the facing of each loco (except the front loco)
   * Change the order of the locos in the Consist / Multiple Unit
@@ -516,7 +516,7 @@ To make it easy to switch sound profiles we recommend enabling the Action Bar bu
 Automatic Loco Speed Step Sounds
 ''''''''''''''''''''''''''''''''
 
-Each IPLS Profile has a different number of speed steps. As the loco speed increases or decreases to a certain point a different sound will repeatedly play.  To try to emulate the momentum of the loco, there is a preset delay, and an option to not lip the sounds (which enforces a minimum delay) These can be altered with the `In Phone Momentum <../configuration/preferences.html#in-phone-momentum>`_ and the `Don't clip loco step sounds <../configuration/preferences.html#don-t-clip-loco-step-sounds>`_ preferences.
+Each IPLS Profile has a different number of speed steps. As the loco speed increases or decreases to a certain point a different sound will repeatedly play.  To try to emulate the momentum of the loco, there is a preset delay, and an option to not clip the sounds (which enforces a minimum delay) These can be altered with the `In Phone Momentum <../configuration/preferences.html#in-phone-momentum>`_ and the `Don't clip loco step sounds <../configuration/preferences.html#don-t-clip-loco-step-sounds>`_ preferences.
 
 The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be altered independently with the `In Phone Loco Sounds Volume <../configuration/preferences.html#in-phone-loco-sounds-volume>`_, the `In Phone Bell Sounds Volume <../configuration/preferences.html#in-phone-bell-sounds-volume>`_ and the `In Phone Horn/Whistle Sounds Volume <../configuration/preferences.html#in-phone-horn-whistle-sounds-volume>`_ preferences.
 
@@ -634,7 +634,7 @@ Overflow Menu (Throttle Screen)
 Turnouts / Points
 ^^^^^^^^^^^^^^^^^
 
-|todo|
+.. todo:: Turnouts / Points
 
 |ed| can control DCC controlled Turnouts / Points on your layout if configured in you |WTS|.
 
@@ -667,7 +667,7 @@ DCC Address
   * Close
   * Toggle
 
-  |TODO|
+  .. todo:: DCC Address
 
 JMRI Defined Turnout/Point list
 """""""""""""""""""""""""""""""
@@ -677,7 +677,7 @@ JMRI Defined Turnout/Point list
   * Filtering
   * Must be named???
 
-  |todo|
+  .. todo:: JMRI Defined Turnout/Point list
 
   **Filter by location**
 
@@ -690,7 +690,7 @@ JMRI Defined Turnout/Point list
 Recent Turnout/Point list
 """""""""""""""""""""""""
 
-  |todo|
+  .. todo:: Recent Turnout/Point list
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -713,7 +713,7 @@ Overflow Menu (Turnouts/Points Screen)
 Routes
 ^^^^^^
 
-|todo|
+.. todo:: Routes
 
 |ed| can control *Routes* on your layout if configured in you |WTS|.
 
@@ -737,7 +737,7 @@ From the WiThrottle server
 
   See the `Left/Right Swipe preferences on the Preferences page <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on enabling or disabling the swipe though Routes.
 
-  See the `Automation (EX-RAIL) page on the DCC++EX website <https://dcc-ex.com/automation/index.html>`_ for more information on using Automations in DCC++EX.
+  See the `Automation (EX-RAIL) page on the DCC-EX website <https://dcc-ex.com/automation/index.html>`_ for more information on using Automations in DCC-EX EX-CommandStations.
 
   **Filter by location**
 
@@ -760,6 +760,10 @@ Overflow Menu (Routes Screen)
 
 Panels and Web Pages
 ^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ../_static/images/screenshots/web_view_screen.png
+  :align: right
+  :scale: 12%
 
 |ed| can show any web page via an embedded Web Browser.  You can use the Web Browser to show anything that JMRI can present including:
 
@@ -863,8 +867,14 @@ In general avoid letting |ED| try to run in background.
 
   See the `Background Alert in the Preference page <./preferences.html#background-alert>`_ for information on disabling the alert.
 
+DCC-EX - Features when using the Native DCC-EX Protocol
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Refer to :doc:`this page <./dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the **Native DCC-EX Protocol** when connecting to a **EX-CommandStation**.
+
+
 Exiting Engine Driver
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^
 
 To exit |ed|, you can:
 
