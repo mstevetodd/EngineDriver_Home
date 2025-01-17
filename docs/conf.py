@@ -86,7 +86,7 @@ html_logo = "./_static/images/logo.png"
 
 html_favicon = "./_static/images/favicon.ico"
 
-html_baseurl = "https://flash62au.github.io/EngineDriver_Home/"
+html_baseurl = "https://EngineDriver2.mstevetodd.com/"
 
 html_theme_options = {
     'style_nav_header_background': 'white',
@@ -100,7 +100,7 @@ html_theme_options = {
 
 html_context = {
     'display_github': True,
-    'github_user': 'flash62au',
+    'github_user': 'mstevetodd',
     'github_repo': 'EngineDriver_Home',
     'github_version': 'main/docs/', 
 } 
