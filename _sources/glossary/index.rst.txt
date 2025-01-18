@@ -118,4 +118,4 @@ Engine Driver does not collect or use any private information from the user.
 The READ_PHONE_STATE permission is only used locally to your phone to (optionally) stop your locos while you are using the phone.
 
 The ACCESS_FINE_LOCATION permission is required by Google for the app to read the WiFi SSID. 
-SSID is used to provide Discovered Servers when the network or server does not provid broadcasts.
+SSID is used to provide Discovered Servers when the network or server does not provide broadcasts.
