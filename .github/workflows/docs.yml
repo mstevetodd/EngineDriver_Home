@@ -22,7 +22,7 @@ jobs:
       - name: Build docs
         run: |
           make github
-          echo 'enginedriver2.mstevetodd.com/' > docs/_build/html/CNAME
+          echo 'enginedriver2.mstevetodd.com' > docs/_build/html/CNAME
           touch docs/_build/html/.nojekyll
       - name: Deploy
         if: github.ref == 'refs/heads/main'
