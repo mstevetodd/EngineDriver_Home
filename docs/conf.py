@@ -127,3 +127,7 @@ html_js_files = [
 #    'js/roundslider.min.js',
 #    'js/storageController.js'
 ]
+
+redirects = {
+    "privacy-policy": "glossary/index.html#privacy-policy",
+}
