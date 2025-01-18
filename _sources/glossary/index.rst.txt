@@ -68,7 +68,7 @@ References
 Copyright
 =========
 
-Copyright (C) 2017 M. Steve Todd mstevetodd@gmail.com
+Copyright (C) 2025 M. Steve Todd mstevetodd@mstevetodd.com
 
 This documentation is free; you can redistribute it and/or modify
 it under the terms of the GNU General Public License as published by
@@ -109,3 +109,13 @@ Screenshots
 .. image:: ../_static/images/screenshots/throttle_type_big_buttons.png
 .. image:: ../_static/images/screenshots/turnouts.png
 .. image:: ../_static/images/screenshots/vertical_slider.png
+
+Privacy Policy
+==============
+
+Engine Driver does not collect or use any private information from the user.
+
+The READ_PHONE_STATE permission is only used locally to your phone to (optionally) stop your locos while you are using the phone.
+
+The ACCESS_FINE_LOCATION permission is required by Google for the app to read the WiFi SSID. 
+SSID is used to provide Discovered Servers when the network or server does not provid broadcasts.
