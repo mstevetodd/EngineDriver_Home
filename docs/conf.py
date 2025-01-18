@@ -128,6 +128,6 @@ html_js_files = [
 #    'js/storageController.js'
 ]
 
-#edirects = {
-#    "privacy-policy": "/glossary/index.html#privacy-policy",
-#}
+redirects = {
+    "privacy-policy": "../glossary/index.html#privacy-policy",
+}
