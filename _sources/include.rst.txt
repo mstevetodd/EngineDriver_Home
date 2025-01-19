@@ -105,3 +105,7 @@
    
    :ref:`Intro/Setup Wizard Screen <operation/interface:Intro/Setup Wizard Screen>`
 ..
+.. |SRT| replace::
+   
+    :abbr:`SRT (Semi-Realistic Throttle)`
+..
