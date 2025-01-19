@@ -333,3 +333,72 @@ html[data-theme='dark'] .rst-content .guilabel{
   margin:auto 2px;
   color: black;
 }
+
+/* *************************************** */
+
+@media not screen and (max-width: 900px) {
+  div.rst-footer-buttons {
+    position: fixed;
+    bottom: 5px;
+    width: 250px;
+    background: #c9c9c999;
+    padding: 10px; 
+    border-radius: 10px;
+    border-color: white !important;
+    border: 4px solid;
+    transform: translateX(50%);
+  }
+  html[data-theme='dark'] div.rst-footer-buttons {
+    border-color: #141414 !important;
+    background: #c9c9c92e;
+  }
+  footer {
+    padding-bottom: 40px;
+    font-size: 80% !important;
+  }
+  html[data-theme='dark'] footer {
+    color: #838383 !important;
+  }
+  footer hr {
+	border-top: 3px solid #e1e4e5;
+  }
+  html[data-theme='dark'] footer hr {
+	border-top: 2px solid #838383;
+  }
+
+  div.topOfPage {
+    position: fixed;
+    bottom:30px;
+	  right: 95px;
+    width:52px;
+    background: #c9c9c999;
+    padding: 5px; 
+    border-radius: 10px;
+    border-color: white !important;
+    border: 4px solid;
+  }
+  html[data-theme='dark'] div.topOfPage {
+    border-color: #141414 !important;
+    background: #c9c9c92e;
+  }
+
+  .topOfPageBtn {
+     border: 1px solid rgba(0,0,0,.1);
+     border-radius: 2px;
+     color: #404040!important;
+  }
+  html[data-theme='dark'] .topOfPageBtn {
+    background-color: #17181c !important;
+    color: #c1c1c1 !important;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  div.rst-footer-buttons {
+    display:block;
+    font-size: 80% !important;
+  }
+  /* div.topOfPage {
+    display:block;
+  } */
+}
