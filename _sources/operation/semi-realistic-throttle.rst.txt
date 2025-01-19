@@ -19,7 +19,7 @@ The Engine Driver Semi-Realistic Throttle (SRT) provides the operator with a set
 It does so by adjusting the speed commands sent to the locomotive. To be clear, the |SRT| does not change any of the decoder CV settings. It has been designed to work with all brands of DCC and Sound decoders with or without programmed decoder momentum or brakes.
 
 .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png
-   :scale: 15 %
+   :scale: 10 %
    :align: right
 
 Key |SRT| Controls/Displays
@@ -34,6 +34,8 @@ Key |SRT| Controls/Displays
 * **Air Brakes Button** - enable or disable the 'Air Brake' feature
 * **Stop Button** - command the speed to go to zero, plus other optional actions
 * **Emergency Stop Button** - command the actual speed immediately to zero
+
+----
 
 Basic Operation
 ===============
@@ -191,7 +193,8 @@ The three brake thresholds are referred to a Low, Mid and High.
    * The Brake Control \> the defined High threshold.
 
 .. image:: ../_static/images/semi-realistic-throttle/brake-thresholds.png
-   :scale: 15 %
+   :scale: 75 %
+   :align: center
 
 For each of the three thresholds, up to five decoder functions can be activated. These can be any decoder functions including obviously any decoder brake functions.
 
@@ -205,6 +208,8 @@ Note again that the |SRT| Brake will operate in concert with the specified decod
 If the user wants to use only the decoder brake but still use the |SRT| brake control, the decoder brake functions could be activated at only the 100% |SRT| Brake setting (where the |SRT| sets the commanded speed to zero immediately).
 
 If you only want to use one or two of the thresholds (not all three) simply set the threshold of the unwanted ones to -1, or the function to activate to -1 and it/they will be ignored.
+
+----
 
 Preference Settings for the SRT
 ===============================
@@ -374,10 +379,12 @@ Decoder High Brake Value (Percent)
 
 * See description of the |SRT| integration with decoder braking above.
 
-----
+|hr-heavy|
 
 Example Cases
 =============
+
+by *John Geddes*
  
 The following cases are provided as examples of how the |SRT| can be used. The hope is that they will provide guidance to other |SRT| users in how they might use the |SRT|.
  
@@ -464,3 +471,4 @@ Conclusion
 
 Based on the above experiments, there is not a major negative impact of the |SRT| Load and Brake features on the sound performance of LokSound V4 decoders. This is not to say that there is no impact, but for most users I expect that it will be quite “livable”. For those operators willing to accept some sound compromise, the |SRT| provides a very easy mechanism to simulate heavy trains.
 
+*John Geddes*
