@@ -13,11 +13,12 @@ jobs:
     steps:
       - name: Requirements
         run: |
-          pip3 install sphinx-rtd-theme==2.0.0
-          pip3 install sphinx-sitemap==2.6.0
-          pip3 install sphinxcontrib-spelling==8.0.0
-          pip3 install sphinx_rtd_dark_mode==1.2.4
-          pip3 install sphinx_reredirects==0.1.3
+          pip3 install -r requirements.txt
+          # pip3 install sphinx-rtd-theme==2.0.0
+          # pip3 install sphinx-sitemap==2.6.0
+          # pip3 install sphinxcontrib-spelling==8.0.0
+          # pip3 install sphinx_rtd_dark_mode==1.2.4
+          # pip3 install sphinx_reredirects==0.1.3
       - name: Checkout repo
         uses: actions/checkout@1.0.0
       - name: Build docs

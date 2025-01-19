@@ -130,5 +130,5 @@ html_js_files = [
 ]
 
 redirects = {
-    "privacy-policy": "../glossary/index.html#privacy-policy",
+    "privacy-policy": "./about/privacy-policy.html",
 }
