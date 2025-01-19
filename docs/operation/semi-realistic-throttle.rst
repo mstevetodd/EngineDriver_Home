@@ -471,4 +471,4 @@ Conclusion
 
 Based on the above experiments, there is not a major negative impact of the |SRT| Load and Brake features on the sound performance of LokSound V4 decoders. This is not to say that there is no impact, but for most users I expect that it will be quite “livable”. For those operators willing to accept some sound compromise, the |SRT| provides a very easy mechanism to simulate heavy trains.
 
-*John Geddes*
+:hand-written:`John Geddes`

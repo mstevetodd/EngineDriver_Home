@@ -109,3 +109,4 @@
    
     :abbr:`SRT (Semi-Realistic Throttle)`
 ..
+.. role:: hand-written
