@@ -17,6 +17,7 @@ Engine Driver
    changes/index
    contributing/index
    glossary/index
+   about/privacy-policy
    contact/index
 
 ----

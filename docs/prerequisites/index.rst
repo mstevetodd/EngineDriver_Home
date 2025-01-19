@@ -19,11 +19,11 @@ To Use Engine Driver You must...
 
 *ALSO*
 
-2a. A |WTS| must be available on a device connected to your model train layout for |ED| to connect to.
+2. a) A |WTS| must be available on a device connected to your model train layout for |ED| to connect to.
 
 **OR**
 
-2b. A |EX-CS| must be available on a device connected to your model train layout for |ed| to connect to.
+2. b) A |EX-CS| must be available on a device connected to your model train layout for |ed| to connect to.
 
 Android Device/Phone
 --------------------
@@ -55,7 +55,7 @@ For JMRI
   :scale: 50%
 
 Verify your Android device can connect to your network via WiFi and obtain an IP address.
-Make sure you are running one of the latest versions of `JMRI <https://jmri.org/>`_ (3.8 works, 4.20+ works much better) on your PC, connected to your layout. 
+Make sure you are running one of the latest versions of `JMRI <https://jmri.org/>`_ (4.20 or greater) on your PC, connected to your layout. 
 Start up JMRI and verify you can use JMRI's included 'Throttle' window to control a loco on your layout.
 
 Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in DecoderPro under Tools, Throttles.  
