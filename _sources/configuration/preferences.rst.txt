@@ -104,6 +104,9 @@ There are five themes to choose from:
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_colorful_theme.png
           :scale: 8%
       - Colourful theme
+    * - .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png
+          :scale: 8%
+      - Neon Blue theme
 
 Localisation
 """"""""""""
@@ -268,8 +271,8 @@ Throttle Screen Layout
     * - Semi-Realistic Left
       - 1
       - V
-      - ✓
       - 🗴
+      - ✓
       - 0-100
       - ✓
 
@@ -314,6 +317,9 @@ Throttle Screen Layout
     * - .. image:: ../_static/images/screenshots/throttle_simple_high_contrast.png 
           :scale: 8%
       - Simple
+    * - .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png 
+          :scale: 8%
+      - Semi-Realistic 
 
 Notes:
 
