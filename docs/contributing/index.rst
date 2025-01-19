@@ -8,9 +8,10 @@ Contributing
 .. include:: ../include.rst
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On This Page
-    :local:
+   .. contents:: On This Page
+      :local:
 
 Contributing to the Code
 ========================

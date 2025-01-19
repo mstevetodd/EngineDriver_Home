@@ -10,10 +10,11 @@ Consist Function Follow
 .. include:: ../include.rst
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On This Page
-     :local:
-     :depth: 3
+   .. contents:: On This Page
+      :local:
+      :depth: 3
 
 ----
  
