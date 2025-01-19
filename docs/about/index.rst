@@ -73,7 +73,7 @@ WiThrottle protocol VS DCC-EX Native protocol
 
 |ED| can use either protocol and, by default, will try to use the more powerful **Native DCC-EX Protocol** when connecting to a |EX-CS|.
 
-|ED| can also us the Native DCC-EX Protocol to connect to a |EX-CS| via |JMRI| but you need to enable the "DCC++ over TCP Server" in the "DCC++" menu in Decoder-Pro.
+|ED| can also use the Native DCC-EX Protocol to connect to a |EX-CS| via |JMRI| but you need to enable the "DCC++ over TCP Server" in the "DCC++" or "DCC-EX" menu in Decoder-Pro.
 
 
 Roadmap

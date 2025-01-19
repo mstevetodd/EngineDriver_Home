@@ -14,7 +14,7 @@
 # import sys
 # sys.path.insert(0, os.path.abspath('.'))
 
-import sphinx_rtd_theme
+# import sphinx_rtd_theme
 
 # -- Project information -----------------------------------------------------
 
@@ -42,7 +42,8 @@ extensions = [
    # 'sphinx.ext.inheritance_diagram',
     'sphinxcontrib.spelling',
     'sphinx_sitemap',    
-    'sphinx_rtd_dark_mode'
+    'sphinx_rtd_dark_mode',
+    'sphinx_reredirects'
 ]
 
 # Make sure the target is unique
