@@ -67,18 +67,22 @@ dl.footnote>dd p {
   padding: 0px !important;
   line-height: 0px !important;
   visibility: collapse !important;
+  clear: none !important;
 }
 
 .note-ed-hidden-title {
   background:#fcc75620 !important; 
+  clear: none !important;
 }
 
 .note-ed .admonition-title {
   background:#fcc756 !important; 
+  clear: none !important;
 }
 
 .note-ed {
   background:#fcc75620 !important;  
+  clear: none !important;
 }
 
 .menuselection {
@@ -260,6 +264,14 @@ nav.in-this-section {
 html[data-theme='dark'] .rst-content .sidebar {
   background: #000000ff !important;
   border:#000000ff !important;
+}
+
+.sidebar-on-this-page {
+  box-shadow: -5px 5px 10px #000000a1 !important;
+}
+
+html[data-theme='dark'] .sidebar-on-this-page {
+  box-shadow: 0px 0px 10px #343d3f !important;
 }
 
 .sidebar-title {

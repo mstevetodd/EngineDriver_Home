@@ -8,10 +8,11 @@ Frequently Asked Questions
 .. include:: ../include.rst
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On This Page
-     :local:
-     :depth: 3
+   .. contents:: On This Page
+      :local:
+      :depth: 3
     
 Connecting - Wifi and WiThrottle
 --------------------------------

@@ -8,9 +8,10 @@ WiFi Issues
 .. include:: ../include.rst
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On This Page
-    :local:
+   .. contents:: On This Page
+     :local:
 
 Many of the problems that people have with |ed| relate to connection issues.
 

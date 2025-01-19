@@ -8,6 +8,7 @@ Configuration
 .. include:: ../include.rst
 
 .. sidebar:: On This Page
+   :class: sidebar-on-this-page
 
    .. toctree::
     :includehidden:

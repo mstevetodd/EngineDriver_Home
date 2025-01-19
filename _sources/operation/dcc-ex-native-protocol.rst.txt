@@ -10,10 +10,11 @@ Features when using the Native Protocol when connected to a DCC-EX EX-CommandSta
 .. include:: ../include.rst
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
-  .. contents:: On This Page
-     :local:
-     :depth: 3
+   .. contents:: On This Page
+      :local:
+      :depth: 3
 
 By default, **Engine Driver** (ED) uses the **WiThrottle Protocol** to talk to all types of Command Station. 
 
