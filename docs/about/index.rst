@@ -44,7 +44,7 @@ Generally the |WTSS| that |ed| connects to are either DCC Command Stations, or a
 
   See the :doc:`/operation/index` page for details on how to use |ed|.
 
-|ed| is open source software which is available on `github.com/JMRI/EngineDriver <https://github.com/JMRI/EngineDriver>`_. This documentation is also open source and can be accessed on `github.com/flash62au/EngineDriver_Home <https://github.com/flash62au/EngineDriver_Home>`_. Contribution to both the code and documentation is welcome.  See [`Contributing <../contributing/index.html>`_] for details.
+|ed| is open source software which is available on `github.com/JMRI/EngineDriver <https://github.com/JMRI/EngineDriver>`_. This documentation is also open source and can be accessed on `github.com/mstevetodd/EngineDriver_Home <https://github.com/mstevetodd/EngineDriver_Home>`_. Contribution to both the code and documentation is welcome.  See [`Contributing <../contributing/index.html>`_] for details.
 
 |ed| currently has minSDKVersion of 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN). 
 Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
