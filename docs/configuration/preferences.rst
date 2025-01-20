@@ -723,6 +723,11 @@ Options include:
   * reduced in size in too big to fit the screen, distorting the image if needed to fill the entire screen in both dimensions
   * increased in size in too small to fill the screen, distorting the image if needed to fill the entire screen in both dimensions
 
+Semi-Realistic Throttle Preferences
+"""""""""""""""""""""""""""""""""""
+
+Refer to :ref:`operation/semi-realistic-throttle:preference settings for the srt` for information on the preferences specific to the |SRT|.
+
 Throttle Screen Action Bar Preferences
 --------------------------------------
 

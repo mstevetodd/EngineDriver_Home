@@ -8,6 +8,7 @@ User Interface
 .. include:: ../include.rst
 
 .. sidebar::
+   :class: sidebar-on-this-page
 
   .. contents:: On This Page
      :local:
