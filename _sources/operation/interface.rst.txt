@@ -10,10 +10,10 @@ User Interface
 .. sidebar::
    :class: sidebar-on-this-page
 
-  .. contents:: On This Page
-     :local:
-     :depth: 4
-
+   .. contents:: On This Page
+      :local:
+      :depth: 4
+ 
 ----
 
 The user interface for |ED| is described and explained in these pages as 'screens'.  There are several '`Main Screens`_' which you will routinely interact with and and larger number of '`Secondary / Support Screens`_' that will interact with infrequently. 

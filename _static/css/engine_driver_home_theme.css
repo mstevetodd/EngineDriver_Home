@@ -205,6 +205,7 @@ nav#on-this-page ul.simple li ul li {
   font-family: Roboto,Helvetica,Arial,sans-serif !important;
   line-height: 120% !important;
   margin-bottom: 0px !important;
+  margin-left: 15px !important;
 }
 
 /* sidebar level 2 bullet points */
