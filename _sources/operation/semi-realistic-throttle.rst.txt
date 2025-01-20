@@ -218,7 +218,6 @@ Preference Settings for the SRT
     :local:
     :class: in-this-section
 
-    
 Acceleration Speed Step Repeat Delay
 ------------------------------------
 
@@ -236,7 +235,7 @@ Acceleration Speed Step Repeat Delay
 Deceleration Speed Step Repeat Delay
 ------------------------------------
 
-How long between deceleration speed steps repeats (in milliseconds). Smaller is faster.
+*How long between deceleration speed steps repeats (in milliseconds). Smaller is faster.*
 
 * See notes above.
 

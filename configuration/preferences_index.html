@@ -10,7 +10,7 @@
   <title>Detailed Information &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=1cf6c71c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=8e1d9d84" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -98,9 +98,9 @@
 <li class="toctree-l3"><a class="reference internal" href="../operation/operation.html#connecting">Connecting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#ip-address-and-port">IP Address and Port</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#discover-servers">Discover Servers</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#recent-server-list">Recent Server List</a></li>
-<li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#ip-address-and-port">IP Address and Port</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#disconnections">Disconnections</a></li>
@@ -474,7 +474,28 @@
 <li class="toctree-l6"><a class="reference internal" href="preferences.html#background-image-position">Background Image Position</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="preferences.html#semi-realistic-throttle-preferences">Semi-Realistic Throttle Preferences</a></li>
+<li class="toctree-l5"><a class="reference internal" href="preferences.html#semi-realistic-throttle-preferences">Semi-Realistic Throttle Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#acceleration-speed-step-repeat-delay">Acceleration Speed Step Repeat Delay</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#deceleration-speed-step-repeat-delay">Deceleration Speed Step Repeat Delay</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#speed-step-amount">Speed Step Amount</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#maximum-throttle-percentage-srt">Maximum Throttle Percentage (SRT)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#throttle-notches">Throttle Notches</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#stop-button-action">Stop Button Action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#number-of-brake-steps">Number of Brake Steps</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#maximum-brake-percentage">Maximum Brake Percentage</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#disable-the-air-reservoir">Disable the Air Reservoir</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#rate-the-air-brakes-refresh">Rate the air brakes refresh</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#number-of-load-steps">Number of Load Steps</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#maximum-load-percentage">Maximum Load Percentage</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-brake-type">Decoder Brake Type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-low-function-number-s">Decoder Low Function Number(s)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-low-brake-value-percent">Decoder Low Brake Value (Percent)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-mid-function-number-s">Decoder Mid Function Number(s)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-mid-brake-value-percent">Decoder Mid Brake Value (Percent)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-high-function-number-s">Decoder High Function Number(s)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="preferences.html#decoder-high-brake-value-percent">Decoder High Brake Value (Percent)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="preferences.html#throttle-screen-action-bar-preferences">Throttle Screen Action Bar Preferences</a><ul>
@@ -491,6 +512,7 @@
 </li>
 <li class="toctree-l5"><a class="reference internal" href="preferences.html#in-phone-sounds-button">In phone sounds button</a></li>
 <li class="toctree-l5"><a class="reference internal" href="preferences.html#show-server-description">Show Server Description</a></li>
+<li class="toctree-l5"><a class="reference internal" href="preferences.html#app-icon-button">App Icon button?</a></li>
 <li class="toctree-l5"><a class="reference internal" href="preferences.html#dcc-ex-button">DCC-EX button?</a></li>
 </ul>
 </li>
@@ -691,7 +713,6 @@
 <li class="toctree-l3"><a class="reference internal" href="setup_wizard.html">Setup Wizard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="setup_wizard.html#initial-screen">Initial Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setup_wizard.html#permissions">Permissions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="setup_wizard.html#android-11-changes">Android 11 Changes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setup_wizard.html#throttle-name">Throttle Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setup_wizard.html#theme-style">Theme / Style</a></li>
 <li class="toctree-l4"><a class="reference internal" href="setup_wizard.html#throttle-screen-layout">Throttle Screen Layout</a></li>
@@ -825,7 +846,6 @@
 <li class="toctree-l1"><a class="reference internal" href="setup_wizard.html">Setup Wizard</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="setup_wizard.html#initial-screen">Initial Screen</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup_wizard.html#permissions">Permissions</a></li>
-<li class="toctree-l2"><a class="reference internal" href="setup_wizard.html#android-11-changes">Android 11 Changes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup_wizard.html#throttle-name">Throttle Name</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup_wizard.html#theme-style">Theme / Style</a></li>
 <li class="toctree-l2"><a class="reference internal" href="setup_wizard.html#throttle-screen-layout">Throttle Screen Layout</a></li>
@@ -868,7 +888,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f033bcba4a0>
+    <jinja2.runtime.BlockReference object at 0x7fba8fa4f100>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

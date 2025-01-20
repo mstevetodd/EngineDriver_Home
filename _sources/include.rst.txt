@@ -114,9 +114,13 @@
 ..
 .. |FD-S| replace:: 
    
-   :ref:`Function Defaults Screen Screen <operation/interface:Function Defaults Screen>`
+   :ref:`Function Defaults Screen <operation/interface:Function Defaults Screen>`
 ..
-.. Throttle Screens ..............................................
+.. |DCC-EX-S| replace:: 
+   
+   :ref:`DCC-EX Screen <operation/interface:dcc-ex screen>`
+..
+.. Throttle Screens/layouts ...............................
 ..
 .. |SRT-TS| replace::
    

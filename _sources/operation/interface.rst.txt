@@ -1332,8 +1332,10 @@ Supported localisations are:
 * German
 * Spanish
 * Catalan
-* French
+* French (FR)
+* French (CA)
 * Czech
+* Japanese
 
 .. note:: 
    :class: note-ed-hidden-title
@@ -1369,6 +1371,7 @@ The Action Bar can display:
   * Throttle Web View
   * Throttle Layout Switching
   * In Phone Loco Sound
+  * DCC-EX
   * Children's Timer
 
 The optional buttons are enabled and configured via the corresponding preferences in the `Throttle Screen Action Bar <../configuration/preferences.html#throttle-screen-action-bar-preferences>`_ preference group.  (Other than the Children's Timer which is configured in the `Children's Timer <../configuration/preferences.html#children-s-timer-preferences>`_ preference group.)

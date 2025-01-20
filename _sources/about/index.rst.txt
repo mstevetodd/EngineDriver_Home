@@ -32,12 +32,12 @@ Supported |WTSS| include:
  
  * Program CVs (Service Mode and Operation Mode)
  * Control the TrackManager features.
- * Use some extend Route capabilities
+ * Use some extended Route capabilities
  * Use the 'Request Loco ID' & 'Drive Away' feature from a Program track onto Mainline track
 
 You can customise |ed| extensively to meet your needs.
 
-Generally the |WTSS| that |ed| connects to are either DCC Command Stations, or are designed to talk to DCC Command Stations (e.g. JMRI) to subsequently talk to DCC Decoder equipped locos on a layout.  |EX-CS| also allows controlling DC locos or even Slot cars instead.
+Generally the |WTSS| that |ed| connects to are either DCC Command Stations, or are designed to talk to DCC Command Stations (e.g. |JMRI|) to subsequently talk to DCC Decoder equipped locos on a layout.  |EX-CS| also allows controlling DC locos or even Slot cars instead.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -52,11 +52,11 @@ Info on minSDKVersion available in the `Engine Driver manifest <https://develope
 What's a 'WiThrottle Server'?
 -----------------------------
 
-WiThrottle stands for 'WiFi Throttle', and a 'WiThrottle Server' is just software running on your JMRI computer, DCC-EX EX-CommandStation, or dedicated device. It's called a 'Server' because it allows you to connect to it and it 'serves', or services, requests from another application. That application is called a 'Client'. So in this case |ed| is the client.
+**WiThrottle** stands for 'WiFi Throttle', and a 'WiThrottle Server' is just software running on your JMRI computer, DCC-EX EX-CommandStation, or dedicated device. It's called a 'Server' because it allows you to connect to it and it 'serves', or services, requests from another application. That application is called a 'Client'. So in this case |ed| is the client.
 
-The WiThrottle Protocol itself is a standard for how WiFi throttles can communicate with the WiThrottle Server, much like the DCC standard is a standard for how data packets communicate with decoders. What this means for you, is that |ed| can talk to any WiThrottle compatible server, which in turn can talks to your DCC encoders in your locos.
-
-.. note:: 
+The **WiThrottle Protocol** itself is a standard for how WiFi throttles can communicate with the WiThrottle Server, much like the DCC standard is a standard for how data packets communicate with decoders. What this means for you, is that |ed| can talk to any WiThrottle compatible server, which in turn can talks to your DCC encoders in your locos.
+ 
+.. note::
   :class: note-ed-hidden-title
 
   See the :ref:`WiThrottle / DCC-EX Native Servers <prerequisites/index:withrottle and dcc-ex native servers>` section of the Prerequisites page for information on the different WiThrottle Servers.

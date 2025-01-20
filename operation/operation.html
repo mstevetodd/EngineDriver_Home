@@ -10,7 +10,7 @@
   <title>Detailed Instructions &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=1cf6c71c" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=8e1d9d84" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -98,9 +98,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#connecting">Connecting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#ip-address-and-port">IP Address and Port</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#discover-servers">Discover Servers</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#recent-server-list">Recent Server List</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#ip-address-and-port">IP Address and Port</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="#disconnections">Disconnections</a></li>
@@ -474,7 +474,28 @@
 <li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#background-image-position">Background Image Position</a></li>
 </ul>
 </li>
-<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#semi-realistic-throttle-preferences">Semi-Realistic Throttle Preferences</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#semi-realistic-throttle-preferences">Semi-Realistic Throttle Preferences</a><ul>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#acceleration-speed-step-repeat-delay">Acceleration Speed Step Repeat Delay</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#deceleration-speed-step-repeat-delay">Deceleration Speed Step Repeat Delay</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#speed-step-amount">Speed Step Amount</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#maximum-throttle-percentage-srt">Maximum Throttle Percentage (SRT)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#throttle-notches">Throttle Notches</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#stop-button-action">Stop Button Action</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#number-of-brake-steps">Number of Brake Steps</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#maximum-brake-percentage">Maximum Brake Percentage</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#disable-the-air-reservoir">Disable the Air Reservoir</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#rate-the-air-brakes-refresh">Rate the air brakes refresh</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#number-of-load-steps">Number of Load Steps</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#maximum-load-percentage">Maximum Load Percentage</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-brake-type">Decoder Brake Type</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-low-function-number-s">Decoder Low Function Number(s)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-low-brake-value-percent">Decoder Low Brake Value (Percent)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-mid-function-number-s">Decoder Mid Function Number(s)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-mid-brake-value-percent">Decoder Mid Brake Value (Percent)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-high-function-number-s">Decoder High Function Number(s)</a></li>
+<li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#decoder-high-brake-value-percent">Decoder High Brake Value (Percent)</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#throttle-screen-action-bar-preferences">Throttle Screen Action Bar Preferences</a><ul>
@@ -491,6 +512,7 @@
 </li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#in-phone-sounds-button">In phone sounds button</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#show-server-description">Show Server Description</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#app-icon-button">App Icon button?</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#dcc-ex-button">DCC-EX button?</a></li>
 </ul>
 </li>
@@ -691,7 +713,6 @@
 <li class="toctree-l3"><a class="reference internal" href="../configuration/setup_wizard.html">Setup Wizard</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#initial-screen">Initial Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#permissions">Permissions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#android-11-changes">Android 11 Changes</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#throttle-name">Throttle Name</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#theme-style">Theme / Style</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/setup_wizard.html#throttle-screen-layout">Throttle Screen Layout</a></li>
@@ -792,9 +813,9 @@
 <li><p><a class="reference internal" href="#connecting-to-the-wifi-network" id="id30">Connecting to the WiFi network</a></p></li>
 <li><p><a class="reference internal" href="#connecting-engine-driver-to-the-withrottle-server" id="id31">Connecting Engine Driver to the WiThrottle server</a></p>
 <ul>
-<li><p><a class="reference internal" href="#discover-servers" id="id32">Discover Servers</a></p></li>
-<li><p><a class="reference internal" href="#recent-server-list" id="id33">Recent Server List</a></p></li>
-<li><p><a class="reference internal" href="#ip-address-and-port" id="id34">IP Address and Port</a></p></li>
+<li><p><a class="reference internal" href="#ip-address-and-port" id="id32">IP Address and Port</a></p></li>
+<li><p><a class="reference internal" href="#discover-servers" id="id33">Discover Servers</a></p></li>
+<li><p><a class="reference internal" href="#recent-server-list" id="id34">Recent Server List</a></p></li>
 </ul>
 </li>
 <li><p><a class="reference internal" href="#disconnections" id="id35">Disconnections</a></p></li>
@@ -888,13 +909,6 @@
 </section>
 <section id="connecting-engine-driver-to-the-withrottle-server">
 <h3><a class="toc-backref" href="#id31" role="doc-backlink">Connecting Engine Driver to the WiThrottle server</a><a class="headerlink" href="#connecting-engine-driver-to-the-withrottle-server" title="Link to this heading"></a></h3>
-<aside class="sidebar-no-background sidebar">
-<a class="reference internal image-reference" href="../_images/connecting_ip_address.png" id="ip-address"><img alt="../_images/connecting_ip_address.png" class="align-right" id="ip-address" src="../_images/connecting_ip_address.png" style="width: 145.79999999999998px; height: 24.3px;" /></a>
-<p><br /></p>
-<a class="reference internal image-reference" href="../_images/connecting_discovered_servers.png" id="discovered-servers"><img alt="../_images/connecting_discovered_servers.png" class="align-right" id="discovered-servers" src="../_images/connecting_discovered_servers.png" style="width: 144.9px; height: 47.4px;" /></a>
-<p><br /></p>
-<a class="reference internal image-reference" href="../_images/connecting_recent_servers.png" id="recent-severs"><img alt="../_images/connecting_recent_servers.png" class="align-right" id="recent-severs" src="../_images/connecting_recent_servers.png" style="width: 144.0px; height: 50.699999999999996px;" /></a>
-</aside>
 <ul class="simple">
 <li><p>Start <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> <br />You will be presented with the <a class="reference internal" href="interface.html#connection-screen"><span class="std std-ref">Connection Screen</span></a></p></li>
 <li><p>On the <a class="reference internal" href="interface.html#connection-screen"><span class="std std-ref">Connection Screen</span></a> there are three ways you can select a <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> to connect to:</p>
@@ -905,39 +919,36 @@
 </ul>
 </li>
 </ul>
-<section id="discover-servers">
-<h4><a class="toc-backref" href="#id32" role="doc-backlink">Discover Servers</a><a class="headerlink" href="#discover-servers" title="Link to this heading"></a></h4>
-<blockquote>
-<div><p>This is the most common way to connect. If the server you want to connect to is in the list, simply click on it and you will be taken to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
-<p>If the server does not appear in the recent list try one of the other two methods.
-Your server not appearing in the recent list is not necessarily a problem  See <a class="reference external" href="./wifi_issues.html">Connection issues</a> for more information.</p>
-</div></blockquote>
-</section>
-<section id="recent-server-list">
-<h4><a class="toc-backref" href="#id33" role="doc-backlink">Recent Server List</a><a class="headerlink" href="#recent-server-list" title="Link to this heading"></a></h4>
-<blockquote>
-<div><p>If the server you want to connect to is in the list, simply click on it and you will be taken to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
-<p>A server being in this list <em>does not</em> necessarily mean that you will be able to connect it <em>now</em>. It just means that you have successfully connected to it in the past.</p>
-<p>There is also a ‘demo’ server at <strong>jmri.mstevetodd.com</strong>, port <strong>44444</strong> in this list that you can connect to for testing. (If your device/phone has an internet connection.)</p>
-</div></blockquote>
-</section>
 <section id="ip-address-and-port">
-<h4><a class="toc-backref" href="#id34" role="doc-backlink">IP Address and Port</a><a class="headerlink" href="#ip-address-and-port" title="Link to this heading"></a></h4>
-<blockquote>
-<div><p>Type in the <strong>IP address</strong> and <strong>Port</strong> of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> and press <span class="guilabel">Connect</span>.</p>
+<h4><a class="toc-backref" href="#id32" role="doc-backlink">IP Address and Port</a><a class="headerlink" href="#ip-address-and-port" title="Link to this heading"></a></h4>
+<a class="reference internal image-reference" href="../_images/connecting_ip_address.png" id="ip-address"><img alt="../_images/connecting_ip_address.png" class="align-right" id="ip-address" src="../_images/connecting_ip_address.png" style="width: 243.0px; height: 40.5px;" /></a>
+<p>Type in the <strong>IP address</strong> and <strong>Port</strong> of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> and press <span class="guilabel">Connect</span>.</p>
 <p>To find your server’s IP address and Port:</p>
 <blockquote>
 <div><ul class="simple">
-<li><p>For a JMRI server, see the WiThrottle screen for its address</p></li>
+<li><p>For a <a href="https://jmri.org/">JMRI</a> server, see the WiThrottle screen for its address</p></li>
 <li><p>For other devices, see the instructions for that device</p></li>
 </ul>
 </div></blockquote>
 <p>If you only ever connect to one <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> you can effectively bypass this screen by setting the <a class="reference external" href="../configuration/preferences.html#auto-connect-to-withrottle-server">Auto-Connect to WiThrottle Server?</a> preference.</p>
-</div></blockquote>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>Also see <a class="reference external" href="./wifi_issues.html">Connection issues</a> if you are having difficulties.</p>
 </div>
+</section>
+<section id="discover-servers">
+<h4><a class="toc-backref" href="#id33" role="doc-backlink">Discover Servers</a><a class="headerlink" href="#discover-servers" title="Link to this heading"></a></h4>
+<a class="reference internal image-reference" href="../_images/connecting_discovered_servers.png" id="discovered-servers"><img alt="../_images/connecting_discovered_servers.png" class="align-right" id="discovered-servers" src="../_images/connecting_discovered_servers.png" style="width: 241.5px; height: 79.0px;" /></a>
+<p>This is the most common way to connect. If the server you want to connect to is in the list, simply click on it and you will be taken to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
+<p>If the server does not appear in the recent list try one of the other two methods.
+Your server not appearing in the recent list is not necessarily a problem  See <a class="reference external" href="./wifi_issues.html">Connection issues</a> for more information.</p>
+</section>
+<section id="recent-server-list">
+<h4><a class="toc-backref" href="#id34" role="doc-backlink">Recent Server List</a><a class="headerlink" href="#recent-server-list" title="Link to this heading"></a></h4>
+<a class="reference internal image-reference" href="../_images/connecting_recent_servers.png" id="recent-severs"><img alt="../_images/connecting_recent_servers.png" class="align-right" id="recent-severs" src="../_images/connecting_recent_servers.png" style="width: 240.0px; height: 84.5px;" /></a>
+<p>If the server you want to connect to is in the list, simply click on it and you will be taken to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
+<p>A server being in this list <em>does not</em> necessarily mean that you will be able to connect it <em>now</em>. It just means that you have successfully connected to it in the past.</p>
+<p>There is also a ‘demo’ server at <strong>jmri.mstevetodd.com</strong>, port <strong>44444</strong> in this list that you can connect to for testing. (If your device/phone has an internet connection.)</p>
 </section>
 </section>
 <section id="disconnections">
@@ -975,10 +986,11 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <section id="selecting-a-single-loco">
 <h3><a class="toc-backref" href="#id38" role="doc-backlink">Selecting a Single loco</a><a class="headerlink" href="#selecting-a-single-loco" title="Link to this heading"></a></h3>
 <p>There three ways select a loco:</p>
-<ul>
+<ul class="simple">
 <li><p>By entering a DCC Address</p></li>
 <li><p>By selecting from the Roster</p></li>
-<li><p>By selecting a Recent Loco</p>
+<li><p>By selecting a Recent Loco</p></li>
+</ul>
 <p><strong>DCC Address</strong></p>
 <p>You can enter the loco’s DCC address (verify short or long), and press <span class="guilabel">Acquire</span> to select the loco.  You will then be taken back to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
 <p><strong>Roster</strong></p>
@@ -988,8 +1000,6 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <p><strong>Recent Locos</strong></p>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> remembers the last 10 locos that you have selected. (That number can be increased or decreased with <a class="reference external" href="../configuration/preferences.html#maximum-recent-locos">Maximum Recent Locos</a> preference.)</p>
 <p>If the loco you want to control to is in the list, simply click on it and you will be taken back to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
-</li>
-</ul>
 </section>
 <section id="on-the-fly-in-phone-consists-multiple-units">
 <h3><a class="toc-backref" href="#id39" role="doc-backlink">On the fly / In Phone Consists (Multiple Units)</a><a class="headerlink" href="#on-the-fly-in-phone-consists-multiple-units" title="Link to this heading"></a></h3>
@@ -1004,7 +1014,8 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </ul>
 </div></blockquote>
 </li>
-<li><p>By using the <strong>Recent Consists</strong> list <br /><br /></p>
+<li><p>By using the <strong>Recent Consists</strong> list</p></li>
+</ul>
 <p><strong>One at a time</strong></p>
 <p>Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the <span class="guilabel">Select</span> button, which will be showing the name or address of any locos already selected.</p>
 <p>After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:</p>
@@ -1015,30 +1026,30 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </ul>
 <p><strong>Recent Consists</strong></p>
 <p>Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
 <p>Note:</p>
 <ul class="simple">
 <li><p>There is no real limit to the number of locos that can be added to a Consist / Multiple Unit.</p></li>
 <li><p>The order of the locos in the consist can be important.  By default, lights and sound functions are only sent to the first loco.  This can be overridden in the preferences.</p></li>
 </ul>
-</li>
-</ul>
+</div>
 </section>
 </section>
 <section id="running-trains">
 <h2><a class="toc-backref" href="#id40" role="doc-backlink">Running Trains</a><a class="headerlink" href="#running-trains" title="Link to this heading"></a></h2>
 <p>Once you have selected a loco or consist / multiple unit for a throttle, the names or addresses of the locos will be shown in the <span class="guilabel">Select</span> button of the throttle.</p>
 <p>From here you can:</p>
-<ul>
+<ul class="simple">
 <li><p>Control the speed and direction of you loco or consist / multiple unit</p></li>
 <li><p>Activate the DCC functions for you loco or consist / multiple unit</p></li>
 <li><p>Activate the Virtual Sounds</p></li>
-<li><p>Add or release locos.</p>
+<li><p>Add or release locos.</p></li>
+</ul>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference external" href="#selecting-releasing-locos">Selecting / Releasing Locos and Consists/Multiple Units</a> for more information.</p>
 </div>
-</li>
-</ul>
 <section id="controlling-speed">
 <h3><a class="toc-backref" href="#id41" role="doc-backlink">Controlling Speed</a><a class="headerlink" href="#controlling-speed" title="Link to this heading"></a></h3>
 <p>There are eight ways you can control the speed of of your loco or consist /multiple unit train:</p>
@@ -1581,7 +1592,7 @@ You can also swipe right from the <a class="reference internal" href="interface.
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f033d607eb0>
+    <jinja2.runtime.BlockReference object at 0x7fba9118da50>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
