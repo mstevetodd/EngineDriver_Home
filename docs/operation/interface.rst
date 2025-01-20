@@ -250,9 +250,9 @@ Speed Slider Area
    * `Increase Slider/Speed Height? <../configuration/preferences.html#increase-slider-speed-height>`_ |br| When set, this preference will show a taller Slider, or Speed buttons, for throttles
    * `Throttle Speed Slider Margin <../configuration/preferences.html#throttle-speed-slider-margin>`_ |br| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
    * `Hide Speed Slider? <../configuration/preferences.html#hide-speed-slider>`_ |br| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
-   * `Tick Marks on Speed Sliders? <../configuration/preferences.html#tick-marks-on-speed-sliders>`_ |br| When this preferences is set, Engine Driver will show tick marks on the background of the Speed Sliders
-   * `Switching throttle Dead Zone <../configuration/preferences.html#switching-throttle-dead-zone>`_ |br| When this preferences is set, Engine Driver will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
-   * `Stop Button Vertical Margins <../configuration/preferences.html#stop-button-vertical-margins>`_ |br| When this preferences is set, Engine Driver will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
+   * `Tick Marks on Speed Sliders? <../configuration/preferences.html#tick-marks-on-speed-sliders>`_ |br| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
+   * `Switching throttle Dead Zone <../configuration/preferences.html#switching-throttle-dead-zone>`_ |br| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
+   * `Stop Button Vertical Margins <../configuration/preferences.html#stop-button-vertical-margins>`_ |br| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
 
     .. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the  `Speed Units preference <../configuration/preferences.html#speed-units>`_.
 
@@ -331,34 +331,34 @@ Function Buttons Scroll Area
 DCC Function buttons
 ''''''''''''''''''''
 
-.. todo:: DCC Function buttons
+.. todo DCC Function buttons
 
-   DCC Function Buttons are displayed here.  If there are too many to display in the screen area allocated, then the area becomes scrollable (without scroll bars) so that they can all be viewed and pressed as needed.  
-   
-   All throttle layouts other than the 'Simple' layout show a *Function Buttons Scroll Area* by default.  For the 'Simple' layout it must be enable in the preferences if required.
+DCC Function Buttons are displayed here.  If there are too many to display in the screen area allocated, then the area becomes scrollable (without scroll bars) so that they can all be viewed and pressed as needed.  
 
-   Will show from 0 (zero) to 26 DCC function buttons, depending on a number of factors. Each button will show either:
+All throttle layouts other than the 'Simple' layout show a *Function Buttons Scroll Area* by default.  For the 'Simple' layout it must be enable in the preferences if required.
 
-   * Labels provided from the roster, which can be individually specified for each loco in the roster
-   * The default labels for |ed|  (which can be changed)
+Will show from 0 (zero) to 26 DCC function buttons, depending on a number of factors. Each button will show either:
 
-   
-   If the loco (or first loco of a consist/multiple unit) was selected from the |WTS| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS|.  This is also trun if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
-   
-   If the loco (or first loco of a consist/multiple unit) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in |ED| in the Default Functions.
+* Labels provided from the roster, which can be individually specified for each loco in the roster
+* The default labels for |ed|  (which can be changed)
 
-   The behaviour of the Function Buttons for locos selected from the |WTS| roster can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS| roster will also show the Default Functions labels.
 
-   Clicking on any button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of differnt ways.
+If the loco (or first loco of a consist/multiple unit) was selected from the |WTS| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS|.  This is also trun if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
 
-   .. note:: 
-     :class: note-ed-hidden-title
+If the loco (or first loco of a consist/multiple unit) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in |ED| in the |FD-S|.
 
-     See the `Function Defaults Screen <Function Defaults Screen>`_ section for more information on configuring the labels and number of *default function* buttons.
+The behaviour of the Function Buttons for locos selected from the |WTS| roster can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS| roster will also show the Default Functions labels.
 
-     See the :doc:`Function Buttons <../configuration/functions>` page for more information on the DCC Function buttons.
+Clicking on any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of differnt ways.
 
-     For labels from Roster Entries you need to edit the Function buttons in the |WTS|, or configure |ed| to use the default labels.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the `Function Defaults Screen <Function Defaults Screen>`_ section for more information on configuring the labels and number of *default function* buttons.
+
+  See the :doc:`Function Buttons <../configuration/functions>` page for more information on the DCC Function buttons.
+
+  For labels from Roster Entries you need to edit the Function buttons in the |WTS|, or configure |ed| to use the default labels.
 
 Pause and Limit Speed buttons
 '''''''''''''''''''''''''''''
@@ -392,6 +392,19 @@ In Phone Loco Sounds buttons
 
      See the `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ page for more information on the IPLS buttons
 
+Load Slider Area
+''''''''''''''''
+
+.. todo:: Load Slider Area 
+
+This is unique to the |SRT-TS|.
+
+Brake Slider Area
+'''''''''''''''''
+
+.. todo:: Brake Slider Area 
+
+This is unique to the |SRT-TS|.
 
 Web View Area (Throttle Web View)
 """""""""""""""""""""""""""""""""
@@ -447,7 +460,7 @@ In the |T-S| the Action Bar can display:
 .. note:: 
    :class: note-ed-hidden-title
 
-   The optional buttons are enabled via the :menuselection:`Menu --> Preferences --> Throttle Screen Status Row Preferences`.  
+   The optional action bar buttons are enabled via the :menuselection:`Menu --> Preferences --> Throttle Screen Status Row Preferences`.  
     
    See the `Action Bar`_ section of this page for more information.
 
@@ -467,6 +480,7 @@ Specific to the |T-S|, the Overflow Menu can display:
 * `Turnouts/Points <../operation/interface.html#turnouts-points-screen>`_ (All except the *Turnout/Points Screen* only)
 * `Routes <../operation/interface.html#routes-screen>`_ (All except the |R-S| only)
 * `Power <../operation/operation.html#turn-track-power-on>`_
+* `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
 * `Preferences <../configuration/preferences.html>`_
 * `Function Defaults <../operation/interface.html#function-defaults-screen>`_ (|T-S| only)
 * Gamepads (|T-S| only)
@@ -504,6 +518,19 @@ Immersive Mode (Full Screen)
 
 .. todo:: Immersive Mode (Full Screen)
 
+Immersive mode hides the system navigation bottons at the bottom of the screen on the Throttle screen only, to give you more screen realestate for the throttle UI.
+
+It can optionaly also hide the system status bar at the top of the page.
+
+Swiping up from off screen will normally temporarily show the navigation buttons again.
+
+You can also configure specific Swipe up or Swipe down preferences to enter or exit immersive mode.
+
+.. note:: 
+     :class: note-ed-hidden-title
+
+     see preference ...
+
 Swipe Left / Right (From Throttle)
 """"""""""""""""""""""""""""""""""
 
@@ -525,10 +552,40 @@ Swipe Up / Down
 
 .. todo:: Swipe Up / Down
 
+Swipe Up and Down on the Throttle page can optional be configured to:
+
+* Do Nothing
+* Hide the Web View (if enabled)
+* Lock and Dim the screen
+* Dim the screen
+* Enable/Disable Immersive mode
+* Switch Throttle Layouts
+* Increase/Decrease Loco speed
+* goto the next throttle
+
+.. note:: 
+     :class: note-ed-hidden-title
+
+     see preference ...
+
 Accelerometer (Shake)  
 """""""""""""""""""""
 
 .. todo:: Accelerometer (Shake)  
+
+Swipe Up and Down on the Throttle page can optional be configured to:
+
+* Do Nothing
+* Hide the Web View (if enabled)
+* Lock and Dim the screen
+* Dim the screen
+* Switch Throttle Layouts
+* goto the next throttle
+
+.. note:: 
+     :class: note-ed-hidden-title
+
+     see preference ...
 
 ----
 
@@ -603,6 +660,7 @@ Specific to the *Turnouts/Points  Screen*, the Overflow Menu can display:
 * `Throttle <../operation/interface.html#throttle-screen>`_ (All except the |T-S| only)
 * `Routes <../operation/interface.html#routes-screen>`_ (All except the |R-S| only)
 * `Power <../operation/operation.html#turn-track-power-on>`_
+* `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
 * `Preferences <../configuration/preferences.html>`_
 * `View Log <../operation/interface.html#view-log-screen>`_
 * `Exit <../operation/operation.html#exiting-engine-driver>`_
@@ -638,15 +696,19 @@ Routes Screen
 
 Accessed from any of the main screens by the menu :menuselection:`Menu --> Routes` or by swiping left from the Throttle Screen if enabled in the Left with the ``Swipe through Routes?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Routes`
 
-This screen allows you to display all Routes that have been defined in JMRI or DCC-EX EX-CommandStation.
+This screen allows you to display all Routes that have been defined in your |SERVER|.
 
 **Enter**
 
 .. todo:: Routes Screen - Enter
 
+  You can enter the route ID...
+
 **List**
 
 .. todo:: Routes Screen - List
+
+You can select the route from the list provider by your |SERVER|...
 
 **Filter by location**
 
@@ -701,6 +763,7 @@ Specific to the |R-S|, the Overflow Menu can display:
 * `Throttle <../operation/interface.html#throttle-screen>`_ (All except the |T-S| only)
 * `Turnouts/Points <../operation/interface.html#turnouts-points-screen>`_ (All except the *Turnout/Points Screen* only)
 * `Power <../operation/operation.html#turn-track-power-on>`_
+* `DCC-EX Screen`_ (If connected to a DCC-EX EX-Command-Station using the |NATIVE| only)
 * `Preferences <../configuration/preferences.html>`_
 * `View Log <../operation/interface.html#view-log-screen>`_
 * `Exit <../operation/operation.html#exiting-engine-driver>`_
@@ -893,7 +956,7 @@ There are four ways you can choose a loco for the Throttle.  Select one of the r
 Select by DCC Address 
 """""""""""""""""""""
 
-.. todo:: Select by DCC Address
+.. todo Select by DCC Address
 
 Shown if you select ``DCC Address`` in the `Selection Method`_.
 
@@ -1137,6 +1200,8 @@ DCC-EX Screen
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX`.
 
+Also see :doc:`/operation/dcc-ex-native-protocol` for more information.
+
 ----
 
 Gamepad Test Screen
@@ -1164,7 +1229,7 @@ View Log Screen
 
 Accessed from any of the main screens via :menuselection:`Menu --> View Log`.
 
-This screen allows you to view the internal Engine Driver log of events.
+This screen allows you to view the internal |ED| log of events.
 This is sometimes useful for analysing problems.
 
 The option to `Start recording to file` creates a user-accessible file that can be sent to the |ed| app developers or the `Groups.io <https://groups.io/g/jmriusers/topics>`_ help group to assist you in resolving a problem.
@@ -1469,20 +1534,21 @@ It will show different options depending on a) the particular screen, b) prefere
 
 The Overflow Menu can display:
 
-* `Intro/Setup Wizard <../operation/interface.html#intro-setup-wizard-screen>`_ (|C-S| only)
-* `Clear Recent List <../operation/interface.html#connection-screen>`_ (|C-S| only)
-* `Throttle <../operation/interface.html#throttle-screen>`_ (All except the |T-S| only)
-* `Turnouts/Points <../operation/interface.html#turnouts-points-screen>`_ (All except the *Turnout/Points Screen* only)
-* `Routes <../operation/interface.html#routes-screen>`_ (All except the |R-S| only)
-* `Power <../operation/operation.html#turn-track-power-on>`_
-* `Preferences <../configuration/preferences.html>`_
-* `Function Defaults <../operation/interface.html#function-defaults-screen>`_ (|T-S| only)
+* :ref:`Intro/Setup Wizard <operation/interface:intro/setup wizard screen>`)
+* :ref:`Clear Recent List <operation/interface:connection screen>` (|C-S| only)
+* :ref:`Throttle <operation/interface:throttle screen>` (All except the |T-S| only)
+* `Turnouts/Points Screen`_ (All except the *Turnout/Points Screen* only)
+* :ref:`Routes <operation/interface:routes screen>` (All except the |R-S| only)
+* :ref:`Power <operation/operation:turn track power on>`
+* `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
+* :doc:`Preferences </configuration/preferences>`
+* :ref:`Function Defaults <operation/interface:Function Defaults Screen>` (|T-S| only)
 * Gamepads (|T-S| only)
 
-  * `Gamepad Test 1 <../operation/interface.html#gamepad-test-screen>`_
-  * `Gamepad Test ... <../operation/interface.html#gamepad-test-screen>`_
+  * :ref:`Gamepad Test 1 <operation/interface:gamepad test screen>`
+  * :ref:`Gamepad Test ... <operation/interface:gamepad test screen>`
 
-* `Loco Sounds <../operation/interface.html#in-phone-loco-sounds-screen>`_ (|T-S| only)
-* `View Log <../operation/interface.html#view-log-screen>`_
-* `Exit <../operation/operation.html#exiting-engine-driver>`_
-* `About <../operation/interface.html#about-screen>`_
+* :ref:`Loco Sounds <operation/interface:in phone loco sounds screen>` (|T-S| only)
+* :ref:`View Log <operation/interface:view log screen>`
+* :ref:`Exit <operation/operation:exiting engine driver>`
+* :ref:`About <operation/interface:about screen>`

@@ -7,11 +7,11 @@ Quick Start / Getting Started
 
 .. include:: ../include.rst
 
-* Install |ed| from the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../downloads/index.html>`_. 
+* Install |ed| from the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../downloads/index.html>`_ of the .apk. 
 * Confirm that your devices meet the `Prerequisites <../prerequisites/index.html>`_
 * **Start your WiThrottle server**
 
-  * For JMRI, Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in DecoderPro under Tools, Throttles. |br|\ It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ (Tools, Start JMRI Web Server). 
+  * For |JMRI|, Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in *DecoderPro* under :menuselection:`Tools --> Throttles`. |br|\ It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ :menuselection:`Tools -> Start JMRI Web Server`. 
   * For other server devices, turning them on and waiting a minute or two should be sufficient.
 
     See the `Prerequisites <../prerequisites/index.html>`_ page for more information.
@@ -28,10 +28,10 @@ Quick Start / Getting Started
 
   * Wait for your server's address to show up in 'Discovered Servers'
 
-  * Click on the Discovered server
+  * Click on the *Discovered server*
 
     * If your |WTS| does not show up, check that are on the same network as the |WTS| or |EX-CS|.   
-    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS| (Using the values shown on the JMRI WiThrottle window) and press :guilabel:`Connect`. |br|\ Note: this situation is sometimes possible even if you are on the same network. |br|\ |br|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |br|\ |br|\ 
+    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press :guilabel:`Connect`. |br|\ Note: this situation is sometimes possible even if you are on the same network. |br|\ |br|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |br|\ |br|\ 
 
   * If needed, turn the track power on with :menuselection:`Menu --> Power` and confirm the button is 'green'  (This is not required by all DCC Command Stations.)
   
@@ -51,14 +51,14 @@ Quick Start / Getting Started
     * Use the slider, or volume hardware buttons, or optional buttons for speed
     * Use the :guilabel:`Forward` and :guilabel:`Reverse` buttons to control direction
 
-  * Press your phone's Menu button to access screens for Turnout, Route and Power control, as well as adjust settings and set numerous preferences
-  * You can also 'swipe/fling' left or right to jump quickly back and forth between the Throttle, Routes, Turnouts and Web pages. (Use Preferences to choose which are in the left / right swipe list) |br|\ |br|\ 
+  * Press your phone's Menu button :guilabel:`≡` to access screens for Turnout/Point, Route and Power control, as well as adjust settings and set numerous preferences
+  * You can also 'swipe/fling' left or right to jump quickly back and forth between the Throttle, Routes, Turnouts/Points and Web pages. (Use Preferences to choose which are in the left / right swipe list) |br|\ |br|\ 
 
-  * To release a single loco (or consist), click :guilabel:`Select` again and click the :guilabel:`Release` button
+  * To release a single loco (or consist/multiple unit), click :guilabel:`Select` again and click the :guilabel:`Release` button
 
   * To release all locos, just press the :guilabel:`Back` button and exit the app. |br|\ This will also stop your locos (can be overridden in preferences)
 
 Note:
 
-* To create a consist 'on-the-fly', simply select additional locos for the same throttle, then select which way the new loco if facing. Direction and speed will be sent for all. Release will release all for that throttle
+* To create a consist/multiple unit 'on-the-fly', simply select additional locos for the same throttle, then select which way the new loco if facing. Direction and speed will be sent for all. :guilabel:`Release` will release all for that throttle.
 
