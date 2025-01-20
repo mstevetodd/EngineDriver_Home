@@ -7,26 +7,23 @@ Downloads
 
 .. include:: ../include.rst
 
-Play Store
-----------
-The Published version is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by direct download.
+The Published version (v2.37.187) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../_static/apk/EngineDriver.apk>`_.
 
 If you'd like to help test early versions, please join the `Beta program <https://play.google.com/apps/testing/jmri.enginedriver>`_.
+
+Note: for manual install, turn on "Allow unknown sources" in Settings, manually uninstall earlier versions, then download desired version to your device and follow the prompts to install.
 
 Older or Other Versions
 -----------------------
 
-Visit `https://enginedriver.mstevetodd.com/downloads <https://enginedriver.mstevetodd.com/downloads>`_ for the current and older .apk files.
-
-* `EngineDriver-2.33.189.apk <../_static/apk/EngineDriver-2.33.189.apk>`_
-* `EngineDriver-2.33.187.apk <../_static/apk/EngineDriver-2.33.187.apk>`_
-* `EngineDriver-2.33.177.apk <../_static/apk/EngineDriver-2.33.177.apk>`_
-* `EngineDriver-2.33.173.apk <../_static/apk/EngineDriver-2.33.173.apk>`_
-* `EngineDriver-2.33.163.apk <../_static/apk/EngineDriver-2.33.163.apk>`_
+* `EngineDriver-2.38.189.apk (Beta) <../_static/apk/EngineDriver-2.38.189.apk>`_
+* `EngineDriver-2.37.187.apk <../_static/apk/EngineDriver-2.37.187.apk>`_
+* `EngineDriver-2.36.177.apk <../_static/apk/EngineDriver-2.36.177.apk>`_
+* `EngineDriver-2.35.173.apk <../_static/apk/EngineDriver-2.35.173.apk>`_
+* `EngineDriver-2.34.163.apk <../_static/apk/EngineDriver-2.34.163.apk>`_
 * `EngineDriver-2.33.155.apk <../_static/apk/EngineDriver-2.33.155.apk>`_
-* `EngineDriver-2.33.152.apk <../_static/apk/EngineDriver-2.33.152.apk>`_
 * `EngineDriver-2.31.139.apk <../_static/apk/EngineDriver-2.31.139.apk>`_
-* `EngineDriver-2.32.149.apk <../_static/apk/EngineDriver-2.32.149.apk>`_
+* `EngineDriver-2.32.151.apk <../_static/apk/EngineDriver-2.32.151.apk>`_
 * `EngineDriver-2.31.139.apk <../_static/apk/EngineDriver-2.31.139.apk>`_
 * `EngineDriver-2.30.133.apk <../_static/apk/EngineDriver-2.30.133.apk>`_
 * `EngineDriver-2.29.127.apk <../_static/apk/EngineDriver-2.29.127.apk>`_
