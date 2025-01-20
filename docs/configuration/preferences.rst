@@ -35,6 +35,11 @@ Device Preferences
 
 The following preferences provide options for the 'whole' of |ed|.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Throttle Name
 """""""""""""
 
@@ -51,8 +56,7 @@ There are four options to choose from:
 * Auto-Web
 
 .. list-table::
-    :width: 100%
-    :widths: 60 40
+    :widths: auto
     :header-rows: 1
 
     * - Example
@@ -83,8 +87,7 @@ There are five themes to choose from:
 * Colourful
 
 .. list-table::
-    :width: 100%
-    :widths: 50 50
+    :widths: auto
     :header-rows: 1
 
     * - Example
@@ -118,25 +121,30 @@ For English, it also changes the railroad/railway terminology (eg, Selecting 'Us
 Supported localisations are:
 
 * Use Phone's global setting |br| -  Will use any of the localisations below depending on what your system is set to it
-* English (US) |br| - Engine Driver's default
+* English (US) - Engine Driver's default
+* English (UK)
+* English (AUS)
+* English (NZ)
 * Italian
 * Portuguese
 * German
 * Spanish
 * Catalan
-* French
+* French (FR)
+* French (FA)
 * Czech
-
-The following can't be chosen in the preference, but will be activated automatically if you select ``Use the Phone's global setting`` and you have selected one of the following primary languages in you Device's / Phone's global settings:
-
-* English (UK)
-* English (AUS)
-* English (NZ)
+* Japanese
 
 Left/Right Swipe Preferences
 """"""""""""""""""""""""""""
 
 The following preferences provide options for how *left/right swipes* work and which screens are available when you swipe left / right.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 
 Disable full screen Swipe?
 '''''''''''''''''''''''''''''''''''
@@ -162,6 +170,11 @@ Throttle Screen Appearance Preferences
 --------------------------------------
 
 The following preferences provide options for the appearance of the |T-S|.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Throttle Screen Layout
 """"""""""""""""""""""
@@ -278,8 +291,7 @@ Throttle Screen Layout
 
 
 .. list-table::
-    :width: 100%
-    :widths: 50 50
+    :widths: auto
     :header-rows: 1
 
     * - Example
@@ -307,10 +319,10 @@ Throttle Screen Layout
       - Vertical Switching |br| Vertical Shunting 
     * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_left_high_contrast.png 
           :scale: 8%
-      - Vertical Switching |br| - Left |br| Vertical Shunting |br| - Left
+      - Vertical Switching - Left |br| Vertical Shunting - Left
     * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_right_high_contrast.png 
           :scale: 8%
-      - Vertical Switching |br| - Right |br| Vertical Shunting |br| - Left
+      - Vertical Switching- Right |br| Vertical Shunting - Left
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_switching_high_contrast.png 
           :scale: 8%
       - Horizontal Switching |br| Horizontal Shunting
@@ -345,7 +357,12 @@ All other layouts will automatically change this preference to the fixed number 
 Speed Slider and Buttons Preferences
 """"""""""""""""""""""""""""""""""""
 
-The following preference allows you to adjust aspects of the Throttle Areas on the |T-S|.
+The following preferences allow you to adjust aspects of the Throttle Areas on the |T-S|.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Increase Slider/Speed Height?
 '''''''''''''''''''''''''''''''''''
@@ -440,6 +457,11 @@ Haptic Feedback (Vibration) Preferences
 
 The following preferences provide options for how and when the Device / Phone will *vibrate* on certain actions.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Haptic Feedback (Vibration)
 '''''''''''''''''''''''''''''''''''
 
@@ -465,6 +487,11 @@ Direction Button Preferences
 """"""""""""""""""""""""""""
 
 The following preferences provide options for Direction Buttons.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Swap Direction buttons?
 '''''''''''''''''''''''''''''''''''
@@ -524,6 +551,11 @@ Default Function Preferences
 
 The following preferences provide options for when and how the default Function Labels are displayed.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Use default function labels?
 '''''''''''''''''''''''''''''''''''
 
@@ -551,9 +583,14 @@ Only relevant to the following Throttle Screen layouts:
 Throttle Web View Preferences
 """""""""""""""""""""""""""""
 
+The *Throttle Web View* is a smaller (approximately half page) Web browser window that will appear at the bottom of the Throttle Screen, and is difference to the main Web View Screen.  The two are configured independently.
+
 The following preferences provide options for options for *Throttle Web View* appearance.
 
-The *Throttle Web View* is a smaller (approximately half page) Web browser window that will appear at the bottom of the Throttle Screen, and is difference to the main Web View Screen.  The two are configured independently.
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Throttle Web View?
 '''''''''''''''''''''''''''''''''''
@@ -577,7 +614,13 @@ Note that this is different to the 'Web View Screen' initial Web Page which is s
 Swipe Up-Down Preferences
 """""""""""""""""""""""""
 
-The following preferences provide options for options for swipe up or down on the |T-S|
+The following preferences provide options for options for swipe up or down on the |T-S|.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 
 Use Immersive Mode for Throttle view?
 '''''''''''''''''''''''''''''''''''''
@@ -638,6 +681,11 @@ Accelerometer (Shake) Preferences
 
 The following preferences provide options for options for what happens when you shake your device / phone while on the |T-S|.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Shake Action
 '''''''''''''''''''''''''''''''''''
 
@@ -667,13 +715,18 @@ Background Image Preferences
 
 The following preferences provide options for showing a background image on the |T-S|.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Background Image
 '''''''''''''''''''''''''''''''''''
 
 Enabling this preference will cause |ed| to show a background image on the |T-S|, as long as one is selected in the `Background Image File Name`_ preference.
 
 Background Image File Name
-'''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''''
 
 This preference allows you to select a image file that will be used as the background o the |T-S|.  This has no effect unless the `Background Image`_ preference is enabled.
 
@@ -682,7 +735,7 @@ Clicking on this preference launches your image chooser app.  As this can be dif
 Note: You can install additional apps to do the same job for the Play Store.
 
 Background Image Position
-'''''''''''''''''''''''''''''''''''
+''''''''''''''''''''''''''
 
 This preference lets you select how the background image will be positioned and/or resized on the screen.
 
@@ -726,7 +779,172 @@ Options include:
 Semi-Realistic Throttle Preferences
 """""""""""""""""""""""""""""""""""
 
-Refer to :ref:`operation/semi-realistic-throttle:preference settings for the srt` for information on the preferences specific to the |SRT|.
+Refer to :ref:`operation/semi-realistic-throttle:preference settings for the srt` for information on the |SRT|.
+
+Acceleration Speed Step Repeat Delay
+'''''''''''''''''''''''''''''''''''''
+
+This preference adjusts how long between acceleration speed steps repeats (in milliseconds). 
+
+Smaller is faster.
+
+* This setting (combined with the Speed Step Amount) is used to provide a basic level of |SRT| create momentum to loco movement. 
+* Think of it providing a smoothing function to the speed control (given that the Load settings will be the primary means of determining major impacts on train performance)
+* The default settings provide a moderate momentum.
+* To effectively turn off this basic |SRT| momentum (and rely entirely on the decoder momentum), 
+
+   * set the delay time to 100, 
+   * step amount to 40.
+
+Deceleration Speed Step Repeat Delay
+''''''''''''''''''''''''''''''''''''
+
+This preference adjusts how long between deceleration speed steps repeats (in milliseconds). 
+
+Smaller is faster.
+
+See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
+
+Speed Step Amount
+'''''''''''''''''
+
+This preference adjusts how much the actual speed step jumps each step to the target speed. 
+
+Larger is faster.
+
+See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
+
+Maximum Throttle Percentage (SRT)
+'''''''''''''''''''''''''''''''''
+
+This preference adjusts the maximum allowed slider value in % in **ALL** throttle sliders in **ALL** |T-S| types.
+
+Throttle Notches
+''''''''''''''''
+
+This preference adjusts how the Throttle slider is displayed. Either as a percentage, or by a specific number of steps/notches*
+
+Stop Button Action
+''''''''''''''''''
+
+This preference adjusts what the :guilabel:`Stop` button does.
+
+Options are:
+
+* Throttle to Zero
+
+   * Has the same effect as selecting step zero on the throttle slider.
+   * The commanded speed to the decoder will decrease slowly to zero based on the basic momentum setting of the |SRT|, the |SRT| Load setting and the |SRT| brake setting.
+   * In other words, in this case Stop brings the loco to a stop under full control of the |SRT| features.
+
+* Throttle to Zero + Full Brake
+
+   * As above with the addition that the |SRT| Brake goes to its maximum setting (as defined in the Maximum Brake Percentage preference).
+
+* Speed to Zero
+
+   * The commanded speed to the decoder goes to zero.
+   * In effect this overrides the |SRT| basic momentum settings, the |SRT| Load setting and the |SRT| Brake setting if the Decoder Brake Type option is NOT active.
+   * The loco will decelerate based on the decoder momentum (i.e. CV4) and any decoder functions set up in the Decoder Brake Levels option will be activated depending on the position of the Brake.
+
+* Speed to Zero + Brake to Zero
+
+   * The commanded speed to the decoder goes to zero and the |SRT| Brake goes to zero.
+   * The loco will decelerate based on the decoder momentum (and any other decoder functions activated by the operator).
+
+These stop options allow the user to control the deceleration of their train in a variety of ways when using braking. The user can choose to use the |SRT| momentum and braking, or choose to use the decoder momentum and braking. The advantage of the later approach for some users will be that the sound production of a sound decoder that is determined by the momentum/speed in the decoder is fully preserved.
+
+Number of Brake Steps
+'''''''''''''''''''''
+
+This preference adjusts the number of steps in the Brake Slider.
+
+* Affects the display of the Brake control.
+* Note that the percentage Brake applied at each step is annotated on the brake view
+* Note that the amount of brake per step increases exponentially.
+
+Maximum Brake Percentage
+''''''''''''''''''''''''
+
+This preference adjusts the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero
+
+Disable the Air Reservoir
+'''''''''''''''''''''''''
+
+If this preference checked the fill state of the air reservoir and air will not impact available brakes.
+
+See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
+
+Rate the air brakes refresh
+'''''''''''''''''''''''''''
+
+This preference adjusts the rate that the Air Brakes will refresh/refill (in milliseconds). 
+
+Smaller is faster.
+
+Number of Load Steps
+''''''''''''''''''''
+
+This preference adjusts the number of steps in the Load Slider.
+
+* Affects the display of the Load control.
+* Note that the Load applied at each step is annotated on the Load view
+* Note as clearly seen in the Percentage option, the amount of Load per step increases exponentially.
+
+Maximum Load Percentage
+'''''''''''''''''''''''
+
+This preference adjusts the maximum percentage of the Load Slider. (100-2000%) 100% = loco alone
+
+Decoder Brake Type
+''''''''''''''''''
+
+This preference sets wehther or not to activate the Brake functions on the decoder.
+
+See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+
+Decoder Low Function Number(s)
+''''''''''''''''''''''''''''''
+
+This preference sets which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)
+
+See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+
+Decoder Low Brake Value (Percent)
+'''''''''''''''''''''''''''''''''
+
+This preference sets what Percentage Brake to activate the Low Function(s)
+
+See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+
+Decoder Mid Function Number(s)
+''''''''''''''''''''''''''''''
+
+This preference sets which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)
+
+See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+
+Decoder Mid Brake Value (Percent)
+'''''''''''''''''''''''''''''''''
+
+This preference sets what Percentage Brake to activate the Mid Function(s)
+
+See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+
+Decoder High Function Number(s)
+'''''''''''''''''''''''''''''''
+
+This preference sets which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)
+
+See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+
+Decoder High Brake Value (Percent)
+''''''''''''''''''''''''''''''''''
+
+This preference sets the Percentage Brake to activate the High Function(s).
+
+See description of the |SRT| integration with decoder on the :doc:`/operation/semi-realistic-throttle` page.
+
 
 Throttle Screen Action Bar Preferences
 --------------------------------------
@@ -736,6 +954,11 @@ Throttle Screen Action Bar Preferences
    :scale: 40%
 
 The following preferences provide options for showing additional buttons on the Action Bar, primarily at the top of the |T-S| though some will show on many screens.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Emergency Stop button?
 """"""""""""""""""""""
@@ -807,6 +1030,11 @@ Layout Switch Button Preferences
 
 The following preferences provide options for an optional button on the Action Bar to switch Throttle Screen layouts.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Show Layout Switch button?
 '''''''''''''''''''''''''''''''''''
 
@@ -852,10 +1080,22 @@ Show Server Description
 
 Setting this preference will display the description of the current server on the Action Bar.
 
+App Icon button?
+""""""""""""""""
+
+.. image:: ../_static/images/logo.png
+   :align: right
+   :scale: 25%
+
+This preference allows you to select what the App icon will do when pressed.
+
+* None - Do nothing (Default)
+* Emergency Stop - Will do the same as pressing the Emergency Stop button.
+
 DCC-EX button?
 """"""""""""""
 
-Enabling this preference will cause |ED| to show an additional button on the Action Bar that allows to to quickly to the DCC-EX screen.
+Enabling this preference will cause |ED| to show an additional button on the Action Bar that allows you to quickly to the |DCC-EX-S|.
 
 Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
 
@@ -863,6 +1103,11 @@ Throttle Control Preferences
 ----------------------------
 
 The following preferences provide options for how the throttle on the |T-S| will behave.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Speed Units
 """""""""""
@@ -879,7 +1124,7 @@ Options:
  * 28 steps
  * 128 steps
 
-Note that the `Speed button Change Amount`_ preference will work in the units that you choose here.
+Note that the `Speed button Change Amount`_ preference will work in whatever units that you choose here.
 
 Maximum throttle Percentage
 """""""""""""""""""""""""""
@@ -898,7 +1143,7 @@ Speed button Change Amount
 
 This preference allows you to set how much the Speed buttons jump/change the speed.
 
-Note that this works in the units chosen in the `Speed Units` preference.i.e. If your Speed Units are '8 Steps' and your Speed button change amount is '4' then just two click will get you from zero to 100% speed.
+Note that this works in the units chosen in the `Speed Units` preference. i.e. If your Speed Units are '8 Steps' and your Speed button change amount is '4' then just two click will get you from zero to 100% speed.
 
 Speed button Repeat Delay
 """""""""""""""""""""""""
@@ -971,6 +1216,11 @@ Consist Function Follow Preferences
 -----------------------------------
 
 These preferences allow for change the way DCC functions will behave in a consist/multiple unit train.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Consist Functions - Follow Rule Style
 """""""""""""""""""""""""""""""""""""
@@ -1060,10 +1310,20 @@ Additional Throttle Control Source Preferences
 
 |ed| allows for methods, other than the touch screen, to control locos.  The following preferences allow you change options relating to these.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Volume Button Preferences
 """""""""""""""""""""""""
 
 |ed| will allows you to use the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to control speed. The following preferences allow you change options relating to these.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Speed button Change Amount (Volume)
 '''''''''''''''''''''''''''''''''''
@@ -1090,6 +1350,11 @@ Gamepad Preferences
 """""""""""""""""""
 
 |ed| will allows you to use the inexpensive gamepads to control speed. The following preferences allow you change options relating to these (if connected).
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1291,10 +1556,20 @@ ESU MobileControl II Options
 
 The following preferences allow you to change the way a ESU MobileControl II behaves (if connected).
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Device Stop button options
 """"""""""""""""""""""""""
 
 The following preferences allow you to change the way the *Device Stop button* on a ESU MobileControl II behaves (if connected).
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Stop Button long-press delay
 '''''''''''''''''''''''''''''''''''
@@ -1312,6 +1587,11 @@ Device side button options
 """"""""""""""""""""""""""
 
 The following preferences allow you to change the way the *Device Side button* on a ESU MobileControl II behaves (if connected).
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Top-left button action
 '''''''''''''''''''''''''''''''''''
@@ -1363,6 +1643,11 @@ Control Knob options
 
 The following preferences allow you to change the way the *Control Knob* on a ESU MobileControl II behaves (if connected).
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Control Knob Zero Trim
 '''''''''''''''''''''''''''''''''''
 
@@ -1397,6 +1682,11 @@ Voice Response Preferences
 |ed| can 'speak' certain events, most related to the use of the gamepads, where you may not be looking at the screen.  These can also be helpful for the visually challenged. This is also referred to as 'Text to Speech' (TTS).
 
 The following preferences allow you to change the way the Voice Responses behave.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Voice Response
 '''''''''''''''''''''''''''''''''''
@@ -1458,6 +1748,11 @@ Select Loco Preferences
 -----------------------
 
 The following preferences affect how the :guilabel:`Select` button appears and behaves.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Stop on Release?
 """""""""""""""""""""""""
@@ -1540,6 +1835,11 @@ The following preferences provide options for the In Phone Loco Sounds (IPLS).
 
     For additional information see the `In Phone Loco Sounds (IPLS) section <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_ of the Operations page.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Throttle 1 Loco Sounds
 """"""""""""""""""""""
 
@@ -1576,6 +1876,11 @@ Additional Preferences
 """"""""""""""""""""""
 
 The following preferences provide additional options for how the In Phone Loco Sounds behave.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 In Phone Momentum
 '''''''''''''''''
@@ -1620,6 +1925,11 @@ Connect Preferences
 -------------------
 
 The following preferences allow you to change the way the |C-S| appears and behaves.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Maximum Recent Connections
 """"""""""""""""""""""""""
@@ -1702,6 +2012,11 @@ Web Screen Preferences
 
 The following preferences allow you to change the way the |WV-S| behaves.
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 Web Screen Orientation
 """""""""""""""""""""""""
 
@@ -1724,6 +2039,11 @@ Turnouts/Points and Routes Preferences
 --------------------------------------
 
 The following preferences allow you to change the way the *Turnouts/Points* behave.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Hide Sys Route Names?
 """""""""""""""""""""""""
@@ -1753,6 +2073,11 @@ Children's (Timer) Preferences
   See the `Children's Timer <operation/advanced.html#children-s-timer>`_ page for more information on how to use the timer.
 
 The following preferences allow you to change the way the *Children's (Timer)* behave.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Time limited running
 """"""""""""""""""""
@@ -1818,6 +2143,11 @@ Import/Export/Reset & Log Preferences
 -------------------------------------
 
 The following preferences allow you to change the way the *Imports/Exports/Reset* behave.
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 Import, Export or Reset
 """""""""""""""""""""""""

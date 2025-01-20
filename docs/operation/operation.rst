@@ -53,28 +53,6 @@ Connecting to the WiFi network
 Connecting Engine Driver to the WiThrottle server
 """""""""""""""""""""""""""""""""""""""""""""""""
 
-.. sidebar:: 
-  :class: sidebar-no-background
-
-  .. image:: ../_static/images/parts/connecting_ip_address.png
-    :scale: 30 %
-    :align: right
-    :name: IP Address
-
-  |br|
-
-  .. image:: ../_static/images/parts/connecting_discovered_servers.png
-    :scale: 30 %
-    :align: right
-    :name: Discovered Servers
-
-  |br|
-
-  .. image:: ../_static/images/parts/connecting_recent_servers.png
-    :scale: 30 %
-    :align: right
-    :name: Recent Severs
-
 * Start |ED| |br|\ You will be presented with the |C-S|
 * On the |C-S| there are three ways you can select a |WTS| to connect to:
 
@@ -82,39 +60,53 @@ Connecting Engine Driver to the WiThrottle server
   - Discovered Servers
   - Recent servers
 
+IP Address and Port
+'''''''''''''''''''
+.. image:: ../_static/images/parts/connecting_ip_address.png
+  :scale: 50 %
+  :align: right
+  :name: IP Address
+
+Type in the **IP address** and **Port** of the |WTS| and press :guilabel:`Connect`.
+
+To find your server's IP address and Port:
+
+  * For a |JMRI| server, see the WiThrottle screen for its address 
+  * For other devices, see the instructions for that device
+
+If you only ever connect to one |WTS| you can effectively bypass this screen by setting the `Auto-Connect to WiThrottle Server? <../configuration/preferences.html#auto-connect-to-withrottle-server>`_ preference.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see `Connection issues <./wifi_issues.html>`_ if you are having difficulties.
+
 Discover Servers
 ''''''''''''''''
 
-  This is the most common way to connect. If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+.. image:: ../_static/images/parts/connecting_discovered_servers.png
+  :scale: 50 %
+  :align: right
+  :name: Discovered Servers
 
-  If the server does not appear in the recent list try one of the other two methods.  
-  Your server not appearing in the recent list is not necessarily a problem  See `Connection issues <./wifi_issues.html>`_ for more information.
+This is the most common way to connect. If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+
+If the server does not appear in the recent list try one of the other two methods.  
+Your server not appearing in the recent list is not necessarily a problem  See `Connection issues <./wifi_issues.html>`_ for more information.
 
 Recent Server List
 ''''''''''''''''''
 
-  If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+.. image:: ../_static/images/parts/connecting_recent_servers.png
+  :scale: 50 %
+  :align: right
+  :name: Recent Severs
 
-  A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
+If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
 
-  There is also a 'demo' server at **jmri.mstevetodd.com**, port **44444** in this list that you can connect to for testing. (If your device/phone has an internet connection.)
+A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
 
-IP Address and Port
-'''''''''''''''''''
-
-  Type in the **IP address** and **Port** of the |WTS| and press :guilabel:`Connect`.
-
-  To find your server's IP address and Port:
-
-    * For a JMRI server, see the WiThrottle screen for its address 
-    * For other devices, see the instructions for that device
-
-  If you only ever connect to one |WTS| you can effectively bypass this screen by setting the `Auto-Connect to WiThrottle Server? <../configuration/preferences.html#auto-connect-to-withrottle-server>`_ preference.
-
-.. note:: 
-  :class: note-ed-hidden-title
-  
-  Also see `Connection issues <./wifi_issues.html>`_ if you are having difficulties.
+There is also a 'demo' server at **jmri.mstevetodd.com**, port **44444** in this list that you can connect to for testing. (If your device/phone has an internet connection.)
 
 Disconnections
 """"""""""""""
@@ -169,23 +161,23 @@ There three ways select a loco:
 * By selecting from the Roster
 * By selecting a Recent Loco
 
-  **DCC Address**
+**DCC Address**
 
-  You can enter the loco's DCC address (verify short or long), and press :guilabel:`Acquire` to select the loco.  You will then be taken back to the |T-S| with that loco selected.
+You can enter the loco's DCC address (verify short or long), and press :guilabel:`Acquire` to select the loco.  You will then be taken back to the |T-S| with that loco selected.
 
-  **Roster**
+**Roster**
 
-  If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-  For this to be possible, the Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or your |WTS| device's documentation for creating a roster.
+For this to be possible, the Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or your |WTS| device's documentation for creating a roster.
 
-  Also see `Locomotive Icons <#locomotive-icons-in-the-roster>`_ below.
+Also see `Locomotive Icons <#locomotive-icons-in-the-roster>`_ below.
 
-  **Recent Locos**
+**Recent Locos**
 
-  |ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with `Maximum Recent Locos <../configuration/preferences.html#maximum-recent-locos>`_ preference.)
+|ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with `Maximum Recent Locos <../configuration/preferences.html#maximum-recent-locos>`_ preference.)
 
-  If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
 On the fly / In Phone Consists (Multiple Units)
 """"""""""""""""""""""""""""""""""""""""""""""""
@@ -198,21 +190,24 @@ There two ways create a Consist / Multiple Unit train:
       * Roster
       * Recent Locos
 
-* By using the **Recent Consists** list |br|\ |br|\ 
+* By using the **Recent Consists** list 
 
-  **One at a time**
+**One at a time**
 
-  Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
+Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
 
-  After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:
+After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:
 
-  * Change the facing of each loco (except the front loco)
-  * Change the order of the locos in the Consist / Multiple Unit
-  * Remove locos from the Consist / Multiple Unit
+* Change the facing of each loco (except the front loco)
+* Change the order of the locos in the Consist / Multiple Unit
+* Remove locos from the Consist / Multiple Unit
 
-  **Recent Consists**
+**Recent Consists**
 
-  Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.
+Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.
+
+.. note::
+  :class: note-ed-hidden-title
 
   Note:
 
@@ -231,10 +226,10 @@ From here you can:
 * Activate the Virtual Sounds 
 * Add or release locos.  
   
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See `Selecting / Releasing Locos and Consists/Multiple Units <#selecting-releasing-locos>`_ for more information.
+  See `Selecting / Releasing Locos and Consists/Multiple Units <#selecting-releasing-locos>`_ for more information.
 
 Controlling Speed
 """""""""""""""""

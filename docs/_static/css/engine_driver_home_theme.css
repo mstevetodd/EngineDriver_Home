@@ -86,6 +86,11 @@ dl.footnote>dd p {
   clear: none !important;
 }
 
+html[data-theme='dark'] .note-ed-hidden-title {
+  background:#ab894120 !important; 
+  clear: none !important;
+}
+
 .note-ed .admonition-title {
   background:#fcc756 !important; 
   clear: none !important;
@@ -105,6 +110,7 @@ dl.footnote>dd p {
 }
 
 .menuselection {
+  border: 0px solid #ffffff00 !important;
   background:#b9b9b940 !important;
   font-size: 90% !important;
 }
@@ -168,6 +174,13 @@ li.toctree-l3, li.toctree-l4 {
 
 .wy-nav-content {
   max-width: 1024px;
+}
+
+html[data-theme='dark'] .wy-nav-content a {
+	color: #96d7ff !important;
+}
+html[data-theme='dark'] .wy-nav-content a:visited {
+	color: #c0b3e5 !important;
 }
 
 .wy-breadcrumbs {
@@ -250,8 +263,8 @@ nav.in-this-section {
 }
 
 html[data-theme='dark'] .rst-content .sidebar {
-  background: #000000ff !important;
-  border:#000000ff !important;
+  background: #000000ff;
+  border:#000000ff;
 }
 
 .sidebar-on-this-page {

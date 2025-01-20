@@ -42,11 +42,11 @@ Permissions
 .. image:: ../_static/images/setup_wizard/setup1e.png
    :scale: 12 %
 
-Android 11 Changes
-------------------
-
-.. image:: ../_static/images/setup_wizard/setup1f.png
-   :scale: 12 %
+.. Android 11 Changes
+.. ------------------
+..
+.. .. image:: ../_static/images/setup_wizard/setup1f.png
+..   :scale: 12 %
 
 Throttle Name
 -------------
