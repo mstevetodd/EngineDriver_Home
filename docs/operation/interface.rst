@@ -18,10 +18,10 @@ User Interface
 
 The user interface for |ED| is described and explained in these pages as 'screens'.  There are several '`Main Screens`_' which you will routinely interact with and and larger number of '`Secondary / Support Screens`_' that will interact with infrequently. 
 
-There are also some settings that impact all of the screens which described towards the end of this page:
+There are also some settings that impact all of the |ED| screens, which are described towards the end of this page:
 
-* Theme
-* Localisation 
+* `Theme / Styles`_
+* `Localisation`_ (Language)
 
 
 Main Screens
@@ -29,10 +29,10 @@ Main Screens
 
 There are four main screens:
 
-* `Connection Screen`_
-* `Throttle Screen`_
-* `Turnouts/Points Screen`_
-* `Routes Screen`_
+.. contents:: 
+    :depth: 1
+    :local:
+    :class: in-this-section
 
 ----
 
@@ -48,9 +48,9 @@ It allows you choose which |WTS| to connect to, which you must do to control you
 
 There are three ways you can select a |WTS| to connect to:
 
-* IP Address and Port
-* Discovered Servers
-* Recent servers
+* `IP Address and Port`_
+* `Discovered Servers`_
+* `Recent Servers`_
 
 Once you select a server the |T-S| will be automatically displayed.
 
@@ -78,12 +78,14 @@ Discovered Servers
 
   To connect to any |WTS| in this list, simply click on the row.  |ed| will attempt to connect to it, and the |T-S| will be displayed.
 
-Recent servers
+Recent Servers
 ''''''''''''''
 
   To connect to any |WTS| in this list, simply click on the row.  |ed| will attempt to connect to it.  If successful the |T-S| will be displayed.
 
   Note that, just because it is in this list, it does not mean that you can connect to it now. It only means that you have successfully connected to it in the past.
+
+|HR-DASHED|
 
 Action Bar (Connection Screen)
 """"""""""""""""""""""""""""""
@@ -96,10 +98,12 @@ In the |C-S| the Action Bar only displays:
 
 See the `Action Bar`_ section of this page for more information.
 
+|HR-DASHED|
+
 Overflow Menu (Connection Screen)
 """""""""""""""""""""""""""""""""
 
-The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the `main screens <../operation/interface.html#main-screens>`_ is normally three dots (⁞) or three bars (≡).
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the `Main Screens`_ is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
 Specific to the |C-S|, the Overflow Menu can display:
@@ -142,6 +146,7 @@ The |T-S| allows you to control:
 
 The |T-S| contains between 1 and 6 Throttle areas depending on the Throttle layout chosen and the number of throttles for that layout (only some allow this to be changed).  
 
+|HR-DASHED|
 
 Throttle Area
 """"""""""""""""""""""""""""""""""""
@@ -155,179 +160,196 @@ Each *Throttle Area* allows you to:
 * Activate DCC decoder functions like the light, bell, horn 
 * Activate Virtual (IPLS) Sounds (bell, horn, short horn) (if enabled)
 
+|HR-DASHED|
+
 Loco Select Button
 ''''''''''''''''''''''''''''''''
 
-   The loco :guilabel:`Select` button in the Throttle Area allows to select or release locos for that particular Throttle.  Click on the button and you will be taken to the Select Loco screen.
+The loco :guilabel:`Select` button in the Throttle Area allows to select or release locos for that particular Throttle.  Click on the button and you will be taken to the Select Loco screen.
 
-   Once you have selected a loco, the label on the button change to the DCC Address(s) or the Roster name(s) of the Loco depending on how you select the loco in the |LS-S|, and if you have the enabled the `Loco Address instead of Name? <../preferences.html#loco-address-instead-of-name>`_ preference.
+Once you have selected a loco, the label on the button change to the DCC Address(s) or the Roster name(s) of the Loco depending on how you select the loco in the |LS-S|, and if you have the enabled the `Loco Address instead of Name? <../preferences.html#loco-address-instead-of-name>`_ preference.
 
-   When the button is displaying DCC Address(s) or the Roster name(s), click on the button again and you will be taken to the Select Loco screen where you can de-select the loco(s), select additional locos to make a consist / multiple unit train, edit the locos in the consist, or edit the lights of the locos in the consist / multiple unit.
+When the button is displaying DCC Address(s) or the Roster name(s), click on the button again and you will be taken to the Select Loco screen where you can de-select the loco(s), select additional locos to make a consist / multiple unit train, edit the locos in the consist, or edit the lights of the locos in the consist / multiple unit.
 
-   .. note:: 
-      :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-      See the `Operation <../operation/index.html#selecting-releasing-locos>`_ page for more information.
+  See the `Operation <../operation/index.html#selecting-releasing-locos>`_ page for more information.
+
+|HR-DASHED|
 
 Speed indicator
 ''''''''''''''''''''''''''''''''
 
-   The *Speed Indicator* or *Speed* area of each throttle of the |T-S| indicates the throttle amount/setting (rather than the actual speed of the locos controlled by the the throttle).
-   
-   Depending on the `Speed Units Preference <../configuration/preferences.html#speed-units>`_ the upper value show will be different: 
+The *Speed Indicator* or *Speed* area of each throttle of the |T-S| indicates the throttle amount/setting (rather than the actual speed of the locos controlled by the the throttle).
 
-   .. list-table::
-    :width: 100%
-    :widths: 60 20 20
-    :header-rows: 1
+Depending on the `Speed Units Preference <../configuration/preferences.html#speed-units>`_ the upper value show will be different: 
 
-    * - Speed Unit Setting
-      - Low value
-      - High Value
-    * - Percent 0 - 100% 
-      - 0
-      - 100
-    * - Auto Speed steps 
-      - ?
-      - ?
-    * - 8 steps 
-      - 0
-      - 8
-    * - 10 steps 
-      - 0
-      - 10
-    * - 14 steps 
-      - 0
-      - 14
-    * - 28 steps 
-      - 0
-      - 28
-    * - 128 steps
-      - 0
-      - 128
+.. list-table::
+  :width: 100%
+  :widths: 60 20 20
+  :header-rows: 1
 
-   Also, if one of the Shunting/Switching layouts is selected, the high number will be negative ('-') when reversed (e.g. -100 - 0 - 100)
+  * - Speed Unit Setting
+    - Low value
+    - High Value
+  * - Percent 0 - 100% 
+    - 0
+    - 100
+  * - Auto Speed steps 
+    - ?
+    - ?
+  * - 8 steps 
+    - 0
+    - 8
+  * - 10 steps 
+    - 0
+    - 10
+  * - 14 steps 
+    - 0
+    - 14
+  * - 28 steps 
+    - 0
+    - 28
+  * - 128 steps
+    - 0
+    - 128
 
-   The *Speed Indicator* area also can show:
+Also, if one of the Shunting/Switching layouts is selected, the high number will be negative ('-') when reversed (e.g. -100 - 0 - 100)
 
-   * Volume indicator
-   * Gamepad Indicator
-   * Direction indicator (Shunting/Switching Layouts only)
+The *Speed Indicator* area also can show:
 
-   *Volume Indicator*
+* Volume indicator
+* Gamepad Indicator
+* Direction indicator (Shunting/Switching Layouts only)
 
-   A 'V' will be shown in the *Speed Indicator* area to indicate which throttle is being controlled by the hardware volume buttons.
-   Touch another *Speed Indicator* to change which Throttle the Hardware Volume buttons control.
+*Volume Indicator*
 
-   *Gamepad Indicator*
-   
-   A number ('1','2', etc.) will be shown in the *Speed Indicator* area to indicate which throttle is being controlled by the each connected gamepad.  Set one of the gamepad to allow you to switch throttle it controls.
+A 'V' will be shown in the *Speed Indicator* area to indicate which throttle is being controlled by the hardware volume buttons.
+Touch another *Speed Indicator* to change which Throttle the Hardware Volume buttons control.
 
-   *Direction Indicator*
+*Gamepad Indicator*
 
-   If one of the Shunting/Switching layouts is selected, a triangle symbol will be shown to indicate direction (pointing Up for forward, and down for reverse).
+A number ('1','2', etc.) will be shown in the *Speed Indicator* area to indicate which throttle is being controlled by the each connected gamepad.  Set one of the gamepad to allow you to switch throttle it controls.
 
-   .. note:: 
-      :class: note-ed-hidden-title
+*Direction Indicator*
 
-      See the Throttle Control Preferences section of the `Speed Units preference <../configuration/preferences.html#speed-units>`_ for a information on changing the ``Speed Units`` options.
+If one of the Shunting/Switching layouts is selected, a triangle symbol will be shown to indicate direction (pointing Up for forward, and down for reverse).
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the Throttle Control Preferences section of the `Speed Units preference <../configuration/preferences.html#speed-units>`_ for a information on changing the ``Speed Units`` options.
+
+|HR-DASHED|
 
 Speed Slider Area
 '''''''''''''''''
-   .. image:: ../_static/images/parts/slider_horizontal.png
-      :scale: 100 %
+.. image:: ../_static/images/parts/slider_horizontal.png
+  :scale: 100 %
 
-   The Throttle areas can be configured with a *Speed Slider*.  (All Throttle Screen layouts except the 'Big Button' layouts include sliders by default.) Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for that Throttle till it gets to that point.
-   
-   Depending on the ``Throttle Screen Layout`` chosen in the  `Throttle Screen Layout <../configuration/preferences.html#throttle-screen-layout>`_ preference, all sliders on the |T-S| will be either:
-   
-   * one-directional (0% - 100%) [#PCT]_  |br|\ or 
-   * bi-directional (-100% - 0 - +100%) |br| |br|
+The Throttle areas can be configured with a *Speed Slider*.  (All Throttle Screen layouts except the 'Big Button' layouts include sliders by default.) Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for that Throttle till it gets to that point.
 
-   Bi-directional sliders are useful for when you are switching/shunting. i.e. moving your locos backwards and forwards a lot.
+Depending on the ``Throttle Screen Layout`` chosen in the  `Throttle Screen Layout <../configuration/preferences.html#throttle-screen-layout>`_ preference, all sliders on the |T-S| will be either:
 
-   Several preferences can change the appearance or actions of the *Speed Slider*\:
+* one-directional (0% - 100%) [#PCT]_  |br|\ or 
+* bi-directional (-100% - 0 - +100%) |br| |br|
 
-   * `Increase Slider/Speed Height? <../configuration/preferences.html#increase-slider-speed-height>`_ |br| When set, this preference will show a taller Slider, or Speed buttons, for throttles
-   * `Throttle Speed Slider Margin <../configuration/preferences.html#throttle-speed-slider-margin>`_ |br| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
-   * `Hide Speed Slider? <../configuration/preferences.html#hide-speed-slider>`_ |br| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
-   * `Tick Marks on Speed Sliders? <../configuration/preferences.html#tick-marks-on-speed-sliders>`_ |br| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
-   * `Switching throttle Dead Zone <../configuration/preferences.html#switching-throttle-dead-zone>`_ |br| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
-   * `Stop Button Vertical Margins <../configuration/preferences.html#stop-button-vertical-margins>`_ |br| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
+Bi-directional sliders are useful for when you are switching/shunting. i.e. moving your locos backwards and forwards a lot.
 
-    .. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the  `Speed Units preference <../configuration/preferences.html#speed-units>`_.
+Several preferences can change the appearance or actions of the *Speed Slider*\:
+
+* `Increase Slider/Speed Height? <../configuration/preferences.html#increase-slider-speed-height>`_ |br| When set, this preference will show a taller Slider, or Speed buttons, for throttles
+* `Throttle Speed Slider Margin <../configuration/preferences.html#throttle-speed-slider-margin>`_ |br| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
+* `Hide Speed Slider? <../configuration/preferences.html#hide-speed-slider>`_ |br| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
+* `Tick Marks on Speed Sliders? <../configuration/preferences.html#tick-marks-on-speed-sliders>`_ |br| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
+* `Switching throttle Dead Zone <../configuration/preferences.html#switching-throttle-dead-zone>`_ |br| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
+* `Stop Button Vertical Margins <../configuration/preferences.html#stop-button-vertical-margins>`_ |br| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
+
+.. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the  `Speed Units preference <../configuration/preferences.html#speed-units>`_.
+
+|HR-DASHED|
 
 Stop Button
 ''''''''''''''''''''''''''''''''
 
-   .. image:: ../_static/images/parts/stop_button_horizontal.png
-      :scale: 80 %
+.. image:: ../_static/images/parts/stop_button_horizontal.png
+   :scale: 80 %
 
-  Clicking the ``Stop`` button of a throttle will the loco or consists / multiple unit controlled by that throttle.  If the locos have momentum configured in the decoded it/they will slow then stop. 
+Clicking the ``Stop`` button of a throttle will the loco or consists / multiple unit controlled by that throttle.  If the locos have momentum configured in the decoded it/they will slow then stop. 
 
-   .. note:: 
-      :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-      See the `Emergeny Stop Action Bar button <emergency stop button>`_ for information on stopping locos immediately, overriding the momentum setting.
+  See the `Emergeny Stop Action Bar button <emergency stop button>`_ for information on stopping locos immediately, overriding the momentum setting.
+
+|HR-DASHED|
 
 Speed Buttons
 ''''''''''''''''''''''''''''''''
 
-   .. image:: ../_static/images/parts/speed_buttons_horizontal.png
-      :scale: 100 %
+.. image:: ../_static/images/parts/speed_buttons_horizontal.png
+  :scale: 100 %
 
-   The Throttles may optionally be configured have simple buttons that allow you to increase or decrease the loco's speed in pre-defined steps. The buttons are displayed at either end of the *speed sliders*.
-   
-   When enabled:
-   
-   * the :guilabel:`++` will **increase** the throttle speed by the `Speed Button Change Amount <../configuration/preferences.html#speed-button-change-amount>`_.
-   * the :guilabel:`--` will **decrease** the throttle speed by the `Speed Button Change Amount <../configuration/preferences.html#speed-button-change-amount>`_.
+The Throttles may optionally be configured have simple buttons that allow you to increase or decrease the loco's speed in pre-defined steps. 
 
-   For the Horizontal Sliders only, The position of these buttons in relation to the speed sliders (the space between), can be altered with the :ref:`Speed Slider Margin <configuration/preferences:throttle speed slider margin>` preference.
+For horizontal *speed sliders*, the buttons are displayed at either end of the sliders. For vertical *speed sliders*, the buttons are displayed at the top and bottom of the sliders.
 
-   .. note:: 
-     :class: note-ed-hidden-title
+When enabled:
 
-     See the :ref:`Display Speed Buttons? <configuration/preferences:display speed buttons?>` preference for more information on enabling these buttons.
+* The :guilabel:`++` or :guilabel:`>>` will **increase** the throttle speed by the `Speed Button Change Amount <../configuration/preferences.html#speed-button-change-amount>`_.
+* The :guilabel:`- -` or :guilabel:`<<` will **decrease** the throttle speed by the `Speed Button Change Amount <../configuration/preferences.html#speed-button-change-amount>`_.
 
-     See the :ref:`Speed Button Change Amount <configuration/preferences:speed button change amount>` preference for information on the abount that 
+For the Horizontal Sliders only, The position of these buttons in relation to the speed sliders (the space between), can be altered with the :ref:`Speed Slider Margin <configuration/preferences:throttle speed slider margin>` preference.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`Display Speed Buttons? <configuration/preferences:display speed buttons?>` preference for more information on enabling these buttons.
+
+  See the :ref:`Speed Button Change Amount <configuration/preferences:speed button change amount>` preference for information on the abount that 
+
+|HR-DASHED|
 
 Direction Buttons Area
 '''''''''''''''''''''''
 
-   .. image:: ../_static/images/parts/direction_buttons.png
-      :scale: 80 %
+.. image:: ../_static/images/parts/direction_buttons.png
+  :scale: 80 %
 
-   Each Throttle on the |T-S| will display :guilabel:`Forward` and :guilabel:`Reverse` direction buttons, depending on the ``Throttle Screen Layout`` in the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` preference.  'Shunting/Switching' layouts do not show the direction buttons.
+Each Throttle on the |T-S| will display :guilabel:`Forward` and :guilabel:`Reverse` direction buttons, depending on the ``Throttle Screen Layout`` in the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` preference.  'Shunting/Switching' layouts do not show the direction buttons.
 
-   Change direction while moving preference.
+Change direction while moving preference.
 
-   .. note:: 
-     :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-     See the :ref:`Direction change while moving? <configuration/preferences:direction change while moving?>`  and :ref:`Stop on Direction change? <configuration/preferences:stop on direction change?>` preferences for information on preferences which alter when the buttons are available and the way the they work.
+  See the :ref:`Direction change while moving? <configuration/preferences:direction change while moving?>`  and :ref:`Stop on Direction change? <configuration/preferences:stop on direction change?>` preferences for information on preferences which alter when the buttons are available and the way the they work.
 
+|HR-DASHED|
 
 Function Buttons Scroll Area
 ''''''''''''''''''''''''''''
 
-   The *Function Buttons Scroll Area* will show form 0 (zero) to 26 function buttons depending on a number of factors. Each button will show either:
+The *Function Buttons Scroll Area* will show form 0 (zero) to 26 function buttons depending on a number of factors. Each button will show either:
 
-   * Labels provided from the roster, which can be individually specified for each loco in the roster
-   * The default labels for |ed|  (which can be changed)
+* Labels provided from the roster, which can be individually specified for each loco in the roster
+* The default labels for |ed|  (which can be changed)
 
-   The *Function Button area* can also show:
+The *Function Button area* can also show:
 
-   * IPLS buttons  (In Phone Loco Sounds)
-   * Pause
-   * Limit Speed
+* IPLS buttons  (In Phone Loco Sounds)
+* Pause
+* Limit Speed
 
-   The *Function Buttons Scroll Area* is shown by default on all Throttle Screen layouts except ``Simple``.  It can be enable fot the ``Simple`` layout
+The *Function Buttons Scroll Area* is shown by default on all Throttle Screen layouts except ``Simple``.  It can be enable fot the ``Simple`` layout
 
-   .. note:: 
-     :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-     See the :ref:`Function Button Area Size <configuration/preferences:function buttons area size>` preference for information on how to show the *Function Button Scroll Area* on the simple layout.
+  See the :ref:`Function Button Area Size <configuration/preferences:function buttons area size>` preference for information on how to show the *Function Button Scroll Area* on the simple layout.
+
+|HR-DASHED|
 
 DCC Function buttons
 ''''''''''''''''''''
@@ -357,41 +379,47 @@ Clicking on any function button will instruct the loco to activate that DCC Func
 
   See the `Function Defaults Screen <Function Defaults Screen>`_ section for more information on configuring the labels and number of *default function* buttons.
 
-  See the :doc:`Function Buttons <../configuration/functions>` page for more information on the DCC Function buttons.
+  See the :doc:`Function Buttons </configuration/functions>` page for more information on the DCC Function buttons.
 
   For labels from Roster Entries you need to edit the Function buttons in the |WTS|, or configure |ed| to use the default labels.
+
+|HR-DASHED|
 
 Pause and Limit Speed buttons
 '''''''''''''''''''''''''''''
 
 .. todo:: Pause and Limit Speed buttons
 
-   The *Function Button area* can also show:
-   * Pause
-   * Limit Speed
+The *Function Button area* can also show:
+* *Pause* button
+* *Limit Speed* button
 
-  These are optional buttons 
+These are optional buttons 
 
 
-   .. note:: 
-     :class: note-ed-hidden-title
+  .. note:: 
+    :class: note-ed-hidden-title
 
-     See the :ref:`'Limit Speed' & 'Pause' button Preferences <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` section on the Preferences page for more information on these buttons.
+    See the :ref:`'Limit Speed' & 'Pause' button Preferences <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` section on the Preferences page for more information on these buttons.
 
+
+|HR-DASHED|
 
 In Phone Loco Sounds buttons 
 ''''''''''''''''''''''''''''
 
 .. todo:: In Phone Loco Sounds buttons 
 
-   The *Function Button area* can also show the IPLS buttons  (In Phone Loco Sounds)
+The *Function Button area* can also show the IPLS buttons  (In Phone Loco Sounds)
 
-  These are optional buttons
+These are optional buttons
 
-   .. note:: 
-     :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-     See the `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ page for more information on the IPLS buttons
+  See the :doc:`In Phone Loco Sounds (IPLS) </configuration/ipls>` page for more information on the IPLS buttons
+
+|HR-DASHED|
 
 Load Slider Area
 ''''''''''''''''
@@ -400,6 +428,10 @@ Load Slider Area
 
 This is unique to the |SRT-TS|.
 
+Refer to the :doc:`/operation/semi-realistic-throttle` page for more information.
+
+|HR-DASHED|
+
 Brake Slider Area
 '''''''''''''''''
 
@@ -407,16 +439,20 @@ Brake Slider Area
 
 This is unique to the |SRT-TS|.
 
+Refer to the :doc:`/operation/semi-realistic-throttle` page for more information.
+
+|HR-DASHED|
+
 Web View Area (Throttle Web View)
 """""""""""""""""""""""""""""""""
    
 .. todo:: Web View Area (Throttle Web View)
 
-Shows a web browser in the lower half of the |T-S|.
+Optional, shows a web browser in the lower half of the |T-S|.
 
 Your JMRI Layout panels can be displayed here if you have configured them in JMRI. 
 
-Anything that can be shown in the `Web View Screen <./operation/interface.html#web-view-screen>`_ can equally be shown here, just in a smaller space.
+Anything that can be shown in the `Web View Screen`_ can equally be shown here, just in a smaller space.
 
 .. note:: 
      :class: note-ed-hidden-title
@@ -425,9 +461,11 @@ Anything that can be shown in the `Web View Screen <./operation/interface.html#w
 
      see initial page preference
 
-     different to the main `Web View Screen <./operation/interface.html#web-view-screen>`_ including a different preference to set the initial page.
+     different to the main `Web View Screen`_ including a different preference to set the initial page.
 
      see increase size
+
+|HR-DASHED|
 
 Action Bar (Throttle Screen)
 """"""""""""""""""""""""""""
@@ -465,6 +503,7 @@ In the |T-S| the Action Bar can display:
     
    See the `Action Bar`_ section of this page for more information.
 
+|HR-DASHED|
 
 Overflow Menu (Throttle Screen)
 """""""""""""""""""""""""""""""
@@ -473,26 +512,29 @@ Overflow Menu (Throttle Screen)
   :align: right
   :scale: 33%
 
-The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the `main screens <../operation/interface.html#main-screens>`_ is normally three dots (⁞) or three bars (≡).
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the `Main Screens`_ is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
 Specific to the |T-S|, the Overflow Menu can display:
 
-* `Turnouts/Points <../operation/interface.html#turnouts-points-screen>`_ (All except the *Turnout/Points Screen* only)
-* `Routes <../operation/interface.html#routes-screen>`_ (All except the |R-S| only)
-* `Power <../operation/operation.html#turn-track-power-on>`_
-* `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
-* `Preferences <../configuration/preferences.html>`_
-* `Function Defaults <../operation/interface.html#function-defaults-screen>`_ (|T-S| only)
+* `Turnouts/Points Screen`_ (All except the *Turnout/Points Screen* only)
+* `Routes Screen>` (All except the |R-S| only)
+* `Function Defaults Screen`_ (|T-S| only)
 * Gamepads (|T-S| only)
 
-  * `Gamepad Test 1 <../operation/interface.html#gamepad-test-screen>`_
-  * `Gamepad Test ... <../operation/interface.html#gamepad-test-screen>`_
+  * `Gamepad Test 1 <Gamepad Test Screen>`_
+  * `Gamepad Test ... <Gamepad Test Screen>`_
 
-* `Loco Sounds <../operation/interface.html#in-phone-loco-sounds-screen>`_ (|T-S| only)
-* `View Log <../operation/interface.html#view-log-screen>`_
-* `Exit <../operation/operation.html#exiting-engine-driver>`_
-* `About <../operation/interface.html#about-screen>`_
+* :ref:`Loco Sounds <operation/interface:in phone loco sounds screen>` (|T-S| only)
+* `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
+* :ref:`Power <operation/operation:turn track power on>`
+* :doc:`Preferences </configuration/preferences>`
+* :ref:`View Log <operation/interface:view log screen>`
+* :ref:`Exit <operation/operation:exiting engine driver>`
+* :ref:`About <operation/interface:about screen>`
+
+
+
 
 .. note:: 
    :class: note-ed-hidden-title
@@ -503,6 +545,8 @@ Specific to the |T-S|, the Overflow Menu can display:
   :align: right
   :scale: 12%
 
+|HR-DASHED|
+
 Background
 """"""""""
 
@@ -511,8 +555,9 @@ Background
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the  `Background Images section <../configuration/preferences.html#background-image-preferences>`_  of the preferences for more information on how to select a background image.
+   See the :ref:`Background Images section <configuration/preferences:background image preferences>` of the preferences for more information on how to select a background image.
 
+|HR-DASHED|
 
 Immersive Mode (Full Screen)
 """"""""""""""""""""""""""""
@@ -532,6 +577,8 @@ You can also configure specific Swipe up or Swipe down preferences to enter or e
 
      see preference ...
 
+|HR-DASHED|
+
 Swipe Left / Right (From Throttle)
 """"""""""""""""""""""""""""""""""
 
@@ -544,9 +591,11 @@ By default, you can Left/Right Swipe from any part of the screen, but this can b
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the `Left right swipe preferences <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on how to enable and disable which screens are in the Left / Right swipe sequence.
+   See the :ref:`Left/right swipe preferences <configuration/preferences:left/right swipe preferences>` for information on how to enable and disable which screens are in the Left / Right swipe sequence.
 
-   See the `Disable Full Screen Swipe prefernce <configuration/preferences.html#disable-full-screen-swipe>`_ to enable or disable the Swipe Action Bar only option.
+   See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
+
+|HR-DASHED|
 
 Swipe Up / Down
 """""""""""""""
@@ -568,6 +617,8 @@ Swipe Up and Down on the Throttle page can optional be configured to:
      :class: note-ed-hidden-title
 
      see preference ...
+
+|HR-DASHED|
 
 Accelerometer (Shake)  
 """""""""""""""""""""
@@ -595,7 +646,7 @@ Turnouts/Points Screen
 
 .. todo:: Turnouts/Points Screen
 
-Accessed from any of the main screens by the :menuselection:`Menu --> Turnouts`` or :menuselection:`Menu --> Points` or by swiping right from the Throttle Screen if enabled in the Left with the ``Swipe through Turnouts?`` or ``Swipe through Points?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Turnouts/Points`
+Accessed from any of the `Main Screens`_ by the :menuselection:`Menu --> Turnouts`` or :menuselection:`Menu --> Points` or by swiping right from the Throttle Screen if enabled in the Left with the ``Swipe through Turnouts?`` or ``Swipe through Points?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Turnouts/Points`
 
 This screen allows you to display all Turnouts/Points that have been defined in JMRI.
 
@@ -614,10 +665,11 @@ Turnouts/Points can be changed from Closed to Thrown and vice versa be pressing 
 
 The 'Turnout/Points List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points at the 'Location'.
 
-The `Location Delimiter <../configuration/preferences.html#location-delimiter>`_ preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
+The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
 **Hide if no user name? preference**
 
+|HR-DASHED|
 
 Action Bar (Turnouts/Points Screen)
 """""""""""""""""""""""""""""""""""
@@ -650,27 +702,32 @@ In the |TP-S| the Action Bar can display:
     
    See the `Action Bar`_ section of this page for more information.
 
+|HR-DASHED|
+
 Overflow Menu (Turnouts/Points Screen)
 """"""""""""""""""""""""""""""""""""""
 
-The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the `main screens <../operation/interface.html#main-screens>`_ is normally three dots (⁞) or three bars (≡).
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the `Main Screens`_ is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
 Specific to the *Turnouts/Points  Screen*, the Overflow Menu can display:
 
-* `Throttle <../operation/interface.html#throttle-screen>`_ (All except the |T-S| only)
-* `Routes <../operation/interface.html#routes-screen>`_ (All except the |R-S| only)
-* `Power <../operation/operation.html#turn-track-power-on>`_
-* `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
-* `Preferences <../configuration/preferences.html>`_
-* `View Log <../operation/interface.html#view-log-screen>`_
-* `Exit <../operation/operation.html#exiting-engine-driver>`_
-* `About <../operation/interface.html#about-screen>`_
+* `Throttle Screen`_ (All except the |T-S| only)
+* `Routes Screen`_ (All except the |R-S| only)
+* `DCC-EX Screen`_ (If connected to a DCC-EX EX-Command-Station using the |NATIVE| only)
+* :ref:`Power <operation/operation:turn track power on>`
+* :doc:`Preferences </configuration/preferences>`
+* :ref:`View Log <operation/interface:view log screen>`
+* :ref:`Exit <operation/operation:exiting engine driver>`
+* :ref:`About <operation/interface:about screen>`
+
 
 .. note:: 
    :class: note-ed-hidden-title
 
    See the `Overflow Menu`_  section for more information.
+
+|HR-DASHED|
 
 Swipe Left / Right (From Turnouts/Points)
 """""""""""""""""""""""""""""""""""""""""
@@ -684,9 +741,9 @@ By default, you can Left/Right Swipe from any part of the screen, but this can b
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the `Left right swipe preferences <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on how to enable and disable which screens are in the Left / Right swipe sequence.
+   See the :ref:`Left right swipe preferences <configuration/preferences:left/right swipe preferences>` for information on how to enable and disable which screens are in the Left / Right swipe sequence.
 
-   See the `Disable Full Screen Swipe prefernce <configuration/preferences.html#disable-full-screen-swipe>`_ to enable or disable the Swipe Action Bar only option.
+   See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
 
 ----
 
@@ -695,7 +752,7 @@ Routes Screen
 
 .. todo:: Routes Screen
 
-Accessed from any of the main screens by the menu :menuselection:`Menu --> Routes` or by swiping left from the Throttle Screen if enabled in the Left with the ``Swipe through Routes?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Routes`
+Accessed from any of the `Main Screens`_ by the menu :menuselection:`Menu --> Routes` or by swiping left from the Throttle Screen if enabled in the Left with the ``Swipe through Routes?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Routes`
 
 This screen allows you to display all Routes that have been defined in your |SERVER|.
 
@@ -715,13 +772,15 @@ You can select the route from the list provider by your |SERVER|...
 
 The 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Route name is a 'Location', followed by a common separator, then the actual name for the Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Routes at the 'Location'.
 
-The `Location Delimiter <../configuration/preferences.html#location-delimiter>`_ preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
+The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
 Hide Sys Route Names? preference 
 
 Hide if no user name? preference
 
 .. todo:: Routes Screen - Filter
+
+|HR-DASHED|
 
 Action Bar (Routes Screen)
 """"""""""""""""""""""""""
@@ -753,6 +812,8 @@ In the |R-S| the Action Bar can display:
     
    See `Action Bar`_ section of this page for more information.
 
+|HR-DASHED|
+
 Overflow Menu (Routes Screen)
 """""""""""""""""""""""""""""
 
@@ -761,20 +822,22 @@ It will show different options depending on a) the particular screen, b) prefere
 
 Specific to the |R-S|, the Overflow Menu can display:
 
-* `Throttle <../operation/interface.html#throttle-screen>`_ (All except the |T-S| only)
-* `Turnouts/Points <../operation/interface.html#turnouts-points-screen>`_ (All except the *Turnout/Points Screen* only)
-* `Power <../operation/operation.html#turn-track-power-on>`_
+* `Throttle Screen`_ (All except the |T-S| only)
+* `Turnouts/Points Screen`_ (All except the *Turnout/Points Screen* only)
 * `DCC-EX Screen`_ (If connected to a DCC-EX EX-Command-Station using the |NATIVE| only)
-* `Preferences <../configuration/preferences.html>`_
-* `View Log <../operation/interface.html#view-log-screen>`_
-* `Exit <../operation/operation.html#exiting-engine-driver>`_
-* `About <../operation/interface.html#about-screen>`_
+* :ref:`Power <operation/operation:turn track power on>`
+* :doc:`Preferences </configuration/preferences>`
+* :ref:`View Log <operation/interface:view log screen>`
+* :ref:`Exit <operation/operation:exiting engine driver>`
+* :ref:`About <operation/interface:about screen>`
+
 
 .. note:: 
    :class: note-ed-hidden-title
 
    See the `Overflow Menu`_  section for more information.
 
+|HR-DASHED|
 
 Swipe Left / Right (From Routes)
 """"""""""""""""""""""""""""""""
@@ -841,6 +904,8 @@ This can be used for:
 
 Tap on any of the Open Windows to expand its view.  You can then resize the panel by pinching and zooming.  It is sometimes useful to rotate your device to landscape mode, so as to better view your layout.
 
+|HR-DASHED|
+
 Action Bar (Web View Screen)
 """"""""""""""""""""""""""""
 
@@ -871,6 +936,8 @@ In the |WV-S| the Action Bar can display:
     
    See `Action Bar`_ section of this page for more information.
 
+|HR-DASHED|
+
 Overflow Menu (Web View Screen)
 """""""""""""""""""""""""""""""
 
@@ -879,19 +946,21 @@ It will show different options depending on a) the particular screen, b) prefere
 
 Specific to the |WV-S|, the Overflow Menu can display:
 
-* `Throttle <../operation/interface.html#throttle-screen>`_ (All except the |T-S| only)
-* `Turnouts/Points <../operation/interface.html#turnouts-points-screen>`_ (All except the *Turnout/Points Screen* only)
-* `Routes <../operation/interface.html#routes-screen>`_ (All except the |R-S| only)
-* `Power <../operation/operation.html#turn-track-power-on>`_
-* `Preferences <../configuration/preferences.html>`_
-* `View Log <../operation/interface.html#view-log-screen>`_
-* `Exit <../operation/operation.html#exiting-engine-driver>`_
-* `About <../operation/interface.html#about-screen>`_
+* :ref:`Throttle <operation/interface:throttle screen>` (All except the |T-S| only)
+* :ref:`Turnouts/Points <operation/interface:turnouts/points screen>` (All except the *Turnout/Points Screen* only)
+* :ref:`Routes <operation/interface:routes screen>` (All except the |R-S| only)
+* :ref:`Power <operation/operation:turn track power on>`
+* :doc:`Preferences </configuration/preferences>`
+* :ref:`View Log <operation/interface:view log screen>`
+* :ref:`Exit <operation/operation:exiting engine driver>`
+* :ref:`About <operation/interface:about screen>`
 
 .. note:: 
    :class: note-ed-hidden-title
 
    See the `Overflow Menu`_  section for more information.
+
+|HR-DASHED|
 
 Swipe Left / Right (Web View Screen)
 """"""""""""""""""""""""""""""""""""
@@ -904,19 +973,11 @@ Secondary / Support Screens
 
 The follow additional screens will be shown at different times and for various reasons: 
 
-* `Intro/Setup Wizard Screen`_
-* `Loco Select Screen`_
-* `Consist Edit Screen`_
-* `Consist Lights Edit Screen`_
-* `Power Screen`_
-* `Preferences Screen`_
-* `In Phone Loco Sounds Screen`_
-* `Function Defaults Screen`_
-* `Gamepad Test Screen`_
-* `View Log Screen`_
-* `About Screen`_
-* `Reconnecting Screen`_
-
+.. contents:: 
+    :depth: 1
+    :local:
+    :class: in-this-section
+    
 ----
 
 Intro/Setup Wizard Screen
@@ -927,7 +988,7 @@ The *Setup Wizard* will start automatically the first time you run |ed| after yo
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the  `Setup wizard page <../operation/setup_wizard.html>`_  for more information.
+   See the  :doc:`Setup wizard page </configuration/setup_wizard>`  for more information.
 
 ----
 
@@ -989,7 +1050,7 @@ Select from Recent Locos List
 
 Shown if you select ``Recent Locos`` in the `Selection Method`_.
 
-|ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with `Maximum Recent Locos <../configuration/preferences.html#maximum-recent-locos>`_ preference.)
+|ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with :ref:`Maximum Recent Locos <configuration/preferences:maximum recent locos>` preference.)
 
 If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
@@ -1136,7 +1197,7 @@ This screen allows you to personalise  |ed| for how you want it to use it.
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the `Preferences page <../configuration/preferences.html>`_ for details on the preferences that can be set.
+   See the :doc:`Preferences page </configuration/preferences>` for details on the preferences that can be set.
 
 |br|
 
@@ -1155,7 +1216,7 @@ In Phone Loco Sounds Screen
 
 .. todo:: In Phone Loco Sounds Screen
 
-Accessed from |T-S| by the :menuselection:`Menu --> Loco Sounds` or from the Status Bar if enabled with the `In phone sounds button <./configuration/preferences.html#in-phone-sounds-button>`_ preference.
+Accessed from |T-S| by the :menuselection:`Menu --> Loco Sounds` or from the Status Bar if enabled with the :ref:`In phone sounds button <configuration/preferences:in phone sounds button>` preference.
 
 |br|
 
@@ -1283,11 +1344,10 @@ Theme / Styles
 
 Themes provide different colours and textures to the buttons, backgrounds, sliders etc. for all the screens in |ed|.  i.e. It changes the appearance of the entire app.
 
-There are five themes to choose from:
+There are a number of themes to choose from:
 
 .. list-table::
-    :width: 100%
-    :widths: 50 50
+    :widths: auto
     :header-rows: 1
 
     * - Example
@@ -1307,11 +1367,14 @@ There are five themes to choose from:
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_colorful_theme.png
           :scale: 8%
       - Colourful theme
+    * - .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png
+          :scale: 8%
+      - Neon Blue theme
 
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the `Theme / Style preference <../configuration/preferences.html#theme-style>`_ on the preferences page for more information.
+   See the :ref:`Theme / Style preference <configuration/preferences:theme/style>` on the preferences page for more information.
 
 ----
 
@@ -1340,7 +1403,7 @@ Supported localisations are:
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the `Localisation preference <../configuration/preferences.html#Localisation>`_ on the Preferences page for more information.
+   See the :ref:`Localisation preference <configuration/preferences:Localisation>` on the Preferences page for more information.
 
 ----
 
@@ -1374,7 +1437,7 @@ The Action Bar can display:
   * DCC-EX
   * Children's Timer
 
-The optional buttons are enabled and configured via the corresponding preferences in the `Throttle Screen Action Bar <../configuration/preferences.html#throttle-screen-action-bar-preferences>`_ preference group.  (Other than the Children's Timer which is configured in the `Children's Timer <../configuration/preferences.html#children-s-timer-preferences>`_ preference group.)
+The optional buttons are enabled and configured via the corresponding preferences in the :ref:`Throttle Screen Action Bar <configuration/preferences:throttle screen action bar preferences>` preference group.  (Other than the Children's Timer which is configured in the :ref:`Children's Timer <configuration/preferences:children's (timer) preferences>` preference group.)
 
 Emergency Stop Button
 """""""""""""""""""""
@@ -1383,7 +1446,7 @@ Emergency Stop Button
    :align: right
    :scale: 50%
 
-The *Emergency Stop* Action Bar button is enabled with the `Emergency Stop button? <../configuration/preferences.html#emergency-stop-button>`_ preference.
+The *Emergency Stop* Action Bar button is enabled with the :ref:`Emergency Stop button? <configuration/preferences:emergency stop button?>` preference.
 
 Clicking this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
 
@@ -1394,7 +1457,7 @@ Track Power Button
    :align: right
    :scale: 50%
 
-The *Track Power* Action Bar button is enabled with the `Layout Power button? <../configuration/preferences.html#layout-power-button>`_ preference.
+The *Track Power* Action Bar button is enabled with the :ref:`Layout Power button? <configuration/preferences:layout power button?>` preference.
 
 *Track Power*, when pressed will turn on/off the power to the track.  The colour of the button will change colour:
 
@@ -1424,9 +1487,9 @@ Throttle Web View Button
 
 The *Throttle Web View* Action Bar button is enabled with the `Throttle Web View button? <../configuration/preferences.html#throttle-web-view-button>`_ preference.
 
-*Throttle Web View*, when pressed will show or hide the `Throttle Web View <../operation/interface.html#web-view-area-throttle-web-view>`_ panel on the |T-S|.
+*Throttle Web View*, when pressed will show or hide the :ref:`Throttle Web View <operation/interface:web view area (throttle web view)>` panel on the |T-S|.
 
-Note: the `Throttle Web View? <../configuration/preferences.html#throttle-web-view>` preference must be enabled for this to have an effect.
+Note: the :ref:`Throttle Web View? <configuration/preferences:throttle web view?>` preference must be enabled for this to have an effect.
 
 Layout Switch Button
 """"""""""""""""""""
@@ -1441,6 +1504,13 @@ The *Layout Switch* Action Bar button is enabled with the `Show Layout Switch bu
 
 The *Layout Switch* buttons, when pressed ...
 
+DCC-EX Button
+""""""""""""""""""""""""""
+
+.. todo:: DCC-EX Button
+
+The *DCC-EX* Action Bar button is enabled with the `In Phone sounbds Button <../configuration/preferences.html#in-phone-sounds-button>`_ preference.
+
 
 In Phone Loco Sound Button
 """"""""""""""""""""""""""
@@ -1451,7 +1521,7 @@ In Phone Loco Sound Button
    :align: right
    :scale: 50%
 
-The *In Phone Loco Sounds* Action Bar button is enabled with the `In Phone sounbds Button <../configuration/preferences.html#in-phone-sounds-button>`_ preference.
+The *In Phone Loco Sounds* Action Bar button is enabled with the :ref:`configuration/preferences:dcc-ex button?` preference.
 
 *In Phone Loco Sounds*, when clicked ...
 
@@ -1462,7 +1532,7 @@ Children's Timer Button
    :align: right
    :scale: 50%
 
-The *Children's Timer Button* Action Bar button is enabled with the `Show Timer Button? <../configuration/preferences.html#show-timer-button>`_ preference.
+The *Children's Timer Button* Action Bar button is enabled with the :ref:`configuration/preferences:show timer button?` preference.
 
 The *Children's Timer Button*, when pressed will activate the Timer for the preset time period.
 
@@ -1501,7 +1571,7 @@ Children's Timer Status and Countdown
 .. note:: 
    :class: note-ed-hidden-title
 
-   See the `Children's Timer part <../operation/advanced.html#children-s-timer>`_ of the Advance Operation page for more information.
+   See the :ref:`Children's Timer part <operation/advanced:children's timer>` of the Advance Operation page for more information.
 
 |br|
 
