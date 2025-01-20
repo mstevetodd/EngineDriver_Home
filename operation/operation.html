@@ -10,7 +10,7 @@
   <title>Detailed Instructions &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=402e9e33" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=1cf6c71c" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -179,6 +179,8 @@
 <li class="toctree-l6"><a class="reference internal" href="interface.html#dcc-function-buttons">DCC Function buttons</a></li>
 <li class="toctree-l6"><a class="reference internal" href="interface.html#pause-and-limit-speed-buttons">Pause and Limit Speed buttons</a></li>
 <li class="toctree-l6"><a class="reference internal" href="interface.html#in-phone-loco-sounds-buttons">In Phone Loco Sounds buttons</a></li>
+<li class="toctree-l6"><a class="reference internal" href="interface.html#load-slider-area">Load Slider Area</a></li>
+<li class="toctree-l6"><a class="reference internal" href="interface.html#brake-slider-area">Brake Slider Area</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#web-view-area-throttle-web-view">Web View Area (Throttle Web View)</a></li>
@@ -203,7 +205,7 @@
 <li class="toctree-l5"><a class="reference internal" href="interface.html#swipe-left-right-from-routes">Swipe Left / Right (From Routes)</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="interface.html#id46">Web View Screen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#id47">Web View Screen</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#action-bar-web-view-screen">Action Bar (Web View Screen)</a></li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#overflow-menu-web-view-screen">Overflow Menu (Web View Screen)</a></li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#swipe-left-right-web-view-screen">Swipe Left / Right (Web View Screen)</a></li>
@@ -873,11 +875,11 @@
 <a class="reference internal image-reference" href="../_images/network2.png"><img alt="../_images/network2.png" class="align-right" src="../_images/network2.png" style="width: 144.29999999999998px; height: 98.7px;" /></a>
 </aside>
 <ul class="simple">
-<li><p>Use Android’s Network - Wifi settings to connect to the same network as your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a></p></li>
+<li><p>Use Android’s System Network - Wifi settings to connect to the same network as your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a></p></li>
 <li><p>With some exceptions, your device’s IP Address should be similar to the server’s IP address (the first three blocks of numbers will be identical)</p>
 <ul>
 <li><p>For your Android device / phone, you can see its address in the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> ‘About Screen’ (<span class="menuselection">Menu ‣ About</span>), at the top of the screen</p></li>
-<li><p>For a JMRI server, see the WiThrottle screen for its address</p></li>
+<li><p>For a <a href="https://jmri.org/">JMRI</a> server, see the WiThrottle screen for its address</p></li>
 <li><p>For other devices, see the instructions for that device</p></li>
 </ul>
 </li>
@@ -897,7 +899,7 @@
 <a class="reference internal image-reference" href="../_images/connecting_recent_servers.png" id="recent-severs"><img alt="../_images/connecting_recent_servers.png" class="align-right" id="recent-severs" src="../_images/connecting_recent_servers.png" style="width: 144.0px; height: 50.699999999999996px;" /></a>
 </aside>
 <ul class="simple">
-<li><p>Start Engine Driver <br />You will be presented with the <a class="reference internal" href="interface.html#connection-screen"><span class="std std-ref">Connection Screen</span></a></p></li>
+<li><p>Start <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> <br />You will be presented with the <a class="reference internal" href="interface.html#connection-screen"><span class="std std-ref">Connection Screen</span></a></p></li>
 <li><p>On the <a class="reference internal" href="interface.html#connection-screen"><span class="std std-ref">Connection Screen</span></a> there are three ways you can select a <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> to connect to:</p>
 <ul>
 <li><p>IP Address and Port</p></li>
@@ -944,7 +946,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <section id="disconnections">
 <h3><a class="toc-backref" href="#id35" role="doc-backlink">Disconnections</a><a class="headerlink" href="#disconnections" title="Link to this heading"></a></h3>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> and/or the Android device can occasionally lose the connection even after it successfully connected.  There can be a lot of causes.  If ED does lose connection it will buzz, vibrate and take you to <em>Reconnecting Screen</em>.   It will repeatedly and indefinitely attempt to reconnect.</p>
-<p>If JMRI does not receive any feedback from your device/phone within a configured period, JMRI will stop all the locos you have selected on you device/phone.</p>
+<p>If <a href="https://jmri.org/">JMRI</a> does not receive any feedback from your device/phone within a configured period, <a href="https://jmri.org/">JMRI</a> will stop all the locos you have selected on you device/phone.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference external" href="./wifi_issues.html#disconnections">WiFi Issues Page</a> more information for possible causes/solution.</p>
@@ -1404,7 +1406,7 @@ It will show different options depending on a) the particular screen, b) prefere
 <section id="overflow-menu-turnouts-points-screen">
 <h3><a class="toc-backref" href="#id54" role="doc-backlink">Overflow Menu (Turnouts/Points Screen)</a><a class="headerlink" href="#overflow-menu-turnouts-points-screen" title="Link to this heading"></a></h3>
 <blockquote>
-<div><p>To get the <a class="reference internal" href="interface.html#id46"><span class="std std-ref">Web View Screen</span></a> you can use the menu <span class="menuselection">Menu ‣ Web</span> from the main screens.</p>
+<div><p>To get the <a class="reference internal" href="interface.html#id47"><span class="std std-ref">Web View Screen</span></a> you can use the menu <span class="menuselection">Menu ‣ Web</span> from the main screens.</p>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
 <div class="note-ed-hidden-title admonition note">
@@ -1444,7 +1446,7 @@ It will show different options depending on a) the particular screen, b) prefere
 <section id="overflow-menu-routes-screen">
 <h3><a class="toc-backref" href="#id57" role="doc-backlink">Overflow Menu (Routes Screen)</a><a class="headerlink" href="#overflow-menu-routes-screen" title="Link to this heading"></a></h3>
 <blockquote>
-<div><p>To get the <a class="reference internal" href="interface.html#id46"><span class="std std-ref">Web View Screen</span></a> you can use the menu <span class="menuselection">Menu ‣ Web</span> from the main screens.</p>
+<div><p>To get the <a class="reference internal" href="interface.html#id47"><span class="std std-ref">Web View Screen</span></a> you can use the menu <span class="menuselection">Menu ‣ Web</span> from the main screens.</p>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
 <div class="note-ed-hidden-title admonition note">
@@ -1485,8 +1487,8 @@ It will show different options depending on a) the particular screen, b) prefere
 <li><p>Throttle Web View</p></li>
 <li><p>Web View Screen</p></li>
 </ul>
-<p>This section describes the <a class="reference internal" href="interface.html#id46"><span class="std std-ref">Web View Screen</span></a>, which is a full screen web browser.  The <em>Throttle Web View</em> is a half Screen web browser that optionally shares the screen with the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>. See the <a class="reference external" href="./interface.html#web-view-area">Throttle Web View section on the User Interface page</a> from more information on the Throttle Web View.</p>
-<p>The <a class="reference internal" href="interface.html#id46"><span class="std std-ref">Web View Screen</span></a> can be accessed three ways:</p>
+<p>This section describes the <a class="reference internal" href="interface.html#id47"><span class="std std-ref">Web View Screen</span></a>, which is a full screen web browser.  The <em>Throttle Web View</em> is a half Screen web browser that optionally shares the screen with the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>. See the <a class="reference external" href="./interface.html#web-view-area">Throttle Web View section on the User Interface page</a> from more information on the Throttle Web View.</p>
+<p>The <a class="reference internal" href="interface.html#id47"><span class="std std-ref">Web View Screen</span></a> can be accessed three ways:</p>
 <ul class="simple">
 <li><p>Menu</p></li>
 <li><p>Swipe</p></li>
@@ -1496,7 +1498,7 @@ It will show different options depending on a) the particular screen, b) prefere
 <section id="overflow-menu-web-view-screen">
 <h3><a class="toc-backref" href="#id60" role="doc-backlink">Overflow Menu (Web View Screen)</a><a class="headerlink" href="#overflow-menu-web-view-screen" title="Link to this heading"></a></h3>
 <blockquote>
-<div><p>To get the <a class="reference internal" href="interface.html#id46"><span class="std std-ref">Web View Screen</span></a> you can use the menu <span class="menuselection">Menu ‣ Web</span> from the main screens.</p>
+<div><p>To get the <a class="reference internal" href="interface.html#id47"><span class="std std-ref">Web View Screen</span></a> you can use the menu <span class="menuselection">Menu ‣ Web</span> from the main screens.</p>
 <p>The <em>Overflow Menu</em> (or simply ‘<em>Menu</em>’) appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
 It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.</p>
 <div class="note-ed-hidden-title admonition note">
@@ -1522,7 +1524,7 @@ You can also swipe right from the <a class="reference internal" href="interface.
 <section id="auto-web-orientation">
 <h3><a class="toc-backref" href="#id62" role="doc-backlink">Auto Web Orientation</a><a class="headerlink" href="#auto-web-orientation" title="Link to this heading"></a></h3>
 <blockquote>
-<div><p>if <code class="docutils literal notranslate"><span class="pre">Auto-Web</span></code> orientation is selected in the <a class="reference external" href="configuration/preferences.html#screen-orientation">Screen Orientation</a> preference, when you rotate you Android device/Phone from portrait to landscape, the <a class="reference internal" href="interface.html#id46"><span class="std std-ref">Web View Screen</span></a> is automatically shown.  Rotating it back will automatically show the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
+<div><p>if <code class="docutils literal notranslate"><span class="pre">Auto-Web</span></code> orientation is selected in the <a class="reference external" href="configuration/preferences.html#screen-orientation">Screen Orientation</a> preference, when you rotate you Android device/Phone from portrait to landscape, the <a class="reference internal" href="interface.html#id47"><span class="std std-ref">Web View Screen</span></a> is automatically shown.  Rotating it back will automatically show the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.</p>
 <p>Note that <a class="reference external" href="../configuration/preferences.html#swipe-through-web">Swipe Through Web</a> preference is automatically disabled if <code class="docutils literal notranslate"><span class="pre">Auto-Web</span></code> orientation is selelected in the <a class="reference external" href="configuration/preferences.html#screen-orientation">Screen Orientation</a> preference.  It is not automatically re-enabled if you later select a different orientation.  i.e. you will need to manually turn the preference back on if you change from <code class="docutils literal notranslate"><span class="pre">Auto-Web</span></code> to another orientation.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -1582,7 +1584,7 @@ You can also swipe right from the <a class="reference internal" href="interface.
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fb3c5b5cb50>
+    <jinja2.runtime.BlockReference object at 0x7f32aef84a00>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

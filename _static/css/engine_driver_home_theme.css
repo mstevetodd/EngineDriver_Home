@@ -96,6 +96,14 @@ dl.footnote>dd p {
   clear: none !important;
 }
 
+.admonition-todo .admonition-title {
+  clear: none !important;
+}
+
+.admonition-todo {
+  clear: none !important;
+}
+
 .menuselection {
   background:#b9b9b940 !important;
   font-size: 90% !important;

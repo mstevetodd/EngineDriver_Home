@@ -10,7 +10,7 @@
   <title>Quick Start / Getting Started &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=402e9e33" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=1cf6c71c" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -179,6 +179,8 @@
 <li class="toctree-l6"><a class="reference internal" href="interface.html#dcc-function-buttons">DCC Function buttons</a></li>
 <li class="toctree-l6"><a class="reference internal" href="interface.html#pause-and-limit-speed-buttons">Pause and Limit Speed buttons</a></li>
 <li class="toctree-l6"><a class="reference internal" href="interface.html#in-phone-loco-sounds-buttons">In Phone Loco Sounds buttons</a></li>
+<li class="toctree-l6"><a class="reference internal" href="interface.html#load-slider-area">Load Slider Area</a></li>
+<li class="toctree-l6"><a class="reference internal" href="interface.html#brake-slider-area">Brake Slider Area</a></li>
 </ul>
 </li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#web-view-area-throttle-web-view">Web View Area (Throttle Web View)</a></li>
@@ -203,7 +205,7 @@
 <li class="toctree-l5"><a class="reference internal" href="interface.html#swipe-left-right-from-routes">Swipe Left / Right (From Routes)</a></li>
 </ul>
 </li>
-<li class="toctree-l4"><a class="reference internal" href="interface.html#id46">Web View Screen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#id47">Web View Screen</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#action-bar-web-view-screen">Action Bar (Web View Screen)</a></li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#overflow-menu-web-view-screen">Overflow Menu (Web View Screen)</a></li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#swipe-left-right-web-view-screen">Swipe Left / Right (Web View Screen)</a></li>
@@ -785,11 +787,11 @@
   <section id="quick-start-getting-started">
 <h1>Quick Start / Getting Started<a class="headerlink" href="#quick-start-getting-started" title="Link to this heading"></a></h1>
 <ul>
-<li><p>Install <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> or by <a class="reference external" href="../downloads/index.html">direct download</a>.</p></li>
+<li><p>Install <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> or by <a class="reference external" href="../downloads/index.html">direct download</a> of the .apk.</p></li>
 <li><p>Confirm that your devices meet the <a class="reference external" href="../prerequisites/index.html">Prerequisites</a></p></li>
 <li><p><strong>Start your WiThrottle server</strong></p>
 <ul>
-<li><p>For JMRI, Start the <a class="reference external" href="https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml">WiThrottle</a> function of JMRI, located in DecoderPro under Tools, Throttles. <br />It is also highly recommended that you start the <a class="reference external" href="https://www.jmri.org/help/en/html/web/index.shtml">JMRI Web Server function</a> (Tools, Start JMRI Web Server).</p></li>
+<li><p>For <a href="https://jmri.org/">JMRI</a>, Start the <a class="reference external" href="https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml">WiThrottle</a> function of JMRI, located in <em>DecoderPro</em> under <span class="menuselection">Tools ‣ Throttles</span>. <br />It is also highly recommended that you start the <a class="reference external" href="https://www.jmri.org/help/en/html/web/index.shtml">JMRI Web Server function</a> <span class="menuselection">Tools -&gt; Start JMRI Web Server</span>.</p></li>
 <li><p>For other server devices, turning them on and waiting a minute or two should be sufficient.</p>
 <p>See the <a class="reference external" href="../prerequisites/index.html">Prerequisites</a> page for more information.</p>
 </li>
@@ -806,10 +808,10 @@
 </ul>
 </li>
 <li><p>Wait for your server’s address to show up in ‘Discovered Servers’</p></li>
-<li><p>Click on the Discovered server</p>
+<li><p>Click on the <em>Discovered server</em></p>
 <ul class="simple">
 <li><p>If your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> does not show up, check that are on the same network as the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a>.</p></li>
-<li><p>If the server <em>never</em> appears in the discovered list, type in the IP address and Port of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> (Using the values shown on the JMRI WiThrottle window) and press <span class="guilabel">Connect</span>. <br />Note: this situation is sometimes possible even if you are on the same network. <br /><br />See the <a class="reference external" href="./wifi_issues.html">WiFi connection</a> page for more assistance if you have connection issues. <br /><br /></p></li>
+<li><p>If the server <em>never</em> appears in the discovered list, type in the IP address and Port of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press <span class="guilabel">Connect</span>. <br />Note: this situation is sometimes possible even if you are on the same network. <br /><br />See the <a class="reference external" href="./wifi_issues.html">WiFi connection</a> page for more assistance if you have connection issues. <br /><br /></p></li>
 </ul>
 </li>
 <li><p>If needed, turn the track power on with <span class="menuselection">Menu ‣ Power</span> and confirm the button is ‘green’  (This is not required by all DCC Command Stations.)</p></li>
@@ -829,16 +831,16 @@
 <li><p>Use the <span class="guilabel">Forward</span> and <span class="guilabel">Reverse</span> buttons to control direction</p></li>
 </ul>
 </li>
-<li><p>Press your phone’s Menu button to access screens for Turnout, Route and Power control, as well as adjust settings and set numerous preferences</p></li>
-<li><p>You can also ‘swipe/fling’ left or right to jump quickly back and forth between the Throttle, Routes, Turnouts and Web pages. (Use Preferences to choose which are in the left / right swipe list) <br /><br /></p></li>
-<li><p>To release a single loco (or consist), click <span class="guilabel">Select</span> again and click the <span class="guilabel">Release</span> button</p></li>
+<li><p>Press your phone’s Menu button <span class="guilabel">≡</span> to access screens for Turnout/Point, Route and Power control, as well as adjust settings and set numerous preferences</p></li>
+<li><p>You can also ‘swipe/fling’ left or right to jump quickly back and forth between the Throttle, Routes, Turnouts/Points and Web pages. (Use Preferences to choose which are in the left / right swipe list) <br /><br /></p></li>
+<li><p>To release a single loco (or consist/multiple unit), click <span class="guilabel">Select</span> again and click the <span class="guilabel">Release</span> button</p></li>
 <li><p>To release all locos, just press the <span class="guilabel">Back</span> button and exit the app. <br />This will also stop your locos (can be overridden in preferences)</p></li>
 </ul>
 </li>
 </ul>
 <p>Note:</p>
 <ul class="simple">
-<li><p>To create a consist ‘on-the-fly’, simply select additional locos for the same throttle, then select which way the new loco if facing. Direction and speed will be sent for all. Release will release all for that throttle</p></li>
+<li><p>To create a consist/multiple unit ‘on-the-fly’, simply select additional locos for the same throttle, then select which way the new loco if facing. Direction and speed will be sent for all. <span class="guilabel">Release</span> will release all for that throttle.</p></li>
 </ul>
 </section>
 
@@ -860,7 +862,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fb3c4851b10>
+    <jinja2.runtime.BlockReference object at 0x7f32ad465ea0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

@@ -209,11 +209,16 @@ If the user wants to use only the decoder brake but still use the |SRT| brake co
 
 If you only want to use one or two of the thresholds (not all three) simply set the threshold of the unwanted ones to -1, or the function to activate to -1 and it/they will be ignored.
 
-----
 
 Preference Settings for the SRT
 ===============================
 
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
+    
 Acceleration Speed Step Repeat Delay
 ------------------------------------
 

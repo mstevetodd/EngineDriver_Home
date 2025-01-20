@@ -56,7 +56,7 @@
 
 .. |NATIVE| replace::
    
-   :ref:`DCC-EX Native Protocol <about/index:withrottle protocol vs dcc-ex native protocol>`
+   :ref:`Native DCC-EX Protocol <about/index:withrottle protocol vs dcc-ex native protocol>`
 
 .. |NATIVE_SERVER| replace::
 
@@ -65,6 +65,10 @@
 .. |WIT| replace::
 
    :ref:`WiThrottle Protocol <about/index:what's a 'withrottle server'?>`
+
+.. |SERVER| replace::
+
+   :abbr:`Command Station/Server (JMRI, EX-CommandStation, WiFTrax, LnWi, etc.)`
 
 ..
 .. Use |ED|\ to remove the leading space if you need to follow it by a comma etc.
@@ -76,6 +80,9 @@
 .. |TBA| raw:: html
    
    <span style="color:red">TODO</span>
+..
+..
+.. Screens ..............................................
 ..
 .. |T-S| replace:: 
    
@@ -105,8 +112,21 @@
    
    :ref:`Intro/Setup Wizard Screen <operation/interface:Intro/Setup Wizard Screen>`
 ..
+.. |FD-S| replace:: 
+   
+   :ref:`Function Defaults Screen Screen <operation/interface:Function Defaults Screen>`
+..
+.. Throttle Screens ..............................................
+..
+.. |SRT-TS| replace::
+   
+    :doc:`/operation/semi-realistic-throttle`
+..
+.. ........................................................
+..
 .. |SRT| replace::
    
     :abbr:`SRT (Semi-Realistic Throttle)`
 ..
 .. role:: hand-written
+..

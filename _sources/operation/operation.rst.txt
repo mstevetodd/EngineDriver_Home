@@ -38,11 +38,11 @@ Connecting to the WiFi network
     :scale: 30 %
     :align: right
 
-* Use Android's Network - Wifi settings to connect to the same network as your |WTS|
+* Use Android's System Network - Wifi settings to connect to the same network as your |WTS|
 * With some exceptions, your device's IP Address should be similar to the server's IP address (the first three blocks of numbers will be identical)
 
   * For your Android device / phone, you can see its address in the |EDs| 'About Screen' (:menuselection:`Menu --> About`), at the top of the screen
-  * For a JMRI server, see the WiThrottle screen for its address 
+  * For a |JMRI| server, see the WiThrottle screen for its address 
   * For other devices, see the instructions for that device
 
 .. note:: 
@@ -75,7 +75,7 @@ Connecting Engine Driver to the WiThrottle server
     :align: right
     :name: Recent Severs
 
-* Start Engine Driver |br|\ You will be presented with the |C-S|
+* Start |ED| |br|\ You will be presented with the |C-S|
 * On the |C-S| there are three ways you can select a |WTS| to connect to:
 
   - IP Address and Port
@@ -121,7 +121,7 @@ Disconnections
 
 |ed| and/or the Android device can occasionally lose the connection even after it successfully connected.  There can be a lot of causes.  If ED does lose connection it will buzz, vibrate and take you to *Reconnecting Screen*.   It will repeatedly and indefinitely attempt to reconnect.
 
-If JMRI does not receive any feedback from your device/phone within a configured period, JMRI will stop all the locos you have selected on you device/phone.
+If |JMRI| does not receive any feedback from your device/phone within a configured period, |JMRI| will stop all the locos you have selected on you device/phone.
 
 .. note:: 
   :class: note-ed-hidden-title
