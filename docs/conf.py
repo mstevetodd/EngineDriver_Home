@@ -86,7 +86,7 @@ html_logo = "./_static/images/logo.png"
 
 html_favicon = "./_static/images/favicon.ico"
 
-html_baseurl = "https://EngineDriver2.mstevetodd.com/"
+html_baseurl = "https://EngineDriver.mstevetodd.com/"
 
 html_theme_options = {
     'style_nav_header_background': 'white',

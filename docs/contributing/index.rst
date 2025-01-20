@@ -96,7 +96,7 @@ The steps listed here provide guidance on how to edit and preview changes to the
   
 * On GitHub
 
-  * Clone the ``https://enginedriver2.mstevetodd.com`` repository. `(See Cloning a repository in GitHub) <https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository>`_ 
+  * Clone the ``https://enginedriver.mstevetodd.com`` repository. `(See Cloning a repository in GitHub) <https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository>`_ 
   * Open the your repository settings (the gear icon), go to the 'Pages' section and change the 'source-branch' to ``gh-pages`` ``/ (root)``.
   * Your repository must be ``public``
 
