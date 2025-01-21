@@ -108,7 +108,7 @@ Selecting locomotives to control
 
 Q. Why can't I can't see my loco in the roster?
 
-  A. The loco needs to be added to the JMRI roster on your server computer.  Refer to the JMRI documentation to see how.
+  A. The loco needs to be added to the roster on your server computer.  Refer to your server documentation for specifics.
 
 Q. Why is my loco is not remembered in the recent locos list?
 
@@ -116,7 +116,7 @@ Q. Why is my loco is not remembered in the recent locos list?
 
   A2. If no locos are remembered (and you have confirmed the preference above) make sure the ``Maximum Recent Locos`` preference is not set to zero.
 
-Q. The JMRI loco list is too long, I can't find my locos easily
+Q. The loco list is too long, I can't find my locos easily
 
   A. You can use the filter option to reduce the list 
 
@@ -238,7 +238,7 @@ Q. In want to change the labels of the function buttons that are displayed
 
   A1. Change the function button defaults in |ed|, for locos without Roster Entries
 
-  A2. Roster entries include function button labels, and can be changed in JMRI
+  A2. Roster entries include function button labels, and can be changed when defined to the server
 
 Q. My locos have different functions but all the Function buttons appear the same for every locomotive 
 
@@ -248,7 +248,7 @@ Q. My locos have different functions but all the Function buttons appear the sam
 
 Q. My loco shows the wrong Function labels 
 
-  A. Functions of loco are generally set in the JMRI roster.  |ed| may be showing the functions of a loco with the same address from the Roster.
+  A. Functions of loco are generally set in the Roster.  |ed| may be showing the functions of a loco with the same address from the Roster.
 
       This can happen if you entered an address to select the loco rather than selecting from the roster list.
 
