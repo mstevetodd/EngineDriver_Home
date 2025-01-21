@@ -4,12 +4,16 @@ Videos
 
 .. include:: ../include.rst
 
-----
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On This Page
+     :local:
 
 .. note:: 
-  :class: note-ed
+   :class: note-ed
   
-  Note: Many of the videos below were done on older versions of |ed|. Some of the functions, screen layouts or the names of the preferences may have changed slightly.
+  Many of the videos below were done on older versions of |ed|. Some of the functions, screen layouts or the names of the preferences may have changed slightly.
 
 Connecting
 ==============================

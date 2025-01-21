@@ -7,10 +7,10 @@
 <meta content="DCC Engine Driver EngineDriver JMRI manual help model railroad railway train" name="keywords" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Configuring the WiThrottle server &mdash; Engine Driver Home  documentation</title>
+  <title>Configuring Your Server &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=9c58faf6" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=b707c436" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -378,7 +378,7 @@
 </li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Configuration</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="configuration.html">Configuring Engine Driver</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuring the WiThrottle server</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuring Your Server</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#jmri">JMRI</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dcc-ex-wifi">DCC-EX WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mrc-wifi">MRC WiFi</a></li>
@@ -404,6 +404,8 @@
 <li class="toctree-l6"><a class="reference internal" href="preferences.html#swipe-through-routes">Swipe through Routes?</a></li>
 </ul>
 </li>
+<li class="toctree-l5"><a class="reference internal" href="preferences.html#double-back-buton-to-exit">Double Back Buton to Exit?</a></li>
+<li class="toctree-l5"><a class="reference internal" href="preferences.html#hide-instructional-hints">Hide Instructional Hints</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="preferences.html#throttle-screen-appearance-preferences">Throttle Screen Appearance Preferences</a><ul>
@@ -740,7 +742,9 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../downloads/index.html">Downloads</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#older-or-other-versions">Older or Other Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#production-verion">Production Verion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#beta-versions">Beta Versions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install">Older or Other Versions - Manual Install</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../changes/index.html">Changes / Updates</a></li>
@@ -789,7 +793,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="index.html">Configuration</a></li>
-      <li class="breadcrumb-item active">Configuring the WiThrottle server</li>
+      <li class="breadcrumb-item active">Configuring Your Server</li>
       <li class="wy-breadcrumbs-aside">
               <a href="https://github.com/mstevetodd/EngineDriver_Home/blob/main/docs/configuration/configuration_withrottle.rst" class="fa fa-github"> Edit on GitHub</a>
       </li>
@@ -799,8 +803,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="configuring-the-withrottle-server">
-<h1>Configuring the WiThrottle server<a class="headerlink" href="#configuring-the-withrottle-server" title="Link to this heading"></a></h1>
+  <section id="configuring-your-server">
+<h1>Configuring Your Server<a class="headerlink" href="#configuring-your-server" title="Link to this heading"></a></h1>
 <aside class="sidebar-on-this-page sidebar">
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On This Page</p>
@@ -813,6 +817,28 @@
 </ul>
 </nav>
 </aside>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can connect to a number of supported <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a> and <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> servers including:</p>
+<ul>
+<li><p><a href="https://jmri.org/">JMRI</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Using <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a>, or</p></li>
+<li><p>Using <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p><a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Using <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a>, or</p></li>
+<li><p>Using <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a></p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>MRC Prodigy WiFi</p></li>
+<li><p>Digitrax LnWi</p></li>
+<li><p>WifiTrax (for NCE)</p></li>
+</ul>
 <section id="jmri">
 <h2><a class="toc-backref" href="#id1" role="doc-backlink">JMRI</a><a class="headerlink" href="#jmri" title="Link to this heading"></a></h2>
 <ul class="simple">
@@ -821,6 +847,7 @@
 <li><p>You can also ‘filter’ the turnouts shown using the WiThrottle-&gt;Filter Controls option in the WiThrottle window.</p></li>
 <li><p>Entering roster entries, and defining routes and turnouts on the server will all make your <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> throttle more powerful and easier to use (though not required).</p></li>
 <li><p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will show additional info if the JMRI Web Server is started (such as roster details and icon images).</p></li>
+<li><p>To use the <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> with <a href="https://jmri.org/">JMRI</a> you must <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">DCC==</span> <span class="pre">over</span> <span class="pre">TCP</span> <span class="pre">Server</span></code> in the ‘DCC-EX’ menu in <a href="https://jmri.org/">JMRI</a>, then connect <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to the additional server that is presented.</p></li>
 </ul>
 </section>
 <section id="dcc-ex-wifi">
@@ -859,7 +886,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f612645e080>
+    <jinja2.runtime.BlockReference object at 0x7f403e4939a0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

@@ -7,15 +7,12 @@ Configuration
 
 .. include:: ../include.rst
 
-.. sidebar:: On This Page
-   :class: sidebar-on-this-page
+.. toctree::
+   :hidden:
 
-   .. toctree::
-    :includehidden:
-
-    configuration
-    configuration_withrottle
-    preferences_index
+   configuration
+   configuration_withrottle
+   preferences_index
 
 
 See:

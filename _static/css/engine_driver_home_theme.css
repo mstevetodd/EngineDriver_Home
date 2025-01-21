@@ -434,7 +434,7 @@ html[data-theme='dark'] .rst-content .guilabel{
 /* *************************************** */
 
 .wy-nav-side {
-  background: #aa6d18 !important;
+  background: #724911 !important;
   /* background: #031214 !important; */
 }
 
@@ -515,7 +515,7 @@ html[data-theme='dark'] .wy-menu-vertical li.toctree-l3.current li.toctree-l4>a.
 
 .gsib_a input {
   padding: 5px !important;
-  background-color: #141414 !important;
+  background-color: #3d260c !important;
   color:white !important;
 }
 

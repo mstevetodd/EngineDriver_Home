@@ -16,13 +16,13 @@ Contributing
 Contributing to the Code
 ========================
 
-|ed| is open source software written in Java. The source code is available on `github.com/JMRI/EngineDriver <https://github.com/JMRI/EngineDriver>`_.
+|ed| is open source software written in Java for Android. The source code is available on `github.com/JMRI/EngineDriver <https://github.com/JMRI/EngineDriver>`_.
 
 It is recommended that you contact M Steve Todd if you intend to contribute to the code base, before you start working.
 
 On the Android device you intend to test on
 
-* Make sure that the developer options are enabled and ``Android debugging`` is on, and ``unknown sources`` is on.  You can also use the Virtual Devices in Android Studio to test you cade.
+* Make sure that the developer options are enabled and ``Android debugging`` is on, and ``unknown sources`` is on.  You can also use the Virtual Devices in Android Studio to test you code.
 
 Here are all the steps needed for Microsoft Windows:
 
@@ -38,17 +38,17 @@ Here are all the steps needed for Microsoft Windows:
 * Open the project. 
 * Only if needed...
 
-  * Take the Run -> Run... -> Edit Configurations option
-  * In the Run/Debug Configurations window, press the "+", then Android App
+  * Take the :menuselection:`Run --> Run... --> Edit Configurations` option
+  * In the Run/Debug Configurations window, press the :guilabel:`+`, then Android App
   * Enter Name "EngineDriver", and select Module: EngineDriver
-  * Click ``Run``.
+  * Click :guilabel:`Run`.
   * You will likely get one or more error messages about missing components. Click on the link in each message and Android Studio will automatically download the missing components.
 
 To test your changes:
 
 * Connect your phone via USB
 * In the Select Deployment Target window, your attached phone should show under Connected Devices.
-* Select your device and press ``run`` or ``debug``.
+* Select your device and press :guilabel:`run` or :guilabel:`debug`.
 * EngineDriver should compile and be installed on your device.
 
 To publish your changes:
@@ -71,8 +71,8 @@ Contributing to the Documentation
 
 This documentation is open source and can be accessed on `github.com/mstevetodd/EngineDriver_Home <https://github.com/mstevetodd/EngineDriver_Home>`_
 
-All this documentation is done using **reStructuredText**, for which you can find information on the official website: `reStructuredText <https://docutils.sourceforge.io/rst.html>`_
-or the `Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ document builder tool website.
+All this documentation is done using **reStructuredText** and with Sphinx, for which you can find information on the official website: `reStructuredText <https://docutils.sourceforge.io/rst.html>`_
+and the `Sphinx <https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html>`_ document builder tool website.
 **reStructuredText** is a markdown type language, for typesetting documents from websites to PDF or LaTeX documents. 
 This Website is built upon this technology, so you should make yourself familiar with this by looking through the links provided.
 
@@ -91,8 +91,7 @@ The steps listed here provide guidance on how to edit and preview changes to the
 
 * Then use 'pip' to install the required packages; 'sphinx' and the theme 'sphinx_rtd_theme'.  |br|\ Open and command prompt and enter: 
   
-  * ``pip install -U sphinx``
-  * ``pip install sphinx-rtd-theme``
+  * ``pip install -r requirements.txt``
   
 * On GitHub
 
@@ -120,14 +119,14 @@ Style Guidelines
 ----------------
 
 * Use British/Australian/Canadian spelling e.g. 'colour' not 'color'.  |br|\ (Primarily because it is used in more English speaking countries)
-*	Use railroad/railway terminology that is understandable by all English-speaking people. |br|\ Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, consists/multiple units, switching/shunting.  (Primarily because JMRI uses the US terminology)
+*	Use railroad/railway terminology that is understandable by all English-speaking people. |br|\ Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, consists/multiple units, switching/shunting.  (Primarily because DCC and JMRI uses the US terminology)
 * In general use 'loco' instead of 'locomotive' or 'engine'
 * Avoid the term 'Checked'. Use 'Enabled' instead.  ("Checked' is more a US term.)
 * Use bolded \*\*Engine Driver\*\* or \|ed\| not 'Engine Driver app', 'EngineDriver' or 'Engine Driver Throttle' (except on the first page) - |ed|
 *	No full stop at the end of a numbered or unnumbered list
 *	Numbered lists should be avoided, unless there is a specific need
-* Use first person (you and your; not I, me, my or am) language
-*	A string of nouns should be sequenced in alphabetic order, unless it makes more sense within the context to display them in some other sequence
+* Use second person (you and your; not I, me, or my) language
+*	A string or list of nouns should be sequenced in alphabetic order, unless it makes more sense within the context to display them in some other sequence
 * Double quotes (") should only be used for quoting text from people, documents or web sites
 *	No quotes around 'Also See' type references
 *	Avoid '(above)' or '(below)' in text.  Use hypertext links instead

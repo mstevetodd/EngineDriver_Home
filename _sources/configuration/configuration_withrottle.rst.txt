@@ -1,5 +1,5 @@
 *******************************************
-Configuring the WiThrottle server
+Configuring Your Server
 *******************************************
 
 .. meta::
@@ -13,6 +13,22 @@ Configuring the WiThrottle server
    .. contents:: On This Page
      :local:
 
+|ED| can connect to a number of supported |WIT| and |NATIVE| servers including:
+
+* |JMRI| 
+
+   * Using |WIT|, or
+   * Using |NATIVE|
+
+* |EX-CS|
+
+   * Using |WIT|, or
+   * Using |NATIVE|
+
+* MRC Prodigy WiFi
+* Digitrax LnWi
+* WifiTrax (for NCE)
+
 
 JMRI
 ^^^^
@@ -22,6 +38,8 @@ JMRI
 * You can also 'filter' the turnouts shown using the WiThrottle->Filter Controls option in the WiThrottle window.
 * Entering roster entries, and defining routes and turnouts on the server will all make your |ed| throttle more powerful and easier to use (though not required). 
 * |ed| will show additional info if the JMRI Web Server is started (such as roster details and icon images).
+* To use the |NATIVE| with |JMRI| you must ``Load DCC== over TCP Server`` in the 'DCC-EX' menu in |JMRI|, then connect |ED| to the additional server that is presented.
+
 
 DCC-EX WiFi
 ^^^^^^^^^^^
