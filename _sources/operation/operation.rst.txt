@@ -48,7 +48,7 @@ Connecting to the WiFi network
 .. note:: 
   :class: note-ed-hidden-title
   
-  Also see the `WiFi issues <./wifi_issues.html>`_ page if you are having difficulties.
+  Also see the :doc:`WiFi issues </operation/wifi_issues>` page if you are having difficulties.
 
 Connecting Engine Driver to the WiThrottle server
 """""""""""""""""""""""""""""""""""""""""""""""""
@@ -74,12 +74,12 @@ To find your server's IP address and Port:
   * For a |JMRI| server, see the WiThrottle screen for its address 
   * For other devices, see the instructions for that device
 
-If you only ever connect to one |WTS| you can effectively bypass this screen by setting the `Auto-Connect to WiThrottle Server? <../configuration/preferences.html#auto-connect-to-withrottle-server>`_ preference.
+If you only ever connect to one |WTS| you can effectively bypass this screen by setting the :ref:`Auto-Connect to WiThrottle Server? <configuration/preferences:auto-connect to withrottle server?>` preference.
 
 .. note:: 
   :class: note-ed-hidden-title
 
-  Also see `Connection issues <./wifi_issues.html>`_ if you are having difficulties.
+  Also see :doc:`Connection issues </operation/wifi_issues>` if you are having difficulties.
 
 Discover Servers
 ''''''''''''''''
@@ -92,7 +92,7 @@ Discover Servers
 This is the most common way to connect. If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
 
 If the server does not appear in the recent list try one of the other two methods.  
-Your server not appearing in the recent list is not necessarily a problem  See `Connection issues <./wifi_issues.html>`_ for more information.
+Your server not appearing in the recent list is not necessarily a problem  See :doc:`Connection issues </operation/wifi_issues>` for more information.
 
 Recent Server List
 ''''''''''''''''''
@@ -118,9 +118,9 @@ If |JMRI| does not receive any feedback from your device/phone within a configur
 .. note:: 
   :class: note-ed-hidden-title
   
-  See `WiFi Issues Page <./wifi_issues.html#disconnections>`_ more information for possible causes/solution.
+  See :ref:`WiFi issues <operation/wifi_issues:disconnections>` more information for possible causes/solution.
 
-  See `Feedback on Disconnect preference on the Preferences page <../configuration/preferences.html#feedback-on-disconnect>`_ to disable the audible and haptic warnings.
+  See :ref:`Feedback on Disconnect preference on the Preferences page <configuration/preferences:feedback on disconnect>` to disable the audible and haptic warnings.
 
 Turn Track Power On
 ^^^^^^^^^^^^^^^^^^^
@@ -139,9 +139,9 @@ If the *Power Action Bar button* is enabled, simply click on it to turn track po
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the `Power section of the User Interface page <./interface.html#power-screen>`_ for more information.
+  See the :ref:`Power section of the User Interface page <operation/interface:Power Screen>` for more information.
   
-  See the `Power Button option in the Preferences page <../configuration/preferences.html#throttle-screen-action-bar-preferences>`_ for more information on enabling the Power Button on the Action bar.
+  See the :ref:`Power Button option in the Preferences page <configuration/preferences:throttle screen action bar preferences>` for more information on enabling the Power Button on the Action bar.
 
 ----
 
@@ -150,7 +150,7 @@ Selecting & Releasing Locos
 
 Selecting and releasing locos and Consists/Multiple Units is initiated from the Throttle Screen, by clicking on the :guilabel:`Select` button of one of the Throttles on the screen.
 
-(The |T-S| may have from 1 to 6 throttles on it, depending on the `Throttle Screen Layout preferences <../configuration/preferences.html#throttle-screen-appearance-preferences>`_ you have chosen.)
+(The |T-S| may have from 1 to 6 throttles on it, depending on the :ref:`Throttle Screen Layout preferences <configuration/preferences:throttle screen appearance preferences>` you have chosen.)
 
 Selecting a Single loco
 """""""""""""""""""""""
@@ -171,11 +171,11 @@ If the loco you want to control is in the list, simply click on it and you will 
 
 For this to be possible, the Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or your |WTS| device's documentation for creating a roster.
 
-Also see `Locomotive Icons <#locomotive-icons-in-the-roster>`_ below.
+.. Also see `Locomotive Icons <locomotive icons in the roster>`_ below.
 
 **Recent Locos**
 
-|ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with `Maximum Recent Locos <../configuration/preferences.html#maximum-recent-locos>`_ preference.)
+|ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with :ref:`Maximum Recent Locos <configuration/preferences:maximum recent locos>` preference.)
 
 If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
@@ -229,7 +229,7 @@ From here you can:
 .. note:: 
   :class: note-ed-hidden-title
 
-  See `Selecting / Releasing Locos and Consists/Multiple Units <#selecting-releasing-locos>`_ for more information.
+  See `Selecting / Releasing Locos and Consists/Multiple Units <selecting releasing locos>`_ for more information.
 
 Controlling Speed
 """""""""""""""""
@@ -249,14 +249,14 @@ There are eight ways you can control the speed of of your loco or consist /multi
 
   Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for the that Throttle till it gets to that point.
    
-   Depending on the `Throttle Screen Layout <../configuration/preferences.html#throttle-screen-layout>`_ chosen all sliders on the |T-S| will be either:
+   Depending on the :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen all sliders on the |T-S| will be either:
    
    * one-directional (0% - 100%) |br|\ or 
    * bi-directional (-100% - 0 - +100%) 
 
   In most Throttle Screen layouts it is possible hide the Speed Sliders.  
   
-  See the `Speed Slider and Buttons section on the Preferences page <../configuration/preferences.html>`_ for more information.
+  See the :doc:`Speed Slider and Buttons section on the Preferences page </configuration/preferences>` for more information.
 
   **Speed buttons**
 
@@ -269,11 +269,11 @@ There are eight ways you can control the speed of of your loco or consist /multi
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Display Speed buttons? <./configuration/preferences.html#display-speed-buttons>`_ preference in the `Speed Slider and Buttons section on the Preferences page <../configuration/preferences.html>`_ for more information on enabling the *Speed Buttons*.
+    See the :ref:`Display Speed buttons? <configuration/preferences:display speed buttons?>` preference in the :ref:`Speed Slider and Buttons section on the Preferences page <configuration/preferences:Speed Slider and Buttons Preferences>` for more information on enabling the *Speed Buttons*.
 
-    See the `Throttle Screen Layout preference on the Preferences page <../configuration/preferences.html#throttle-screen-layout>`_ for more information on the Throttle Screen Layouts that support *Speed Buttons*.
+    See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Speed Buttons*.
 
-    See the `Speed button Change Amount preference in the Throttle Control Preferences section on the Preferences page <../configuration/preferences.html#speed-button-change-amount>`_ for more information on changing how much the speed changes on each click.
+    See the :ref:`Speed button Change Amount preference in the Throttle Control Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on changing how much the speed changes on each click.
 
   **Stop button**
 
@@ -292,7 +292,7 @@ There are eight ways you can control the speed of of your loco or consist /multi
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Volume Button Preferences section on the Preferences page <../configuration/preferences.html#speed-button-change-amount>`_ for more information on disabling the Volume Keys and changing how much the speed changes on each click. 
+    See the :ref:`Volume Button Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on disabling the Volume Keys and changing how much the speed changes on each click. 
 
   **Emergency Stop - Action Bar button**
 
@@ -307,7 +307,7 @@ There are eight ways you can control the speed of of your loco or consist /multi
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Emergency Stop button? Preference on the Preferences page <../configuration/preferences.html#emergency-stop-button>`_ for more information on enabling the `Emergency Stop` button. 
+    See the :ref:`Emergency Stop button? Preference on the Preferences page <configuration/preferences:emergency stop button?>` for more information on enabling the :guilabel:`Emergency Stop` button. 
 
   **Pause button**
 
@@ -320,7 +320,7 @@ There are eight ways you can control the speed of of your loco or consist /multi
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `'Limit Speed' & 'Pause' button Preferences section on the Preferences page <../configuration/preferences.html#id41>`_ for more information on enabling the :guilabel:`Pause` button. 
+    See the :ref:`'Limit Speed' & 'Pause' button Preferences section on the Preferences page <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` for more information on enabling the :guilabel:`Pause` button. 
 
   **Limit Speed button**
 
@@ -335,7 +335,7 @@ There are eight ways you can control the speed of of your loco or consist /multi
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `'Limit Speed' & 'Pause' button Preferences section on the Preferences page <../configuration/preferences.html#id41>`_ for more information on enabling the :guilabel:`Limit Speed` button. 
+    See the :ref:`'Limit Speed' & 'Pause' button Preferences section on the Preferences page <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` for more information on enabling the :guilabel:`Limit Speed` button. 
 
   **Gamepad keys**
 
@@ -348,9 +348,9 @@ There are eight ways you can control the speed of of your loco or consist /multi
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Gamepads Operation page <./gamepads.html>`_ for information on selecting and using a gamepad.
+    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
 
-    See the `Gamepads Configuration page <../configuration/gamepads.html>`_ for information on configuring the keys of the gamepad.
+    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
 
 Controlling Direction
@@ -382,11 +382,11 @@ There are three ways you can control the direction of your loco or consist /mult
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Throttle Screen Layout preference on the Preferences page <../configuration/preferences.html#throttle-screen-layout>`_ for more information on the Throttle Screen Layouts that support *Direction Buttons*.
+    See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Direction Buttons*.
 
-    See the `Swapping Direction Buttons <./advanced.html#swapping-direction-buttons>`_  or  `Renaming Direction Buttons <./advanced.html#renaming-direction-buttons>`_ On the Advanced Operation page for information on swaping or renaming the buttons.
+    See the :ref:`Swapping Direction Buttons <operation/advanced:swapping direction buttons>`  or  :ref:`Renaming Direction Buttons <operation/advanced:renaming direction buttons>` On the Advanced Operation page for information on swaping or renaming the buttons.
     
-    See the `Direction Button Preferences section of the Preferences page <../configuration/preferences.html#direction-button-preferences>`_ for additional options for configuring the *Direction Buttons*.
+    See the :ref:`Direction Button Preferences section of the Preferences page <configuration/preferences:direction button preferences>` for additional options for configuring the *Direction Buttons*.
 
   **Sliders - Switching/Shunting Throttle Screen layouts**
 
@@ -394,7 +394,7 @@ There are three ways you can control the direction of your loco or consist /mult
     :align: right
     :scale: 40 %
 
-  Depending on the  `Throttle Screen Layout <../configuration/preferences.html#throttle-screen-layout>`_ chosen sliders on the |T-S| can be b-directional.  (Switching / Shunting Layouts)
+  Depending on the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen sliders on the |T-S| can be b-directional.  (Switching / Shunting Layouts)
 
   Switching / Shunting Layouts have 'stationary' (zero speed) at the centre of the slider.  Dragging your finger along the slider to the right (or up) from the centre will increase the speed of the loco(s) selected for that Throttle *in the forward direction*. Dragging your finger along the slider to the left (or down) from the centre will increase the speed of the loco(s) selected for the that Throttle *in the reverse direction*. 
   
@@ -403,7 +403,7 @@ There are three ways you can control the direction of your loco or consist /mult
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Throttle Screen Layout preference on the Preferences page <../configuration/preferences.html#throttle-screen-layout>`_ for more information on the Throttle Screen Layouts that support the Switching / Shunting Layouts.
+    See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support the Switching / Shunting Layouts.
 
   **Gamepad keys**
 
@@ -416,9 +416,9 @@ There are three ways you can control the direction of your loco or consist /mult
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Gamepads Operation page <./gamepads.html>`_ for information on selecting and using a gamepad.
+    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
 
-    See the `Gamepads Configuration page <../configuration/gamepads.html>`_ for information on configuring the keys of the gamepad.
+    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
 DCC Functions
 """"""""""""""""""""""""""""""""""
@@ -441,9 +441,9 @@ Activating the DCC Function via the Function Buttons
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the :doc:`Functions page <../configuration/functions>` for information on changing the Functions and Function Labels.
+    See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
 
-    See the `Consist Function Follow Preferences on the Preferences page <../configuration/preferences.html#consist-function-follow-preferences>`_ for information on changing the behaviour of the functions in consists / multiple units.
+    See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` for information on changing the behaviour of the functions in consists / multiple units.
 
   **Activating the DCC Function via the Gamepad Keys**
   
@@ -452,9 +452,9 @@ Activating the DCC Function via the Function Buttons
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Gamepads Operation page <./gamepads.html>`_ for information on selecting and using a gamepad.
+    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
 
-    See the `Gamepads Configuration page <../configuration/gamepads.html>`_ for information on configuring the keys of the gamepad.
+    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
   **Function Labels**
 
@@ -479,7 +479,7 @@ Activating the DCC Function via the Function Buttons
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the :doc:`Functions page <../configuration/functions>` for information on changing the Functions and Function Labels.
+    See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
 
   **Functions in consists**
 
@@ -490,8 +490,7 @@ Activating the DCC Function via the Function Buttons
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Consist Follow Functions in the Preferences page <./preferences.html#consist-function-follow-preferences>`_ and the 
-    `Consist Follow Functions om the Advanced Operation page <advanced.html#consist-follow-functions>`_ for more details.
+    See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` and the :doc:`Consist Follow Functions page </operation/consist-follow-functions>` for more details.
 
 
 Virtual Sounds - In Phone Loco Sounds (IPLS)
@@ -505,16 +504,16 @@ There is built in Support for a number of different type of locos:
 * Diesel - 3 in-built profiles
 * Plus you can create you own Custom profiles
 
-To enable In Phone Loco Sounds (IPLS) for a throttle (only the first two throttles on an given throttle screen) select an option in `Throttle 1 Loco Sounds <../configuration/preferences.html#throttle-1-loco-sounds>`_ or `Throttle 2 Loco Sounds <../configuration/preferences.html#throttle-2-loco-sounds>`_ (or both) preferences. Once enabled for either throttle a new menu option will be available from |T-S| to make subsequent changes easier: :menuselection:`Menu --> Loco Sounds`
+To enable In Phone Loco Sounds (IPLS) for a throttle (only the first two throttles on an given throttle screen) select an option in :ref:`Throttle 1 Loco Sounds <configuration/preferences:throttle 1 loco sounds>` or :ref:`Throttle 2 Loco Sounds <configuration/preferences:throttle 2 loco sounds>` (or both) preferences. Once enabled for either throttle a new menu option will be available from |T-S| to make subsequent changes easier: :menuselection:`Menu --> Loco Sounds`
 
-To make it easy to switch sound profiles we recommend enabling the Action Bar button by setting the `In phone sounds button <../configuration/preferences.html#in-phone-sounds-button>`_ preferences: :menuselection:`Menu --> Preferences --> Throttle Screen Action Bar Preferences --> In phone sounds button`
+To make it easy to switch sound profiles we recommend enabling the Action Bar button by setting the :ref:`In phone sounds button <configuration/preferences:in phone sounds button>` preferences: :menuselection:`Menu --> Preferences --> Throttle Screen Action Bar Preferences --> In phone sounds button`
 
 Automatic Loco Speed Step Sounds
 ''''''''''''''''''''''''''''''''
 
-Each IPLS Profile has a different number of speed steps. As the loco speed increases or decreases to a certain point a different sound will repeatedly play.  To try to emulate the momentum of the loco, there is a preset delay, and an option to not clip the sounds (which enforces a minimum delay) These can be altered with the `In Phone Momentum <../configuration/preferences.html#in-phone-momentum>`_ and the `Don't clip loco step sounds <../configuration/preferences.html#don-t-clip-loco-step-sounds>`_ preferences.
+Each IPLS Profile has a different number of speed steps. As the loco speed increases or decreases to a certain point a different sound will repeatedly play.  To try to emulate the momentum of the loco, there is a preset delay, and an option to not clip the sounds (which enforces a minimum delay) These can be altered with the :ref:`In Phone Momentum <configuration/preferences:in phone momentum>` and the :ref:`Don't clip loco step sounds <configuration/preferences:don't clip loco step sounds>` preferences.
 
-The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be altered independently with the `In Phone Loco Sounds Volume <../configuration/preferences.html#in-phone-loco-sounds-volume>`_, the `In Phone Bell Sounds Volume <../configuration/preferences.html#in-phone-bell-sounds-volume>`_ and the `In Phone Horn/Whistle Sounds Volume <../configuration/preferences.html#in-phone-horn-whistle-sounds-volume>`_ preferences.
+The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be altered independently with the :ref:`In Phone Loco Sounds Volume <configuration/preferences:in phone loco sounds volume>`, the :ref:`In Phone Bell Sounds Volume <configuration/preferences:in phone bell sounds volume>` and the :ref:`In Phone Horn/Whistle Sounds Volume <configuration/preferences:in phone horn/whistle sounds volume>` preferences.
 
   **Playing sounds**
 
@@ -543,7 +542,7 @@ The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be
 
     Clicking this will continuously play a bell sound until it is clicked again (latched)
 
-    The Bell can be made non-latching by changing the `Bell button Latching/Momentary <../configuration/preferences.html#bell-button-latching-momentary>`_ preference.
+    The Bell can be made non-latching by changing the :ref:`Bell button Latching/Momentary <configuration/preferences:bell button latching/momentary>` preference.
 
     **Horn / Whistle button**
 
@@ -555,7 +554,7 @@ The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be
 
   **Activating the IPLS Sounds via DCC Functions / Function Buttons**
 
-  The Bell and Horn/Whistle (long) can be activated by the DCC Function buttons (F1 and F2) if the `F1 and F2 activate Bell and Horn? <../configuration/preferences.html#f1-and-f2-activate-bell-and-horn>`_ preference is set.
+  The Bell and Horn/Whistle (long) can be activated by the DCC Function buttons (F1 and F2) if the :ref:`F1 and F2 activate Bell and Horn? <configuration/preferences:f1 and f2 activate bell and horn?>` preference is set.
 
   **Activating the IPLS Sounds via Gamepad keys**
 
@@ -564,9 +563,9 @@ The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Gamepads Operation page <./gamepads.html>`_ for information on selecting and using a gamepad.
+    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
 
-    See the `Gamepads Configuration page <../configuration/gamepads.html>`_ for information on configuring the keys of the gamepad.
+    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
 Action Bar and Menu
 """""""""""""""""""
@@ -594,17 +593,17 @@ Optionally configured information:
 Optionally configured buttons:
 
 * Emergency Stop (EStop)
-* `Track Power <./interface.html#action-bar>`_
+* :ref:`Track Power <operation/interface:action bar>`
 * Flashlight
 * Throttle Web View
 * Throttle Layout Switching
-* `In Phone Loco Sounds <./interface.html#action-bar>`_
+* :ref:`In Phone Loco Sounds <operation/interface:action bar>`
 * Children's Timer
 
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the `Action Bar section of the User Interface page <../interface.html#action-bar>`_ for more information.
+  See the :ref:`Action Bar section of the User Interface page <operation/interface:action bar>` for more information.
 
 Overflow Menu (Throttle Screen)
 '''''''''''''''''''''''''''''''
@@ -625,7 +624,7 @@ Overflow Menu (Throttle Screen)
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Overflow Menu section of the User Interface page <../interface.html#overflow-menu>`_ for more information.
+    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Turnouts / Points
 ^^^^^^^^^^^^^^^^^
@@ -679,7 +678,7 @@ JMRI Defined Turnout/Point list
 
   The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
 
-  The `Location Delimiter <../configuration/preferences.html#location-delimiter>`_ preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
+  The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
 
 
@@ -691,7 +690,7 @@ Recent Turnout/Point list
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the `Left/Right Swipe preferences on the Preferences page <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on enabling or disabling the swipe though Turnouts/Points.
+  See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the swipe though Turnouts/Points.
 
 Overflow Menu (Turnouts/Points Screen)
 """"""""""""""""""""""""""""""""""""""
@@ -704,7 +703,7 @@ Overflow Menu (Turnouts/Points Screen)
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Overflow Menu section of the User Interface page <../interface.html#overflow-menu>`_ for more information.
+    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Routes
 ^^^^^^
@@ -731,7 +730,7 @@ From the WiThrottle server
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the `Left/Right Swipe preferences on the Preferences page <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on enabling or disabling the swipe though Routes.
+  See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the swipe though Routes.
 
   See the `Automation (EX-RAIL) page on the DCC-EX website <https://dcc-ex.com/automation/index.html>`_ for more information on using Automations in DCC-EX EX-CommandStations.
 
@@ -739,7 +738,7 @@ From the WiThrottle server
 
   The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
 
-  The `Location Delimiter <../configuration/preferences.html#location-delimiter>`_ preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
+  The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
 Overflow Menu (Routes Screen)
 """""""""""""""""""""""""""""""
@@ -752,7 +751,7 @@ Overflow Menu (Routes Screen)
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Overflow Menu section of the User Interface page <../interface.html#overflow-menu>`_ for more information.
+    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Panels and Web Pages
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -791,7 +790,7 @@ Throttle Web View VS Web View Screen
 * Throttle Web View 
 * Web View Screen
 
-This section describes the |WV-S|, which is a full screen web browser.  The *Throttle Web View* is a half Screen web browser that optionally shares the screen with the |T-S|. See the `Throttle Web View section on the User Interface page <./interface.html#web-view-area>`_ from more information on the Throttle Web View.
+This section describes the |WV-S|, which is a full screen web browser.  The *Throttle Web View* is a half Screen web browser that optionally shares the screen with the |T-S|. See the :ref:`Throttle Web View section on the User Interface page <operation/interface:Web View Area (Throttle Web View)>` from more information on the Throttle Web View.
 
 The |WV-S| can be accessed three ways:
 
@@ -810,7 +809,7 @@ Overflow Menu (Web View Screen)
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Overflow Menu section of the User Interface page <../interface.html#overflow-menu>`_ for more information.
+    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Swipe (Web View Screen)
 """""""""""""""""""""""
@@ -819,28 +818,28 @@ Swipe (Web View Screen)
   You can also swipe left from the |TP-S| (if enabled in the preference).
   You can also swipe right from the |R-S| (if enabled in the preference).
 
-  Note that 'Swipe Through Web' is automatically disabled if ``Auto-Web`` orientation is enabled in the `Screen Orientation <configuration/preferences.html#screen-orientation>`_ preference.
+  Note that 'Swipe Through Web' is automatically disabled if ``Auto-Web`` orientation is enabled in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference.
 
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Left/Right Swipe preferences on the Preferences page <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
+    See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
 
-    See the `Screen Orientation <configuration/preferences.html#screen-orientation>`_ preference for more information on ``Auto-Web`` orientation option.
+    See the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference for more information on ``Auto-Web`` orientation option.
 
 Auto Web Orientation
 """"""""""""""""""""
 
-  if ``Auto-Web`` orientation is selected in the `Screen Orientation <configuration/preferences.html#screen-orientation>`_ preference, when you rotate you Android device/Phone from portrait to landscape, the |WV-S| is automatically shown.  Rotating it back will automatically show the |T-S|. 
+  if ``Auto-Web`` orientation is selected in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference, when you rotate you Android device/Phone from portrait to landscape, the |WV-S| is automatically shown.  Rotating it back will automatically show the |T-S|. 
 
-  Note that `Swipe Through Web <../configuration/preferences.html#swipe-through-web>`_ preference is automatically disabled if ``Auto-Web`` orientation is selelected in the `Screen Orientation <configuration/preferences.html#screen-orientation>`_ preference.  It is not automatically re-enabled if you later select a different orientation.  i.e. you will need to manually turn the preference back on if you change from ``Auto-Web`` to another orientation.
+  Note that :ref:`Swipe Through Web <configuration/preferences:swipe through web?>` preference is automatically disabled if ``Auto-Web`` orientation is selelected in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference.  It is not automatically re-enabled if you later select a different orientation.  i.e. you will need to manually turn the preference back on if you change from ``Auto-Web`` to another orientation.
 
   .. note:: 
     :class: note-ed-hidden-title
 
-    See the `Screen Orientation <configuration/preferences.html#screen-orientation>`_ preference for more information on ``Auto-Web`` orientation option.
+    See the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference for more information on ``Auto-Web`` orientation option.
 
-    See the `Left/Right Swipe preferences on the Preferences page <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
+    See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
 
 
 Pushing the app to the Background
@@ -861,12 +860,12 @@ In general avoid letting |ED| try to run in background.
 
   If you are concerned about preserving the battery, there are options.  See the :doc:`Conserving Power <../configuration/conserving_power>` page for more information.
 
-  See the `Background Alert in the Preference page <./preferences.html#background-alert>`_ for information on disabling the alert.
+  See the :ref:`Background Alert in the Preference page <configuration/preferences:background alert>` for information on disabling the alert.
 
 DCC-EX - Features when using the Native DCC-EX Protocol
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Refer to :doc:`this page <./dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the **Native DCC-EX Protocol** when connecting to a **EX-CommandStation**.
+Refer to :doc:`this page </operation/dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the **Native DCC-EX Protocol** when connecting to a **EX-CommandStation**.
 
 
 Exiting Engine Driver
