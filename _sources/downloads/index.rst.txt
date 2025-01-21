@@ -9,9 +9,15 @@ Downloads
 
 The Published version (v2.37.187) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../_static/apk/EngineDriver.apk>`_.
 
+Installing from the Play Store is preferred as you will automatically receive updates to the app, as long as your device/phone periodically connects to the internet.
+
 If you'd like to help test early versions, please join the `Beta program <https://play.google.com/apps/testing/jmri.enginedriver>`_.
 
-Note: for manual install, turn on "Allow unknown sources" in Settings, manually uninstall earlier versions, then download desired version to your device and follow the prompts to install.
+*Notes for Manual Installs*
+
+* For manual installs of the .apk files below, turn on "Allow unknown sources" in the Android System Settings, then download desired version to your device and follow the prompts to install.
+
+* Sometimes you may need to uninstall previous versions before you can install the new version this way.
 
 Older or Other Versions
 -----------------------
