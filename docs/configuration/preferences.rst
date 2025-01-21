@@ -166,6 +166,16 @@ Swipe through Routes?
 
 If this preference is enabled, the |R-S| is included in the list of screens when swiping left/right between screens.
 
+Double Back Buton to Exit?
+""""""""""""""""""""""""""
+
+When this preference is enabled, pressing the Andoroid System ``Back`` button twice quickly from the |T-S| will exit the app.
+
+Hide Instructional Hints 
+""""""""""""""""""""""""
+
+When this preference is enabled, most of the less important 'Toast' message will not be shown.
+
 Throttle Screen Appearance Preferences
 --------------------------------------
 

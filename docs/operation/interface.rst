@@ -95,7 +95,7 @@ The Action Bar appears at the top of all screens. It will show different informa
 In the |C-S| the Action Bar only displays:
 
 * The app name (|ed|)
-
+ 
 See the `Action Bar`_ section of this page for more information.
 
 |HR-DASHED|
