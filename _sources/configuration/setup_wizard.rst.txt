@@ -72,6 +72,12 @@ Speed Sliders and Buttons
 .. image:: ../_static/images/setup_wizard/setup5.png
    :scale: 12 %
 
+DCC-EX
+------
+
+.. image:: ../_static/images/setup_wizard/setup_dcc_ex.png
+   :scale: 12 %
+
 Ready
 -----
 
