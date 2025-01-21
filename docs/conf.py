@@ -143,5 +143,7 @@ notfound_urls_prefix = "/mstevetodd.github.io/"
 
 redirects = {
     "privacy-policy": "./about/privacy-policy.html",
+    "screenshots": "./glossary/index.html#screenshots",
+    "wifi": "./operation/wifi_issues.html",
+    "turnouts": "./operation/operation.html#turnouts-points",
 }
-
