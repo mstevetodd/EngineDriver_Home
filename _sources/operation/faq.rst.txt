@@ -28,12 +28,12 @@ Q. I can't connect to my Server /Railroad
   A1. Check the following:
 
   * Check that you are connected to a WiFi network
-  * Check that you are connected to the same WiFi network as your |WTS|
+  * Check that you are connected to the same WiFi network as your |WTS-DCC-EX|
   * Check that JMRI and its |WTS| feature are started
 
   A2. Possible Mobile data connection problem
 
-  If |ed| can see the |WTS| but displays an error when you try to connect to it… If you are using a phone with a SIM, and the WiFi network your JMRI server is on does not have internet access. You may have to turn 'mobile data' off on your device.  See `[here] for more information <./wifi_issues.html>`_.
+  If |ed| can see the |WTS-DCC-EX| but displays an error when you try to connect to it… If you are using a phone with a SIM, and the WiFi network your JMRI server is on does not have internet access. You may have to turn 'mobile data' off on your device.  See `[here] for more information <./wifi_issues.html>`_.
 
 Q. |ed| Connects, but I can't control any locos
 
@@ -46,7 +46,7 @@ Q. |ed| Connects, but I can't control any locos
 
     See the `Turn Track Power On <../operation/operation.html#turn-track-power-on>`_ notes for more information.
 
-Q. Why doesn't |ed| automatically find my |WTS|?
+Q. Why doesn't |ed| automatically find my |WTS-DCC-EX|?
 
   I can manually connect to my Server / Railroad by entering an IP address, but it never finds it automatically.
 
@@ -82,7 +82,7 @@ Q. I want to switch to a different server on a different network.
 Save/load preferences for different servers
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-You can set up different preferences for different server/railroads and have them automatically load when you connect to that |WTS|.
+You can set up different preferences for different server/railroads and have them automatically load when you connect to that |WTS-DCC-EX|.
 The most common use of this (so far) is to remember the locos relevant to that railroad.  e.g. I run N scale and HO Scale.  When I connect to one of the N Scale layouts I use it shows me my N Scale locos in the recent locos list, but when I connect to one of the HO layouts I use, it shows me the my recently used HO locos.
 
 .. note:: 

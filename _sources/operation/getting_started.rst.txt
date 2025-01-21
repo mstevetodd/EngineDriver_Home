@@ -11,14 +11,22 @@ Quick Start / Getting Started
 * Confirm that your devices meet the `Prerequisites <../prerequisites/index.html>`_
 * **Start your WiThrottle server**
 
-  * For |JMRI|, Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in *DecoderPro* under :menuselection:`Tools --> Throttles`. |br|\ It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ :menuselection:`Tools -> Start JMRI Web Server`. 
+  * For |JMRI|, Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in *DecoderPro* under :menuselection:`Tools --> Start WiThrottle Server`. |br|\ It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ :menuselection:`Tools -> Start JMRI Web Server`. 
   * For other server devices, turning them on and waiting a minute or two should be sufficient.
 
     See the `Prerequisites <../prerequisites/index.html>`_ page for more information.
 
+  .. image:: ../_static/images/parts/network2.png
+    :scale: 30 %
+    :align: right
+
+  .. image:: ../_static/images/parts/network1.png
+    :scale: 40 %
+    :align: right
+
 * **On your Android device/phone** 
-  
-  * In you Android Devices system network and WiFi settings, make sure you are connected to same network as the |WTS|'s or |EX-CS|'s network.
+    
+  * In you Android Device's system network and WiFi settings, make sure you are connected to same network as the network of the |WTS-DCC-EX|.
 
   * Start |ED| 
 
@@ -26,12 +34,12 @@ Quick Start / Getting Started
    
       See the `Setup Wizard <../configuration/setup_wizard.html>`_ page for more information.
 
-  * Wait for your server's address to show up in 'Discovered Servers'
+  * Wait for your |WTSS-DCC-EXS| to show up in 'Discovered Servers'
 
-  * Click on the *Discovered server*
+  * Click on the appropriate *Discovered server*
 
-    * If your |WTS| does not show up, check that are on the same network as the |WTS| or |EX-CS|.   
-    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press :guilabel:`Connect`. |br|\ Note: this situation is sometimes possible even if you are on the same network. |br|\ |br|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |br|\ |br|\ 
+    * If your |WTS-DCC-EX| does not show up, check that are on the same network as the |WTS-DCC-EX|.   
+    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS-DCC-EX| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press :guilabel:`Connect`. |br|\ Note: this situation is sometimes possible even if you are on the same network. |br|\ |br|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |br|\ |br|\ 
 
   * If needed, turn the track power on with :menuselection:`Menu --> Power` and confirm the button is 'green'  (This is not required by all DCC Command Stations.)
   

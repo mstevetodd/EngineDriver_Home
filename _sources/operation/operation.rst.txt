@@ -12,7 +12,7 @@ Detailed Instructions
 
    .. contents:: On This Page
      :local:
-     :depth: 4
+     :depth: 2
 
 Connecting
 ^^^^^^^^^^^^^^^^
@@ -20,26 +20,21 @@ Connecting
 Connecting has two aspects:
 
 1. Connecting to the WiFi network, which uses Android's built in capabilities (not |EDs|)
-2. Connecting |ED| to the |WTS|
+2. Connecting |ED| to the |WTS-DCC-EX|
 
 Connecting to the WiFi network
 """"""""""""""""""""""""""""""
 
-.. sidebar:: 
-  :class: sidebar-no-background
-
   .. image:: ../_static/images/parts/network1.png
-    :scale: 30 %
+    :scale: 40 %
     :align: right
 
-  |br|
+* Use Android's System Network - Wifi settings to connect to the same network as your |WTS-DCC-EX|
+* With some exceptions, your device's IP Address should be similar to the server's IP address (the first three blocks of numbers will be identical)
 
   .. image:: ../_static/images/parts/network2.png
     :scale: 30 %
     :align: right
-
-* Use Android's System Network - Wifi settings to connect to the same network as your |WTS|
-* With some exceptions, your device's IP Address should be similar to the server's IP address (the first three blocks of numbers will be identical)
 
   * For your Android device / phone, you can see its address in the |EDs| 'About Screen' (:menuselection:`Menu --> About`), at the top of the screen
   * For a |JMRI| server, see the WiThrottle screen for its address 
@@ -54,7 +49,7 @@ Connecting Engine Driver to the WiThrottle server
 """""""""""""""""""""""""""""""""""""""""""""""""
 
 * Start |ED| |br|\ You will be presented with the |C-S|
-* On the |C-S| there are three ways you can select a |WTS| to connect to:
+* On the |C-S| there are three ways you can select a |WTS-DCC-EX| to connect to:
 
   - IP Address and Port
   - Discovered Servers
@@ -67,14 +62,14 @@ IP Address and Port
   :align: right
   :name: IP Address
 
-Type in the **IP address** and **Port** of the |WTS| and press :guilabel:`Connect`.
+Type in the **IP address** and **Port** of the |WTS-DCC-EX| and press :guilabel:`Connect`.
 
 To find your server's IP address and Port:
 
   * For a |JMRI| server, see the WiThrottle screen for its address 
   * For other devices, see the instructions for that device
 
-If you only ever connect to one |WTS| you can effectively bypass this screen by setting the :ref:`Auto-Connect to WiThrottle Server? <configuration/preferences:auto-connect to withrottle server?>` preference.
+If you only ever connect to one |WTS-DCC-EX| you can effectively bypass this screen by setting the :ref:`Auto-Connect to WiThrottle Server? <configuration/preferences:auto-connect to withrottle server?>` preference.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -169,7 +164,7 @@ You can enter the loco's DCC address (verify short or long), and press :guilabel
 
 If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-For this to be possible, the Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or your |WTS| device's documentation for creating a roster.
+For this to be possible, the Loco you want to control needs to be in the roster of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support rosters.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a roster.
 
 .. Also see `Locomotive Icons <locomotive icons in the roster>`_ below.
 
@@ -474,7 +469,7 @@ Activating the DCC Function via the Function Buttons
 
     * Which function buttons, how many function buttons and what labels are displayed, can be changed via the :menuselection:`Menu --> Function Defaults` from the |T-S|
   
-  * If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, |ed| will attempt to show the Labels from the |WTS| roster entry.
+  * If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, |ed| will attempt to show the Labels from the |WTS-DCC-EX| roster entry.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -588,7 +583,7 @@ Optionally configured information:
 * Fast Clock
 * Children’s Timer Status and Countdown
 * Full Screen or Action Bar Only left/right swipe
-* |WTS| Name
+* |WTS-DCC-EX| Name
 
 Optionally configured buttons:
 
@@ -608,42 +603,40 @@ Optionally configured buttons:
 Overflow Menu (Throttle Screen)
 '''''''''''''''''''''''''''''''
  
-  The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
-  It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
+It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
-  These menu items only appear on the |T-S|:
+These menu items only appear on the |T-S|:
 
-  * Function Defaults
-  * Gamepads
+* Function Defaults
+* Gamepads
 
-    * Gamepad Test 1
-    * Gamepad Test ...
+  * Gamepad Test 1
+  * Gamepad Test ...
 
-  * Loco Sounds
+* Loco Sounds
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
+  See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Turnouts / Points
 ^^^^^^^^^^^^^^^^^
 
-.. todo:: Turnouts / Points
-
-|ed| can control DCC controlled Turnouts / Points on your layout if configured in you |WTS|.
+|ed| can control DCC controlled Turnouts / Points on your layout if configured in you |WTS-DCC-EX|.
 
 To get the *Turnouts / Points* screen you can use the menu :menuselection:`Menu --> Turnouts/Points` from the main screens.  You can also swipe right from the |T-S| (if enabled in the preference).
 
-The |WTS| must have Turnouts / Points enabled.
+The |WTS-DCC-EX| must have Turnouts / Points enabled.
 
 If you've defined your turnouts and routes in a panel file, make sure to specify "user names" for those you'd like to see listed on your throttle. You can also "filter" the turnouts shown using the WiThrottle->Filter Controls option in the WiThrottle window.
 
-*Turnouts/Points* can be operated three ways
+*Turnouts/Points* can be operated three ways:
 
-* By entering their DCC Address
-* From the JMRI Defined Turnout/Point list provided by the |WTS| (JMRI)
-* From the recent Turnout/Point list
+* By entering their `DCC Address (Turnout/Point)`_
+* From the `Defined Turnout/Point list <Server Defined Turnout/Point list>`_ provided by the |WTS-DCC-EX| (JMRI)
+* From the `Recent Turnout/Point list <Recent Turnout/Point list>`_
 
 The |TP-S| can be accessed three ways:
 
@@ -651,36 +644,34 @@ The |TP-S| can be accessed three ways:
 * Swipe
 * Auto Web Orientation
 
-DCC Address
-"""""""""""
+DCC Address (Turnout/Point)
+"""""""""""""""""""""""""""
 
-  Enter the DCC address of the Turnout / Points you wish to control.
+Enter the DCC address of the Turnout / Points you wish to control.
 
-  Three buttons will be available
+Three buttons will be available
 
-  * Throw
-  * Close
-  * Toggle
+* Throw
+* Close
+* Toggle
 
-  .. todo:: DCC Address
+.. todo:: DCC Address
 
-JMRI Defined Turnout/Point list
-"""""""""""""""""""""""""""""""
+Server Defined Turnout/Point list
+"""""""""""""""""""""""""""""""""
 
-  Server must 
+Server must 
 
-  * Filtering
-  * Must be named???
+* Filtering
+* Must be named???
 
-  .. todo:: JMRI Defined Turnout/Point list
+.. todo:: JMRI Defined Turnout/Point list
 
-  **Filter by location**
+**Filter by location**
 
-  The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
+The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
 
-  The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
-
-
+The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
 Recent Turnout/Point list
 """""""""""""""""""""""""
@@ -695,24 +686,24 @@ Recent Turnout/Point list
 Overflow Menu (Turnouts/Points Screen)
 """"""""""""""""""""""""""""""""""""""
 
-  To get the |WV-S| you can use the menu :menuselection:`Menu --> Web` from the main screens.  
+To get the |WV-S| you can use the menu :menuselection:`Menu --> Web` from the main screens.  
 
-  The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
-  It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
+It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
+  See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Routes
 ^^^^^^
 
 .. todo:: Routes
 
-|ed| can control *Routes* on your layout if configured in you |WTS|.
+|ed| can control *Routes* on your layout if configured in you |WTS-DCC-EX|.
 
-When using DC++EX as your |WTS|, *Routes* can be used to activate *Automations*.
+When using DC-EX as your |WTS-DCC-EX|, *Routes* can be used to activate *Automations*.
 
 To get the *Turnouts / Points* screen you can use the menu :menuselection:`Menu --> Routes` from the main screens.  You can also swipe left from the |T-S| (if enabled in the preference).
 
@@ -734,24 +725,24 @@ From the WiThrottle server
 
   See the `Automation (EX-RAIL) page on the DCC-EX website <https://dcc-ex.com/automation/index.html>`_ for more information on using Automations in DCC-EX EX-CommandStations.
 
-  **Filter by location**
+**Filter by location**
 
-  The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
+The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
 
-  The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
+The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
 Overflow Menu (Routes Screen)
 """""""""""""""""""""""""""""""
 
-  To get the |WV-S| you can use the menu :menuselection:`Menu --> Web` from the main screens.  
+To get the |WV-S| you can use the menu :menuselection:`Menu --> Web` from the main screens.  
 
-  The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
-  It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
+It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
+  See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Panels and Web Pages
 ^^^^^^^^^^^^^^^^^^^^^^
@@ -801,45 +792,45 @@ The |WV-S| can be accessed three ways:
 Overflow Menu (Web View Screen)
 """""""""""""""""""""""""""""""
 
-  To get the |WV-S| you can use the menu :menuselection:`Menu --> Web` from the main screens.  
+To get the |WV-S| you can use the menu :menuselection:`Menu --> Web` from the main screens.  
 
-  The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
-  It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
+The *Overflow Menu* (or simply '*Menu*') appears in the Action Bar at the top of most of the main screens is normally three dots (⁞) or three bars (≡).
+It will show different options depending on a) the particular screen, b) preferences you have set and c) the state of certain elements in the app.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
+  See the :ref:`Overflow Menu section of the User Interface page <operation/interface:overflow menu>` for more information.
 
 Swipe (Web View Screen)
 """""""""""""""""""""""
 
-  You can swipe left or right twice from the |T-S| (if enabled in the preference).
-  You can also swipe left from the |TP-S| (if enabled in the preference).
-  You can also swipe right from the |R-S| (if enabled in the preference).
+You can swipe left or right twice from the |T-S| (if enabled in the preference).
+You can also swipe left from the |TP-S| (if enabled in the preference).
+You can also swipe right from the |R-S| (if enabled in the preference).
 
-  Note that 'Swipe Through Web' is automatically disabled if ``Auto-Web`` orientation is enabled in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference.
+Note that 'Swipe Through Web' is automatically disabled if ``Auto-Web`` orientation is enabled in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
+  See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
 
-    See the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference for more information on ``Auto-Web`` orientation option.
+  See the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference for more information on ``Auto-Web`` orientation option.
 
 Auto Web Orientation
 """"""""""""""""""""
 
-  if ``Auto-Web`` orientation is selected in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference, when you rotate you Android device/Phone from portrait to landscape, the |WV-S| is automatically shown.  Rotating it back will automatically show the |T-S|. 
+If ``Auto-Web`` orientation is selected in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference, when you rotate you Android device/Phone from portrait to landscape, the |WV-S| is automatically shown.  Rotating it back will automatically show the |T-S|. 
 
-  Note that :ref:`Swipe Through Web <configuration/preferences:swipe through web?>` preference is automatically disabled if ``Auto-Web`` orientation is selelected in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference.  It is not automatically re-enabled if you later select a different orientation.  i.e. you will need to manually turn the preference back on if you change from ``Auto-Web`` to another orientation.
+Note that :ref:`Swipe Through Web <configuration/preferences:swipe through web?>` preference is automatically disabled if ``Auto-Web`` orientation is selelected in the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference.  It is not automatically re-enabled if you later select a different orientation.  i.e. you will need to manually turn the preference back on if you change from ``Auto-Web`` to another orientation.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference for more information on ``Auto-Web`` orientation option.
+  See the :ref:`Screen Orientation <configuration/preferences:screen orientation>` preference for more information on ``Auto-Web`` orientation option.
 
-    See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
+  See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the 'swipe though Web', 'Swipe through Routes' and 'Swipe through Turnouts/Points'.
 
 
 Pushing the app to the Background
@@ -878,5 +869,5 @@ To exit |ed|, you can:
 
 Exiting |ed|:
 
-* Disconnects from the |WTS|.
+* Disconnects from the |WTS-DCC-EX|.
 * Stops playing all In Phone Loco Sounds (if any were configured).

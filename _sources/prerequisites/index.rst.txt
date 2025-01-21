@@ -19,8 +19,8 @@ To Use Engine Driver You must...
 1. Have a Android device/phone. |BR| |ED| can only be installed on an Android device/phone.
 
 *ALSO*
-
-2. a) A |WTS| must be available on a device connected to your model train layout for |ED| to connect to.
+ 
+2. a) A |WTS-DCC-EX| must be available on a device connected to your model train layout for |ED| to connect to.
 
 **OR**
 
@@ -32,7 +32,7 @@ Android Device/Phone
 |ed| will work on most Android devices (Phones and Tablets) made in the last 8-9 years. Currently it has a minSDKVersion 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN) but Android versions greater than 5.0 are recommended. Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
 
 .. image:: ../_static/images/gamepads/esu_mcii.png
-   :scale: 15 %
+   :scale: 25 %
    :align: right
 
 ESU MobileControl II

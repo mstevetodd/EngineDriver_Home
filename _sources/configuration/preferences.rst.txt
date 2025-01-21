@@ -1949,7 +1949,7 @@ Use this preference to set the maximum number of *Recent Connections* to show in
 Auto-Connect to WiThrottle Server?
 """"""""""""""""""""""""""""""""""
 
-Enable this preference if you wish to connect automatically to 'first' |WTS| discovered each time you start|ed|.  This will effectively bypass the |C-S|.
+Enable this preference if you wish to connect automatically to the 'first' |WTS-DCC-EX| discovered each time you start|ed|.  This will effectively bypass the |C-S|.
 
 Hide Demo Server
 """"""""""""""""
@@ -1969,7 +1969,7 @@ Use this preference to set the socket read timeout in milliseconds.
 Mobile Data connection?
 """""""""""""""""""""""
 
-Use this preference to allow your device to connect to JMRI, or any |WTS|, using your phone's Mobile Data.
+Use this preference to allow your device to connect to JMRI, or any |WTS-DCC-EX|, using your phone's Mobile Data.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1979,7 +1979,7 @@ Use this preference to allow your device to connect to JMRI, or any |WTS|, using
 Feedback on Disconnect
 """""""""""""""""""""""""
 
-If this preference is enabled |ed| will play a sound (Audible alert) and will vibrate if there is an unexpected disconnection from the |WTS|.
+If this preference is enabled |ed| will play a sound (Audible alert) and will vibrate if there is an unexpected disconnection from the |WTS-DCC-EX|.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -2186,7 +2186,7 @@ Options:
 Auto import from all Servers?
 """""""""""""""""""""""""""""
 
-|ed| is able to automatically import a preference file from a JMRI |WTS| if it exists.
+|ed| is able to automatically import a preference file from a |WTS-DCC-EX| if it exists.
 
 Enable this preference to automatically import the preferences from all servers (if they exists) on connection.  i.e. If the file ``<jmri railroad base folder>/prefs/engine_driver/auto_preferences.ed`` is on the server and if it is more recent that the last time checked.
 
@@ -2198,7 +2198,7 @@ Enable this preference if you wish to include the locos in the recent loco list 
 Auto host specific import/export?
 """""""""""""""""""""""""""""""""
 
-You can set up different preferences for different server/railroads and have them automatically load when you connect to that |WTS|.
+You can set up different preferences for different server/railroads and have them automatically load when you connect to that |WTS-DCC-EX|.
 The most common use of this (so far) is to remember the locos relevant to that railroad.  e.g. I run N scale and HO Scale.  When I connect to one of the N Scale layouts I use it shows me my N Scale locos in the recent locos list, but when I connect to one of the HO layouts I use, it shows me the my recently used HO locos.
 
 Enable this preference if you wish, on every connection to a host, to AUTOMATICALLY 'Import' preferences for that host, and optionally 'Export' them on disconnect. 
@@ -2211,7 +2211,7 @@ Options:
 
 When enabled:
 
-* on connection to a |WTS|, |ed| will save a file to the  ``/Android/data/jmri.enginedriver/files/`` folder in a file named ``<witServer Name>.ed``.
+* on connection to a |WTS-DCC-EX|, |ed| will save a file to the  ``/Android/data/jmri.enginedriver/files/`` folder in a file named ``<witServer Name>.ed``.
 
 **IMPORTANT!**
 
@@ -2225,7 +2225,7 @@ Manual host specific import/export
 
 'Import' or 'Export' your preferences for a specific host to the  ``/Android/data/jmri.enginedriver/files/`` folder. The host must be in your recent connection list.
 
-Note: this preference is only available when not currently connected to a |WTS|.  i.e. On the |C-S|.
+Note: this preference is only available when not currently connected to a |WTS-DCC-EX|.  i.e. On the |C-S|.
 
 **WARNINGS:**
 
