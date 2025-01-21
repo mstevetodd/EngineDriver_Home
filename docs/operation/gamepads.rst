@@ -55,7 +55,7 @@ Running Engine Driver with the Gamepad
 
 * Set up the gamepad and connect to the Android device (see above)
 * Start |ed|
-* Connect to a |WTS| 
+* Connect to a |WTS-DCC-EX| 
 * Select a loco as normal and return to the |T-S|. 
 * In the |ed|
   * Select a gamepad type. |br|\ In the Gamepad section of |EDs| Preferences, select a gamepad corresponding to the gamepad mode you configured on the device (above).

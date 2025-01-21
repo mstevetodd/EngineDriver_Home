@@ -44,9 +44,9 @@ Connection Screen
 
 This screen is the first screen you normally see when starting |ED|. 
 
-It allows you choose which |WTS| to connect to, which you must do to control your trains.
+It allows you choose which |WTS-DCC-EX| to connect to, which you must do to control your trains.
 
-There are three ways you can select a |WTS| to connect to:
+There are three ways you can select a |WTS-DCC-EX| to connect to:
 
 * `IP Address and Port`_
 * `Discovered Servers`_
@@ -54,7 +54,7 @@ There are three ways you can select a |WTS| to connect to:
 
 Once you select a server the |T-S| will be automatically displayed.
 
-If you only ever connect to one |WTS| you can effectively bypass this screen by enabling the `Auto-Connect to WiThrottle Server? <../configuration/preferences.html#auto-connect-to-withrottle-server>`_ preference.
+If you only ever connect to one |WTS-DCC-EX| you can effectively bypass this screen by enabling the `Auto-Connect to WiThrottle Server? <../configuration/preferences.html#auto-connect-to-withrottle-server>`_ preference.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -74,14 +74,14 @@ Discovered Servers
 
   This is the most common way to connect.
 
-  Your |WTS| will attempt to broadcast its details so that apps like |ED| can automatically find it.  If |ED| does find it, it will be listed here.
+  Your |WTS-DCC-EX| will attempt to broadcast its details so that apps like |ED| can automatically find it.  If |ED| does find it, it will be listed here.
 
-  To connect to any |WTS| in this list, simply click on the row.  |ed| will attempt to connect to it, and the |T-S| will be displayed.
+  To connect to any |WTS-DCC-EX| in this list, simply click on the row.  |ed| will attempt to connect to it, and the |T-S| will be displayed.
 
 Recent Servers
 ''''''''''''''
 
-  To connect to any |WTS| in this list, simply click on the row.  |ed| will attempt to connect to it.  If successful the |T-S| will be displayed.
+  To connect to any |WTS-DCC-EX| in this list, simply click on the row.  |ed| will attempt to connect to it.  If successful the |T-S| will be displayed.
 
   Note that, just because it is in this list, it does not mean that you can connect to it now. It only means that you have successfully connected to it in the past.
 
@@ -366,11 +366,11 @@ Will show from 0 (zero) to 26 DCC function buttons, depending on a number of fac
 * The default labels for |ed|  (which can be changed)
 
 
-If the loco (or first loco of a consist/multiple unit) was selected from the |WTS| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS|.  This is also trun if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
+If the loco (or first loco of a consist/multiple unit) was selected from the |WTS-DCC-EX| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS-DCC-EX|.  This is also trun if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
 
 If the loco (or first loco of a consist/multiple unit) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in |ED| in the |FD-S|.
 
-The behaviour of the Function Buttons for locos selected from the |WTS| roster can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS| roster will also show the Default Functions labels.
+The behaviour of the Function Buttons for locos selected from the |WTS-DCC-EX| roster can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS-DCC-EX| roster will also show the Default Functions labels.
 
 Clicking on any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of differnt ways.
 
@@ -381,7 +381,7 @@ Clicking on any function button will instruct the loco to activate that DCC Func
 
   See the :doc:`Function Buttons </configuration/functions>` page for more information on the DCC Function buttons.
 
-  For labels from Roster Entries you need to edit the Function buttons in the |WTS|, or configure |ed| to use the default labels.
+  For labels from Roster Entries you need to edit the Function buttons in the |WTS-DCC-EX|, or configure |ed| to use the default labels.
 
 |HR-DASHED|
 
@@ -484,7 +484,7 @@ In the |T-S| the Action Bar can display:
   * Fast Clock
   * Children's Timer Status and Countdown
   * Full Screen or Action Bar Only left/right swipe
-  * |WTS| Name
+  * |WTS-DCC-EX| Name
 
 * Optionally configured buttons:
 
@@ -687,7 +687,7 @@ In the |TP-S| the Action Bar can display:
 
   * Fast Clock
   * Full Screen or Action Bar Only left/right swipe
-  * |WTS| Name
+  * |WTS-DCC-EX| Name
 
 * Optionally configured buttons:
 
@@ -798,7 +798,7 @@ In the |R-S| the Action Bar can display:
 
   * Fast Clock
   * Full Screen or Action Bar Only left/right swipe
-  * |WTS| Name
+  * |WTS-DCC-EX| Name
 
 * Optionally configured buttons:
 
@@ -922,7 +922,7 @@ In the |WV-S| the Action Bar can display:
 
   * Fast Clock
   * Full Screen or Action Bar Only left/right swipe
-  * |WTS| Name
+  * |WTS-DCC-EX| Name
 
 * Optionally configured buttons:
 
@@ -1033,7 +1033,7 @@ Shown if you select ``Server Roster`` in the `Selection Method`_.
 
 If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-For this to be possible, the Loco you want to control needs to be in the roster of the |WTS|.  Not all |WTS| support rosters.  Refer to the JMRI documentation or your |WTS| device's documentation for creating a roster.
+For this to be possible, the Loco you want to control needs to be in the roster of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support rosters.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a roster.
 
   Filter
 
@@ -1314,7 +1314,7 @@ About Screen
 This screen displays 
 
 * Information about |ed| 
-* Information about the |WTS| it is currently connected to (if any)
+* Information about the |WTS-DCC-EX| it is currently connected to (if any)
 * A page of basic information about |ed|
 
 
@@ -1323,7 +1323,7 @@ This screen displays
 Reconnecting Screen
 ^^^^^^^^^^^^^^^^^^^
 
-This screen displays if |ed| has not been able to communicate with the |WTS| within a specified time.
+This screen displays if |ed| has not been able to communicate with the |WTS-DCC-EX| within a specified time.
 
 .. todo:: Reconnecting Screen
 
@@ -1424,7 +1424,7 @@ The Action Bar can display:
   * Fast Clock
   * Children's Timer Status and Countdown
   * Full Screen or Action Bar Only left/right swipe
-  * |WTS| Name
+  * |WTS-DCC-EX| Name
 
 * Optionally configured buttons:
 

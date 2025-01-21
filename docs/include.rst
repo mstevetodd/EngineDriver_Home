@@ -37,7 +37,15 @@
 .. |WTSS| raw:: html 
    
    <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Servers</a>
-
+..
+.. |WTS-DCC-EX| raw:: html 
+   
+   <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a>
+..
+.. |WTSS-DCC-EXS| raw:: html 
+   
+   <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Servers</a>
+..
 .. |EX-CS| raw:: html
    
    <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a>
