@@ -14,6 +14,10 @@
 
    <hr class="hr-heavy" />
 ..
+.. |force-break| raw:: html
+
+  <div style="display:block; box-sizing: border-box; clear: both;"> </div>
+..
 .. |ED| raw:: html
    
    <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>
