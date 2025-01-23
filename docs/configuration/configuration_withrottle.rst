@@ -44,7 +44,7 @@ JMRI
 DCC-EX WiFi
 ^^^^^^^^^^^
 
-Refer to the `developer's instructions <https://dcc-ex.com/advanced-setup/wifi-config.html>`_.
+Refer to the `developer's instructions <https://dcc-ex.com/ex-commandstation/advanced-setup/supported-wifi/wifi-config.html>`_.
 
 MRC WiFi
 ^^^^^^^^
