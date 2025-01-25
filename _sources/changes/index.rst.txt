@@ -7,7 +7,10 @@ Changes / Updates
 
 .. include:: ../include.rst
 
-Engine Driver version 2.37.187 includes:
+Production Changes
+--------------------------------------------
+
+Changes included in Engine Driver production version **2.37.187**:
 
 * Support for 32 Function Roster Entries
 * New WiThrottle "CV Programming on Main" page. (note: not supported on all Command Stations)
@@ -38,6 +41,37 @@ Engine Driver version 2.37.187 includes:
 * Automatically reduce the font size of buttons if the first word is long or the total text length is long
 * Preference to always show the Throw and Close buttons for Turnouts/Points
 * Additional Google Translations
+
+Beta Changes
+--------------------------------------------
+
+Changes included in Engine Driver Beta version **2.38.191**:
+
+* Preference to always show the Throw and Close buttons for Turnouts/Points
+* New 'Neon Blue' theme
+* Japanese translations by Futoshi Yanagi
+* French Canadian translations by Yvéric Patry
+* Support DCC-EX remote drop of a loco (FORGET)
+* On Horizontal slider layouts, preference to auto show/hide the function buttons of the non-active (volume) throtttle
+* Fix for the change to the DCC-EX response/broadcast for AUTO Track Manager outputs
+* Fix for the DCC-EX AUTO track type change command
+* Bug fixes for the Consist Follow Functions feature
+* Send heartbeat restart on reconnect
+* Bug fix for 'No' option for the DCC-EX protocol option
+* New Semi-Realistic Throttle screen layout
+* Added ability to override the WiThrottle default Latching
+* Support for new gamepad type - Auvisio Android-B
+* Reinstate missing label on the Select Button
+* Improvement to the roster sorting options
+* Linting and code cleanup
+* Added shake action option for Emergency Stop
+* Additional Google Translations
+* Significant changes to the Semi-Realistic Throttle, and in particular, the integration with decoders, with assistance from John Geddes
+* Significant re-write of the air brake system in the Semi-Realistic Throttle
+* Bug fix for DCC-EX roster entries with no functions
+
+Complete ChangeLog
+--------------------------------------------
 
 `view complete changelog <https://raw.githubusercontent.com/JMRI/EngineDriver/master/changelog-and-todo-list.txt>`_
 

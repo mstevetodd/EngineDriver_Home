@@ -743,12 +743,17 @@
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../downloads/index.html">Downloads</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#production-verion">Production Verion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#production-version">Production Version</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#beta-versions">Beta Versions</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install">Older or Other Versions - Manual Install</a></li>
 </ul>
 </li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Changes / Updates</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Changes / Updates</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#production-changes">Production Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#beta-changes">Beta Changes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#complete-changelog">Complete ChangeLog</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="../contributing/index.html">Contributing</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../contributing/index.html#contributing-to-the-code">Contributing to the Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../contributing/index.html#contributing-to-the-localisation-languages">Contributing to the Localisation (Languages)</a></li>
@@ -805,7 +810,9 @@
              
   <section id="changes-updates">
 <h1>Changes / Updates<a class="headerlink" href="#changes-updates" title="Link to this heading"></a></h1>
-<p>Engine Driver version 2.37.187 includes:</p>
+<section id="production-changes">
+<h2>Production Changes<a class="headerlink" href="#production-changes" title="Link to this heading"></a></h2>
+<p>Changes included in Engine Driver production version <strong>2.37.187</strong>:</p>
 <ul class="simple">
 <li><p>Support for 32 Function Roster Entries</p></li>
 <li><p>New WiThrottle “CV Programming on Main” page. (note: not supported on all Command Stations)</p></li>
@@ -837,7 +844,39 @@
 <li><p>Preference to always show the Throw and Close buttons for Turnouts/Points</p></li>
 <li><p>Additional Google Translations</p></li>
 </ul>
+</section>
+<section id="beta-changes">
+<h2>Beta Changes<a class="headerlink" href="#beta-changes" title="Link to this heading"></a></h2>
+<p>Changes included in Engine Driver Beta version <strong>2.38.191</strong>:</p>
+<ul class="simple">
+<li><p>Preference to always show the Throw and Close buttons for Turnouts/Points</p></li>
+<li><p>New ‘Neon Blue’ theme</p></li>
+<li><p>Japanese translations by Futoshi Yanagi</p></li>
+<li><p>French Canadian translations by Yvéric Patry</p></li>
+<li><p>Support DCC-EX remote drop of a loco (FORGET)</p></li>
+<li><p>On Horizontal slider layouts, preference to auto show/hide the function buttons of the non-active (volume) throtttle</p></li>
+<li><p>Fix for the change to the DCC-EX response/broadcast for AUTO Track Manager outputs</p></li>
+<li><p>Fix for the DCC-EX AUTO track type change command</p></li>
+<li><p>Bug fixes for the Consist Follow Functions feature</p></li>
+<li><p>Send heartbeat restart on reconnect</p></li>
+<li><p>Bug fix for ‘No’ option for the DCC-EX protocol option</p></li>
+<li><p>New Semi-Realistic Throttle screen layout</p></li>
+<li><p>Added ability to override the WiThrottle default Latching</p></li>
+<li><p>Support for new gamepad type - Auvisio Android-B</p></li>
+<li><p>Reinstate missing label on the Select Button</p></li>
+<li><p>Improvement to the roster sorting options</p></li>
+<li><p>Linting and code cleanup</p></li>
+<li><p>Added shake action option for Emergency Stop</p></li>
+<li><p>Additional Google Translations</p></li>
+<li><p>Significant changes to the Semi-Realistic Throttle, and in particular, the integration with decoders, with assistance from John Geddes</p></li>
+<li><p>Significant re-write of the air brake system in the Semi-Realistic Throttle</p></li>
+<li><p>Bug fix for DCC-EX roster entries with no functions</p></li>
+</ul>
+</section>
+<section id="complete-changelog">
+<h2>Complete ChangeLog<a class="headerlink" href="#complete-changelog" title="Link to this heading"></a></h2>
 <p><a class="reference external" href="https://raw.githubusercontent.com/JMRI/EngineDriver/master/changelog-and-todo-list.txt">view complete changelog</a></p>
+</section>
 </section>
 
 
@@ -858,7 +897,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd7e9dcef50>
+    <jinja2.runtime.BlockReference object at 0x7f0c2d7c1de0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
