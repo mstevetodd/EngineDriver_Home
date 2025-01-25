@@ -269,6 +269,7 @@ nav.in-this-section {
 .rst-content .sidebar {
   padding: 12px 24px 12px 24px !important;
   border-radius: 10px;
+  margin: 14px 0 14px 14px !important;
 }
 
 html[data-theme='dark'] .rst-content .sidebar {
@@ -536,3 +537,10 @@ html[data-theme='dark'] .wy-menu-vertical li.toctree-l3.current li.toctree-l4>a.
 } */
 
 /* *************************************** */
+.rst-content img {
+  box-shadow: -5px 5px 10px #000000a1 !important;
+  margin: 0 0 14px 14px !important;
+}
+html[data-theme='dark'] rst-content .img {
+  box-shadow: -5px 5px 10px #393939 !important;
+}

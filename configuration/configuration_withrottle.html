@@ -10,7 +10,7 @@
   <title>Configuring Your Server &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=b707c436" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=a3498872" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -68,6 +68,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#what-is-engine-driver">What is ‘Engine Driver’</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#what-s-a-withrottle-server">What’s a ‘WiThrottle Server’?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol">WiThrottle protocol VS DCC-EX Native protocol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../about/index.html#where-can-i-get-engine-driver">Where can I get Engine Driver</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#roadmap">Roadmap</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../about/index.html#alternates-to-engine-driver">Alternates to Engine Driver</a></li>
 </ul>
@@ -380,10 +381,10 @@
 <li class="toctree-l2"><a class="reference internal" href="configuration.html">Configuring Engine Driver</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Configuring Your Server</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#jmri">JMRI</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dcc-ex-wifi">DCC-EX WiFi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#mrc-wifi">MRC WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dcc-ex-ex-commandstation-wifi">DCC-EX EX-CommandStation WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mrc-prodigy-wifi">MRC Prodigy WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#digitrax-lnwi">Digitrax LnWi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#wifitrax">WifiTrax</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wifitrax-for-nce">WifiTrax (for NCE)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="preferences_index.html">Detailed Information</a><ul>
@@ -810,16 +811,16 @@
 <p class="topic-title">On This Page</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#jmri" id="id1">JMRI</a></p></li>
-<li><p><a class="reference internal" href="#dcc-ex-wifi" id="id2">DCC-EX WiFi</a></p></li>
-<li><p><a class="reference internal" href="#mrc-wifi" id="id3">MRC WiFi</a></p></li>
+<li><p><a class="reference internal" href="#dcc-ex-ex-commandstation-wifi" id="id2">DCC-EX EX-CommandStation WiFi</a></p></li>
+<li><p><a class="reference internal" href="#mrc-prodigy-wifi" id="id3">MRC Prodigy WiFi</a></p></li>
 <li><p><a class="reference internal" href="#digitrax-lnwi" id="id4">Digitrax LnWi</a></p></li>
-<li><p><a class="reference internal" href="#wifitrax" id="id5">WifiTrax</a></p></li>
+<li><p><a class="reference internal" href="#wifitrax-for-nce" id="id5">WifiTrax (for NCE)</a></p></li>
 </ul>
 </nav>
 </aside>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can connect to a number of supported <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a> and <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> servers including:</p>
 <ul>
-<li><p><a href="https://jmri.org/">JMRI</a></p>
+<li><p><a class="reference internal" href="#jmri">JMRI</a></p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Using <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a>, or</p></li>
@@ -827,7 +828,7 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p><a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a></p>
+<li><p><a class="reference internal" href="#dcc-ex-ex-commandstation-wifi">DCC-EX EX-CommandStation WiFi</a></p>
 <blockquote>
 <div><ul class="simple">
 <li><p>Using <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a>, or</p></li>
@@ -835,9 +836,9 @@
 </ul>
 </div></blockquote>
 </li>
-<li><p>MRC Prodigy WiFi</p></li>
-<li><p>Digitrax LnWi</p></li>
-<li><p>WifiTrax (for NCE)</p></li>
+<li><p><a class="reference internal" href="#mrc-prodigy-wifi">MRC Prodigy WiFi</a></p></li>
+<li><p><a class="reference internal" href="#digitrax-lnwi">Digitrax LnWi</a></p></li>
+<li><p><a class="reference internal" href="#wifitrax-for-nce">WifiTrax (for NCE)</a></p></li>
 </ul>
 <section id="jmri">
 <h2><a class="toc-backref" href="#id1" role="doc-backlink">JMRI</a><a class="headerlink" href="#jmri" title="Link to this heading"></a></h2>
@@ -847,23 +848,26 @@
 <li><p>You can also ‘filter’ the turnouts shown using the WiThrottle-&gt;Filter Controls option in the WiThrottle window.</p></li>
 <li><p>Entering roster entries, and defining routes and turnouts on the server will all make your <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> throttle more powerful and easier to use (though not required).</p></li>
 <li><p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will show additional info if the JMRI Web Server is started (such as roster details and icon images).</p></li>
-<li><p>To use the <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> with <a href="https://jmri.org/">JMRI</a> you must <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">DCC==</span> <span class="pre">over</span> <span class="pre">TCP</span> <span class="pre">Server</span></code> in the ‘DCC-EX’ menu in <a href="https://jmri.org/">JMRI</a>, then connect <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to the additional server that is presented.</p></li>
+</ul>
+<a class="reference internal image-reference" href="../_images/jmri-dccpp-menu.png"><img alt="../_images/jmri-dccpp-menu.png" class="align-right" src="../_images/jmri-dccpp-menu.png" style="width: 105.0px; height: 104.5px;" /></a>
+<ul class="simple">
+<li><p>To use the <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> with <a href="https://jmri.org/">JMRI</a> you must <code class="docutils literal notranslate"><span class="pre">Load</span> <span class="pre">DCC++</span> <span class="pre">over</span> <span class="pre">TCP</span> <span class="pre">Server</span></code> in the ‘DCC-EX’ menu in <a href="https://jmri.org/">JMRI</a>, then connect <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to the additional server that is presented.</p></li>
 </ul>
 </section>
-<section id="dcc-ex-wifi">
-<h2><a class="toc-backref" href="#id2" role="doc-backlink">DCC-EX WiFi</a><a class="headerlink" href="#dcc-ex-wifi" title="Link to this heading"></a></h2>
+<section id="dcc-ex-ex-commandstation-wifi">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">DCC-EX EX-CommandStation WiFi</a><a class="headerlink" href="#dcc-ex-ex-commandstation-wifi" title="Link to this heading"></a></h2>
 <p>Refer to the <a class="reference external" href="https://dcc-ex.com/ex-commandstation/advanced-setup/supported-wifi/wifi-config.html">developer’s instructions</a>.</p>
 </section>
-<section id="mrc-wifi">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">MRC WiFi</a><a class="headerlink" href="#mrc-wifi" title="Link to this heading"></a></h2>
-<p>For MRC users: David Fuller has provided some <a class="reference external" href="https://enginedriver.mstevetodd.com/sites/enginedriver.mstevetodd.com/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf">additional setup information</a>.</p>
+<section id="mrc-prodigy-wifi">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">MRC Prodigy WiFi</a><a class="headerlink" href="#mrc-prodigy-wifi" title="Link to this heading"></a></h2>
+<p>For MRC users: David Fuller has provided some <a class="reference download internal" download="" href="../_downloads/c700cdfe2f88c9515b6ddc41feaf74d5/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf"><code class="xref download docutils literal notranslate"><span class="pre">additional</span> <span class="pre">setup</span> <span class="pre">information</span></code></a>.</p>
 </section>
 <section id="digitrax-lnwi">
 <h2><a class="toc-backref" href="#id4" role="doc-backlink">Digitrax LnWi</a><a class="headerlink" href="#digitrax-lnwi" title="Link to this heading"></a></h2>
 <p>Refer to the <a class="reference external" href="https://www.digitrax.com/tsd/product/LNWI">Digitrax LnWi manufacture’s instructions</a>.</p>
 </section>
-<section id="wifitrax">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">WifiTrax</a><a class="headerlink" href="#wifitrax" title="Link to this heading"></a></h2>
+<section id="wifitrax-for-nce">
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">WifiTrax (for NCE)</a><a class="headerlink" href="#wifitrax-for-nce" title="Link to this heading"></a></h2>
 <p>Refer to the <a class="reference external" href="http://www.wifitrax.com/manuals/hardwareManuals.html">WifiTrax manufacture’s instructions</a>.</p>
 </section>
 </section>
@@ -886,7 +890,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f12d3217580>
+    <jinja2.runtime.BlockReference object at 0x7fdb6afede10>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

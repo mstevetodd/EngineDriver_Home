@@ -128,6 +128,10 @@
    
    :ref:`Function Defaults Screen <operation/interface:Function Defaults Screen>`
 ..
+.. |P-S| replace:: 
+   
+   :ref:`Preferences Screen <operation/interface:preferences screen>`
+..
 .. |DCC-EX-S| replace:: 
    
    :ref:`DCC-EX Screen <operation/interface:dcc-ex screen>`
