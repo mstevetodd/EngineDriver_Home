@@ -1322,7 +1322,7 @@ This screen displays
 
 Reconnecting Screen
 ^^^^^^^^^^^^^^^^^^^
-
+ 
 This screen displays if |ed| has not been able to communicate with the |WTS-DCC-EX| within a specified time.
 
 .. todo:: Reconnecting Screen

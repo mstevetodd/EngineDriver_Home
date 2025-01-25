@@ -39,11 +39,11 @@ You can also control layout power, turnouts/points, routes, and access JMRI web 
   See the :doc:`/about/index` page for more information. |br|\ See the :doc:`/operation/index` page for details on how to use |ed|.
 
 
-.. image:: ./_static/images/screenshots/throttle_buttons.png
-   :align: left
-
 Why Use Engine Driver
 ---------------------
+
+.. image:: ./_static/images/screenshots/throttle_buttons.png
+   :align: left
 
 You can use |ed| to operate your DCC model train layout without being physically tethered by any wires. This allows you to walk around your layout, following your trains and/or position yourself anywhere around your layout (e.g. at your favourite viewing position).
 

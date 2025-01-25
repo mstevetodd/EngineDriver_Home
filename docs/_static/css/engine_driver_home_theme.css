@@ -357,6 +357,19 @@ html[data-theme='dark'] .rst-content .guilabel{
   color: black;
 }
 
+
+.rst-content img {
+  box-shadow: -5px 5px 10px #000000a1 !important;
+  margin: 0 0 14px 14px !important;
+}
+html[data-theme='dark'] rst-content .img {
+  box-shadow: -5px 5px 10px #393939 !important;
+}
+
+.rst-content .align-left {
+  margin: 0 14px 14px 14px !important;
+}
+
 /* *************************************** */
 
 .hand-written {
@@ -537,10 +550,3 @@ html[data-theme='dark'] .wy-menu-vertical li.toctree-l3.current li.toctree-l4>a.
 } */
 
 /* *************************************** */
-.rst-content img {
-  box-shadow: -5px 5px 10px #000000a1 !important;
-  margin: 0 0 14px 14px !important;
-}
-html[data-theme='dark'] rst-content .img {
-  box-shadow: -5px 5px 10px #393939 !important;
-}
