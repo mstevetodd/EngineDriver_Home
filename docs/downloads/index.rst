@@ -15,7 +15,7 @@ Downloads
      :local:
 
 Production Version
------------------
+------------------
 
 The Published version (v2.37.187) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../_static/apk/EngineDriver.apk>`_.
 
