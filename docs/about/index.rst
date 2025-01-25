@@ -4,12 +4,14 @@ About Engine Driver
 
 .. include:: ../include.rst
 
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On This Page
+      :local:
+
 What is 'Engine Driver'
 -----------------------
-
-.. image:: ../_static/images/screenshots/throttle_horizontal_switching_colorful.png
-   :scale: 8 %
-   :align: right
 
 |EDT| (normally just referred to as |ed| or just **ED**) is a free Android application that connects to a `WiThrottle™ Server <https://jmri.org/help/en/package/jmri/jmrit/withrottle/UserInterface.shtml>`_ [#WIT]_  or `DCC-EX EX-CommandStation <https://dcc-ex.com/>`_ to control model trains. 
 
@@ -20,6 +22,10 @@ Supported |WTSS| include:
 * `MRC Prodigy WiFi <https://www.modelrectifier.com/category-s/332.htm>`_
 * `Digitrax LnWi <https://www.digitrax.com/products/wireless/lnwi/>`_
 * `WifiTrax (for NCE) <http://wifitrax.com/products/product-WFD-30-detail.html>`_ 
+
+.. image:: ../_static/images/screenshots/throttle_horizontal_switching_colorful.png
+   :scale: 8 %
+   :align: right
 
 |ed| can: 
 
@@ -55,7 +61,7 @@ What's a 'WiThrottle Server'?
 **WiThrottle** stands for 'WiFi Throttle', and a 'WiThrottle Server' is just software running on your JMRI computer, DCC-EX EX-CommandStation, or dedicated device. It's called a 'Server' because it allows you to connect to it and it 'serves', or services, requests from another application. That application is called a 'Client'. So in this case |ed| is the client.
 
 The **WiThrottle Protocol** itself is a standard for how WiFi throttles can communicate with the WiThrottle Server, much like the DCC standard is a standard for how data packets communicate with decoders. What this means for you, is that |ed| can talk to any WiThrottle compatible server, which in turn can talks to your DCC encoders in your locos.
- 
+
 .. note::
   :class: note-ed-hidden-title
 
@@ -75,6 +81,12 @@ WiThrottle protocol VS DCC-EX Native protocol
 
 |ED| can also use the Native DCC-EX Protocol to connect to a |EX-CS| via |JMRI| but you need to enable the "DCC++ over TCP Server" in the "DCC++" or "DCC-EX" menu in Decoder-Pro.
 
+Where can I get Engine Driver
+-----------------------------
+
+The current published version is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../_static/apk/EngineDriver.apk>`_.
+
+APK files for manual installation (including older verserions) are available from the :doc:`Downloads page </downloads/index>`.
 
 Roadmap
 -----------

@@ -6,7 +6,7 @@ Privacy Policy
 
 |ED| does not collect or transmit any personal information.
 
-|ED| does not transmit any information from the phone to any other app, site or person.  All data is used solely within the app.
+|ED| does not transmit any information from the phone, other than the model train information within the app, to any other app, site or person.  Data within the app is only used within the app, or to instruct a server to operate your model trains.
 
 Required Permissions
 ====================
@@ -23,7 +23,7 @@ Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read 
 Optional Permissions
 ====================
 
-|ED| can optional be granted some additional permissions
+|ED| can optional be granted some additional permissions.
 
 Engine Driver needs **STORAGE** permissions to load background images.
 

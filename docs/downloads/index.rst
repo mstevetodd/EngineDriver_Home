@@ -20,7 +20,7 @@ Production Verion
 The Published version (v2.37.187) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../_static/apk/EngineDriver.apk>`_.
 
 Installing from the Play Store is preferred as you will automatically receive updates to the app, as long as your device/phone periodically connects to the internet.
-
+ 
 Beta Versions
 -------------
 

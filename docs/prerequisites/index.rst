@@ -64,6 +64,10 @@ Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottl
 It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ (Tools, Start JMRI Web Server). 
 Both of these should be added to Preferences, Start Up as well.
 
+.. image:: ../_static/images/jmri/jmri-dccpp-menu.png
+   :scale: 60 %
+   :align: right
+
 Note that if you are using an |EX-CS| as your command station connected to |JMRI| it is recommended to enable the "DCC++ over TCP Server" in the "DCC++"/"DCC-EX" menu on Decoder-Pro.  This will give you access to the advanced features provided by the |NATIVE| in addition to the |WIT|.
 
 For DCC-EX WiFi

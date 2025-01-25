@@ -16,6 +16,10 @@ Preferences
 
 ----
 
+.. image:: ../_static/images/parts/menu_throttle_neon_blue_theme.png
+   :scale: 20%
+   :align: right
+
 |ed| is highly configurable.  There are over 100 different items than can be changed to allow you customise your experience with |ED|\ .
 
 Most configuration options are found in the *Preferences* which is accessed via the overflow menu, sometimes called a 'hamburger menu', which is normally three dots (⁞) or three bars (≡).
@@ -27,6 +31,10 @@ Show Advanced Preferences?
 """"""""""""""""""""""""""
 
 By default, only a small number of core preferences are displayed on the *Preferences Screen*. 
+
+.. image:: ../_static/images/preferences/show_advanced_preferences.png
+   :scale: 20%
+   :align: right
 
 If you enable this preference |ed| will immediately show all the additional preferences.
 
@@ -43,7 +51,9 @@ The following preferences provide options for the 'whole' of |ed|.
 Throttle Name
 """""""""""""
 
-Use this to enter a unique name for your device/phone.  The name will appear in the WiThrottle window in JMRI.  While not significant ion a single user layout, having a name on the device can be useful in club or multi user environments, especially when trying to sort out issues.
+Use this to enter a unique name for your device/phone.  The name will appear in the WiThrottle window in JMRI.  
+
+While not significant on a single user layout, having a name on the device can be useful in club or multi user environments, especially when trying to sort out issues.
   
 Screen orientation
 """"""""""""""""""
@@ -78,13 +88,14 @@ Theme/Style
 
 Themes provide different colours and textures to the buttons, backgrounds, sliders etc.  You can switch between different themes by changing this preference. 
 
-There are five themes to choose from:
+There are a number themes to choose from:
 
 * Original 
 * High contrast
 * High contrast *outline*
 * Dark
 * Colourful
+* Neon Blue
 
 .. list-table::
     :widths: auto
@@ -116,7 +127,7 @@ Localisation
 
 Changing the *Localisation* primarily changes the language used in the menus, buttons and messages throughout |ED|.
 
-For English, it also changes the railroad/railway terminology (eg, Selecting 'Use Phone's global setting' and having this set to 'English (Australia)' or 'English (UK)' results in the term 'Points' to be displayed rather than 'Turnouts' which is displayed when 'English (US)' is selected). In the Preferences screen and the Throttle Screen Layout selection preference (where 'shunting' is displayed rather than 'switching').  This is not guaranteed to operate on all text on all screens. 
+For English, it also changes the railroad/railway terminology (eg, Selecting 'Use Phone's global setting' and having the device/phone set to 'English (Australia)' or 'English (UK)' results in the term 'Points' to be displayed rather than 'Turnouts' which is displayed when 'English (US)' is selected). And in the |P-S| and the Throttle Screen Layout selection preference (where 'shunting' is displayed rather than 'switching').  This is not guaranteed to operate on all text on all screens. 
 
 Supported localisations are:
 
@@ -169,12 +180,12 @@ If this preference is enabled, the |R-S| is included in the list of screens when
 Double Back Buton to Exit?
 """"""""""""""""""""""""""
 
-When this preference is enabled, pressing the Andoroid System ``Back`` button twice quickly from the |T-S| will exit the app.
+If this preference is enabled, pressing the Andoroid System ``Back`` button twice quickly from the |T-S| will exit the app.
 
 Hide Instructional Hints 
 """"""""""""""""""""""""
 
-When this preference is enabled, most of the less important 'Toast' message will not be shown.
+If this preference is enabled, most of the less important 'Toast' message will not be shown.
 
 Throttle Screen Appearance Preferences
 --------------------------------------
@@ -377,7 +388,7 @@ The following preferences allow you to adjust aspects of the Throttle Areas on t
 Increase Slider/Speed Height?
 '''''''''''''''''''''''''''''''''''
 
-When set, this preference will show a taller Slider, or Speed buttons, for throttles.
+If this preference is enabled, this preference will show a taller Slider, or Speed buttons, for throttles.
 
 Only relevant for the following Throttle Screen Layouts:
 
@@ -387,7 +398,7 @@ Only relevant for the following Throttle Screen Layouts:
 Throttle Speed Slider Margin
 '''''''''''''''''''''''''''''''''''
 
-When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider.  Specific in pixels haw far to offset.  This is useful if you find it difficult to get the zero or maximum speeds without accidently touching the Speed Buttons.
+If this preference is enabled, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider.  Specific in pixels haw far to offset.  This is useful if you find it difficult to get the zero or maximum speeds without accidently touching the Speed Buttons.
 
 Only relevant for the following Throttle Screen Layouts:
 
@@ -397,7 +408,7 @@ Only relevant for the following Throttle Screen Layouts:
 Display Speed buttons?
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will display buttons (``++`` and ``--``) next to Speed Sliders to change loco speed.  
+If this preference is enabled, |ED| will display buttons (``++`` and ``--``) next to Speed Sliders to change loco speed.  
 
 Clicking the ``++`` button will increase the speed of the Locos(s) by a preset amount. Clicking the ``--`` button will increase the speed of the Locos(s) by a preset amount.  
 
@@ -411,7 +422,7 @@ The time between steps can be changed with the `Speed Button Repeat Delay`_ pref
 Hide Speed Slider?
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will not show speed slider, use speed buttons instead.
+If this preference is enabled, |ED| will not show speed slider, use speed buttons instead.
 
 This option is not relevant for the following Throttle Screen Layouts as they cannot have a slider:
 
@@ -421,7 +432,7 @@ This option is not relevant for the following Throttle Screen Layouts as they ca
 Hide Slider AND Speed Buttons?
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will show neither speed slider nor speed buttons.t
+If this preferences is enabled, |ED| will show neither speed slider nor speed buttons.t
 
 Only really of use on the ESU MCII
 
@@ -433,12 +444,12 @@ This option is not relevant for the following Throttle Screen Layouts as they ca
 Tick Marks on Speed Sliders?
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders.
+If this preferences is enabled, |ED| will show tick marks on the background of the Speed Sliders.
 
 Switching throttle Dead Zone
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting Throttle Screen.  The larger the size, the easier it is to find Zero on the slider.
+If this preferences is enabled, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting Throttle Screen.  The larger the size, the easier it is to find Zero on the slider.
 
 Only relevant to the following Throttle Screen layouts:
 
@@ -453,7 +464,7 @@ Only relevant to the following Throttle Screen layouts:
 Stop Button Vertical Margins
 '''''''''''''''''''''''''''''''''''
    
-When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen.  This is useful if you find it difficult to get the zero speeds on the vertical sliders without accidently touching the Stop Button.
+If this preferences is enabled, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen.  This is useful if you find it difficult to get the zero speeds on the vertical sliders without accidently touching the Stop Button.
 
 Only relevant to the following Throttle Screen layouts:
 
@@ -475,7 +486,7 @@ The following preferences provide options for how and when the Device / Phone wi
 Haptic Feedback (Vibration)
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will the device / phone will provide Haptic feedback (vibrate) on speed changes.
+If this preferences is enabled, |ED| will the device / phone will provide Haptic feedback (vibrate) on speed changes.
 
 Options:
 
@@ -486,12 +497,12 @@ Options:
 Haptic Feedback Duration
 '''''''''''''''''''''''''''''''''''
 
-Use with preference to change the duration of each vibration (in milliseconds).
+You can use this preference to change the duration of each vibration (in milliseconds).
 
 Haptic Feedback on Button Presses
 '''''''''''''''''''''''''''''''''''
  
-When this preferences is set, |ED| will provide haptic feedback (vibrate) on button presses.
+If this preferences is enabled, |ED| will provide haptic feedback (vibrate) on button presses.
 
 Direction Button Preferences
 """"""""""""""""""""""""""""
@@ -506,12 +517,12 @@ The following preferences provide options for Direction Buttons.
 Swap Direction buttons?
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will permanently swap the two Direction buttons for all throttles.
+If this preferences is enabled, |ED| will permanently swap the two Direction buttons for all throttles.
 
 Long press Swap Direction buttons?
 '''''''''''''''''''''''''''''''''''
 
-When this preferences is set, |ED| will temporarily swap the two Direction buttons when you long press of either of the Direction buttons.
+If this preferences is enabled, |ED| will temporarily swap the two Direction buttons when you long press of either of the Direction buttons.
 
 Direction button Long Press Delay
 '''''''''''''''''''''''''''''''''''
@@ -521,40 +532,40 @@ This preference allows you to set how many milliseconds constitutes a long press
 Left Direction button Label
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to change the labels for all LEFT direction buttons. 
+This preference allows to change the labels for all LEFT direction buttons. 
 
 Enter \'Forward\' or blank for normal behaviour.
 
 Right Direction button Label
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to change the labels for all RIGHT direction buttons.
+This preference allows to change the labels for all RIGHT direction buttons.
 
 Enter \'Reverse\' or blank for normal behaviour.
 
 Short Left Direction button Label
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to change the short labels for all LEFT direction buttons.
+This preference allows to change the short labels for all LEFT direction buttons.
 
 Enter 'Fwd' or blank for normal behaviour.
 
 Short Right Direction button Label
 '''''''''''''''''''''''''''''''''''
  
-You can use this preference to change the short labels for all RIGHT direction buttons.
+This preference allows to change the short labels for all RIGHT direction buttons.
 
 Enter 'Rev' or blank for normal behaviour.
 
 Decrease Loco No. height?
 """""""""""""""""""""""""
 
-You can use this preference to have |ed| use smaller buttons for the Loco Number, Speed and Direction buttons
+If this preference is enabled |ed| will use smaller buttons for the Loco Number, Speed and Direction buttons.
 
 Loco Address instead of Name?
 """""""""""""""""""""""""""""
 
-You can use this preference to have |ed| to show loco DCC Address(es) instead of the Roster Name(s) on the |T-S|.  It will ignore the Roster name for the :guilabel:`Select` button label.  This changes the label only.  It has no other functional effect.
+If this preference is enabled |ed| will show loco DCC Address(es) instead of the Roster Name(s) on the |T-S|.  It will ignore the Roster name for the :guilabel:`Select` button label.  This changes the label only.  It has no other functional effect.
 
 Default Function Preferences
 """"""""""""""""""""""""""""
@@ -569,22 +580,22 @@ The following preferences provide options for when and how the default Function 
 Use default function labels?
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to have |ed| *always* display the default Function Labels (configured inside |ed|\ ) instead of labels from roster entries. It will ignore the Roster for the Function button labels.  It changes the labels only.  It has no other functional effect.
+If this preference is enabled |ed| will *always* display the default Function Labels (configured inside |ed|\ ) instead of labels from roster entries. It will ignore the Roster for the Function button labels.  It changes the labels only.  It has no other functional effect.
 
 Number of Default Functions
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to limit the Function to limit the Function Labels shown for selected locos that are not from the Server Roster, or where you have set the `Use default function labels?`_ preference. 
+This preference is used to limit the number of Function Labels shown for selected locos that are not from the Server Roster, or where you have set the `Use default function labels?`_ preference. 
 
 Number of Default Functions for Roster
 ''''''''''''''''''''''''''''''''''''''
 
-You can use this preference to limit the Function Labels shown for Server Roster Entries that don't have any function Labels configured.
+This preference is used to limit the number of Function Labels shown for Server Roster Entries that don't have any function Labels configured.
 
 Function Buttons Area size
 """"""""""""""""""""""""""
 
-You can use this preference to instruct |ed| to show some, or no, Function Buttons (0-4) below the Speed Slider the 'Simple' Throttle layout ONLY.
+This preference is used to instruct |ed| to show some, or no, Function Buttons (0-4) below the Speed Slider the 'Simple' Throttle layout ONLY.
 
 Only relevant to the following Throttle Screen layouts:
 
@@ -605,17 +616,25 @@ The following preferences provide options for options for *Throttle Web View* ap
 Throttle Web View?
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to have |ed| to show a *Web View* area on the |T-S| which is essentially a Web Browser.
+If this preference is enabled to other than 'none', |ed| will show a *Web View* area on the |T-S| which is essentially a Web Browser.
+
+Options are:
+
+* none
+* Top
+* Bottom
+
+'Top' and 'Bottom' refert to top or bottom of the |T-S|.
 
 Larger Throttle Web View?
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to instruct |ed| to increase the Throttle Web View size to 60% for small screens
+This preference is used to instruct |ed| to increase the Throttle Web View size to 60% for small screens
 
 Initial throttle Web Page
 '''''''''''''''''''''''''''''''''''
 
-You can use this preference to set the initial throttle Web Page (such as '/panel/') for when the *Throttle Web View* first opens.
+This preference is used to set the initial throttle Web Page (such as '/panel/') for when the *Throttle Web View* first opens.
 
 Enter the initial Web Page (such as '/panel') for the |WV-S|
 
@@ -635,19 +654,19 @@ The following preferences provide options for options for swipe up or down on th
 Use Immersive Mode for Throttle view?
 '''''''''''''''''''''''''''''''''''''
 
-Setting this preference will display the Throttle view full screen.  The Navigation bar and the Status Bar will be hidden, Swiping down from off the screen will temporarily show them again.
+If this preference is enabled, |ED| will display the Throttle view full screen.  The Navigation bar and the Status Bar will be hidden, Swiping down from off the screen will temporarily show them again.
 
 Hide Toolbar in Immersive Mode?
 '''''''''''''''''''''''''''''''''''
 
-Setting this preference, along with `Use Immersive Mode for Throttle view?`_ preference will display the Throttle view in and extended full screen.  The Action Bar, along with the Navigation bar and the Status Bar will be hidden, Swiping down from off the screen will temporarily show the the Navigation bar and Status bar again, but not the Action Bar.
+If this preference is enabled, along with `Use Immersive Mode for Throttle view?`_ preference will display the Throttle view in and extended full screen.  The Action Bar, along with the Navigation bar and the Status Bar will be hidden, Swiping down from off the screen will temporarily show the the Navigation bar and Status bar again, but not the Action Bar.
 
 It is essential, that you can set `Swipe down action in the Throttle view?`_ or `Swipe up action in the Throttle screen?`_ preferences to temporarily disable this and allow you to reach the menu.
 
 Swipe down action in the Throttle view?
 '''''''''''''''''''''''''''''''''''''''
 
-This preference allows you to select what should happen when you *swipe down* on the |T-S|.
+This preference is used to select what should happen when you *swipe down* on the |T-S|.
 
 Options:
 
@@ -663,7 +682,7 @@ Options:
 Swipe up action in the Throttle screen?
 '''''''''''''''''''''''''''''''''''''''
 
-This preference allows you to select what should happen when you *swipe up* on the |T-S|.
+This preference is used to select what should happen when you *swipe up* on the |T-S|.
 
 Options:
 
@@ -678,9 +697,9 @@ Options:
 Screen Dimming % Value
 '''''''''''''''''''''''''''''''''''
 
-This preference allows you to enter the brightness setting/level to use when dimming the screen (0%-99%). Disables Auto or Adaptive Brightness if set.
+This preference is used to enter the brightness setting/level to use when dimming the screen (0%-99%). Disables Auto or Adaptive Brightness if set.
 
-Requires that one of the following preferences is set to ``Lock and Dim Screen`` or ``Dim Screen`` to have any effect:
+Requires that one of the following preferences is enabled to ``Lock and Dim Screen`` or ``Dim Screen`` to have any effect:
 
 * `Swipe down action in the Throttle view?`_
 * `Swipe up action in the Throttle screen?`_
@@ -699,7 +718,7 @@ The following preferences provide options for options for what happens when you 
 Shake Action
 '''''''''''''''''''''''''''''''''''
 
-This preference allows you to select what happens when you shake your device phone.
+This preference is used to select what happens when you shake your device phone.
 
 Options:
 
@@ -713,7 +732,7 @@ Options:
 Shake Threshold
 '''''''''''''''''''''''''''''''''''
 
-This preference allows you to enter the threshold level at which the shake will register. (1.5 - 3.5) Lower value will respond to a gentle action.
+This preference is used to enter the threshold level at which the shake will register. (1.5 - 3.5) Lower value will respond to a gentle action.
 Requires restart of engine Driver after changing to take effect.
 
 Background Image Preferences
@@ -733,12 +752,12 @@ The following preferences provide options for showing a background image on the 
 Background Image
 '''''''''''''''''''''''''''''''''''
 
-Enabling this preference will cause |ed| to show a background image on the |T-S|, as long as one is selected in the `Background Image File Name`_ preference.
+This preference is used to have |ed| show a background image on the |T-S|, as long as one is selected in the `Background Image File Name`_ preference.
 
 Background Image File Name
 ''''''''''''''''''''''''''''
 
-This preference allows you to select a image file that will be used as the background o the |T-S|.  This has no effect unless the `Background Image`_ preference is enabled.
+This preference is used to select a image file that will be used as the background o the |T-S|.  This has no effect unless the `Background Image`_ preference is enabled.
 
 Clicking on this preference launches your image chooser app.  As this can be different on different devices / manufacturers, it is impossible to describe the required steps here.  In general, use the app's navigation features to find the image you want and select it.
 
@@ -747,7 +766,7 @@ Note: You can install additional apps to do the same job for the Play Store.
 Background Image Position
 ''''''''''''''''''''''''''
 
-This preference lets you select how the background image will be positioned and/or resized on the screen.
+This preference is used to select how the background image will be positioned and/or resized on the screen.
 
 Options include:
 
@@ -977,7 +996,7 @@ Emergency Stop button?
    :align: right
    :scale: 50%
 
-Setting this preference will display an Emergency Stop button in Action Bar of most of the Main Screens.
+If this preference is enabled |ED| will display an Emergency Stop button in Action Bar of most of the Main Screens.
 
 Clicking this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
 
@@ -988,7 +1007,7 @@ Layout Power button?
    :align: right
    :scale: 50%
 
-Setting this preference will display a *Layout Power button* in Action Bar of most of the Main Screens.
+If this preference is enabled |ED| will display a *Layout Power button* in Action Bar of most of the Main Screens.
 
 Clicking this button will turn on/off the power to the track. The colour of the button will change colour:
 
@@ -1003,7 +1022,7 @@ Flashlight button?
    :align: right
    :scale: 50%
 
-Setting this preference will display a *Flashlight* button in action bar of the |T-S|.
+If this preference is enabled |ED| will display a *Flashlight* button in action bar of the |T-S|.
 
 Clicking this button will turn on/off the Device's camera light.
 
@@ -1029,7 +1048,7 @@ Throttle Web View button?
    :align: right
    :scale: 50%
 
-Setting this preference will display a button in action bar of the |T-S| to show/hide *Throttle Web View*. Requires `Throttle Web View?`_ preference to be enabled.
+If this preference is enabled |ED| will display a button in action bar of the |T-S| to show/hide *Throttle Web View*. Requires `Throttle Web View?`_ preference to be enabled.
 
 Clicking this button will show / hide the *Throttle Web View* on the |T-S|.
 
@@ -1077,7 +1096,7 @@ In phone sounds button
    :align: right
    :scale: 50%
 
-Enabling this preference shows an action bar button on the |T-S| to easily change the in *phone loco sounds* options.  
+If this preference is enabled |ED| will show an action bar button on the |T-S| to easily change the in *phone loco sounds* options.  
 
 Clicking the button shows the `In Phone Loco Sounds Screen <../operation/interface.html#in-phone-loco-sounds-screen>`_. 
 
@@ -1088,7 +1107,7 @@ Show Server Description
    :align: right
    :scale: 50%
 
-Setting this preference will display the description of the current server on the Action Bar.
+If this preference is enabled |ED| will display the description of the current server on the Action Bar.
 
 App Icon button?
 """"""""""""""""
@@ -1105,7 +1124,7 @@ This preference allows you to select what the App icon will do when pressed.
 DCC-EX button?
 """"""""""""""
 
-Enabling this preference will cause |ED| to show an additional button on the Action Bar that allows you to quickly to the |DCC-EX-S|.
+If this preference is enabled |ED| to show an additional button on the Action Bar that allows you to quickly to the |DCC-EX-S|.
 
 Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
 
@@ -1165,22 +1184,22 @@ Note that this is independent of the equivalent gamepad preference. (`Speed butt
 Speed step on Decrement?
 """"""""""""""""""""""""
 
-Use this preference to force the `Speed button Change Amount`_ to be used when long pressing a lower speed on the slider. If not enabled, the speed will immediately jump to the touched speed.
+If this preference is enabled |ED| will force the `Speed button Change Amount`_ to be used when long pressing a lower speed on the slider. If not enabled, the speed will immediately jump to the touched speed.
 
 Stop on Phone call?
 """""""""""""""""""
 
-If the preference is enabled, |ed| will stop all loco(s) controlled by the device /phone when a phone call is answered or placed.
+If this preference is enabled |ED| will stop all loco(s) controlled by the device /phone when a phone call is answered or placed.
 
 Direction change while moving?
 """"""""""""""""""""""""""""""
 
-If the preference is enabled, |ed| will allow you to change the direction of the locos controlled by a throttle to instantly change direction.  i.e. Both directions buttons are allows available.
+If this preference is enabled |ED| will allow you to change the direction of the locos controlled by a throttle to instantly change direction.  i.e. Both directions buttons are allows available.
 
 Stop on direction change?
 """""""""""""""""""""""""
 
-If the preference is enabled, |ed| will stop the locos controlled by a throttle if you click the opposite direction while the loco(s) are moving.  Effectively this means that the 'opposite' direction will (also) act like a stop button.
+If this preference is enabled |ED| will stop the locos controlled by a throttle if you click the opposite direction while the loco(s) are moving.  Effectively this means that the 'opposite' direction will (also) act like a stop button.
 
 'Limit Speed' & 'Pause' button Preferences
 """"""""""""""""""""""""""""""""""""""""""
@@ -1190,35 +1209,35 @@ These preferences allow for additional buttons to appear in the Function Button 
 Show 'Limit Speed' button?
 '''''''''''''''''''''''''''''''''''
 
-If this preference is enabled, |ed| will show a :guilabel:`Limit Speed` button in all the throttles in the |T-S|. 
+If this preference is enabled |ED| will show a :guilabel:`Limit Speed` button in all the throttles in the |T-S|. 
 
-When clicked, |ED| will temporarily restrict the maximum speed on the individual throttle.  The speed tat it limits to is set with the `'Limit Speed' button`_ preference.
+When clicked, |ED| will temporarily restrict the maximum speed on the individual throttle.  The speed that it limits to is set with the `'Limit Speed' button`_ preference.
 
 'Limit Speed' button
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set the amount, as a percentage (\%), of the throttle that the speed will be temporarily limited to when you click the :guilabel:`Limit Speed` button. 
+This preference is used to set the amount, as a percentage (\%), of the throttle that the speed will be temporarily limited to when you click the :guilabel:`Limit Speed` button. 
 
 Note: If the `Show 'Limit Speed' button?`_ preference is not enabled this has no effect.
 
 Show 'Pause' button?
 '''''''''''''''''''''''''''''''''''
 
-If this preference is enabled, |ed| will show a :guilabel:`Pause` button in all the throttles in the Throttle Screen. 
+If this preference is enabled |ED| will show a :guilabel:`Pause` button in all the throttles in the Throttle Screen. 
 
 When clicked, |ED| will gradually slow and stop the loco(s) of a throttle. When pressed again |ED| will return the loco(s) to original speed.
 
 'Pause' button Rate
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set the number of milliseconds between speed step changes for the Pause action.
+This preference is used to set the number of milliseconds between speed step changes for the Pause action.
 
 Only relevant is the `Show 'Pause' button?`_ preference is enabled.
 
 'Pause' button Step
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set amount, as a percentage (\%), of the throttle that the speed will change by (step) each time after the ``Pause`` is clicked.
+This preference is used to set amount, as a percentage (\%), of the throttle that the speed will change by (step) each time after the ``Pause`` is clicked.
 
 Only relevant is the `Show 'Pause' button?`_ preference is enabled.
 
@@ -1237,9 +1256,11 @@ Consist Functions - Follow Rule Style
 
 .. todo::  Consist Functions - Follow Rule Style
 
-See the `Advanced Consist Function Mapping <./configuration/functions.html#advanced-consist-function-mapping>` section of the Functions page for more information.
-
 Which style of rules to follow in a consist when function buttons are pressed.
+
+See the :ref:`Advanced Consist Function Mapping <configuration/functions:advanced consist function mapping>` section of the Functions page for more information.
+
+Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Note: If 'Use Default function labels' is enabled, 'Special...' will also apply to the lead (or only) loco.
 
@@ -1254,25 +1275,27 @@ Options
 Selective Lead Unit Sound?
 """"""""""""""""""""""""""
 
-.. todo:: Selective Lead Unit Sound?
-
-Send Horn/Bell functions to only the Lead unit in an EngineDriver consist. 
+If this preference is enabled |ED| will send Horn/Bell functions to only the Lead unit in an EngineDriver consist (mu). 
 
 (Only/any function with a 'label' that includes 'bell', 'horn' or 'whistle' as part of the label.)
 
 Always treat F1 as Sound?
 """""""""""""""""""""""""
 
-.. todo:: Always treat F1 as Sound?
+If this preference is enabled, F1 one is always treated as a sound and is always propagated to all locos in a consist.
 
-For the 'Selective Lead Unit Sound' option
+Only relevant if the 'Selective Lead Unit Sound' preference is enabled.
+
+This preference is ignored if 'Complex' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 Always treat F2 as Sound?
 """""""""""""""""""""""""
 
-.. todo:: Always treat F2 as Sound?
+If this preference is enabled, F2 one is always treated as a sound and is always propagated to all locos in a consist.
 
-For the 'Selective Lead Unit Sound' option
+Only relevant if the 'Selective Lead Unit Sound' preference is enabled.
+
+This preference is ignored if 'Complex' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 If All matches Fail Action
 """"""""""""""""""""""""""
@@ -1281,7 +1304,7 @@ If All matches Fail Action
 
 Which locos in the consist should react to the function buttons if none of the rules below are meet.
 
-For the 'Simple' and 'Complex' options only.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 Headlight specific String 1
 """""""""""""""""""""""""""
@@ -1290,7 +1313,7 @@ Headlight specific String 1
 
 Comma separated string(s) to look for in the function labels of the locos in the consist to recognise the \'Headlight\' function (normally F0).
 
-For the 'Simple' and 'Complex' options only.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 Headlight specific Action 1
 """""""""""""""""""""""""""
@@ -1299,21 +1322,36 @@ Headlight specific Action 1
 
 Which locos in the consist should react to the found headlight functions.
 
-For the 'Simple' and 'Complex' options only.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+
+Each 'action' can be one of:
+
+* Lead Loco - Partial Match
+* Lead+Trail Locos - Partial Match
+* All Locos - Partial Match
+* Lead Loco - Exact Match
+* Lead+Trail Locos - Exact Match
+* All Locos - Exact Match
+
+Note:
+
+* 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |br| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |br| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
 
 String 2, 3, 4, 5
 """""""""""""""""
 
 .. todo:: String 2, 3, 4, 5
 
-For the 'Simple' and 'Complex' options only.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 Action for String 2, 3, 4, 5
 """"""""""""""""""""""""""""
 
 .. todo:: Action for String 2, 3, 4, 5
 
-For the 'Simple' and 'Complex' options only.
+This applies to Action for String 2, Action for String 3, Action for String 4, Action for String 5.
+
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 Additional Throttle Control Source Preferences
 ----------------------------------------------
@@ -1338,21 +1376,21 @@ Volume Button Preferences
 Speed button Change Amount (Volume)
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set amount, as a percentage (\%), of the throttle that the speed will change by (step) each time the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons are clicked.
+This preference allows you to set the amount, as a percentage (\%), of the throttle that the speed will change by (step) each time the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons are clicked.
 
 Only relevant is the `Disable Volume keys?`_ preference is DISABLED.
 
 Disable Volume keys?
 '''''''''''''''''''''''''''''''''''
 
-Enable this preference if you need to DISABLE the hardware Volume keys on the phone/tablet that would otherwise control speed
+If this preference is enabled |ED| will DISABLE the hardware Volume keys on the phone/tablet that would otherwise control speed
 
 If this preference is DISABLED, |ed| will allows you to use the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to control speed of the selected loco (indicated by a 'v' in the Speed Amount area of the Throttle.
 
 Volume keys follow touch?
 '''''''''''''''''''''''''''''''''''
 
-Enable this preference if you want the Volume keys speed control to follow the last touched throttle.  Otherwise you need to touch the speed amount area of a Throttle to change the Volume keys to control that throttle.
+If this preference is enabled |ED| will the Volume keys speed control to follow the last touched throttle.  Otherwise you need to touch the speed amount area of a Throttle to change the Volume keys to control that throttle.
 
 ----
 
@@ -1418,7 +1456,7 @@ Note: that you may need to repeat the test process when you return to the |T-S| 
 Speed button Change Amount (Gamepad)
 ''''''''''''''''''''''''''''''''''''
 
-How much each press of the Gamepad buttons changes the throttle speed
+This preference allows you to set how much each press of the Gamepad buttons changes the throttle speed
 
 Use this preference to set the amount, as a percentage (\%), of the throttle that the speed will change by (step) each time a gamepad's buttons are pressed.
 
@@ -1427,17 +1465,17 @@ Only relevant is the `Gamepad Type`_ preference is set to other than 'None' and 
 Gamepad Button Click Volume %
 '''''''''''''''''''''''''''''
 
-Use this preference to set the volume, as a percent, for gamepad button clicks.
+This preference allows you to set the volume, as a percent, for gamepad button clicks.
 
 Speed button Repeat Delay (gamepad)
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set how long, in milliseconds, between repeats on Gamepad speed buttons.  Smaller is faster.
+This preference allows you to set how long, in milliseconds, between repeats on Gamepad speed buttons.  Smaller is faster.
 
 Gamepad button action <!-- X -->
 ''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`X` button on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`X` button on the gamepad.
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
@@ -1449,7 +1487,7 @@ Note: depending on the gamepad type you are using, this may have a different lab
 Gamepad button action <!-- Y -->
 ''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`Y` button on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`Y` button on the gamepad.
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
@@ -1461,7 +1499,7 @@ Note: depending on the gamepad type you are using, this may have a different lab
 Gamepad button action <!-- A -->
 ''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`A` button on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`A` button on the gamepad.
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
@@ -1473,7 +1511,7 @@ Note: depending on the gamepad type you are using, this may have a different lab
 Gamepad button action <!-- B -->
 ''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`B` button on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`B` button on the gamepad.
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
@@ -1485,7 +1523,7 @@ Note: depending on the gamepad type you are using, this may have a different lab
 Gamepad button action <!-- Start(Lower) -->
 '''''''''''''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`Start(lower)` button on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`Start(lower)` button on the gamepad.
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
@@ -1497,7 +1535,7 @@ Note: depending on the gamepad type you are using, this may have a different lab
 Gamepad button action <!-- Return(Upper) -->
 ''''''''''''''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`Return (Upper)` button on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`Return (Upper)` button on the gamepad.
 
 Gamepad DPAD Up action
 ''''''''''''''''''''''
@@ -1512,7 +1550,7 @@ Choose the action when you press the :guilabel:`DPAD Up` on the gamepad.
 Gamepad DPAD Right action
 '''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`DPAD Right` on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`DPAD Right` on the gamepad.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1522,7 +1560,7 @@ Choose the action when you press the :guilabel:`DPAD Right` on the gamepad.
 Gamepad DPAD Down action
 ''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`DPAD Down`` on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`DPAD Down`` on the gamepad.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1532,7 +1570,7 @@ Choose the action when you press the :guilabel:`DPAD Down`` on the gamepad.
 Gamepad DPAD Left action
 '''''''''''''''''''''''''''''''''''
 
-Choose the action when you press the :guilabel:`DPAD Left`` on the gamepad.
+This preference allows you to set the action that |ED| will perform when you press the :guilabel:`DPAD Left`` on the gamepad.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1542,12 +1580,12 @@ Choose the action when you press the :guilabel:`DPAD Left`` on the gamepad.
 Swap Direction buttons with Screen buttons?
 '''''''''''''''''''''''''''''''''''''''''''
 
-Use this preference to set if |ed| should swap the two Gamepad Direction buttons if the Screen Direction buttons are swapped.
+If this preference is enabled |ED| will will swap the two Gamepad Direction buttons if the Screen Direction buttons are swapped.
 
-.. note:: 
-  :class: note-ed-hidden-title
+  .. note:: 
+    :class: note-ed-hidden-title
 
-  This is only relevant if the `Swap Direction buttons?`_ preference and/or the `Long press Swap Direction buttons?`_ preference is enabled.
+    This is only relevant if the `Swap Direction buttons?`_ preference and/or the `Long press Swap Direction buttons?`_ preference is enabled.
 
 Enforce Gamepad Testing?
 '''''''''''''''''''''''''''''''''''
@@ -1584,14 +1622,14 @@ The following preferences allow you to change the way the *Device Stop button* o
 Stop Button long-press delay
 '''''''''''''''''''''''''''''''''''
 
-Alter this preference to adjust how long a 'long-press' is required to be considered a long press for the Stop button. 
+Use this preference to adjust how long a 'long-press' is required to be considered a long press for the Stop button. 
 
 A 'long-press' stops all active throttles; a 'short-press' pauses the current throttle. Smaller is faster.
 
 Enable Short Press
 '''''''''''''''''''''''''''''''''''
 
-Enable this preference to enable a 'short-press' to pause the currently controlled loco/consist. It ill revert to original speed when operations resume.
+If this preference is enabled |ED| will respond to a 'short-press' to pause the currently controlled loco/consist. It ill revert to original speed when operations resume.
 
 Device side button options
 """"""""""""""""""""""""""
@@ -1606,7 +1644,7 @@ The following preferences allow you to change the way the *Device Side button* o
 Top-left button action
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to choose the action when you press the Top-left button.
+This preference allows you to choose the action when you press the Top-left button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1616,7 +1654,7 @@ Use this preference to choose the action when you press the Top-left button.
 Bottom-left button action
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to choose the action when you press the Bottom-left button.
+This preference allows you to choose the action when you press the Bottom-left button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1626,7 +1664,7 @@ Use this preference to choose the action when you press the Bottom-left button.
 Top-right button action
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to choose the action when you press the Top-right button.
+This preference allows you to choose the action when you press the Top-right button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1636,7 +1674,7 @@ Use this preference to choose the action when you press the Top-right button.
 Bottom-right button action
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to choose the action when you press the Bottom-right button.
+This preference allows you to choose the action when you press the Bottom-right button.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -1646,7 +1684,7 @@ Use this preference to choose the action when you press the Bottom-right button.
 Button repeat delay
 '''''''''''''''''''''''''''''''''''
 
-Alter this preference to adjust how long is required between repeats on device side buttons. Smaller is faster.
+This preference allows you to adjust how long is required between repeats on device side buttons. Smaller is faster.
 
 Control Knob options
 """""""""""""""""""""""""
@@ -1661,12 +1699,12 @@ The following preferences allow you to change the way the *Control Knob* on a ES
 Control Knob Zero Trim
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set the Control Knob zero trim setting. Smaller is closer to counter-clockwise end-stop position.  Permitted range 0-255.
+This preference allows you to set the Control Knob zero trim setting. Smaller is closer to counter-clockwise end-stop position.  Permitted range 0-255.
 
 Direction Change at end-stop
 '''''''''''''''''''''''''''''''''''
 
-Enable this preference to allow Loco direction to change when control knob at counter-clockwise end-stop position
+If this preference is enabled |ED| will allow the Loco to chnage direction when the control knob is at counter-clockwise end-stop position.
 
 Show disable Knob button
 ''''''''''''''''''''''''
@@ -1701,7 +1739,7 @@ The following preferences allow you to change the way the Voice Responses behave
 Voice Response
 '''''''''''''''''''''''''''''''''''
 
-This preference allows to configure when |ed| should speak using Text to Speech (TTS).
+This preference allows you to configure when |ed| should speak using Text to Speech (TTS).
 
 Note: Effectively it is either 'on' or 'off', and you can use the following preferences to control what is actually spoken.
 
@@ -1713,7 +1751,7 @@ Options include:
 On Gamepad Throttle change
 '''''''''''''''''''''''''''''''''''
 
-Enable this preference if you wish |ed| to speak when you select a different throttle on the gamepad.
+If this preference is enabled |ed| will speak when you select a different throttle on the gamepad.
 
 Options include:
 
@@ -1726,7 +1764,7 @@ Options include:
 On Gamepad Speeds
 '''''''''''''''''''''''''''''''''''
 
-Enable this preference if you wish |ed| to speak when the speed hits certain speeds when using a gamepad.
+If this preference is enabled |ed| will speak when the speed hits certain speeds when using a gamepad.
 
 Speeds that will be spoken are:
 
@@ -1739,19 +1777,19 @@ Note that third option is mainly relevant when using the optional :guilabel:`Lim
 On Gamepad Test start
 '''''''''''''''''''''
 
-Enable this preference if you wish |ed| to speak when the gamepad test screen is launched.
+If this preference is enabled |ed| will speak when the gamepad test screen is launched.
 
 On Gamepad Test complete
 ''''''''''''''''''''''''
 
-Enable this preference if you wish |ed| to speak when the gamepad test screen is successfully finished.
+If this preference is enabled |ed| will speak when the gamepad test screen is successfully finished.
 
 Note that what constitutes a successful finish of the test will change depending on the `Use Simple Test? <..//configuration/preferences.html#use-simple-test>`_ preference.
 
 On Gamepad Test key press
 '''''''''''''''''''''''''
 
-Enable this preference if you wish |ed| to speak when each buttons is pressed in the gamepad test screen.  |ed| will speak the name of the button and the function assigned to it.
+If this preference is enabled |ed| will speak when each buttons is pressed in the gamepad test screen.  |ed| will speak the name of the button and the function assigned to it.
 
 
 Select Loco Preferences
@@ -1785,7 +1823,7 @@ i.e. It is not possible to Select (add or remove) locos if they are moving.
 Default Address Length
 """"""""""""""""""""""
 
-Use this preference to set the default Loco Address Length. 
+This preference is used to set the default Loco Address Length. 
 
 ``Auto`` will set the length based on if the Address entered. If it is less that 127, |ed| will assume it 'Short' Address.  127 an higher will default to 'Long'.
 
@@ -1798,22 +1836,22 @@ Options
 Roster in Recent Locos?
 """""""""""""""""""""""
 
-Enable this preference to include roster selections in *Recent Locos list*.
+If this preference is enabled |ed| will include roster selections in *Recent Locos list*.
 
 Roster Names in Recent Locos?
 """""""""""""""""""""""""""""
 
-Enable this preference to include Loco names from the witServer roster in *Recent list* in the |LS-S| screen.
+If this preference is enabled |ed| will include Loco names from the witServer roster in *Recent list* in the |LS-S| screen.
 
 Maximum Recent Locos
 """"""""""""""""""""
 
-Use the preference to set the maximum number of *Recent Locos* to show in the Recent Locos list on the *Loco Select* screen.
+This preference is used to set the maximum number of *Recent Locos* to show in the Recent Locos list on the *Loco Select* screen.
 
 Control consist Lights on long click
 """"""""""""""""""""""""""""""""""""
 
-If this preference is enabled you can change the Lights of the individual locos in a Consist with a long click on the Loco Select button.  You will be taken to the `Consist Lights Edit Screen <../operation/interface.html#consist-lights-edit-screen>`_.
+If this preference is enabled |ed| will llow you to change the Lights of the individual locos in a Consist with a long click on the Loco Select button.  You will be taken to the `Consist Lights Edit Screen <../operation/interface.html#consist-lights-edit-screen>`_.
 
 Note this only will work while the :guilabel:`Select` button is *Enabled*.  If the `Allow loco select while moving?`_ preference is disabled, the :guilabel:`Select` button is *Disabled* while the throttle is greater than zero.
 
@@ -1907,17 +1945,17 @@ If this preference is enabled, the Loco step sounds will play till their end, be
 In Phone Loco Sounds Volume
 '''''''''''''''''''''''''''
 
-Use this preference to set the volume for *Loco/Engine sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
+This preference allows you to set the volume for *Loco/Engine sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
 
 In Phone Bell Sounds Volume
 '''''''''''''''''''''''''''
 
-Use this preference to set the volume for *Bell sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
+This preference allows you to set the volume for *Bell sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
 
 In Phone Horn/Whistle Sounds Volume
 '''''''''''''''''''''''''''''''''''
 
-Use this preference to set the volume for *Horn/Whistle sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
+This preference allows you to set the volume for *Horn/Whistle sounds* in the phone (1-100) when using the `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_. This is a percentage of the media volume you have set for you Android Device/Phone (outside of |ed|).
 
 Bell button Latching/Momentary
 ''''''''''''''''''''''''''''''
@@ -1944,32 +1982,32 @@ The following preferences allow you to change the way the |C-S| appears and beha
 Maximum Recent Connections
 """"""""""""""""""""""""""
 
-Use this preference to set the maximum number of *Recent Connections* to show in list on the |C-S|.
+This preference allows you to set the maximum number of *Recent Connections* to show in list on the |C-S|.
 
 Auto-Connect to WiThrottle Server?
 """"""""""""""""""""""""""""""""""
 
-Enable this preference if you wish to connect automatically to the 'first' |WTS-DCC-EX| discovered each time you start|ed|.  This will effectively bypass the |C-S|.
+If this preference is enabled |ED| will connect automatically to the 'first' |WTS-DCC-EX| discovered each time you start|ed|.  This will effectively bypass the |C-S|.
 
 Hide Demo Server
 """"""""""""""""
 
-Enable this preference if you wish to hide the Demo Server ('jmri.mstevetodd.com') in the connection list on the |C-S|.
+If this preference is enabled |ED| will hide the Demo Server ('jmri.mstevetodd.com') in the connection list on the |C-S|.
 
 Initial Connection Timeout
 """"""""""""""""""""""""""
 
-Use this preference to set the initial connection timeout in milliseconds.
+This preference allows you to set the initial connection timeout in milliseconds.
 
 Socket Timeout
 """"""""""""""
 
-Use this preference to set the socket read timeout in milliseconds.
+This preference allows you to set the socket read timeout in milliseconds.
 
 Mobile Data connection?
 """""""""""""""""""""""
 
-Use this preference to allow your device to connect to JMRI, or any |WTS-DCC-EX|, using your phone's Mobile Data.
+If this preference is enabled |ED| will allow your device to connect to JMRI, or any |WTS-DCC-EX|, using your phone's Mobile Data.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -2013,7 +2051,7 @@ Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` for details on h
 Show protocol option
 ''''''''''''''''''''
 
-Enabling this preference will cause |ED| to show and additional question on the |C-S| which allows you to easily change the `Use Native DCC-EX command` preference when connecting to different brands of Command Station.
+If this preference is enabled |ED| will show an additional question on the |C-S| which allows you to easily change the `Use Native DCC-EX command` preference when connecting to different brands of Command Station.
 
 Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
 
@@ -2030,7 +2068,7 @@ The following preferences allow you to change the way the |WV-S| behaves.
 Web Screen Orientation
 """""""""""""""""""""""""
 
-This preference allows you you select the orientation for the |WV-S|.
+This preference allows you to select the orientation for the |WV-S|.
 
 Options include:
 
@@ -2041,7 +2079,7 @@ Options include:
 Initial Web Screen Page
 """""""""""""""""""""""""
 
-Use this preference to enter the initial Web Page (such as '/panel') for the |WV-S|.  i.e. The page that will open the first time you open the Web View Screen, for each session that you use |ed|.
+This preference allows you to enter the initial Web Page (such as '/panel') for the |WV-S|.  i.e. The page that will open the first time you open the Web View Screen, for each session that you use |ed|.
 
 Note that this is different/separate to the 'Throttle Web View' initial Web Page which is set with the `Initial throttle Web Page`_ preference.
 
@@ -2092,7 +2130,7 @@ The following preferences allow you to change the way the *Children's (Timer)* b
 Time limited running
 """"""""""""""""""""
 
-Use this preference to restrict the amount of time that the loco will run.
+This preference allows you to restrict the amount of time that the loco will run.
 
 Options:
 
@@ -2108,21 +2146,21 @@ Note this is independent of the value set in the `Default time for Button`_ pref
 Restart Password
 """"""""""""""""
 
-Use this preference to set the password to restart the children's timer with the current settings.
+This preference allows you to set the password to restart the children's timer with the current settings.
 
 Defaults to "0000"
 
 Reset/Disable Password
 """"""""""""""""""""""
 
-Use this preference to set the password to reset/disable the children's timer settings.
+This preference allows you to set the password to reset/disable the children's timer settings.
 
 Defaults to "9999"
 
 Allow Reverse?
 """"""""""""""
 
-Enable this preference if you wish to enable the :guilabel:`Forward` and :guilabel:`Reverse` buttons while the children's timer is running. i.e. if you want them to be able to reverse the locos.
+If this preference is enabled |ed| will enable the :guilabel:`Forward` and :guilabel:`Reverse` buttons while the children's timer is running. i.e. if you want them to be able to reverse the locos.
 
 Show Timer button?
 """"""""""""""""""
@@ -2131,12 +2169,12 @@ Show Timer button?
    :align: right
    :scale: 50%
 
-Enable this preference if you wish display the Timer Button on the Action Bar of the |T-S|, to easily activate the Children's timer.
+If this preference is enabled |ed| will display the Timer Button on the Action Bar of the |T-S|, to easily activate the Children's timer.
 
 Default time for Button
 """""""""""""""""""""""
 
-Use this preference to set the default time if using the Action Bar Button (`Show Timer button?`_) to activate the timer.  
+This preference allows you to set the default time if using the Action Bar Button (`Show Timer button?`_) to activate the timer.  
 
 Options:
 
@@ -2188,12 +2226,12 @@ Auto import from all Servers?
 
 |ed| is able to automatically import a preference file from a |WTS-DCC-EX| if it exists.
 
-Enable this preference to automatically import the preferences from all servers (if they exists) on connection.  i.e. If the file ``<jmri railroad base folder>/prefs/engine_driver/auto_preferences.ed`` is on the server and if it is more recent that the last time checked.
+If this preference is enabled |ed| will automatically import the preferences from all servers (if they exists) on connection.  i.e. If the file ``<jmri railroad base folder>/prefs/engine_driver/auto_preferences.ed`` is on the server and if it is more recent that the last time checked.
 
 Include recent loco list?
 """""""""""""""""""""""""
 
-Enable this preference if you wish to include the locos in the recent loco list in `Imports` and `Exports`.
+If this preference is enabled |ed| will include the locos in the recent loco list in `Imports` and `Exports`.
 
 Auto host specific import/export?
 """""""""""""""""""""""""""""""""
@@ -2235,4 +2273,4 @@ Note: this preference is only available when not currently connected to a |WTS-D
 Show Timestamps on Log?
 """""""""""""""""""""""""
 
-Enable this preference to show Date Time for each entry on the *Log Screen*.
+If this preference is enabled |ed| will show Date Time for each entry on the *Log Screen*.
