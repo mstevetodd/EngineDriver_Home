@@ -146,4 +146,9 @@ redirects = {
     "screenshots": "./glossary/index.html#screenshots",
     "wifi": "./operation/wifi_issues.html",
     "turnouts": "./operation/operation.html#turnouts-points",
+    "en/operation/gamepads": "../../operation/gamepads.html",
+    "index.php/contact": "../about/index.html",
+    "sites/enginedriver.mstevetodd.com/files/": "../../downloads/index.html",
+    "operation/emergencystopbutton": "../operation/interface.html#emergency-stop-button",
+    "index.php/screenshots": "./glossary/index.html#screenshots"
 }
