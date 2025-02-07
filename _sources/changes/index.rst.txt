@@ -45,7 +45,7 @@ Changes included in Engine Driver production version **2.37.187**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.38.191**:
+Changes included in Engine Driver Beta version **2.38.193**:
 
 * Preference to always show the Throw and Close buttons for Turnouts/Points
 * New 'Neon Blue' theme
@@ -68,7 +68,10 @@ Changes included in Engine Driver Beta version **2.38.191**:
 * Additional Google Translations
 * Significant changes to the Semi-Realistic Throttle, and in particular, the integration with decoders, with assistance from John Geddes
 * Significant re-write of the air brake system in the Semi-Realistic Throttle
-* Bug fix for DCC-EX roster entries with no functions
+* Bug fix for DCC-EX roster entries with no functions. Was previously not possible to have no functions show for a roster entry 
+* New Preference to override the bug fix for roster entries with no functions
+* Additional French Translations by Alain Carasso
+
 
 Complete ChangeLog
 --------------------------------------------
