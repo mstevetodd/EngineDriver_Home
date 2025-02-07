@@ -35,7 +35,7 @@ Older or Other Versions - Manual Install
 
 * Sometimes you may need to uninstall previous versions before you can install the new version this way.
 
-* `EngineDriver-2.38.191.apk (Beta) <../_static/apk/EngineDriver-2.38.191.apk>`_
+* `EngineDriver-2.38.193.apk (Beta) <../_static/apk/EngineDriver-2.38.193.apk>`_
 * `EngineDriver-2.37.187.apk <../_static/apk/EngineDriver-2.37.187.apk>`_
 * `EngineDriver-2.36.177.apk <../_static/apk/EngineDriver-2.36.177.apk>`_
 * `EngineDriver-2.35.173.apk <../_static/apk/EngineDriver-2.35.173.apk>`_
