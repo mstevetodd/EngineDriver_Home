@@ -527,6 +527,7 @@ Specific to the |T-S|, the Overflow Menu can display:
 
 * :ref:`Loco Sounds <operation/interface:in phone loco sounds screen>` (|T-S| only)
 * `DCC-EX Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
+* `DCC-EX Function Settings Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
 * :ref:`Power <operation/operation:turn track power on>`
 * :doc:`Preferences </configuration/preferences>`
 * :ref:`View Log <operation/interface:view log screen>`
@@ -715,6 +716,7 @@ Specific to the *Turnouts/Points  Screen*, the Overflow Menu can display:
 * `Throttle Screen`_ (All except the |T-S| only)
 * `Routes Screen`_ (All except the |R-S| only)
 * `DCC-EX Screen`_ (If connected to a DCC-EX EX-Command-Station using the |NATIVE| only)
+* `DCC-EX Function Settings Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
 * :ref:`Power <operation/operation:turn track power on>`
 * :doc:`Preferences </configuration/preferences>`
 * :ref:`View Log <operation/interface:view log screen>`
@@ -825,6 +827,7 @@ Specific to the |R-S|, the Overflow Menu can display:
 * `Throttle Screen`_ (All except the |T-S| only)
 * `Turnouts/Points Screen`_ (All except the *Turnout/Points Screen* only)
 * `DCC-EX Screen`_ (If connected to a DCC-EX EX-Command-Station using the |NATIVE| only)
+* `DCC-EX Function Settings Screen`_ (If connected to a DCC-EX EX-CommandStation using the |NATIVE| only)
 * :ref:`Power <operation/operation:turn track power on>`
 * :doc:`Preferences </configuration/preferences>`
 * :ref:`View Log <operation/interface:view log screen>`
@@ -1249,20 +1252,36 @@ Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Default
 DCC-EX Function Settings Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: DCC-EX Function Settings Screen
+.. image:: ../_static/images/screenshots/dcc-ex-functions-screen.png
+   :scale: 7 %
+   :align: right
+
+This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC addresss . i.e. not locos acquired from the roster.
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX Function Settings`.
+
+|force-break|
 
 ----
 
 DCC-EX Screen
 ^^^^^^^^^^^^^
 
-.. todo:: DCC-EX Screen
+.. image:: ../_static/images/screenshots/dcc-ex-cv-prog-screen.png
+   :scale: 7 %
+   :align: right
+
+This screen allows you to perform a number of |EX-CS| specific actions including reading and writing CVs.  
+
+See :doc:`/operation/dcc-ex-native-protocol` for more information.
+
+This menu item and screen is only available if connected to a DCC-EX EX-CommandStation using the |NATIVE|.
+
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX`.
 
-Also see :doc:`/operation/dcc-ex-native-protocol` for more information.
+
+|force-break|
 
 ----
 
