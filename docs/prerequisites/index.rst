@@ -81,7 +81,7 @@ For MRC WiFi
 """"""""""""
 
 Connect the `MRC WiFi module <https://www.modelrectifier.com/category-s/332.htm>`_, and verify your device can connect to its network and obtain an IP address.
-Note for MRC users: David Fuller has provided some `additional setup information [here] <../_static/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf>`_.
+Note for MRC users: David Fuller has provided some `additional setup information [here] <../_static/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf>`_.
 
 For Digitrax LnWi
 """""""""""""""""
