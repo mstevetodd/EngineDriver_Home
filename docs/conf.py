@@ -194,7 +194,7 @@ redirects = {
     "index.php/downloads": "../downloads/index.html",
     "index.php/import-preferences": "../configuration/preferences.html#import-export-reset-log-preferences",
     "index.php/operation": "../operation/index.html",
-    "index.php/screenshots": "../operation/interface.html#main-screens",
+    "index.php/screenshots": "../glossary/index.html#screenshots",
     "index.php/simple-throttle-4": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/simple-throttle-6": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/throttle-big-buttons": "../configuration/preferences.html#throttle-screen-layout",
@@ -208,7 +208,7 @@ redirects = {
 
     "privacy-policy": "./about/privacy-policy.html",
 
-    "screenshots": "./operation/interface.html#main-screens",
+    "screenshots": "./glossary/index.html#screenshots",
     "simple-throttle-6": "./configuration/preferences.html#throttle-screen-layout",
     "sites/enginedriver.mstevetodd.com/files/": "../../downloads/index.html",
     "sites/enginedriver.mstevetodd.com/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf": "../../../_static/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf",
