@@ -6,6 +6,14 @@
 
    <br />
 ..
+.. |small-start| raw:: html
+
+    <span style="font-size: 75%">
+..
+.. |small-end| raw:: html
+
+    </span>
+..
 .. |hr-dashed| raw:: html
 
    <hr class="hr-dashed" />

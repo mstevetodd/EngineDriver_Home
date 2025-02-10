@@ -1,6 +1,6 @@
-=====================================
-Detailed Information
-=====================================
+===============================================================================
+Detailed Information |BR| |small-start| Preferences & Configuration |small-end|
+===============================================================================
 
 .. meta::
    :http-equiv=refresh: 0; url='./preferences.html'

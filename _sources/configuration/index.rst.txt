@@ -10,8 +10,8 @@ Configuration
 .. toctree::
    :hidden:
 
-   configuration
    configuration_withrottle
+   configuration
    preferences_index
 
 
