@@ -1126,9 +1126,7 @@ Consist Edit Screen
 
 Shown if you add a second, or subsequent, loco to a throttle via the :guilabel:`Select` button, or if you click on the :guilabel:`Edit Order & Facing` button on the *Select Loco Screen* (which will only be available if you have already acquired more than one loco on the throttle.)
 
-|br|
-
-|br|
+|force-break|
 
 Lead Loco
 """""""""
@@ -1163,11 +1161,7 @@ Consist Lights Edit Screen
 * Follow Fn Btn
 * Off
 
-|br|
-
-|br|
-
-|br|
+|force-break|
 
 ----
 
@@ -1193,6 +1187,10 @@ This screen allows you to toggle the state of track power to your layout.
 Preferences Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. image:: ../_static/images/screenshots/preferences-1.png
+  :align: right
+  :scale: 8%
+
 Accessed from any of the main screens via :menuselection:`Menu --> Preferences`.
 
 This screen allows you to personalise  |ed| for how you want it to use it.
@@ -1202,11 +1200,7 @@ This screen allows you to personalise  |ed| for how you want it to use it.
 
    See the :doc:`Preferences page </configuration/preferences>` for details on the preferences that can be set.
 
-|br|
-
-|br|
-
-|br|
+|force-break|
 
 ----
 
@@ -1217,16 +1211,13 @@ In Phone Loco Sounds Screen
   :align: right
   :scale: 12%
 
-.. todo:: In Phone Loco Sounds Screen
+This screen allows you to set |ED| to play synchronised loco sounds through the speaker of your Android device / phone, or through BlueTooth speakers connected to it.
+
+See :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` for more information.
 
 Accessed from |T-S| by the :menuselection:`Menu --> Loco Sounds` or from the Status Bar if enabled with the :ref:`In phone sounds button <configuration/preferences:in phone sounds button>` preference.
 
-|br|
-
-|br|
-
-|br|
-
+|force-break|
 
 ----
 
@@ -1241,11 +1232,7 @@ Function Defaults Screen
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Defaults`.
 
-|br|
-
-
-|br|
-
+|force-break|
 
 ----
 
@@ -1253,7 +1240,7 @@ DCC-EX Function Settings Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../_static/images/screenshots/dcc-ex-functions-screen.png
-   :scale: 7 %
+   :scale: 8 %
    :align: right
 
 This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC addresss . i.e. not locos acquired from the roster.
@@ -1268,7 +1255,7 @@ DCC-EX Screen
 ^^^^^^^^^^^^^
 
 .. image:: ../_static/images/screenshots/dcc-ex-cv-prog-screen.png
-   :scale: 7 %
+   :scale: 8 %
    :align: right
 
 This screen allows you to perform a number of |EX-CS| specific actions including reading and writing CVs.  
@@ -1319,6 +1306,8 @@ Internal storage ``/Android/data/jmri.enginedriver/files`` |br|\ and will be nam
 
 Enable the ??? preference to include the timestamp on each line of the log.
 
+|force-break|
+
 ----
 
 About Screen
@@ -1336,6 +1325,7 @@ This screen displays
 * Information about the |WTS-DCC-EX| it is currently connected to (if any)
 * A page of basic information about |ed|
 
+|force-break|
 
 ----
 
