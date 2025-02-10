@@ -75,14 +75,21 @@ On the DCC-EX Screen you can use the "Action" pulldown to select from
 Read and write DCC addresses on the Programming Track
 -----------------------------------------------------
 
+.. image:: ../_static/images/screenshots/dcc-ex-cv-prog-screen.png
+   :scale: 7 %
+   :align: right
+
 To read and write DCC addresses on the Programming Track select "Programming Track (Service Mode)" in the Action pulldown.
 
 To read the address, put your loco on the programming track and click the :guilabel:`Read` button on the same line as the 'DCC Address' label.
 
 To write a new address, enter the address in the 'DCC Address' field and click :guilabel:`Write`
 
+|force-break|
+
 Read and write CVs of decoders on the Programming Track
 -------------------------------------------------------
+
 
 To read and write CVs of decoders on the Programming Track select "Programming Track (Service Mode)" in the Action pulldown.
 
@@ -92,8 +99,14 @@ To write a new CV value, enter the CV number into the 'CV' field, enter the new 
 
 Optionally, you can use the 'NRMA CVs' pulldown to select a common CV from a list.  This just enters the appropriate CV number in the 'CV' field.
 
+|force-break|
+
 Write CVs of decoders on the Main Track
 ---------------------------------------
+
+.. image:: ../_static/images/screenshots/dcc-ex-cv-pom-screen.png
+   :scale: 7 %
+   :align: right
 
 To write CVs of decoders on the Main Track select "Program on Main (Operation Mode)" in the Action pulldown.
 
@@ -116,6 +129,10 @@ Optional, you can use the :guilabel:`Prior` and :guilabel:`Next` buttons to reis
 
 TrackManager control
 --------------------
+
+.. image:: ../_static/images/screenshots/dcc-ex-track-manager-screen.png
+   :scale: 7 %
+   :align: right
 
 To use the TrackManager control select "Track/District Manager" in the Action pulldown.
 
