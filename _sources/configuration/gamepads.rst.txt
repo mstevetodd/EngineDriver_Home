@@ -16,6 +16,7 @@ Choose a gamepad type in the `Gamepad type <./preferences.html#gamepad-type>`_ p
 * MagicSeeR1
 * Flydigi Wee 2
 * Utopia 360
+* Auvisio
 * DIY Arduino ESP32 + keypad + Rotary Encoder
 * Normal Keyboard
  
@@ -73,3 +74,8 @@ All the buttons, plus the four directions of the DPad, can be set to any of the 
 * Horn (IPLS) |br|\ 'In Phone Loco sounds' must be enabled for the current throttle ``Throttle 1 Loco Sounds`` or ``Throttle 2 Loco Sounds``
 * Horn Short (IPLS) |br|\ 'In Phone Loco sounds' must be enabled for the current throttle ``Throttle 1 Loco Sounds`` or ``Throttle 2 Loco Sounds``
 * Speak Current Speed |br|\ 'Text to Speech (TTS)' ``Voice Response`` preference must be enabled for this to work
+* Neutral (Semi-Realistic Throttle layout only)
+* Increase Brake (Semi-Realistic Throttle layout only)
+* Decrease Brake (Semi-Realistic Throttle layout only)
+* Increase Load (Semi-Realistic Throttle layout only)
+* Decrease Load (Semi-Realistic Throttle layout only)

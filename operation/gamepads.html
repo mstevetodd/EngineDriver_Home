@@ -721,7 +721,7 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/new_device.html">Moving to a new phone/device</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../configuration/conserving_power.html">Conserving Power</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/conserving_power.html">Conserving Battery Power</a></li>
 </ul>
 </li>
 </ul>
@@ -984,6 +984,15 @@ These seem to be slightly better quality than the one above, but are more expens
 <li><p><span class="guilabel">D</span> = Direction - Toggle Forward/Reverse</p></li>
 <li><p><span class="guilabel">N</span> = Next Throttle</p></li>
 <li><p><span class="guilabel">End</span> or <span class="guilabel">Z</span> = Emergency stop <br /></p></li>
+<li><p>Semi-Realistic Throttle Only:</p>
+<ul>
+<li><p><span class="guilabel">\</span> = Neutral</p></li>
+<li><p><span class="guilabel">PgUp</span> or <span class="guilabel">‘</span> = Decrease Brake</p></li>
+<li><p><span class="guilabel">PgDn`</span> or <span class="guilabel">;</span> = Increase Brake</p></li>
+<li><p><span class="guilabel">.</span> = Decrease Load</p></li>
+<li><p><span class="guilabel">,</span> = Increase Load</p></li>
+</ul>
+</li>
 <li><p>F00 - F28 = Function <br />Must be <span class="guilabel">F</span> followed by two digits <br /> or <span class="guilabel">F11</span> followed by two <span class="guilabel">F</span> button equivalents F10=0, F1-F9=1-9 <br />e.g. <span class="guilabel">F</span> <span class="guilabel">0</span> <span class="guilabel">5</span> = Function F05, or  <span class="guilabel">F11</span> <span class="guilabel">F10</span> <span class="guilabel">F5</span> = Function F05</p></li>
 <li><p><span class="guilabel">0</span> - <span class="guilabel">9</span> = Functions 0-9 <br />Without a preceding <span class="guilabel">F</span>, <span class="guilabel">S</span> or <span class="guilabel">L</span> <br />or <span class="guilabel">F10</span> - <span class="guilabel">F9</span>  F10=0, F1-F9=1-9 <br /></p></li>
 <li><p>S000 - S100 = Speed <br />Must be <span class="guilabel">S</span> followed by three digits <br /> or <span class="guilabel">F12</span> followed by three <span class="guilabel">F</span> button equivalents F10=0, F1-F9=1-9 <br />e.g. <span class="guilabel">S</span> <span class="guilabel">0</span> <span class="guilabel">5</span> <span class="guilabel">6</span> = Speed 056, or  <span class="guilabel">F12</span> <span class="guilabel">F10</span> <span class="guilabel">F5</span> <span class="guilabel">F6</span> = Speed 056</p></li>
@@ -997,6 +1006,7 @@ These seem to be slightly better quality than the one above, but are more expens
 <li><p>T0 - T5 = Specify a throttle for next command <br />Must be <span class="guilabel">T</span> followed by one digit <br />or <span class="guilabel">Esc</span> followed by two <span class="guilabel">F</span> button equivalents F10=0, F1-F9=1-9 <br />The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.</p></li>
 </ul>
 <p>All other keyCodes are ignored.</p>
+<p>Failure to follow the ‘F’, ‘S’ or ‘L’ with the correct number of digits will ignore the command</p>
 <p>These same keycodes are used by the DIY Arduino controllers.</p>
 </section>
 </section>
@@ -1019,7 +1029,7 @@ These seem to be slightly better quality than the one above, but are more expens
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f155d629630>
+    <jinja2.runtime.BlockReference object at 0x7fc7cbcd7e50>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

@@ -35,9 +35,7 @@ See `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-
 Bell, Horn/Whistle
 ------------------
 
-.. todo:: Bell, Horn/Whistle
-
-The Bell and Horn/Whistle (long) can also be configureated to be activated by the DCC Function buttons (F1 and F2) if the `F1 and F2 activate Bell and Horn? <../configuration/preferences.html#f1-and-f2-activate-bell-and-horn>`_ preference is set.
+The Bell and Horn/Whistle (long) can also be configured to be activated by the DCC Function buttons (F1 and F2) if the `F1 and F2 activate Bell and Horn? <../configuration/preferences.html#f1-and-f2-activate-bell-and-horn>`_ preference is set.
 
 See `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_ for details on how to activate and us the In Phone Loco sounds.
 
