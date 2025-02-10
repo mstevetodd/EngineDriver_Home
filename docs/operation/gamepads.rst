@@ -183,6 +183,14 @@ For use when ``Keyboard`` is selected as the gamepad type:
 * :guilabel:`D` = Direction - Toggle Forward/Reverse
 * :guilabel:`N` = Next Throttle
 * :guilabel:`End` or :guilabel:`Z` = Emergency stop |br|\
+* Semi-Realistic Throttle Only:
+
+  * :guilabel:`\\` = Neutral
+  * :guilabel:`PgUp` or :guilabel:`'` = Decrease Brake
+  * :guilabel:`PgDn`` or :guilabel:`;` = Increase Brake
+  * :guilabel:`.` = Decrease Load
+  * :guilabel:`,` = Increase Load
+
 * F00 - F28 = Function |br|\ Must be :guilabel:`F` followed by two digits |br|\  or :guilabel:`F11` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |br|\ e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
 * :guilabel:`0` - :guilabel:`9` = Functions 0-9 |br|\ Without a preceding :guilabel:`F`, :guilabel:`S` or :guilabel:`L` |br|\ or :guilabel:`F10` - :guilabel:`F9`  F10=0, F1-F9=1-9 |br|\
 * S000 - S100 = Speed |br|\ Must be :guilabel:`S` followed by three digits |br|\  or :guilabel:`F12` followed by three :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |br|\ e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed 056, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
@@ -196,5 +204,7 @@ For use when ``Keyboard`` is selected as the gamepad type:
 * T0 - T5 = Specify a throttle for next command |br|\ Must be :guilabel:`T` followed by one digit |br|\ or :guilabel:`Esc` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |br|\ The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.
 
 All other keyCodes are ignored.
+
+Failure to follow the 'F', 'S' or 'L' with the correct number of digits will ignore the command
 
 These same keycodes are used by the DIY Arduino controllers.

@@ -1271,7 +1271,6 @@ Options
 * Special Exact - Lead and All Trail activated if they exactly match the function labels
 * Special Partial - Lead and All Trail activated if they partially match the function labels
 
-
 Selective Lead Unit Sound?
 """"""""""""""""""""""""""
 
@@ -1300,25 +1299,23 @@ This preference is ignored if 'Complex' or 'Special' options are selected in the
 If All matches Fail Action
 """"""""""""""""""""""""""
 
-.. todo:: If All matches Fail Action
-
 Which locos in the consist should react to the function buttons if none of the rules below are meet.
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
+Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+
 Headlight specific String 1
 """""""""""""""""""""""""""
-
-.. todo:: Headlight specific String 1
 
 Comma separated string(s) to look for in the function labels of the locos in the consist to recognise the \'Headlight\' function (normally F0).
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
+Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+
 Headlight specific Action 1
 """""""""""""""""""""""""""
-
-.. todo:: Headlight specific Action 1
 
 Which locos in the consist should react to the found headlight functions.
 
@@ -1337,21 +1334,23 @@ Note:
 
 * 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |br| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |br| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
 
+Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+
 String 2, 3, 4, 5
 """""""""""""""""
 
-.. todo:: String 2, 3, 4, 5
-
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+
+Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Action for String 2, 3, 4, 5
 """"""""""""""""""""""""""""
 
-.. todo:: Action for String 2, 3, 4, 5
-
 This applies to Action for String 2, Action for String 3, Action for String 4, Action for String 5.
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+
+Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Additional Throttle Control Source Preferences
 ----------------------------------------------
@@ -1366,7 +1365,7 @@ Additional Throttle Control Source Preferences
 Volume Button Preferences
 """""""""""""""""""""""""
 
-|ed| will allows you to use the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to control speed. The following preferences allow you change options relating to these.
+|ed| will allow you to use the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to control speed. The following preferences allow you change options relating to these.
 
 .. contents:: In this Section
     :depth: 1
@@ -1442,9 +1441,8 @@ Choose the option that best supports your gamepad, 'None' to disable gamepad sup
 Only One Gamepad?
 '''''''''''''''''
 
-.. todo:: Only One Gamepad?
+If this preference is enabled |ED| will **NOT** check for multiple gamepads. Any additional gamepads will all control the same throttle.
 
-If enabled Engine Driver will not check for multiple gamepads.
 
 Test Gamepad settings now!
 ''''''''''''''''''''''''''
