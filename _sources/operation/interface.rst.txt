@@ -601,9 +601,7 @@ By default, you can Left/Right Swipe from any part of the screen, but this can b
 Swipe Up / Down
 """""""""""""""
 
-.. todo:: Swipe Up / Down
-
-Swipe Up and Down on the Throttle page can optional be configured to:
+Swiping Up and/or Down on the Throttle page can optional be configured to:
 
 * Do Nothing
 * Hide the Web View (if enabled)
@@ -617,16 +615,14 @@ Swipe Up and Down on the Throttle page can optional be configured to:
 .. note:: 
      :class: note-ed-hidden-title
 
-     see preference ...
+     See the :ref:`Swipe Up/Down preferences <configuration/preferences:swipe up-down preferences>` for information on how to configure what the up and down swipes do.
 
 |HR-DASHED|
 
 Accelerometer (Shake)  
 """""""""""""""""""""
 
-.. todo:: Accelerometer (Shake)  
-
-Swipe Up and Down on the Throttle page can optional be configured to:
+Shaking you device/phone while on the Throttle page can optional be configured to:
 
 * Do Nothing
 * Hide the Web View (if enabled)
@@ -638,7 +634,7 @@ Swipe Up and Down on the Throttle page can optional be configured to:
 .. note:: 
      :class: note-ed-hidden-title
 
-     see preference ...
+     See the :ref:`Accelerometer (Shake) preferences <configuration/preferences:accelerometer (shake) preferences>` for information on how to configure what the Accelerometer (Shake) do.
 
 ----
 
