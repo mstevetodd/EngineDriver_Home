@@ -150,5 +150,17 @@ redirects = {
     "index.php/contact": "../about/index.html",
     "sites/enginedriver.mstevetodd.com/files/": "../../downloads/index.html",
     "operation/emergencystopbutton": "../operation/interface.html#emergency-stop-button",
-    "index.php/screenshots": "./glossary/index.html#screenshots"
+    "index.php/screenshots": "./glossary/index.html#screenshots",
+
+    "operation/import-preferences": "../configuration/preferences.html#import-export-reset-log-preferences",
+    "index.php/import-preferences": "../configuration/preferences.html#import-export-reset-log-preferences",
+    "index.php/simple-throttle-4": "../index.html",
+    "index.php/simple-throttle-6": "../index.html",
+    "index.php/throttle-type-big-buttons-left": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-vertical-right": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-big-buttons": "../configuration/preferences.html#throttle-screen-layout",
+    "throttle-big-buttons": "./configuration/preferences.html#throttle-screen-layout",
+    "throttle-default": "./configuration/preferences.html#throttle-screen-layout",
+    "throttle-no-slider": "./configuration/preferences.html#throttle-screen-layout",
+    "supported-withrottle-servers": "./about/index.html"
 }
