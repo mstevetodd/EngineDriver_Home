@@ -166,7 +166,7 @@ redirects = {
     "en/downloads/index.html": "../../downloads/index.html",
     "en/genindex.html": "../../genindex.html",
     "en/glossary/index.html": "../../glossary/index.html",
-    "en/include.html": "../../include.html",
+    "en/include.html": "../../index.html",
     "en/index.html": "../../index.html",
     "en/operation/advanced.html": "../../operation/advanced.html",
     "en/operation/consist-follow-functions.html": "../../operation/consist-follow-functions.html",
@@ -180,12 +180,13 @@ redirects = {
     "en/operation/semi-realistic-throttle.html": "../../operation/semi-realistic-throttle.html",
     "en/operation/wifi_issues.html": "../../operation/wifi_issues.html",
     "en/prerequisites/index.html": "../../prerequisites/index.html",
-    "en/search.html": "../../search.html",
+    "en/search.html": "../../index.html",
     "en/videos/index.html": "../../videos/index.html",
 
     "import-preferences": "./configuration/preferences.html#import-export-reset-log-preferences",
 
 
+    "index.php": "./index.html",
     "index.php/": "./index.html",
     "index.php/configuration": "../configuration/index.html",
     "index.php/connect": "../operation/operation.html#connecting",
@@ -210,7 +211,7 @@ redirects = {
     "screenshots": "./operation/interface.html#main-screens",
     "simple-throttle-6": "./configuration/preferences.html#throttle-screen-layout",
     "sites/enginedriver.mstevetodd.com/files/": "../../downloads/index.html",
-    "sites/enginedriver.mstevetodd.com/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf": "../../_static/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf",
+    "sites/enginedriver.mstevetodd.com/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf": "../../../_static/files/EngineDriver_App-MRC_Wi-Fi_Module_Settings.pdf",
     "supported-withrottle-servers": "./about/index.html",
 
     "tablet-web-conductor": "./index.html",
