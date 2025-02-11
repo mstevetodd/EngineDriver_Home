@@ -4,9 +4,17 @@ Privacy Policy
 
 .. include:: ../include.rst
 
+----
+
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On This Page
+     :local:
+
 |ED| does not collect or transmit any personal information.
 
-|ED| does not transmit any information from the phone, other than the model train information within the app, to any other app, site or person.  Data within the app is only used within the app, or to instruct a server to operate your model trains.
+|ED| does not transmit any information from the phone, other than the model train information, to any other app, site or person.  Model train information within the app is only used within the app, or to instruct a server to operate your model trains.
 
 Required Permissions
 ====================

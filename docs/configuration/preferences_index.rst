@@ -7,6 +7,8 @@ Detailed Information |BR| |small-start| Preferences & Configuration |small-end|
 
 .. include:: ../include.rst
 
+----
+
 .. sidebar:: Below This Page
 
    .. toctree::

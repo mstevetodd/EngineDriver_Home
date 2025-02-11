@@ -9,7 +9,7 @@ Conserving Battery Power
 
 ----
 
-If you  Android device/phone runs out of battery too quickly you can try the folowing to help conserve power:
+If your Android device/phone runs out of battery too quickly you can try the folowing to help conserve power:
 
 * Keep the brightness of the device as low as practical
 * Disable Bluetooth and NFC if you are not using them

@@ -7,14 +7,14 @@ Preferences
 
 .. include:: ../include.rst
 
+----
+
 .. sidebar::
    :class: sidebar-on-this-page
 
    .. contents:: On This Page
       :local:
       :depth: 3
-
-----
 
 .. image:: ../_static/images/parts/menu_throttle_neon_blue_theme.png
    :scale: 20%
@@ -1258,9 +1258,7 @@ Consist Functions - Follow Rule Style
 
 Which style of rules to follow in a consist when function buttons are pressed.
 
-See the :ref:`Advanced Consist Function Mapping <configuration/functions:advanced consist function mapping>` section of the Functions page for more information.
-
-Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+See the :doc:`/operation/consist-follow-functions` page for detailed information on the different rule types and how to use them.
 
 Note: If 'Use Default function labels' is enabled, 'Special...' will also apply to the lead (or only) loco.
 

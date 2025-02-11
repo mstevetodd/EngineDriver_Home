@@ -7,6 +7,13 @@ Changes / Updates
 
 .. include:: ../include.rst
 
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On This Page
+      :local:
+      :depth: 3
+
 Production Changes
 --------------------------------------------
 

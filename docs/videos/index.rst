@@ -4,6 +4,8 @@ Videos
 
 .. include:: ../include.rst
 
+----
+
 .. sidebar::
    :class: sidebar-on-this-page
 

@@ -138,8 +138,6 @@ If the *Power Action Bar button* is enabled, simply click on it to turn track po
   
   See the :ref:`Power Button option in the Preferences page <configuration/preferences:throttle screen action bar preferences>` for more information on enabling the Power Button on the Action bar.
 
-----
-
 Selecting & Releasing Locos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -866,6 +864,10 @@ To exit |ed|, you can:
 
 * Press the Android :guilabel:`Back` button once from the main screens (more than once if you are on one of the secondary screens) |br|\ OR
 * :menuselection:`Menu --> Exit`
+
+|ed| can be configured to exit when the Android :guilabel:`Back` button is pressed twice quickly.
+
+  See the :ref:`Double Back Buton to Exit? in the Preference page <configuration/preferences:Device Preferences>` for information.
 
 Exiting |ed|:
 

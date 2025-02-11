@@ -7,14 +7,14 @@ Setup Wizard
 
 .. include:: ../include.rst
 
+----
+
 .. sidebar::
    :class: sidebar-on-this-page
 
    .. contents:: On This Page
       :local:
       :depth: 3
-
-----
 
 The *Setup Wizard* will start automatically the first time you run |ed| after you install it.  It sets some basic preferences and asks for the necessary permissions.  These preferences can be subsequently be changed use the : :menuselection:`Menu --> Preferences`, or by re-running the wizard, which can only be done from the menu on the |C-S|.
 
