@@ -18,7 +18,11 @@ h2, .h2 {
   line-height: 200%;
   margin-bottom: 12px !important;
 }
- 
+
+html[data-theme='dark'] h2, .h2 {
+  color: #c1b5a7 !important;
+}
+
 h3, .h3 {
   /* font-family: Lato,proxima-nova,Helvetica Neue,Arial,sans-serif !important; */
   font-family: "Russo One",Helvetica,Arial,sans-serif !important;
@@ -37,6 +41,9 @@ h5, .h5 {
   font-style: italic;
 }
 
+html[data-theme='dark'] .rst-content .toc-backref {
+  color: #c1b5a7 !important;
+}
 
 .wy-nav-top {
   background:#ffae00 !important; 
