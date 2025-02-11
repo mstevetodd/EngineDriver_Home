@@ -9,7 +9,7 @@
   <title>Function Buttons &mdash; Engine Driver Home  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=023ff386" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=737d41b0" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -852,39 +852,8 @@
 </section>
 <section id="advanced-consist-function-mapping">
 <h2>Advanced Consist Function Mapping<a class="headerlink" href="#advanced-consist-function-mapping" title="Link to this heading"></a></h2>
-<div class="admonition-todo admonition" id="id5">
-<p class="admonition-title">Todo</p>
-<p>Advanced Consist Function Mapping</p>
-</div>
 <p>Which style of rules to follow in a consist when function buttons are pressed.</p>
-<p>Note: If ‘Use Default function labels’ is enabled, ‘Special…’ will also apply to the lead (or only) loco.</p>
-<p>You can now arrange the default function labels on ED any way you want, and as long as the equivalent function has a similar name it doesn’t matter what function number it is, it will activate it correctly.</p>
-<p>I have added two new options to the menu “Special Exact” and “Special Partial”
-These options override the Original and Complex options completely and ignore the string matching preferences (it disables them)</p>
-<p>Their behaviour is:</p>
-<ul class="simple">
-<li><p>for every loco in the consist</p>
-<ul>
-<li><p>for every function in the locos roster entries</p>
-<ul>
-<li><p>if the string of the function label exactly matches (or partially matches) the label of the function the ED is currently showing for the pressed function button</p>
-<ul>
-<li><p>the function will be activated on that loco</p></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
-<p>Note</p>
-<ul class="simple">
-<li><p>There is no lead trail checking.  any matching function will be activated in any loco</p></li>
-<li><p>If no matching function on a particular loco (including the lead) nothing will happen for that loco</p></li>
-<li><p>It will use the ED default function labels if you have set them</p></li>
-<li><p>OR whatever labels have been loaded for the lead loco.</p></li>
-<li><p>Partial patching is a bit so-so.  I have a couple of sound decoders that allow me to change the bell and whistle tones in the function buttons.  Those functions also get activated when I just press ‘Bell’ or ‘Whistle’ as that text was also in the labels for the functions..</p></li>
-</ul>
+<p>Advanced Consist Function Mapping is described on the <a class="reference internal" href="../operation/consist-follow-functions.html"><span class="doc">Consist Function Follow</span></a> page.</p>
 </section>
 </section>
 
@@ -906,7 +875,7 @@ These options override the Original and Complex options completely and ignore th
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f651f0d3ee0>
+    <jinja2.runtime.BlockReference object at 0x7f2869461e40>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

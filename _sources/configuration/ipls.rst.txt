@@ -7,6 +7,12 @@ In Phone Loco Sounds (IPLS)
 
 .. include:: ../include.rst
 
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On This Page
+      :local:
+      :depth: 3
 
 Virtual Sounds / In Phone Loco Sounds (IPLS)
 ============================================

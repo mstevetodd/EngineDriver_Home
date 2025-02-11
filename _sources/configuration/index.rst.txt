@@ -7,13 +7,14 @@ Configuration
 
 .. include:: ../include.rst
 
+----
+
 .. toctree::
    :hidden:
 
    configuration_withrottle
    configuration
    preferences_index
-
 
 See:
 
