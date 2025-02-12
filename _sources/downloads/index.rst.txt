@@ -16,7 +16,7 @@ Downloads
 Production Version
 ------------------
 
-The current Published version (v2.37.187) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download of the .apk file <../_static/apk/EngineDriver.apk>`_.
+The current Published version (v2.38.193) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download of the .apk file <../_static/apk/EngineDriver.apk>`_.
 
 Installing from the Play Store is preferred as you will automatically receive updates to the app, as long as your device/phone periodically connects to the internet.
  
@@ -34,7 +34,7 @@ Older or Other Versions - Manual Install
 
 * Sometimes you may need to uninstall previous versions before you can install the new version this way.
 
-* `EngineDriver-2.38.193.apk (Beta) <../_static/apk/EngineDriver-2.38.193.apk>`_
+* `EngineDriver-2.38.193.apk <../_static/apk/EngineDriver-2.38.193.apk>`_
 * `EngineDriver-2.37.187.apk <../_static/apk/EngineDriver-2.37.187.apk>`_
 * `EngineDriver-2.36.177.apk <../_static/apk/EngineDriver-2.36.177.apk>`_
 * `EngineDriver-2.35.173.apk <../_static/apk/EngineDriver-2.35.173.apk>`_
