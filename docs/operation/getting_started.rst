@@ -13,7 +13,7 @@ Quick Start / Getting Started
 * Install |ed| from the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../downloads/index.html>`_ of the .apk. 
 * **Start your WiThrottle server**
 
-  * For |JMRI|, Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in *DecoderPro* under :menuselection:`Tools --> Start WiThrottle Server`. |br|\ It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ :menuselection:`Tools -> Start JMRI Web Server`. 
+  * For |JMRI|, Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in *DecoderPro* under :menuselection:`Tools --> Start WiThrottle Server`. |BR|\ It is also highly recommended that you start the `JMRI Web Server function <https://www.jmri.org/help/en/html/web/index.shtml>`_ :menuselection:`Tools -> Start JMRI Web Server`. 
   * For other server devices, turning them on and waiting a minute or two should be sufficient.
 
     See the `Prerequisites <../prerequisites/index.html>`_ page for more information.
@@ -53,7 +53,7 @@ Quick Start / Getting Started
        :align: right
 
     * If your |WTS-DCC-EX| does not show up, check that are on the same network as the |WTS-DCC-EX|.   
-    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS-DCC-EX| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press :guilabel:`Connect`. |br|\ Note: this situation is sometimes possible even if you are on the same network. |br|\ |br|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |br|\ |br|\ 
+    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS-DCC-EX| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press :guilabel:`Connect`. |BR|\ Note: this situation is sometimes possible even if you are on the same network. |BR|\ |BR|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |BR|\ |BR|\ 
 
   |FORCE-BREAK|
 
@@ -104,11 +104,11 @@ Quick Start / Getting Started
   |FORCE-BREAK|
 
   * Press your phone's Menu button :guilabel:`≡` to access screens for Turnout/Point, Route and Power control, as well as adjust settings and set numerous preferences
-  * You can also 'swipe/fling' left or right to jump quickly back and forth between the Throttle, Routes, Turnouts/Points and Web pages. (Use Preferences to choose which are in the left / right swipe list) |br|\ |br|\ 
+  * You can also 'swipe/fling' left or right to jump quickly back and forth between the Throttle, Routes, Turnouts/Points and Web pages. (Use Preferences to choose which are in the left / right swipe list) |BR|\ |BR|\ 
 
   * To release a single loco (or consist/multiple unit), click :guilabel:`Select` again and click the :guilabel:`Release` button
 
-  * To release all locos, just press the :guilabel:`Back` button and exit the app. |br|\ This will also stop your locos (can be overridden in preferences)
+  * To release all locos, just press the :guilabel:`Back` button and exit the app. |BR|\ This will also stop your locos (can be overridden in preferences)
 
 Note:
 

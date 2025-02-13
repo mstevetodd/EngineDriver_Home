@@ -32,9 +32,9 @@ Here are all the steps needed for Microsoft Windows:
   * Create a Personal Access Token that will allow you remotely update your repository.  See \[`here <https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token>`_\] for details.   Copy the full code of the token somewhere as you will need it later.
 
 * Install `Android Studio <https://developer.android.com/studio>`_.
-* Open Android Studio |br|\ (If necessary, close any open project and restart, so you get the Welcome Wizard)
+* Open Android Studio |BR|\ (If necessary, close any open project and restart, so you get the Welcome Wizard)
 * Select ``Check out project from Version control`` -> Git
-* In the Clone Repository window, enter the Git Repository URL: ``https://github.com/JMRI/EngineDriver``, -> ``Clone``.  |br|\ *Note this is the original repository, not your clone.*
+* In the Clone Repository window, enter the Git Repository URL: ``https://github.com/JMRI/EngineDriver``, -> ``Clone``.  |BR|\ *Note this is the original repository, not your clone.*
 * Open the project. 
 * Only if needed...
 
@@ -53,7 +53,7 @@ To test your changes:
 
 To publish your changes:
 
-* Android Studio, commit and push your changes to *your own* GitHub repository.. |br|\ To do this you will need to define a new remote ``https://github.com/<your name>/EngineDriver``
+* Android Studio, commit and push your changes to *your own* GitHub repository.. |BR|\ To do this you will need to define a new remote ``https://github.com/<your name>/EngineDriver``
 * Go to GitHub and issue a pull request for your branch to be pulled into the original repository. Once it's merged in by one of the admins, your changes will go live!
 
 Contributing to the Localisation (Languages)
@@ -82,14 +82,14 @@ The steps listed here provide guidance on how to edit and preview changes to the
 
 * You need to install a number of tools on you local machine:
  
-  * An appropriate text editor. |br|\ For Windows we recommend the free `Visual Studio Code IDE (VSC) <https://code.visualstudio.com/>`_. 
+  * An appropriate text editor. |BR|\ For Windows we recommend the free `Visual Studio Code IDE (VSC) <https://code.visualstudio.com/>`_. 
 
     * If using VSC, we recommend installing the `reStructuredText Syntax highlighting <https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst>`_ extension.
 
-  * A version of Git. |br|\ For Windows we recommend the free `GitHub Desktop <https://desktop.github.com/>`_.
-  * A current version of 'Python 3' (which also installs 'pip'). |br|\ The Microsoft Store contains Python published by the Python Software Foundation for Windows. 
+  * A version of Git. |BR|\ For Windows we recommend the free `GitHub Desktop <https://desktop.github.com/>`_.
+  * A current version of 'Python 3' (which also installs 'pip'). |BR|\ The Microsoft Store contains Python published by the Python Software Foundation for Windows. 
 
-* Then use 'pip' to install the required packages; 'sphinx' and the theme 'sphinx_rtd_theme'.  |br|\ Open and command prompt and enter: 
+* Then use 'pip' to install the required packages; 'sphinx' and the theme 'sphinx_rtd_theme'.  |BR|\ Open and command prompt and enter: 
   
   * ``pip install -r requirements.txt``
   
@@ -103,14 +103,14 @@ The steps listed here provide guidance on how to edit and preview changes to the
   
   * Using GitHub Desktop, clone your repository to your local machine
   * Edit the files in the ``EngineDriver_Home/docs`` folder
-  * Save, then check and preview your changes by running ``make github`` from the root of the ``EngineDriver_Home`` folder. [#makegithub]_ |br|\ This must be done from ``cmd.exe`` in Windows, not ``PowerShell``. |br|\ If any warnings are reported, fix these and run ``make github`` again
+  * Save, then check and preview your changes by running ``make github`` from the root of the ``EngineDriver_Home`` folder. [#makegithub]_ |BR|\ This must be done from ``cmd.exe`` in Windows, not ``PowerShell``. |BR|\ If any warnings are reported, fix these and run ``make github`` again
   * Preview your changes locally by going to your local directory ``EngineDriver_Home/docs/_build/html`` and open ``index.html`` in your web browser of choice.  
   * Use GitHub Desktop to commit and then push your changes
 
 * In GitHub
   
-  * You can check the 'Actions' to see if it built correctly. |br|\ You can preview the pages on GitHub at ``https://<yourname>.github.io/EngineDriver_Home``
-  * Issue a pull request for your branch to be pulled into the main branch. |br|\ Once it's merged in by one of the admins, your changes will go live!
+  * You can check the 'Actions' to see if it built correctly. |BR|\ You can preview the pages on GitHub at ``https://<yourname>.github.io/EngineDriver_Home``
+  * Issue a pull request for your branch to be pulled into the main branch. |BR|\ Once it's merged in by one of the admins, your changes will go live!
 
 
 .. [#makegithub] There is a batch file ``make github.bat`` in the ``EngineDriver_Home`` folder which should be able to be double-clicked on the run this command. It will pause at the end to allow you see if there are any issues.
@@ -118,8 +118,8 @@ The steps listed here provide guidance on how to edit and preview changes to the
 Style Guidelines
 ----------------
 
-* Use British/Australian/Canadian spelling e.g. 'colour' not 'color'.  |br|\ (Primarily because it is used in more English speaking countries)
-*	Use railroad/railway terminology that is understandable by all English-speaking people. |br|\ Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, consists/multiple units, switching/shunting.  (Primarily because DCC and JMRI uses the US terminology)
+* Use British/Australian/Canadian spelling e.g. 'colour' not 'color'.  |BR|\ (Primarily because it is used in more English speaking countries)
+*	Use railroad/railway terminology that is understandable by all English-speaking people. |BR|\ Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, consists/multiple units, switching/shunting.  (Primarily because DCC and JMRI uses the US terminology)
 * In general use 'loco' instead of 'locomotive' or 'engine'
 * Avoid the term 'Checked'. Use 'Enabled' instead.  ("Checked' is more a US term.)
 * Use bolded \*\*Engine Driver\*\* or \|ed\| not 'Engine Driver app', 'EngineDriver' or 'Engine Driver Throttle' (except on the first page) - |ed|
@@ -135,7 +135,7 @@ Style Guidelines
 * Use \:menuselection\:\`Menu --> Preferences --> ..\` for menu descriptions - :menuselection:`Menu --> Preferences --> ..` 
 * Use \:guilabel\:\`\GUI labels\` for buttons  - :guilabel:`GUI labels`
 * Avoid using 'phone' alone. Preferably use 'Android device/phone'
-* For dates, use dd-mmm-yyyy or yyyy-mm-dd to avoid confusion with the way dates are uniquely written in the US. |br|\ e.g. 2-Mar-2022 or 2022-3-2, not 2-3-2022 
+* For dates, use dd-mmm-yyyy or yyyy-mm-dd to avoid confusion with the way dates are uniquely written in the US. |BR|\ e.g. 2-Mar-2022 or 2022-3-2, not 2-3-2022 
 * Heading levels:
 
   * ######### with overline, for parts - not really used

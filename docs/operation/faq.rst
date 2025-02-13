@@ -177,7 +177,7 @@ Q. No Locomotive Icons appear in the Roster
   A. The Roster List, and Recent Locos List on the Select Loco screen will automatically show icons for your locos only if:
 
     * The **Web Server** (not just the |WTS|) is running on the JMRI server
-    * The loco itself has an icon added for it in the JMRI roster |br|\ OR
+    * The loco itself has an icon added for it in the JMRI roster |BR|\ OR
     * A locally cached or manually chosen image is available for the loco (see 'Locomotive Icons' on the `Operation screen <../operations/index.html>`_)
 
 Q. Why can't I control 6 locos
@@ -286,7 +286,7 @@ Q. I don't like the direction buttons in that order
 
   You can also change them on the fly.
 
-  Labeling the direction buttons for the directions/conventions of your railroad/railway.
+  Labelling the direction buttons for the directions/conventions of your railroad/railway.
 
   e.g. North South, West East, Up Down.
 

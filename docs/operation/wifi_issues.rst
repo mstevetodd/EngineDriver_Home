@@ -30,7 +30,7 @@ This can cause problems if you sometimes use your device to connect to the inter
 
 Some devices have a setting to turn off this feature, some do not. 
 Some provide a notification that "Wi-Fi has no internet access, Tap for options", followed by "This network has no internet access. Stay connected?" that can be used to disable this feature and remain connected to the WiFi. 
-If you missed the prompt, you can 'forget' the network, and reenter your WiFi credentials to get the prompt again.
+If you missed the prompt, you can 'forget' the network, and re-enter your WiFi credentials to get the prompt again.
 
 Firewalls
 ---------
@@ -52,7 +52,7 @@ EngineDriver will show a message "Using MOBILE network, not WiFi. check WiFi set
 
 Some devices have a setting to turn off this feature, some do not. 
 Some provide a notification that "Wi-Fi has no internet access, Tap for options", followed by "This network has no internet access. Stay connected?" that can be used to disable this feature and remain connected to the WiFi. 
-If you missed the prompt, you can "forget" the network, and reenter your WiFi credentials to get the prompt again.
+If you missed the prompt, you can "forget" the network, and re-enter your WiFi credentials to get the prompt again.
 
 Workaround: If you are unable to turn off the feature, you can enable 'Airplane Mode', then enable ONLY WiFi, and then connect your WiFi.
 

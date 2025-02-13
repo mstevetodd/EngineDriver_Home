@@ -270,19 +270,19 @@ The Throttle areas can be configured to have a *Speed Slider*.  (All :ref:`Throt
 
 Depending on the ``Throttle Screen Layout`` chosen in the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` preference, all sliders on the |T-S| will be either:
 
-* one-directional (0% - 100%) [#PCT]_  |br|\ or 
-* bi-directional (-100% - 0 - +100%) |br| |br|
+* one-directional (0% - 100%) [#PCT]_  |BR|\ or 
+* bi-directional (-100% - 0 - +100%) |BR| |BR|
 
 Bi-directional sliders are useful for when you are switching/shunting. i.e. moving your locos backwards and forwards a lot.
 
 Several preferences can change the appearance or actions of the *Speed Slider*\:
 
-* :ref:`Increase Slider/Speed Height? <configuration/preferences:increase slider/speed height?>` |br| When set, this preference will show a taller Slider, or Speed buttons, for throttles
-* :ref:`Throttle Speed Slider Margin <configuration/preferences:throttle speed slider margin>` |br| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
-* :ref:`Hide Speed Slider? <configuration/preferences:hide speed slider?>` |br| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
-* :ref:`Tick Marks on Speed Sliders? <configuration/preferences:tick marks on speed sliders?>` |br| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
-* :ref:`Switching throttle Dead Zone <configuration/preferences:switching throttle dead zone>` |br| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
-* :ref:`Stop Button Vertical Margins <configuration/preferences:stop button vertical margins>` |br| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
+* :ref:`Increase Slider/Speed Height? <configuration/preferences:increase slider/speed height?>` |BR| When set, this preference will show a taller Slider, or Speed buttons, for throttles
+* :ref:`Throttle Speed Slider Margin <configuration/preferences:throttle speed slider margin>` |BR| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
+* :ref:`Hide Speed Slider? <configuration/preferences:hide speed slider?>` |BR| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
+* :ref:`Tick Marks on Speed Sliders? <configuration/preferences:tick marks on speed sliders?>` |BR| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
+* :ref:`Switching throttle Dead Zone <configuration/preferences:switching throttle dead zone>` |BR| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
+* :ref:`Stop Button Vertical Margins <configuration/preferences:stop button vertical margins>` |BR| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
 
 .. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the :ref:`Speed Units preference <configuration/preferences:speed units>`.
 
@@ -325,7 +325,7 @@ For the Horizontal Sliders only, The position of these buttons in relation to th
 
   See the :ref:`Display Speed Buttons? <configuration/preferences:display speed buttons?>` preference for more information on enabling these buttons.
 
-  See the :ref:`Speed Button Change Amount <configuration/preferences:speed button change amount>` preference for information on the abount that 
+  See the :ref:`Speed Button Change Amount <configuration/preferences:speed button change amount>` preference for information on the about these buttons. 
 
 |HR-DASHED|
 
@@ -360,7 +360,7 @@ The *Function Button area* can also show:
 * Pause
 * Limit Speed
 
-The *Function Buttons Scroll Area* is shown by default on all Throttle Screen layouts except ``Simple``.  It can be enable fot the ``Simple`` layout
+The *Function Buttons Scroll Area* is shown by default on all Throttle Screen layouts except ``Simple``.  It can be enable for the ``Simple`` layout
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -384,13 +384,13 @@ Will show from 0 (zero) to 26 DCC function buttons, depending on a number of fac
 * The default labels for |ed|  (which can be changed)
 
 
-If the loco (or first loco of a consist/multiple unit) was selected from the |WTS-DCC-EX| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS-DCC-EX|.  This is also trun if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
+If the loco (or first loco of a consist/multiple unit) was selected from the |WTS-DCC-EX| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS-DCC-EX|.  This is also turn if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
 
 If the loco (or first loco of a consist/multiple unit) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in |ED| in the |FD-S|.
 
 The behaviour of the Function Buttons for locos selected from the |WTS-DCC-EX| roster can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS-DCC-EX| roster will also show the Default Functions labels.
 
-Clicking on any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of differnt ways.
+Clicking on any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of different ways.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -420,15 +420,15 @@ These are optional buttons that, if enabled, appear in the same areas as the Fun
 
 When clicked while the loco or consist/multiple unit is moving, the :guilabel:`Pause` button will gradually slow the train down zero and a predefined rate.  The rate can be altered in the preferences.
 
-When subsequently clicked while the loco or consist/multiple unit is stationary, the :guilabel:`Pause` button will gradually increase the spped of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
+When subsequently clicked while the loco or consist/multiple unit is stationary, the :guilabel:`Pause` button will gradually increase the speed of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
 
 **Alternate Pause Button** 
 
-An 'alternate Pause button' can be enabled in the preferences.  This behaves exactly the same as the normal Pause button, but appear below the throttle slider and speed buttons.
+An 'alternate Pause button' can be enabled in the preferences.  This behaves exactly the same as the normal Pause button, but appears below the throttle slider and speed buttons.
 
 **Limit Speed Button** 
 
-When enabled by clicking on the ::guilabel:`Limit Speed` button, will restrict the maximum speed on the throttle to the predefined amount.  By default the speed will be limited to 50%, but thic can be chnaged in preerences.
+When enabled by clicking on the :guilabel:`Limit Speed` button, |ED| will restrict the maximum speed on the throttle to the predefined amount.  By default the speed will be 50%, but this can be changed in preferences.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -442,7 +442,7 @@ In Phone Loco Sounds buttons (IPLS)
 
 The *Function Button area* can also be configured in the preferences to show the IPLS buttons  (In Phone Loco Sounds)
 
-These are optional buttons that allow you to 'play' specific loco realetd sounds through your device/phone.
+These are optional buttons that allow you to 'play' specific loco related sounds through your device/phone.
 
 The buttons include:
 
@@ -453,9 +453,9 @@ The buttons include:
 
 'Horn' and 'Short Horn' are momentary.  'Mute' and 'Bell' are latching.
 
-'Mute' can be hidden by changing a prefernces.
+'Mute' can be hidden by changing a preferences.
 
-See the :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` section of the operation page for more information usuing the IPLS.
+See the :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` section of the operation page for more information using the IPLS.
 
 See the :doc:`In Phone Loco Sounds (IPLS) </configuration/ipls>` page for more information on the configuring IPLS buttons.
 
@@ -611,13 +611,13 @@ Immersive Mode (Full Screen)
 
 .. todo:: Immersive Mode (Full Screen)
 
-Immersive mode hides the system navigation bottons at the bottom of the screen on the Throttle screen only, to give you more screen realestate for the throttle UI.
+Immersive mode hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.
 
-It can optionaly also hide the system status bar at the top of the page.
+It can optionally also hide the Android System Status Bar at the top of the page.
 
-Swiping up from off screen will normally temporarily show the navigation buttons again.
+Swiping up from off screen will normally temporarily show the Android navigation buttons again.
 
-You can also configure specific Swipe up or Swipe down preferences to enter or exit immersive mode.
+You can also configure specific :ref:`Swipe up or Swipe down <configuration/preferences:swipe up-down preferences>` or :ref:`Shake <configuration/preferences:accelerometer (shake) preferences>` preferences to enter or exit immersive mode.
 
 .. note:: 
      :class: note-ed-hidden-title
@@ -656,7 +656,7 @@ Swiping Up and/or Down on the Throttle page can optional be configured to:
 * Enable/Disable Immersive mode
 * Switch Throttle Layouts
 * Increase/Decrease Loco speed
-* goto the next throttle
+* Go to the next throttle
 
 .. note:: 
      :class: note-ed-hidden-title
@@ -668,14 +668,14 @@ Swiping Up and/or Down on the Throttle page can optional be configured to:
 Accelerometer (Shake)  
 """""""""""""""""""""
 
-Shaking you device/phone while on the Throttle page can optional be configured to:
+Shaking your device/phone while on the Throttle page can optional be configured to:
 
 * Do Nothing
 * Hide the Web View (if enabled)
 * Lock and Dim the screen
 * Dim the screen
 * Switch Throttle Layouts
-* goto the next throttle
+* Go to the next throttle
 
 .. note:: 
      :class: note-ed-hidden-title
@@ -1285,7 +1285,7 @@ DCC-EX Function Settings Screen
    :scale: 8 %
    :align: right
 
-This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC addresss . i.e. not locos acquired from the roster.
+This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC address . i.e. not locos acquired from the roster.
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX Function Settings`.
 
@@ -1321,9 +1321,9 @@ Gamepad Test Screen
 
 Accessed from the |T-S| via the :menuselection:`Menu --> Gamepads -> Gamepad Test X`. (where 'X' is the number of the gamepad.)
 
-|br|
+|BR|
 
-|br|
+|BR|
 
 
 ----
@@ -1344,7 +1344,7 @@ This is sometimes useful for analysing problems.
 
 The option to `Start recording to file` creates a user-accessible file that can be sent to the |ed| app developers or the `Groups.io <https://groups.io/g/jmriusers/topics>`_ help group to assist you in resolving a problem.
 The file will be located on your mobile phone at:
-Internal storage ``/Android/data/jmri.enginedriver/files`` |br|\ and will be named something like: ``logcat9999999999999.txt``
+Internal storage ``/Android/data/jmri.enginedriver/files`` |BR|\ and will be named something like: ``logcat9999999999999.txt``
 
 Enable the ??? preference to include the timestamp on each line of the log.
 
@@ -1608,7 +1608,7 @@ The *Fast Clock* Action Bar button is enabled with the `Fast Clock Display <../c
 
    See `JMRI's Fast Clock page <https://www.jmri.org/help/en/package/jmri/jmrit/simpleclock/SimpleClockFrame.shtml>`_ for information on how to set up a Fast Clock.
 
-|br|
+|BR|
 
 Children's Timer Status and Countdown
 """""""""""""""""""""""""""""""""""""
@@ -1624,7 +1624,7 @@ Children's Timer Status and Countdown
 
    See the :ref:`Children's Timer part <operation/advanced:children's timer>` of the Advance Operation page for more information.
 
-|br|
+|BR|
 
 Full Screen or Action Bar Only left/right swipe
 """""""""""""""""""""""""""""""""""""""""""""""
@@ -1640,9 +1640,9 @@ WiThrottle Server Name
 
 .. todo:: WiThrottle Server Name
 
-|br|
+|BR|
 
-|br|
+|BR|
 
 
 ----

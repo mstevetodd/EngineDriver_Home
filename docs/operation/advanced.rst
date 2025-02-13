@@ -50,10 +50,7 @@ different settings
 
 Conserving Power 
 ^^^^^^^^^^^^^^^^
-
-.. todo:: Conserving Power 
-
-See :doc:`Conserving Power <../configuration/conserving_power>` for more information.
+If your Android device/phone runs out of battery too quickly you can try the some of the options on the :doc:`Conserving Power <../configuration/conserving_power>` page.
 
 Children's Timer
 ----------------
@@ -62,16 +59,16 @@ Children's Timer
 
 Instructions:
 
-- select the loco first.
-- enable the time limited running to the desired time, using either:
+- Select the loco first.
+- Enable the time limited running to the desired time, using either:
   
-  - the `Time limited running <../configuration/preferences.html#time-limited-running>`_ preference, (then return to the |T-S|) |br| *or* 
+  - the `Time limited running <../configuration/preferences.html#time-limited-running>`_ preference, (then return to the |T-S|) |BR| *or* 
   - the action button (`Show Timer button? <../configuration/preferences.html#show-timer-button>`_)
   
 - The timer will start with the first increase in speed
 - When the timer runs out:
 
-  - You must come back to this preference to reset the time (or clear it) |br| *or* 
+  - You must come back to this preference to reset the time (or clear it) |BR| *or* 
   - click the action button again.
  
 Recommendations:

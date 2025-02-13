@@ -18,6 +18,6 @@ Configuration
 
 See:
 
-* The :doc:`./configuration` page |br|\ |br|\ 
-* The :doc:`./configuration_withrottle` page |br|\ |br|\ 
+* The :doc:`./configuration` page |BR|\ |BR|\ 
+* The :doc:`./configuration_withrottle` page |BR|\ |BR|\ 
 * The :doc:`./preferences_index` page for more comprehensive information about the options for changing |ed| to suit you needs
