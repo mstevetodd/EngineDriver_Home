@@ -144,14 +144,19 @@ The |T-S| allows you to control:
 - Access common functions from the Action Bar and Menu
 - Control one or more locos
 
-The |T-S| contains between 1 and 6 Throttle areas depending on the Throttle layout chosen and the number of throttles for that layout (only some allow this to be changed).  
+The |T-S| contains between 1 and 6 Throttle areas depending on the :ref:`Throttle layout <configuration/preferences:throttle screen layout>` chosen and the number of throttles for that layout (only some allow this to be changed).  
 
 |HR-DASHED|
 
 Throttle Area
 """"""""""""""""""""""""""""""""""""
 
-Each Throttle on the |T-S| will display different information and buttons depending on the ``Throttle Screen Layout`` in the  `Throttle Screen Layout <../configuration/preferences.html#throttle-screen-layout>`_ preference.
+.. image:: ../_static/images/parts/throttle_area1.png
+   :scale: 10 %
+   :class: align-right
+
+Each Throttle on the |T-S| will display different information and buttons depending on the ``Throttle Screen Layout`` in the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` preference.
+
 
 Each *Throttle Area* allows you to:
 
@@ -160,6 +165,15 @@ Each *Throttle Area* allows you to:
 * Activate DCC decoder functions like the light, bell, horn 
 * Activate Virtual (IPLS) Sounds (bell, horn, short horn) (if enabled)
 
+.. image:: ../_static/images/parts/throttle_area2.png
+   :scale: 10 %
+   :class: align-right
+
+.. contents:: In this Section
+    :depth: 1
+    :local:
+    :class: in-this-section
+
 |HR-DASHED|
 
 Loco Select Button
@@ -167,14 +181,14 @@ Loco Select Button
 
 The loco :guilabel:`Select` button in the Throttle Area allows to select or release locos for that particular Throttle.  Click on the button and you will be taken to the Select Loco screen.
 
-Once you have selected a loco, the label on the button change to the DCC Address(s) or the Roster name(s) of the Loco depending on how you select the loco in the |LS-S|, and if you have the enabled the `Loco Address instead of Name? <../preferences.html#loco-address-instead-of-name>`_ preference.
+Once you have selected a loco, the label on the button will change to the DCC Address(s) or the Roster name(s) of the Loco depending on how you selected the loco in the |LS-S|, and if you have the enabled the :ref:`Loco Address instead of Name? <configuration/preferences:loco address instead of name?>` preference.
 
-When the button is displaying DCC Address(s) or the Roster name(s), click on the button again and you will be taken to the Select Loco screen where you can de-select the loco(s), select additional locos to make a consist / multiple unit train, edit the locos in the consist, or edit the lights of the locos in the consist / multiple unit.
+When the button is displaying DCC Address(s) or the Roster name(s), click on the button again and you will be taken to the |LS-S| where you can de-select the loco(s), select additional locos to make a consist / multiple unit train, edit the locos in the consist, or edit the lights of the locos in the consist / multiple unit.
 
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the `Operation <../operation/index.html#selecting-releasing-locos>`_ page for more information.
+  See the :ref:`Operation <operation/operation:Selecting & Releasing Locos>` page for more information.
 
 |HR-DASHED|
 
@@ -183,7 +197,7 @@ Speed indicator
 
 The *Speed Indicator* or *Speed* area of each throttle of the |T-S| indicates the throttle amount/setting (rather than the actual speed of the locos controlled by the the throttle).
 
-Depending on the `Speed Units Preference <../configuration/preferences.html#speed-units>`_ the upper value show will be different: 
+Depending on the :ref:`Speed Units Preference <configuration/preferences:speed units>` the upper limit shown will be different: 
 
 .. list-table::
   :width: 100%
@@ -215,7 +229,7 @@ Depending on the `Speed Units Preference <../configuration/preferences.html#spee
     - 0
     - 128
 
-Also, if one of the Shunting/Switching layouts is selected, the high number will be negative ('-') when reversed (e.g. -100 - 0 - 100)
+Also, if one of the :ref:`Shunting/Switching layouts <configuration/preferences:throttle screen layout>` is selected, the high number will be negative ('-') when reversed (e.g. -100 - 0 - 100)
 
 The *Speed Indicator* area also can show:
 
@@ -230,7 +244,7 @@ Touch another *Speed Indicator* to change which Throttle the Hardware Volume but
 
 *Gamepad Indicator*
 
-A number ('1','2', etc.) will be shown in the *Speed Indicator* area to indicate which throttle is being controlled by the each connected gamepad.  Set one of the gamepad to allow you to switch throttle it controls.
+A number ('1','2', etc.) will be shown in the *Speed Indicator* area to indicate which throttle is being controlled by the each connected gamepad.  Set one of the gamepads to allow you to switch throttle it controls.
 
 *Direction Indicator*
 
@@ -239,7 +253,7 @@ If one of the Shunting/Switching layouts is selected, a triangle symbol will be 
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the Throttle Control Preferences section of the `Speed Units preference <../configuration/preferences.html#speed-units>`_ for a information on changing the ``Speed Units`` options.
+  See the Throttle Control Preferences section of the :ref:`Speed Units preference <configuration/preferences:speed units>` for a information on changing the ``Speed Units`` options.
 
 |HR-DASHED|
 
@@ -248,9 +262,13 @@ Speed Slider Area
 .. image:: ../_static/images/parts/slider_horizontal.png
   :scale: 100 %
 
-The Throttle areas can be configured with a *Speed Slider*.  (All Throttle Screen layouts except the 'Big Button' layouts include sliders by default.) Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for that Throttle till it gets to that point.
+The Throttle areas can be configured to have a *Speed Slider*.  (All :ref:`Throttle Screen Layouts <configuration/preferences:throttle screen layout>` except the 'Big Button' layouts include sliders by default.) 
 
-Depending on the ``Throttle Screen Layout`` chosen in the  `Throttle Screen Layout <../configuration/preferences.html#throttle-screen-layout>`_ preference, all sliders on the |T-S| will be either:
+**Dragging you finger** along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. 
+
+**Pressing and holding** your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for that Throttle till it gets to that point.
+
+Depending on the ``Throttle Screen Layout`` chosen in the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` preference, all sliders on the |T-S| will be either:
 
 * one-directional (0% - 100%) [#PCT]_  |br|\ or 
 * bi-directional (-100% - 0 - +100%) |br| |br|
@@ -259,14 +277,14 @@ Bi-directional sliders are useful for when you are switching/shunting. i.e. movi
 
 Several preferences can change the appearance or actions of the *Speed Slider*\:
 
-* `Increase Slider/Speed Height? <../configuration/preferences.html#increase-slider-speed-height>`_ |br| When set, this preference will show a taller Slider, or Speed buttons, for throttles
-* `Throttle Speed Slider Margin <../configuration/preferences.html#throttle-speed-slider-margin>`_ |br| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
-* `Hide Speed Slider? <../configuration/preferences.html#hide-speed-slider>`_ |br| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
-* `Tick Marks on Speed Sliders? <../configuration/preferences.html#tick-marks-on-speed-sliders>`_ |br| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
-* `Switching throttle Dead Zone <../configuration/preferences.html#switching-throttle-dead-zone>`_ |br| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
-* `Stop Button Vertical Margins <../configuration/preferences.html#stop-button-vertical-margins>`_ |br| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
+* :ref:`Increase Slider/Speed Height? <configuration/preferences:increase slider/speed height?>` |br| When set, this preference will show a taller Slider, or Speed buttons, for throttles
+* :ref:`Throttle Speed Slider Margin <configuration/preferences:throttle speed slider margin>` |br| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
+* :ref:`Hide Speed Slider? <configuration/preferences:hide speed slider?>` |br| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
+* :ref:`Tick Marks on Speed Sliders? <configuration/preferences:tick marks on speed sliders?>` |br| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
+* :ref:`Switching throttle Dead Zone <configuration/preferences:switching throttle dead zone>` |br| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
+* :ref:`Stop Button Vertical Margins <configuration/preferences:stop button vertical margins>` |br| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
 
-.. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the  `Speed Units preference <../configuration/preferences.html#speed-units>`_.
+.. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the :ref:`Speed Units preference <configuration/preferences:speed units>`.
 
 |HR-DASHED|
 
@@ -276,7 +294,7 @@ Stop Button
 .. image:: ../_static/images/parts/stop_button_horizontal.png
    :scale: 80 %
 
-Clicking the ``Stop`` button of a throttle will the loco or consists / multiple unit controlled by that throttle.  If the locos have momentum configured in the decoded it/they will slow then stop. 
+Clicking the ``Stop`` button of a throttle will the loco or consist / multiple unit controlled by that throttle.  If the locos has momentum configured in the decoder it/they will come slowly to a stop.  i.e. it obeys the momentum CV settings.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -293,12 +311,12 @@ Speed Buttons
 
 The Throttles may optionally be configured have simple buttons that allow you to increase or decrease the loco's speed in pre-defined steps. 
 
-For horizontal *speed sliders*, the buttons are displayed at either end of the sliders. For vertical *speed sliders*, the buttons are displayed at the top and bottom of the sliders.
+For horizontal *speed sliders*, the buttons are displayed at the left and right ends of the sliders. For vertical *speed sliders*, the buttons are displayed at the top and bottom of the sliders.
 
 When enabled:
 
-* The :guilabel:`++` or :guilabel:`>>` will **increase** the throttle speed by the `Speed Button Change Amount <../configuration/preferences.html#speed-button-change-amount>`_.
-* The :guilabel:`- -` or :guilabel:`<<` will **decrease** the throttle speed by the `Speed Button Change Amount <../configuration/preferences.html#speed-button-change-amount>`_.
+* The :guilabel:`++` or :guilabel:`>>` will **increase** the throttle speed by the :ref:`Speed Button Change Amount <configuration/preferences:speed button change amount>`.
+* The :guilabel:`- -` or :guilabel:`<<` will **decrease** the throttle speed by the :ref:`Speed Button Change Amount <configuration/preferences:speed button change amount>`.
 
 For the Horizontal Sliders only, The position of these buttons in relation to the speed sliders (the space between), can be altered with the :ref:`Speed Slider Margin <configuration/preferences:throttle speed slider margin>` preference.
 
@@ -388,45 +406,71 @@ Clicking on any function button will instruct the loco to activate that DCC Func
 Pause and Limit Speed buttons
 '''''''''''''''''''''''''''''
 
-.. todo:: Pause and Limit Speed buttons
+.. image:: ../_static/images/parts/limit_speed_and_pause_buttons.png
+  :scale: 20 %
+  :class: align-right
 
 The *Function Button area* can also show:
 * *Pause* button
 * *Limit Speed* button
 
-These are optional buttons 
+These are optional buttons that, if enabled, appear in the same areas as the Function Buttons and the :doc:`In Phone Loco Sounds buttons </configuration/ipls>` (if enabled).
 
+**Pause Button** 
+
+When clicked while the loco or consist/multiple unit is moving, the :guilabel:`Pause` button will gradually slow the train down zero and a predefined rate.  The rate can be altered in the preferences.
+
+When subsequently clicked while the loco or consist/multiple unit is stationary, the :guilabel:`Pause` button will gradually increase the spped of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
+
+**Alternate Pause Button** 
+
+An 'alternate Pause button' can be enabled in the preferences.  This behaves exactly the same as the normal Pause button, but appear below the throttle slider and speed buttons.
+
+**Limit Speed Button** 
+
+When enabled by clicking on the ::guilabel:`Limit Speed` button, will restrict the maximum speed on the throttle to the predefined amount.  By default the speed will be limited to 50%, but thic can be chnaged in preerences.
 
   .. note:: 
     :class: note-ed-hidden-title
 
     See the :ref:`'Limit Speed' & 'Pause' button Preferences <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` section on the Preferences page for more information on these buttons.
 
-
 |HR-DASHED|
 
-In Phone Loco Sounds buttons 
-''''''''''''''''''''''''''''
+In Phone Loco Sounds buttons (IPLS)
+'''''''''''''''''''''''''''''''''''
 
-.. todo:: In Phone Loco Sounds buttons 
+The *Function Button area* can also be configured in the preferences to show the IPLS buttons  (In Phone Loco Sounds)
 
-The *Function Button area* can also show the IPLS buttons  (In Phone Loco Sounds)
+These are optional buttons that allow you to 'play' specific loco realetd sounds through your device/phone.
 
-These are optional buttons
+The buttons include:
 
-.. note:: 
-  :class: note-ed-hidden-title
+* Mute
+* Bell
+* Horn
+* Short Horn
 
-  See the :doc:`In Phone Loco Sounds (IPLS) </configuration/ipls>` page for more information on the IPLS buttons
+'Horn' and 'Short Horn' are momentary.  'Mute' and 'Bell' are latching.
+
+'Mute' can be hidden by changing a prefernces.
+
+See the :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` section of the operation page for more information usuing the IPLS.
+
+See the :doc:`In Phone Loco Sounds (IPLS) </configuration/ipls>` page for more information on the configuring IPLS buttons.
 
 |HR-DASHED|
 
 Load Slider Area
 ''''''''''''''''
 
-.. todo:: Load Slider Area 
-
 This is unique to the |SRT-TS|.
+
+The 'Load' slider is intended to simulate if the train you are controlling has none, a few, many, or a huge number of carriages behind it. Load can also be increased or decreased to simulate going up or down a slope.
+
+The Load can be set to show either a percentage slider or a slider with a distinct number of steps/notches.
+
+The maximum load can be set in the preferences. (the Default is 1000%) The Load slider is exponential in scale, so from notch 0 to 1 to 2 only small increases of load are applied, but by the final notches, huge changes are applied.
 
 Refer to the :doc:`/operation/semi-realistic-throttle` page for more information.
 
@@ -435,9 +479,11 @@ Refer to the :doc:`/operation/semi-realistic-throttle` page for more information
 Brake Slider Area
 '''''''''''''''''
 
-.. todo:: Brake Slider Area 
-
 This is unique to the |SRT-TS|.
+
+The 'Air Brake' feature is designed to simulate a very rough approximation of the Westinghouse Air Brake system used by early US railroads.
+
+The Brake slider can be used with or without the simulation of the Air Reservoir and Air Line.
 
 Refer to the :doc:`/operation/semi-realistic-throttle` page for more information.
 
