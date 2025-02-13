@@ -300,8 +300,6 @@ These preferences allow you to specify the way DCC functions will behave in a co
 Consist Functions - Follow Rule Style Preference
 ------------------------------------------------
 
-.. todo:: See the XXX page for more information.
-
 This preference sets which style of rules to follow in a consist /  multiple unit train when function buttons are pressed in |ed|.
 
 .. figure:: /_static/images/consist_follow_functions/consist_follow_function_options.png

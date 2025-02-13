@@ -154,7 +154,7 @@ Not Recommended Gamepads
 
 These work, but have issues which make them not recommended. 
 
-.. todo:: Not Recommended Gamepads
+* none currently identified
 
 Unsupported Gamepads
 ^^^^^^^^^^^^^^^^^^^^

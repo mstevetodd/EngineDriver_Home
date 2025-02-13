@@ -88,7 +88,7 @@ The current published version is available in the `Google Play Store <https://pl
 
 The Published version (v2.37.187) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download of the .apk file <../_static/apk/EngineDriver.apk>`_.
 
-APK files for manual installation (including older verserions) are available from the :doc:`Downloads page </downloads/index>`.
+APK files for manual installation (including older versions) are available from the :doc:`Downloads page </downloads/index>`.
 
 Roadmap
 -----------
