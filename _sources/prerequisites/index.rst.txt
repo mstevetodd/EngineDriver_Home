@@ -20,11 +20,13 @@ To Use Engine Driver You must...
 
 *ALSO*
  
-2. a) A |WTS-DCC-EX| must be available on a device connected to your model train layout for |ED| to connect to.
+2. 
 
-**OR**
+   a) A |WTS-DCC-EX| must be available on a device connected to your model train layout for |ED| to connect to.
 
-2. b) A |EX-CS| must be available on a device connected to your model train layout for |ed| to connect to.
+   **OR**
+
+   b) A |EX-CS| must be available on a device connected to your model train layout for |ed| to connect to.
 
 Android Device/Phone
 --------------------
