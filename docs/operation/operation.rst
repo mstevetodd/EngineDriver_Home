@@ -51,9 +51,9 @@ Connecting Engine Driver to the WiThrottle server
 * Start |ED| |br|\ You will be presented with the |C-S|
 * On the |C-S| there are three ways you can select a |WTS-DCC-EX| to connect to:
 
-  - IP Address and Port
-  - Discovered Servers
-  - Recent servers
+  - `IP Address and Port`_
+  - `Discovered Servers`_ (The most common way to connect)
+  - `Recent server List`_
 
 IP Address and Port
 '''''''''''''''''''
@@ -76,15 +76,15 @@ If you only ever connect to one |WTS-DCC-EX| you can effectively bypass this scr
 
   Also see :doc:`Connection issues </operation/wifi_issues>` if you are having difficulties.
 
-Discover Servers
-''''''''''''''''
+Discoverd Servers
+'''''''''''''''''
 
 .. image:: ../_static/images/parts/connecting_discovered_servers.png
   :scale: 50 %
   :align: right
   :name: Discovered Servers
 
-This is the most common way to connect. If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+**This is the most common way to connect.** If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
 
 If the server does not appear in the recent list try one of the other two methods.  
 Your server not appearing in the recent list is not necessarily a problem  See :doc:`Connection issues </operation/wifi_issues>` for more information.
@@ -99,7 +99,7 @@ Recent Server List
 
 If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
 
-A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
+Note: A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
 
 There is also a 'demo' server at **jmri.mstevetodd.com**, port **44444** in this list that you can connect to for testing. (If your device/phone has an internet connection.)
 
@@ -125,7 +125,7 @@ Some DCC Command Stations need to be instructed to turn the Track Power on befor
 There are two ways to turn the Track Power on/off:
 
 * Power Screen - accessed from the menu
-* Power Action Bar button - needs to be enable in the preferences
+* Power Action Bar button - if enabled in the preferences
  
 The *Power Screen* can be accessed from the :menuselection:`Menu --> Power`.  This will open the Power Screen where there is a simple button that to turn the power on or off. Use Android's ``Back`` button to return to the Throttle Screen.
 
@@ -150,15 +150,17 @@ Selecting a Single loco
 
 There three ways select a loco:
 
-* By entering a DCC Address
-* By selecting from the Roster
-* By selecting a Recent Loco
+* By entering a `DCC Address`_
+* By selecting from the `Roster`_
+* By selecting a `Recent Loco <Recent Locos>`_
 
-**DCC Address**
+DCC Address
+'''''''''''
 
 You can enter the loco's DCC address (verify short or long), and press :guilabel:`Acquire` to select the loco.  You will then be taken back to the |T-S| with that loco selected.
 
-**Roster**
+Roster
+''''''
 
 If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
@@ -166,7 +168,8 @@ For this to be possible, the Loco you want to control needs to be in the roster 
 
 .. Also see `Locomotive Icons <locomotive icons in the roster>`_ below.
 
-**Recent Locos**
+Recent Locos
+''''''''''''
 
 |ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with :ref:`Maximum Recent Locos <configuration/preferences:maximum recent locos>` preference.)
 
@@ -179,13 +182,14 @@ There two ways create a Consist / Multiple Unit train:
 
 *  **Selecting additional locos, one loco 'at a time' (as above)**
 
-      * DCC Address
-      * Roster
-      * Recent Locos
+      * `DCC Address`_
+      * `Roster`_
+      * `Recent Locos`_
 
 * By using the **Recent Consists** list 
 
-**One at a time**
+One at a time
+'''''''''''''
 
 Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
 
@@ -195,7 +199,8 @@ After selecting each additional loco, the Consist Edit screen will be shown. Thi
 * Change the order of the locos in the Consist / Multiple Unit
 * Remove locos from the Consist / Multiple Unit
 
-**Recent Consists**
+Recent Consists
+'''''''''''''''
 
 Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.
 
@@ -229,261 +234,277 @@ Controlling Speed
 
 There are eight ways you can control the speed of of your loco or consist /multiple unit train:
 
-* Sliders (if available in the Throttle layout)
-* Speed buttons (if enabled)
-* Stop button
-* Volume keys
-* Emergency Stop - Action Bar button (if enabled)
-* Pause button (if enabled)
-* Limit Speed button (if Enabled)
-* Gamepad keys (if connected)
+* `Sliders`_ (if available in the Throttle layout)
+* `Speed buttons`_ (if enabled)
+* `Stop button`_
+* `Volume keys`_
+* `Emergency Stop - Action Bar button`_ (if enabled)
+* `Pause button`_ (if enabled)
+* `Limit Speed button`_ (if Enabled)
+* `Gamepad keys - Speed control`_ (if connected)
 
-  **Sliders**
+Sliders
+'''''''
 
-  Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for the that Throttle till it gets to that point.
-   
-   Depending on the :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen all sliders on the |T-S| will be either:
-   
-   * one-directional (0% - 100%) |br|\ or 
-   * bi-directional (-100% - 0 - +100%) 
-
-  In most Throttle Screen layouts it is possible hide the Speed Sliders.  
+Dragging you finger along the slider will increase or decrease the speed of the loco(s) selected for the that Throttle. Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for the that Throttle till it gets to that point.
   
-  See the :doc:`Speed Slider and Buttons section on the Preferences page </configuration/preferences>` for more information.
-
-  **Speed buttons**
-
-  The Throttles on the Thro|T-S| may configured have ``++`` and ``--`` *Speed Buttons* that allow you to increase or decrease the loco's speed.  
-
-  Click on the ``Forward`` or ``Reverse`` buttons to increase of decrease the speed in by a defined Amount.
-
-  Click and Hold on the button continually increase the speed by a defined steps.
-
-  .. note:: 
-    :class: note-ed-hidden-title
-
-    See the :ref:`Display Speed buttons? <configuration/preferences:display speed buttons?>` preference in the :ref:`Speed Slider and Buttons section on the Preferences page <configuration/preferences:Speed Slider and Buttons Preferences>` for more information on enabling the *Speed Buttons*.
-
-    See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Speed Buttons*.
-
-    See the :ref:`Speed button Change Amount preference in the Throttle Control Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on changing how much the speed changes on each click.
-
-  **Stop button**
-
-  Click on the :guilabel:`Stop` button of a Throttle on the |T-S| to stop all the select Locos for that Throttle.  If you have momentum configured for in the decoders in the locos, they will gradually come to a stop.
-
-  **Volume Keys**
-
-  The :guilabel:`Volume Up` and :guilabel:`Volume Down` hardware keys of your device / phone act exactly the same at as the Speed Buttons of the 'current' Throttle. 
-
-  Click on the :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to increase of decrease the speed in by a defined Amount.
-
-  Click and Hold on the button continually increase the speed by a defined steps.
-
-  The *Volume Keys* can only affect one throttle at a time.  Which throttle is being controlled by a small 'V' in the Throttle Speed amount area. To change to another Throttle, click on the Throttle Speed amount area of another Throttle.
-
-  .. note:: 
-    :class: note-ed-hidden-title
-
-    See the :ref:`Volume Button Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on disabling the Volume Keys and changing how much the speed changes on each click. 
-
-  **Emergency Stop - Action Bar button**
-
-  .. image:: ../_static/images/parts/estop.png
-    :align: right
-    :scale: 50%
+  Depending on the :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen all sliders on the |T-S| will be either:
   
-  If enabled, the :guilabel:`Emergency Stop` button on the Action Bar will attempt to stop all the locos on all the Throttles controlled by your device / phone as quickly as possible.
+  * one-directional (0% - 100%) |br|\ or 
+  * bi-directional (-100% - 0 - +100%) 
 
-  It *does not* stop locos controlled by other people / controllers.
+In most Throttle Screen layouts it is possible hide the Speed Sliders.  
 
-  .. note:: 
-    :class: note-ed-hidden-title
+See the :doc:`Speed Slider and Buttons section on the Preferences page </configuration/preferences>` for more information.
 
-    See the :ref:`Emergency Stop button? Preference on the Preferences page <configuration/preferences:emergency stop button?>` for more information on enabling the :guilabel:`Emergency Stop` button. 
+Speed Buttons
+'''''''''''''
 
-  **Pause button**
+The Throttles on the Thro|T-S| may configured have ``++`` and ``--`` *Speed Buttons* that allow you to increase or decrease the loco's speed.  
 
-  .. image:: ../_static/images/parts/pause_button.png
-    :align: right
-    :scale: 50%
-  
-  If enabled, the :guilabel:`Pause` button will gradually bring the Loco (or Consist / Multiple Units) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or Consist / Multiple Units) on the Throttle back to the speed that it was before you fist pressed the button.
+Click on the ``Forward`` or ``Reverse`` buttons to increase of decrease the speed in by a defined Amount.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+Click and Hold on the button continually increase the speed by a defined steps.
 
-    See the :ref:`'Limit Speed' & 'Pause' button Preferences section on the Preferences page <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` for more information on enabling the :guilabel:`Pause` button. 
+.. note:: 
+  :class: note-ed-hidden-title
 
-  **Limit Speed button**
+  See the :ref:`Display Speed buttons? <configuration/preferences:display speed buttons?>` preference in the :ref:`Speed Slider and Buttons section on the Preferences page <configuration/preferences:Speed Slider and Buttons Preferences>` for more information on enabling the *Speed Buttons*.
 
-  .. image:: ../_static/images/parts/limit_speed_button.png
-    :align: right
-    :scale: 50%
-  
-  If enabled, the :guilabel:`Limit Speed` button will restrict the maximum speed on the Throttle to predefined amount. (Default is 50%)  Clicking the button again will take off the restriction. (i.e. back to 100%)
+  See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Speed Buttons*.
 
-  This is commonly used for Switching/Shunting work VS mainline running.
+  See the :ref:`Speed button Change Amount preference in the Throttle Control Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on changing how much the speed changes on each click.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+Stop button
+'''''''''''
 
-    See the :ref:`'Limit Speed' & 'Pause' button Preferences section on the Preferences page <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` for more information on enabling the :guilabel:`Limit Speed` button. 
+Click on the :guilabel:`Stop` button of a Throttle on the |T-S| to stop all the select Locos for that Throttle.  If you have momentum configured for in the decoders in the locos, they will gradually come to a stop.
 
-  **Gamepad keys**
+Volume Keys
+''''''''''''
 
-  .. image:: ../_static/images/gamepads/bt_controller2.jpg
-    :align: right
-    :scale: 20 %
+The :guilabel:`Volume Up` and :guilabel:`Volume Down` hardware keys of your device / phone act exactly the same at as the Speed Buttons of the 'current' Throttle. 
 
-  Any keys and/or the any DPad directions can be configured to change Speed, Stop, Emergency Stop, Pause or Limit Speed.
+Click on the :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to increase of decrease the speed in by a defined Amount.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+Click and Hold on the button continually increase the speed by a defined steps.
 
-    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
+The *Volume Keys* can only affect one throttle at a time.  Which throttle is being controlled by a small 'V' in the Throttle Speed amount area. To change to another Throttle, click on the Throttle Speed amount area of another Throttle.
 
-    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`Volume Button Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on disabling the Volume Keys and changing how much the speed changes on each click. 
+
+Emergency Stop - Action Bar button
+''''''''''''''''''''''''''''''''''
+
+.. image:: ../_static/images/parts/estop.png
+  :align: right
+  :scale: 50%
+
+If enabled, the :guilabel:`Emergency Stop` button on the Action Bar will attempt to stop all the locos on all the Throttles controlled by your device / phone as quickly as possible.
+
+It *does not* stop locos controlled by other people / controllers.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`Emergency Stop button? Preference on the Preferences page <configuration/preferences:emergency stop button?>` for more information on enabling the :guilabel:`Emergency Stop` button. 
+
+Pause button
+''''''''''''
+
+.. image:: ../_static/images/parts/pause_button.png
+  :align: right
+  :scale: 50%
+
+If enabled, the :guilabel:`Pause` button will gradually bring the Loco (or Consist / Multiple Units) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or Consist / Multiple Units) on the Throttle back to the speed that it was before you fist pressed the button.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`'Limit Speed' & 'Pause' button Preferences section on the Preferences page <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` for more information on enabling the :guilabel:`Pause` button. 
+
+Limit Speed button
+''''''''''''''''''
+
+.. image:: ../_static/images/parts/limit_speed_button.png
+  :align: right
+  :scale: 50%
+
+If enabled, the :guilabel:`Limit Speed` button will restrict the maximum speed on the Throttle to predefined amount. (Default is 50%)  Clicking the button again will take off the restriction. (i.e. back to 100%)
+
+This is commonly used for Switching/Shunting work VS mainline running.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`'Limit Speed' & 'Pause' button Preferences section on the Preferences page <configuration/preferences:'Limit Speed' & 'Pause' button Preferences>` for more information on enabling the :guilabel:`Limit Speed` button. 
+
+Gamepad keys - Speed Control
+''''''''''''''''''''''''''''
+
+.. image:: ../_static/images/gamepads/bt_controller2.jpg
+  :align: right
+  :scale: 20 %
+
+Any keys and/or the any DPad directions can be configured to change Speed, Stop, Emergency Stop, Pause or Limit Speed.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
+
+  See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
 
 Controlling Direction
-""""""""""""""""""""""""""""""""""
+""""""""""""""""""""""""""
 
 There are three ways you can control the direction of your loco or consist /multiple unit train:
 
-* Direction Buttons - for throttle screen layouts with direction buttons
-* Sliders - For throttle screen layouts without direction buttons  (Switching/Shunting)
-* Gamepad keys
+* `Direction Buttons`_ - for throttle screen layouts with direction buttons
+* `Sliders <Sliders - Switching/Shunting Throttle Screen layouts>`_ - For throttle screen layouts without direction buttons  (Switching/Shunting)
+* `Gamepad keys - Direction control`_
 
-  **Direction Buttons**
+Direction Buttons
+'''''''''''''''''
 
-  .. image:: ../_static/images/parts/direction_buttons.png
-    :align: right
-    :scale: 50%
+.. image:: ../_static/images/parts/direction_buttons.png
+  :align: right
+  :scale: 50%
 
-  Throttles on Throttle Screen Layout that are *not* of the Switching/Shunting type have :guilabel:`Forward` and :guilabel:`Reverse` *Direction Buttons* for each throttle.  
+Throttles on Throttle Screen Layout that are *not* of the Switching/Shunting type have :guilabel:`Forward` and :guilabel:`Reverse` *Direction Buttons* for each throttle.  
 
-  Clicking on a button will change the direction of the loco ( or Consist / Multiple Unit)m if it is not already moving in that direction. 
+Clicking on a button will change the direction of the loco ( or Consist / Multiple Unit)m if it is not already moving in that direction. 
 
-  The *Direction Buttons* can be:
-  * Disabled while the loco (or Consist / Multiple Unit) is moving. (i.e. the speed in either direction is greater that zero.)
-  * Re-labeled
-  * Can be swapped
+The *Direction Buttons* can be:
+* Disabled while the loco (or Consist / Multiple Unit) is moving. (i.e. the speed in either direction is greater that zero.)
+* Re-labeled
+* Can be swapped
+
+*Direction Buttons* are Not available on the Switching/Shunting Throttle Screen layouts.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Direction Buttons*.
+
+  See the :ref:`Swapping Direction Buttons <operation/advanced:swapping direction buttons>`  or  :ref:`Renaming Direction Buttons <operation/advanced:renaming direction buttons>` On the Advanced Operation page for information on swaping or renaming the buttons.
   
-  *Direction Buttons* are Not available on the Switching/Shunting Throttle Screen layouts.
+  See the :ref:`Direction Button Preferences section of the Preferences page <configuration/preferences:direction button preferences>` for additional options for configuring the *Direction Buttons*.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+Sliders - Switching/Shunting Throttle Screen layouts
+''''''''''''''''''''''''''''''''''''''''''''''''''''
 
-    See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Direction Buttons*.
+.. image:: ../_static/images/parts/slider_vertical_switching.png
+  :align: right
+  :scale: 40 %
 
-    See the :ref:`Swapping Direction Buttons <operation/advanced:swapping direction buttons>`  or  :ref:`Renaming Direction Buttons <operation/advanced:renaming direction buttons>` On the Advanced Operation page for information on swaping or renaming the buttons.
-    
-    See the :ref:`Direction Button Preferences section of the Preferences page <configuration/preferences:direction button preferences>` for additional options for configuring the *Direction Buttons*.
+Depending on the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen sliders on the |T-S| can be b-directional.  (Switching / Shunting Layouts)
 
-  **Sliders - Switching/Shunting Throttle Screen layouts**
+Switching / Shunting Layouts have 'stationary' (zero speed) at the centre of the slider.  Dragging your finger along the slider to the right (or up) from the centre will increase the speed of the loco(s) selected for that Throttle *in the forward direction*. Dragging your finger along the slider to the left (or down) from the centre will increase the speed of the loco(s) selected for the that Throttle *in the reverse direction*. 
 
-  .. image:: ../_static/images/parts/slider_vertical_switching.png
-    :align: right
-    :scale: 40 %
+Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for the that Throttle till it gets to that point.  If the point you are holding is on the opposite half of the slider the speed will slowly decrease speed to zero, then slowly increase speed in the opposite direction to the point you are holding.
 
-  Depending on the  :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen sliders on the |T-S| can be b-directional.  (Switching / Shunting Layouts)
+.. note:: 
+  :class: note-ed-hidden-title
 
-  Switching / Shunting Layouts have 'stationary' (zero speed) at the centre of the slider.  Dragging your finger along the slider to the right (or up) from the centre will increase the speed of the loco(s) selected for that Throttle *in the forward direction*. Dragging your finger along the slider to the left (or down) from the centre will increase the speed of the loco(s) selected for the that Throttle *in the reverse direction*. 
-  
-  Pressing and holding your finger at one spot on the slider will cause |ED| to slowly increase or decrease the speed of the loco(s) selected for the that Throttle till it gets to that point.  If the point you are holding is on the opposite half of the slider the speed will slowly decrease speed to zero, then slowly increase speed in the opposite direction to the point you are holding.
+  See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support the Switching / Shunting Layouts.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+Gamepad keys - Direction Control
+''''''''''''''''''''''''''''''''
 
-    See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support the Switching / Shunting Layouts.
+.. image:: ../_static/images/gamepads/bt_controller2.jpg
+  :align: right
+  :scale: 20 %
 
-  **Gamepad keys**
+Any keys and/or the any DPad directions can be configured to change direction directly or indirectly (by changing speed when using a switching / shunting throttle Screen Layout).
 
-  .. image:: ../_static/images/gamepads/bt_controller2.jpg
-    :align: right
-    :scale: 20 %
+.. note:: 
+  :class: note-ed-hidden-title
 
-  Any keys and/or the any DPad directions can be configured to change direction directly or indirectly (by changing speed when using a switching / shunting throttle Screen Layout).
+  See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
 
-  .. note:: 
-    :class: note-ed-hidden-title
-
-    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
-
-    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
+  See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
 DCC Functions
-""""""""""""""""""""""""""""""""""
+"""""""""""""""""
 
 There are two ways you can activate the DCC Functions of the decoder in your loco or consist /multiple unit train:
 
-- Function buttons
-- Gamepads keys (if connected)
+- `Function buttons <Activating DCC Functions via the Function Buttons>`_
+- `Gamepads keys <Activating the DCC Function via the Gamepad Keys>`_ (if connected)
 
 The DCC functions can be impacted depending on the settings and preferences you have selected:
 
-* Function Labels
-* Functions in consists
+* `Function Labels`_
+* `Functions in consists`_
 
-Activating the DCC Function via the Function Buttons
-''''''''''''''''''''''''''''''''''''''''''''''''''''
+Activating DCC Functions via the Function Buttons
+'''''''''''''''''''''''''''''''''''''''''''''''''
 
-  Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a Consist / Multiple Unit.)  This behaviour can be altered in the preferences.
+Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a Consist / Multiple Unit.)  This behaviour can be altered in the preferences.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
+  See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
 
-    See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` for information on changing the behaviour of the functions in consists / multiple units.
+  See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` for information on changing the behaviour of the functions in consists / multiple units.
 
-  **Activating the DCC Function via the Gamepad Keys**
-  
-  Any keys and/or the any DPad directions can be configured to activate the DCC Functions.
+Activating the DCC Function via the Gamepad Keys
+''''''''''''''''''''''''''''''''''''''''''''''''
 
-  .. note:: 
-    :class: note-ed-hidden-title
+Any keys and/or the any DPad directions can be configured to activate the DCC Functions.
 
-    See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
+  See the :doc:`Gamepads Operation page </operation/gamepads>` for information on selecting and using a gamepad.
 
-  **Function Labels**
+  See the :doc:`Gamepads Configuration page </configuration/gamepads>` for information on configuring the keys of the gamepad.
 
-  Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.
+Function Labels
+'''''''''''''''
 
-  By default:
-  
-  * If you select a loco from a WiThrottle Roster Entry, it will show the labels on the buttons as they have been configured in the Roster Entry on the server. 
-  * If you enter the DCC address of the loco, it will show |eds| 'Default Function Labels'.  
-  
-    * All 29 functions will be shown.  They are: 
-  
-      * F0 / Light
-      * F1 / Bell
-      * F2 / Horn / Whistle
-      * F3 - F28
+Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.
 
-    * Which function buttons, how many function buttons and what labels are displayed, can be changed via the :menuselection:`Menu --> Function Defaults` from the |T-S|
-  
-  * If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, |ed| will attempt to show the Labels from the |WTS-DCC-EX| roster entry.
+By default:
 
-  .. note:: 
-    :class: note-ed-hidden-title
+* If you select a loco from a WiThrottle Roster Entry, it will show the labels on the buttons as they have been configured in the Roster Entry on the server. 
+* If you enter the DCC address of the loco, it will show |eds| 'Default Function Labels'.  
 
-    See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
+  * All 29 functions will be shown.  They are: 
 
-  **Functions in consists**
+    * F0 / Light
+    * F1 / Bell
+    * F2 / Horn / Whistle
+    * F3 - F28
 
-  By default DCC Functions are only sent to the first loco in a Consist / Multiple Unit.  This can be changed in the Preferences.
+  * Which function buttons, how many function buttons and what labels are displayed, can be changed via the :menuselection:`Menu --> Function Defaults` from the |T-S|
 
-  There are a number of preferences that can be used to override the default behaviour.
+* If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, |ed| will attempt to show the Labels from the |WTS-DCC-EX| roster entry.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` and the :doc:`Consist Follow Functions page </operation/consist-follow-functions>` for more details.
+  See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
+
+|HR-DASHED|
+
+Functions in consists
+''''''''''''''''''''''
+
+By default DCC Functions are only sent to the first loco in a Consist / Multiple Unit.  This can be changed in the Preferences.
+
+There are a number of preferences that can be used to override the default behaviour.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` and the :doc:`Consist Follow Functions page </operation/consist-follow-functions>` for more details.
 
 
 Virtual Sounds - In Phone Loco Sounds (IPLS)
@@ -579,7 +600,7 @@ The *Action Bar* provides for a number of common and specific information and fu
 Optionally configured information:
 
 * Fast Clock
-* Children’s Timer Status and Countdown
+* Children's Timer Status and Countdown
 * Full Screen or Action Bar Only left/right swipe
 * |WTS-DCC-EX| Name
 
@@ -628,7 +649,7 @@ To get the *Turnouts / Points* screen you can use the menu :menuselection:`Menu 
 
 The |WTS-DCC-EX| must have Turnouts / Points enabled.
 
-If you've defined your turnouts and routes in a panel file, make sure to specify "user names" for those you'd like to see listed on your throttle. You can also "filter" the turnouts shown using the WiThrottle->Filter Controls option in the WiThrottle window.
+If you've defined your turnouts / points and routes in a panel file, make sure to specify "user names" for those you'd like to see listed on your throttle. You can also "filter" the turnouts shown using the WiThrottle->Filter Controls option in the WiThrottle window.
 
 *Turnouts/Points* can be operated three ways:
 
@@ -639,7 +660,7 @@ If you've defined your turnouts and routes in a panel file, make sure to specify
 The |TP-S| can be accessed three ways:
 
 * Menu
-* Swipe
+* Swipe Left/Right (if enabled)
 * Auto Web Orientation
 
 DCC Address (Turnout/Point)
@@ -701,7 +722,7 @@ Routes
 
 |ed| can control *Routes* on your layout if configured in you |WTS-DCC-EX|.
 
-When using DC-EX as your |WTS-DCC-EX|, *Routes* can be used to activate *Automations*.
+When using |EX-CS| as your |WTS-DCC-EX|, *Routes* can also be used to activate `EXRAIL Automations and Anomations <https://dcc-ex.com/exrail/index.html>`_.
 
 To get the *Turnouts / Points* screen you can use the menu :menuselection:`Menu --> Routes` from the main screens.  You can also swipe left from the |T-S| (if enabled in the preference).
 
@@ -710,7 +731,7 @@ If you've defined your turnouts and routes in a panel file, make sure to specify
 The |R-S| can be accessed three ways:
 
 * Menu
-* Swipe
+* Swipe Left/Right (if enabled)
 * Auto Web Orientation
 
 From the WiThrottle server
@@ -784,7 +805,7 @@ This section describes the |WV-S|, which is a full screen web browser.  The *Thr
 The |WV-S| can be accessed three ways:
 
 * Menu
-* Swipe
+* Swipe Left/Right (if enabled)
 * Auto Web Orientation
 
 Overflow Menu (Web View Screen)
@@ -834,11 +855,15 @@ Note that :ref:`Swipe Through Web <configuration/preferences:swipe through web?>
 Pushing the app to the Background
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
+.. warning:: 
+
+  |ed| *is not designed to run in background and its performance and continued operation is not reliable or predictable.*
+
+  You should not lock the the screen of you Android device/phone while using |ED| for the same reason.
+
 By using the Android :guilabel:`Home` ( ○ ) or :guilabel:`Recent Tasks` ( □ ) navigation buttons, or if you press the ``Power`` physical button, it is possible to push the |ed| app into the background.  |ed| will give a sound, warning and will add an entry to the Notification Shade when this happens.
 
 Clicking on the Notification Shade entry or the app icon will return you to the same screen your were in when you pushed the app to the background.
-
-|ed| *is not designed to run in background and its performance is not predictable.*
 
 While |ed| will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will considers this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.
 
@@ -856,7 +881,6 @@ DCC-EX - Features when using the Native DCC-EX Protocol
 
 Refer to :doc:`this page </operation/dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the **Native DCC-EX Protocol** when connecting to a **EX-CommandStation**.
 
-
 Exiting Engine Driver
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -865,7 +889,7 @@ To exit |ed|, you can:
 * Press the Android :guilabel:`Back` button once from the main screens (more than once if you are on one of the secondary screens) |br|\ OR
 * :menuselection:`Menu --> Exit`
 
-|ed| can be configured to exit when the Android :guilabel:`Back` button is pressed twice quickly.
+|ed| can be configured to exit when the Android :guilabel:`Back` button is pressed twice quickly from the |T-S|.
 
   See the :ref:`Double Back Buton to Exit? in the Preference page <configuration/preferences:Device Preferences>` for information.
 
