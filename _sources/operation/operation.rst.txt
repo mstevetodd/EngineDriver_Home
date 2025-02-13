@@ -48,11 +48,11 @@ Connecting to the WiFi network
 Connecting Engine Driver to the WiThrottle server
 """""""""""""""""""""""""""""""""""""""""""""""""
 
-* Start |ED| |br|\ You will be presented with the |C-S|
+* Start |ED| |BR|\ You will be presented with the |C-S|
 * On the |C-S| there are three ways you can select a |WTS-DCC-EX| to connect to:
 
   - `IP Address and Port`_
-  - `Discovered Servers`_ (The most common way to connect)
+  - `Discovered Servers List`_ (The most common way to connect)
   - `Recent server List`_
 
 IP Address and Port
@@ -76,8 +76,8 @@ If you only ever connect to one |WTS-DCC-EX| you can effectively bypass this scr
 
   Also see :doc:`Connection issues </operation/wifi_issues>` if you are having difficulties.
 
-Discoverd Servers
-'''''''''''''''''
+Discovered Servers List
+'''''''''''''''''''''''
 
 .. image:: ../_static/images/parts/connecting_discovered_servers.png
   :scale: 50 %
@@ -250,7 +250,7 @@ Dragging you finger along the slider will increase or decrease the speed of the 
   
   Depending on the :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` chosen all sliders on the |T-S| will be either:
   
-  * one-directional (0% - 100%) |br|\ or 
+  * one-directional (0% - 100%) |BR|\ or 
   * bi-directional (-100% - 0 - +100%) 
 
 In most Throttle Screen layouts it is possible hide the Speed Sliders.  
@@ -381,7 +381,7 @@ Clicking on a button will change the direction of the loco ( or Consist / Multip
 
 The *Direction Buttons* can be:
 * Disabled while the loco (or Consist / Multiple Unit) is moving. (i.e. the speed in either direction is greater that zero.)
-* Re-labeled
+* Re-labelled
 * Can be swapped
 
 *Direction Buttons* are Not available on the Switching/Shunting Throttle Screen layouts.
@@ -391,7 +391,7 @@ The *Direction Buttons* can be:
 
   See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Direction Buttons*.
 
-  See the :ref:`Swapping Direction Buttons <operation/advanced:swapping direction buttons>`  or  :ref:`Renaming Direction Buttons <operation/advanced:renaming direction buttons>` On the Advanced Operation page for information on swaping or renaming the buttons.
+  See the :ref:`Swapping Direction Buttons <operation/advanced:swapping direction buttons>`  or  :ref:`Renaming Direction Buttons <operation/advanced:renaming direction buttons>` On the Advanced Operation page for information on swapping or renaming the buttons.
   
   See the :ref:`Direction Button Preferences section of the Preferences page <configuration/preferences:direction button preferences>` for additional options for configuring the *Direction Buttons*.
 
@@ -886,7 +886,7 @@ Exiting Engine Driver
 
 To exit |ed|, you can:
 
-* Press the Android :guilabel:`Back` button once from the main screens (more than once if you are on one of the secondary screens) |br|\ OR
+* Press the Android :guilabel:`Back` button once from the main screens (more than once if you are on one of the secondary screens) |BR|\ OR
 * :menuselection:`Menu --> Exit`
 
 |ed| can be configured to exit when the Android :guilabel:`Back` button is pressed twice quickly from the |T-S|.

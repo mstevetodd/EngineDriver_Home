@@ -26,10 +26,10 @@ Detailed Information |BR| |small-start| Preferences & Configuration |small-end|
 
 See:
 
-* The :doc:`./preferences` page for comprehensive information on the primary way to change |ed|\  |br|\ |br|\ 
-* The :doc:`./functions` page for information on the DCC Functions |br|\ |br|\ 
-* The :doc:`./ipls` page for information on configuring |eds| Virtual Sound capabilities  |br|\ |br|\ 
-* The :doc:`./gamepads` page for information on configuring gamepads  |br|\ |br|\ 
-* The :doc:`./loco_icons` page for information on managing the Loco Icons on the Select Loco page |br|\ |br|\ 
-* The :doc:`./new_device` page for information on moving |ed| to a new Android Device / Phone from one where you already have |ed| installed|br|\ |br|\ 
-* The :doc:`./conserving_power` page for information on conserving power on your Android device/phone when using |ed| |br|\ |br|\ 
+* The :doc:`./preferences` page for comprehensive information on the primary way to change |ed|\  |BR|\ |BR|\ 
+* The :doc:`./functions` page for information on the DCC Functions |BR|\ |BR|\ 
+* The :doc:`./ipls` page for information on configuring |eds| Virtual Sound capabilities  |BR|\ |BR|\ 
+* The :doc:`./gamepads` page for information on configuring gamepads  |BR|\ |BR|\ 
+* The :doc:`./loco_icons` page for information on managing the Loco Icons on the Select Loco page |BR|\ |BR|\ 
+* The :doc:`./new_device` page for information on moving |ed| to a new Android Device / Phone from one where you already have |ed| installed|BR|\ |BR|\ 
+* The :doc:`./conserving_power` page for information on conserving power on your Android device/phone when using |ed| |BR|\ |BR|\ 

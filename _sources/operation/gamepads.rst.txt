@@ -40,13 +40,13 @@ Other devices require similar steps, but the mechanism to change the ``mode`` ma
   
     * Turn your gamepad OFF by holding the Start/Power button for about 5 seconds until the LED goes out and stays out. 
     * Move the slide switch on the side to the ``GAME`` position (towards the joystick). 
-    * Hold down the button specified in your gamepad instructions for MTK mode. (Typically this is the :guilabel:`Triangle` button but can be different on different devices.) While still holding that button down, press the Start/Power button until the LED turns on. Release the buttons as soon as the LED turns on. |br|\ |br|\ This configuration procedure should only be required once. In the future your gamepad should be in MTK mode when you turn it on. |br|\  *(This not true of the MagicSeeR1 which must be set every time you turn it on)* |br|\ |br|\
+    * Hold down the button specified in your gamepad instructions for MTK mode. (Typically this is the :guilabel:`Triangle` button but can be different on different devices.) While still holding that button down, press the Start/Power button until the LED turns on. Release the buttons as soon as the LED turns on. |BR|\ |BR|\ This configuration procedure should only be required once. In the future your gamepad should be in MTK mode when you turn it on. |BR|\  *(This not true of the MagicSeeR1 which must be set every time you turn it on)* |BR|\ |BR|\
   
   * For the **MagicSeeR1** gamepads (Mode B)
   
     * Turn the device on by moving the slide switch on the side to the ``ON`` position
     * Wait for the gamepad to connect to Android device (the LED will stop blinking)
-    * Hold down the :guilabel:`Mode` button and press the :guilabel:`B` button. |br|\ |br|\ **This configuration procedure which must be done every time you turn it on**
+    * Hold down the :guilabel:`Mode` button and press the :guilabel:`B` button. |BR|\ |BR|\ **This configuration procedure which must be done every time you turn it on**
 
 We have found that some gamepads work well in **iCade** mode as well. Feel free to experiment. To use iCade mode, follow the steps above but use the button your instructions specify for iCade (typically “X”). 
 
@@ -58,7 +58,7 @@ Running Engine Driver with the Gamepad
 * Connect to a |WTS-DCC-EX| 
 * Select a loco as normal and return to the |T-S|. 
 * In the |ed|
-  * Select a gamepad type. |br|\ In the Gamepad section of |EDs| Preferences, select a gamepad corresponding to the gamepad mode you configured on the device (above).
+  * Select a gamepad type. |BR|\ In the Gamepad section of |EDs| Preferences, select a gamepad corresponding to the gamepad mode you configured on the device (above).
 
     * For the **Mocute 032** gamepads we recommend ``Mocute MTK`` for MKT mode, (or ``Mocute iCade+DPAD`` for iCade mode). 
     * For the **MagicSeeR1** you must use ``MagicSeeR1 Android-Game B``.
@@ -182,7 +182,7 @@ For use when ``Keyboard`` is selected as the gamepad type:
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`D` = Direction - Toggle Forward/Reverse
 * :guilabel:`N` = Next Throttle
-* :guilabel:`End` or :guilabel:`Z` = Emergency stop |br|\
+* :guilabel:`End` or :guilabel:`Z` = Emergency stop |BR|\
 * Semi-Realistic Throttle Only:
 
   * :guilabel:`\\` = Neutral
@@ -191,9 +191,9 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`.` = Decrease Load
   * :guilabel:`,` = Increase Load
 
-* F00 - F28 = Function |br|\ Must be :guilabel:`F` followed by two digits |br|\  or :guilabel:`F11` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |br|\ e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |br|\ Without a preceding :guilabel:`F`, :guilabel:`S` or :guilabel:`L` |br|\ or :guilabel:`F10` - :guilabel:`F9`  F10=0, F1-F9=1-9 |br|\
-* S000 - S100 = Speed |br|\ Must be :guilabel:`S` followed by three digits |br|\  or :guilabel:`F12` followed by three :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |br|\ e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed 056, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
+* F00 - F28 = Function |BR|\ Must be :guilabel:`F` followed by two digits |BR|\  or :guilabel:`F11` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |BR|\ e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR|\ Without a preceding :guilabel:`F`, :guilabel:`S` or :guilabel:`L` |BR|\ or :guilabel:`F10` - :guilabel:`F9`  F10=0, F1-F9=1-9 |BR|\
+* S000 - S100 = Speed |BR|\ Must be :guilabel:`S` followed by three digits |BR|\  or :guilabel:`F12` followed by three :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |BR|\ e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed 056, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
 * :guilabel:`L` = Limit Speed
 * :guilabel:`P` = Pause Speed
 * In Phone Loco Sounds (IPLS)  
@@ -201,7 +201,7 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`H` = Horn / Whistle 
   * :guilabel:`Shift` + :guilabel:`H` = Short Horn 
   * :guilabel:`M` or :guilabel:`Volume Mute` = Mute IPLS
-* T0 - T5 = Specify a throttle for next command |br|\ Must be :guilabel:`T` followed by one digit |br|\ or :guilabel:`Esc` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |br|\ The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.
+* T0 - T5 = Specify a throttle for next command |BR|\ Must be :guilabel:`T` followed by one digit |BR|\ or :guilabel:`Esc` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |BR|\ The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.
 
 All other keyCodes are ignored.
 

@@ -2,7 +2,7 @@
    :description: JMRI Engine Driver Throttle
    :keywords: DCC Engine Driver EngineDriver JMRI manual help model railroad railway train 
 ..
-.. |br| raw:: html
+.. |BR| raw:: html
 
    <br />
 ..

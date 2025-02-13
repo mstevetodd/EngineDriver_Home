@@ -417,7 +417,7 @@ Each 'action' can be one of:
 
 Note:
 
-* 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |br| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |br| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
+* 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |BR| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |BR| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
 
 String 2, 3, 4, 5 Preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

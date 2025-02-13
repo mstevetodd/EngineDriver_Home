@@ -78,10 +78,10 @@ There are four options to choose from:
           :scale: 8%
       - Landscape
     * - see above 
-      - Auto-Rotate |br|\ will switch between |br|\ Portrait and |br|\ landscape when |br|\ you rotate the |br|\ screen
+      - Auto-Rotate |BR|\ will switch between |BR|\ Portrait and |BR|\ landscape when |BR|\ you rotate the |BR|\ screen
     * - .. image:: ../_static/images/screenshots/auto_web.png
           :scale: 8%
-      - Auto-Web |br|\ will show the |br|\ |WV-S| when |br|\ you rotate the |br|\ screen
+      - Auto-Web |BR|\ will show the |BR|\ |WV-S| when |BR|\ you rotate the |BR|\ screen
 
 Theme/Style
 """""""""""
@@ -108,10 +108,10 @@ There are a number themes to choose from:
       - Original theme
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_high_contrast_theme.png 
           :scale: 8%
-      - High contrast theme |br|\ |br|\ Similar to the original |br|\ theme, without the |br|\ textured background |br|\ with deeper blacks |br|\ and brighter whites.
+      - High contrast theme |BR|\ |BR|\ Similar to the original |BR|\ theme, without the |BR|\ textured background |BR|\ with deeper blacks |BR|\ and brighter whites.
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_outline_theme.png
           :scale: 8%
-      - High contrast |br|\ Outline theme |br|\ |br|\ For people who like |br|\ white text on a |br|\ black background.
+      - High contrast |BR|\ Outline theme |BR|\ |BR|\ For people who like |BR|\ white text on a |BR|\ black background.
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_dark_theme.png
           :scale: 8%
       - Dark theme
@@ -127,11 +127,11 @@ Localisation
 
 Changing the *Localisation* primarily changes the language used in the menus, buttons and messages throughout |ED|.
 
-For English, it also changes the railroad/railway terminology (eg, Selecting 'Use Phone's global setting' and having the device/phone set to 'English (Australia)' or 'English (UK)' results in the term 'Points' to be displayed rather than 'Turnouts' which is displayed when 'English (US)' is selected). And in the |P-S| and the Throttle Screen Layout selection preference (where 'shunting' is displayed rather than 'switching').  This is not guaranteed to operate on all text on all screens. 
+For English, it also changes the railroad/railway terminology (e.g. Selecting 'Use Phone's global setting' and having the device/phone set to 'English (Australia)' or 'English (UK)' results in the term 'Points' to be displayed rather than 'Turnouts' which is displayed when 'English (US)' is selected). And in the |P-S| and the Throttle Screen Layout selection preference (where 'shunting' is displayed rather than 'switching').  This is not guaranteed to operate on all text on all screens. 
 
 Supported localisations are:
 
-* Use Phone's global setting |br| -  Will use any of the localisations below depending on what your system is set to it
+* Use Phone's global setting |BR| -  Will use any of the localisations below depending on what your system is set to it
 * English (US) - Engine Driver's default
 * English (UK)
 * English (AUS)
@@ -177,10 +177,10 @@ Swipe through Routes?
 
 If this preference is enabled, the |R-S| is included in the list of screens when swiping left/right between screens.
 
-Double Back Buton to Exit?
-""""""""""""""""""""""""""
+Double Back Button to Exit?
+"""""""""""""""""""""""""""
 
-If this preference is enabled, pressing the Andoroid System ``Back`` button twice quickly from the |T-S| will exit the app.
+If this preference is enabled, pressing the Android System ``Back`` button twice quickly from the |T-S| will exit the app.
 
 Hide Instructional Hints 
 """"""""""""""""""""""""
@@ -205,12 +205,12 @@ Throttle Screen Layout
     :header-rows: 1
 
     * - Layout Name
-      - No. |br|\ Throttles
-      - Slider |br|\ Orient.
-      - Web |br|\ View
-      - Function |br|\ Buttons
-      - Throttle |br|\ Control
-      - Direction |br|\ Buttons
+      - No. |BR|\ Throttles
+      - Slider |BR|\ Orient.
+      - Web |BR|\ View
+      - Function |BR|\ Buttons
+      - Throttle |BR|\ Control
+      - Direction |BR|\ Buttons
     * -  Horizontal
       - 1 \- 3 
       - H
@@ -253,35 +253,35 @@ Throttle Screen Layout
       - ✓
       - 0-100
       - ✓
-    * - Vertical Shunting |br| Vertical Switching
+    * - Vertical Shunting |BR| Vertical Switching
       - 2
       - V
       - ✓
       - ✓
       - \-100 - 0 - +100
       - 🗴
-    * - Vertical Shunting - Left |br| Vertical Switching - Left
+    * - Vertical Shunting - Left |BR| Vertical Switching - Left
       - 1
       - V
       - ✓
       - ✓
       - \-100 - 0 - +100
       - 🗴
-    * - Vertical Shunting - Right |br| Vertical Switching - Right
+    * - Vertical Shunting - Right |BR| Vertical Switching - Right
       - 1
       - V
       - ✓
       - ✓
       - \-100 - 0 - +100
       - 🗴
-    * - Horizontal Shunting |br| Horizontal Switching
+    * - Horizontal Shunting |BR| Horizontal Switching
       - 1 \- 3
       - H
       - ✓
       - ✓
       - \-100 - 0 - +100
       - 🗴
-    * - Simple |br| (Tablet Recommended)
+    * - Simple |BR| (Tablet Recommended)
       - 1 \- 6
       - V
       - 🗴
@@ -337,16 +337,16 @@ Throttle Screen Layout
       - Vertical - Right
     * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_high_contrast.png 
           :scale: 8%
-      - Vertical Switching |br| Vertical Shunting 
+      - Vertical Switching |BR| Vertical Shunting 
     * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_left_high_contrast.png 
           :scale: 8%
-      - Vertical Switching - Left |br| Vertical Shunting - Left
+      - Vertical Switching - Left |BR| Vertical Shunting - Left
     * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_right_high_contrast.png 
           :scale: 8%
-      - Vertical Switching- Right |br| Vertical Shunting - Left
+      - Vertical Switching- Right |BR| Vertical Shunting - Left
     * - .. image:: ../_static/images/screenshots/throttle_horizontal_switching_high_contrast.png 
           :scale: 8%
-      - Horizontal Switching |br| Horizontal Shunting
+      - Horizontal Switching |BR| Horizontal Shunting
     * - .. image:: ../_static/images/screenshots/throttle_simple_high_contrast.png 
           :scale: 8%
       - Simple
@@ -357,7 +357,7 @@ Throttle Screen Layout
 Notes:
 
 * The number is brackets after the Throttle Screen Layout name is the number of throttles that the layout can support.
-* The 'Simple' Throttle Screen Layout is designed to allow for up to 6 throttles simultaneously.  |br|\ It is recommended that this be used on a tablet device, because of the screen real estate demands that 6 throttles requires. |br|\ When this Throttle Screen Layout is selected, the `Number of Throttles`_ preferences options is activated.  You can then use this to restrict the number of throttles being displayed on the 'Simple' Throttle Screen Layout.  |br|\ Also the `Function Buttons Area size`_ preferences options is activated.  You can then use this to control how many Function Buttons are displayed with each throttle.  By default, no Function buttons will be shown. |br|\ If you have selected In Phone Loco Sounds, then you may want to set this to three or four (for Mute, Bell and Whistle/Horn, Short Horn/whistle).
+* The 'Simple' Throttle Screen Layout is designed to allow for up to 6 throttles simultaneously.  |BR|\ It is recommended that this be used on a tablet device, because of the screen real estate demands that 6 throttles requires. |BR|\ When this Throttle Screen Layout is selected, the `Number of Throttles`_ preferences options is activated.  You can then use this to restrict the number of throttles being displayed on the 'Simple' Throttle Screen Layout.  |BR|\ Also the `Function Buttons Area size`_ preferences options is activated.  You can then use this to control how many Function Buttons are displayed with each throttle.  By default, no Function buttons will be shown. |BR|\ If you have selected In Phone Loco Sounds, then you may want to set this to three or four (for Mute, Bell and Whistle/Horn, Short Horn/whistle).
 
 |ed| will automatically reload the |T-S| after closing the preferences screen. 
 
@@ -453,12 +453,12 @@ If this preferences is enabled, |ED| will set the size of the dead zone, or dete
 
 Only relevant to the following Throttle Screen layouts:
 
-* Vertical Shunting |br| Vertical Switching
-* Vertical Shunting - Left |br| Vertical Switching - Left
-* Vertical Shunting - Right |br| Vertical Switching - Right
-* Horizontal Shunting |br| Horizontal Switching
-* Horizontal Shunting - Left |br| Horizontal Switching - Left
-* Horizontal Shunting - Right |br| Horizontal Switching - Right
+* Vertical Shunting |BR| Vertical Switching
+* Vertical Shunting - Left |BR| Vertical Switching - Left
+* Vertical Shunting - Right |BR| Vertical Switching - Right
+* Horizontal Shunting |BR| Horizontal Switching
+* Horizontal Shunting - Left |BR| Horizontal Switching - Left
+* Horizontal Shunting - Right |BR| Horizontal Switching - Right
 
 
 Stop Button Vertical Margins
@@ -469,9 +469,9 @@ If this preferences is enabled, |ED| will add the entered number of pixels to of
 Only relevant to the following Throttle Screen layouts:
 
 * Vertical
-* Vertical Shunting |br| Vertical Switching
-* Vertical Shunting - Left |br| Vertical Switching - Left
-* Vertical Shunting - Right |br| Vertical Switching - Right
+* Vertical Shunting |BR| Vertical Switching
+* Vertical Shunting - Left |BR| Vertical Switching - Left
+* Vertical Shunting - Right |BR| Vertical Switching - Right
 
 Haptic Feedback (Vibration) Preferences
 """""""""""""""""""""""""""""""""""""""
@@ -671,7 +671,7 @@ This preference is used to select what should happen when you *swipe down* on th
 Options:
 
 * None
-* Hide Web View |br| (requires `Throttle Web View?`_ preference to be set)
+* Hide Web View |BR| (requires `Throttle Web View?`_ preference to be set)
 * Lock and Dim Screen
 * Dim Screen
 * Immersive Mode temporarily enable-disable
@@ -687,7 +687,7 @@ This preference is used to select what should happen when you *swipe up* on the 
 Options:
 
 * None
-* Hide Web View |br| (requires `Throttle Web View?`_ preference to be set)
+* Hide Web View |BR| (requires `Throttle Web View?`_ preference to be set)
 * Lock and Dim Screen
 * Dim Screen
 * Immersive Mode temporarily enable-disable
@@ -723,7 +723,7 @@ This preference is used to select what happens when you shake your device phone.
 Options:
 
 * None
-* Hide Web View |br| (requires `Throttle Web View?`_ preference to be set)
+* Hide Web View |BR| (requires `Throttle Web View?`_ preference to be set)
 * Lock and Dim Screen
 * Dim Screen
 * Immersive Mode temporarily enable-disable
@@ -1330,7 +1330,7 @@ Each 'action' can be one of:
 
 Note:
 
-* 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |br| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |br| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
+* 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |BR| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |BR| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
 
 Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
