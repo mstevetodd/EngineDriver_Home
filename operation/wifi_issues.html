@@ -352,6 +352,7 @@
 </ul>
 </li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">WiFi Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#use-location">Use location</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#wrong-network">Wrong Network</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#firewalls">Firewalls</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
@@ -852,17 +853,23 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On This Page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#wrong-network" id="id4">Wrong Network</a></p></li>
-<li><p><a class="reference internal" href="#firewalls" id="id5">Firewalls</a></p></li>
-<li><p><a class="reference internal" href="#using-mobile-data-instead-of-wifi" id="id6">Using Mobile Data instead of WiFi</a></p></li>
-<li><p><a class="reference internal" href="#disconnections" id="id7">Disconnections</a></p></li>
+<li><p><a class="reference internal" href="#use-location" id="id4">Use location</a></p></li>
+<li><p><a class="reference internal" href="#wrong-network" id="id5">Wrong Network</a></p></li>
+<li><p><a class="reference internal" href="#firewalls" id="id6">Firewalls</a></p></li>
+<li><p><a class="reference internal" href="#using-mobile-data-instead-of-wifi" id="id7">Using Mobile Data instead of WiFi</a></p></li>
+<li><p><a class="reference internal" href="#disconnections" id="id8">Disconnections</a></p></li>
 </ul>
 </nav>
 </aside>
 <p>Many of the problems that people have with <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> relate to connection issues.</p>
 <p>Below are several common problems.</p>
+<section id="use-location">
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">Use location</a><a class="headerlink" href="#use-location" title="Link to this heading"></a></h2>
+<p>The Android System setting <cite>Use Location</cite> must be enabled for <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to be able to discover servers.</p>
+<p>If <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> says that you are not connected to a network on the Connection screen, check the <cite>Use Location</cite> is enabled.</p>
+</section>
 <section id="wrong-network">
-<h2><a class="toc-backref" href="#id4" role="doc-backlink">Wrong Network</a><a class="headerlink" href="#wrong-network" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Wrong Network</a><a class="headerlink" href="#wrong-network" title="Link to this heading"></a></h2>
 <div class="admonition-todo admonition" id="id1">
 <p class="admonition-title">Todo</p>
 <p>Wrong Network</p>
@@ -874,7 +881,7 @@ Some provide a notification that “Wi-Fi has no internet access, Tap for option
 If you missed the prompt, you can ‘forget’ the network, and re-enter your WiFi credentials to get the prompt again.</p>
 </section>
 <section id="firewalls">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">Firewalls</a><a class="headerlink" href="#firewalls" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Firewalls</a><a class="headerlink" href="#firewalls" title="Link to this heading"></a></h2>
 <div class="admonition-todo admonition" id="id2">
 <p class="admonition-title">Todo</p>
 <p>Firewalls</p>
@@ -882,7 +889,7 @@ If you missed the prompt, you can ‘forget’ the network, and re-enter your Wi
 <p>Your PC’s firewall software can prevent <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from connecting. You may need to add an exception in your firewall software for JMRI or disable the firewall to allow <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to connect.</p>
 </section>
 <section id="using-mobile-data-instead-of-wifi">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Using Mobile Data instead of WiFi</a><a class="headerlink" href="#using-mobile-data-instead-of-wifi" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Using Mobile Data instead of WiFi</a><a class="headerlink" href="#using-mobile-data-instead-of-wifi" title="Link to this heading"></a></h2>
 <p>As of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> version 2.26.115, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> now handles this situation by “forcing” the local WiFi connection.  There is an* <code class="docutils literal notranslate"><span class="pre">Allow</span> <span class="pre">Mobile</span> <span class="pre">Data</span> <span class="pre">Connection</span></code> <em>preference that can be enabled if needed.</em></p>
 <p>Recent versions of Android have a very confusing <em>feature</em>, sometimes called ‘Smart Network Switching’, that will ignore a connected WiFi network if that network cannot reach the Internet.
 The network shows as connected, and EngineDriver server discovery works, but clicking on the discovered server or Connect button does not work.</p>
@@ -893,7 +900,7 @@ If you missed the prompt, you can “forget” the network, and re-enter your Wi
 <p>Workaround: If you are unable to turn off the feature, you can enable ‘Airplane Mode’, then enable ONLY WiFi, and then connect your WiFi.</p>
 </section>
 <section id="disconnections">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Disconnections</a><a class="headerlink" href="#disconnections" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Disconnections</a><a class="headerlink" href="#disconnections" title="Link to this heading"></a></h2>
 <div class="admonition-todo admonition" id="id3">
 <p class="admonition-title">Todo</p>
 <p>Disconnections</p>
@@ -935,7 +942,7 @@ If you missed the prompt, you can “forget” the network, and re-enter your Wi
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7efd4f559360>
+    <jinja2.runtime.BlockReference object at 0x7fd2194f90c0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

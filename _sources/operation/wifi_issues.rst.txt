@@ -19,6 +19,14 @@ Many of the problems that people have with |ed| relate to connection issues.
 
 Below are several common problems.
 
+
+Use location
+-------------
+
+The Android System setting `Use Location` must be enabled for |ED| to be able to discover servers.
+
+If |ED| says that you are not connected to a network on the Connection screen, check the `Use Location` is enabled.
+
 Wrong Network
 -------------
 
