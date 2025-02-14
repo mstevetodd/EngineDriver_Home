@@ -283,6 +283,7 @@ nav.in-this-section {
   padding: 12px 24px 12px 24px !important;
   border-radius: 10px;
   margin: 14px 0 14px 14px !important;
+  width: 37%;
 }
 
 html[data-theme='dark'] .rst-content .sidebar {
@@ -295,7 +296,8 @@ html[data-theme='dark'] .rst-content .sidebar {
 }
 
 html[data-theme='dark'] .sidebar-on-this-page {
-  box-shadow: 0px 0px 10px #343d3f !important;
+  /* box-shadow: 0px 0px 10px #343d3f !important; */
+    box-shadow: -5px 5px 20px #635c1e !important;
 }
 
 .sidebar-title {

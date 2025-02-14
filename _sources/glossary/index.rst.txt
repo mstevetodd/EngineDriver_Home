@@ -23,7 +23,7 @@ Glossary
   *Meaning*
 
 Command Station / DCC Command Station / DCC Base Station
-  |todo|
+  |TODO|
 
 Consist / Multiple Units
   Multiple locos hauling a singe train
@@ -38,7 +38,7 @@ JMRI
   Java Model Railroad Interface
 
 Loco / Locomotive / Engine 
-  |todo|
+  |TODO|
 
 Main Screens
   The screens: 'Throttle', 'Turnouts/Points', 'Routes', 'Web' and, to a lesser extent, 'Connection'.
@@ -47,7 +47,7 @@ Switching / Shunting
   The process of moving individual carriages to/from specific locations on yards or sidings.
 
 Turnouts / Points
-  |todo|
+  |TODO|
 
 USB
   Universal Serial Bus
@@ -64,7 +64,7 @@ WiThrottle protocol
 References
 ==========
 
-|todo|
+|TODO|
 
 Copyright
 =========

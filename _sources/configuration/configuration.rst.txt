@@ -9,19 +9,23 @@ Configuring Engine Driver
 
 ----
 
+.. image:: ../_static/images/parts/menu_throttle.png
+  :scale: 40 %
+  :align: right
+
 |ed| is highly configurable.
 
 Most configuration options are found in the *Preferences* which is accessed via the overflow menu which is normally three dots (⁞) or three bars (≡).
 
-Some of the many Preferences include:
+Some of the *many* Preferences include:
 
-* You can turn off the `stop on release <./preferences.html#stop-on-release>`_ preference
+* You can change the appearance and behaviour of the |T-S|
+* You can turn off the :ref:`stop on release <configuration/preferences:stop on release?>` preference
 * You can set a Maximum value and Maximum change% for the throttle sliders
-* If the throttle slider is too small for your fingers, increase the size
 * You can set the initial web page for the full-size web panel, or enable the smaller web view on the |T-S|
-* There are also settings to help maximize the use of your device's smaller screen by hiding items not relevant to you
+* There are also settings to help maximise the use of your device's smaller screen by hiding items not relevant to you
 
-Look around in Preferences, there are a huge number of settings to personalize |ed|, including many more if you enable :ref:`Show Advanced Preferences <configuration/preferences:show advanced preferences?>` preference.
+Look around in Preferences, there are a *huge number* of settings to personalise |ed|, including many more if you enable :ref:`Show Advanced Preferences <configuration/preferences:show advanced preferences?>` preference.
 
 .. note:: 
   :class: note-ed-hidden-title

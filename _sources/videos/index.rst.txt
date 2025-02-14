@@ -20,7 +20,7 @@ Videos
 Connecting
 ==============================
 
-|todo|
+|TODO|
 
 Preferences
 ==============================
@@ -28,23 +28,23 @@ Preferences
 Appearance
 -------------------
 
-* Orientation  |todo|
+* Orientation  |TODO|
 * `Throttle Name <https://youtu.be/IgSCgUIYGls>`_
 * `Themes <https://youtu.be/wD-1l3iMtTs>`_ 
 * Throttle Screen
    * `Throttle Layouts <https://youtu.be/mhuUskTWJ2k>`_
-   * Status bar |todo|
+   * Status bar |TODO|
    * `Number of throttles <https://youtu.be/L6ckXM7nrFg>`_ 
    * `Slider speed and buttons <https://youtu.be/zH5CaSKaASQ>`_ 
    * `Direction buttons <https://youtu.be/DVoHBN3edhs>`_  
    * `Web View <https://youtu.be/KsnLvuOBZ9c>`_ 
-   * Swipe Up-Down |todo|
+   * Swipe Up-Down |TODO|
    * `Switching/Shunting screen type <https://youtu.be/6HJF9dZvoPU>`_
    * `Shunting Switching/Screen and Background Images <https://youtu.be/e-2ZQqz5yhk>`_
 * Throttle Control
-   * Loco Select |todo|
-   * On the fly Consists |todo|
-   * Consist Lights |todo|
+   * Loco Select |TODO|
+   * On the fly Consists |TODO|
+   * Consist Lights |TODO|
    * `Pause Speed button <https://youtu.be/Wkz66HfibhY>`_
 * `Improving screen real estate <https://youtu.be/-sjrbvR5bq0>`_ 
 * `In Phone Loco Sounds <https://youtu.be/jy-SEKp-mFs>`_
@@ -52,15 +52,16 @@ Appearance
 Gamepads
 ================
 
-	* `Choosing a gamepad <https://youtu.be/NKi90c4INFU>`_
-	* `Gamepad Preferences <https://youtu.be/PQi8V3fFT3E>`_
-	* Multiple gamepads |todo|
-	* Voice Response |todo|
+* `Choosing a gamepad <https://youtu.be/NKi90c4INFU>`_
+* `Gamepad Preferences <https://youtu.be/PQi8V3fFT3E>`_
+* `Using a gampad - Little Wicket Railway <https://youtu.be/OMPRaVoKoLw?si=iuUiPsGgsVZ9ZKMX1>`_
+* Multiple gamepads |TODO|
+* Voice Response |TODO|
 
 Turnouts/Points and Routes
 ==================================
 
-|todo|
+|TODO|
 
 Default Functions
 ==========================
@@ -73,10 +74,10 @@ Import/Export/Reset Preferences
 Server Specific Preferences
 ---------------------------
 
-|todo|
+|TODO|
 
 Preserving the battery in your device
 ===========================================    
 
-|todo|
+|TODO|
 

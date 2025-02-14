@@ -622,7 +622,7 @@ You can also configure specific :ref:`Swipe up or Swipe down <configuration/pref
 .. note:: 
      :class: note-ed-hidden-title
 
-     see preference ...
+     See the :ref:`configuration/preferences:Swipe Up-Down Preferences` for more information on how to configure immersive mode.
 
 |HR-DASHED|
 

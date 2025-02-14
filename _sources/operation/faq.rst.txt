@@ -52,7 +52,7 @@ Q. Why doesn't |ed| automatically find my |WTS-DCC-EX|?
 
   A1. One reason can be your router doesn't not support the 'Bonjour' protocol. There is not much you can do if this is the case other than trying a different router.
 
-  A2. 4.5ghz and 5ghz. |todo|
+  A2. 4.5ghz and 5ghz. |TODO|
 
 Q. If |ed| can't find my Server/Railroad automatically 
 
@@ -296,12 +296,17 @@ Q. I don't like the direction buttons in that order
 Hiding the title bar and navigation bar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Hiding the title bar and navigation bar
+Refer to `Immersive mode (Full Screen)`.
 
 Immersive mode (Full Screen)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Immersive mode (Full Screen)
+Immersive mode hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.
+
+It can optionally also hide the Android System Status Bar at the top of the page.
+
+Swiping up from off screen will normally temporarily show the Android navigation buttons again.
+
 
 Swiping up or Down
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
