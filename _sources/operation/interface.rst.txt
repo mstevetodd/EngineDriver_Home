@@ -14,7 +14,7 @@ User Interface
 
    .. contents:: On This Page
       :local:
-      :depth: 4
+      :depth: 3
 
 The user interface for |ED| is described and explained in these pages as 'screens'.  There are several '`Main Screens`_' which you will routinely interact with and and larger number of '`Secondary / Support Screens`_' that will interact with infrequently. 
 
@@ -1248,9 +1248,9 @@ Accessed from |T-S| by the :menuselection:`Menu --> Loco Sounds` or from the Sta
 Function Defaults Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../_static/images/screenshots/function_defaults.png
+.. image:: ../_static/images/screenshots/function_defaults1.png
   :align: right
-  :scale: 12%
+  :scale: 8%
 
 This screen allows you to override the appearance of the Function buttons on the throttle screen, primarily for locos that have not been acquired from the server roster.
 
@@ -1281,7 +1281,7 @@ If this preference is enabled locos acquired from server roster will also us the
 Override WiThrottle Default Latching
 """"""""""""""""""""""""""""""""""""
 
-If this preference is enabled an additional `DCC-EX Function Settings Screen`_ will be available from the menu.
+If this preference is enabled an additional `Function Latching Settings Screen`_ will be available from the menu.
 
 The DCC-EX Function Settings Screen then allows you override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC address . i.e. not locos acquired from the roster.
 
@@ -1309,6 +1309,23 @@ The **Function Label** defines what label/text should show on the corresponding 
 
 |force-break|
 
+Function Latching Settings Screen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ../_static/images/screenshots/function_latching_settings.png
+  :align: right
+  :scale: 8%
+
+.. TODO:: Function Latching Settings Screen
+
+The function list shows 32 functions with both a label and a drop-list to say if the function should be latching or not (momentary).
+
+This screen is only available in the menu if the `Override WiThrottle Default Latching`_ option is enabled on the `Function Defaults Screen`_ and you are are connected to a WiThrottle server. (Not an |EX-CS| using the DCC-EX Native protocol.)
+
+Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Latching Settings`.
+
+|force-break|
+
 DCC-EX Function Settings Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1317,6 +1334,8 @@ DCC-EX Function Settings Screen
    :align: right
 
 This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC address . i.e. not locos acquired from the roster.
+
+This screen is effectively the same as the `Function Latching Settings Screen`_ but is only available when connected to an |EX-CS| using the DCC-EX Native protocol. (Not WiThrottle protocol)
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX Function Settings`.
 
@@ -1335,9 +1354,7 @@ See :doc:`/operation/dcc-ex-native-protocol` for more information.
 
 This menu item and screen is only available if connected to a DCC-EX EX-CommandStation using the |NATIVE|.
 
-
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX`.
-
 
 |force-break|
 

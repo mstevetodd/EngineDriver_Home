@@ -657,11 +657,10 @@ If you've defined your turnouts / points and routes in a panel file, make sure t
 * From the `Defined Turnout/Point list <Server Defined Turnout/Point list>`_ provided by the |WTS-DCC-EX| (JMRI)
 * From the `Recent Turnout/Point list <Recent Turnout/Point list>`_
 
-The |TP-S| can be accessed three ways:
+The |TP-S| can be accessed two ways:
 
 * Menu
 * Swipe Left/Right (if enabled)
-* Auto Web Orientation
 
 DCC Address (Turnout/Point)
 """""""""""""""""""""""""""
@@ -728,11 +727,10 @@ To get the *Turnouts / Points* screen you can use the menu :menuselection:`Menu 
 
 If you've defined your turnouts and routes in a panel file, make sure to specify "user names" for those you'd like to see listed on your throttle. You can also "filter" the turnouts shown using the WiThrottle->Filter Controls option in the WiThrottle window.
 
-The |R-S| can be accessed three ways:
+The |R-S| can be accessed two ways:
 
 * Menu
 * Swipe Left/Right (if enabled)
-* Auto Web Orientation
 
 From the WiThrottle server
 """"""""""""""""""""""""""
@@ -804,9 +802,9 @@ This section describes the |WV-S|, which is a full screen web browser.  The *Thr
 
 The |WV-S| can be accessed three ways:
 
-* Menu
-* Swipe Left/Right (if enabled)
-* Auto Web Orientation
+* `Menu <Overflow Menu (Web View Screen)>`_
+* `Swipe Left/Right <Swipe (Web View Screen)>`_ (if enabled)
+* `Auto Web Orientation`_
 
 Overflow Menu (Web View Screen)
 """""""""""""""""""""""""""""""
@@ -884,16 +882,39 @@ Refer to :doc:`this page </operation/dcc-ex-native-protocol>` for details on how
 Exiting Engine Driver
 ^^^^^^^^^^^^^^^^^^^^^^
 
-To exit |ed|, you can:
+You can exit |ED| two ways:
 
-* Press the Android :guilabel:`Back` button once from the main screens (more than once if you are on one of the secondary screens) |BR|\ OR
-* :menuselection:`Menu --> Exit`
+* The Menu
+* The Android Navigation :guilabel:`Back` button
 
-|ed| can be configured to exit when the Android :guilabel:`Back` button is pressed twice quickly from the |T-S|.
+**Back button**
+
+* Press the Android :guilabel:`Back` button once from the main screens (more than once if you are on one of the secondary screens). You will be asked if you want to exit. 
+
+|ed| can optionally be configured to exit when the Android :guilabel:`Back` button is pressed twice quickly from the |T-S|.
 
   See the :ref:`Double Back Buton to Exit? in the Preference page <configuration/preferences:Device Preferences>` for information.
+
+**Menu**
+
+You can select :menuselection:`Menu --> Exit`. You will then be asked if you want to exit. 
+
+|HR-DASHED|
 
 Exiting |ed|:
 
 * Disconnects from the |WTS-DCC-EX|.
 * Stops playing all In Phone Loco Sounds (if any were configured).
+* It does not necessarily stop any locos that you were controlling.
+
+.. warning::
+
+  A common question is.. *"I have exited Engine Driver, so why is it still showing in the 'Running Apps' list."*
+
+  This is a common misunderstanding.  
+  
+  The list of apps that shows when you click on the square button on the Android Navigation Bar is **NOT** a list of **Running Apps**.  It is a list of **Recent Apps**.
+
+  Android deliberately maintains fragments of every app that runs to make it faster to restart if required.  Android will really kill the app from memory if some other app needs the memory.
+
+  When you see |ED| in this list it is not running *unless* you also see the small |ED| icon on the Android Status Bar at the top of the screen.  If the icon is there, then |ED| is still running.  Instead of exiting, it was pushed to background, where it will attempt to keep running.  As |ED| was not designed to run in background, Android may arbitrarily kill it at any time.
