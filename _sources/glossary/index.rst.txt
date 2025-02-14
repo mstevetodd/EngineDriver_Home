@@ -16,50 +16,42 @@ Glossary / References / Copyright
    .. contents:: On This Page  
       :local:
 
+|FORCE-BREAK|
+
 Glossary
 ========
 
-*Term*
-  *Meaning*
+.. list-table::
+  :width: 100%
+  :widths: 15 85
+  :header-rows: 1
 
-Command Station / DCC Command Station / DCC Base Station
-  |TODO|
-
-Consist / Multiple Units
-  Multiple locos hauling a singe train
-
-DC
-  Direct Current
-  
-DCC
-  Digital Command and Control
-
-JMRI
-  Java Model Railroad Interface
-
-Loco / Locomotive / Engine 
-  |TODO|
-
-Main Screens
-  The screens: 'Throttle', 'Turnouts/Points', 'Routes', 'Web' and, to a lesser extent, 'Connection'.
-
-Switching / Shunting
-  The process of moving individual carriages to/from specific locations on yards or sidings.
-
-Turnouts / Points
-  |TODO|
-
-USB
-  Universal Serial Bus
-
-WiThrottle
-  1. Trademark owned by Brett Hoffman 
-  2. proprietary iOS app developed by Brett Hoffman
-
-WiThrottle protocol
-  proprietary protocol developed by Brett Hoffman
-
-
+  * - Term
+    - Meaning
+  * - Command Station |BR| DCC Command Station |BR| DCC Base Station
+    - TODO
+  * - Consist |BR| Multiple Units
+    - Multiple locos hauling a singe train
+  * - DC
+    - Direct Current
+  * - DCC
+    - Digital Command Control
+  * - JMRI
+    - Java Model Railroad Interface
+  * - Loco |BR| Locomotive |BR| Engine
+    - TODO
+  * - Main Screens
+    - The screens: 'Throttle', 'Turnouts/Points', 'Routes', 'Web' and, to a lesser extent, 'Connection'.
+  * - Switching |BR| Shunting
+    - The process of moving individual carriages to/from specific locations on yards or sidings.
+  * - Turnouts |BR| Points
+    - TODO
+  * - USB
+    - Universal Serial Bus
+  * - WiThrottle
+    - \ 1. Trademark owned by Brett Hoffman |BR| 2. proprietary iOS app developed by Brett Hoffman
+  * - WiThrottle protocol
+    - proprietary protocol developed by Brett Hoffman
 
 References
 ==========
@@ -71,19 +63,11 @@ Copyright
 
 Copyright (C) 2025 M. Steve Todd mstevetodd@mstevetodd.com
 
-This documentation is free; you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation; either version 3 of the License, or
-(at your option) any later version.
+This documentation is free; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
-This documentation is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+This documentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 Screenshots
 ===========
