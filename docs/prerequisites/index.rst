@@ -31,14 +31,19 @@ To Use Engine Driver You must...
 Android Device/Phone
 --------------------
 
+.. image:: ../_static/images/screenshots/phones.png
+   :scale: 15%
+   :align: right
+
 |ed| will work on most Android devices (Phones and Tablets) made in the last 8-9 years. Currently it has a minSDKVersion 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN) but Android versions greater than 5.0 are recommended. Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
 
-.. image:: ../_static/images/gamepads/esu_mcii.png
-   :scale: 25 %
-   :align: right
+|FORCE-BREAK|
 
 ESU MobileControl II
 """"""""""""""""""""
+.. image:: ../_static/images/gamepads/esu_mcii.png
+   :scale: 25 %
+   :align: right
 
 |ed| also fully supports the `ESU MobileControl II (MC2) <http://www.esu.eu/en/products/digital-control/mobile-control-ii/>`_ Android throttle.
 
@@ -46,6 +51,8 @@ ESU MobileControl II
   :class: note-ed-hidden-title
   
   See the `ESU MobileControl II <../operation/esu_mcii.html>`_ page for more information.
+
+|FORCE-BREAK|
 
 WiThrottle and DCC-EX Native Servers
 ------------------------------------
