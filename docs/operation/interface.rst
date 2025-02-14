@@ -27,14 +27,12 @@ There are also some settings that impact all of the |ED| screens, which are desc
 Main Screens
 -------------
 
-There are four main screens:
+There are five main screens:
 
 .. contents:: 
     :depth: 1
     :local:
     :class: in-this-section
-
-----
 
 Connection Screen
 ^^^^^^^^^^^^^^^^^
@@ -42,7 +40,7 @@ Connection Screen
 .. image:: ../_static/images/screenshots/connect.png
    :align: right
 
-This screen is the first screen you normally see when starting |ED|. 
+This screen is the first screen you normally see when starting |ED|. (Other than the first time you start |ED|.)
 
 It allows you choose which |WTS-DCC-EX| to connect to, which you must do to control your trains.
 
@@ -1270,9 +1268,60 @@ Function Defaults Screen
   :align: right
   :scale: 12%
 
-.. todo:: Function Defaults Screen
+This screen allows you to override the appearance of the Function buttons on the throttle screen, primarily for locos that have not been acquired from the server roster.
+
+.. contents:: The items that can be altered include:
+    :depth: 1
+    :local:
+    :class: in-this-section
+
+Some of these have equivalent items in the preferences.
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Defaults`.
+
+Number of Default Functions
+""""""""""""""""""""""""""""
+
+This preference is used to limit the number of Function Labels shown for selected locos that are not from the Server Roster, or where you have set the :ref:`configuration/preferences:Use default function labels?` preference. 
+
+Number of Default Functions for Roster
+""""""""""""""""""""""""""""""""""""""
+
+This preference is used to limit the number of Function Labels shown for Server Roster Entries that don't have any function Labels configured.
+
+Use Default Function Labels
+""""""""""""""""""""""""""""
+
+If this preference is enabled locos acquired from server roster will also us the default function labels as defined on this screen.
+
+Override WiThrottle Default Latching
+""""""""""""""""""""""""""""""""""""
+
+If this preference is enabled an additional `DCC-EX Function Settings Screen`_ will be available from the menu.
+
+The DCC-EX Function Settings Screen then allows you override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC address . i.e. not locos acquired from the roster.
+
+Use Defaults for Roster Entries With no functions
+""""""""""""""""""""""""""""""""""""""""""""""""""
+
+If this preference is enabled, locos in the server roster that have no function buttons defined will show no Function buttons on the Throttle Screen.
+
+If this preference is NOT enabled, locos in the server roster that have no function buttons defined will show the default functions and and labels as defined on the screen.
+
+This preference is enabled by default.
+
+Function List
+""""""""""""""
+
+The function list shows up to 32 functions with both a number and a label.
+
+The **Function Number** defines which DCC function number should be activated when you click the corresponding button on the Throttle Screen.
+
+Not all numbers (0-31) need be included.
+
+The order of the number can be changed.
+
+The **Function Label** defines what label/text should show on the corresponding button on the Throttle Screen.
 
 |force-break|
 
