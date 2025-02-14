@@ -1020,8 +1020,6 @@ The follow additional screens will be shown at different times and for various r
     :depth: 1
     :local:
     :class: in-this-section
-    
-----
 
 Intro/Setup Wizard Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1032,8 +1030,6 @@ The *Setup Wizard* will start automatically the first time you run |ed| after yo
    :class: note-ed-hidden-title
 
    See the  :doc:`Setup wizard page </configuration/setup_wizard>`  for more information.
-
-----
 
 Loco Select Screen
 ^^^^^^^^^^^^^^^^^^
@@ -1152,8 +1148,6 @@ Loco Sounds
 
   Clicking this button will show `<In Phone Loco Sounds Screen>`_.
 
-----
-
 Consist Edit Screen
 ^^^^^^^^^^^^^^^^^^^
 
@@ -1186,8 +1180,6 @@ Consist Top
 * Change Facing
 
 
-----
-
 Consist Lights Edit Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1202,8 +1194,6 @@ Consist Lights Edit Screen
 * Off
 
 |force-break|
-
-----
 
 Power Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1221,8 +1211,6 @@ This screen allows you to toggle the state of track power to your layout.
 * When the button is **Amber**, it indicates that track power state is unknown.
 * Pressing a **Green** button will cause the button to be changed to **Red** and the track power will be turned 'Off'.
 * Pressing a **Red** button or **Amber** button will cause the button to be changed to **Green** and the track power will be turned 'On'.
-
-----
 
 Preferences Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1242,8 +1230,6 @@ This screen allows you to personalise  |ed| for how you want it to use it.
 
 |force-break|
 
-----
-
 In Phone Loco Sounds Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1258,8 +1244,6 @@ See :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` for 
 Accessed from |T-S| by the :menuselection:`Menu --> Loco Sounds` or from the Status Bar if enabled with the :ref:`In phone sounds button <configuration/preferences:in phone sounds button>` preference.
 
 |force-break|
-
-----
 
 Function Defaults Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1325,8 +1309,6 @@ The **Function Label** defines what label/text should show on the corresponding 
 
 |force-break|
 
-----
-
 DCC-EX Function Settings Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -1339,8 +1321,6 @@ This screen allows you to override to default latching/momentary behaviour of al
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX Function Settings`.
 
 |force-break|
-
-----
 
 DCC-EX Screen
 ^^^^^^^^^^^^^
@@ -1361,8 +1341,6 @@ Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX`.
 
 |force-break|
 
-----
-
 Gamepad Test Screen
 ^^^^^^^^^^^^^^^^^^^
 
@@ -1374,9 +1352,6 @@ Accessed from the |T-S| via the :menuselection:`Menu --> Gamepads -> Gamepad Tes
 
 |BR|
 
-
-----
-
 View Log Screen
 ^^^^^^^^^^^^^^^
 
@@ -1384,22 +1359,21 @@ View Log Screen
   :align: right
   :scale: 12%
 
-.. todo:: View Log Screen
-
-Accessed from any of the main screens via :menuselection:`Menu --> View Log`.
-
 This screen allows you to view the internal |ED| log of events.
 This is sometimes useful for analysing problems.
 
 The option to `Start recording to file` creates a user-accessible file that can be sent to the |ed| app developers or the `Groups.io <https://groups.io/g/jmriusers/topics>`_ help group to assist you in resolving a problem.
 The file will be located on your mobile phone at:
-Internal storage ``/Android/data/jmri.enginedriver/files`` |BR|\ and will be named something like: ``logcat9999999999999.txt``
+Internal storage ``/Android/data/jmri.enginedriver/files``. It will be named something like: ``logcat9999999999999.txt``.
 
-Enable the ??? preference to include the timestamp on each line of the log.
+Note: This location cannot be accessed easily on later versions of Android (>13). So to see it or send to the developers for support you must connect your device/phone to a PC.
+
+Enable the :ref:`configuration/preferences:Show Timestamps on Log?` preference to include the timestamp on each line of the log.
+
+Accessed from any of the main screens via :menuselection:`Menu --> View Log`.
+
 
 |force-break|
-
-----
 
 About Screen
 ^^^^^^^^^^^^
@@ -1408,17 +1382,27 @@ About Screen
   :align: right
   :scale: 12%
 
-.. todo:: About Screen
-
 This screen displays 
 
 * Information about |ed| 
 * Information about the |WTS-DCC-EX| it is currently connected to (if any)
 * A page of basic information about |ed|
 
-|force-break|
+Displayed information includes:
 
-----
+  * **OS:**  (Android version)
+  * **SDK:**
+  * **DeviceID:**
+  * **IP:** (of the device/phone)
+  * **SSID:** 
+  * **Net:**
+  * **EngineDriver:**  (version)
+  * **Protocol:** (WiThrottle or DCC-EX)
+  * **Heartbeat:**
+  * **Host:** (IP Address)   **Port:**
+  * **Server:** (details)
+
+|force-break|
 
 Reconnecting Screen
 ^^^^^^^^^^^^^^^^^^^
@@ -1436,8 +1420,6 @@ This section describes some of the elements and features that appear throughout 
 * `Localisation`_
 * `Action Bar`_
 * `Overflow Menu`_ (the Menu)
-
-----
 
 Theme / Styles
 ^^^^^^^^^^^^^^
@@ -1476,8 +1458,6 @@ There are a number of themes to choose from:
 
    See the :ref:`Theme / Style preference <configuration/preferences:theme/style>` on the preferences page for more information.
 
-----
-
 Localisation
 ^^^^^^^^^^^^
 
@@ -1504,8 +1484,6 @@ Supported localisations are:
    :class: note-ed-hidden-title
 
    See the :ref:`Localisation preference <configuration/preferences:Localisation>` on the Preferences page for more information.
-
-----
 
 Action Bar
 ^^^^^^^^^^
@@ -1692,9 +1670,6 @@ WiThrottle Server Name
 |BR|
 
 |BR|
-
-
-----
 
 Overflow Menu
 ^^^^^^^^^^^^^
