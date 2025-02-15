@@ -32,7 +32,10 @@ What appears as the label for the function buttons, how many function buttons ar
 DCC Functions
 =============
 
-.. todo:: DCC Functions
+From `DCC Wiki... <https://dccwiki.com/Functions>`_
+
+  *"Functions are additional outputs on a Multifunction Decoder that can control nearly anything one can think of – lights, sounds, smoke, animation, uncoupling devices, etc. Many are not limited to simple on/off functions - for example lighting functions are capable of imitating Mars Lights, Gyralites, Rule 17 dimming, single or double flashing strobes, ditch lights, and other effects. Output is generally 12 volts DC – to use LEDs or low-voltage lights, a resistor is needed. See the decoder's documentation as some have settings for LEDs."*
+
 
 What Function Buttons Are Shown
 ===============================
@@ -102,4 +105,8 @@ By Default, the |IPLS| buttons are the only way to activate |IPLS_SHORT| sounds 
 Functions and Gamepads
 =======================
 
-.. todo:: Functions and Gamepads
+If you have a Bluetooth Gamepad or USB volume control connected to you device/phone, then the physical buttons on the gamepad or volume control device.
+
+See :doc:`Configuring Gamepads </configuration/gamepads>` for more information on configuring gamepad buttons.
+
+See :doc:`Gamepad Operation </operation/gamepads>` for more information on using gamepads.
