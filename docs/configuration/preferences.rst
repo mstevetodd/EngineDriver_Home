@@ -832,7 +832,10 @@ This preference adjusts how long between deceleration speed steps repeats (in mi
 
 Smaller is faster.
 
-See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Speed Step Amount
 '''''''''''''''''
@@ -841,7 +844,10 @@ This preference adjusts how much the actual speed step jumps each step to the ta
 
 Larger is faster.
 
-See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Maximum Throttle Percentage (SRT)
 '''''''''''''''''''''''''''''''''
@@ -902,7 +908,10 @@ Disable the Air Reservoir
 
 If this preference checked the fill state of the air reservoir and air will not impact available brakes.
 
-See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Rate the air brakes refresh
 '''''''''''''''''''''''''''
@@ -930,49 +939,70 @@ Decoder Brake Type
 
 This preference sets wehther or not to activate the Brake functions on the decoder.
 
-See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder Low Function Number(s)
 ''''''''''''''''''''''''''''''
 
 This preference sets which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)
 
-See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder Low Brake Value (Percent)
 '''''''''''''''''''''''''''''''''
 
 This preference sets what Percentage Brake to activate the Low Function(s)
 
-See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder Mid Function Number(s)
 ''''''''''''''''''''''''''''''
 
 This preference sets which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)
 
-See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder Mid Brake Value (Percent)
 '''''''''''''''''''''''''''''''''
 
 This preference sets what Percentage Brake to activate the Mid Function(s)
 
-See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder High Function Number(s)
 '''''''''''''''''''''''''''''''
 
 This preference sets which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)
 
-See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder High Brake Value (Percent)
 ''''''''''''''''''''''''''''''''''
 
 This preference sets the Percentage Brake to activate the High Function(s).
 
-See description of the |SRT| integration with decoder on the :doc:`/operation/semi-realistic-throttle` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder on the :doc:`/operation/semi-realistic-throttle` page.
 
 
 Throttle Screen Action Bar Preferences
@@ -1080,14 +1110,20 @@ First Screen Layout
 
 This preference allows you to select one of the two Layouts that the Layout Switch Button will switch between.  (This throttle layout and the next preference.)
 
-See the `Throttle Screen Layout`_ preference for the available options.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the `Throttle Screen Layout`_ preference for the available options.
 
 Second Screen Layout
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to select one of the two Layouts that the Layout Switch Button will switch between.  (This throttle layout and the previous preference.)
 
-See the `Throttle Screen Layout`_ preference for the available options.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the `Throttle Screen Layout`_ preference for the available options.
 
 In phone sounds button
 """"""""""""""""""""""
@@ -1258,7 +1294,10 @@ Consist Functions - Follow Rule Style
 
 Which style of rules to follow in a consist when function buttons are pressed.
 
-See the :doc:`/operation/consist-follow-functions` page for detailed information on the different rule types and how to use them.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :doc:`/operation/consist-follow-functions` page for detailed information on the different rule types and how to use them.
 
 Note: If 'Use Default function labels' is enabled, 'Special...' will also apply to the lead (or only) loco.
 
@@ -1301,7 +1340,10 @@ Which locos in the consist should react to the function buttons if none of the r
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
-Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Headlight specific String 1
 """""""""""""""""""""""""""
@@ -1310,7 +1352,10 @@ Comma separated string(s) to look for in the function labels of the locos in the
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
-Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Headlight specific Action 1
 """""""""""""""""""""""""""
@@ -1332,14 +1377,20 @@ Note:
 
 * 'Lead+Trail' refers to the first and last locos in the |consist| train. |BR| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |BR| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
 
-Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 String 2, 3, 4, 5
 """""""""""""""""
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
-Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Action for String 2, 3, 4, 5
 """"""""""""""""""""""""""""
@@ -1348,7 +1399,10 @@ This applies to Action for String 2, Action for String 3, Action for String 4, A
 
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
-Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
 Additional Throttle Control Source Preferences
 ----------------------------------------------
@@ -1475,10 +1529,10 @@ This preference allows you to set the action that |ED| will perform when you pre
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad button action <!-- Y -->
 ''''''''''''''''''''''''''''''''
@@ -1487,10 +1541,10 @@ This preference allows you to set the action that |ED| will perform when you pre
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad button action <!-- A -->
 ''''''''''''''''''''''''''''''''
@@ -1499,10 +1553,10 @@ This preference allows you to set the action that |ED| will perform when you pre
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad button action <!-- B -->
 ''''''''''''''''''''''''''''''''
@@ -1511,10 +1565,10 @@ This preference allows you to set the action that |ED| will perform when you pre
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad button action <!-- Start(Lower) -->
 '''''''''''''''''''''''''''''''''''''''''''
@@ -1523,10 +1577,10 @@ This preference allows you to set the action that |ED| will perform when you pre
 
 Note: depending on the gamepad type you are using, this may have a different label and or location.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad button action <!-- Return(Upper) -->
 ''''''''''''''''''''''''''''''''''''''''''''
@@ -1538,40 +1592,40 @@ Gamepad DPAD Up action
 
 Choose the action when you press the :guilabel:`DPAD Up` on the gamepad.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad DPAD Right action
 '''''''''''''''''''''''''
 
 This preference allows you to set the action that |ED| will perform when you press the :guilabel:`DPAD Right` on the gamepad.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad DPAD Down action
 ''''''''''''''''''''''''
 
 This preference allows you to set the action that |ED| will perform when you press the :guilabel:`DPAD Down`` on the gamepad.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Gamepad DPAD Left action
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to set the action that |ED| will perform when you press the :guilabel:`DPAD Left`` on the gamepad.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Swap Direction buttons with Screen buttons?
 '''''''''''''''''''''''''''''''''''''''''''
@@ -1642,40 +1696,40 @@ Top-left button action
 
 This preference allows you to choose the action when you press the Top-left button.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Bottom-left button action
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to choose the action when you press the Bottom-left button.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Top-right button action
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to choose the action when you press the Top-right button.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Bottom-right button action
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to choose the action when you press the Bottom-right button.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
+  See the `Configuring the buttons <../configuration/gamepads.html#configuring-the-buttons>`_ section of the Gamepads page for information on the available options.
 
 Button repeat delay
 '''''''''''''''''''''''''''''''''''
@@ -1874,10 +1928,10 @@ There is built in Support for a number of different type of locos:
 
 The following preferences provide options for the In Phone Loco Sounds (IPLS).
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    For additional information see the `In Phone Loco Sounds (IPLS) section <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_ of the Operations page.
+  For additional information see the `In Phone Loco Sounds (IPLS) section <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_ of the Operations page.
 
 .. contents:: In this Section
     :depth: 1
@@ -2005,30 +2059,30 @@ Mobile Data connection?
 
 If this preference is enabled |ED| will allow your device to connect to JMRI, or any |WTS-DCC-EX|, using your phone's Mobile Data.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Using Mobile Data instead of WiFi <../operation/wifi_issues.html#using-mobile-data-instead-of-wifi>`_ section of the WiFi Issues page for more information on the use of this preference.
+  See the `Using Mobile Data instead of WiFi <../operation/wifi_issues.html#using-mobile-data-instead-of-wifi>`_ section of the WiFi Issues page for more information on the use of this preference.
 
 Feedback on Disconnect
 """""""""""""""""""""""""
 
 If this preference is enabled |ed| will play a sound (Audible alert) and will vibrate if there is an unexpected disconnection from the |WTS-DCC-EX|.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Disconnections <../operation/wifi_issues.html#disconnections>`_ section of the WiFi Issues page if you are having consistant disconnections.
+  See the `Disconnections <../operation/wifi_issues.html#disconnections>`_ section of the WiFi Issues page if you are having consistant disconnections.
 
 Background Alert
 """""""""""""""""""""""""
 
 If this preference is enabled |ed| will play a sound (Audible alert) when the app is sent to the background.
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See the `Pushing the app to the Background <../operation/operation.html#pushing-the-app-to-the-background>`_ section of the Operation - Details Instructions page for more information.
+  See the `Pushing the app to the Background <../operation/operation.html#pushing-the-app-to-the-background>`_ section of the Operation - Details Instructions page for more information.
 
 DCC-EX EX-CommandStation Preferences
 """"""""""""""""""""""""""""""""""""

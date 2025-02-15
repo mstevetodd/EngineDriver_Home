@@ -83,7 +83,10 @@ Remapping gamepad buttons
 
 All the buttons of the gamepad that can be accessed by |ed| can be remapped to perform most of the features and functions of the |ED| |T-S|.
 
-`See Gamepad Configuration <../configuration/gamepads.html>`_ for details.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See `Gamepad Configuration <../configuration/gamepads.html>`_ for details.
 
 Multiple gamepads
 -----------------
@@ -140,7 +143,10 @@ This has been successful with the 'Android C' mode.
 
 This is a DIY gamepad with a keypad and physical dial.
 
-See https://github.com/flash62au/WiTcontroller for details.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See https://github.com/flash62au/WiTcontroller for details.
 
 **Normal Keyboard**
 
