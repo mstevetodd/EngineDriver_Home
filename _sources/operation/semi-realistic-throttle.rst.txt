@@ -237,14 +237,20 @@ Deceleration Speed Step Repeat Delay
 
 *How long between deceleration speed steps repeats (in milliseconds). Smaller is faster.*
 
-* See notes above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See notes above.
 
 Speed Step Amount
 -----------------
 
 *How much the actual speed step jumps each step to the target speed. Larger is faster.*
 
-* See notes above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See notes above.
 
 Maximum Throttle Percentage
 ---------------------------
@@ -346,42 +352,60 @@ Decoder Low Function Number(s)
 
 *Which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)*
 
-* See description of the |SRT| integration with decoder braking above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking above.
 
 Decoder Low Brake Value (Percent)
 ---------------------------------
 
 *What Percentage Brake to activate the Low Function(s)*
 
-* See description of the |SRT| integration with decoder braking above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking above.
 
 Decoder Mid Function Number(s)
 ------------------------------
 
 *Which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)*
 
-* See description of the |SRT| integration with decoder braking above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking above.
 
 Decoder Mid Brake Value (Percent)
 ---------------------------------
 
 *What Percentage Brake to activate the Mid Function(s)*
 
-* See description of the |SRT| integration with decoder braking above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking above.
 
 Decoder High Function Number(s)
 -------------------------------
 
 *Which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)*
 
-* See description of the |SRT| integration with decoder braking above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking above.
 
 Decoder High Brake Value (Percent)
 ----------------------------------
 
 *What Percentage Brake to activate the High Function(s)*
 
-* See description of the |SRT| integration with decoder braking above.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| integration with decoder braking above.
 
 |hr-heavy|
 

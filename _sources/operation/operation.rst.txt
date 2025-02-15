@@ -255,7 +255,10 @@ Dragging you finger along the slider will increase or decrease the speed of the 
 
 In most Throttle Screen layouts it is possible hide the Speed Sliders.  
 
-See the :doc:`Speed Slider and Buttons section on the Preferences page </configuration/preferences>` for more information.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :doc:`Speed Slider and Buttons section on the Preferences page </configuration/preferences>` for more information.
 
 Speed Buttons
 '''''''''''''
@@ -537,7 +540,10 @@ The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be
   * Via the DCC F0, F1, F2 DCC Functions (if set in the preferences)
   * Gamepad keys (if connected)
 
-  See `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ for more information.
+  .. note:: 
+    :class: note-ed-hidden-title
+
+    See `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ for more information.
 
   **Activating the IPLS Sounds via IPLS Buttons**
 

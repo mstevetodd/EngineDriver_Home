@@ -94,7 +94,10 @@ In the |C-S| the Action Bar only displays:
 
 * The app name (|ed|)
  
-See the `Action Bar`_ section of this page for more information.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the `Action Bar`_ section of this page for more information.
 
 |HR-DASHED|
 
@@ -453,9 +456,12 @@ The buttons include:
 
 'Mute' can be hidden by changing a preferences.
 
-See the :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` section of the operation page for more information using the IPLS.
+.. note:: 
+  :class: note-ed-hidden-title
 
-See the :doc:`In Phone Loco Sounds (IPLS) </configuration/ipls>` page for more information on the configuring IPLS buttons.
+  See the :ref:`operation/operation:virtual sounds - in phone loco sounds (ipls)` section of the operation page for more information using the IPLS.
+
+  See the :doc:`In Phone Loco Sounds (IPLS) </configuration/ipls>` page for more information on the configuring IPLS buttons.
 
 |HR-DASHED|
 
@@ -499,15 +505,15 @@ Your JMRI Layout panels can be displayed here if you have configured them in JMR
 Anything that can be shown in the `Web View Screen`_ can equally be shown here, just in a smaller space.
 
 .. note:: 
-     :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-     see preference
+  see preference
 
-     see initial page preference
+  see initial page preference
 
-     different to the main `Web View Screen`_ including a different preference to set the initial page.
+  different to the main `Web View Screen`_ including a different preference to set the initial page.
 
-     see increase size
+  see increase size
 
 |HR-DASHED|
 
@@ -582,9 +588,9 @@ Specific to the |T-S|, the Overflow Menu can display:
 
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the `Overflow Menu`_  section for more information.
+  See the `Overflow Menu`_  section for more information.
 
 .. image:: ../_static/images/screenshots/background_fill.png
   :align: right
@@ -598,9 +604,9 @@ Background
 |ed| can show a background image of your choosing on the |T-S|.  Any image/photo on your device/phone can be used.
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the :ref:`Background Images section <configuration/preferences:background image preferences>` of the preferences for more information on how to select a background image.
+  See the :ref:`Background Images section <configuration/preferences:background image preferences>` of the preferences for more information on how to select a background image.
 
 |HR-DASHED|
 
@@ -618,9 +624,9 @@ Swiping up from off screen will normally temporarily show the Android navigation
 You can also configure specific :ref:`Swipe up or Swipe down <configuration/preferences:swipe up-down preferences>` or :ref:`Shake <configuration/preferences:accelerometer (shake) preferences>` preferences to enter or exit immersive mode.
 
 .. note:: 
-     :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-     See the :ref:`configuration/preferences:Swipe Up-Down Preferences` for more information on how to configure immersive mode.
+  See the :ref:`configuration/preferences:Swipe Up-Down Preferences` for more information on how to configure immersive mode.
 
 |HR-DASHED|
 
@@ -634,11 +640,11 @@ Swiping Right from the |T-S| will take you to the `Turnouts/Points Screen`_, unl
 By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the |WV-S| and *Throttle Web view* causes problems. 
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the :ref:`Left/right swipe preferences <configuration/preferences:left/right swipe preferences>` for information on how to enable and disable which screens are in the Left / Right swipe sequence.
+  See the :ref:`Left/right swipe preferences <configuration/preferences:left/right swipe preferences>` for information on how to enable and disable which screens are in the Left / Right swipe sequence.
 
-   See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
+  See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
 
 |HR-DASHED|
 
@@ -657,9 +663,9 @@ Swiping Up and/or Down on the Throttle page can optional be configured to:
 * Go to the next throttle
 
 .. note:: 
-     :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-     See the :ref:`Swipe Up/Down preferences <configuration/preferences:swipe up-down preferences>` for information on how to configure what the up and down swipes do.
+  See the :ref:`Swipe Up/Down preferences <configuration/preferences:swipe up-down preferences>` for information on how to configure what the up and down swipes do.
 
 |HR-DASHED|
 
@@ -676,9 +682,9 @@ Shaking your device/phone while on the Throttle page can optional be configured 
 * Go to the next throttle
 
 .. note:: 
-     :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-     See the :ref:`Accelerometer (Shake) preferences <configuration/preferences:accelerometer (shake) preferences>` for information on how to configure what the Accelerometer (Shake) do.
+  See the :ref:`Accelerometer (Shake) preferences <configuration/preferences:accelerometer (shake) preferences>` for information on how to configure what the Accelerometer (Shake) do.
 
 ----
 
@@ -737,11 +743,11 @@ In the |TP-S| the Action Bar can display:
   * Flashlight
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   The optional buttons are enabled via the :menuselection:`Menu --> Preferences --> Throttle Screen Status Row Preferences`.  
-    
-   See the `Action Bar`_ section of this page for more information.
+  The optional buttons are enabled via the :menuselection:`Menu --> Preferences --> Throttle Screen Status Row Preferences`.  
+  
+  See the `Action Bar`_ section of this page for more information.
 
 |HR-DASHED|
 
@@ -765,9 +771,9 @@ Specific to the *Turnouts/Points  Screen*, the Overflow Menu can display:
 
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the `Overflow Menu`_  section for more information.
+  See the `Overflow Menu`_  section for more information.
 
 |HR-DASHED|
 
@@ -781,11 +787,11 @@ Swiping Right from the |T-S| will take you to the `Web View Screen`_, unless it 
 By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the |WV-S| and *Throttle Web view* causes problems. 
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the :ref:`Left right swipe preferences <configuration/preferences:left/right swipe preferences>` for information on how to enable and disable which screens are in the Left / Right swipe sequence.
+  See the :ref:`Left right swipe preferences <configuration/preferences:left/right swipe preferences>` for information on how to enable and disable which screens are in the Left / Right swipe sequence.
 
-   See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
+  See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
 
 ----
 
@@ -848,11 +854,11 @@ In the |R-S| the Action Bar can display:
   * Track Power
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   The optional buttons are enabled via the :menuselection:`Menu --> Preferences --> Throttle Screen Status Row Preferences`.  
-    
-   See `Action Bar`_ section of this page for more information.
+  The optional buttons are enabled via the :menuselection:`Menu --> Preferences --> Throttle Screen Status Row Preferences`.  
+  
+  See `Action Bar`_ section of this page for more information.
 
 |HR-DASHED|
 
@@ -892,11 +898,11 @@ Swiping Right from the |R-S| will take you to the `Throttle Screen`_, unless it 
 By default, you can Left/Right Swipe from any part of the screen, but this can be changed to just the Action Bar in the preferences. This can be useful if Left/Right swipes in the |WV-S| and *Throttle Web view* causes problems. 
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the `Left right swipe preferences <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on how to enable and disable which screens are in the Left / Right swipe sequence.
+  See the `Left right swipe preferences <./configuration/preferences.html#left-right-swipe-preferences>`_ for information on how to enable and disable which screens are in the Left / Right swipe sequence.
 
-   See the `Disable Full Screen Swipe prefernce <configuration/preferences.html#disable-full-screen-swipe>`_ to enable or disable the Swipe Action Bar only option.
+  See the `Disable Full Screen Swipe prefernce <configuration/preferences.html#disable-full-screen-swipe>`_ to enable or disable the Swipe Action Bar only option.
 
 ----
 
@@ -999,9 +1005,9 @@ Specific to the |WV-S|, the Overflow Menu can display:
 * :ref:`About <operation/interface:about screen>`
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the `Overflow Menu`_  section for more information.
+  See the `Overflow Menu`_  section for more information.
 
 |HR-DASHED|
 
@@ -1027,9 +1033,9 @@ Intro/Setup Wizard Screen
 The *Setup Wizard* will start automatically the first time you run |ed| after you install it.  It sets some basic preferences and asks for the necessary permissions.  These preferences can be subsequently be changed use the : :menuselection:`Menu --> Preferences`, or by re-running the wizard, which can only be done from the menu on the |C-S|.
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the  :doc:`Setup wizard page </configuration/setup_wizard>`  for more information.
+  See the  :doc:`Setup wizard page </configuration/setup_wizard>`  for more information.
 
 Loco Select Screen
 ^^^^^^^^^^^^^^^^^^
@@ -1224,9 +1230,9 @@ Accessed from any of the main screens via :menuselection:`Menu --> Preferences`.
 This screen allows you to personalise  |ed| for how you want it to use it.
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the :doc:`Preferences page </configuration/preferences>` for details on the preferences that can be set.
+  See the :doc:`Preferences page </configuration/preferences>` for details on the preferences that can be set.
 
 |force-break|
 
@@ -1471,9 +1477,9 @@ There are a number of themes to choose from:
       - Neon Blue theme
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the :ref:`Theme / Style preference <configuration/preferences:theme/style>` on the preferences page for more information.
+  See the :ref:`Theme / Style preference <configuration/preferences:theme/style>` on the preferences page for more information.
 
 Localisation
 ^^^^^^^^^^^^
@@ -1632,9 +1638,9 @@ The *Children's Timer Button* Action Bar button is enabled with the :ref:`config
 The *Children's Timer Button*, when pressed will activate the Timer for the preset time period.
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See the `Children's Timer section <../operation/advanced.html#children-s-timer>`_ of the Advance Operation page for more information.
+  See the `Children's Timer section <../operation/advanced.html#children-s-timer>`_ of the Advance Operation page for more information.
 
 Fast Clock
 """"""""""
@@ -1648,9 +1654,9 @@ Fast Clock
 The *Fast Clock* Action Bar button is enabled with the `Fast Clock Display <../configuration/preferences.html#fast-clock-display>`_ preference.
 
 .. note:: 
-   :class: note-ed-hidden-title
+  :class: note-ed-hidden-title
 
-   See `JMRI's Fast Clock page <https://www.jmri.org/help/en/package/jmri/jmrit/simpleclock/SimpleClockFrame.shtml>`_ for information on how to set up a Fast Clock.
+  See `JMRI's Fast Clock page <https://www.jmri.org/help/en/package/jmri/jmrit/simpleclock/SimpleClockFrame.shtml>`_ for information on how to set up a Fast Clock.
 
 |BR|
 

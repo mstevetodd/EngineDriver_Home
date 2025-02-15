@@ -350,7 +350,10 @@ Q. You can't remove test server by swiping right
 
   A. you can't remove it with a swipe, but there is a preference to remove it.  
 
-  See the `Hide Demo Server <../configuration/preferences.html#hide-demo-server>`_ preference for more information.
+  .. note:: 
+    :class: note-ed-hidden-title
+
+    See the `Hide Demo Server <../configuration/preferences.html#hide-demo-server>`_ preference for more information.
 
 Changing the turnouts screen
 --------------------------------------------

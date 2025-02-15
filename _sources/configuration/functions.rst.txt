@@ -54,7 +54,10 @@ These defaults can be overridden on the :ref:`operation/interface:Function Defau
 
 Also the order of the Default Functions and Labels of the Default Functions can be overridden.
 
-See the :ref:`operation/interface:Function Defaults Screen` for more information.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`operation/interface:Function Defaults Screen` for more information.
 
 How Functions Behave
 ====================
@@ -93,7 +96,10 @@ Advanced Consist Function Mapping
 
 Which style of rules to follow in a consist when function buttons are pressed.
 
-Advanced Consist Function Mapping is described on the :doc:`/operation/consist-follow-functions` page.
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Advanced Consist Function Mapping is described on the :doc:`/operation/consist-follow-functions` page.
 
 Linking DCC Functions to IPLS buttons
 ======================================
@@ -107,6 +113,9 @@ Functions and Gamepads
 
 If you have a Bluetooth Gamepad or USB volume control connected to you device/phone, then the physical buttons on the gamepad or volume control device.
 
-See :doc:`Configuring Gamepads </configuration/gamepads>` for more information on configuring gamepad buttons.
+.. note:: 
+  :class: note-ed-hidden-title
 
-See :doc:`Gamepad Operation </operation/gamepads>` for more information on using gamepads.
+  See :doc:`Configuring Gamepads </configuration/gamepads>` for more information on configuring gamepad buttons.
+
+  See :doc:`Gamepad Operation </operation/gamepads>` for more information on using gamepads.
