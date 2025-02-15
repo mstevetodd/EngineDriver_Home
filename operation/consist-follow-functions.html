@@ -104,7 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="operation.html#selecting-releasing-locos">Selecting &amp; Releasing Locos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="operation.html#selecting-a-single-loco">Selecting a Single loco</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="operation.html#dcc-address">DCC Address</a></li>
-<li class="toctree-l5"><a class="reference internal" href="operation.html#roster">Roster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#server-roster">Server Roster</a></li>
 <li class="toctree-l5"><a class="reference internal" href="operation.html#recent-locos">Recent Locos</a></li>
 </ul>
 </li>
@@ -719,9 +719,14 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/functions.html">Function Buttons</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#dcc-functions">DCC Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-functions-to-ipls-buttons">Linking Functions to IPLS buttons</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#what-function-buttons-are-shown">What Function Buttons Are Shown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#how-functions-behave">How Functions Behave</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/functions.html#which-locos-in-a-consist-multiple-unit-the-functions-are-sent-to">Which locos in a Consist/Multiple Unit the functions are sent to</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#advanced-consist-function-mapping">Advanced Consist Function Mapping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-dcc-functions-to-ipls-buttons">Linking DCC Functions to IPLS buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/ipls.html">In Phone Loco Sounds (IPLS)</a><ul>
@@ -898,8 +903,8 @@
 </aside>
 <hr class="docutils" />
 <p><strong>Engine Driver - Consist Function Follow Preferences</strong></p>
-<p>By default, in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, if you activate a DCC function while controlling a Consist/Multiple Unit train only the function on the lead loco will actually be activated.
-<span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> provides options (preferences) that will activate the functions on the other locos in the consist/multiple unit train given a number of possible rules.</p>
+<p>By default, in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, if you activate a DCC function while controlling a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train only the function on the lead loco will actually be activated.
+<span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> provides options (preferences) that will activate the functions on the other locos in the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train given a number of possible rules.</p>
 <p>The following document provides information on the different rule types and how to use them.</p>
 <nav class="contents in-this-section local" id="this-document-is-in-two-distinct-sections">
 <p class="topic-title">This document is in two distinct sections:</p>
@@ -917,7 +922,7 @@
 <p>Most (all bar one) of the Throttle Layouts in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.</p>
 <p>By default:</p>
 <ul class="simple">
-<li><p>If you select a loco from a WiThrottle, or DCC-EX, Roster Entry, it will show the labels on the buttons as they have been configured in the Roster Entry on the server.</p>
+<li><p>If you select a loco from a WiThrottle, or DCC-EX, <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry, it will show the labels on the buttons as they have been configured in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry on the server.</p>
 <ul>
 <li><p>If you enter the DCC address of the loco, it will show Engine Driver’s ‘Default Function Labels’.</p></li>
 <li><p>All 32 functions will be shown. They are:</p>
@@ -929,14 +934,14 @@
 </ul>
 </li>
 <li><p>Which function buttons, how many function buttons and what labels are displayed, can be changed via the Menu ‣ Function Defaults from the Throttle Screen</p></li>
-<li><p>If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to show the Labels from the WiThrottle Server roster entry.</p></li>
+<li><p>If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to show the Labels from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entry.</p></li>
 </ul>
 </li>
 </ul>
 </section>
 <section id="functions-in-consists-multiple-unit-trains">
 <h4><a class="toc-backref" href="#id15" role="doc-backlink">Functions in consists / Multiple Unit Trains</a><a class="headerlink" href="#functions-in-consists-multiple-unit-trains" title="Link to this heading"></a></h4>
-<p>By default DCC Functions are only sent to the first loco in a Consist / Multiple Unit train.</p>
+<p>By default DCC Functions are only sent to the first loco in a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train.</p>
 <p>There are a number of preferences, explained in this document, that can be used to override this default behaviour.</p>
 </section>
 </section>
@@ -953,21 +958,21 @@
 <section id="loco-functions-or-dcc-functions">
 <h4><a class="toc-backref" href="#id17" role="doc-backlink">Loco Functions or DCC Functions:</a><a class="headerlink" href="#loco-functions-or-dcc-functions" title="Link to this heading"></a></h4>
 <p>These are the functions (F0, F1, F2, etc) that are programmed into a given loco decoder. The behaviour of a given Loco Function is set by this programming. Engine Drive activates these functions but cannot change them.</p>
-<p>Roster Entry Function Labels or Roster Functions: These are the function labels defined in the JMRI DecoderPro “Function Labels” panel of a given roster entry. Roster Function Labels are mapped to a given Loco Function (e.g. F0, F1, F2, etc) by DecoderPro. The behaviour of a given locomotive function (F1, F2, etc.) is set by the programming of the decoder and is not changed by its label. <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> uses these Roster Functions Labels but cannot change them. By definition a Roster Function is associated with a specific loco.</p>
+<p><abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry Function Labels or <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Functions: These are the function labels defined in the JMRI DecoderPro “Function Labels” panel of a given <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entry. <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels are mapped to a given Loco Function (e.g. F0, F1, F2, etc) by DecoderPro. The behaviour of a given locomotive function (F1, F2, etc.) is set by the programming of the decoder and is not changed by its label. <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> uses these <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Functions Labels but cannot change them. By definition a <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function is associated with a specific loco.</p>
 </section>
 <section id="default-function-labels-or-default-functions">
 <h4><a class="toc-backref" href="#id18" role="doc-backlink">Default Function Labels or Default Functions:</a><a class="headerlink" href="#default-function-labels-or-default-functions" title="Link to this heading"></a></h4>
 <figure class="align-default">
 <a class="align-right reference internal image-reference" href="../_images/default_function_labels.png"><img alt="Default Function Labels" class="align-right" src="../_images/default_function_labels.png" style="width: 150.0px; height: 256.0px;" /></a>
 </figure>
-<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> allows the definition of a set of default function labels which are used in the throttle display. The Default Function Labels can be used in place of loco Roster Function Labels or can be used when loco Roster Function Labels have not been defined. Default Function Labels can be defined manually in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> or copied from the Roster Function Labels of a given loco.</p>
-<p>These Default Function Labels exist only in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> and do not affect the JMRI Roster Function Labels.</p>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> allows the definition of a set of default function labels which are used in the throttle display. The Default Function Labels can be used in place of loco <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels or can be used when loco <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels have not been defined. Default Function Labels can be defined manually in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> or copied from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels of a given loco.</p>
+<p>These Default Function Labels exist only in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> and do not affect the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels.</p>
 <p>Default functions are defined as the pair for each button: a) Function Number, and b) Label. The order of the function buttons displayed therefore do not have to be in numeric sequence of the 0-28.</p>
 </section>
 <section id="throttle-function-labels-or-throttle-functions">
 <h4><a class="toc-backref" href="#id19" role="doc-backlink">Throttle Function Labels or Throttle Functions:</a><a class="headerlink" href="#throttle-function-labels-or-throttle-functions" title="Link to this heading"></a></h4>
-<p>These are the function labels are defined in JMRI (or EX-CommandStation) and are used by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> in the throttle display of a given locomotive or consist. Depending on <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> preferences these are copied from the loco Roster Function Labels or from the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> Default Function Labels.</p>
-<p>In addition, when Default Functions are used, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> provides the ability to map a given Default Function to a loco Roster Function (and hence to a Loco Function).</p>
+<p>These are the function labels are defined in JMRI (or EX-CommandStation) and are used by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> in the throttle display of a given locomotive or consist. Depending on <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> preferences these are copied from the loco <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels or from the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> Default Function Labels.</p>
+<p>In addition, when Default Functions are used, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> provides the ability to map a given Default Function to a loco <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function (and hence to a Loco Function).</p>
 </section>
 <section id="function-label-matching">
 <h4><a class="toc-backref" href="#id20" role="doc-backlink">Function Label Matching:</a><a class="headerlink" href="#function-label-matching" title="Link to this heading"></a></h4>
@@ -977,20 +982,20 @@
 <figure class="align-default">
 <a class="align-right reference internal image-reference" href="../_images/consist_follow_function_preference1.png"><img alt="Preferences" class="align-right" src="../_images/consist_follow_function_preference1.png" style="width: 120.0px; height: 204.8px;" /></a>
 </figure>
-<p>Engine Driver’s Function Label Matching allows each Throttle Function to be mapped to a Function Label in the Roster Entry for each/any loco, based on a one of several label matching ‘rules’.</p>
+<p>Engine Driver’s Function Label Matching allows each Throttle Function to be mapped to a Function Label in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry for each/any loco, based on a one of several label matching ‘rules’.</p>
 <p>Without Function Label Matching, Throttle Functions activate the associated Loco Function based on the associated function number of the Throttle Function in the throttle display, Generally, that means that the label in position 0 (top or left most) will activate F0, etc. (Note that however, it is possible to rearrange the function numbers in the default label screen so that is not always true.) So when operating a single loco, function matching allows <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to display functions in a standard order regardless of the function assignment of a given loco.</p>
-<p>So rather than remapping all locos in a roster to a standard function assignment, Function Label Matching feature can be used to provide a consistent throttle function display. Moreover, all locos in the roster do not have to have the same ordered programmed function assignment.</p>
-<p>In the case of consists, Function Label Matching can be used to associate a given Throttle Function to a Loco Function via its match to its Roster Entry Function Label so that a particular function (or functions) can be activated on all locos in a consist.</p>
+<p>So rather than remapping all locos in a <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> to a standard function assignment, Function Label Matching feature can be used to provide a consistent throttle function display. Moreover, all locos in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> do not have to have the same ordered programmed function assignment.</p>
+<p>In the case of consists, Function Label Matching can be used to associate a given Throttle Function to a Loco Function via its match to its <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry Function Label so that a particular function (or functions) can be activated on all locos in a consist.</p>
 </section>
 </section>
 <hr class="docutils" />
 <section id="default-function-label-preferences">
 <h3><a class="toc-backref" href="#id21" role="doc-backlink">Default Function Label Preferences</a><a class="headerlink" href="#default-function-label-preferences" title="Link to this heading"></a></h3>
 <p>The following preferences provide options for when and how the default Function Labels are displayed. These preferences can also be accessed via the Function Defaults menu on the drop down from the Throttle display. Note the “Use default function labels?” is set to “Yes”.</p>
-<p>By changing the function numbers, you can effectively reorder the functions. This will work for both Roster and non-Roster locos.</p>
+<p>By changing the function numbers, you can effectively reorder the functions. This will work for both <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> and non-Roster locos.</p>
 <section id="use-default-function-labels-preference">
 <h4><a class="toc-backref" href="#id22" role="doc-backlink">‘Use default function labels?’ Preference</a><a class="headerlink" href="#use-default-function-labels-preference" title="Link to this heading"></a></h4>
-<p>You can use this preference to have <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> always display the Default Function Labels (configured inside <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>) instead of the Function Labels from the Roster Entry. <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will ignore the roster data for the Throttle Function button labels.</p>
+<p>You can use this preference to have <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> always display the Default Function Labels (configured inside <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>) instead of the Function Labels from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry. <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will ignore the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> data for the Throttle Function button labels.</p>
 <p><strong>NOTE: It is essential this is enabled if you wish to use any of the ‘Special’ matching options.</strong></p>
 </section>
 <section id="number-of-default-functions-preference">
@@ -999,7 +1004,7 @@
 </section>
 <section id="number-of-default-functions-for-roster-preference">
 <h4><a class="toc-backref" href="#id24" role="doc-backlink">‘Number of Default Functions for Roster’ Preference</a><a class="headerlink" href="#number-of-default-functions-for-roster-preference" title="Link to this heading"></a></h4>
-<p>You can use this preference to limit the Throttle Function Labels shown for when a locos is acquired from a Server Roster Entry that doesn’t have any function labels configured for that Roster Entry.</p>
+<p>You can use this preference to limit the Throttle Function Labels shown for when a locos is acquired from a Server <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry that doesn’t have any function labels configured for that <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry.</p>
 </section>
 <section id="consist-functions-follow-rule-styles-preference">
 <h4><a class="toc-backref" href="#id25" role="doc-backlink">‘Consist Functions - Follow Rule Styles’ Preference</a><a class="headerlink" href="#consist-functions-follow-rule-styles-preference" title="Link to this heading"></a></h4>
@@ -1019,7 +1024,7 @@
 <p>NOTE: <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> only uses Function Label Matching for the ‘Special’ options when:</p>
 <ol class="arabic simple">
 <li><p>The ‘Use default function labels’ preference is enabled.</p></li>
-<li><p>The loco (or locos in a consist) are selected from the roster and</p></li>
+<li><p>The loco (or locos in a consist) are selected from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> and</p></li>
 <li><p>One of the ‘Consist Functions - Follow Rule Styles’ preference is enabled.</p></li>
 </ol>
 <p><em>If not all the above is true, the functions are activated purely #based on the function number.</em></p>
@@ -1035,7 +1040,7 @@
 <p><hr class="hr-dashed" /></p>
 <section id="simple-text-matching-original-option">
 <h4><a class="toc-backref" href="#id27" role="doc-backlink">‘Simple Text Matching (original)’ Option</a><a class="headerlink" href="#simple-text-matching-original-option" title="Link to this heading"></a></h4>
-<p>Simple Function Label Matching - Single loco operation with Default Functions – Some of the ‘common’ Default Function Labels are matched to loco Roster Function Labels to determine which Loco Function is activated.</p>
+<p>Simple Function Label Matching - Single loco operation with Default Functions – Some of the ‘common’ Default Function Labels are matched to loco <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels to determine which Loco Function is activated.</p>
 <p>These primarily handle F0 (Headlight), F1 (Bell) and F2 (Horn/Whistle), <em>NO other</em> functions are propagated to the remaining locos in the consist and no label matching is performed. That is, the Loco Function activated is determined by the position of the label in the throttle. e.g. the top-most function is F0.</p>
 <p>The following additional preferences are enabled if the ‘Simple Text Matching (original)’ option is selected and impact how the functions behave:</p>
 <ul class="simple">
@@ -1048,11 +1053,11 @@
 </section>
 <section id="complex-matching">
 <h4><a class="toc-backref" href="#id28" role="doc-backlink">‘Complex’ Matching</a><a class="headerlink" href="#complex-matching" title="Link to this heading"></a></h4>
-<p>Using the ‘Complex’ option, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> searches for user supplied text and applies user supplied rules (supplied in a group of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> preferences) for matching function labels in the locos in the consist / multiple unit train.</p>
-<p>This form of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> consist function matching allows you to specify the labels of the functions for which you want to specify a given propagation rule. It does NOT rely on the Roster Function Labels of the lead loco nor the use of Default Functions. It is likely useful when there are only a few specific functions (e.g. other lights) that you do want propagated to the other locos in the consist / multiple unit train.</p>
+<p>Using the ‘Complex’ option, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> searches for user supplied text and applies user supplied rules (supplied in a group of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> preferences) for matching function labels in the locos in the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train.</p>
+<p>This form of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> consist function matching allows you to specify the labels of the functions for which you want to specify a given propagation rule. It does NOT rely on the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Labels of the lead loco nor the use of Default Functions. It is likely useful when there are only a few specific functions (e.g. other lights) that you do want propagated to the other locos in the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train.</p>
 <p><em>Note, for this option to have any effect:</em></p>
 <ul class="simple">
-<li><p>The loco (or locos in a consist) must be selected from the roster.</p></li>
+<li><p>The loco (or locos in a consist) must be selected from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>.</p></li>
 <li><p>Some or all the rules need to be configured</p></li>
 </ul>
 <p><hr class="hr-dashed" /></p>
@@ -1060,16 +1065,16 @@
 <section id="the-three-special-matching-options">
 <h4><a class="toc-backref" href="#id29" role="doc-backlink">The three ‘Special’ Matching Options</a><a class="headerlink" href="#the-three-special-matching-options" title="Link to this heading"></a></h4>
 <p>With the three ‘Special’ matching options you can specify the Throttle Function Label names to be matched (the base value), whether Exact or Partial matching is to be applied, and how the matched labels are to be propagated (to lead, lead and trail, or all locos).</p>
-<p><strong>These options must be used</strong> in conjunction with the use of <strong>Default Functions</strong>. Each Throttle Function Label (which will be the Default Function Label) of the lead loco is compared to the Roster Function Label of the consisted locos and the function propagation and, if matches, activates the functions. The propagation rules for each function are individually specified for each function.</p>
+<p><strong>These options must be used</strong> in conjunction with the use of <strong>Default Functions</strong>. Each Throttle Function Label (which will be the Default Function Label) of the lead loco is compared to the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Function Label of the consisted locos and the function propagation and, if matches, activates the functions. The propagation rules for each function are individually specified for each function.</p>
 <p>When any of the ‘Special’ options are selected, a new menu item will be available (‘Consist Function Defaults’) which will allow you to specify how the default functions should behave (Latching or Non Latching).</p>
 <p>This form of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> consist function matching provides the maximum flexibility for specifying individual propagation rules for given functions. A special simple screen is provided for setting up the rules for each function.</p>
-<p>For the three Special Label Matching Consist/Multiple Unit options, the function labels of the locos in the consist are matched against the text in the Default Function Labels and the rule attached to each function to determine which Loco Function, in which locos in the consist, are activated (the nature of the matching is determined by rules in the ‘Consist Function Follow’ screen).</p>
+<p>For the three Special Label Matching <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> options, the function labels of the locos in the consist are matched against the text in the Default Function Labels and the rule attached to each function to determine which Loco Function, in which locos in the consist, are activated (the nature of the matching is determined by rules in the ‘Consist Function Follow’ screen).</p>
 <p><em>Note, for these options to have any effect:</em></p>
 <ul class="simple">
 <li><p>The ‘Use default function labels’ preference must be enabled.</p></li>
 <li><p>The Default Function Labels need to be altered to suit your needs.</p></li>
 <li><p>The Consist Function Defaults need to be altered to suit your needs.</p></li>
-<li><p>The loco (or locos in a consist) must be selected from the roster and have function labels assigned</p></li>
+<li><p>The loco (or locos in a consist) must be selected from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> and have function labels assigned</p></li>
 </ul>
 <section id="special-exact-matching-option">
 <h5>‘Special - Exact Matching’ Option<a class="headerlink" href="#special-exact-matching-option" title="Link to this heading"></a></h5>
@@ -1120,10 +1125,10 @@
 <figure class="align-default">
 <a class="align-right reference internal image-reference" href="../_images/consist_follow_function_preference1.png"><img alt="Preferences" class="align-right" src="../_images/consist_follow_function_preference1.png" style="width: 120.0px; height: 204.8px;" /></a>
 </figure>
-<p>These preferences allow you to specify the way DCC functions will behave in a consist / multiple unit train.</p>
+<p>These preferences allow you to specify the way DCC functions will behave in a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train.</p>
 <section id="consist-functions-follow-rule-style-preference">
 <h3><a class="toc-backref" href="#id31" role="doc-backlink">Consist Functions - Follow Rule Style Preference</a><a class="headerlink" href="#consist-functions-follow-rule-style-preference" title="Link to this heading"></a></h3>
-<p>This preference sets which style of rules to follow in a consist /  multiple unit train when function buttons are pressed in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
+<p>This preference sets which style of rules to follow in a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train when function buttons are pressed in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
 <figure class="align-default">
 <a class="align-right reference internal image-reference" href="../_images/consist_follow_function_options.png"><img alt="Options" class="align-right" src="../_images/consist_follow_function_options.png" style="width: 240.0px; height: 138.4px;" /></a>
 </figure>
@@ -1181,7 +1186,7 @@
 </ul>
 <p><em>Note, for this option to have any effect:</em></p>
 <ul class="simple">
-<li><p>The loco (or locos in a consist) must be selected from the roster.</p></li>
+<li><p>The loco (or locos in a consist) must be selected from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>.</p></li>
 <li><p>One or more of the preferences below must be set</p></li>
 </ul>
 <section id="if-all-matches-fail-action-preference">
@@ -1221,7 +1226,7 @@ For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or
 </ul>
 <p>Note:</p>
 <ul class="simple">
-<li><p>‘Lead+Trail’ refers to the first and last locos in the consist / multiple unit train. <br /> i.e. If there are only two locos, then ‘Lead+Trail Locos’ will give the same result as ‘All Locos’. <br /> If more than two, then ‘Lead+Trail’ will give a different result.  The locos in the middle will not receive the function.</p></li>
+<li><p>‘Lead+Trail’ refers to the first and last locos in the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train. <br /> i.e. If there are only two locos, then ‘Lead+Trail Locos’ will give the same result as ‘All Locos’. <br /> If more than two, then ‘Lead+Trail’ will give a different result.  The locos in the middle will not receive the function.</p></li>
 </ul>
 </section>
 <section id="string-2-3-4-5-preferences">
@@ -1253,7 +1258,7 @@ For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or
 <p>You can now arrange the default function labels on ED any way you want, and as long as the equivalent function has a similar name it doesn’t matter what function number it is, it will activate it correctly.
 Note, for these options to have any effect:
 The ‘Use default function labels’ preference must be enabled.
-The loco (or locos in a consist) must be selected from the roster
+The loco (or locos in a consist) must be selected from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>
 Note: If ‘Use Default function labels’ is enabled, ‘Special…’ will also apply to the lead (or only) loco.</p>
 <section id="special-exact-matching-options">
 <h5>‘Special - Exact Matching’ Options<a class="headerlink" href="#special-exact-matching-options" title="Link to this heading"></a></h5>
@@ -1296,7 +1301,7 @@ Note: If ‘Use Default function labels’ is enabled, ‘Special…’ will als
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd21947fc10>
+    <jinja2.runtime.BlockReference object at 0x7f84eeb12c20>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

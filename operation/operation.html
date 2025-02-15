@@ -106,7 +106,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#selecting-releasing-locos">Selecting &amp; Releasing Locos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#selecting-a-single-loco">Selecting a Single loco</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="#dcc-address">DCC Address</a></li>
-<li class="toctree-l5"><a class="reference internal" href="#roster">Roster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#server-roster">Server Roster</a></li>
 <li class="toctree-l5"><a class="reference internal" href="#recent-locos">Recent Locos</a></li>
 </ul>
 </li>
@@ -721,9 +721,14 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/functions.html">Function Buttons</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#dcc-functions">DCC Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-functions-to-ipls-buttons">Linking Functions to IPLS buttons</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#what-function-buttons-are-shown">What Function Buttons Are Shown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#how-functions-behave">How Functions Behave</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/functions.html#which-locos-in-a-consist-multiple-unit-the-functions-are-sent-to">Which locos in a Consist/Multiple Unit the functions are sent to</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#advanced-consist-function-mapping">Advanced Consist Function Mapping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-dcc-functions-to-ipls-buttons">Linking DCC Functions to IPLS buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/ipls.html">In Phone Loco Sounds (IPLS)</a><ul>
@@ -1004,24 +1009,24 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </section>
 <section id="selecting-releasing-locos">
 <h2><a class="toc-backref" href="#id12" role="doc-backlink">Selecting &amp; Releasing Locos</a><a class="headerlink" href="#selecting-releasing-locos" title="Link to this heading"></a></h2>
-<p>Selecting and releasing locos and Consists/Multiple Units is initiated from the Throttle Screen, by clicking on the <span class="guilabel">Select</span> button of one of the Throttles on the screen.</p>
+<p>Selecting and releasing locos and <abbr title="More than one loco being controlled by a single throttle">Consists / Multiple Units</abbr> is initiated from the Throttle Screen, by clicking on the <span class="guilabel">Select</span> button of one of the Throttles on the screen.</p>
 <p>(The <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> may have from 1 to 6 throttles on it, depending on the <a class="reference internal" href="../configuration/preferences.html#throttle-screen-appearance-preferences"><span class="std std-ref">Throttle Screen Layout preferences</span></a> you have chosen.)</p>
 <section id="selecting-a-single-loco">
 <h3><a class="toc-backref" href="#id13" role="doc-backlink">Selecting a Single loco</a><a class="headerlink" href="#selecting-a-single-loco" title="Link to this heading"></a></h3>
 <p>There three ways select a loco:</p>
 <ul class="simple">
 <li><p>By entering a <a class="reference internal" href="#dcc-address">DCC Address</a></p></li>
-<li><p>By selecting from the <a class="reference internal" href="#roster">Roster</a></p></li>
+<li><p>By selecting from the <a class="reference internal" href="#server-roster">Server Roster</a></p></li>
 <li><p>By selecting a <a class="reference external" href="RecentLocos">Recent Loco</a></p></li>
 </ul>
 <section id="dcc-address">
 <h4>DCC Address<a class="headerlink" href="#dcc-address" title="Link to this heading"></a></h4>
 <p>You can enter the loco’s DCC address (verify short or long), and press <span class="guilabel">Acquire</span> to select the loco.  You will then be taken back to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
 </section>
-<section id="roster">
-<h4>Roster<a class="headerlink" href="#roster" title="Link to this heading"></a></h4>
+<section id="server-roster">
+<h4>Server Roster<a class="headerlink" href="#server-roster" title="Link to this heading"></a></h4>
 <p>If the loco you want to control is in the list, simply click on it and you will be taken back to the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a> with that loco selected.</p>
-<p>For this to be possible, the Loco you want to control needs to be in the roster of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a>.  Not all <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> support rosters.  Refer to the JMRI documentation or your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> device’s documentation for creating a roster.</p>
+<p>For this to be possible, the Loco you want to control needs to be in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> of the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a>.  Not all <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> support a <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>.  Refer to the JMRI documentation or your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> device’s documentation for creating a roster.</p>
 </section>
 <section id="recent-locos">
 <h4>Recent Locos<a class="headerlink" href="#recent-locos" title="Link to this heading"></a></h4>
@@ -1031,13 +1036,13 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </section>
 <section id="on-the-fly-in-phone-consists-multiple-units">
 <h3><a class="toc-backref" href="#id14" role="doc-backlink">On the fly / In Phone Consists (Multiple Units)</a><a class="headerlink" href="#on-the-fly-in-phone-consists-multiple-units" title="Link to this heading"></a></h3>
-<p>There two ways create a Consist / Multiple Unit train:</p>
+<p>There two ways create a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train:</p>
 <ul>
 <li><p><strong>Selecting additional locos, one loco ‘at a time’ (as above)</strong></p>
 <blockquote>
 <div><ul class="simple">
 <li><p><a class="reference internal" href="#dcc-address">DCC Address</a></p></li>
-<li><p><a class="reference internal" href="#roster">Roster</a></p></li>
+<li><p><a class="reference internal" href="#server-roster">Server Roster</a></p></li>
 <li><p><a class="reference internal" href="#recent-locos">Recent Locos</a></p></li>
 </ul>
 </div></blockquote>
@@ -1046,22 +1051,22 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </ul>
 <section id="one-at-a-time">
 <h4>One at a time<a class="headerlink" href="#one-at-a-time" title="Link to this heading"></a></h4>
-<p>Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the <span class="guilabel">Select</span> button, which will be showing the name or address of any locos already selected.</p>
+<p>Adding additional locos to the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> train is identical to the process of selecting a single loco.  Simply click on the <span class="guilabel">Select</span> button, which will be showing the name or address of any locos already selected.</p>
 <p>After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:</p>
 <ul class="simple">
 <li><p>Change the facing of each loco (except the front loco)</p></li>
-<li><p>Change the order of the locos in the Consist / Multiple Unit</p></li>
-<li><p>Remove locos from the Consist / Multiple Unit</p></li>
+<li><p>Change the order of the locos in the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr></p></li>
+<li><p>Remove locos from the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr></p></li>
 </ul>
 </section>
 <section id="recent-consists">
 <h4>Recent Consists<a class="headerlink" href="#recent-consists" title="Link to this heading"></a></h4>
-<p>Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.</p>
+<p>Selecting a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> in the Recent Consists list will automatically add all the remembered locos, including their facing.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>Note:</p>
 <ul class="simple">
-<li><p>There is no real limit to the number of locos that can be added to a Consist / Multiple Unit.</p></li>
+<li><p>There is no real limit to the number of locos that can be added to a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>.</p></li>
 <li><p>The order of the locos in the consist can be important.  By default, lights and sound functions are only sent to the first loco.  This can be overridden in the preferences.</p></li>
 </ul>
 </div>
@@ -1070,11 +1075,11 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </section>
 <section id="running-trains">
 <h2><a class="toc-backref" href="#id15" role="doc-backlink">Running Trains</a><a class="headerlink" href="#running-trains" title="Link to this heading"></a></h2>
-<p>Once you have selected a loco or consist / multiple unit for a throttle, the names or addresses of the locos will be shown in the <span class="guilabel">Select</span> button of the throttle.</p>
+<p>Once you have selected a <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> for a throttle, the names or addresses of the locos will be shown in the <span class="guilabel">Select</span> button of the throttle.</p>
 <p>From here you can:</p>
 <ul class="simple">
-<li><p>Control the speed and direction of you loco or consist / multiple unit</p></li>
-<li><p>Activate the DCC functions for you loco or consist / multiple unit</p></li>
+<li><p>Control the speed and direction of you <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr></p></li>
+<li><p>Activate the DCC functions for you <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr></p></li>
 <li><p>Activate the Virtual Sounds</p></li>
 <li><p>Add or release locos.</p></li>
 </ul>
@@ -1084,7 +1089,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </div>
 <section id="controlling-speed">
 <h3><a class="toc-backref" href="#id16" role="doc-backlink">Controlling Speed</a><a class="headerlink" href="#controlling-speed" title="Link to this heading"></a></h3>
-<p>There are eight ways you can control the speed of of your loco or consist /multiple unit train:</p>
+<p>There are eight ways you can control the speed of of your <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> train:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="Sliders-Switching/ShuntingThrottleScreenlayouts">Sliders</a> (if available in the Throttle layout)</p></li>
 <li><p><a class="reference internal" href="#speed-buttons">Speed buttons</a> (if enabled)</p></li>
@@ -1148,7 +1153,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <section id="pause-button">
 <h4>Pause button<a class="headerlink" href="#pause-button" title="Link to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/pause_button.png"><img alt="../_images/pause_button.png" class="align-right" src="../_images/pause_button.png" style="width: 87.0px; height: 58.0px;" /></a>
-<p>If enabled, the <span class="guilabel">Pause</span> button will gradually bring the Loco (or Consist / Multiple Units) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or Consist / Multiple Units) on the Throttle back to the speed that it was before you fist pressed the button.</p>
+<p>If enabled, the <span class="guilabel">Pause</span> button will gradually bring the Loco (or <abbr title="More than one loco being controlled by a single throttle">Consists / Multiple Units</abbr>) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>) on the Throttle back to the speed that it was before you fist pressed the button.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference internal" href="../configuration/preferences.html#limit-speed-pause-button-preferences"><span class="std std-ref">‘Limit Speed’ &amp; ‘Pause’ button Preferences section on the Preferences page</span></a> for more information on enabling the <span class="guilabel">Pause</span> button.</p>
@@ -1177,7 +1182,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </section>
 <section id="controlling-direction">
 <h3><a class="toc-backref" href="#id17" role="doc-backlink">Controlling Direction</a><a class="headerlink" href="#controlling-direction" title="Link to this heading"></a></h3>
-<p>There are three ways you can control the direction of your loco or consist /multiple unit train:</p>
+<p>There are three ways you can control the direction of your <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> train:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#direction-buttons">Direction Buttons</a> - for throttle screen layouts with direction buttons</p></li>
 <li><p><a class="reference external" href="Sliders-Switching/ShuntingThrottleScreenlayouts">Sliders</a> - For throttle screen layouts without direction buttons  (Switching/Shunting)</p></li>
@@ -1187,9 +1192,9 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <h4>Direction Buttons<a class="headerlink" href="#direction-buttons" title="Link to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/direction_buttons.png"><img alt="../_images/direction_buttons.png" class="align-right" src="../_images/direction_buttons.png" style="width: 247.5px; height: 61.0px;" /></a>
 <p>Throttles on Throttle Screen Layout that are <em>not</em> of the Switching/Shunting type have <span class="guilabel">Forward</span> and <span class="guilabel">Reverse</span> <em>Direction Buttons</em> for each throttle.</p>
-<p>Clicking on a button will change the direction of the loco ( or Consist / Multiple Unit)m if it is not already moving in that direction.</p>
+<p>Clicking on a button will change the direction of the loco ( or <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>) if it is not already moving in that direction.</p>
 <p>The <em>Direction Buttons</em> can be:
-* Disabled while the loco (or Consist / Multiple Unit) is moving. (i.e. the speed in either direction is greater that zero.)
+* Disabled while the loco (or <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>) is moving. (i.e. the speed in either direction is greater that zero.)
 * Re-labelled
 * Can be swapped</p>
 <p><em>Direction Buttons</em> are Not available on the Switching/Shunting Throttle Screen layouts.</p>
@@ -1224,7 +1229,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </section>
 <section id="dcc-functions">
 <h3><a class="toc-backref" href="#id18" role="doc-backlink">DCC Functions</a><a class="headerlink" href="#dcc-functions" title="Link to this heading"></a></h3>
-<p>There are two ways you can activate the DCC Functions of the decoder in your loco or consist /multiple unit train:</p>
+<p>There are two ways you can activate the DCC Functions of the decoder in your <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> train:</p>
 <ul class="simple">
 <li><p><a class="reference external" href="ActivatingDCCFunctionsviatheFunctionButtons">Function buttons</a></p></li>
 <li><p><a class="reference external" href="ActivatingtheDCCFunctionviatheGamepadKeys">Gamepads keys</a> (if connected)</p></li>
@@ -1236,11 +1241,11 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </ul>
 <section id="activating-dcc-functions-via-the-function-buttons">
 <h4>Activating DCC Functions via the Function Buttons<a class="headerlink" href="#activating-dcc-functions-via-the-function-buttons" title="Link to this heading"></a></h4>
-<p>Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a Consist / Multiple Unit.)  This behaviour can be altered in the preferences.</p>
+<p>Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>.)  This behaviour can be altered in the preferences.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference internal" href="../configuration/functions.html"><span class="doc">Functions page</span></a> for information on changing the Functions and Function Labels.</p>
-<p>See the <a class="reference internal" href="../configuration/preferences.html#consist-function-follow-preferences"><span class="std std-ref">Consist Function Follow Preferences on the Preferences page</span></a> for information on changing the behaviour of the functions in consists / multiple units.</p>
+<p>See the <a class="reference internal" href="../configuration/preferences.html#consist-function-follow-preferences"><span class="std std-ref">Consist Function Follow Preferences on the Preferences page</span></a> for information on changing the behaviour of the functions in <abbr title="More than one loco being controlled by a single throttle">Consists / Multiple Units</abbr>.</p>
 </div>
 </section>
 <section id="activating-the-dcc-function-via-the-gamepad-keys">
@@ -1257,7 +1262,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <p>Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.</p>
 <p>By default:</p>
 <ul class="simple">
-<li><p>If you select a loco from a WiThrottle Roster Entry, it will show the labels on the buttons as they have been configured in the Roster Entry on the server.</p></li>
+<li><p>If you select a loco from a WiThrottle <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry, it will show the labels on the buttons as they have been configured in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entry on the server.</p></li>
 <li><p>If you enter the DCC address of the loco, it will show <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> ‘Default Function Labels’.</p>
 <ul>
 <li><p>All 29 functions will be shown.  They are:</p>
@@ -1271,7 +1276,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 <li><p>Which function buttons, how many function buttons and what labels are displayed, can be changed via the <span class="menuselection">Menu ‣ Function Defaults</span> from the <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a></p></li>
 </ul>
 </li>
-<li><p>If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to show the Labels from the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> roster entry.</p></li>
+<li><p>If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to show the Labels from the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entry.</p></li>
 </ul>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -1281,7 +1286,7 @@ Your server not appearing in the recent list is not necessarily a problem  See <
 </section>
 <section id="functions-in-consists">
 <h4>Functions in consists<a class="headerlink" href="#functions-in-consists" title="Link to this heading"></a></h4>
-<p>By default DCC Functions are only sent to the first loco in a Consist / Multiple Unit.  This can be changed in the Preferences.</p>
+<p>By default DCC Functions are only sent to the first loco in a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>.  This can be changed in the Preferences.</p>
 <p>There are a number of preferences that can be used to override the default behaviour.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -1583,9 +1588,11 @@ You can also swipe right from the <a class="reference internal" href="interface.
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> <em>is not designed to run in background and its performance and continued operation is not reliable or predictable.</em></p>
 <p>You should not lock the the screen of you Android device/phone while using <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> for the same reason.</p>
 </div>
-<p>By using the Android <span class="guilabel">Home</span> ( ○ ) or <span class="guilabel">Recent Tasks</span> ( □ ) navigation buttons, or if you press the <code class="docutils literal notranslate"><span class="pre">Power</span></code> physical button, it is possible to push the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> app into the background.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will give a sound, warning and will add an entry to the Notification Shade when this happens.</p>
+<a class="reference internal image-reference" href="../_images/ed_in_background.png"><img alt="../_images/ed_in_background.png" class="align-right" src="../_images/ed_in_background.png" style="width: 172.8px; height: 13.44px;" /></a>
+<p>By using the Android <span class="guilabel">Home</span> ( ○ ) or <span class="guilabel">Recent Apps</span> ( □ ) navigation buttons, or if you press the <code class="docutils literal notranslate"><span class="pre">Power</span></code> physical button, it is possible to push the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> app into the background.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will give a sound, warning and will add an entry to the Notification Shade when this happens.</p>
+<a class="reference internal image-reference" href="../_images/ed_in_shade.png"><img alt="../_images/ed_in_shade.png" class="align-right" src="../_images/ed_in_shade.png" style="width: 171.92000000000002px; height: 137.28px;" /></a>
 <p>Clicking on the Notification Shade entry or the app icon will return you to the same screen your were in when you pushed the app to the background.</p>
-<p>While <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will considers this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.</p>
+<p>While <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will consider this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.</p>
 <p>In general avoid letting <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> try to run in background.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -1625,8 +1632,8 @@ You can also swipe right from the <a class="reference internal" href="interface.
 <p class="admonition-title">Warning</p>
 <p>A common question is.. <em>“I have exited Engine Driver, so why is it still showing in the ‘Running Apps’ list.”</em></p>
 <p>This is a common misunderstanding.</p>
-<p>The list of apps that shows when you click on the square button on the Android Navigation Bar is <strong>NOT</strong> a list of <strong>Running Apps</strong>.  It is a list of <strong>Recent Apps</strong>.</p>
-<p>Android deliberately maintains fragments of every app that runs to make it faster to restart if required.  Android will really kill the app from memory if some other app needs the memory.</p>
+<p>The list of apps that shows when you click on the <span class="guilabel">Recent Apps</span> ( □ ) navigation button, the square button on the Android Navigation Bar, is <strong>NOT</strong> a list of <strong>Running Apps</strong>.  It is a list of <strong>Recently Used Apps</strong>.</p>
+<p>Android deliberately maintains fragments of every app that runs to make it faster to restart the apps if required.  Android will really kill the app from memory if some other app needs the memory.</p>
 <p>When you see <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> in this list it is not running <em>unless</em> you also see the small <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> icon on the Android Status Bar at the top of the screen.  If the icon is there, then <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> is still running.  Instead of exiting, it was pushed to background, where it will attempt to keep running.  As <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> was not designed to run in background, Android may arbitrarily kill it at any time.</p>
 </div>
 </section>
@@ -1650,7 +1657,7 @@ You can also swipe right from the <a class="reference internal" href="interface.
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd2182f63b0>
+    <jinja2.runtime.BlockReference object at 0x7f84ee107fa0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

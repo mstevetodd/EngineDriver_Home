@@ -141,7 +141,7 @@ If the *Power Action Bar button* is enabled, simply click on it to turn track po
 Selecting & Releasing Locos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Selecting and releasing locos and Consists/Multiple Units is initiated from the Throttle Screen, by clicking on the :guilabel:`Select` button of one of the Throttles on the screen.
+Selecting and releasing locos and |consists| is initiated from the Throttle Screen, by clicking on the :guilabel:`Select` button of one of the Throttles on the screen.
 
 (The |T-S| may have from 1 to 6 throttles on it, depending on the :ref:`Throttle Screen Layout preferences <configuration/preferences:throttle screen appearance preferences>` you have chosen.)
 
@@ -151,7 +151,7 @@ Selecting a Single loco
 There three ways select a loco:
 
 * By entering a `DCC Address`_
-* By selecting from the `Roster`_
+* By selecting from the `Server Roster`_
 * By selecting a `Recent Loco <Recent Locos>`_
 
 DCC Address
@@ -159,12 +159,12 @@ DCC Address
 
 You can enter the loco's DCC address (verify short or long), and press :guilabel:`Acquire` to select the loco.  You will then be taken back to the |T-S| with that loco selected.
 
-Roster
-''''''
+Server Roster
+''''''''''''''
 
 If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-For this to be possible, the Loco you want to control needs to be in the roster of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support rosters.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a roster.
+For this to be possible, the Loco you want to control needs to be in the |ROSTER| of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support a |ROSTER|.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a roster.
 
 .. Also see `Locomotive Icons <locomotive icons in the roster>`_ below.
 
@@ -178,12 +178,12 @@ If the loco you want to control to is in the list, simply click on it and you wi
 On the fly / In Phone Consists (Multiple Units)
 """"""""""""""""""""""""""""""""""""""""""""""""
 
-There two ways create a Consist / Multiple Unit train:
+There two ways create a |consist| train:
 
 *  **Selecting additional locos, one loco 'at a time' (as above)**
 
       * `DCC Address`_
-      * `Roster`_
+      * `Server Roster`_
       * `Recent Locos`_
 
 * By using the **Recent Consists** list 
@@ -191,36 +191,36 @@ There two ways create a Consist / Multiple Unit train:
 One at a time
 '''''''''''''
 
-Adding additional locos to the Consist / Multiple Unit train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
+Adding additional locos to the |consist| train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
 
 After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:
 
 * Change the facing of each loco (except the front loco)
-* Change the order of the locos in the Consist / Multiple Unit
-* Remove locos from the Consist / Multiple Unit
+* Change the order of the locos in the |consist|
+* Remove locos from the |consist|
 
 Recent Consists
 '''''''''''''''
 
-Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.
+Selecting a |consist| in the Recent Consists list will automatically add all the remembered locos, including their facing.
 
 .. note::
   :class: note-ed-hidden-title
 
   Note:
 
-  * There is no real limit to the number of locos that can be added to a Consist / Multiple Unit.
+  * There is no real limit to the number of locos that can be added to a |consist|.
   * The order of the locos in the consist can be important.  By default, lights and sound functions are only sent to the first loco.  This can be overridden in the preferences.
 
 Running Trains
 ^^^^^^^^^^^^^^^
 
-Once you have selected a loco or consist / multiple unit for a throttle, the names or addresses of the locos will be shown in the :guilabel:`Select` button of the throttle.
+Once you have selected a |loco_consist| for a throttle, the names or addresses of the locos will be shown in the :guilabel:`Select` button of the throttle.
 
 From here you can:
 
-* Control the speed and direction of you loco or consist / multiple unit
-* Activate the DCC functions for you loco or consist / multiple unit
+* Control the speed and direction of you |loco_consist|
+* Activate the DCC functions for you |loco_consist|
 * Activate the Virtual Sounds 
 * Add or release locos.  
   
@@ -232,7 +232,7 @@ From here you can:
 Controlling Speed
 """""""""""""""""
 
-There are eight ways you can control the speed of of your loco or consist /multiple unit train:
+There are eight ways you can control the speed of of your |loco_consist| train:
 
 * `Sliders`_ (if available in the Throttle layout)
 * `Speed buttons`_ (if enabled)
@@ -319,7 +319,7 @@ Pause button
   :align: right
   :scale: 50%
 
-If enabled, the :guilabel:`Pause` button will gradually bring the Loco (or Consist / Multiple Units) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or Consist / Multiple Units) on the Throttle back to the speed that it was before you fist pressed the button.
+If enabled, the :guilabel:`Pause` button will gradually bring the Loco (or |consists|) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or |consist|) on the Throttle back to the speed that it was before you fist pressed the button.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -362,7 +362,7 @@ Any keys and/or the any DPad directions can be configured to change Speed, Stop,
 Controlling Direction
 """"""""""""""""""""""""""
 
-There are three ways you can control the direction of your loco or consist /multiple unit train:
+There are three ways you can control the direction of your |loco_consist| train:
 
 * `Direction Buttons`_ - for throttle screen layouts with direction buttons
 * `Sliders <Sliders - Switching/Shunting Throttle Screen layouts>`_ - For throttle screen layouts without direction buttons  (Switching/Shunting)
@@ -377,10 +377,10 @@ Direction Buttons
 
 Throttles on Throttle Screen Layout that are *not* of the Switching/Shunting type have :guilabel:`Forward` and :guilabel:`Reverse` *Direction Buttons* for each throttle.  
 
-Clicking on a button will change the direction of the loco ( or Consist / Multiple Unit)m if it is not already moving in that direction. 
+Clicking on a button will change the direction of the loco ( or |consist|) if it is not already moving in that direction. 
 
 The *Direction Buttons* can be:
-* Disabled while the loco (or Consist / Multiple Unit) is moving. (i.e. the speed in either direction is greater that zero.)
+* Disabled while the loco (or |consist|) is moving. (i.e. the speed in either direction is greater that zero.)
 * Re-labelled
 * Can be swapped
 
@@ -432,7 +432,7 @@ Any keys and/or the any DPad directions can be configured to change direction di
 DCC Functions
 """""""""""""""""
 
-There are two ways you can activate the DCC Functions of the decoder in your loco or consist /multiple unit train:
+There are two ways you can activate the DCC Functions of the decoder in your |loco_consist| train:
 
 - `Function buttons <Activating DCC Functions via the Function Buttons>`_
 - `Gamepads keys <Activating the DCC Function via the Gamepad Keys>`_ (if connected)
@@ -445,14 +445,14 @@ The DCC functions can be impacted depending on the settings and preferences you 
 Activating DCC Functions via the Function Buttons
 '''''''''''''''''''''''''''''''''''''''''''''''''
 
-Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a Consist / Multiple Unit.)  This behaviour can be altered in the preferences.
+Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a |consist|.)  This behaviour can be altered in the preferences.
 
 .. note:: 
   :class: note-ed-hidden-title
 
   See the :doc:`Functions page </configuration/functions>` for information on changing the Functions and Function Labels.
 
-  See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` for information on changing the behaviour of the functions in consists / multiple units.
+  See the :ref:`Consist Function Follow Preferences on the Preferences page <configuration/preferences:Consist Function Follow Preferences>` for information on changing the behaviour of the functions in |consists|.
 
 Activating the DCC Function via the Gamepad Keys
 ''''''''''''''''''''''''''''''''''''''''''''''''
@@ -473,7 +473,7 @@ Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below 
 
 By default:
 
-* If you select a loco from a WiThrottle Roster Entry, it will show the labels on the buttons as they have been configured in the Roster Entry on the server. 
+* If you select a loco from a WiThrottle |ROSTER| Entry, it will show the labels on the buttons as they have been configured in the |ROSTER| Entry on the server. 
 * If you enter the DCC address of the loco, it will show |eds| 'Default Function Labels'.  
 
   * All 29 functions will be shown.  They are: 
@@ -485,7 +485,7 @@ By default:
 
   * Which function buttons, how many function buttons and what labels are displayed, can be changed via the :menuselection:`Menu --> Function Defaults` from the |T-S|
 
-* If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a roster, |ed| will attempt to show the Labels from the |WTS-DCC-EX| roster entry.
+* If you select a Loco from the Recent Locos or Recent Consists lists that was originally selected from a |ROSTER|, |ed| will attempt to show the Labels from the |WTS-DCC-EX| |ROSTER| entry.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -497,7 +497,7 @@ By default:
 Functions in consists
 ''''''''''''''''''''''
 
-By default DCC Functions are only sent to the first loco in a Consist / Multiple Unit.  This can be changed in the Preferences.
+By default DCC Functions are only sent to the first loco in a |consist|.  This can be changed in the Preferences.
 
 There are a number of preferences that can be used to override the default behaviour.
 
@@ -859,11 +859,19 @@ Pushing the app to the Background
 
   You should not lock the the screen of you Android device/phone while using |ED| for the same reason.
 
-By using the Android :guilabel:`Home` ( ○ ) or :guilabel:`Recent Tasks` ( □ ) navigation buttons, or if you press the ``Power`` physical button, it is possible to push the |ed| app into the background.  |ed| will give a sound, warning and will add an entry to the Notification Shade when this happens.
+.. image:: ../_static/images/parts/ed_in_background.png
+  :align: right
+  :scale: 8%
+
+By using the Android :guilabel:`Home` ( ○ ) or :guilabel:`Recent Apps` ( □ ) navigation buttons, or if you press the ``Power`` physical button, it is possible to push the |ed| app into the background.  |ed| will give a sound, warning and will add an entry to the Notification Shade when this happens.
+
+.. image:: ../_static/images/parts/ed_in_shade.png
+  :align: right
+  :scale: 8%
 
 Clicking on the Notification Shade entry or the app icon will return you to the same screen your were in when you pushed the app to the background.
 
-While |ed| will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will considers this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.
+While |ed| will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will consider this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.
 
 In general avoid letting |ED| try to run in background.
 
@@ -913,8 +921,8 @@ Exiting |ed|:
 
   This is a common misunderstanding.  
   
-  The list of apps that shows when you click on the square button on the Android Navigation Bar is **NOT** a list of **Running Apps**.  It is a list of **Recent Apps**.
+  The list of apps that shows when you click on the :guilabel:`Recent Apps` ( □ ) navigation button, the square button on the Android Navigation Bar, is **NOT** a list of **Running Apps**.  It is a list of **Recently Used Apps**.
 
-  Android deliberately maintains fragments of every app that runs to make it faster to restart if required.  Android will really kill the app from memory if some other app needs the memory.
+  Android deliberately maintains fragments of every app that runs to make it faster to restart the apps if required.  Android will really kill the app from memory if some other app needs the memory.
 
   When you see |ED| in this list it is not running *unless* you also see the small |ED| icon on the Android Status Bar at the top of the screen.  If the icon is there, then |ED| is still running.  Instead of exiting, it was pushed to background, where it will attempt to keep running.  As |ED| was not designed to run in background, Android may arbitrarily kill it at any time.

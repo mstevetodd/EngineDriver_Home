@@ -179,9 +179,9 @@ Loco Select Button
 
 The loco :guilabel:`Select` button in the Throttle Area allows to select or release locos for that particular Throttle.  Click on the button and you will be taken to the Select Loco screen.
 
-Once you have selected a loco, the label on the button will change to the DCC Address(s) or the Roster name(s) of the Loco depending on how you selected the loco in the |LS-S|, and if you have the enabled the :ref:`Loco Address instead of Name? <configuration/preferences:loco address instead of name?>` preference.
+Once you have selected a loco, the label on the button will change to the DCC Address(s) or the |ROSTER| name(s) of the Loco depending on how you selected the loco in the |LS-S|, and if you have the enabled the :ref:`Loco Address instead of Name? <configuration/preferences:loco address instead of name?>` preference.
 
-When the button is displaying DCC Address(s) or the Roster name(s), click on the button again and you will be taken to the |LS-S| where you can de-select the loco(s), select additional locos to make a consist / multiple unit train, edit the locos in the consist, or edit the lights of the locos in the consist / multiple unit.
+When the button is displaying DCC Address(s) or the |ROSTER| name(s), click on the button again and you will be taken to the |LS-S| where you can de-select the loco(s), select additional locos to make a |consist| train, edit the locos in the consist, or edit the lights of the locos in the |consist|.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -292,7 +292,7 @@ Stop Button
 .. image:: ../_static/images/parts/stop_button_horizontal.png
    :scale: 80 %
 
-Clicking the ``Stop`` button of a throttle will the loco or consist / multiple unit controlled by that throttle.  If the locos has momentum configured in the decoder it/they will come slowly to a stop.  i.e. it obeys the momentum CV settings.
+Clicking the ``Stop`` button of a throttle will the |loco_consist| controlled by that throttle.  If the locos have momentum configured in the decoder it/they will come slowly to a stop.  i.e. it obeys the momentum CV settings.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -349,7 +349,7 @@ Function Buttons Scroll Area
 
 The *Function Buttons Scroll Area* will show form 0 (zero) to 26 function buttons depending on a number of factors. Each button will show either:
 
-* Labels provided from the roster, which can be individually specified for each loco in the roster
+* Labels provided from the |ROSTER|, which can be individually specified for each loco in the |ROSTER|
 * The default labels for |ed|  (which can be changed)
 
 The *Function Button area* can also show:
@@ -378,15 +378,15 @@ All throttle layouts other than the 'Simple' layout show a *Function Buttons Scr
 
 Will show from 0 (zero) to 26 DCC function buttons, depending on a number of factors. Each button will show either:
 
-* Labels provided from the roster, which can be individually specified for each loco in the roster
+* Labels provided from the |ROSTER|, which can be individually specified for each loco in the |ROSTER|
 * The default labels for |ed|  (which can be changed)
 
 
-If the loco (or first loco of a consist/multiple unit) was selected from the |WTS-DCC-EX| roster, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS-DCC-EX|.  This is also turn if the loco is selected from the Recent Locos list or the Recent Consist/Multiple Units list.
+If the loco (or first loco of a |consist|) was selected from the |WTS-DCC-EX| |ROSTER|, then (by default) the number of functions and labels on the buttons will be whatever is configured for that loco in the |WTS-DCC-EX|.  This is also turn if the loco is selected from the Recent Locos list or the Recent |consists| list.
 
-If the loco (or first loco of a consist/multiple unit) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in |ED| in the |FD-S|.
+If the loco (or first loco of a |consist|) was added by entering its DCC Address, then the number of functions and labels on the buttons will be whatever is configured in |ED| in the |FD-S|.
 
-The behaviour of the Function Buttons for locos selected from the |WTS-DCC-EX| roster can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS-DCC-EX| roster will also show the Default Functions labels.
+The behaviour of the Function Buttons for locos selected from the |WTS-DCC-EX| |ROSTER| can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS-DCC-EX| |ROSTER| will also show the Default Functions labels.
 
 Clicking on any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of different ways.
 
@@ -397,7 +397,7 @@ Clicking on any function button will instruct the loco to activate that DCC Func
 
   See the :doc:`Function Buttons </configuration/functions>` page for more information on the DCC Function buttons.
 
-  For labels from Roster Entries you need to edit the Function buttons in the |WTS-DCC-EX|, or configure |ed| to use the default labels.
+  For labels from |ROSTER| Entries you need to edit the Function buttons in the |WTS-DCC-EX|, or configure |ed| to use the default labels.
 
 |HR-DASHED|
 
@@ -416,9 +416,9 @@ These are optional buttons that, if enabled, appear in the same areas as the Fun
 
 **Pause Button** 
 
-When clicked while the loco or consist/multiple unit is moving, the :guilabel:`Pause` button will gradually slow the train down zero and a predefined rate.  The rate can be altered in the preferences.
+When clicked while the |loco_consist| is moving, the :guilabel:`Pause` button will gradually slow the train down zero and a predefined rate.  The rate can be altered in the preferences.
 
-When subsequently clicked while the loco or consist/multiple unit is stationary, the :guilabel:`Pause` button will gradually increase the speed of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
+When subsequently clicked while the |loco_consist| is stationary, the :guilabel:`Pause` button will gradually increase the speed of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
 
 **Alternate Pause Button** 
 
@@ -1042,7 +1042,7 @@ The |LS-S| allows you add locos to a (one of) throttle on the |T-S|.  It also pr
 
 The |LS-S| is only shown when you click a :guilabel:`Select` button on the |T-S|.
 
-Not that the :guilabel:`Select` button will should the Address(es) or the Name(s) of a Loco or Consist/Multiple Unit Train only the first loco is selected.  Click on the button will (while it is in this state) will again take to this screen to allow to you add additional Locos to the Consist/Multiple Unit Train, or make other changes to the  Consist/Multiple Unit Train.
+Not that the :guilabel:`Select` button will should the Address(es) or the Name(s) of a|loco_consist| Train only the first loco is selected.  Click on the button will (while it is in this state) will again take to this screen to allow to you add additional Locos to the |consist| Train, or make other changes to the |consist| Train.
 
 Selection Method
 """"""""""""""""
@@ -1072,7 +1072,7 @@ Shown if you select ``Server Roster`` in the `Selection Method`_.
 
 If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-For this to be possible, the Loco you want to control needs to be in the roster of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support rosters.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a roster.
+For this to be possible, the Loco you want to control needs to be in the |ROSTER| of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support a |ROSTER|.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a |ROSTER|.
 
   Filter
 
@@ -1093,7 +1093,7 @@ Shown if you select ``Recent Locos`` in the `Selection Method`_.
 
 If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-  Icons - From Roster
+  Icons - From |ROSTER|
 
   Long Press to see details...
 
@@ -1106,7 +1106,7 @@ Select from Recent Consists List
 
 Shown if you select ``Recent Consists`` in the `Selection Method`_.
 
-Selecting a Consist / Multiple Unit in the Recent Consists list will automatically add all the remembered locos, including their facing.
+Selecting a |consist| in the Recent Consists list will automatically add all the remembered locos, including their facing.
 
   Swipe to remove entry...
 
@@ -1252,7 +1252,7 @@ Function Defaults Screen
   :align: right
   :scale: 8%
 
-This screen allows you to override the appearance of the Function buttons on the throttle screen, primarily for locos that have not been acquired from the server roster.
+This screen allows you to override the appearance of the Function buttons on the throttle screen, primarily for locos that have not been acquired from the |ROSTER|.
 
 .. contents:: The items that can be altered include:
     :depth: 1
@@ -1266,17 +1266,17 @@ Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Default
 Number of Default Functions
 """"""""""""""""""""""""""""
 
-This preference is used to limit the number of Function Labels shown for selected locos that are not from the Server Roster, or where you have set the :ref:`configuration/preferences:Use default function labels?` preference. 
+This preference is used to limit the number of Function Labels shown for selected locos that are not from the |ROSTER|, or where you have set the :ref:`configuration/preferences:Use default function labels?` preference. 
 
 Number of Default Functions for Roster
 """"""""""""""""""""""""""""""""""""""
 
-This preference is used to limit the number of Function Labels shown for Server Roster Entries that don't have any function Labels configured.
+This preference is used to limit the number of Function Labels shown for |ROSTER| Entries that don't have any function Labels configured.
 
 Use Default Function Labels
 """"""""""""""""""""""""""""
 
-If this preference is enabled locos acquired from server roster will also us the default function labels as defined on this screen.
+If this preference is enabled locos acquired from the |ROSTER| will also use the default function labels as defined on this screen.
 
 Override WiThrottle Default Latching
 """"""""""""""""""""""""""""""""""""
@@ -1288,9 +1288,9 @@ The DCC-EX Function Settings Screen then allows you override to default latching
 Use Defaults for Roster Entries With no functions
 """"""""""""""""""""""""""""""""""""""""""""""""""
 
-If this preference is enabled, locos in the server roster that have no function buttons defined will show no Function buttons on the Throttle Screen.
+If this preference is enabled, locos in the |ROSTER| that have no function buttons defined will show no Function buttons on the Throttle Screen.
 
-If this preference is NOT enabled, locos in the server roster that have no function buttons defined will show the default functions and and labels as defined on the screen.
+If this preference is NOT enabled, locos in the |ROSTER| that have no function buttons defined will show the default functions and and labels as defined on the screen.
 
 This preference is enabled by default.
 
@@ -1333,7 +1333,7 @@ DCC-EX Function Settings Screen
    :scale: 8 %
    :align: right
 
-This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC address . i.e. not locos acquired from the roster.
+This screen allows you to override to default latching/momentary behaviour of all/any function for locos acquired from the |EX-CS| by entering is DCC address . i.e. not locos acquired from the |ROSTER|.
 
 This screen is effectively the same as the `Function Latching Settings Screen`_ but is only available when connected to an |EX-CS| using the DCC-EX Native protocol. (Not WiThrottle protocol)
 

@@ -106,7 +106,7 @@
 <li class="toctree-l3"><a class="reference internal" href="operation.html#selecting-releasing-locos">Selecting &amp; Releasing Locos</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="operation.html#selecting-a-single-loco">Selecting a Single loco</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="operation.html#dcc-address">DCC Address</a></li>
-<li class="toctree-l5"><a class="reference internal" href="operation.html#roster">Roster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="operation.html#server-roster">Server Roster</a></li>
 <li class="toctree-l5"><a class="reference internal" href="operation.html#recent-locos">Recent Locos</a></li>
 </ul>
 </li>
@@ -721,9 +721,14 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/functions.html">Function Buttons</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#dcc-functions">DCC Functions</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-functions-to-ipls-buttons">Linking Functions to IPLS buttons</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#what-function-buttons-are-shown">What Function Buttons Are Shown</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#how-functions-behave">How Functions Behave</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/functions.html#which-locos-in-a-consist-multiple-unit-the-functions-are-sent-to">Which locos in a Consist/Multiple Unit the functions are sent to</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#advanced-consist-function-mapping">Advanced Consist Function Mapping</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#linking-dcc-functions-to-ipls-buttons">Linking DCC Functions to IPLS buttons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/functions.html#functions-and-gamepads">Functions and Gamepads</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/ipls.html">In Phone Loco Sounds (IPLS)</a><ul>
@@ -978,7 +983,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </ol>
 <blockquote>
 <div><ol class="upperalpha simple">
-<li><p><em>jmri.mstevetodd.com</em> is a demo server, which can be used for testing. It has roster entries, turnouts, routes and an active panel for you to try.</p></li>
+<li><p><em>jmri.mstevetodd.com</em> is a demo server, which can be used for testing. It has <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entries, turnouts, routes and an active panel for you to try.</p></li>
 </ol>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
@@ -998,18 +1003,18 @@ The most common use of this (so far) is to remember the locos relevant to that r
 <section id="selecting-locomotives-to-control">
 <h2><a class="toc-backref" href="#id14" role="doc-backlink">Selecting locomotives to control</a><a class="headerlink" href="#selecting-locomotives-to-control" title="Link to this heading"></a></h2>
 <ol class="upperalpha simple" start="17">
-<li><p>Why can’t I can’t see my loco in the roster?</p></li>
+<li><p>Why can’t I can’t see my loco in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>?</p></li>
 </ol>
 <blockquote>
 <div><ol class="upperalpha simple">
-<li><p>The loco needs to be added to the roster on your server computer.  Refer to your server documentation for specifics.</p></li>
+<li><p>The loco needs to be added to the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> on your server computer.  Refer to your server documentation for specifics.</p></li>
 </ol>
 </div></blockquote>
 <ol class="upperalpha simple" start="17">
 <li><p>Why is my loco is not remembered in the recent locos list?</p></li>
 </ol>
 <blockquote>
-<div><p>A1. If the loco is in your roster, check the preference <code class="docutils literal notranslate"><span class="pre">Roster</span> <span class="pre">in</span> <span class="pre">Recent</span> <span class="pre">Locos?</span></code> so that locos in the roster will be included in the recent locos list.</p>
+<div><p>A1. If the loco is in your <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>, check the preference <code class="docutils literal notranslate"><span class="pre">Roster</span> <span class="pre">in</span> <span class="pre">Recent</span> <span class="pre">Locos?</span></code> so that locos in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> will be included in the recent locos list.</p>
 <p>A2. If no locos are remembered (and you have confirmed the preference above) make sure the <code class="docutils literal notranslate"><span class="pre">Maximum</span> <span class="pre">Recent</span> <span class="pre">Locos</span></code> preference is not set to zero.</p>
 </div></blockquote>
 <ol class="upperalpha simple" start="17">
@@ -1096,16 +1101,16 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </div></blockquote>
 </div></blockquote>
 <ol class="upperalpha simple" start="17">
-<li><p>No Locomotive Icons appear in the Roster</p></li>
+<li><p>No Locomotive Icons appear in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr></p></li>
 </ol>
 <blockquote>
 <div><ol class="upperalpha simple">
-<li><p>The Roster List, and Recent Locos List on the Select Loco screen will automatically show icons for your locos only if:</p></li>
+<li><p>The <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> List, and Recent Locos List on the Select Loco screen will automatically show icons for your locos only if:</p></li>
 </ol>
 <blockquote>
 <div><ul class="simple">
 <li><p>The <strong>Web Server</strong> (not just the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>) is running on the JMRI server</p></li>
-<li><p>The loco itself has an icon added for it in the JMRI roster <br />OR</p></li>
+<li><p>The loco itself has an icon added for it in the JMRI <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> <br />OR</p></li>
 <li><p>A locally cached or manually chosen image is available for the loco (see ‘Locomotive Icons’ on the <a class="reference external" href="../operations/index.html">Operation screen</a>)</p></li>
 </ul>
 </div></blockquote>
@@ -1190,14 +1195,14 @@ The most common use of this (so far) is to remember the locos relevant to that r
 <li><p>In want to change the labels of the function buttons that are displayed</p></li>
 </ol>
 <blockquote>
-<div><p>A1. Change the function button defaults in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, for locos without Roster Entries</p>
-<p>A2. Roster entries include function button labels, and can be changed when defined to the server</p>
+<div><p>A1. Change the function button defaults in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, for locos without <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entries</p>
+<p>A2. <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entries include function button labels, and can be changed when defined to the server</p>
 </div></blockquote>
 <ol class="upperalpha simple" start="17">
 <li><p>My locos have different functions but all the Function buttons appear the same for every locomotive</p></li>
 </ol>
 <blockquote>
-<div><p>A1. There is a Preference “Use default function labels?” which can override the labels from the roster entry.  Confirm that you have not turned it on.</p>
+<div><p>A1. There is a Preference “Use default function labels?” which can override the labels from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entry.  Confirm that you have not turned it on.</p>
 <p>A2. You need to setup the individual functions for each of your locos in JMRI.</p>
 </div></blockquote>
 <ol class="upperalpha simple" start="17">
@@ -1205,9 +1210,9 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </ol>
 <blockquote>
 <div><ol class="upperalpha">
-<li><p>Functions of loco are generally set in the Roster.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> may be showing the functions of a loco with the same address from the Roster.</p>
+<li><p>Functions of loco are generally set in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> may be showing the functions of a loco with the same address from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>.</p>
 <blockquote>
-<div><p>This can happen if you entered an address to select the loco rather than selecting from the roster list.</p>
+<div><p>This can happen if you entered an address to select the loco rather than selecting from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> list.</p>
 <p>You can force the default function labels in the preferences.</p>
 </div></blockquote>
 </li>
@@ -1365,7 +1370,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd21827abc0>
+    <jinja2.runtime.BlockReference object at 0x7f84ee8f5b70>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

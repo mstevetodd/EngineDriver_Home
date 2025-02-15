@@ -119,7 +119,7 @@ Style Guidelines
 ----------------
 
 * Use British/Australian/Canadian spelling e.g. 'colour' not 'color'.  |BR|\ (Primarily because it is used in more English speaking countries)
-*	Use railroad/railway terminology that is understandable by all English-speaking people. |BR|\ Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, consists/multiple units, switching/shunting.  (Primarily because DCC and JMRI uses the US terminology)
+*	Use railroad/railway terminology that is understandable by all English-speaking people. |BR|\ Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, |consists|, switching/shunting.  (Primarily because DCC and JMRI uses the US terminology)
 * In general use 'loco' instead of 'locomotive' or 'engine'
 * Avoid the term 'Checked'. Use 'Enabled' instead.  ("Checked' is more a US term.)
 * Use bolded \*\*Engine Driver\*\* or \|ed\| not 'Engine Driver app', 'EngineDriver' or 'Engine Driver Throttle' (except on the first page) - |ed|
