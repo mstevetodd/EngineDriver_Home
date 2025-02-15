@@ -20,7 +20,7 @@ Preferences
    :scale: 20%
    :align: right
 
-|ed| is highly configurable.  There are over 100 different items than can be changed to allow you customise your experience with |ED|\ .
+|ed| is highly configurable.  There are over 100 different items than can be changed to allow you customise your experience with |ED|.
 
 Most configuration options are found in the *Preferences* which is accessed via the overflow menu, sometimes called a 'hamburger menu', which is normally three dots (⁞) or three bars (≡).
 
@@ -36,7 +36,7 @@ By default, only a small number of core preferences are displayed on the *Prefer
    :scale: 20%
    :align: right
 
-If you enable this preference |ed| will immediately show all the additional preferences.
+If you enable this preference |ED| will immediately show all the additional preferences.
 
 Device Preferences
 ------------------
@@ -565,7 +565,7 @@ If this preference is enabled |ed| will use smaller buttons for the Loco Number,
 Loco Address instead of Name?
 """""""""""""""""""""""""""""
 
-If this preference is enabled |ed| will show loco DCC Address(es) instead of the Roster Name(s) on the |T-S|.  It will ignore the Roster name for the :guilabel:`Select` button label.  This changes the label only.  It has no other functional effect.
+If this preference is enabled |ed| will show loco DCC Address(es) instead of the |ROSTER| Name(s) on the |T-S|.  It will ignore the |ROSTER| name for the :guilabel:`Select` button label.  This changes the label only.  It has no other functional effect.
 
 Default Function Preferences
 """"""""""""""""""""""""""""
@@ -580,17 +580,17 @@ The following preferences provide options for when and how the default Function 
 Use default function labels?
 '''''''''''''''''''''''''''''''''''
 
-If this preference is enabled |ed| will *always* display the default Function Labels (configured inside |ed|\ ) instead of labels from roster entries. It will ignore the Roster for the Function button labels.  It changes the labels only.  It has no other functional effect.
+If this preference is enabled |ed| will *always* display the default Function Labels (configured inside |ed|\ ) instead of labels from |ROSTER| entries. It will ignore the |ROSTER| for the Function button labels.  It changes the labels only.  It has no other functional effect.
 
 Number of Default Functions
 '''''''''''''''''''''''''''''''''''
 
-This preference is used to limit the number of Function Labels shown for selected locos that are not from the Server Roster, or where you have set the `Use default function labels?`_ preference. 
+This preference is used to limit the number of Function Labels shown for selected locos that are not from the |ROSTER|, or where you have set the `Use default function labels?`_ preference. 
 
 Number of Default Functions for Roster
 ''''''''''''''''''''''''''''''''''''''
 
-This preference is used to limit the number of Function Labels shown for Server Roster Entries that don't have any function Labels configured.
+This preference is used to limit the number of Function Labels shown for |ROSTER| Entries that don't have any function Labels configured.
 
 Function Buttons Area size
 """"""""""""""""""""""""""
@@ -1244,7 +1244,7 @@ Only relevant is the `Show 'Pause' button?`_ preference is enabled.
 Consist Function Follow Preferences
 -----------------------------------
 
-These preferences allow for change the way DCC functions will behave in a consist/multiple unit train.
+These preferences allow for change the way DCC functions will behave in a |consist| unit train.
 
 .. contents:: In this Section
     :depth: 1
@@ -1330,7 +1330,7 @@ Each 'action' can be one of:
 
 Note:
 
-* 'Lead+Trail' refers to the first and last locos in the consist / multiple unit train. |BR| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |BR| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
+* 'Lead+Trail' refers to the first and last locos in the |consist| train. |BR| i.e. If there are only two locos, then 'Lead+Trail Locos' will give the same result as 'All Locos'. |BR| If more than two, then 'Lead+Trail' will give a different result.  The locos in the middle will not receive the function.
 
 Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
@@ -1808,7 +1808,7 @@ Drop Loco before acquire?
 
 If this preference is enabled |ed| will *Drop* and *release* the current loco before acquiring new loco.
 i.e A throttle can only control one loco at a time.
-i.e. It is not possible to create an on-the-fly (in-phone) consist/multiple unit train.
+i.e. It is not possible to create an on-the-fly (in-phone) |consist| train.
 
 Allow loco select while moving?
 """""""""""""""""""""""""""""""
@@ -1832,12 +1832,12 @@ Options
 Roster in Recent Locos?
 """""""""""""""""""""""
 
-If this preference is enabled |ed| will include roster selections in *Recent Locos list*.
+If this preference is enabled |ed| will include |ROSTER| selections in *Recent Locos list*.
 
 Roster Names in Recent Locos?
 """""""""""""""""""""""""""""
 
-If this preference is enabled |ed| will include Loco names from the witServer roster in *Recent list* in the |LS-S| screen.
+If this preference is enabled |ed| will include Loco names from the |ROSTER| in *Recent list* in the |LS-S| screen.
 
 Maximum Recent Locos
 """"""""""""""""""""
@@ -1854,7 +1854,7 @@ Note this only will work while the :guilabel:`Select` button is *Enabled*.  If t
 Filter Roster
 """""""""""""
 
-Enter text into this preference to only show roster entries with names containing that text only.  
+Enter text into this preference to only show |ROSTER| entries with names containing that text only.  
 
   .. note:: 
     :class: note-ed-hidden-title

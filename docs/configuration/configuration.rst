@@ -37,7 +37,7 @@ The *Functions buttons* are changed via the ``Function Buttons`` menu option: :m
 Some of the Function button preferences include:
 
 * You can set the default labels and function numbers to display. 
-* If you have entered labels for a roster entry in JMRI, these labels will be used for that entry, and can be copied from the dialog (access the menu after selecting a loco). 
+* If you have entered labels for a |ROSTER| entry in |JMRI| or |EX-CS|, these labels will be used for that entry, and can be copied from the dialog (access the menu after selecting a loco). 
 * You can remove buttons by blanking out the labels.
 
 .. note:: 

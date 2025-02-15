@@ -90,6 +90,10 @@
 
    :abbr:`Command Station/Server (JMRI, EX-CommandStation, WiFTrax, LnWi, etc.)`
 
+.. |SERVERS| replace::
+
+   :abbr:`Command Stations/Servers (JMRI, EX-CommandStation, WiFTrax, LnWi, etc.)`
+
 ..
 .. Use |ED|\ to remove the leading space if you need to follow it by a comma etc.
 ..
@@ -156,5 +160,36 @@
    
     :abbr:`SRT (Semi-Realistic Throttle)`
 ..
+.. ........................................................
+..
 .. role:: hand-written
 ..
+.. ........................................................
+..
+.. |loco_consist| replace::
+   
+   :abbr:`Loco or Consist / Multiple Unit (One or more locos being controlled by a single throttle)`
+..
+.. |locos_consists| replace::
+   
+   :abbr:`Locos or Consists / Multiple Units (One or more locos being controlled by a single throttle)`
+..
+.. |consist| replace::
+   
+   :abbr:`Consist / Multiple Unit (More than one loco being controlled by a single throttle)`
+..
+.. |consists| replace::
+   
+   :abbr:`Consists / Multiple Units (More than one loco being controlled by a single throttle)`
+..
+.. |roster| replace::
+   
+   :abbr:`Server Roster (list of locos supplied by the WiThrottle or DCC-EX server)`
+..
+.. |IPLS| replace::
+   
+   :doc:`In Phone Loco Sounds </configuration/ipls>` (IPLS)
+..
+.. |IPLS_SHORT| replace::
+   
+   :doc:`IPLS </configuration/ipls>` (IPLS)

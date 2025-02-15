@@ -92,7 +92,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
 
 Q. What is this **jmri.mstevetodd.com** in the server list?
 
-  A. *jmri.mstevetodd.com* is a demo server, which can be used for testing. It has roster entries, turnouts, routes and an active panel for you to try.
+  A. *jmri.mstevetodd.com* is a demo server, which can be used for testing. It has |ROSTER| entries, turnouts, routes and an active panel for you to try.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -106,13 +106,13 @@ Q. How do I clear unwanted servers from the list
 Selecting locomotives to control
 --------------------------------
 
-Q. Why can't I can't see my loco in the roster?
+Q. Why can't I can't see my loco in the |ROSTER|?
 
-  A. The loco needs to be added to the roster on your server computer.  Refer to your server documentation for specifics.
+  A. The loco needs to be added to the |ROSTER| on your server computer.  Refer to your server documentation for specifics.
 
 Q. Why is my loco is not remembered in the recent locos list?
 
-  A1. If the loco is in your roster, check the preference ``Roster in Recent Locos?`` so that locos in the roster will be included in the recent locos list.
+  A1. If the loco is in your |ROSTER|, check the preference ``Roster in Recent Locos?`` so that locos in the |ROSTER| will be included in the recent locos list.
 
   A2. If no locos are remembered (and you have confirmed the preference above) make sure the ``Maximum Recent Locos`` preference is not set to zero.
 
@@ -172,12 +172,12 @@ Q. I sometimes accidently press the direction button when changing speed
     * Increase speed slider/button height
     * Decrease loco and direction button height
 
-Q. No Locomotive Icons appear in the Roster
+Q. No Locomotive Icons appear in the |ROSTER|
 
-  A. The Roster List, and Recent Locos List on the Select Loco screen will automatically show icons for your locos only if:
+  A. The |ROSTER| List, and Recent Locos List on the Select Loco screen will automatically show icons for your locos only if:
 
     * The **Web Server** (not just the |WTS|) is running on the JMRI server
-    * The loco itself has an icon added for it in the JMRI roster |BR|\ OR
+    * The loco itself has an icon added for it in the JMRI |ROSTER| |BR|\ OR
     * A locally cached or manually chosen image is available for the loco (see 'Locomotive Icons' on the `Operation screen <../operations/index.html>`_)
 
 Q. Why can't I control 6 locos
@@ -236,21 +236,21 @@ Q. I want to control more than one train
 
 Q. In want to change the labels of the function buttons that are displayed 
 
-  A1. Change the function button defaults in |ed|, for locos without Roster Entries
+  A1. Change the function button defaults in |ed|, for locos without |ROSTER| Entries
 
-  A2. Roster entries include function button labels, and can be changed when defined to the server
+  A2. |ROSTER| entries include function button labels, and can be changed when defined to the server
 
 Q. My locos have different functions but all the Function buttons appear the same for every locomotive 
 
-  A1. There is a Preference “Use default function labels?” which can override the labels from the roster entry.  Confirm that you have not turned it on.
+  A1. There is a Preference “Use default function labels?” which can override the labels from the |ROSTER| entry.  Confirm that you have not turned it on.
 
   A2. You need to setup the individual functions for each of your locos in JMRI.
 
 Q. My loco shows the wrong Function labels 
 
-  A. Functions of loco are generally set in the Roster.  |ed| may be showing the functions of a loco with the same address from the Roster.
+  A. Functions of loco are generally set in the |ROSTER|.  |ed| may be showing the functions of a loco with the same address from the |ROSTER|.
 
-      This can happen if you entered an address to select the loco rather than selecting from the roster list.
+      This can happen if you entered an address to select the loco rather than selecting from the |ROSTER| list.
 
       You can force the default function labels in the preferences.
 

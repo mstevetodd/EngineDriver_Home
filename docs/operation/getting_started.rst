@@ -83,12 +83,12 @@ Quick Start / Getting Started
         :scale: 81 %
         :align: right
         
-    * Click on a loco from the Roster or Recent lists |BR| or
+    * Click on a loco from the |ROSTER| or Recent lists |BR| or
     * Enter the loco address (verify short or long), and press :guilabel:`Acquire`
 
       You will be returned to the |T-S|.
 
-      For Consists / multiple units, see the note below.
+      For |consists|, see the note below.
  
   |FORCE-BREAK|
 
@@ -106,11 +106,11 @@ Quick Start / Getting Started
   * Press your phone's Menu button :guilabel:`≡` to access screens for Turnout/Point, Route and Power control, as well as adjust settings and set numerous preferences
   * You can also 'swipe/fling' left or right to jump quickly back and forth between the Throttle, Routes, Turnouts/Points and Web pages. (Use Preferences to choose which are in the left / right swipe list) |BR|\ |BR|\ 
 
-  * To release a single loco (or consist/multiple unit), click :guilabel:`Select` again and click the :guilabel:`Release` button
+  * To release a single loco (or |consist|), click :guilabel:`Select` again and click the :guilabel:`Release` button
 
   * To release all locos, just press the :guilabel:`Back` button and exit the app. |BR|\ This will also stop your locos (can be overridden in preferences)
 
 Note:
 
-* To create a consist/multiple unit 'on-the-fly', simply select additional locos for the same throttle, then select which way the new loco if facing. Direction and speed will be sent for all. :guilabel:`Release` will release all for that throttle.
+* To create a |consist| 'on-the-fly', simply select additional locos for the same throttle, then select which way the new loco if facing. Direction and speed will be sent for all. :guilabel:`Release` will release all for that throttle.
 
