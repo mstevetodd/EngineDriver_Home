@@ -23,6 +23,7 @@ It does so by adjusting the speed commands sent to the locomotive. To be clear, 
    :align: right
 
 Key |SRT| Controls/Displays
+-----------------------------
 
 * **Load** - an ability to set the load being put on the loco, from no load to very heavy trains
 * **Speed Control** - operator commanded speed
@@ -82,7 +83,7 @@ The throttle can be set to show either a percentage slider or a slider with a di
 
 To increase or decrease speed you can either i) drag the throttle slider up and down, or ii) press the increase or decrease buttons.
 
-As stated above, this does not instantly send those speed commands to the decoder/loco.  The speed changes are gradually sent to the loco over a period of time.
+As `stated above <Basic Operation>`_, this does not instantly send those speed commands to the decoder/loco.  The speed changes are gradually sent to the loco over a period of time.
 
 If the speed is set to zero from a previous higher speed the loco will be commanded to gradually go to speed zero. (Coast to zero.)
 
@@ -160,7 +161,9 @@ Brakes - Without the Air Reservoir and Air Line Enabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 In Summary:
+
 The amount of Air in the reservoir and line are ignored.
+
 The position of the slider is the amount of brake that will be applied
 
 The Brakes can be applied and turned off at will. There is no restriction on their use.
@@ -176,7 +179,7 @@ As explained above, the |SRT| created momentum effects can optionally layer on t
 Braking - With Decoder Brake Functions
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The |SRT| also includes a feature that allows the |SRT| Braking control to be integrated with decoder braking (and other) functions in a very flexible manner. If the Decoder Brake type is activated in the Decoder Brake Type preference setting (see below), then the |SRT| Brake control can be configured to trigger up to four decoder functions at each of three brake thresholds.
+The |SRT| also includes a feature that allows the |SRT| Braking control to be integrated with decoder braking (and other) functions in a very flexible manner. If the Decoder Brake type is activated in the `Decoder Brake Type preference setting <Decoder BrakeType>`_, then the |SRT| Brake control can be configured to trigger up to four decoder functions at each of three brake thresholds.
 
 The three brake thresholds are referred to a Low, Mid and High. 
 
@@ -240,7 +243,7 @@ Deceleration Speed Step Repeat Delay
 .. note:: 
   :class: note-ed-hidden-title
 
-  See notes above.
+  See `Basic Operation`_ notes above.
 
 Speed Step Amount
 -----------------
@@ -250,21 +253,21 @@ Speed Step Amount
 .. note:: 
   :class: note-ed-hidden-title
 
-  See notes above.
+  See `Basic Operation`_ notes above.
 
 Maximum Throttle Percentage
 ---------------------------
 
 *Maximum allowed slider value in % in ALL throttle sliders.*
 
-* Limits the maximum speed of the loco.
+This preference limits the maximum speed of the loco.
 
 Throttle Notches
 ----------------
 
 *Adjust the Throttle as percentage, or by a specific number of steps/notches*
 
-* Affects the display of the speed control of the throttle.
+This preferences affects the display of the speed control of the throttle.
 
 Stop Button Action
 ------------------
@@ -281,7 +284,7 @@ Options are:
 
 * Throttle to Zero + Full Brake
 
-   * As above with the addition that the |SRT| Brake goes to its maximum setting (as defined in the Maximum Brake Percentage preference).
+   * As above with the addition that the |SRT| Brake goes to its maximum setting (as defined in the `Maximum Brake Percentage`_ preference).
 
 * Speed to Zero
 
@@ -301,51 +304,70 @@ Number of Brake Steps
 
 *Adjust the number of sets in the Brake Slider*
 
-* Affects the display of the Brake control.
-* Note that the percentage Brake applied at each step is annotated on the brake view
-* Note as clearly seen in the Percentage option, the amount of brake per step increases exponentially.
+This preference affects the display of the Brake control.
+
+Note
+
+* The percentage Brake applied at each step is annotated on the brake view
+* As clearly seen in the Percentage option, the amount of brake per step increases exponentially.
 
 Maximum Brake Percentage
 ------------------------
 
 *Adjust the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero*
 
-* Sets the maximum amount of braking applied.
+This preference sets the maximum amount of braking applied.
 
 Disable the Air Reservoir
 -------------------------
 
 *If checked the fill state of the air reservoir and air will not impact available brakes*
 
-* See notes above for usage with and without the Air enabled.
+.. note:: 
+  :class: note-ed-hidden-title
+
+   See the `Brakes <#d-brakes>`_ notes above for usage with and without the Air enabled.
 
 Rate the air brakes refresh
 ---------------------------
 
 *Adjust the rate that the Air Brakes will refresh/refill (in milliseconds). Smaller is faster.*
 
+.. note:: 
+  :class: note-ed-hidden-title
+
+   See the `Brakes <#d-brakes>`_ notes above for usage with and without the Air enabled.
+
 Number of Load Steps
 --------------------
 
 *Adjust the number of steps in the Load Slider*
 
-* Affects the display of the Load control.
-* Note that the Load applied at each step is annotated on the Load view
-* Note as clearly seen in the Percentage option, the amount of Load per step increases exponentially.
+This preference affects the display of the Load control.
+
+Note
+
+* The Load applied at each step is annotated on the Load view
+* As clearly seen in the Percentage option, the amount of Load per step increases exponentially.
 
 Maximum Load Percentage
 -----------------------
 
 *Adjust maximum percentage of the Load Slider. (100-2000%) 100% = loco alone*
 
-* Sets the maximum amount of Load applied.
+This preference sets the maximum amount of Load applied.
 
 Decoder Brake Type
 ------------------
 
 *Activate the Brake functions on the decoder*
 
-* Allows the user to turn on the decoder activation features (see above) of the |SRT| Brake function.
+This preference allows the user to turn on the decoder activation features of the |SRT| Brake function.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+   see `Decoder Integration`_ for more information.
 
 Decoder Low Function Number(s)
 ------------------------------
@@ -365,7 +387,7 @@ Decoder Low Brake Value (Percent)
 .. note:: 
   :class: note-ed-hidden-title
 
-  See description of the |SRT| integration with decoder braking above.
+  See `Decoder Integration`_ for the description of the |SRT| integration with decoder braking.
 
 Decoder Mid Function Number(s)
 ------------------------------
@@ -375,7 +397,7 @@ Decoder Mid Function Number(s)
 .. note:: 
   :class: note-ed-hidden-title
 
-  See description of the |SRT| integration with decoder braking above.
+  See `Decoder Integration`_ for the description of the |SRT| integration with decoder braking.
 
 Decoder Mid Brake Value (Percent)
 ---------------------------------
@@ -385,7 +407,7 @@ Decoder Mid Brake Value (Percent)
 .. note:: 
   :class: note-ed-hidden-title
 
-  See description of the |SRT| integration with decoder braking above.
+  See `Decoder Integration`_ for the description of the |SRT| integration with decoder braking.
 
 Decoder High Function Number(s)
 -------------------------------
@@ -395,7 +417,7 @@ Decoder High Function Number(s)
 .. note:: 
   :class: note-ed-hidden-title
 
-  See description of the |SRT| integration with decoder braking above.
+  See `Decoder Integration`_ for the description of the |SRT| integration with decoder braking.
 
 Decoder High Brake Value (Percent)
 ----------------------------------
@@ -405,7 +427,7 @@ Decoder High Brake Value (Percent)
 .. note:: 
   :class: note-ed-hidden-title
 
-  See description of the |SRT| integration with decoder braking above.
+  See `Decoder Integration`_ for the description of the |SRT| integration with decoder braking.
 
 |hr-heavy|
 
