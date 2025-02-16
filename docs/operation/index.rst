@@ -22,8 +22,8 @@ See:
    operation
    interface
    semi-realistic-throttle
-   wifi_issues
    gamepads
    esu_mcii
    advanced
+   wifi_issues
    faq
