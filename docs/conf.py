@@ -40,7 +40,7 @@ extensions = [
    # 'sphinx.ext.graphviz',
    # 'sphinx.ext.inheritance_diagram',
     'sphinxcontrib.spelling',
-    # 'sphinx_sitemap',
+    'sphinx_sitemap',
     'sphinx_rtd_dark_mode',
     'sphinx_reredirects'
 ]
