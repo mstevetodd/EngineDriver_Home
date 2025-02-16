@@ -2197,6 +2197,33 @@ Hide if no user name?
 
 If this preference is enabled |ed| will omit any Turnout/Point/Route from list if the user name is empty.
 
+Turnouts/Points Sort Order
+"""""""""""""""""""""""""""
+
+Order that the Turnouts entries will appear, by default, each time you start Engine Driver
+
+Options are:
+
+* Name
+* ID
+* Position (The order they were received from the |SERVER|)
+
+Routes Sort Order
+"""""""""""""""""""""""""
+
+Order that the Routes entries will appear, by default, each time you start Engine Driver
+
+Options are:
+
+* Name
+* ID
+* Position (The order they were received from the |SERVER|)
+
+Always Show Throw/Close?
+"""""""""""""""""""""""""
+
+If this preference is enabled, |ED| will always show both the :guilabel:`Throw` and :guilabel:`Close` buttons for Turnouts/Points, never the :guilabel:`Toggle` button.
+
 Children's (Timer) Preferences
 ------------------------------
 

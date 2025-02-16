@@ -686,8 +686,6 @@ Shaking your device/phone while on the Throttle page can optional be configured 
 
   See the :ref:`Accelerometer (Shake) preferences <configuration/preferences:accelerometer (shake) preferences>` for information on how to configure what the Accelerometer (Shake) do.
 
-----
-
 Turnouts/Points Screen
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -697,16 +695,51 @@ Accessed from any of the `Main Screens`_ by the :menuselection:`Menu --> Turnout
 
 This screen allows you to display all Turnouts/Points that have been defined in JMRI.
 
-Turnouts/Points can be changed from Closed to Thrown and vice versa be pressing on either the ``Closed`` or ``Thrown`` buttons
+Turnouts/Points can be changed from 'Closed' to 'Thrown' and vice versa be pressing on either the :guilabel:`Closed` or :guilabel:`Thrown` buttons
 
-**List from WiThrottle**
+.. image:: ../_static/images/screenshots/turnouts_jmri.png
+  :align: right
+  :scale: 8%
 
-* Throw
-* CLose
+**List from WiThrottle / EX-CommandStation**
+
+By selecting the 'JMRI Defined' radio button, |ED| will show the Turnouts/Points defined in the |SERVER|.
+
+Click on the button(s) on the beside the entry to 'Throw' or 'Close' the Turnout/Point.
+
+Note:
+
+* If the Turnout/Point button says 'Thrown', then clicking on the button will **'Close'** the Turnout/Point and the button will then say 'Closed'.
+* If the Turnout/Point button says 'Closed', then clicking on the button will **'Throw'** the Turnout/Point and the button will then say 'Thrown'.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Note that this list can optionally be set to *always* show :guilabel:`Close` and :guilabel:`Throw` rather than :guilabel:`Closed` or :guilabel:`Thrown` by setting the :ref:`configuration/preferences:Always Show Throw/Close?` preference.
+
+|FORCE-BREAK|
+
+.. image:: ../_static/images/screenshots/turnouts_entry.png
+  :align: right
+  :scale: 8%
 
 **Entry**
 
-.. todo:: Turnouts/Points Screen - Entry
+By selecting the 'Address/Recent' radio button, |ED| will allow you to throw/close any arbitrary Turnout/Point.
+
+Enter the address of the Turnout/Point and press any of the buttons:
+
+* :guilabel:`Throw`
+* :guilabel:`Close`
+* :guilabel:Toggle`
+
+**Recent**
+
+By selecting the 'Address/Recent' radio button, |ED| will allow you to throw/close any recently used Turnout/Point.
+
+Click on the buttons on the beside the entry to 'Throw' or 'Close' the Turnout/Point.
+
+|FORCE-BREAK|
 
 **Filter by location**
 
