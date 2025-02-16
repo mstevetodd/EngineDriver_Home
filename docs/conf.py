@@ -18,7 +18,7 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'Engine Driver Home'
+project = 'Engine Driver - Documentation'
 copyright = 'M Steve Todd'
 author = 'M Steve Todd, Peter Akers, Robert Posener'
 
