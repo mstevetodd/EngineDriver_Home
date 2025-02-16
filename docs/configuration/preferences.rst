@@ -288,7 +288,7 @@ Throttle Screen Layout
       - see note
       - 0-100
       - ✓
-    * - Tablet Shunting Left
+    * - Tablet Switching Left |BR| Tablet Shunting Left
       - 1 \- 6
       - V
       - ✓
