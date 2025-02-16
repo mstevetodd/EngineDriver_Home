@@ -288,7 +288,7 @@ Throttle Screen Layout
       - see note
       - 0-100
       - ✓
-    * - Tablet Shunting Left
+    * - Tablet Switching Left |BR| Tablet Shunting Left
       - 1 \- 6
       - V
       - ✓
@@ -854,10 +854,20 @@ Maximum Throttle Percentage (SRT)
 
 This preference adjusts the maximum allowed slider value in % in **ALL** throttle sliders in **ALL** |T-S| types.
 
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
+
 Throttle Notches
 ''''''''''''''''
 
 This preference adjusts how the Throttle slider is displayed. Either as a percentage, or by a specific number of steps/notches*
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| throttle and speed changes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Stop Button Action
 ''''''''''''''''''
@@ -889,14 +899,25 @@ Options are:
 
 These stop options allow the user to control the deceleration of their train in a variety of ways when using braking. The user can choose to use the |SRT| momentum and braking, or choose to use the decoder momentum and braking. The advantage of the later approach for some users will be that the sound production of a sound decoder that is determined by the momentum/speed in the decoder is fully preserved.
 
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
+
 Number of Brake Steps
 '''''''''''''''''''''
 
-This preference adjusts the number of steps in the Brake Slider.
+This preference adjusts the number of steps in the Brake Slider. It affects the display of the Brake control.
 
-* Affects the display of the Brake control.
-* Note that the percentage Brake applied at each step is annotated on the brake view
-* Note that the amount of brake per step increases exponentially.
+Notes:
+
+* The percentage Brake applied at each step is annotated on the brake view
+* The amount of brake per step increases exponentially.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Maximum Brake Percentage
 ''''''''''''''''''''''''
@@ -920,19 +941,35 @@ This preference adjusts the rate that the Air Brakes will refresh/refill (in mil
 
 Smaller is faster.
 
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
+
 Number of Load Steps
 ''''''''''''''''''''
 
-This preference adjusts the number of steps in the Load Slider.
+This preference adjusts the number of steps in the Load Slider. It affects the display of the Load control.
 
-* Affects the display of the Load control.
-* Note that the Load applied at each step is annotated on the Load view
-* Note as clearly seen in the Percentage option, the amount of Load per step increases exponentially.
+Notes:
+
+* The Load applied at each step is annotated on the Load view
+* The amount of Load per step increases exponentially.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Load Slider on the :doc:`/operation/semi-realistic-throttle` page.
 
 Maximum Load Percentage
 '''''''''''''''''''''''
 
 This preference adjusts the maximum percentage of the Load Slider. (100-2000%) 100% = loco alone
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Load Slider on the :doc:`/operation/semi-realistic-throttle` page.
 
 Decoder Brake Type
 ''''''''''''''''''

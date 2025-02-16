@@ -23,17 +23,21 @@ Q. Why doesn't my Android device automatically connect to my WiFi network?
 
 I have in the past put a shortcut on the homepage to the network settings to make it easy to get there and select the network, before starting ED.
 
+|HR-DASHED|
+
 Q. I can't connect to my Server /Railroad
 
   A1. Check the following:
 
   * Check that you are connected to a WiFi network
   * Check that you are connected to the same WiFi network as your |WTS-DCC-EX|
-  * Check that JMRI and its |WTS| feature are started
+  * If using MRI, check that JMRI and its |WTS| feature are started
 
   A2. Possible Mobile data connection problem
 
   If |ed| can see the |WTS-DCC-EX| but displays an error when you try to connect to it… If you are using a phone with a SIM, and the WiFi network your JMRI server is on does not have internet access. You may have to turn 'mobile data' off on your device.  See `[here] for more information <./wifi_issues.html>`_.
+
+|HR-DASHED|
 
 Q. |ed| Connects, but I can't control any locos
 
@@ -46,6 +50,8 @@ Q. |ed| Connects, but I can't control any locos
 
     See the `Turn Track Power On <../operation/operation.html#turn-track-power-on>`_ notes for more information.
 
+|HR-DASHED|
+
 Q. Why doesn't |ed| automatically find my |WTS-DCC-EX|?
 
   I can manually connect to my Server / Railroad by entering an IP address, but it never finds it automatically.
@@ -54,11 +60,15 @@ Q. Why doesn't |ed| automatically find my |WTS-DCC-EX|?
 
   A2. 4.5ghz and 5ghz. |TODO|
 
+|HR-DASHED|
+
 Q. If |ed| can't find my Server/Railroad automatically 
 
   A. Look for the IP address and port in the WiThrottle window in JMRI 
 
   Type them in the two fields and click :guilabel:`Connect`
+
+|HR-DASHED|
 
 Q. Why doesn't |ed| remember the servers I have connected to?
 
@@ -72,6 +82,8 @@ Connecting to different servers/railroads
 Q. I want to switch to a different server on the same network. 
 
   A. You need to exit |ed| and restart.
+
+|HR-DASHED|
 
 Q. I want to switch to a different server on a different network. 
 
@@ -90,6 +102,8 @@ The most common use of this (so far) is to remember the locos relevant to that r
 
   See the `Auto Host Specific Import/Export <../configuration/preferences.html#auto-host-specific-import-export>`_ preference for more information.
 
+|HR-DASHED|
+
 Q. What is this **jmri.mstevetodd.com** in the server list?
 
   A. *jmri.mstevetodd.com* is a demo server, which can be used for testing. It has |ROSTER| entries, turnouts, routes and an active panel for you to try.
@@ -98,6 +112,8 @@ Q. What is this **jmri.mstevetodd.com** in the server list?
     :class: note-ed-hidden-title
 
     You can use the `Hide Demo Server? <../configuration/preferences.html#hide-demo-server>`_ preference to permanently remove it from the list if you wish.
+
+|HR-DASHED|
 
 Q. How do I clear unwanted servers from the list
 
@@ -110,11 +126,15 @@ Q. Why can't I can't see my loco in the |ROSTER|?
 
   A. The loco needs to be added to the |ROSTER| on your server computer.  Refer to your server documentation for specifics.
 
+|HR-DASHED|
+
 Q. Why is my loco is not remembered in the recent locos list?
 
   A1. If the loco is in your |ROSTER|, check the preference ``Roster in Recent Locos?`` so that locos in the |ROSTER| will be included in the recent locos list.
 
   A2. If no locos are remembered (and you have confirmed the preference above) make sure the ``Maximum Recent Locos`` preference is not set to zero.
+
+|HR-DASHED|
 
 Q. The loco list is too long, I can't find my locos easily
 
@@ -122,13 +142,13 @@ Q. The loco list is too long, I can't find my locos easily
 
   .. todo:: Selecting locomotives to control
 
-Q. How do I work with Consists
+|HR-DASHED|
 
-  A1. On the fly Consists in |ed| 
+Q. How do I work with |Consists| / Multiple Units|
 
-  |ed| can create consists on-the-fly by simply select multiple locos, one after the other...
+  A1. On the fly |Consists| in |ed| 
 
-  .. todo:: How do I work with Consists
+  |ed| can create |consists| on-the-fly by simply selecting multiple locos, one after the other...
 
   Note: Make sure that the ``Drop Loco before acquire?`` preference is set to 'No'.
 
@@ -138,39 +158,51 @@ Q. How do I work with Consists
 
   .. todo:: DCC 'Advanced Consists' (CV19)
 
-  Remember that this type of consist can cause problems later if the loco has not been removed from the consist first and you want to control it as an individual loco. 
+  Remember that this type of |consist| can cause problems later if the loco has not been removed from the consist first and you want to control it as an individual loco. 
 
   A3. JMRI Consists
 
   .. todo:: JMRI Consists
 
-  Creating consists in JMRI effectively create DCC 'Advanced Consists' (CV19) and appear in the loco list in |ed| much like any other loco. 
+  Creating |consists| in JMRI effectively create DCC 'Advanced Consists' (CV19) and appear in the loco list in |ed| much like any other loco. 
 
-Q. I can't create on-the-fly consists?
+|HR-DASHED|
+
+Q. I can't create on-the-fly |consists| ?
 
   A. Make sure that the ``Drop Loco before acquire?`` preference is set to 'No'.
 
+|HR-DASHED|
+
 Q. The lights of the locos in my consist are wrong?
 
-  A1. If you use on-the-fly consists, you can control the lights by clicking ``Select`` then click on the ``Edit Lights`` button
+  A1. If you use on-the-fly |consists|, you can control the lights by clicking ``Select`` then click on the ``Edit Lights`` button
 
   A2. You can control the lights with a Long click on the ``Select`` Loco button, if you set the ``Control consist Lights on long click`` preference.
 
+|HR-DASHED|
+
 Q. Can't control my loco?
 
-  A. If you can control the lights but not the motor, check that the loco is not in a 'normal' consist.
+  A. If you can control the lights but not the motor, check that the loco is not in a 'normal' or 'advanced' consist.
+
+|HR-DASHED|
 
 Q. I sometimes accidently press the volume keys
 
-  A. You can disable the volume keys in the preferences.
+  A. You can disable the volume keys with the :ref:`configuration/preferences:disable volume keys?` preference.
+
+|HR-DASHED|
 
 Q. I sometimes accidently press the direction button when changing speed
 
   A. You can:
 
-    * Disable 'Direction change while moving?' preference (recommended)
-    * Increase speed slider/button height
-    * Decrease loco and direction button height
+    * Disable the :ref:`configuration/preferences:Direction change while moving?` preference *(recommended)*
+    * :ref:`configuration/preferences:Increase Slider/Speed Height?`
+    * :ref:`configuration/preferences:Decrease Loco No. height?`
+
+|HR-DASHED|
 
 Q. No Locomotive Icons appear in the |ROSTER|
 
@@ -180,9 +212,15 @@ Q. No Locomotive Icons appear in the |ROSTER|
     * The loco itself has an icon added for it in the JMRI |ROSTER| |BR|\ OR
     * A locally cached or manually chosen image is available for the loco (see 'Locomotive Icons' on the `Operation screen <../operations/index.html>`_)
 
+  Note the |EX-CS| and all other known Commands stations cannot provide |ROSTER| icons.  Only JMRI is know to be able to provide this service.
+
+|HR-DASHED|
+
 Q. Why can't I control 6 locos
 
-  A. only the 'Simple' throttle layout allows for 6 throttles
+  A. only the 'Simple', 'Tablet Switching/Shunting' and 'Tablet Vertical' :ref:`throttle layouts <configuration/preferences:throttle Screen layout>` allows for (up to) 6 throttles.
+  
+  Also, once you have selected a :ref:`throttle layouts <configuration/preferences:throttle Screen layout>` allows for more throttles, you must also increase the number of throttles displayed with the :ref:`throttle layouts <configuration/preferences:Number of throttles>` preference.
 
 Changing the appearance of Engine Driver
 ----------------------------------------
@@ -194,11 +232,12 @@ Q. I want to change the appearance of the app
 
   A. You can switch between different themes by changing the preference. 
 
-    * The original theme 
-    * The high contrast theme. Similar to the original theme, without the textured background with deeper blacks and brighter whites. 
-    * The high contrast outline theme. For people who like white text on a black background.
-    * The Dark theme. 
-    * The Colourful theme.
+    * The 'Original' (Checker Plate) theme 
+    * The 'High Contrast' Theme. Similar to the original theme, without the textured background with deeper blacks and brighter whites. 
+    * The 'High Contrast Outline' theme. For people who like white text on a black background.
+    * The 'Dark' theme. 
+    * The 'Colourful' theme.
+    * the 'Neon Blue' theme
 
 ----
 
@@ -207,7 +246,7 @@ Changing the Throttle screen
 
 Q. I want to change the appearance of |T-S|
 
-  A. There are a number of different |T-S| designs/layouts.  Look at the `Operation <../operaion/index.html>`_ screen for details
+  A. There are a number of different |T-S| designs/layouts.  Look at the `Operation <../operaion/index.html>`_ screen for details.
 
     * Default / Original /Horizontal
     * Simple  
@@ -219,20 +258,29 @@ Q. I want to change the appearance of |T-S|
     * Vertical Switching/Shunting
     * Vertical Switching/Shunting Left
     * Vertical Switching/Shunting Right 
+    * Tablet Switching/Shunting Left 
+    * Tablet Switching/Shunting Right 
+    * Semi-Realistic Left
 
     |ed| will automatically reload the throttle sceen after closing the preferences screen. 
 
+|HR-DASHED|
+
 Q. I want vertical sliders, not horizontal
 
-  A. See the 'Simple' and 'Vertical' Throttle screen type options above.
+  A. See the 'Simple', 'Vertical' and 'Tablet' throttle screen type options above.
+
+|HR-DASHED|
 
 Q. I want to control more than one train 
 
-  A. You can control between one and six trains with |ed|, depending on which |T-S| type (see above) you have chosen. Each train can have one or more locomotives in consist. 
+  A. You can control between one and six trains with |ed|, depending on which |T-S| type (see above) you have chosen. Each train can have one or more locomotives in |consist|. 
 
-     The screen space is shared between throttles, so set the “Number of Throttles” appropriately.
+     The screen space is shared between throttles, so set the 'Number of Throttles' appropriately.
 
      Note that the different Throttle Screen options (above) support different numbers on throttles.
+
+|HR-DASHED|
 
 Q. In want to change the labels of the function buttons that are displayed 
 
@@ -240,11 +288,15 @@ Q. In want to change the labels of the function buttons that are displayed
 
   A2. |ROSTER| entries include function button labels, and can be changed when defined to the server
 
+|HR-DASHED|
+
 Q. My locos have different functions but all the Function buttons appear the same for every locomotive 
 
   A1. There is a Preference “Use default function labels?” which can override the labels from the |ROSTER| entry.  Confirm that you have not turned it on.
 
   A2. You need to setup the individual functions for each of your locos in JMRI.
+
+|HR-DASHED|
 
 Q. My loco shows the wrong Function labels 
 
@@ -268,6 +320,8 @@ Some people find the speed slider difficult to control.
   * Replace the slider with large speed buttons only.
 
       (If you are using a gamepad or ESU MCII, then you may like to remove the slider AND the speed buttons.)
+
+|HR-DASHED|
 
 Q. I have a small screen Android device.  It doesn't fit well?
 
