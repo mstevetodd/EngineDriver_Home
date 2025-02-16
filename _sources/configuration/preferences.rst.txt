@@ -1947,10 +1947,32 @@ Filter Roster
 
 Enter text into this preference to only show |ROSTER| entries with names containing that text only.  
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    Note this is that same as entering text in the `filter field <../operation/interface.html#select-from-sever-roster>`_ on the *Select Loco Screen*.  i.e. changing it here will change it there and vice-versa.
+  Note this is that same as entering text in the `filter field <../operation/interface.html#select-from-sever-roster>`_ on the *Select Loco Screen*.  i.e. changing it here will change it there and vice-versa.
+
+
+Filter Roster by Roster Owner
+"""""""""""""""""""""""""""""
+
+Only show roster entries containing the specified text.
+
+Roster Sort Order
+"""""""""""""""""
+
+This preference allows you to select the order that the roster entries will appear, by default, each time you start Engine Driver.
+
+Options are:
+
+* Name
+* ID (DCC Address)
+* Position (the order they are received from the |SERVER|)
+
+Always use function labels from server
+""""""""""""""""""""""""""""""""""""""
+
+If this preference is disabled, |ED| will use the default labels for locos selected by address (not Roster), ignoring server default labels.
 
 In Phone Loco Sounds
 --------------------

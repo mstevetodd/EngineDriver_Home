@@ -689,11 +689,15 @@ Shaking your device/phone while on the Throttle page can optional be configured 
 Turnouts/Points Screen
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Turnouts/Points Screen
-
 Accessed from any of the `Main Screens`_ by the :menuselection:`Menu --> Turnouts`` or :menuselection:`Menu --> Points` or by swiping right from the Throttle Screen if enabled in the Left with the ``Swipe through Turnouts?`` or ``Swipe through Points?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Turnouts/Points`
 
 This screen allows you to display all Turnouts/Points that have been defined in JMRI.
+
+*Turnouts/Points* can be operated three ways:
+
+* By entering the DCC Address
+* From the Defined Turnout/Point list provided by the |WTS-DCC-EX| (JMRI)
+* From the Recent Turnout/Point list
 
 Turnouts/Points can be changed from 'Closed' to 'Thrown' and vice versa be pressing on either the :guilabel:`Closed` or :guilabel:`Thrown` buttons
 
@@ -701,11 +705,11 @@ Turnouts/Points can be changed from 'Closed' to 'Thrown' and vice versa be press
   :align: right
   :scale: 8%
 
-**List from WiThrottle / EX-CommandStation**
+**Via the list from Server**
 
 By selecting the 'JMRI Defined' radio button, |ED| will show the Turnouts/Points defined in the |SERVER|.
 
-Click on the button(s) on the beside the entry to 'Throw' or 'Close' the Turnout/Point.
+Click on the button(s) on the beside the entry to :guilabel:`Throw`` or :guilabel:`Close` the Turnout/Point.
 
 Note:
 
@@ -723,7 +727,7 @@ Note:
   :align: right
   :scale: 8%
 
-**Entry**
+**By Entering an Address**
 
 By selecting the 'Address/Recent' radio button, |ED| will allow you to throw/close any arbitrary Turnout/Point.
 
@@ -731,7 +735,7 @@ Enter the address of the Turnout/Point and press any of the buttons:
 
 * :guilabel:`Throw`
 * :guilabel:`Close`
-* :guilabel:Toggle`
+* :guilabel:`Toggle`
 
 **Recent**
 
@@ -747,7 +751,11 @@ The 'Turnout/Points List' can be filtered.  The filtering relies on the idea tha
 
 The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
-**Hide if no user name? preference**
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  A number of preferences can alter the way Turnouts/Points are displayed. See :ref:`configuration/preferences:Turnouts/Points and Routes Preferences` for more information.
 
 |HR-DASHED|
 
@@ -826,28 +834,32 @@ By default, you can Left/Right Swipe from any part of the screen, but this can b
 
   See the :ref:`Disable Full Screen Swipe prefernce <configuration/preferences:disable full screen swipe?>` to enable or disable the Swipe Action Bar only option.
 
-----
-
 Routes Screen
 ^^^^^^^^^^^^^
 
-.. todo:: Routes Screen
+.. image:: ../_static/images/screenshots/routes.png
+  :align: right
+  :scale: 8%
 
 Accessed from any of the `Main Screens`_ by the menu :menuselection:`Menu --> Routes` or by swiping left from the Throttle Screen if enabled in the Left with the ``Swipe through Routes?`` preference: :menuselection:`Menu --> Preferences --> Left/Right Swipe Preferences --> Swipe through Routes`
 
-This screen allows you to display all Routes that have been defined in your |SERVER|.
+This screen displays all Routes that have been defined in your |SERVER| and allows you to activate them.
 
-**Enter**
+**By System name**
 
-.. todo:: Routes Screen - Enter
+You can enter the route ID and click :guilabel:`Set` button to activate a route.
 
-  You can enter the route ID...
-
-**List**
-
-.. todo:: Routes Screen - List
+**Via the List from the Server**
 
 You can select the route from the list provider by your |SERVER|...
+
+Click on the :guilabel:`Set` buttonon the beside the entry to activate the Route.
+
+Note, When using the |native| the |EX-CS| (only) can:
+
+* dynamically change the label on the the button
+* dynamically show or hide Routes
+* dynamically enable or disable Routes
 
 **Filter by location**
 
@@ -855,11 +867,10 @@ The 'Routes List' can be filtered.  The filtering relies on the idea that the fi
 
 The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
 
-Hide Sys Route Names? preference 
+.. note:: 
+  :class: note-ed-hidden-title
 
-Hide if no user name? preference
-
-.. todo:: Routes Screen - Filter
+  A number of preferences can alter the way Routes are displayed. See :ref:`configuration/preferences:Turnouts/Points and Routes Preferences` for more information.
 
 |HR-DASHED|
 

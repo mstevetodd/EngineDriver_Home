@@ -1,6 +1,6 @@
-**********************
-Detailed Instructions
-**********************
+****************************************************************************
+Detailed Instructions |BR| |SMALL-START| Operating Engine Driver |SMALL-END|
+****************************************************************************
 
 .. meta::
    :keywords: operation
@@ -540,10 +540,10 @@ The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be
   * Via the DCC F0, F1, F2 DCC Functions (if set in the preferences)
   * Gamepad keys (if connected)
 
-  .. note:: 
-    :class: note-ed-hidden-title
+.. note:: 
+  :class: note-ed-hidden-title
 
-    See `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ for more information.
+  See `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ for more information.
 
   **Activating the IPLS Sounds via IPLS Buttons**
 
@@ -659,7 +659,7 @@ If you've defined your turnouts / points and routes in a panel file, make sure t
 
 *Turnouts/Points* can be operated three ways:
 
-* By entering their `DCC Address (Turnout/Point)`_
+* By entering their `DCC Address <By Entering an Address>`_
 * From the `Defined Turnout/Point list <Server Defined Turnout/Point list>`_ provided by the |WTS-DCC-EX| (JMRI)
 * From the `Recent Turnout/Point list <Recent Turnout/Point list>`_
 
@@ -673,25 +673,31 @@ DCC Address (Turnout/Point)
 
 Enter the DCC address of the Turnout / Points you wish to control.
 
-Three buttons will be available
+Enter the address of the Turnout/Point and press any of the buttons:
 
-* Throw
-* Close
-* Toggle
-
-.. todo:: DCC Address
+* :guilabel:`Throw`
+* :guilabel:`Close`
+* :guilabel:`Toggle`
 
 Server Defined Turnout/Point list
 """""""""""""""""""""""""""""""""
 
-Server must 
+By selecting the 'JMRI Defined' radio button, |ED| will show the Turnouts/Points defined in the |SERVER|.
 
-* Filtering
-* Must be named???
+Click on the button(s) on the beside the entry to :guilabel:`Throw`` or :guilabel:`Close` the Turnout/Point.
 
-.. todo:: JMRI Defined Turnout/Point list
+Note:
 
-**Filter by location**
+* If the Turnout/Point button says 'Thrown', then clicking on the button will **'Close'** the Turnout/Point and the button will then say 'Closed'.
+* If the Turnout/Point button says 'Closed', then clicking on the button will **'Throw'** the Turnout/Point and the button will then say 'Thrown'.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Note that this list can optionally be set to *always* show :guilabel:`Close` and :guilabel:`Throw` rather than :guilabel:`Closed` or :guilabel:`Thrown` by setting the :ref:`configuration/preferences:Always Show Throw/Close?` preference.
+
+Filter by location (Turnouts/Points)
+""""""""""""""""""""""""""""""""""""
 
 The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
 
@@ -702,8 +708,8 @@ Recent Turnout/Point list
 
   .. todo:: Recent Turnout/Point list
 
-.. note:: 
-  :class: note-ed-hidden-title
+Turnout/Point Preferences
+""""""""""""""""""""""""""
 
   See the :ref:`Left/Right Swipe preferences on the Preferences page <configuration/preferences:left/right swipe preferences>` for information on enabling or disabling the swipe though Turnouts/Points.
 
@@ -723,8 +729,6 @@ It will show different options depending on a) the particular screen, b) prefere
 Routes
 ^^^^^^
 
-.. todo:: Routes
-
 |ed| can control *Routes* on your layout if configured in you |WTS-DCC-EX|.
 
 When using |EX-CS| as your |WTS-DCC-EX|, *Routes* can also be used to activate `EXRAIL Automations and Anomations <https://dcc-ex.com/exrail/index.html>`_.
@@ -738,9 +742,6 @@ The |R-S| can be accessed two ways:
 * Menu
 * Swipe Left/Right (if enabled)
 
-From the WiThrottle server
-""""""""""""""""""""""""""
-
 .. note:: 
   :class: note-ed-hidden-title
 
@@ -748,11 +749,39 @@ From the WiThrottle server
 
   See the `Automation (EX-RAIL) page on the DCC-EX website <https://dcc-ex.com/automation/index.html>`_ for more information on using Automations in DCC-EX EX-CommandStations.
 
-**Filter by location**
+By System name
+""""""""""""""
+
+You can enter the route ID and click :guilabel:`Set` button to activate a route.
+
+From the Server
+"""""""""""""""
+
+You can select the route from the list provider by your |SERVER|...
+
+Click on the :guilabel:`Set` buttonon the beside the entry to activate the Route.
+
+Note, When using the |native| the |EX-CS| (only) can:
+
+* dynamically change the label on the the button
+* dynamically show or hide Routes
+* dynamically enable or disable Routes
+
+Filter by location (Routes)
+""""""""""""""""""""""""""""
 
 The 'Turnout/Points List' and the 'Routes List' can be filtered.  The filtering relies on the idea that the first part of every Turnout/Point name and ever Route name is a 'Location', followed by a common separator, then the actual name for the Turnout/Point or Route name.  The 'filter' then allows you to select one of those locations and |ed| can just show the Turnout/Points or Routes at the 'Location'.
 
 The :ref:`Location Delimiter <configuration/preferences:location delimiter>` preference allows you to set the character that marks the end of the Location portion of Turnout/Point and Route names.  By default it is a colon (":") but any character can be used.
+
+Route Preferences
+"""""""""""""""""
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  A number of preferences can alter the way Routes are displayed. See :ref:`configuration/preferences:Turnouts/Points and Routes Preferences` for more information.
+
 
 Overflow Menu (Routes Screen)
 """""""""""""""""""""""""""""""

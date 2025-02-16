@@ -90,7 +90,7 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../operation/index.html">Operation - Using Engine Driver</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../operation/getting_started.html">Quick Start / Getting Started</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../operation/operation.html">Detailed Instructions</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="../operation/operation.html">Detailed Instructions <br /> <span style="font-size: 75%"> Operating Engine Driver </span></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../operation/operation.html#connecting">Connecting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a><ul>
@@ -156,12 +156,17 @@
 <li class="toctree-l3"><a class="reference internal" href="../operation/operation.html#turnouts-points">Turnouts / Points</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#dcc-address-turnout-point">DCC Address (Turnout/Point)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#server-defined-turnout-point-list">Server Defined Turnout/Point list</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#id4">Recent Turnout/Point list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#filter-by-location-turnouts-points">Filter by location (Turnouts/Points)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#id3">Recent Turnout/Point list</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#turnout-point-preferences">Turnout/Point Preferences</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#overflow-menu-turnouts-points-screen">Overflow Menu (Turnouts/Points Screen)</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/operation.html#routes">Routes</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#from-the-withrottle-server">From the WiThrottle server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#by-system-name">By System name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#from-the-server">From the Server</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#filter-by-location-routes">Filter by location (Routes)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#route-preferences">Route Preferences</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#overflow-menu-routes-screen">Overflow Menu (Routes Screen)</a></li>
 </ul>
 </li>
@@ -264,7 +269,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#power-screen">Power Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#preferences-screen">Preferences Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#in-phone-loco-sounds-screen">In Phone Loco Sounds Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#id22">Function Defaults Screen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#id17">Function Defaults Screen</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../operation/interface.html#number-of-default-functions">Number of Default Functions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/interface.html#number-of-default-functions-for-roster">Number of Default Functions for Roster</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/interface.html#use-default-function-labels">Use Default Function Labels</a></li>
@@ -658,6 +663,9 @@
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#maximum-recent-locos">Maximum Recent Locos</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#control-consist-lights-on-long-click">Control consist Lights on long click</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#filter-roster">Filter Roster</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#filter-roster-by-roster-owner">Filter Roster by Roster Owner</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#roster-sort-order">Roster Sort Order</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#always-use-function-labels-from-server">Always use function labels from server</a></li>
 </ul>
 </li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#in-phone-loco-sounds">In Phone Loco Sounds</a><ul>
@@ -1036,7 +1044,7 @@ This Website is built upon this technology, so you should make yourself familiar
 <p class="admonition-title">Todo</p>
 <p>Manual host specific import/export</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../configuration/preferences.html#id48"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/configuration/preferences.rst, line 2376.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../configuration/preferences.html#id48"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/configuration/preferences.rst, line 2398.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>‘Special Partial Matching’ Option</p>
@@ -1146,150 +1154,109 @@ This Website is built upon this technology, so you should make yourself familiar
 <p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id3"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 616.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
-<p>Turnouts/Points Screen</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id4"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 692.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Routes Screen</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id5"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 834.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Routes Screen - Enter</p>
-<p>You can enter the route ID…</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id6"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 842.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Routes Screen - List</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id7"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 848.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Routes Screen - Filter</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id8"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 862.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
 <p>Web View Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id10"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 953.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id5"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 964.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Swipe Left / Right (Web View Screen)</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id12"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1050.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id7"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1061.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Select from Sever Roster</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id14"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1108.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id9"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1119.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Select from Recent Locos List</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id15"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1127.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id10"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1138.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Select from Recent Consists List</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id16"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1144.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id11"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1155.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Consist Edit Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id17"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1198.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id12"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1209.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Lead Loco</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id18"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1207.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id13"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1218.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Trailing Loco</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id19"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1212.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id14"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1223.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Consist Top</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id20"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1217.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id15"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1228.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Consist Lights Edit Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id21"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1229.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id16"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1240.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Function Latching Settings Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id23"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1358.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id18"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1369.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Gamepad Test Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id24"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1403.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id19"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1414.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Reconnecting Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id25"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1468.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id20"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1479.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Layout Switch Button</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id28"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1635.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id23"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1646.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>DCC-EX Button</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id29"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1644.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id24"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1655.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>In Phone Loco Sound Button</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id30"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1652.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id25"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1663.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Fast Clock</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id31"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1685.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id26"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1696.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Children’s Timer Status and Countdown</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id32"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1703.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id27"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1714.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Full Screen or Action Bar Only left/right swipe</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id33"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1715.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id28"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1726.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>WiThrottle Server Name</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id34"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1724.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>DCC Address</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/operation.html#id2"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/operation.rst, line 682.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>JMRI Defined Turnout/Point list</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/operation.html#id3"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/operation.rst, line 692.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id29"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1735.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Recent Turnout/Point list</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/operation.html#id5"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/operation.rst, line 703.)</p>
-<div class="admonition-todo admonition">
-<p class="admonition-title">Todo</p>
-<p>Routes</p>
-</div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/operation.html#id6"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/operation.rst, line 726.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/operation.html#id4"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/operation.rst, line 709.)</p>
 <div class="admonition-todo admonition">
 <p class="admonition-title">Todo</p>
 <p>Wrong Network</p>
@@ -1326,7 +1293,7 @@ This Website is built upon this technology, so you should make yourself familiar
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fa0e767d2d0>
+    <jinja2.runtime.BlockReference object at 0x7fd14f1337c0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
