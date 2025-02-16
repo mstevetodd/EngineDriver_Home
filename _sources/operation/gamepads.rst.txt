@@ -93,11 +93,14 @@ Multiple gamepads
 
 |ed| supports up to 4 gamepads at the same time.  All the gamepads must be of the same type.
 
-.. todo:: As of version 4.???, by default |ed| assumes you will only use 1 gamepad.  To allow for more than one you must...
 
 As you connect each gamepad, you will be force to go to the gamepad test screen.  The new gamepad will be automatically assigned to the next throttle that does not have a gamepad assigned to it.
 
 An indicator ``1``, ``2`` etc. will show near the throttle speed to indicate which throttle each gamepad is controlling.  Only one gamepad can be active on a single throttle at one time.
+
+.. note:: 
+  
+  By default |ed| assumes you will only use 1 gamepad. Any subsequent gamepads connected to the device/phone will therefore control the same throttle as the first gamepad. To allow for more, to control separate throttles, than you must disable the :ref:`configuration/preferences:only one gamepad?` preference.
 
 .. todo:: If you turn the gamepad off...
 
@@ -107,7 +110,7 @@ Example Gamepads
 Tested Gamepads
 ^^^^^^^^^^^^^^^
 
-These we have had the most success with…
+These are the gamepads that we have had the most success with…
 
 **Mocute 032**
 
@@ -115,15 +118,15 @@ These we have had the most success with…
    :scale: 50 %
 
 They are available from a variety of different sellers on eBay and elsewhere. 
-Their quality is not brilliant which is reflected in the price, so don't expect a long life from them.
+Their build quality is not very robust, which is reflected in the price, so don't expect a long life from them.
 
 **MagicSeeR1**
 
 .. image:: ../_static/images/gamepads/bt_controller2.jpg
    :scale: 40 %
 
-This has been successful, **but you need to re-select 'mode B' every time you switch it on.**  
-These seem to be slightly better quality than the one above, but are more expensive.
+This one has been very successful, **but you need to re-select 'mode B' every time you switch it on.**  
+These seem to be a better quality than the one above, but are more expensive.
 
 **Flydigi Wee 2**
 
@@ -167,7 +170,7 @@ Unsupported Gamepads
 
 **VR Box**
 
-Support for this type of gamepad was removed from |ed| as the device was so unreliable.  However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
+Support for this type of gamepad was removed from |ed| as the device was so unreliable. (Mine had a bad solder join.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
 
 .. image:: ../_static/images/gamepads/vrbox.png
    :scale: 70 %
@@ -211,6 +214,6 @@ For use when ``Keyboard`` is selected as the gamepad type:
 
 All other keyCodes are ignored.
 
-Failure to follow the 'F', 'S' or 'L' with the correct number of digits will ignore the command
+Failure to follow the 'F', 'S' or 'L' with the correct number of digits will ignore the command.
 
 These same keycodes are used by the DIY Arduino controllers.
