@@ -29,9 +29,9 @@ Q. I can't connect to my Server /Railroad
 
   A1. Check the following:
 
-  * Check that you are connected to a WiFi network
-  * Check that you are connected to the same WiFi network as your |WTS-DCC-EX|
-  * If using MRI, check that JMRI and its |WTS| feature are started
+  * Check that your device/phone is connected to a WiFi network
+  * Check that your device/phone is connected to the same WiFi network as your |WTS-DCC-EX|
+  * If using |JMRI|, check that |JMRI| and its |WTS| feature are started
 
   A2. Possible Mobile data connection problem
 
@@ -140,7 +140,7 @@ Q. The loco list is too long, I can't find my locos easily
 
   A. You can use the filter option to reduce the list 
 
-  .. todo:: Selecting locomotives to control
+  .. todo:: FAQ Selecting locomotives to control
 
 |HR-DASHED|
 
@@ -156,13 +156,13 @@ Q. How do I work with |Consists| / Multiple Units|
  
   Note you can't create a DCC 'Advanced Consists' (CV19) with |ed|, but you can control one if it has already been setup.
 
-  .. todo:: DCC 'Advanced Consists' (CV19)
+  .. todo:: FAQ DCC 'Advanced Consists' (CV19)
 
   Remember that this type of |consist| can cause problems later if the loco has not been removed from the consist first and you want to control it as an individual loco. 
 
   A3. JMRI Consists
 
-  .. todo:: JMRI Consists
+  .. todo:: FAQ JMRI Consists
 
   Creating |consists| in JMRI effectively create DCC 'Advanced Consists' (CV19) and appear in the loco list in |ed| much like any other loco. 
 
@@ -239,10 +239,8 @@ Q. I want to change the appearance of the app
     * The 'Colourful' theme.
     * the 'Neon Blue' theme
 
-----
-
 Changing the Throttle screen
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 Q. I want to change the appearance of |T-S|
 
@@ -306,8 +304,6 @@ Q. My loco shows the wrong Function labels
 
       You can force the default function labels in the preferences.
 
-----
-
 Speed slider VS speed buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
@@ -355,7 +351,7 @@ Refer to `Immersive mode (Full Screen)`.
 Immersive mode (Full Screen)
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Immersive mode hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.
+:ref:`Immersive mode <configuration/preferences:swipe down action in the throttle view?>` hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.
 
 It can optionally also hide the Android System Status Bar at the top of the page.
 
@@ -365,9 +361,7 @@ Swiping up from off screen will normally temporarily show the Android navigation
 Swiping up or Down
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Swiping up or Down
-
-----
+.. todo:: FAQ Swiping up or Down
 
 Showing the web page at the bottom of the throttle screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -383,21 +377,19 @@ See the Web Throttle view preference
 Loco selection screen
 --------------------------------------------
 
-.. todo:: Loco selection screen
-
-----
+.. todo:: FAQ Loco selection screen
 
 Locos in the roster not showing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Locos in the roster not showing
+.. todo:: FAQ Locos in the roster not showing
 
   A1. check you don't have a filter 
 
   A2. ???
 
 
-Changing the connection screen
+Changing the Connection screen
 --------------------------------------------
 
 Q. You can't remove test server by swiping right
@@ -409,10 +401,10 @@ Q. You can't remove test server by swiping right
 
     See the `Hide Demo Server <../configuration/preferences.html#hide-demo-server>`_ preference for more information.
 
-Changing the turnouts screen
+Changing the turnouts/Points screen
 --------------------------------------------
 
-.. todo:: Changing the turnouts screen
+.. todo:: FAQ Changing the turnouts screen
 
 Conserving power on your phone/tablet
 -------------------------------------
@@ -421,16 +413,21 @@ Q. My Phone/table runs out of power too quickly
 
   A. You should
 
-  * Keep the brightness of the device as low as practical
+  * Keep the brightness of the device/phone as low as practical
   * Disable Bluetooth and NFC if you are not using them
   * You can also try:
 
-    * Set the preference to dim screen on swipe up.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.
-    * Set the preference to dim screen on shake.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.
+    * Set the :ref:`preference to dim screen on swipe up <configuration/preferences:swipe up-down preferences>`.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.
+    * Set the :ref:`preference to dim screen on shake <configuration/preferences:accelerometer (shake) preferences>`.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.
 
-  If your device has an AMOLED display, theoretically, the High Contrast Outline theme should use less power (though this is unproven).
+  If your device has an AMOLED display, theoretically, the :ref:`High Contrast Outline theme <configuration/preferences:Theme/Style>` should use less power (though this is unproven).
 
 .. note:: 
   :class: note-ed-hidden-title
 
   See the :doc:`../configuration/conserving_power` page for more information.
+
+DCC-EX Features
+--------------------------------------------
+
+.. TODO:: FAQ DCC-EX Features

@@ -25,16 +25,19 @@ It does so by adjusting the speed commands sent to the locomotive. To be clear, 
 Key |SRT| Controls/Displays
 -----------------------------
 
-* **Load** - an ability to set the load being put on the loco, from no load to very heavy trains
-* **Speed Control** - operator commanded speed
-* **Direction** - direction of movement
-* **Brake Control** - operator commanded brake amount
+* Loco **Select**
+* **Target and Commanded Speed Display** - both the operator commanded speed and the current speed command sent to the loco are displayed
+* **Direction** buttons - direction of movement
+* **Speed Control** slider and buttons - operator commanded speed
 * **Functions** - set/release given decoder functions
 * **Air Reservoir Status** - a display of the fill state of the air brake reservoir
-* **Target and Commanded Speed Display** - both the operator commanded speed and the current speed command sent to the loco are displayed
-* **Air Brakes Button** - enable or disable the 'Air Brake' feature
-* **Stop Button** - command the speed to go to zero, plus other optional actions
-* **Emergency Stop Button** - command the actual speed immediately to zero
+* **Brake Control** slider - operator commanded brake amount
+* **Load** slider - an ability to set the load being put on the loco, from no load to very heavy trains
+* **Stop** button - command the speed to go to zero, plus other * **Air Brakes Button** - enable or disable the 'Air Brake' feature
+
+**Optional Actions**
+
+* **Emergency Stop** button - command the actual speed immediately to zero
 
 ----
 
@@ -47,39 +50,45 @@ The |SRT| can be user configured to provide a base amount of |SRT| (in phone) cr
 
 Note that the |SRT| “momentum” works in combination with any momentum programmed into the decoder. That is the loco will respond to the |SRT| speed commands that it receives in its normal manner. 
 
-For example:
+Example: Normal throttle
+------------------------
 
-* Normal throttle
+* Operator increases or decreases the speed control, 
+* The new speed command is immediate sent to the loco,
+* If the loco's decoder has no momentum set, the loco's speed increases or decreases immediately to match the speed control,
+* If the loco's decoder has momentum set, the loco's physical speed gradually increases  or decreases gradually based on the momentum setting in its decoder .
 
-   * Operator increases or decreases the speed control, 
-   * The new speed command is immediate sent to the loco,
-   * If the loco's decoder has no momentum set, the loco's speed increases or decreases immediately to match the speed control,
-   * If the loco's decoder has momentum set, the loco's physical speed gradually increases  or decreases gradually based on the momentum setting in its decoder .
+Example: SRT throttle with decoder momentum
+---------------------------------------------
 
-* |SRT| throttle with decoder momentum
+* Operator increases or decreases the speed control,
+* The |SRT| moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the |SRT| with the result that the loco sees speed commands that increase and decrease gradually over time,
+* Depending on the decoder momentum settings; 
+   * If the decoder momentum settings are more extreme than the |SRT|, the loco's physical speed increases or decreases more even more slowly than in the Normal throttle case because the decoder momentum is being applied to the slower speed commands coming from the |SRT|.
+   * If the decoder momentum setting are less than the |SRT|, the loco's physical speed increases or decreases as pre the setting in the |SRT|,
 
-   * Operator increases or decreases the speed control,
-   * The |SRT| moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the |SRT| with the result that the loco sees speed commands that increase and decrease gradually over time,
-   * Depending on the decoder momentum settings; 
-      * If the decoder momentum settings are more extreme than the |SRT|, the loco's physical speed increases or decreases more even more slowly than in the Normal throttle case because the decoder momentum is being applied to the slower speed commands coming from the |SRT|.
-      * If the decoder momentum setting are less than the |SRT|, the loco's physical speed increases or decreases as pre the setting in the |SRT|,
+Example: SRT throttle with no, or little, decoder momentum
+----------------------------------------------------------
 
-* |SRT| throttle with no, or little, decoder momentum
-
-   * Operator increase or decreases the speed control,
-   * The |SRT| moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the |SRT| with the result that the loco sees speed commands that increase and decrease  gradually over time.
+* Operator increase or decreases the speed control,
+* The |SRT| moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the |SRT| with the result that the loco sees speed commands that increase and decrease  gradually over time.
 
 
 |SRT| - Detailed Operation
+===========================
 
 The primary difference between the |SRT| and a normal throttle is that the |SRT| simulates momentum inside the Engine Driver App, regardless of any momentum and brake settings inside the decoder.  
 
 Because the |SRT| simulates momentum, increasing and decreasing the on-screen throttle does not immediately send the equivalent DCC speed commands to decoder/loco.  Instead, gradual speed changes are sent over a period of time depending on the a) the throttle setting, b) direction c) the Load setting, and d) the Brake Setting.
 
 a) Throttle
------------
+------------
 
-The throttle can be set to show either a percentage slider or a slider with a distinct number of throttle steps/notches.  The throttle can also optionally be set to show Increase (:guilabel:`+ +`) and decrease (:guilabel:`- -`) speed buttons in the preferences.
+.. image:: ../_static/images/semi-realistic-throttle/speed_slider.png
+   :scale: 15 %
+   :align: right
+
+The throttle can be set to show either a `percentage slider or a slider with a distinct number of throttle steps/notches <Throttle Notches>`_.  The throttle can also optionally be set to show Increase (:guilabel:`+ +`) and decrease (:guilabel:`- -`) speed buttons in the preferences.
 
 To increase or decrease speed you can either i) drag the throttle slider up and down, or ii) press the increase or decrease buttons.
 
@@ -98,6 +107,9 @@ If the load is set, then all/and the gradual speed changes are slowed down.
 b) Direction
 ------------
 
+.. image:: ../_static/images/semi-realistic-throttle/direction_buttons.png
+   :scale: 15 %
+   :align: right
 
 While the Direction is set to 'Forward' or 'Reverse', throttle changes will result in the loco moving in that direction, subject to the setting of the Brake.
 
@@ -105,6 +117,10 @@ While the Direction is set to 'Neutral', the throttle changes are ignored, and t
 
 c) Load
 -------
+
+.. image:: ../_static/images/semi-realistic-throttle/load_slider.png
+   :scale: 15 %
+   :align: right
 
 'Load' is intended to simulate if the train you are controlling has none, a few, many, or a huge number of carriages behind it.  Load can also be increased or decreased to simulate going up or down a slope.
 
@@ -118,18 +134,28 @@ For a huge, fully loaded, coal train you might set it at 1000%.
 
 Note: Load changes are only applied when you take your finger off the slider.
 
-
 d) Brakes
----------
+----------
+
+.. image:: ../_static/images/semi-realistic-throttle/brake_slider.png
+   :scale: 15 %
+   :align: right
 
 Brakes can be used with or without the simulation of the Air Reservoir and Air Line.  
 
 'Air Brake' is enabled by default. It can be permanently disabled with the 'Disable the Air Reservoir' preference. Even with the 'Air Brake' enabled, you can enable or disable the Air Brake feature at will with the 'Air Brake' button.
 
+|FORCE-BREAK|
+
 Brakes - With the Air Reservoir and Air Line Enabled
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 The 'Air Brake' feature is designed to simulate a very rough approximation of the Westinghouse Air Brake system used by early US railroads.
+
+
+.. image:: ../_static/images/semi-realistic-throttle/air_reservior.png
+   :scale: 15 %
+   :align: right
 
 In Summary: 
 
@@ -141,7 +167,6 @@ In Summary:
    * If the reservoir is low, then the line will fill slowly.
 
 * While the line is filling, the brakes are still effectively partly applied.  As a result you can not immediately turn the brakes off. They take time to turn off.
-
 
 The Air Brakes slider can be set to show either a percentage slider or a slider with a distinct number of steps/notches.  
 
@@ -224,7 +249,7 @@ Preference Settings for the SRT
 Acceleration Speed Step Repeat Delay
 ------------------------------------
 
-*How long between acceleration speed steps repeats (in milliseconds). Smaller is faster.*
+This preference is used to change how long between acceleration speed steps repeats (in milliseconds). *Smaller is faster.*
 
 
 * This setting (combined with the Speed Step Amount) is used to provide a basic level of |SRT| create momentum to loco movement. 
@@ -238,7 +263,7 @@ Acceleration Speed Step Repeat Delay
 Deceleration Speed Step Repeat Delay
 ------------------------------------
 
-*How long between deceleration speed steps repeats (in milliseconds). Smaller is faster.*
+This preference is used to change how long between deceleration speed steps repeats (in milliseconds). *Smaller is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -248,7 +273,7 @@ Deceleration Speed Step Repeat Delay
 Speed Step Amount
 -----------------
 
-*How much the actual speed step jumps each step to the target speed. Larger is faster.*
+This preference is used to change how much the actual speed step jumps each step to the target speed. *Larger is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -258,21 +283,28 @@ Speed Step Amount
 Maximum Throttle Percentage
 ---------------------------
 
-*Maximum allowed slider value in % in ALL throttle sliders.*
+This preference is used to change Maximum allowed slider value in % in ALL throttle sliders.
 
 This preference limits the maximum speed of the loco.
 
 Throttle Notches
 ----------------
 
-*Adjust the Throttle as percentage, or by a specific number of steps/notches*
+This preference is used to adjust the Throttle as percentage, or by a specific number of steps/notches.
 
 This preferences affects the display of the speed control of the throttle.
+
+Options are:
+
+* Percentage
+* 8 steps
+* 28 steps
+* 128 steps
 
 Stop Button Action
 ------------------
 
-*Choose what the Stop button does*
+This preference is used to choose what the :guilabel:`Stop` button does.
 
 Options are:
 
@@ -302,11 +334,23 @@ These stop options allow the user to control the deceleration of their train in 
 Number of Brake Steps
 ---------------------
 
-*Adjust the number of sets in the Brake Slider*
+This preference is used to adjust the number of steps for the Brake Slider.
 
 This preference affects the display of the Brake control.
 
-Note
+Options are:
+
+* Percentage
+* 2 steps
+* 3 steps
+* 4 steps
+* 5 steps
+* 6 steps
+* 7 steps
+* 8 steps
+* 9 steps
+
+Note:
 
 * The percentage Brake applied at each step is annotated on the brake view
 * As clearly seen in the Percentage option, the amount of brake per step increases exponentially.
@@ -314,14 +358,14 @@ Note
 Maximum Brake Percentage
 ------------------------
 
-*Adjust the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero*
+This preference is used to adjust the maximum percentage of the Brake slider. *(5-100%) 100%=immediate zero*
 
 This preference sets the maximum amount of braking applied.
 
 Disable the Air Reservoir
 -------------------------
 
-*If checked the fill state of the air reservoir and air will not impact available brakes*
+If this preference is checked, the fill state of the air reservoir and air will not impact available brakes.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -331,7 +375,7 @@ Disable the Air Reservoir
 Rate the air brakes refresh
 ---------------------------
 
-*Adjust the rate that the Air Brakes will refresh/refill (in milliseconds). Smaller is faster.*
+This preference is used to adjust the rate that the Air Brakes will refresh/refill (in milliseconds). *Smaller is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -341,9 +385,21 @@ Rate the air brakes refresh
 Number of Load Steps
 --------------------
 
-*Adjust the number of steps in the Load Slider*
+This preference is used to adjust the number of steps in the Load Slider.
 
 This preference affects the display of the Load control.
+
+Options are:
+
+* Percentage
+* 2 steps
+* 3 steps
+* 4 steps
+* 5 steps
+* 6 steps
+* 7 steps
+* 8 steps
+* 9 steps
 
 Note
 
@@ -353,16 +409,21 @@ Note
 Maximum Load Percentage
 -----------------------
 
-*Adjust maximum percentage of the Load Slider. (100-2000%) 100% = loco alone*
+This preference is used to adjust maximum percentage of the Load Slider. *(100-2000%) 100% = loco alone*
 
 This preference sets the maximum amount of Load applied.
 
 Decoder Brake Type
 ------------------
 
-*Activate the Brake functions on the decoder*
+This preference is used to select if you wish to activate the Brake functions on the decoder.
 
 This preference allows the user to turn on the decoder activation features of the |SRT| Brake function.
+
+Options are:
+
+* None
+* 3 Decoder Brake Levels
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -372,7 +433,7 @@ This preference allows the user to turn on the decoder activation features of th
 Decoder Low Function Number(s)
 ------------------------------
 
-*Which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)*
+This preference is used to define which Decoder Function(s) to activate at Low Brake Value. *(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -382,7 +443,7 @@ Decoder Low Function Number(s)
 Decoder Low Brake Value (Percent)
 ---------------------------------
 
-*What Percentage Brake to activate the Low Function(s)*
+This preference is used to define at what *Percentage Brake* to activate the Low Function(s).
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -392,7 +453,7 @@ Decoder Low Brake Value (Percent)
 Decoder Mid Function Number(s)
 ------------------------------
 
-*Which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)*
+This preference is used to define which Decoder Function(s) to activate at Mid Brake Value. *(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -402,7 +463,7 @@ Decoder Mid Function Number(s)
 Decoder Mid Brake Value (Percent)
 ---------------------------------
 
-*What Percentage Brake to activate the Mid Function(s)*
+This preference is used to define at what *Percentage Brake* to activate the Mid Function(s).
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -412,7 +473,7 @@ Decoder Mid Brake Value (Percent)
 Decoder High Function Number(s)
 -------------------------------
 
-*Which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)*
+This preference is used to define which Decoder Function(s) to activate at High Brake Value. *(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -422,7 +483,7 @@ Decoder High Function Number(s)
 Decoder High Brake Value (Percent)
 ----------------------------------
 
-*What Percentage Brake to activate the High Function(s)*
+This preference is used to define at what *Percentage Brake* to activate the High Function(s).
 
 .. note:: 
   :class: note-ed-hidden-title

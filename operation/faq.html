@@ -34,7 +34,7 @@
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Configuration" href="../configuration/index.html" />
-    <link rel="prev" title="Advanced Operation" href="advanced.html" />
+    <link rel="prev" title="WiFi Issues" href="wifi_issues.html" />
  
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-81JYQVFL93"></script>
@@ -316,6 +316,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="semi-realistic-throttle.html#basic-operation">Basic Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-normal-throttle">Example: Normal throttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-srt-throttle-with-decoder-momentum">Example: SRT throttle with decoder momentum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-srt-throttle-with-no-or-little-decoder-momentum">Example: SRT throttle with no, or little, decoder momentum</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="semi-realistic-throttle.html#srt-detailed-operation"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#a-throttle">a) Throttle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#b-direction">b) Direction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#c-load">c) Load</a></li>
@@ -359,14 +365,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="gamepads.html">Gamepads</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="gamepads.html#connecting-your-gamepad">Connecting your Gamepad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gamepads.html#running-engine-driver-with-the-gamepad">Running Engine Driver with the Gamepad</a></li>
@@ -393,6 +391,14 @@
 <li class="toctree-l3"><a class="reference internal" href="advanced.html#children-s-timer">Children’s Timer</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
+</ul>
+</li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Frequently Asked Questions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#connecting-wifi-and-withrottle">Connecting - Wifi and WiThrottle</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#connecting-to-different-servers-railroads">Connecting to different servers/railroads</a></li>
@@ -415,9 +421,10 @@
 <li class="toctree-l4"><a class="reference internal" href="#locos-in-the-roster-not-showing">Locos in the roster not showing</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#changing-the-connection-screen">Changing the connection screen</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#changing-the-turnouts-screen">Changing the turnouts screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changing-the-connection-screen">Changing the Connection screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#changing-the-turnouts-points-screen">Changing the turnouts/Points screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dcc-ex-features">DCC-EX Features</a></li>
 </ul>
 </li>
 </ul>
@@ -871,38 +878,39 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On This Page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#connecting-wifi-and-withrottle" id="id10">Connecting - Wifi and WiThrottle</a></p>
+<li><p><a class="reference internal" href="#connecting-wifi-and-withrottle" id="id11">Connecting - Wifi and WiThrottle</a></p>
 <ul>
-<li><p><a class="reference internal" href="#connecting-to-different-servers-railroads" id="id11">Connecting to different servers/railroads</a></p></li>
-<li><p><a class="reference internal" href="#save-load-preferences-for-different-servers" id="id12">Save/load preferences for different servers</a></p></li>
+<li><p><a class="reference internal" href="#connecting-to-different-servers-railroads" id="id12">Connecting to different servers/railroads</a></p></li>
+<li><p><a class="reference internal" href="#save-load-preferences-for-different-servers" id="id13">Save/load preferences for different servers</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#selecting-locomotives-to-control" id="id13">Selecting locomotives to control</a></p></li>
-<li><p><a class="reference internal" href="#changing-the-appearance-of-engine-driver" id="id14">Changing the appearance of Engine Driver</a></p>
+<li><p><a class="reference internal" href="#selecting-locomotives-to-control" id="id14">Selecting locomotives to control</a></p></li>
+<li><p><a class="reference internal" href="#changing-the-appearance-of-engine-driver" id="id15">Changing the appearance of Engine Driver</a></p>
 <ul>
-<li><p><a class="reference internal" href="#global-changes-themes" id="id15">Global changes (Themes)</a></p></li>
-<li><p><a class="reference internal" href="#changing-the-throttle-screen" id="id16">Changing the Throttle screen</a></p></li>
-<li><p><a class="reference internal" href="#speed-slider-vs-speed-buttons" id="id17">Speed slider VS speed buttons</a></p></li>
-<li><p><a class="reference internal" href="#direction-buttons" id="id18">Direction Buttons</a></p></li>
-<li><p><a class="reference internal" href="#hiding-the-title-bar-and-navigation-bar" id="id19">Hiding the title bar and navigation bar</a></p></li>
-<li><p><a class="reference internal" href="#immersive-mode-full-screen" id="id20">Immersive mode (Full Screen)</a></p></li>
-<li><p><a class="reference internal" href="#swiping-up-or-down" id="id21">Swiping up or Down</a></p></li>
-<li><p><a class="reference internal" href="#showing-the-web-page-at-the-bottom-of-the-throttle-screen" id="id22">Showing the web page at the bottom of the throttle screen</a></p></li>
+<li><p><a class="reference internal" href="#global-changes-themes" id="id16">Global changes (Themes)</a></p></li>
+<li><p><a class="reference internal" href="#changing-the-throttle-screen" id="id17">Changing the Throttle screen</a></p></li>
+<li><p><a class="reference internal" href="#speed-slider-vs-speed-buttons" id="id18">Speed slider VS speed buttons</a></p></li>
+<li><p><a class="reference internal" href="#direction-buttons" id="id19">Direction Buttons</a></p></li>
+<li><p><a class="reference internal" href="#hiding-the-title-bar-and-navigation-bar" id="id20">Hiding the title bar and navigation bar</a></p></li>
+<li><p><a class="reference internal" href="#immersive-mode-full-screen" id="id21">Immersive mode (Full Screen)</a></p></li>
+<li><p><a class="reference internal" href="#swiping-up-or-down" id="id22">Swiping up or Down</a></p></li>
+<li><p><a class="reference internal" href="#showing-the-web-page-at-the-bottom-of-the-throttle-screen" id="id23">Showing the web page at the bottom of the throttle screen</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#loco-selection-screen" id="id23">Loco selection screen</a></p>
+<li><p><a class="reference internal" href="#loco-selection-screen" id="id24">Loco selection screen</a></p>
 <ul>
-<li><p><a class="reference internal" href="#locos-in-the-roster-not-showing" id="id24">Locos in the roster not showing</a></p></li>
+<li><p><a class="reference internal" href="#locos-in-the-roster-not-showing" id="id25">Locos in the roster not showing</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#changing-the-connection-screen" id="id25">Changing the connection screen</a></p></li>
-<li><p><a class="reference internal" href="#changing-the-turnouts-screen" id="id26">Changing the turnouts screen</a></p></li>
-<li><p><a class="reference internal" href="#conserving-power-on-your-phone-tablet" id="id27">Conserving power on your phone/tablet</a></p></li>
+<li><p><a class="reference internal" href="#changing-the-connection-screen" id="id26">Changing the Connection screen</a></p></li>
+<li><p><a class="reference internal" href="#changing-the-turnouts-points-screen" id="id27">Changing the turnouts/Points screen</a></p></li>
+<li><p><a class="reference internal" href="#conserving-power-on-your-phone-tablet" id="id28">Conserving power on your phone/tablet</a></p></li>
+<li><p><a class="reference internal" href="#dcc-ex-features" id="id29">DCC-EX Features</a></p></li>
 </ul>
 </nav>
 </aside>
 <section id="connecting-wifi-and-withrottle">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Connecting - Wifi and WiThrottle</a><a class="headerlink" href="#connecting-wifi-and-withrottle" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id11" role="doc-backlink">Connecting - Wifi and WiThrottle</a><a class="headerlink" href="#connecting-wifi-and-withrottle" title="Link to this heading"></a></h2>
 <ol class="upperalpha simple" start="17">
 <li><p>Why doesn’t my Android device automatically connect to my WiFi network?</p></li>
 </ol>
@@ -919,9 +927,9 @@
 <blockquote>
 <div><p>A1. Check the following:</p>
 <ul class="simple">
-<li><p>Check that you are connected to a WiFi network</p></li>
-<li><p>Check that you are connected to the same WiFi network as your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a></p></li>
-<li><p>If using MRI, check that JMRI and its <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> feature are started</p></li>
+<li><p>Check that your device/phone is connected to a WiFi network</p></li>
+<li><p>Check that your device/phone is connected to the same WiFi network as your <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a></p></li>
+<li><p>If using <a href="https://jmri.org/">JMRI</a>, check that <a href="https://jmri.org/">JMRI</a> and its <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> feature are started</p></li>
 </ul>
 <p>A2. Possible Mobile data connection problem</p>
 <p>If <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can see the <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a> but displays an error when you try to connect to it… If you are using a phone with a SIM, and the WiFi network your JMRI server is on does not have internet access. You may have to turn ‘mobile data’ off on your device.  See <a class="reference external" href="./wifi_issues.html">[here] for more information</a>.</p>
@@ -970,7 +978,7 @@
 </div></blockquote>
 <hr class="docutils" />
 <section id="connecting-to-different-servers-railroads">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Connecting to different servers/railroads</a><a class="headerlink" href="#connecting-to-different-servers-railroads" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Connecting to different servers/railroads</a><a class="headerlink" href="#connecting-to-different-servers-railroads" title="Link to this heading"></a></h3>
 <ol class="upperalpha simple" start="17">
 <li><p>I want to switch to a different server on the same network.</p></li>
 </ol>
@@ -991,7 +999,7 @@
 </section>
 <hr class="docutils" />
 <section id="save-load-preferences-for-different-servers">
-<h3><a class="toc-backref" href="#id12" role="doc-backlink">Save/load preferences for different servers</a><a class="headerlink" href="#save-load-preferences-for-different-servers" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Save/load preferences for different servers</a><a class="headerlink" href="#save-load-preferences-for-different-servers" title="Link to this heading"></a></h3>
 <p>You can set up different preferences for different server/railroads and have them automatically load when you connect to that <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a>.
 The most common use of this (so far) is to remember the locos relevant to that railroad.  e.g. I run N scale and HO Scale.  When I connect to one of the N Scale layouts I use it shows me my N Scale locos in the recent locos list, but when I connect to one of the HO layouts I use, it shows me the my recently used HO locos.</p>
 <div class="note-ed-hidden-title admonition note">
@@ -1023,7 +1031,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </section>
 </section>
 <section id="selecting-locomotives-to-control">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Selecting locomotives to control</a><a class="headerlink" href="#selecting-locomotives-to-control" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id14" role="doc-backlink">Selecting locomotives to control</a><a class="headerlink" href="#selecting-locomotives-to-control" title="Link to this heading"></a></h2>
 <ol class="upperalpha simple" start="17">
 <li><p>Why can’t I can’t see my loco in the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>?</p></li>
 </ol>
@@ -1050,7 +1058,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </ol>
 <div class="admonition-todo admonition" id="id1">
 <p class="admonition-title">Todo</p>
-<p>Selecting locomotives to control</p>
+<p>FAQ Selecting locomotives to control</p>
 </div>
 </div></blockquote>
 <p><hr class="hr-dashed" /></p>
@@ -1065,13 +1073,13 @@ The most common use of this (so far) is to remember the locos relevant to that r
 <p>Note you can’t create a DCC ‘Advanced Consists’ (CV19) with <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, but you can control one if it has already been setup.</p>
 <div class="admonition-todo admonition" id="id2">
 <p class="admonition-title">Todo</p>
-<p>DCC ‘Advanced Consists’ (CV19)</p>
+<p>FAQ DCC ‘Advanced Consists’ (CV19)</p>
 </div>
 <p>Remember that this type of <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> can cause problems later if the loco has not been removed from the consist first and you want to control it as an individual loco.</p>
 <p>A3. JMRI Consists</p>
 <div class="admonition-todo admonition" id="id3">
 <p class="admonition-title">Todo</p>
-<p>JMRI Consists</p>
+<p>FAQ JMRI Consists</p>
 </div>
 <p>Creating <abbr title="More than one loco being controlled by a single throttle">Consists / Multiple Units</abbr> in JMRI effectively create DCC ‘Advanced Consists’ (CV19) and appear in the loco list in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> much like any other loco.</p>
 </div></blockquote>
@@ -1155,9 +1163,9 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </div></blockquote>
 </section>
 <section id="changing-the-appearance-of-engine-driver">
-<h2><a class="toc-backref" href="#id14" role="doc-backlink">Changing the appearance of Engine Driver</a><a class="headerlink" href="#changing-the-appearance-of-engine-driver" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id15" role="doc-backlink">Changing the appearance of Engine Driver</a><a class="headerlink" href="#changing-the-appearance-of-engine-driver" title="Link to this heading"></a></h2>
 <section id="global-changes-themes">
-<h3><a class="toc-backref" href="#id15" role="doc-backlink">Global changes (Themes)</a><a class="headerlink" href="#global-changes-themes" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id16" role="doc-backlink">Global changes (Themes)</a><a class="headerlink" href="#global-changes-themes" title="Link to this heading"></a></h3>
 <ol class="upperalpha simple" start="17">
 <li><p>I want to change the appearance of the app</p></li>
 </ol>
@@ -1177,9 +1185,8 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </div></blockquote>
 </div></blockquote>
 </section>
-<hr class="docutils" />
 <section id="changing-the-throttle-screen">
-<h3><a class="toc-backref" href="#id16" role="doc-backlink">Changing the Throttle screen</a><a class="headerlink" href="#changing-the-throttle-screen" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Changing the Throttle screen</a><a class="headerlink" href="#changing-the-throttle-screen" title="Link to this heading"></a></h3>
 <ol class="upperalpha simple" start="17">
 <li><p>I want to change the appearance of <a class="reference internal" href="interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a></p></li>
 </ol>
@@ -1258,9 +1265,8 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </ol>
 </div></blockquote>
 </section>
-<hr class="docutils" />
 <section id="speed-slider-vs-speed-buttons">
-<h3><a class="toc-backref" href="#id17" role="doc-backlink">Speed slider VS speed buttons</a><a class="headerlink" href="#speed-slider-vs-speed-buttons" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id18" role="doc-backlink">Speed slider VS speed buttons</a><a class="headerlink" href="#speed-slider-vs-speed-buttons" title="Link to this heading"></a></h3>
 <p>Some people find the speed slider difficult to control.</p>
 <blockquote>
 <div><p>There are options to:</p>
@@ -1285,7 +1291,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </div></blockquote>
 </section>
 <section id="direction-buttons">
-<h3><a class="toc-backref" href="#id18" role="doc-backlink">Direction Buttons</a><a class="headerlink" href="#direction-buttons" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Direction Buttons</a><a class="headerlink" href="#direction-buttons" title="Link to this heading"></a></h3>
 <ol class="upperalpha simple" start="17">
 <li><p>I don’t like the direction buttons in that order</p></li>
 </ol>
@@ -1300,25 +1306,24 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </div></blockquote>
 </section>
 <section id="hiding-the-title-bar-and-navigation-bar">
-<h3><a class="toc-backref" href="#id19" role="doc-backlink">Hiding the title bar and navigation bar</a><a class="headerlink" href="#hiding-the-title-bar-and-navigation-bar" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id20" role="doc-backlink">Hiding the title bar and navigation bar</a><a class="headerlink" href="#hiding-the-title-bar-and-navigation-bar" title="Link to this heading"></a></h3>
 <p>Refer to <cite>Immersive mode (Full Screen)</cite>.</p>
 </section>
 <section id="immersive-mode-full-screen">
-<h3><a class="toc-backref" href="#id20" role="doc-backlink">Immersive mode (Full Screen)</a><a class="headerlink" href="#immersive-mode-full-screen" title="Link to this heading"></a></h3>
-<p>Immersive mode hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.</p>
+<h3><a class="toc-backref" href="#id21" role="doc-backlink">Immersive mode (Full Screen)</a><a class="headerlink" href="#immersive-mode-full-screen" title="Link to this heading"></a></h3>
+<p><a class="reference internal" href="../configuration/preferences.html#swipe-down-action-in-the-throttle-view"><span class="std std-ref">Immersive mode</span></a> hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.</p>
 <p>It can optionally also hide the Android System Status Bar at the top of the page.</p>
 <p>Swiping up from off screen will normally temporarily show the Android navigation buttons again.</p>
 </section>
 <section id="swiping-up-or-down">
-<h3><a class="toc-backref" href="#id21" role="doc-backlink">Swiping up or Down</a><a class="headerlink" href="#swiping-up-or-down" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id22" role="doc-backlink">Swiping up or Down</a><a class="headerlink" href="#swiping-up-or-down" title="Link to this heading"></a></h3>
 <div class="admonition-todo admonition" id="id4">
 <p class="admonition-title">Todo</p>
-<p>Swiping up or Down</p>
+<p>FAQ Swiping up or Down</p>
 </div>
 </section>
-<hr class="docutils" />
 <section id="showing-the-web-page-at-the-bottom-of-the-throttle-screen">
-<h3><a class="toc-backref" href="#id22" role="doc-backlink">Showing the web page at the bottom of the throttle screen</a><a class="headerlink" href="#showing-the-web-page-at-the-bottom-of-the-throttle-screen" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id23" role="doc-backlink">Showing the web page at the bottom of the throttle screen</a><a class="headerlink" href="#showing-the-web-page-at-the-bottom-of-the-throttle-screen" title="Link to this heading"></a></h3>
 <div class="admonition-todo admonition" id="id5">
 <p class="admonition-title">Todo</p>
 <p>Showing the web page at the bottom of the throttle screen</p>
@@ -1329,24 +1334,23 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </section>
 </section>
 <section id="loco-selection-screen">
-<h2><a class="toc-backref" href="#id23" role="doc-backlink">Loco selection screen</a><a class="headerlink" href="#loco-selection-screen" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id24" role="doc-backlink">Loco selection screen</a><a class="headerlink" href="#loco-selection-screen" title="Link to this heading"></a></h2>
 <div class="admonition-todo admonition" id="id6">
 <p class="admonition-title">Todo</p>
-<p>Loco selection screen</p>
+<p>FAQ Loco selection screen</p>
 </div>
-<hr class="docutils" />
 <section id="locos-in-the-roster-not-showing">
-<h3><a class="toc-backref" href="#id24" role="doc-backlink">Locos in the roster not showing</a><a class="headerlink" href="#locos-in-the-roster-not-showing" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id25" role="doc-backlink">Locos in the roster not showing</a><a class="headerlink" href="#locos-in-the-roster-not-showing" title="Link to this heading"></a></h3>
 <div class="admonition-todo admonition" id="id7">
 <p class="admonition-title">Todo</p>
-<p>Locos in the roster not showing</p>
+<p>FAQ Locos in the roster not showing</p>
 <p>A1. check you don’t have a filter</p>
 <p>A2. ???</p>
 </div>
 </section>
 </section>
 <section id="changing-the-connection-screen">
-<h2><a class="toc-backref" href="#id25" role="doc-backlink">Changing the connection screen</a><a class="headerlink" href="#changing-the-connection-screen" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id26" role="doc-backlink">Changing the Connection screen</a><a class="headerlink" href="#changing-the-connection-screen" title="Link to this heading"></a></h2>
 <ol class="upperalpha simple" start="17">
 <li><p>You can’t remove test server by swiping right</p></li>
 </ol>
@@ -1360,15 +1364,15 @@ The most common use of this (so far) is to remember the locos relevant to that r
 </div>
 </div></blockquote>
 </section>
-<section id="changing-the-turnouts-screen">
-<h2><a class="toc-backref" href="#id26" role="doc-backlink">Changing the turnouts screen</a><a class="headerlink" href="#changing-the-turnouts-screen" title="Link to this heading"></a></h2>
+<section id="changing-the-turnouts-points-screen">
+<h2><a class="toc-backref" href="#id27" role="doc-backlink">Changing the turnouts/Points screen</a><a class="headerlink" href="#changing-the-turnouts-points-screen" title="Link to this heading"></a></h2>
 <div class="admonition-todo admonition" id="id9">
 <p class="admonition-title">Todo</p>
-<p>Changing the turnouts screen</p>
+<p>FAQ Changing the turnouts screen</p>
 </div>
 </section>
 <section id="conserving-power-on-your-phone-tablet">
-<h2><a class="toc-backref" href="#id27" role="doc-backlink">Conserving power on your phone/tablet</a><a class="headerlink" href="#conserving-power-on-your-phone-tablet" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id28" role="doc-backlink">Conserving power on your phone/tablet</a><a class="headerlink" href="#conserving-power-on-your-phone-tablet" title="Link to this heading"></a></h2>
 <ol class="upperalpha simple" start="17">
 <li><p>My Phone/table runs out of power too quickly</p></li>
 </ol>
@@ -1377,20 +1381,27 @@ The most common use of this (so far) is to remember the locos relevant to that r
 <li><p>You should</p></li>
 </ol>
 <ul class="simple">
-<li><p>Keep the brightness of the device as low as practical</p></li>
+<li><p>Keep the brightness of the device/phone as low as practical</p></li>
 <li><p>Disable Bluetooth and NFC if you are not using them</p></li>
 <li><p>You can also try:</p>
 <ul>
-<li><p>Set the preference to dim screen on swipe up.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.</p></li>
-<li><p>Set the preference to dim screen on shake.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.</p></li>
+<li><p>Set the <a class="reference internal" href="../configuration/preferences.html#swipe-up-down-preferences"><span class="std std-ref">preference to dim screen on swipe up</span></a>.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.</p></li>
+<li><p>Set the <a class="reference internal" href="../configuration/preferences.html#accelerometer-shake-preferences"><span class="std std-ref">preference to dim screen on shake</span></a>.  If you are not using the throttle temporarily (i.e the train does not need any control for a little while), dim the screen until you need it back.</p></li>
 </ul>
 </li>
 </ul>
-<p>If your device has an AMOLED display, theoretically, the High Contrast Outline theme should use less power (though this is unproven).</p>
+<p>If your device has an AMOLED display, theoretically, the <a class="reference internal" href="../configuration/preferences.html#theme-style"><span class="std std-ref">High Contrast Outline theme</span></a> should use less power (though this is unproven).</p>
 </div></blockquote>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference internal" href="../configuration/conserving_power.html"><span class="doc">Conserving Battery Power</span></a> page for more information.</p>
+</div>
+</section>
+<section id="dcc-ex-features">
+<h2><a class="toc-backref" href="#id29" role="doc-backlink">DCC-EX Features</a><a class="headerlink" href="#dcc-ex-features" title="Link to this heading"></a></h2>
+<div class="admonition-todo admonition" id="id10">
+<p class="admonition-title">Todo</p>
+<p>FAQ DCC-EX Features</p>
 </div>
 </section>
 </section>
@@ -1399,7 +1410,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="advanced.html" class="btn btn-neutral float-left" title="Advanced Operation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="wifi_issues.html" class="btn btn-neutral float-left" title="WiFi Issues" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="../configuration/index.html" class="btn btn-neutral float-right" title="Configuration" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
@@ -1413,7 +1424,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f34ef7ecd90>
+    <jinja2.runtime.BlockReference object at 0x7f09bede97b0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

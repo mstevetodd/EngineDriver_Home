@@ -315,6 +315,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/semi-realistic-throttle.html#basic-operation">Basic Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#example-normal-throttle">Example: Normal throttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#example-srt-throttle-with-decoder-momentum">Example: SRT throttle with decoder momentum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#example-srt-throttle-with-no-or-little-decoder-momentum">Example: SRT throttle with no, or little, decoder momentum</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/semi-realistic-throttle.html#srt-detailed-operation"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#a-throttle">a) Throttle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#b-direction">b) Direction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#c-load">c) Load</a></li>
@@ -358,14 +364,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../operation/wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#wrong-network">Wrong Network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#firewalls">Firewalls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#disconnections">Disconnections</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="../operation/gamepads.html">Gamepads</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../operation/gamepads.html#connecting-your-gamepad">Connecting your Gamepad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/gamepads.html#running-engine-driver-with-the-gamepad">Running Engine Driver with the Gamepad</a></li>
@@ -392,6 +390,14 @@
 <li class="toctree-l3"><a class="reference internal" href="../operation/advanced.html#children-s-timer">Children’s Timer</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="../operation/wifi_issues.html">WiFi Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#use-location">Use location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#disconnections">Disconnections</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../operation/faq.html">Frequently Asked Questions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#connecting-wifi-and-withrottle">Connecting - Wifi and WiThrottle</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/faq.html#connecting-to-different-servers-railroads">Connecting to different servers/railroads</a></li>
@@ -414,9 +420,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../operation/faq.html#locos-in-the-roster-not-showing">Locos in the roster not showing</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#changing-the-connection-screen">Changing the connection screen</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#changing-the-turnouts-screen">Changing the turnouts screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#changing-the-connection-screen">Changing the Connection screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#changing-the-turnouts-points-screen">Changing the turnouts/Points screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#dcc-ex-features">DCC-EX Features</a></li>
 </ul>
 </li>
 </ul>
@@ -920,7 +927,7 @@ Info on minSDKVersion available in the <a class="reference external" href="https
 <section id="what-s-a-withrottle-server">
 <h2><a class="toc-backref" href="#id5" role="doc-backlink">What’s a ‘WiThrottle Server’?</a><a class="headerlink" href="#what-s-a-withrottle-server" title="Link to this heading"></a></h2>
 <p><strong>WiThrottle</strong> stands for ‘WiFi Throttle’, and a ‘WiThrottle Server’ is just software running on your JMRI computer, DCC-EX EX-CommandStation, or dedicated device. It’s called a ‘Server’ because it allows you to connect to it and it ‘serves’, or services, requests from another application. That application is called a ‘Client’. So in this case <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> is the client.</p>
-<p>The <strong>WiThrottle Protocol</strong> itself is a standard for how WiFi throttles can communicate with the WiThrottle Server, much like the DCC standard is a standard for how data packets communicate with decoders. What this means for you, is that <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can talk to any WiThrottle compatible server, which in turn can talks to your DCC encoders in your locos.</p>
+<p>The <strong>WiThrottle Protocol</strong> itself is a standard for how WiFi throttles can communicate with the WiThrottle Server, much like the DCC standard is a standard for how data packets communicate with decoders. What this means for you, is that <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can talk to any WiThrottle compatible server, which in turn can talk to the DCC decoders in your locos.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference internal" href="../prerequisites/index.html#withrottle-and-dcc-ex-native-servers"><span class="std std-ref">WiThrottle / DCC-EX Native Servers</span></a> section of the Prerequisites page for information on the different WiThrottle Servers.</p>
@@ -982,7 +989,7 @@ Info on minSDKVersion available in the <a class="reference external" href="https
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f34ed50a860>
+    <jinja2.runtime.BlockReference object at 0x7f09bcc5f730>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

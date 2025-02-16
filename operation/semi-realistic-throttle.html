@@ -32,7 +32,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="WiFi Issues" href="wifi_issues.html" />
+    <link rel="next" title="Gamepads" href="gamepads.html" />
     <link rel="prev" title="User Interface" href="interface.html" />
  
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -315,6 +315,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#basic-operation">Basic Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#example-normal-throttle">Example: Normal throttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-srt-throttle-with-decoder-momentum">Example: SRT throttle with decoder momentum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#example-srt-throttle-with-no-or-little-decoder-momentum">Example: SRT throttle with no, or little, decoder momentum</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#srt-detailed-operation"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#a-throttle">a) Throttle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#b-direction">b) Direction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#c-load">c) Load</a></li>
@@ -358,14 +364,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="gamepads.html">Gamepads</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="gamepads.html#connecting-your-gamepad">Connecting your Gamepad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gamepads.html#running-engine-driver-with-the-gamepad">Running Engine Driver with the Gamepad</a></li>
@@ -392,6 +390,14 @@
 <li class="toctree-l3"><a class="reference internal" href="advanced.html#children-s-timer">Children’s Timer</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="faq.html#connecting-wifi-and-withrottle">Connecting - Wifi and WiThrottle</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="faq.html#connecting-to-different-servers-railroads">Connecting to different servers/railroads</a></li>
@@ -414,9 +420,10 @@
 <li class="toctree-l4"><a class="reference internal" href="faq.html#locos-in-the-roster-not-showing">Locos in the roster not showing</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-connection-screen">Changing the connection screen</a></li>
-<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-turnouts-screen">Changing the turnouts screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-connection-screen">Changing the Connection screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-turnouts-points-screen">Changing the turnouts/Points screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="faq.html#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#dcc-ex-features">DCC-EX Features</a></li>
 </ul>
 </li>
 </ul>
@@ -877,49 +884,56 @@
 </li>
 <li><p><a class="reference internal" href="#basic-operation" id="id4">Basic Operation</a></p>
 <ul>
-<li><p><a class="reference internal" href="#a-throttle" id="id5">a) Throttle</a></p></li>
-<li><p><a class="reference internal" href="#b-direction" id="id6">b) Direction</a></p></li>
-<li><p><a class="reference internal" href="#c-load" id="id7">c) Load</a></p></li>
-<li><p><a class="reference internal" href="#d-brakes" id="id8">d) Brakes</a></p>
-<ul>
-<li><p><a class="reference internal" href="#brakes-with-the-air-reservoir-and-air-line-enabled" id="id9">Brakes - With the Air Reservoir and Air Line Enabled</a></p></li>
-<li><p><a class="reference internal" href="#brakes-without-the-air-reservoir-and-air-line-enabled" id="id10">Brakes - Without the Air Reservoir and Air Line Enabled</a></p></li>
+<li><p><a class="reference internal" href="#example-normal-throttle" id="id5">Example: Normal throttle</a></p></li>
+<li><p><a class="reference internal" href="#example-srt-throttle-with-decoder-momentum" id="id6">Example: SRT throttle with decoder momentum</a></p></li>
+<li><p><a class="reference internal" href="#example-srt-throttle-with-no-or-little-decoder-momentum" id="id7">Example: SRT throttle with no, or little, decoder momentum</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#decoder-integration" id="id11">Decoder Integration</a></p>
+<li><p><a class="reference internal" href="#srt-detailed-operation" id="id8"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a></p>
 <ul>
-<li><p><a class="reference internal" href="#braking-with-decoder-brake-functions" id="id12">Braking - With Decoder Brake Functions</a></p></li>
+<li><p><a class="reference internal" href="#a-throttle" id="id9">a) Throttle</a></p></li>
+<li><p><a class="reference internal" href="#b-direction" id="id10">b) Direction</a></p></li>
+<li><p><a class="reference internal" href="#c-load" id="id11">c) Load</a></p></li>
+<li><p><a class="reference internal" href="#d-brakes" id="id12">d) Brakes</a></p>
+<ul>
+<li><p><a class="reference internal" href="#brakes-with-the-air-reservoir-and-air-line-enabled" id="id13">Brakes - With the Air Reservoir and Air Line Enabled</a></p></li>
+<li><p><a class="reference internal" href="#brakes-without-the-air-reservoir-and-air-line-enabled" id="id14">Brakes - Without the Air Reservoir and Air Line Enabled</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#decoder-integration" id="id15">Decoder Integration</a></p>
+<ul>
+<li><p><a class="reference internal" href="#braking-with-decoder-brake-functions" id="id16">Braking - With Decoder Brake Functions</a></p></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#preference-settings-for-the-srt" id="id13">Preference Settings for the SRT</a></p>
+<li><p><a class="reference internal" href="#preference-settings-for-the-srt" id="id17">Preference Settings for the SRT</a></p>
 <ul>
-<li><p><a class="reference internal" href="#acceleration-speed-step-repeat-delay" id="id14">Acceleration Speed Step Repeat Delay</a></p></li>
-<li><p><a class="reference internal" href="#deceleration-speed-step-repeat-delay" id="id15">Deceleration Speed Step Repeat Delay</a></p></li>
-<li><p><a class="reference internal" href="#speed-step-amount" id="id16">Speed Step Amount</a></p></li>
-<li><p><a class="reference internal" href="#maximum-throttle-percentage" id="id17">Maximum Throttle Percentage</a></p></li>
-<li><p><a class="reference internal" href="#throttle-notches" id="id18">Throttle Notches</a></p></li>
-<li><p><a class="reference internal" href="#stop-button-action" id="id19">Stop Button Action</a></p></li>
-<li><p><a class="reference internal" href="#number-of-brake-steps" id="id20">Number of Brake Steps</a></p></li>
-<li><p><a class="reference internal" href="#maximum-brake-percentage" id="id21">Maximum Brake Percentage</a></p></li>
-<li><p><a class="reference internal" href="#disable-the-air-reservoir" id="id22">Disable the Air Reservoir</a></p></li>
-<li><p><a class="reference internal" href="#rate-the-air-brakes-refresh" id="id23">Rate the air brakes refresh</a></p></li>
-<li><p><a class="reference internal" href="#number-of-load-steps" id="id24">Number of Load Steps</a></p></li>
-<li><p><a class="reference internal" href="#maximum-load-percentage" id="id25">Maximum Load Percentage</a></p></li>
-<li><p><a class="reference internal" href="#decoder-brake-type" id="id26">Decoder Brake Type</a></p></li>
-<li><p><a class="reference internal" href="#decoder-low-function-number-s" id="id27">Decoder Low Function Number(s)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-low-brake-value-percent" id="id28">Decoder Low Brake Value (Percent)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-mid-function-number-s" id="id29">Decoder Mid Function Number(s)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-mid-brake-value-percent" id="id30">Decoder Mid Brake Value (Percent)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-high-function-number-s" id="id31">Decoder High Function Number(s)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-high-brake-value-percent" id="id32">Decoder High Brake Value (Percent)</a></p></li>
+<li><p><a class="reference internal" href="#acceleration-speed-step-repeat-delay" id="id18">Acceleration Speed Step Repeat Delay</a></p></li>
+<li><p><a class="reference internal" href="#deceleration-speed-step-repeat-delay" id="id19">Deceleration Speed Step Repeat Delay</a></p></li>
+<li><p><a class="reference internal" href="#speed-step-amount" id="id20">Speed Step Amount</a></p></li>
+<li><p><a class="reference internal" href="#maximum-throttle-percentage" id="id21">Maximum Throttle Percentage</a></p></li>
+<li><p><a class="reference internal" href="#throttle-notches" id="id22">Throttle Notches</a></p></li>
+<li><p><a class="reference internal" href="#stop-button-action" id="id23">Stop Button Action</a></p></li>
+<li><p><a class="reference internal" href="#number-of-brake-steps" id="id24">Number of Brake Steps</a></p></li>
+<li><p><a class="reference internal" href="#maximum-brake-percentage" id="id25">Maximum Brake Percentage</a></p></li>
+<li><p><a class="reference internal" href="#disable-the-air-reservoir" id="id26">Disable the Air Reservoir</a></p></li>
+<li><p><a class="reference internal" href="#rate-the-air-brakes-refresh" id="id27">Rate the air brakes refresh</a></p></li>
+<li><p><a class="reference internal" href="#number-of-load-steps" id="id28">Number of Load Steps</a></p></li>
+<li><p><a class="reference internal" href="#maximum-load-percentage" id="id29">Maximum Load Percentage</a></p></li>
+<li><p><a class="reference internal" href="#decoder-brake-type" id="id30">Decoder Brake Type</a></p></li>
+<li><p><a class="reference internal" href="#decoder-low-function-number-s" id="id31">Decoder Low Function Number(s)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-low-brake-value-percent" id="id32">Decoder Low Brake Value (Percent)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-mid-function-number-s" id="id33">Decoder Mid Function Number(s)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-mid-brake-value-percent" id="id34">Decoder Mid Brake Value (Percent)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-high-function-number-s" id="id35">Decoder High Function Number(s)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-high-brake-value-percent" id="id36">Decoder High Brake Value (Percent)</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#example-cases" id="id33">Example Cases</a></p>
+<li><p><a class="reference internal" href="#example-cases" id="id37">Example Cases</a></p>
 <ul>
-<li><p><a class="reference internal" href="#general-note-decoders" id="id34">General Note - Decoders</a></p></li>
-<li><p><a class="reference internal" href="#conclusion" id="id35">Conclusion</a></p></li>
+<li><p><a class="reference internal" href="#general-note-decoders" id="id38">General Note - Decoders</a></p></li>
+<li><p><a class="reference internal" href="#conclusion" id="id39">Conclusion</a></p></li>
 </ul>
 </li>
 </ul>
@@ -933,16 +947,19 @@
 <section id="key-srt-controls-displays">
 <h3><a class="toc-backref" href="#id3" role="doc-backlink">Key <abbr title="Semi-Realistic Throttle">SRT</abbr> Controls/Displays</a><a class="headerlink" href="#key-srt-controls-displays" title="Link to this heading"></a></h3>
 <ul class="simple">
-<li><p><strong>Load</strong> - an ability to set the load being put on the loco, from no load to very heavy trains</p></li>
-<li><p><strong>Speed Control</strong> - operator commanded speed</p></li>
-<li><p><strong>Direction</strong> - direction of movement</p></li>
-<li><p><strong>Brake Control</strong> - operator commanded brake amount</p></li>
+<li><p>Loco <strong>Select</strong></p></li>
+<li><p><strong>Target and Commanded Speed Display</strong> - both the operator commanded speed and the current speed command sent to the loco are displayed</p></li>
+<li><p><strong>Direction</strong> buttons - direction of movement</p></li>
+<li><p><strong>Speed Control</strong> slider and buttons - operator commanded speed</p></li>
 <li><p><strong>Functions</strong> - set/release given decoder functions</p></li>
 <li><p><strong>Air Reservoir Status</strong> - a display of the fill state of the air brake reservoir</p></li>
-<li><p><strong>Target and Commanded Speed Display</strong> - both the operator commanded speed and the current speed command sent to the loco are displayed</p></li>
-<li><p><strong>Air Brakes Button</strong> - enable or disable the ‘Air Brake’ feature</p></li>
-<li><p><strong>Stop Button</strong> - command the speed to go to zero, plus other optional actions</p></li>
-<li><p><strong>Emergency Stop Button</strong> - command the actual speed immediately to zero</p></li>
+<li><p><strong>Brake Control</strong> slider - operator commanded brake amount</p></li>
+<li><p><strong>Load</strong> slider - an ability to set the load being put on the loco, from no load to very heavy trains</p></li>
+<li><p><strong>Stop</strong> button - command the speed to go to zero, plus other * <strong>Air Brakes Button</strong> - enable or disable the ‘Air Brake’ feature</p></li>
+</ul>
+<p><strong>Optional Actions</strong></p>
+<ul class="simple">
+<li><p><strong>Emergency Stop</strong> button - command the actual speed immediately to zero</p></li>
 </ul>
 </section>
 </section>
@@ -952,21 +969,18 @@
 <p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> modifies the speed commands sent to the loco based on the <abbr title="Semi-Realistic Throttle">SRT</abbr> operator controls (Load, Speed, Brake). The <abbr title="Semi-Realistic Throttle">SRT</abbr> utilises throttle speed control to simulate momentum, train loading, and brakes.</p>
 <p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> can be user configured to provide a base amount of <abbr title="Semi-Realistic Throttle">SRT</abbr> (in phone) created momentum that then moderates the operator commanded speed. Increasing the Load, effectively increases this <abbr title="Semi-Realistic Throttle">SRT</abbr> created momentum (slower acceleration and slower braking). Increasing the Brake, effectively increasing this <abbr title="Semi-Realistic Throttle">SRT</abbr> created momentum (slower braking).</p>
 <p>Note that the <abbr title="Semi-Realistic Throttle">SRT</abbr> “momentum” works in combination with any momentum programmed into the decoder. That is the loco will respond to the <abbr title="Semi-Realistic Throttle">SRT</abbr> speed commands that it receives in its normal manner.</p>
-<p>For example:</p>
-<ul>
-<li><p>Normal throttle</p>
-<blockquote>
-<div><ul class="simple">
+<section id="example-normal-throttle">
+<h3><a class="toc-backref" href="#id5" role="doc-backlink">Example: Normal throttle</a><a class="headerlink" href="#example-normal-throttle" title="Link to this heading"></a></h3>
+<ul class="simple">
 <li><p>Operator increases or decreases the speed control,</p></li>
 <li><p>The new speed command is immediate sent to the loco,</p></li>
 <li><p>If the loco’s decoder has no momentum set, the loco’s speed increases or decreases immediately to match the speed control,</p></li>
 <li><p>If the loco’s decoder has momentum set, the loco’s physical speed gradually increases  or decreases gradually based on the momentum setting in its decoder .</p></li>
 </ul>
-</div></blockquote>
-</li>
-<li><p><abbr title="Semi-Realistic Throttle">SRT</abbr> throttle with decoder momentum</p>
-<blockquote>
-<div><ul class="simple">
+</section>
+<section id="example-srt-throttle-with-decoder-momentum">
+<h3><a class="toc-backref" href="#id6" role="doc-backlink">Example: SRT throttle with decoder momentum</a><a class="headerlink" href="#example-srt-throttle-with-decoder-momentum" title="Link to this heading"></a></h3>
+<ul class="simple">
 <li><p>Operator increases or decreases the speed control,</p></li>
 <li><p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the <abbr title="Semi-Realistic Throttle">SRT</abbr> with the result that the loco sees speed commands that increase and decrease gradually over time,</p></li>
 <li><dl class="simple">
@@ -978,23 +992,23 @@
 </dl>
 </li>
 </ul>
-</div></blockquote>
-</li>
-<li><p><abbr title="Semi-Realistic Throttle">SRT</abbr> throttle with no, or little, decoder momentum</p>
-<blockquote>
-<div><ul class="simple">
+</section>
+<section id="example-srt-throttle-with-no-or-little-decoder-momentum">
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">Example: SRT throttle with no, or little, decoder momentum</a><a class="headerlink" href="#example-srt-throttle-with-no-or-little-decoder-momentum" title="Link to this heading"></a></h3>
+<ul class="simple">
 <li><p>Operator increase or decreases the speed control,</p></li>
 <li><p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the <abbr title="Semi-Realistic Throttle">SRT</abbr> with the result that the loco sees speed commands that increase and decrease  gradually over time.</p></li>
 </ul>
-</div></blockquote>
-</li>
-</ul>
-<p><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</p>
+</section>
+</section>
+<section id="srt-detailed-operation">
+<h2><a class="toc-backref" href="#id8" role="doc-backlink"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><a class="headerlink" href="#srt-detailed-operation" title="Link to this heading"></a></h2>
 <p>The primary difference between the <abbr title="Semi-Realistic Throttle">SRT</abbr> and a normal throttle is that the <abbr title="Semi-Realistic Throttle">SRT</abbr> simulates momentum inside the Engine Driver App, regardless of any momentum and brake settings inside the decoder.</p>
 <p>Because the <abbr title="Semi-Realistic Throttle">SRT</abbr> simulates momentum, increasing and decreasing the on-screen throttle does not immediately send the equivalent DCC speed commands to decoder/loco.  Instead, gradual speed changes are sent over a period of time depending on the a) the throttle setting, b) direction c) the Load setting, and d) the Brake Setting.</p>
 <section id="a-throttle">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">a) Throttle</a><a class="headerlink" href="#a-throttle" title="Link to this heading"></a></h3>
-<p>The throttle can be set to show either a percentage slider or a slider with a distinct number of throttle steps/notches.  The throttle can also optionally be set to show Increase (<span class="guilabel">+ +</span>) and decrease (<span class="guilabel">- -</span>) speed buttons in the preferences.</p>
+<h3><a class="toc-backref" href="#id9" role="doc-backlink">a) Throttle</a><a class="headerlink" href="#a-throttle" title="Link to this heading"></a></h3>
+<a class="reference internal image-reference" href="../_images/speed_slider.png"><img alt="../_images/speed_slider.png" class="align-right" src="../_images/speed_slider.png" style="width: 82.5px; height: 334.2px;" /></a>
+<p>The throttle can be set to show either a <a class="reference external" href="ThrottleNotches">percentage slider or a slider with a distinct number of throttle steps/notches</a>.  The throttle can also optionally be set to show Increase (<span class="guilabel">+ +</span>) and decrease (<span class="guilabel">- -</span>) speed buttons in the preferences.</p>
 <p>To increase or decrease speed you can either i) drag the throttle slider up and down, or ii) press the increase or decrease buttons.</p>
 <p>As <a class="reference external" href="BasicOperation">stated above</a>, this does not instantly send those speed commands to the decoder/loco.  The speed changes are gradually sent to the loco over a period of time.</p>
 <p>If the speed is set to zero from a previous higher speed the loco will be commanded to gradually go to speed zero. (Coast to zero.)</p>
@@ -1004,12 +1018,14 @@
 <p>If the load is set, then all/and the gradual speed changes are slowed down.</p>
 </section>
 <section id="b-direction">
-<h3><a class="toc-backref" href="#id6" role="doc-backlink">b) Direction</a><a class="headerlink" href="#b-direction" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">b) Direction</a><a class="headerlink" href="#b-direction" title="Link to this heading"></a></h3>
+<a class="reference internal image-reference" href="../_images/direction_buttons1.png"><img alt="../_images/direction_buttons1.png" class="align-right" src="../_images/direction_buttons1.png" style="width: 213.29999999999998px; height: 29.7px;" /></a>
 <p>While the Direction is set to ‘Forward’ or ‘Reverse’, throttle changes will result in the loco moving in that direction, subject to the setting of the Brake.</p>
 <p>While the Direction is set to ‘Neutral’, the throttle changes are ignored, and the loco will be commanded to gradually go to speed zero. (Coast to zero.)</p>
 </section>
 <section id="c-load">
-<h3><a class="toc-backref" href="#id7" role="doc-backlink">c) Load</a><a class="headerlink" href="#c-load" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">c) Load</a><a class="headerlink" href="#c-load" title="Link to this heading"></a></h3>
+<a class="reference internal image-reference" href="../_images/load_slider.png"><img alt="../_images/load_slider.png" class="align-right" src="../_images/load_slider.png" style="width: 54.0px; height: 106.64999999999999px;" /></a>
 <p>‘Load’ is intended to simulate if the train you are controlling has none, a few, many, or a huge number of carriages behind it.  Load can also be increased or decreased to simulate going up or down a slope.</p>
 <p>The Load can be set to show either a percentage slider or a slider with a distinct number of steps/notches.</p>
 <p>The maximum load can be set in the preferences. (the Default is 1000%) The Load slider is exponential in scale, so from notch 0 to 1 to 2 only small increases of load are applied, but by the final notches, huge changes are applied.</p>
@@ -1019,12 +1035,15 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 <p>Note: Load changes are only applied when you take your finger off the slider.</p>
 </section>
 <section id="d-brakes">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">d) Brakes</a><a class="headerlink" href="#d-brakes" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">d) Brakes</a><a class="headerlink" href="#d-brakes" title="Link to this heading"></a></h3>
+<a class="reference internal image-reference" href="../_images/brake_slider.png"><img alt="../_images/brake_slider.png" class="align-right" src="../_images/brake_slider.png" style="width: 54.9px; height: 177.29999999999998px;" /></a>
 <p>Brakes can be used with or without the simulation of the Air Reservoir and Air Line.</p>
 <p>‘Air Brake’ is enabled by default. It can be permanently disabled with the ‘Disable the Air Reservoir’ preference. Even with the ‘Air Brake’ enabled, you can enable or disable the Air Brake feature at will with the ‘Air Brake’ button.</p>
+<p><div style="display:block; box-sizing: border-box; clear: both;"> </div></p>
 <section id="brakes-with-the-air-reservoir-and-air-line-enabled">
-<h4><a class="toc-backref" href="#id9" role="doc-backlink">Brakes - With the Air Reservoir and Air Line Enabled</a><a class="headerlink" href="#brakes-with-the-air-reservoir-and-air-line-enabled" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id13" role="doc-backlink">Brakes - With the Air Reservoir and Air Line Enabled</a><a class="headerlink" href="#brakes-with-the-air-reservoir-and-air-line-enabled" title="Link to this heading"></a></h4>
 <p>The ‘Air Brake’ feature is designed to simulate a very rough approximation of the Westinghouse Air Brake system used by early US railroads.</p>
+<a class="reference internal image-reference" href="../_images/air_reservior.png"><img alt="../_images/air_reservior.png" class="align-right" src="../_images/air_reservior.png" style="width: 17.099999999999998px; height: 208.79999999999998px;" /></a>
 <p>In Summary:</p>
 <ul>
 <li><p>The Air Brakes work by releasing air from the line. (This was part of the failsafe design in that if the line broke for any reason, all the brakes on all the carriages would engage.)</p></li>
@@ -1048,7 +1067,7 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 <p>If the Brake is also set, while the throttle is set (not zero), then the loco will be commanded to gradually go to a new speed which is determined by how much throttle is applied and how much brake is applied.  Which may or may not be zero.</p>
 </section>
 <section id="brakes-without-the-air-reservoir-and-air-line-enabled">
-<h4><a class="toc-backref" href="#id10" role="doc-backlink">Brakes - Without the Air Reservoir and Air Line Enabled</a><a class="headerlink" href="#brakes-without-the-air-reservoir-and-air-line-enabled" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id14" role="doc-backlink">Brakes - Without the Air Reservoir and Air Line Enabled</a><a class="headerlink" href="#brakes-without-the-air-reservoir-and-air-line-enabled" title="Link to this heading"></a></h4>
 <p>In Summary:</p>
 <p>The amount of Air in the reservoir and line are ignored.</p>
 <p>The position of the slider is the amount of brake that will be applied</p>
@@ -1056,11 +1075,11 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </section>
 </section>
 <section id="decoder-integration">
-<h3><a class="toc-backref" href="#id11" role="doc-backlink">Decoder Integration</a><a class="headerlink" href="#decoder-integration" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Decoder Integration</a><a class="headerlink" href="#decoder-integration" title="Link to this heading"></a></h3>
 <p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> has been designed to work with all decoders.</p>
 <p>As explained above, the <abbr title="Semi-Realistic Throttle">SRT</abbr> created momentum effects can optionally layer on top of the decoder programmed momentum.</p>
 <section id="braking-with-decoder-brake-functions">
-<h4><a class="toc-backref" href="#id12" role="doc-backlink">Braking - With Decoder Brake Functions</a><a class="headerlink" href="#braking-with-decoder-brake-functions" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id16" role="doc-backlink">Braking - With Decoder Brake Functions</a><a class="headerlink" href="#braking-with-decoder-brake-functions" title="Link to this heading"></a></h4>
 <p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> also includes a feature that allows the <abbr title="Semi-Realistic Throttle">SRT</abbr> Braking control to be integrated with decoder braking (and other) functions in a very flexible manner. If the Decoder Brake type is activated in the <a class="reference external" href="DecoderBrakeType">Decoder Brake Type preference setting</a>, then the <abbr title="Semi-Realistic Throttle">SRT</abbr> Brake control can be configured to trigger up to four decoder functions at each of three brake thresholds.</p>
 <p>The three brake thresholds are referred to a Low, Mid and High.</p>
 <ul>
@@ -1100,34 +1119,34 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </section>
 </section>
 <section id="preference-settings-for-the-srt">
-<h2><a class="toc-backref" href="#id13" role="doc-backlink">Preference Settings for the SRT</a><a class="headerlink" href="#preference-settings-for-the-srt" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id17" role="doc-backlink">Preference Settings for the SRT</a><a class="headerlink" href="#preference-settings-for-the-srt" title="Link to this heading"></a></h2>
 <nav class="contents in-this-section local" id="in-this-section">
 <p class="topic-title">In this Section</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#acceleration-speed-step-repeat-delay" id="id36">Acceleration Speed Step Repeat Delay</a></p></li>
-<li><p><a class="reference internal" href="#deceleration-speed-step-repeat-delay" id="id37">Deceleration Speed Step Repeat Delay</a></p></li>
-<li><p><a class="reference internal" href="#speed-step-amount" id="id38">Speed Step Amount</a></p></li>
-<li><p><a class="reference internal" href="#maximum-throttle-percentage" id="id39">Maximum Throttle Percentage</a></p></li>
-<li><p><a class="reference internal" href="#throttle-notches" id="id40">Throttle Notches</a></p></li>
-<li><p><a class="reference internal" href="#stop-button-action" id="id41">Stop Button Action</a></p></li>
-<li><p><a class="reference internal" href="#number-of-brake-steps" id="id42">Number of Brake Steps</a></p></li>
-<li><p><a class="reference internal" href="#maximum-brake-percentage" id="id43">Maximum Brake Percentage</a></p></li>
-<li><p><a class="reference internal" href="#disable-the-air-reservoir" id="id44">Disable the Air Reservoir</a></p></li>
-<li><p><a class="reference internal" href="#rate-the-air-brakes-refresh" id="id45">Rate the air brakes refresh</a></p></li>
-<li><p><a class="reference internal" href="#number-of-load-steps" id="id46">Number of Load Steps</a></p></li>
-<li><p><a class="reference internal" href="#maximum-load-percentage" id="id47">Maximum Load Percentage</a></p></li>
-<li><p><a class="reference internal" href="#decoder-brake-type" id="id48">Decoder Brake Type</a></p></li>
-<li><p><a class="reference internal" href="#decoder-low-function-number-s" id="id49">Decoder Low Function Number(s)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-low-brake-value-percent" id="id50">Decoder Low Brake Value (Percent)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-mid-function-number-s" id="id51">Decoder Mid Function Number(s)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-mid-brake-value-percent" id="id52">Decoder Mid Brake Value (Percent)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-high-function-number-s" id="id53">Decoder High Function Number(s)</a></p></li>
-<li><p><a class="reference internal" href="#decoder-high-brake-value-percent" id="id54">Decoder High Brake Value (Percent)</a></p></li>
+<li><p><a class="reference internal" href="#acceleration-speed-step-repeat-delay" id="id40">Acceleration Speed Step Repeat Delay</a></p></li>
+<li><p><a class="reference internal" href="#deceleration-speed-step-repeat-delay" id="id41">Deceleration Speed Step Repeat Delay</a></p></li>
+<li><p><a class="reference internal" href="#speed-step-amount" id="id42">Speed Step Amount</a></p></li>
+<li><p><a class="reference internal" href="#maximum-throttle-percentage" id="id43">Maximum Throttle Percentage</a></p></li>
+<li><p><a class="reference internal" href="#throttle-notches" id="id44">Throttle Notches</a></p></li>
+<li><p><a class="reference internal" href="#stop-button-action" id="id45">Stop Button Action</a></p></li>
+<li><p><a class="reference internal" href="#number-of-brake-steps" id="id46">Number of Brake Steps</a></p></li>
+<li><p><a class="reference internal" href="#maximum-brake-percentage" id="id47">Maximum Brake Percentage</a></p></li>
+<li><p><a class="reference internal" href="#disable-the-air-reservoir" id="id48">Disable the Air Reservoir</a></p></li>
+<li><p><a class="reference internal" href="#rate-the-air-brakes-refresh" id="id49">Rate the air brakes refresh</a></p></li>
+<li><p><a class="reference internal" href="#number-of-load-steps" id="id50">Number of Load Steps</a></p></li>
+<li><p><a class="reference internal" href="#maximum-load-percentage" id="id51">Maximum Load Percentage</a></p></li>
+<li><p><a class="reference internal" href="#decoder-brake-type" id="id52">Decoder Brake Type</a></p></li>
+<li><p><a class="reference internal" href="#decoder-low-function-number-s" id="id53">Decoder Low Function Number(s)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-low-brake-value-percent" id="id54">Decoder Low Brake Value (Percent)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-mid-function-number-s" id="id55">Decoder Mid Function Number(s)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-mid-brake-value-percent" id="id56">Decoder Mid Brake Value (Percent)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-high-function-number-s" id="id57">Decoder High Function Number(s)</a></p></li>
+<li><p><a class="reference internal" href="#decoder-high-brake-value-percent" id="id58">Decoder High Brake Value (Percent)</a></p></li>
 </ul>
 </nav>
 <section id="acceleration-speed-step-repeat-delay">
-<h3><a class="toc-backref" href="#id36" role="doc-backlink">Acceleration Speed Step Repeat Delay</a><a class="headerlink" href="#acceleration-speed-step-repeat-delay" title="Link to this heading"></a></h3>
-<p><em>How long between acceleration speed steps repeats (in milliseconds). Smaller is faster.</em></p>
+<h3><a class="toc-backref" href="#id40" role="doc-backlink">Acceleration Speed Step Repeat Delay</a><a class="headerlink" href="#acceleration-speed-step-repeat-delay" title="Link to this heading"></a></h3>
+<p>This preference is used to change how long between acceleration speed steps repeats (in milliseconds). <em>Smaller is faster.</em></p>
 <ul>
 <li><p>This setting (combined with the Speed Step Amount) is used to provide a basic level of <abbr title="Semi-Realistic Throttle">SRT</abbr> create momentum to loco movement.</p></li>
 <li><p>Think of it providing a smoothing function to the speed control (given that the Load settings will be the primary means of determining major impacts on train performance)</p></li>
@@ -1143,34 +1162,41 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </ul>
 </section>
 <section id="deceleration-speed-step-repeat-delay">
-<h3><a class="toc-backref" href="#id37" role="doc-backlink">Deceleration Speed Step Repeat Delay</a><a class="headerlink" href="#deceleration-speed-step-repeat-delay" title="Link to this heading"></a></h3>
-<p><em>How long between deceleration speed steps repeats (in milliseconds). Smaller is faster.</em></p>
+<h3><a class="toc-backref" href="#id41" role="doc-backlink">Deceleration Speed Step Repeat Delay</a><a class="headerlink" href="#deceleration-speed-step-repeat-delay" title="Link to this heading"></a></h3>
+<p>This preference is used to change how long between deceleration speed steps repeats (in milliseconds). <em>Smaller is faster.</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#basic-operation">Basic Operation</a> notes above.</p>
 </div>
 </section>
 <section id="speed-step-amount">
-<h3><a class="toc-backref" href="#id38" role="doc-backlink">Speed Step Amount</a><a class="headerlink" href="#speed-step-amount" title="Link to this heading"></a></h3>
-<p><em>How much the actual speed step jumps each step to the target speed. Larger is faster.</em></p>
+<h3><a class="toc-backref" href="#id42" role="doc-backlink">Speed Step Amount</a><a class="headerlink" href="#speed-step-amount" title="Link to this heading"></a></h3>
+<p>This preference is used to change how much the actual speed step jumps each step to the target speed. <em>Larger is faster.</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#basic-operation">Basic Operation</a> notes above.</p>
 </div>
 </section>
 <section id="maximum-throttle-percentage">
-<h3><a class="toc-backref" href="#id39" role="doc-backlink">Maximum Throttle Percentage</a><a class="headerlink" href="#maximum-throttle-percentage" title="Link to this heading"></a></h3>
-<p><em>Maximum allowed slider value in % in ALL throttle sliders.</em></p>
+<h3><a class="toc-backref" href="#id43" role="doc-backlink">Maximum Throttle Percentage</a><a class="headerlink" href="#maximum-throttle-percentage" title="Link to this heading"></a></h3>
+<p>This preference is used to change Maximum allowed slider value in % in ALL throttle sliders.</p>
 <p>This preference limits the maximum speed of the loco.</p>
 </section>
 <section id="throttle-notches">
-<h3><a class="toc-backref" href="#id40" role="doc-backlink">Throttle Notches</a><a class="headerlink" href="#throttle-notches" title="Link to this heading"></a></h3>
-<p><em>Adjust the Throttle as percentage, or by a specific number of steps/notches</em></p>
+<h3><a class="toc-backref" href="#id44" role="doc-backlink">Throttle Notches</a><a class="headerlink" href="#throttle-notches" title="Link to this heading"></a></h3>
+<p>This preference is used to adjust the Throttle as percentage, or by a specific number of steps/notches.</p>
 <p>This preferences affects the display of the speed control of the throttle.</p>
+<p>Options are:</p>
+<ul class="simple">
+<li><p>Percentage</p></li>
+<li><p>8 steps</p></li>
+<li><p>28 steps</p></li>
+<li><p>128 steps</p></li>
+</ul>
 </section>
 <section id="stop-button-action">
-<h3><a class="toc-backref" href="#id41" role="doc-backlink">Stop Button Action</a><a class="headerlink" href="#stop-button-action" title="Link to this heading"></a></h3>
-<p><em>Choose what the Stop button does</em></p>
+<h3><a class="toc-backref" href="#id45" role="doc-backlink">Stop Button Action</a><a class="headerlink" href="#stop-button-action" title="Link to this heading"></a></h3>
+<p>This preference is used to choose what the <span class="guilabel">Stop</span> button does.</p>
 <p>Options are:</p>
 <ul>
 <li><p>Throttle to Zero</p>
@@ -1210,23 +1236,35 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 <p>These stop options allow the user to control the deceleration of their train in a variety of ways when using braking. The user can choose to use the <abbr title="Semi-Realistic Throttle">SRT</abbr> momentum and braking, or choose to use the decoder momentum and braking. The advantage of the later approach for some users will be that the sound production of a sound decoder that is determined by the momentum/speed in the decoder is fully preserved.</p>
 </section>
 <section id="number-of-brake-steps">
-<h3><a class="toc-backref" href="#id42" role="doc-backlink">Number of Brake Steps</a><a class="headerlink" href="#number-of-brake-steps" title="Link to this heading"></a></h3>
-<p><em>Adjust the number of sets in the Brake Slider</em></p>
+<h3><a class="toc-backref" href="#id46" role="doc-backlink">Number of Brake Steps</a><a class="headerlink" href="#number-of-brake-steps" title="Link to this heading"></a></h3>
+<p>This preference is used to adjust the number of steps for the Brake Slider.</p>
 <p>This preference affects the display of the Brake control.</p>
-<p>Note</p>
+<p>Options are:</p>
+<ul class="simple">
+<li><p>Percentage</p></li>
+<li><p>2 steps</p></li>
+<li><p>3 steps</p></li>
+<li><p>4 steps</p></li>
+<li><p>5 steps</p></li>
+<li><p>6 steps</p></li>
+<li><p>7 steps</p></li>
+<li><p>8 steps</p></li>
+<li><p>9 steps</p></li>
+</ul>
+<p>Note:</p>
 <ul class="simple">
 <li><p>The percentage Brake applied at each step is annotated on the brake view</p></li>
 <li><p>As clearly seen in the Percentage option, the amount of brake per step increases exponentially.</p></li>
 </ul>
 </section>
 <section id="maximum-brake-percentage">
-<h3><a class="toc-backref" href="#id43" role="doc-backlink">Maximum Brake Percentage</a><a class="headerlink" href="#maximum-brake-percentage" title="Link to this heading"></a></h3>
-<p><em>Adjust the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero</em></p>
+<h3><a class="toc-backref" href="#id47" role="doc-backlink">Maximum Brake Percentage</a><a class="headerlink" href="#maximum-brake-percentage" title="Link to this heading"></a></h3>
+<p>This preference is used to adjust the maximum percentage of the Brake slider. <em>(5-100%) 100%=immediate zero</em></p>
 <p>This preference sets the maximum amount of braking applied.</p>
 </section>
 <section id="disable-the-air-reservoir">
-<h3><a class="toc-backref" href="#id44" role="doc-backlink">Disable the Air Reservoir</a><a class="headerlink" href="#disable-the-air-reservoir" title="Link to this heading"></a></h3>
-<p><em>If checked the fill state of the air reservoir and air will not impact available brakes</em></p>
+<h3><a class="toc-backref" href="#id48" role="doc-backlink">Disable the Air Reservoir</a><a class="headerlink" href="#disable-the-air-reservoir" title="Link to this heading"></a></h3>
+<p>If this preference is checked, the fill state of the air reservoir and air will not impact available brakes.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <blockquote>
@@ -1235,8 +1273,8 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </div>
 </section>
 <section id="rate-the-air-brakes-refresh">
-<h3><a class="toc-backref" href="#id45" role="doc-backlink">Rate the air brakes refresh</a><a class="headerlink" href="#rate-the-air-brakes-refresh" title="Link to this heading"></a></h3>
-<p><em>Adjust the rate that the Air Brakes will refresh/refill (in milliseconds). Smaller is faster.</em></p>
+<h3><a class="toc-backref" href="#id49" role="doc-backlink">Rate the air brakes refresh</a><a class="headerlink" href="#rate-the-air-brakes-refresh" title="Link to this heading"></a></h3>
+<p>This preference is used to adjust the rate that the Air Brakes will refresh/refill (in milliseconds). <em>Smaller is faster.</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <blockquote>
@@ -1245,9 +1283,21 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </div>
 </section>
 <section id="number-of-load-steps">
-<h3><a class="toc-backref" href="#id46" role="doc-backlink">Number of Load Steps</a><a class="headerlink" href="#number-of-load-steps" title="Link to this heading"></a></h3>
-<p><em>Adjust the number of steps in the Load Slider</em></p>
+<h3><a class="toc-backref" href="#id50" role="doc-backlink">Number of Load Steps</a><a class="headerlink" href="#number-of-load-steps" title="Link to this heading"></a></h3>
+<p>This preference is used to adjust the number of steps in the Load Slider.</p>
 <p>This preference affects the display of the Load control.</p>
+<p>Options are:</p>
+<ul class="simple">
+<li><p>Percentage</p></li>
+<li><p>2 steps</p></li>
+<li><p>3 steps</p></li>
+<li><p>4 steps</p></li>
+<li><p>5 steps</p></li>
+<li><p>6 steps</p></li>
+<li><p>7 steps</p></li>
+<li><p>8 steps</p></li>
+<li><p>9 steps</p></li>
+</ul>
 <p>Note</p>
 <ul class="simple">
 <li><p>The Load applied at each step is annotated on the Load view</p></li>
@@ -1255,14 +1305,19 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </ul>
 </section>
 <section id="maximum-load-percentage">
-<h3><a class="toc-backref" href="#id47" role="doc-backlink">Maximum Load Percentage</a><a class="headerlink" href="#maximum-load-percentage" title="Link to this heading"></a></h3>
-<p><em>Adjust maximum percentage of the Load Slider. (100-2000%) 100% = loco alone</em></p>
+<h3><a class="toc-backref" href="#id51" role="doc-backlink">Maximum Load Percentage</a><a class="headerlink" href="#maximum-load-percentage" title="Link to this heading"></a></h3>
+<p>This preference is used to adjust maximum percentage of the Load Slider. <em>(100-2000%) 100% = loco alone</em></p>
 <p>This preference sets the maximum amount of Load applied.</p>
 </section>
 <section id="decoder-brake-type">
-<h3><a class="toc-backref" href="#id48" role="doc-backlink">Decoder Brake Type</a><a class="headerlink" href="#decoder-brake-type" title="Link to this heading"></a></h3>
-<p><em>Activate the Brake functions on the decoder</em></p>
+<h3><a class="toc-backref" href="#id52" role="doc-backlink">Decoder Brake Type</a><a class="headerlink" href="#decoder-brake-type" title="Link to this heading"></a></h3>
+<p>This preference is used to select if you wish to activate the Brake functions on the decoder.</p>
 <p>This preference allows the user to turn on the decoder activation features of the <abbr title="Semi-Realistic Throttle">SRT</abbr> Brake function.</p>
+<p>Options are:</p>
+<ul class="simple">
+<li><p>None</p></li>
+<li><p>3 Decoder Brake Levels</p></li>
+</ul>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <blockquote>
@@ -1271,48 +1326,48 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </div>
 </section>
 <section id="decoder-low-function-number-s">
-<h3><a class="toc-backref" href="#id49" role="doc-backlink">Decoder Low Function Number(s)</a><a class="headerlink" href="#decoder-low-function-number-s" title="Link to this heading"></a></h3>
-<p><em>Which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)</em></p>
+<h3><a class="toc-backref" href="#id53" role="doc-backlink">Decoder Low Function Number(s)</a><a class="headerlink" href="#decoder-low-function-number-s" title="Link to this heading"></a></h3>
+<p>This preference is used to define which Decoder Function(s) to activate at Low Brake Value. <em>(-1 to ignore)</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking above.</p>
 </div>
 </section>
 <section id="decoder-low-brake-value-percent">
-<h3><a class="toc-backref" href="#id50" role="doc-backlink">Decoder Low Brake Value (Percent)</a><a class="headerlink" href="#decoder-low-brake-value-percent" title="Link to this heading"></a></h3>
-<p><em>What Percentage Brake to activate the Low Function(s)</em></p>
+<h3><a class="toc-backref" href="#id54" role="doc-backlink">Decoder Low Brake Value (Percent)</a><a class="headerlink" href="#decoder-low-brake-value-percent" title="Link to this heading"></a></h3>
+<p>This preference is used to define at what <em>Percentage Brake</em> to activate the Low Function(s).</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#decoder-integration">Decoder Integration</a> for the description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking.</p>
 </div>
 </section>
 <section id="decoder-mid-function-number-s">
-<h3><a class="toc-backref" href="#id51" role="doc-backlink">Decoder Mid Function Number(s)</a><a class="headerlink" href="#decoder-mid-function-number-s" title="Link to this heading"></a></h3>
-<p><em>Which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)</em></p>
+<h3><a class="toc-backref" href="#id55" role="doc-backlink">Decoder Mid Function Number(s)</a><a class="headerlink" href="#decoder-mid-function-number-s" title="Link to this heading"></a></h3>
+<p>This preference is used to define which Decoder Function(s) to activate at Mid Brake Value. <em>(-1 to ignore)</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#decoder-integration">Decoder Integration</a> for the description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking.</p>
 </div>
 </section>
 <section id="decoder-mid-brake-value-percent">
-<h3><a class="toc-backref" href="#id52" role="doc-backlink">Decoder Mid Brake Value (Percent)</a><a class="headerlink" href="#decoder-mid-brake-value-percent" title="Link to this heading"></a></h3>
-<p><em>What Percentage Brake to activate the Mid Function(s)</em></p>
+<h3><a class="toc-backref" href="#id56" role="doc-backlink">Decoder Mid Brake Value (Percent)</a><a class="headerlink" href="#decoder-mid-brake-value-percent" title="Link to this heading"></a></h3>
+<p>This preference is used to define at what <em>Percentage Brake</em> to activate the Mid Function(s).</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#decoder-integration">Decoder Integration</a> for the description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking.</p>
 </div>
 </section>
 <section id="decoder-high-function-number-s">
-<h3><a class="toc-backref" href="#id53" role="doc-backlink">Decoder High Function Number(s)</a><a class="headerlink" href="#decoder-high-function-number-s" title="Link to this heading"></a></h3>
-<p><em>Which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)</em></p>
+<h3><a class="toc-backref" href="#id57" role="doc-backlink">Decoder High Function Number(s)</a><a class="headerlink" href="#decoder-high-function-number-s" title="Link to this heading"></a></h3>
+<p>This preference is used to define which Decoder Function(s) to activate at High Brake Value. <em>(-1 to ignore)</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#decoder-integration">Decoder Integration</a> for the description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking.</p>
 </div>
 </section>
 <section id="decoder-high-brake-value-percent">
-<h3><a class="toc-backref" href="#id54" role="doc-backlink">Decoder High Brake Value (Percent)</a><a class="headerlink" href="#decoder-high-brake-value-percent" title="Link to this heading"></a></h3>
-<p><em>What Percentage Brake to activate the High Function(s)</em></p>
+<h3><a class="toc-backref" href="#id58" role="doc-backlink">Decoder High Brake Value (Percent)</a><a class="headerlink" href="#decoder-high-brake-value-percent" title="Link to this heading"></a></h3>
+<p>This preference is used to define at what <em>Percentage Brake</em> to activate the High Function(s).</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="#decoder-integration">Decoder Integration</a> for the description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking.</p>
@@ -1321,7 +1376,7 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 </section>
 </section>
 <section id="example-cases">
-<h2><a class="toc-backref" href="#id33" role="doc-backlink">Example Cases</a><a class="headerlink" href="#example-cases" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id37" role="doc-backlink">Example Cases</a><a class="headerlink" href="#example-cases" title="Link to this heading"></a></h2>
 <p>by <em>John Geddes</em></p>
 <p>The following cases are provided as examples of how the <abbr title="Semi-Realistic Throttle">SRT</abbr> can be used. The hope is that they will provide guidance to other <abbr title="Semi-Realistic Throttle">SRT</abbr> users in how they might use the <abbr title="Semi-Realistic Throttle">SRT</abbr>.</p>
 <p>The set up for these cases was:</p>
@@ -1371,14 +1426,14 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
 <p>If the operator wishes to put the loco into a coasting-like sound, the operator can activate the Stop button which will immediately send a zero speed command to the decoder. This brings the loco sound into a coast mode (at least for LokSound decoders). The remaining deceleration can be controlled by the standard (brake) functions of the decoder or if they have been set up in the <abbr title="Semi-Realistic Throttle">SRT</abbr> Decoder Brake Type function, by use of the <abbr title="Semi-Realistic Throttle">SRT</abbr> Brake slider.</p>
 <p>In this way, an operator can get the best of both worlds - a dynamic throttle controlled load and still get excellent advantage of the built-in sound features of the loco decoder.</p>
 <section id="general-note-decoders">
-<h3><a class="toc-backref" href="#id34" role="doc-backlink">General Note - Decoders</a><a class="headerlink" href="#general-note-decoders" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id38" role="doc-backlink">General Note - Decoders</a><a class="headerlink" href="#general-note-decoders" title="Link to this heading"></a></h3>
 <p>The <abbr title="Semi-Realistic Throttle">SRT</abbr> is not designed to precisely replicate decoder momentum and sound features. Rather it is designed to be decoder independent and to be flexible enough to complement a variety of non-sound and sound decoders in a variety of operating scenarios.</p>
 <p>This discussion and testing has been done in relation to LokSound only because that is the decoder family that the author has access to and that the author is familiar with. The expectation is that the <abbr title="Semi-Realistic Throttle">SRT</abbr> will provide similar benefits and opportunities for users of other decoders.</p>
 <p>LokSound users will recognise that the <abbr title="Semi-Realistic Throttle">SRT</abbr> Load and Brake features have an approximate similarity with the Drive Hold feature. Both can be used to simulate the behaviour of loaded trains. There is no doubt that the Drive Hold feature gives the operator complete control of movement and sound. In a way, the <abbr title="Semi-Realistic Throttle">SRT</abbr> Load and Brake features can be considered as being a form of approximate “hands-free” equivalent.</p>
 <p>It goes without saying that operators experienced with using Drive Hold can get better control of loco movement and sound.</p>
 </section>
 <section id="conclusion">
-<h3><a class="toc-backref" href="#id35" role="doc-backlink">Conclusion</a><a class="headerlink" href="#conclusion" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id39" role="doc-backlink">Conclusion</a><a class="headerlink" href="#conclusion" title="Link to this heading"></a></h3>
 <p>Based on the above experiments, there is not a major negative impact of the <abbr title="Semi-Realistic Throttle">SRT</abbr> Load and Brake features on the sound performance of LokSound V4 decoders. This is not to say that there is no impact, but for most users I expect that it will be quite “livable”. For those operators willing to accept some sound compromise, the <abbr title="Semi-Realistic Throttle">SRT</abbr> provides a very easy mechanism to simulate heavy trains.</p>
 <p><span class="hand-written">John Geddes</span></p>
 </section>
@@ -1390,7 +1445,7 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="interface.html" class="btn btn-neutral float-left" title="User Interface" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="wifi_issues.html" class="btn btn-neutral float-right" title="WiFi Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="gamepads.html" class="btn btn-neutral float-right" title="Gamepads" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -1403,7 +1458,7 @@ For a huge, fully loaded, coal train you might set it at 1000%.</p>
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f34ee48c2e0>
+    <jinja2.runtime.BlockReference object at 0x7f09bc944910>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

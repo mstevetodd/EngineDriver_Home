@@ -33,7 +33,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Frequently Asked Questions" href="faq.html" />
+    <link rel="next" title="WiFi Issues" href="wifi_issues.html" />
     <link rel="prev" title="ESU MobileControl II" href="esu_mcii.html" />
  
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -316,6 +316,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="semi-realistic-throttle.html#basic-operation">Basic Operation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-normal-throttle">Example: Normal throttle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-srt-throttle-with-decoder-momentum">Example: SRT throttle with decoder momentum</a></li>
+<li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-srt-throttle-with-no-or-little-decoder-momentum">Example: SRT throttle with no, or little, decoder momentum</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="semi-realistic-throttle.html#srt-detailed-operation"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#a-throttle">a) Throttle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#b-direction">b) Direction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#c-load">c) Load</a></li>
@@ -359,14 +365,6 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
-</ul>
-</li>
 <li class="toctree-l2"><a class="reference internal" href="gamepads.html">Gamepads</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="gamepads.html#connecting-your-gamepad">Connecting your Gamepad</a></li>
 <li class="toctree-l3"><a class="reference internal" href="gamepads.html#running-engine-driver-with-the-gamepad">Running Engine Driver with the Gamepad</a></li>
@@ -393,6 +391,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#children-s-timer">Children’s Timer</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="faq.html#connecting-wifi-and-withrottle">Connecting - Wifi and WiThrottle</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="faq.html#connecting-to-different-servers-railroads">Connecting to different servers/railroads</a></li>
@@ -415,9 +421,10 @@
 <li class="toctree-l4"><a class="reference internal" href="faq.html#locos-in-the-roster-not-showing">Locos in the roster not showing</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-connection-screen">Changing the connection screen</a></li>
-<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-turnouts-screen">Changing the turnouts screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-connection-screen">Changing the Connection screen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#changing-the-turnouts-points-screen">Changing the turnouts/Points screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="faq.html#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="faq.html#dcc-ex-features">DCC-EX Features</a></li>
 </ul>
 </li>
 </ul>
@@ -961,7 +968,7 @@ Engine Driver provides options (preferences) that will activate the functions on
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="esu_mcii.html" class="btn btn-neutral float-left" title="ESU MobileControl II" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="faq.html" class="btn btn-neutral float-right" title="Frequently Asked Questions" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="wifi_issues.html" class="btn btn-neutral float-right" title="WiFi Issues" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -974,7 +981,7 @@ Engine Driver provides options (preferences) that will activate the functions on
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f34ef5cded0>
+    <jinja2.runtime.BlockReference object at 0x7f09bcf4c160>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
