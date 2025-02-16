@@ -815,7 +815,7 @@ Acceleration Speed Step Repeat Delay
 
 This preference adjusts how long between acceleration speed steps repeats (in milliseconds). 
 
-Smaller is faster.
+*Smaller is faster.*
 
 * This setting (combined with the Speed Step Amount) is used to provide a basic level of |SRT| create momentum to loco movement. 
 * Think of it providing a smoothing function to the speed control (given that the Load settings will be the primary means of determining major impacts on train performance)
@@ -830,7 +830,7 @@ Deceleration Speed Step Repeat Delay
 
 This preference adjusts how long between deceleration speed steps repeats (in milliseconds). 
 
-Smaller is faster.
+*Smaller is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -842,7 +842,7 @@ Speed Step Amount
 
 This preference adjusts how much the actual speed step jumps each step to the target speed. 
 
-Larger is faster.
+*Larger is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -922,7 +922,14 @@ Notes:
 Maximum Brake Percentage
 ''''''''''''''''''''''''
 
-This preference adjusts the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero
+This preference adjusts the maximum percentage of the Brake slider. *(5-100%) 100%=immediate zero*
+
+Note: Setting the Maximum Brake to 100% will result in the unrealistic speed drop to zero almost immediately, if the Brake is dragged to the top of the slider.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Disable the Air Reservoir
 '''''''''''''''''''''''''
@@ -939,7 +946,7 @@ Rate the air brakes refresh
 
 This preference adjusts the rate that the Air Brakes will refresh/refill (in milliseconds). 
 
-Smaller is faster.
+*Smaller is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -964,7 +971,9 @@ Notes:
 Maximum Load Percentage
 '''''''''''''''''''''''
 
-This preference adjusts the maximum percentage of the Load Slider. (100-2000%) 100% = loco alone
+This preference adjusts the maximum percentage of the Load Slider. 
+
+*(100-2000%) 100% = loco alone*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -984,7 +993,9 @@ This preference sets wehther or not to activate the Brake functions on the decod
 Decoder Low Function Number(s)
 ''''''''''''''''''''''''''''''
 
-This preference sets which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)
+This preference sets which Decoder Function(s) to activate at Low Brake Value. 
+
+*(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1004,7 +1015,9 @@ This preference sets what Percentage Brake to activate the Low Function(s)
 Decoder Mid Function Number(s)
 ''''''''''''''''''''''''''''''
 
-This preference sets which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)
+This preference sets which Decoder Function(s) to activate at Mid Brake Value. 
+
+*(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1024,7 +1037,9 @@ This preference sets what Percentage Brake to activate the Mid Function(s)
 Decoder High Function Number(s)
 '''''''''''''''''''''''''''''''
 
-This preference sets which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)
+This preference sets which Decoder Function(s) to activate at High Brake Value. 
+
+*(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title

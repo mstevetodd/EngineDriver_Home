@@ -18,12 +18,12 @@ The Engine Driver Semi-Realistic Throttle (SRT) provides the operator with a set
 
 It does so by adjusting the speed commands sent to the locomotive. To be clear, the |SRT| does not change any of the decoder CV settings. It has been designed to work with all brands of DCC and Sound decoders with or without programmed decoder momentum or brakes.
 
+Key |SRT| Controls/Displays
+-----------------------------
+
 .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png
    :scale: 10 %
    :align: right
-
-Key |SRT| Controls/Displays
------------------------------
 
 * Loco **Select**
 * **Target and Commanded Speed Display** - both the operator commanded speed and the current speed command sent to the loco are displayed
@@ -39,10 +39,8 @@ Key |SRT| Controls/Displays
 
 * **Emergency Stop** button - command the actual speed immediately to zero
 
-----
-
 Basic Operation
-===============
+=====================
 
 The |SRT| modifies the speed commands sent to the loco based on the |SRT| operator controls (Load, Speed, Brake). The |SRT| utilises throttle speed control to simulate momentum, train loading, and brakes.
 
@@ -74,7 +72,7 @@ Example: SRT throttle with no, or little, decoder momentum
 * The |SRT| moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the |SRT| with the result that the loco sees speed commands that increase and decrease  gradually over time.
 
 
-|SRT| - Detailed Operation
+Detailed Operation
 ===========================
 
 The primary difference between the |SRT| and a normal throttle is that the |SRT| simulates momentum inside the Engine Driver App, regardless of any momentum and brake settings inside the decoder.  
@@ -168,9 +166,9 @@ In Summary:
 
 * While the line is filling, the brakes are still effectively partly applied.  As a result you can not immediately turn the brakes off. They take time to turn off.
 
-The Air Brakes slider can be set to show either a percentage slider or a slider with a distinct number of steps/notches.  
+The Air Brakes slider can be set to show either a :ref:`percentage slider or a slider with a distinct number of steps/notches <operation/semi-realistic-throttle:Number of Brake Steps>`.  
 
-The Maximum Brake can be set in the preferences. (The Default is 70%) The Brake slider is exponential in scale, so from notch 0 to 1 to 2 only small increases of brake are applied, but by the final notches, huge changes are applied.
+The :ref:`Maximum Brake <operation/semi-realistic-throttle:Maximum Brake Percentage>` can be set in the preferences. (The Default is 70%) The Brake slider is exponential in scale, so from notch 0 to 1 to 2 only small increases of brake are applied, but by the final notches, huge changes are applied.
 
 Note: Setting the Maximum Brake in the preferences to 100% will result in the unrealistic speed drop to zero almost immediately, if the Brake is dragged to the top of the slider.
 
@@ -206,6 +204,10 @@ Braking - With Decoder Brake Functions
 
 The |SRT| also includes a feature that allows the |SRT| Braking control to be integrated with decoder braking (and other) functions in a very flexible manner. If the Decoder Brake type is activated in the `Decoder Brake Type preference setting <Decoder BrakeType>`_, then the |SRT| Brake control can be configured to trigger up to four decoder functions at each of three brake thresholds.
 
+.. image:: ../_static/images/semi-realistic-throttle/brake-thresholds.png
+   :scale: 60 %
+   :align: right
+
 The three brake thresholds are referred to a Low, Mid and High. 
 
 * The Low state is triggered whenever 
@@ -219,10 +221,6 @@ The three brake thresholds are referred to a Low, Mid and High.
 * The High state is triggered whenever
 
    * The Brake Control \> the defined High threshold.
-
-.. image:: ../_static/images/semi-realistic-throttle/brake-thresholds.png
-   :scale: 75 %
-   :align: center
 
 For each of the three thresholds, up to five decoder functions can be activated. These can be any decoder functions including obviously any decoder brake functions.
 
@@ -412,6 +410,8 @@ Maximum Load Percentage
 This preference is used to adjust maximum percentage of the Load Slider. *(100-2000%) 100% = loco alone*
 
 This preference sets the maximum amount of Load applied.
+
+Note: Setting the Maximum Brake to 100% will result in the unrealistic speed drop to zero almost immediately, if the Brake is dragged to the top of the slider.
 
 Decoder Brake Type
 ------------------
