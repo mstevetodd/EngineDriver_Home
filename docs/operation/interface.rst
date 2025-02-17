@@ -1135,32 +1135,63 @@ You can enter the loco's DCC address (verify short or long), and press :guilabel
 Select from Sever Roster
 """"""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: Select from Sever Roster
-
 Shown if you select ``Server Roster`` in the `Selection Method`_.
 
 If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
 For this to be possible, the Loco you want to control needs to be in the |ROSTER| of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support a |ROSTER|.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a |ROSTER|.
 
-  Filter
+Filter the Roster
+''''''''''''''''''
 
-  Icons
+The 'Roster' can be filtered by entering text in the ``Contains...`` field.
 
-  Icons - adding a local image
+As you type each character the filter will be applied and the list will be reduce to only those entries that contain the text you have entered.
 
-  Long Press to see details... (and add icon)
+The filter is case insensitive.
+
+
+Download to the Roster
+'''''''''''''''''''''''
+
+By clicking the :guilabel:`Download` button, all locos in the Server roster will be drawn in the 'Recent List' in |ED|.  
+
+For this the filter is ignored. i.e. the Whole Server Roster is downloaded, not just what you can see on screen.
+
+Note that if there are more locos in the Roster than, the :ref:`configuration/preferences:maximum recent locos` preference value, the Maximum Recent Locos will be automatically increased the number in the roster + 1.
+
+Icons / Loco Images
+''''''''''''''''''''
+
+**From the Server**
+
+|ED| is designed to retrieve the Loco Images from JMRI if provided.  To do this, JMRI's Web Server must be enabled :menuselection:`DecoderPro --> Actions --> Start Web Server`
+
+The images will be loaded gradually, after |ED| connects to the server and you use the `Loco Select Screen`_ for the first time.
+
+Each time you Acquire a loco, any icon is cached in |ED|, so will load faster that others the next time you use |ED|.
+
+**Adding a local image**
+
+For locos in a Roster from a non-JMRI |SERVER|, that does not support loco icons, you can add a local image as an icon for the entry.
+
+Long Press on a Roster Entry you will see
+
+* A :guilabel:`New Image` button
+* The existing image if there is one
+* A :guilabel:`Remove` button, if there is an existing image
+* A :guilabel:`Save` button
+
+AS long as you have granted the :ref:`about/privacy-policy:optional permissions` you will be able to use the :guilabel:`New Image` button to find and select an image stored on your device/phone to use as a Loco Icon.
+
+.. warning::
+
+  The size of the image must be relatively small. 
+
+  If you select an image but nothing happens, try reducing the size the image, then try again.
 
 Select from Recent Locos List
 """""""""""""""""""""""""""""
-
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: Select from Recent Locos List
 
 Shown if you select ``Recent Locos`` in the `Selection Method`_.
 
@@ -1168,28 +1199,49 @@ Shown if you select ``Recent Locos`` in the `Selection Method`_.
 
 If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
 
-  Icons - From |ROSTER|
+Remove Recent Loco entries
+'''''''''''''''''''''''''''
 
-  Long Press to see details...
+To remove a **single entry** from the recent Locos list, swipe right on that entry.
 
-  Swipe to remove entry...
+To remove all entries, click the :guilabel:`CLear List` button.
 
-Select from Recent Consists List
-""""""""""""""""""""""""""""""""
+Naming a Recent Loco
+''''''''''''''''''''
+
+For locos that have bee acquired by DCC Address, and are now in the Recent Locos list, these locos can be renamed.
+
+Long Press on the entry in the Recent Locos list, and enter a new name.
+
+Select from Recent Consists (MU) list
+""""""""""""""""""""""""""""""""""""""
 
 .. todo:: 
   :class: todo-float-right
   
    HIGH: Select from Recent Consists List
 
-Shown if you select ``Recent Consists`` in the `Selection Method`_.
+Shown if you select ``Recent Consists (MU)`` in the `Selection Method`_.
 
-Selecting a |consist| in the Recent Consists list will automatically add all the remembered locos, including their facing.
+Selecting a |consist| in the Recent Consists (MU) list will automatically add all the remembered locos, including their facing.
 
-  Swipe to remove entry...
+Naming a Recent Consist (MU)
+''''''''''''''''''''''''''''
 
-Select Loco On Screen Buttons
-"""""""""""""""""""""""""""""
+For all Recent Consists (MUs) these Consists (MUs) can be renamed.
+
+Long Press on the entry in the Recent Consist (MU) list, and enter a new name.
+
+Remove Recent Consists (MU) Entries
+''''''''''''''''''''''''''''''''''''
+
+To remove a **single entry** from the recent Consists (MU) list, swipe right on that entry.
+
+To remove all entries, click the :guilabel:`CLear List` button.
+
+
+Select Loco - Core On Screen Buttons
+"""""""""""""""""""""""""""""""""""""
 
 Acquire
 '''''''
