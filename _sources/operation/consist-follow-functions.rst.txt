@@ -63,8 +63,6 @@ By default DCC Functions are only sent to the first loco in a |consist| train.
 
 There are a number of preferences, explained in this document, that can be used to override this default behaviour.
 
-----
-
 Terminology
 -----------
 
@@ -124,8 +122,6 @@ So rather than remapping all locos in a |ROSTER| to a standard function assignme
 
 In the case of consists, Function Label Matching can be used to associate a given Throttle Function to a Loco Function via its match to its |ROSTER| Entry Function Label so that a particular function (or functions) can be activated on all locos in a consist.  
 
-----
-
 Default Function Label Preferences
 ----------------------------------
 
@@ -160,8 +156,6 @@ You can use this preference to limit the Throttle Function Labels shown for when
 * Special Partial - Contains Only 
 
 *See below for the meaning of these.*
-
-----
 
 Function Label Matching
 -----------------------
@@ -201,7 +195,7 @@ The following additional preferences are enabled if the 'Simple Text Matching (o
 
 This form of |ed| consisting is very simple to use and covers a large majority of situations in which the key functions restricted to the lead loco are Lights/Horn/Bell and the remainder are not propagated (or not used).
 
-|HR-DASHED|
+|HR-DOTTED|
 
 'Complex' Matching
 ~~~~~~~~~~~~~~~~~~
@@ -215,7 +209,7 @@ This form of |ed| consist function matching allows you to specify the labels of 
 * The loco (or locos in a consist) must be selected from the |ROSTER|.
 * Some or all the rules need to be configured
 
-|HR-DASHED|
+|HR-DOTTED|
 
 The three 'Special' Matching Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -281,9 +275,7 @@ e.g.
 * "Light" (the base) will partially match to "Headlight" or "Ditch Light" (the compared).
 * "Headlight" (the base) WILL NOT partially match to "Light" (the compared).
 
-|HR-HEAVY|
-
-|HR-HEAVY|
+|HR-DOUBLE|
 
 Consist Function Follow Preferences - Detailed Reference
 ========================================================
@@ -479,3 +471,4 @@ Note: If 'Use Default function labels' is enabled, 'Special…' will also apply 
   
   LOW: 'Special Partial - Contains Only' Option
 
+|FORCE-BREAK|

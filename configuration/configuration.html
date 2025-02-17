@@ -10,7 +10,7 @@
   <title>Configuring Engine Driver &mdash; Engine Driver - Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=f24c1fd7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=52c7dde7" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -93,7 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../operation/operation.html">Detailed Instructions <br /> <span style="font-size: 75%"> Operating Engine Driver </span></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../operation/operation.html#connecting">Connecting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-engine-driver-to-the-server">Connecting Engine Driver to the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr></a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#ip-address-and-port">IP Address and Port</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#discovered-servers-list">Discovered Servers List</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#recent-server-list">Recent Server List</a></li>
@@ -296,7 +296,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#dcc-ex-screen">DCC-EX Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#withrottle-programming-on-the-main-screen">WiThrottle - Programming on the Main Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#gamepad-test-screen">Gamepad Test Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#view-log-screen">View Log Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#view-log-screen">View Log Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../operation/interface.html#saving-a-log-file">Saving a log file</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#about-screen">About Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#reconnecting-screen">Reconnecting Screen</a></li>
 </ul>
@@ -461,7 +464,12 @@
 <li class="toctree-l3"><a class="reference internal" href="configuration_withrottle.html#wifitrax-for-nce">WifiTrax (for NCE)</a></li>
 </ul>
 </li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuring Engine Driver</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Configuring Engine Driver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preferences">Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-functions">Configuring Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#configuring-in-phone-loco-sounds-ipls">Configuring In Phone Loco Sounds (IPLS)</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="preferences_index.html">Detailed Information <br /> <span style="font-size: 75%"> Preferences &amp; Configuration </span></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="preferences.html">Preferences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="preferences.html#advanced-preferences">Advanced Preferences</a><ul>
@@ -822,6 +830,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#gamepads">Gamepads</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#turnouts-points-and-routes">Turnouts/Points and Routes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#default-functions">Default Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#dcc-ex-native-support">DCC-EX Native Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#in-phone-loco-sounds-ipls">In Phone Loco Sounds (IPLS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#import-export-reset-preferences">Import/Export/Reset Preferences</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../videos/index.html#server-specific-preferences">Server Specific Preferences</a></li>
 </ul>
@@ -851,10 +861,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary / References / Copyright</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary / Copyright / Screenshots</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#glossary">Glossary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#references">References</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#attribution">Attribution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#screenshots">Screenshots</a></li>
 </ul>
 </li>
@@ -899,9 +909,23 @@
   <section id="configuring-engine-driver">
 <h1>Configuring Engine Driver<a class="headerlink" href="#configuring-engine-driver" title="Link to this heading"></a></h1>
 <hr class="docutils" />
-<a class="reference internal image-reference" href="../_images/menu_throttle.png"><img alt="../_images/menu_throttle.png" class="align-right" src="../_images/menu_throttle.png" style="width: 112.4px; height: 239.20000000000002px;" /></a>
+<aside class="sidebar-on-this-page sidebar">
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On This Page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#preferences" id="id1">Preferences</a></p></li>
+<li><p><a class="reference internal" href="#configuring-functions" id="id2">Configuring Functions</a></p></li>
+<li><p><a class="reference internal" href="#configuring-in-phone-loco-sounds-ipls" id="id3">Configuring In Phone Loco Sounds (IPLS)</a></p></li>
+</ul>
+</nav>
+</aside>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> is highly configurable.</p>
-<p>Most configuration options are found in the <em>Preferences</em> which is accessed via the overflow menu which is normally three dots (⁞) or three bars (≡).</p>
+<p>Most of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> configuration options are found in the <a class="reference internal" href="../operation/interface.html#preferences-screen"><span class="std std-ref">Preferences Screen</span></a> which is accessed via the overflow menu which is normally three dots (⁞) or three bars (≡).</p>
+<p>While there are some preferences for configuring Functions in the <a class="reference internal" href="../operation/interface.html#preferences-screen"><span class="std std-ref">Preferences Screen</span></a>, most are found in three specific Function screens.</p>
+<p>Similarly, configuring <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> <a class="reference internal" href="ipls.html"><span class="doc">In Phone Loco Sounds</span></a> (IPLS) feature is found on its own <a class="reference internal" href="../operation/interface.html#in-phone-loco-sounds-screen"><span class="std std-ref">In Phone Loco Sounds Screen</span></a>.</p>
+<section id="preferences">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Preferences</a><a class="headerlink" href="#preferences" title="Link to this heading"></a></h2>
+<a class="reference internal image-reference" href="../_images/menu_throttle.png"><img alt="../_images/menu_throttle.png" class="align-right" src="../_images/menu_throttle.png" style="width: 112.4px; height: 239.20000000000002px;" /></a>
 <p>Some of the <em>many</em> Preferences include:</p>
 <ul class="simple">
 <li><p>You can change the appearance and behaviour of the <a class="reference internal" href="../operation/interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a></p></li>
@@ -917,7 +941,10 @@
 <div><p>See the <a class="reference internal" href="preferences.html"><span class="doc">Preferences</span></a> page for a full list of the available preferences.</p>
 </div></blockquote>
 </div>
-<p>The <em>Functions buttons</em> are changed via the <code class="docutils literal notranslate"><span class="pre">Function</span> <span class="pre">Buttons</span></code> menu option: <span class="menuselection">Menu ‣ Functions Buttons</span></p>
+</section>
+<section id="configuring-functions">
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Configuring Functions</a><a class="headerlink" href="#configuring-functions" title="Link to this heading"></a></h2>
+<p>The <em>Functions buttons</em> are changed via the <a class="reference internal" href="../operation/interface.html#id15"><span class="std std-ref">Function Defaults Screen</span></a>, the <a class="reference internal" href="../operation/interface.html#function-latching-settings-screen"><span class="std std-ref">Function Latching Settings Screen</span></a> screen or the <a class="reference internal" href="../operation/interface.html#dcc-ex-function-settings-screen"><span class="std std-ref">DCC-EX Function Settings Screen</span></a> screen.  These are accessed from the menu.</p>
 <p>Some of the Function button preferences include:</p>
 <ul class="simple">
 <li><p>You can set the default labels and function numbers to display.</p></li>
@@ -930,6 +957,17 @@
 <div><p>See the <a class="reference internal" href="functions.html"><span class="doc">Function Buttons</span></a> page for more information.</p>
 </div></blockquote>
 </div>
+</section>
+<section id="configuring-in-phone-loco-sounds-ipls">
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">Configuring In Phone Loco Sounds (IPLS)</a><a class="headerlink" href="#configuring-in-phone-loco-sounds-ipls" title="Link to this heading"></a></h2>
+<p>The <a class="reference internal" href="ipls.html"><span class="doc">In Phone Loco Sounds</span></a> (IPLS) feature are changed via the <a class="reference internal" href="../operation/interface.html#in-phone-loco-sounds-screen"><span class="std std-ref">In Phone Loco Sounds Screen</span></a>.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<blockquote>
+<div><p>See the <a class="reference internal" href="ipls.html"><span class="doc">In Phone Loco Sounds (IPLS)</span></a> page for more information.</p>
+</div></blockquote>
+</div>
+</section>
 </section>
 
 
@@ -950,7 +988,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd2f94478e0>
+    <jinja2.runtime.BlockReference object at 0x7f2c2d3b7fa0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

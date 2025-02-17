@@ -10,7 +10,7 @@
   <title>Contributing &mdash; Engine Driver - Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=f24c1fd7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=52c7dde7" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -33,7 +33,7 @@
     <script src="../_static/js/theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Glossary / References / Copyright" href="../glossary/index.html" />
+    <link rel="next" title="Glossary / Copyright / Screenshots" href="../glossary/index.html" />
     <link rel="prev" title="Changes / Updates" href="../changes/index.html" />
  
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -93,7 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="../operation/operation.html">Detailed Instructions <br /> <span style="font-size: 75%"> Operating Engine Driver </span></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../operation/operation.html#connecting">Connecting</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-to-the-wifi-network">Connecting to the WiFi network</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-engine-driver-to-the-withrottle-server">Connecting Engine Driver to the WiThrottle server</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../operation/operation.html#connecting-engine-driver-to-the-server">Connecting Engine Driver to the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr></a><ul>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#ip-address-and-port">IP Address and Port</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#discovered-servers-list">Discovered Servers List</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../operation/operation.html#recent-server-list">Recent Server List</a></li>
@@ -296,7 +296,10 @@
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#dcc-ex-screen">DCC-EX Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#withrottle-programming-on-the-main-screen">WiThrottle - Programming on the Main Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#gamepad-test-screen">Gamepad Test Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#view-log-screen">View Log Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#view-log-screen">View Log Screen</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../operation/interface.html#saving-a-log-file">Saving a log file</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#about-screen">About Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/interface.html#reconnecting-screen">Reconnecting Screen</a></li>
 </ul>
@@ -461,7 +464,12 @@
 <li class="toctree-l3"><a class="reference internal" href="../configuration/configuration_withrottle.html#wifitrax-for-nce">WifiTrax (for NCE)</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="../configuration/configuration.html">Configuring Engine Driver</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../configuration/configuration.html">Configuring Engine Driver</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration.html#preferences">Preferences</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration.html#configuring-functions">Configuring Functions</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../configuration/configuration.html#configuring-in-phone-loco-sounds-ipls">Configuring In Phone Loco Sounds (IPLS)</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="../configuration/preferences_index.html">Detailed Information <br /> <span style="font-size: 75%"> Preferences &amp; Configuration </span></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/preferences.html">Preferences</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/preferences.html#advanced-preferences">Advanced Preferences</a><ul>
@@ -822,6 +830,8 @@
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#gamepads">Gamepads</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#turnouts-points-and-routes">Turnouts/Points and Routes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#default-functions">Default Functions</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#dcc-ex-native-support">DCC-EX Native Support</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../videos/index.html#in-phone-loco-sounds-ipls">In Phone Loco Sounds (IPLS)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../videos/index.html#import-export-reset-preferences">Import/Export/Reset Preferences</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="../videos/index.html#server-specific-preferences">Server Specific Preferences</a></li>
 </ul>
@@ -851,10 +861,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary / References / Copyright</a><ul>
+<li class="toctree-l1"><a class="reference internal" href="../glossary/index.html">Glossary / Copyright / Screenshots</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#glossary">Glossary</a></li>
-<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#references">References</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#attribution">Attribution</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../glossary/index.html#screenshots">Screenshots</a></li>
 </ul>
 </li>
@@ -925,13 +935,13 @@
 <li><p>On GitHub</p>
 <ul>
 <li><p>Clone the JMRI/EngineDriver repository. <a class="reference external" href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">(See Cloning a repository in GitHub)</a></p></li>
-<li><p>Create a Personal Access Token that will allow you remotely update your repository.  See [<a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">here</a>] for details.   Copy the full code of the token somewhere as you will need it later.</p></li>
+<li><p>Create a Personal Access Token that will allow you remotely update your repository.  See [<a class="reference external" href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token">here</a>] for details. Copy the full code of the token somewhere as you will need it later.</p></li>
 </ul>
 </li>
 <li><p>Install <a class="reference external" href="https://developer.android.com/studio">Android Studio</a>.</p></li>
 <li><p>Open Android Studio <br />(If necessary, close any open project and restart, so you get the Welcome Wizard)</p></li>
 <li><p>Select <code class="docutils literal notranslate"><span class="pre">Check</span> <span class="pre">out</span> <span class="pre">project</span> <span class="pre">from</span> <span class="pre">Version</span> <span class="pre">control</span></code> -&gt; Git</p></li>
-<li><p>In the Clone Repository window, enter the Git Repository URL: <code class="docutils literal notranslate"><span class="pre">https://github.com/JMRI/EngineDriver</span></code>, -&gt; <code class="docutils literal notranslate"><span class="pre">Clone</span></code>.  <br /><em>Note this is the original repository, not your clone.</em></p></li>
+<li><p>In the Clone Repository window, enter the Git Repository URL: <code class="docutils literal notranslate"><span class="pre">https://github.com/JMRI/EngineDriver</span></code>, -&gt; <code class="docutils literal notranslate"><span class="pre">Clone</span></code>.  <br /><em>Note this is the ‘origin’ repository, not your clone.</em></p></li>
 <li><p>Open the project.</p></li>
 <li><p>Only if needed…</p>
 <ul>
@@ -953,7 +963,7 @@
 <p>To publish your changes:</p>
 <ul class="simple">
 <li><p>Android Studio, commit and push your changes to <em>your own</em> GitHub repository.. <br />To do this you will need to define a new remote <code class="docutils literal notranslate"><span class="pre">https://github.com/&lt;your</span> <span class="pre">name&gt;/EngineDriver</span></code></p></li>
-<li><p>Go to GitHub and issue a pull request for your branch to be pulled into the original repository. Once it’s merged in by one of the admins, your changes will go live!</p></li>
+<li><p>Go to GitHub and issue a Pull Request for your branch to be pulled into the <em>origin</em> repository. Once it’s merged in by one of the admins, your changes will go live!</p></li>
 </ul>
 </section>
 <section id="contributing-to-the-localisation-languages">
@@ -964,50 +974,52 @@
 </section>
 <section id="contributing-to-the-documentation">
 <h2><a class="toc-backref" href="#id6" role="doc-backlink">Contributing to the Documentation</a><a class="headerlink" href="#contributing-to-the-documentation" title="Link to this heading"></a></h2>
-<p>This documentation is open source and can be accessed on <a class="reference external" href="https://github.com/mstevetodd/EngineDriver_Home">github.com/mstevetodd/EngineDriver_Home</a></p>
-<p>All this documentation is done using <strong>reStructuredText</strong> and with Sphinx, for which you can find information on the official website: <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a>
+<p>This documentation web site is open source and can be accessed on <a class="reference external" href="https://github.com/mstevetodd/EngineDriver_Home">github.com/mstevetodd/EngineDriver_Home</a></p>
+<p>All this documentation is done using <strong>reStructuredText</strong> and with <strong>Sphinx</strong>, for which you can find information on the official website: <a class="reference external" href="https://docutils.sourceforge.io/rst.html">reStructuredText</a>
 and the <a class="reference external" href="https://www.sphinx-doc.org/en/master/usage/restructuredtext/basics.html">Sphinx</a> document builder tool website.
 <strong>reStructuredText</strong> is a markdown type language, for typesetting documents from websites to PDF or LaTeX documents.
 This Website is built upon this technology, so you should make yourself familiar with this by looking through the links provided.</p>
 <p>reStructuredText <a class="reference external" href="https://docutils.sourceforge.io/docs/user/rst/quickref.html">QuickReference Guide</a></p>
 <p>The steps listed here provide guidance on how to edit and preview changes to the documentation.</p>
 <ul class="simple">
-<li><p>You need to install a number of tools on you local machine:</p>
+<li><p>You need to install a number of tools on your local machine:</p>
 <ul>
 <li><p>An appropriate text editor. <br />For Windows we recommend the free <a class="reference external" href="https://code.visualstudio.com/">Visual Studio Code IDE (VSC)</a>.</p>
 <ul>
-<li><p>If using VSC, we recommend installing the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst">reStructuredText Syntax highlighting</a> extension.</p></li>
+<li><p>If using VSCode (VSC), we recommend installing the <a class="reference external" href="https://marketplace.visualstudio.com/items?itemName=trond-snekvik.simple-rst">reStructuredText Syntax highlighting</a> extension.</p></li>
 </ul>
 </li>
 <li><p>A version of Git. <br />For Windows we recommend the free <a class="reference external" href="https://desktop.github.com/">GitHub Desktop</a>.</p></li>
 <li><p>A current version of ‘Python 3’ (which also installs ‘pip’). <br />The Microsoft Store contains Python published by the Python Software Foundation for Windows.</p></li>
 </ul>
 </li>
-<li><p>Then use ‘pip’ to install the required packages; ‘sphinx’ and the theme ‘sphinx_rtd_theme’.  <br />Open and command prompt and enter:</p>
+<li><p>Then use ‘pip’ to install the required packages; ‘sphinx’ and the theme ‘sphinx_rtd_theme’.  <br />Open and <strong>command prompt</strong> and enter:</p>
 <ul>
 <li><p><code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">-r</span> <span class="pre">requirements.txt</span></code></p></li>
 </ul>
 </li>
 <li><p>On GitHub</p>
 <ul>
+<li><p>Create an account on Github, if you don’t already have one</p></li>
 <li><p>Clone the <code class="docutils literal notranslate"><span class="pre">https://enginedriver.mstevetodd.com</span></code> repository. <a class="reference external" href="https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository">(See Cloning a repository in GitHub)</a></p></li>
-<li><p>Open your repository ‘Settings’ (the gear icon), go to the ‘Pages’ section and change the ‘Branch’ to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">(root)</span></code>.</p></li>
+<li><p>Open your repository ‘Settings’ (the gear icon), go to the ‘Pages’ section and change the ‘Branch’ to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> <code class="docutils literal notranslate"><span class="pre">/</span> <span class="pre">(root)</span></code></p></li>
 <li><p>Your repository must be <code class="docutils literal notranslate"><span class="pre">public</span></code></p></li>
 </ul>
 </li>
 <li><p>On your PC</p>
 <ul>
-<li><p>Using GitHub Desktop, clone your repository to your local machine</p></li>
-<li><p>Edit the files in the <code class="docutils literal notranslate"><span class="pre">EngineDriver_Home/docs</span></code> folder</p></li>
-<li><p>Save, then check and preview your changes by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">github</span></code> from the root of the <code class="docutils literal notranslate"><span class="pre">EngineDriver_Home</span></code> folder. <a class="footnote-reference brackets" href="#makegithub" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <br />This must be done from <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> in Windows, not <code class="docutils literal notranslate"><span class="pre">PowerShell</span></code>. <br />If any warnings are reported, fix these and run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">github</span></code> again</p></li>
+<li><p>Using GitHub Desktop, clone your GitHub repository to your local machine</p></li>
+<li><p>Edit the files in the <code class="docutils literal notranslate"><span class="pre">EngineDriver_Home/docs</span></code> folder (using VSCode or any text editor)</p></li>
+<li><p>Save your changes (VSCode continuously saves as you type)</p></li>
+<li><p>Check and preview your changes by running <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">github</span></code> from the root of the <code class="docutils literal notranslate"><span class="pre">EngineDriver_Home</span></code> folder. <a class="footnote-reference brackets" href="#makegithub" id="id3" role="doc-noteref"><span class="fn-bracket">[</span>1<span class="fn-bracket">]</span></a> <br />This must be done from <code class="docutils literal notranslate"><span class="pre">cmd.exe</span></code> in Windows, not <code class="docutils literal notranslate"><span class="pre">PowerShell</span></code>. <br />If any warnings are reported, fix these and run <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">github</span></code> again</p></li>
 <li><p>Preview your changes locally by going to your local directory <code class="docutils literal notranslate"><span class="pre">EngineDriver_Home/docs/_build/html</span></code> and open <code class="docutils literal notranslate"><span class="pre">index.html</span></code> in your web browser of choice.</p></li>
-<li><p>Use GitHub Desktop to commit and then push your changes</p></li>
+<li><p>Use GitHub Desktop to <span class="guilabel">Commit</span> then <span class="guilabel">Push</span> your changes</p></li>
 </ul>
 </li>
 <li><p>In GitHub</p>
 <ul>
 <li><p>You can check the ‘Actions’ to see if it built correctly. <br />You can preview the pages on GitHub at <code class="docutils literal notranslate"><span class="pre">https://&lt;yourname&gt;.github.io/EngineDriver_Home</span></code></p></li>
-<li><p>Issue a pull request for your branch to be pulled into the main branch. <br />Once it’s merged in by one of the admins, your changes will go live!</p></li>
+<li><p>Issue a pull request for your branch to be pulled into the origin repository. <br />Once it’s merged in by one of the admins, your changes will go live!</p></li>
 </ul>
 </li>
 </ul>
@@ -1021,7 +1033,7 @@ This Website is built upon this technology, so you should make yourself familiar
 <h3><a class="toc-backref" href="#id7" role="doc-backlink">Style Guidelines</a><a class="headerlink" href="#style-guidelines" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>Use British/Australian/Canadian spelling e.g. ‘colour’ not ‘color’.  <br />(Primarily because it is used in more English speaking countries)</p></li>
-<li><p>Use railroad/railway terminology that is understandable by all English-speaking people. <br />Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, <abbr title="More than one loco being controlled by a single throttle">Consists / Multiple Units</abbr>, switching/shunting.  (Primarily because DCC and JMRI uses the US terminology)</p></li>
+<li><p>Use railroad/railway terminology that is understandable by all English-speaking people. <br />Where there are clear differences from US to non-US terminology use both with a slash between and use the US version first. e.g. turnouts/points, <abbr title="More than one loco being controlled by a single throttle">Consists / Multiple Units</abbr>, switching/shunting.  (Primarily because DCC and JMRI use the US terminology)</p></li>
 <li><p>In general use ‘loco’ instead of ‘locomotive’ or ‘engine’</p></li>
 <li><p>Avoid the term ‘Checked’. Use ‘Enabled’ instead.  (“Checked’ is more a US term.)</p></li>
 <li><p>Use bolded **Engine Driver** or |ed| not ‘Engine Driver app’, ‘EngineDriver’ or ‘Engine Driver Throttle’ (except on the first page) - <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span></p></li>
@@ -1033,6 +1045,10 @@ This Website is built upon this technology, so you should make yourself familiar
 <li><p>No quotes around ‘Also See’ type references</p></li>
 <li><p>Avoid ‘(above)’ or ‘(below)’ in text.  Use hypertext links instead</p></li>
 <li><p>‘TODO’ or |todo| or .. todo::  in the text means that it is still a work-in-process and needs to be updated.  It may be followed by descriptive text in italics describing the issue to be fixed</p></li>
+<li><p>Keep headings short. If it fills the page it is too long.</p></li>
+<li><p>Keep sentences short. Break them up where ever possible.</p></li>
+<li><p>Keep paragraphs short. Break them up where practical.</p></li>
+<li><p>Keep paragraphs on the same topic. If the topic changes start a new paragraph.</p></li>
 <li><p>Use ``literal text blocks`` when describing preference values  - <code class="docutils literal notranslate"><span class="pre">literal</span> <span class="pre">text</span> <span class="pre">blocks</span></code></p></li>
 <li><p>Use :menuselection:`Menu –&gt; Preferences –&gt; ..` for menu descriptions - <span class="menuselection">Menu ‣ Preferences ‣ ..</span></p></li>
 <li><p>Use :guilabel:`GUI labels` for buttons  - <span class="guilabel">GUI labels</span></p></li>
@@ -1054,6 +1070,7 @@ This Website is built upon this technology, so you should make yourself familiar
 <section id="todo">
 <h3><a class="toc-backref" href="#id8" role="doc-backlink">TODO</a><a class="headerlink" href="#todo" title="Link to this heading"></a></h3>
 <p>We are always looking for assistance with the improving this website.  Any assistance would be greatly appreciated.</p>
+<p>Below are areas that we know need work.</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>MEDIUM: Which locos in a Consist/Multiple Unit the functions are sent to</p>
@@ -1078,27 +1095,27 @@ This Website is built upon this technology, so you should make yourself familiar
 <p class="admonition-title">Todo</p>
 <p>LOW: ‘Special Partial Matching’ Option</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id2"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 254.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id2"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 248.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>LOW: ‘Special’ Consist Function Matching Options</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id3"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 438.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id3"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 430.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>LOW: ‘Special - Exact Matching’ Option</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id4"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 457.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id4"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 449.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>LOW: ‘Special Partial Matching’ Option</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id5"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 467.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id5"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 459.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>LOW: ‘Special Partial - Contains Only’ Option</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id6"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 477.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/consist-follow-functions.html#id6"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/consist-follow-functions.rst, line 469.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>LOW: FAQ Selecting locomotives to control</p>
@@ -1213,12 +1230,12 @@ This Website is built upon this technology, so you should make yourself familiar
 <p class="admonition-title">Todo</p>
 <p>MEDIUM: Reconnecting Screen</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id19"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1596.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id19"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1618.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>LOW: Children’s Timer Status and Countdown</p>
 </div>
-<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id22"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1838.)</p>
+<p class="todo-source">(The <a class="reference internal" href="../operation/interface.html#id22"><em>original entry</em></a> is located in /home/runner/work/EngineDriver_Home/EngineDriver_Home/docs/operation/interface.rst, line 1861.)</p>
 <div class="todo-float-right admonition">
 <p class="admonition-title">Todo</p>
 <p>MEDIUM: Recent Turnout/Point list</p>
@@ -1243,7 +1260,7 @@ This Website is built upon this technology, so you should make yourself familiar
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="../changes/index.html" class="btn btn-neutral float-left" title="Changes / Updates" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="../glossary/index.html" class="btn btn-neutral float-right" title="Glossary / References / Copyright" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="../glossary/index.html" class="btn btn-neutral float-right" title="Glossary / Copyright / Screenshots" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
@@ -1256,7 +1273,7 @@ This Website is built upon this technology, so you should make yourself familiar
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd2faf8eaa0>
+    <jinja2.runtime.BlockReference object at 0x7f2c2dc9cfd0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

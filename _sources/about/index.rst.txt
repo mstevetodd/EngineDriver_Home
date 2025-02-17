@@ -30,20 +30,20 @@ Supported |WTSS| include:
 |ed| can: 
 
 * Control the speed direction and up to 32 DCC functions of your DCC enabled locos
-* Control from one to six |locos_consists| can be controlled at the same time
+* Up to six |locos_consists| can be controlled at the same time
 * Easily create and edit on-the-fly |consists| (software-defined)
 * Control layout power, turnouts/points, routes, and access JMRI web panels and windows
 * Play virtual loco sounds 
-* Specific to the DCC-EX EX-CommandStation can also use the Native DCC-EX Protocol to communicate. |BR| When using the Native DCC-EX Protocol, |ED| can also:
+* Specific to the |EX-CS|, Engine Driver can also use the |NATIVE| to communicate which allows:
  
  * Program CVs (Service Mode and Operation Mode)
- * Control the TrackManager features.
+ * Control the TrackManager features
  * Use some extended Route capabilities
  * Use the 'Request Loco ID' & 'Drive Away' feature from a Program track onto Mainline track
 
 You can customise |ed| extensively to meet your needs.
 
-Generally the |WTSS| that |ed| connects to are either |CSs|, or are designed to talk to |CSs| (e.g. |JMRI|) to subsequently talk to DCC Decoder equipped locos on a layout.  |EX-CS| also allows controlling DC locos or even Slot cars instead.
+Generally the |WTSS| that |ed| connects to are either |CSs|, or are designed to talk to |CSs| (e.g. |JMRI|) to subsequently talk to DCC Decoder equipped locos on a layout.  |EX-CS| also allows controlling DC locos [#DC]_ or even Slot cars instead.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -54,6 +54,9 @@ Generally the |WTSS| that |ed| connects to are either |CSs|, or are designed to 
 
 |ed| currently has minSDKVersion of 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN). 
 Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
+
+ 
+.. [#DC] The |EX-CS| is capable of driving DC Pulse Width Modulation (PWM) outputs as well as, or instead of, DCC outputs.  |ED| is therefor capable of running DC locos as easily as it does DCC locos.
 
 What's a 'WiThrottle Server'?
 -----------------------------

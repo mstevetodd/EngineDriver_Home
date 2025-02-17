@@ -9,13 +9,27 @@ Configuring Engine Driver
 
 ----
 
-.. image:: ../_static/images/parts/menu_throttle.png
-  :scale: 40 %
-  :align: right
+.. sidebar::
+   :class: sidebar-on-this-page
+
+   .. contents:: On This Page
+      :local:
+      :depth: 3
 
 |ed| is highly configurable.
 
-Most configuration options are found in the *Preferences* which is accessed via the overflow menu which is normally three dots (⁞) or three bars (≡).
+Most of |EDs| configuration options are found in the :ref:`operation/interface:Preferences Screen` which is accessed via the overflow menu which is normally three dots (⁞) or three bars (≡).
+
+While there are some preferences for configuring Functions in the :ref:`operation/interface:Preferences Screen`, most are found in three specific Function screens.
+
+Similarly, configuring |EDs| |IPLS| feature is found on its own :ref:`operation/interface:in phone loco sounds screen`.
+
+Preferences
+============
+
+.. image:: ../_static/images/parts/menu_throttle.png
+  :scale: 40 %
+  :align: right
 
 Some of the *many* Preferences include:
 
@@ -32,7 +46,10 @@ Look around in Preferences, there are a *huge number* of settings to personalise
 
    See the :doc:`Preferences <./preferences>` page for a full list of the available preferences.
 
-The *Functions buttons* are changed via the ``Function Buttons`` menu option: :menuselection:`Menu --> Functions Buttons`
+Configuring Functions
+======================
+
+The *Functions buttons* are changed via the :ref:`operation/interface:function defaults screen`, the :ref:`operation/interface:function latching settings screen` screen or the :ref:`operation/interface:DCC-EX Function Settings Screen` screen.  These are accessed from the menu.
 
 Some of the Function button preferences include:
 
@@ -46,3 +63,12 @@ Some of the Function button preferences include:
    See the :doc:`Function Buttons <./functions>` page for more information.
 
 
+Configuring In Phone Loco Sounds (IPLS)
+=======================================
+
+The |IPLS| feature are changed via the :ref:`operation/interface:in phone loco sounds screen`.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+   See the :doc:`/configuration/ipls` page for more information.

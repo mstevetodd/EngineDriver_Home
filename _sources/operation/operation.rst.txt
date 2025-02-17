@@ -45,7 +45,7 @@ Connecting to the WiFi network
   
   Also see the :doc:`WiFi issues </operation/wifi_issues>` page if you are having difficulties.
 
-Connecting Engine Driver to the WiThrottle server
+Connecting Engine Driver to the |server|
 """""""""""""""""""""""""""""""""""""""""""""""""
 
 * Start |ED| |BR|\ You will be presented with the |C-S|
@@ -67,7 +67,7 @@ Type in the **IP address** and **Port** of the |WTS-DCC-EX| and press :guilabel:
 To find your server's IP address and Port:
 
   * For a |JMRI| server, see the WiThrottle screen for its address 
-  * For other devices, see the instructions for that device
+  * For other |SERVERS|, see the instructions for that device
 
 If you only ever connect to one |WTS-DCC-EX| you can effectively bypass this screen by setting the :ref:`Auto-Connect to WiThrottle Server? <configuration/preferences:auto-connect to withrottle server?>` preference.
 
@@ -84,10 +84,10 @@ Discovered Servers List
   :align: right
   :name: Discovered Servers
 
-**This is the most common way to connect.** If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+**This is the most common way to connect.** If the |SERVER| you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
 
-If the server does not appear in the recent list try one of the other two methods.  
-Your server not appearing in the recent list is not necessarily a problem  See :doc:`Connection issues </operation/wifi_issues>` for more information.
+If the |SERVER| does not appear in the recent list try one of the other two methods.  
+Your |SERVER| not appearing in the recent list is not necessarily a problem  See :doc:`Connection issues </operation/wifi_issues>` for more information.
 
 Recent Server List
 ''''''''''''''''''
@@ -97,11 +97,11 @@ Recent Server List
   :align: right
   :name: Recent Severs
 
-If the server you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+If the |SERVER| you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
 
-Note: A server being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
+Note: A |SERVER| being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
 
-There is also a 'demo' server at **jmri.mstevetodd.com**, port **44444** in this list that you can connect to for testing. (If your device/phone has an internet connection.)
+There is also a 'demo' |WTS| at **jmri.mstevetodd.com**, port **44444** in this list that you can connect to for testing. (If your device/phone has an internet connection.)
 
 Disconnections
 """"""""""""""
@@ -143,7 +143,7 @@ Selecting & Releasing Locos
 
 Selecting and releasing locos and |consists| is initiated from the Throttle Screen, by clicking on the :guilabel:`Select` button of one of the Throttles on the screen.
 
-(The |T-S| may have from 1 to 6 throttles on it, depending on the :ref:`Throttle Screen Layout preferences <configuration/preferences:throttle screen appearance preferences>` you have chosen.)
+(The |T-S| may have from 1 to 6 throttles on it, depending on the :ref:`Throttle Screen Layout preference <configuration/preferences:throttle screen appearance preferences>` you have chosen.)
 
 Selecting a Single loco
 """""""""""""""""""""""

@@ -1075,7 +1075,7 @@ Swipe Left / Right (Web View Screen)
 Secondary / Support Screens
 -------------------------------
 
-The follow additional screens will be shown at different times and for various reasons: 
+The following additional screens will be shown at different times and for various reasons: 
 
 .. contents:: 
     :depth: 1
@@ -1463,7 +1463,7 @@ Function Latching Settings Screen
 
 The function list shows 32 functions with both a label and a drop-list to say if the function should be latching or not (momentary).
 
-This screen is only available in the menu if the `Override WiThrottle Default Latching`_ option is enabled on the `Function Defaults Screen`_ and you are are connected to a WiThrottle server. (Not an |EX-CS| using the DCC-EX Native protocol.)
+This screen is only available in the menu if the `Override WiThrottle Default Latching`_ option is enabled on the `Function Defaults Screen`_ and you are are connected to a |WTS|. (Not an |EX-CS| using the |NATIVE|.)
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Latching Settings`.
 
@@ -1559,6 +1559,28 @@ Enable the :ref:`configuration/preferences:Show Timestamps on Log?` preference t
 
 Accessed from any of the main screens via :menuselection:`Menu --> View Log`.
 
+Saving a log file
+""""""""""""""""""
+
+To record a log file in EngineDriver....
+
+1. Start |ED|.
+2. From the menu, select :guilabel:`View Log`
+3. Click :guilabel:`Start recording to a file`
+4. Click :guilabel:`Close`
+5. Attempt whatever is causing the problem a few times
+6. Exit ED
+7. Connect a USB cable to your phone and PC 
+8. Allow access if the phone asks.
+9. In some versions of Android you may also need to change the connection type on the phone from 'charging' to 'file transfer'
+10. Open a file manager and find the connected phone
+11. Browse down to the folder ``..\Internal shared storage\Android\data\jmri.enginedriver\files``
+12. Find the most resent file that looks like logcatxxxxxxxxxxxxx.txt     e.g. logcat1699833098998.txt
+
+13a. Attach that file to a message in qroups.io using the paperclip button on the toolbar above the message content
+13b. Attach that file to a message in discord using the :guilabel:`+` button on the row of the message content
+13c. Attach that file to an email message and send to the developers
+
 |force-break|
 
 About Screen
@@ -1588,7 +1610,7 @@ Displayed information includes:
   * **Host:** (IP Address)   **Port:**
   * **Server:** (details)
 
-|force-break|
+|FORCE-BREAK|
 
 Reconnecting Screen
 ^^^^^^^^^^^^^^^^^^^
@@ -1599,6 +1621,8 @@ Reconnecting Screen
   MEDIUM: Reconnecting Screen
  
 This screen displays if |ed| has not been able to communicate with the |WTS-DCC-EX| within a specified time.
+
+|force-break|
 
 Common Elements and Features
 ----------------------------
@@ -1681,7 +1705,7 @@ Action Bar
    :align: right
    :scale: 50%
 
-The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a\) the particular screen and b\) preferences you have set.
+The Action Bar appears at the top of all screens. It will show different information and different buttons depending on a) the particular screen and b) preferences you have set.
 
 The Action Bar can display:
 
@@ -1768,7 +1792,6 @@ Layout Switch Button
 The *Layout Switch* button, when pressed will swap the :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` between two predefined layouts.
 
 The *Layout Switch* Action Bar button is enabled with the `Show Layout Switch button <../configuration/preferences.html#show-layout-switch-button>`_ preference.
-
 
 DCC-EX Button
 """""""""""""""
