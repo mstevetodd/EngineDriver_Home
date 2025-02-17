@@ -82,7 +82,10 @@ These defaults can be overridden on either the :ref:`operation/interface:Functio
 Which locos in a Consist/Multiple Unit the functions are sent to 
 -------------------------------------------------------------------
 
-.. todo:: Which locos in a Consist/Multiple Unit the functions are sent to
+.. todo:: 
+  :class: todo-float-right
+  
+  MEDIUM: Which locos in a Consist/Multiple Unit the functions are sent to
 
 By Default, for a |loco_consist| only the first loco in the consists is sent any Function commands.
 

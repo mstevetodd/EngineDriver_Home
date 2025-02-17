@@ -546,7 +546,7 @@ In this case on acceleration, using the |SRT| throttle and the Load creates a sl
  
 On deceleration, the loco does not go into coast mode (prime mover idling) as quickly as when using a normal throttle.
  
-If the later behavior is a big concern in such a case, an easy work around is to take advantage of the feature that when the |SRT| Brake is at 100% it reduces the commanded speed almost immediately. You lose some of the additional momentum added by the |SRT| Load function but the loco will behave just as if being controlled by a normal throttle (i.e. the operator can use the decoder brake function to bring the loco to a stop). See also Case 5 when use of the Stop button is discussed.
+If the later behaviour is a big concern in such a case, an easy work around is to take advantage of the feature that when the |SRT| Brake is at 100% it reduces the commanded speed almost immediately. You lose some of the additional momentum added by the |SRT| Load function but the loco will behave just as if being controlled by a normal throttle (i.e. the operator can use the decoder brake function to bring the loco to a stop). See also Case 5 when use of the Stop button is discussed.
  
 On the positive side, the |SRT| Load function provides a very easy way to simulate even larger momentum effects than the maximum value CV4 can generate.
  
@@ -572,7 +572,7 @@ The |SRT| is not designed to precisely replicate decoder momentum and sound feat
 
 This discussion and testing has been done in relation to LokSound only because that is the decoder family that the author has access to and that the author is familiar with. The expectation is that the |SRT| will provide similar benefits and opportunities for users of other decoders.
 
-LokSound users will recognise that the |SRT| Load and Brake features have an approximate similarity with the Drive Hold feature. Both can be used to simulate the behaviour of loaded trains. There is no doubt that the Drive Hold feature gives the operator complete control of movement and sound. In a way, the |SRT| Load and Brake features can be considered as being a form of approximate “hands-free” equivalent. 
+LokSound users will recognise that the |SRT| Load and Brake features have an approximate similarity with the Drive Hold feature. Both can be used to simulate the behaviour of loaded trains. There is no doubt that the Drive Hold feature gives the operator complete control of movement and sound. In a way, the |SRT| Load and Brake features can be considered as being a form of approximate 'hands-free' equivalent. 
 
 It goes without saying that operators experienced with using Drive Hold can get better control of loco movement and sound. 
 
@@ -580,6 +580,6 @@ It goes without saying that operators experienced with using Drive Hold can get 
 Conclusion
 ----------
 
-Based on the above experiments, there is not a major negative impact of the |SRT| Load and Brake features on the sound performance of LokSound V4 decoders. This is not to say that there is no impact, but for most users I expect that it will be quite “livable”. For those operators willing to accept some sound compromise, the |SRT| provides a very easy mechanism to simulate heavy trains.
+Based on the above experiments, there is not a major negative impact of the |SRT| Load and Brake features on the sound performance of LokSound V4 decoders. This is not to say that there is no impact, but for most users I expect that it will be quite 'liveable'. For those operators willing to accept some sound compromise, the |SRT| provides a very easy mechanism to simulate heavy trains.
 
 :hand-written:`John Geddes`

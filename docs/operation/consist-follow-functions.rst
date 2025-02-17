@@ -251,7 +251,10 @@ Spaces (blanks) are treated in the same way as normal characters. e.g. "Horn" do
 'Special Partial Matching' Option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'Special Partial Matching' Option
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Special Partial Matching' Option
 
 IF
 
@@ -381,7 +384,10 @@ These preferences (which are explained below) are only available to edit/change 
 'If All matches Fail Action' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'If All matches Fail Action' Preference
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'If All matches Fail Action' Preference
 
 Which locos in the consist should react to the function buttons if none of the rules below are met.
 
@@ -390,7 +396,10 @@ For the 'Complex' option only. This preference is ignored if 'Simple' or 'Specia
 'Headlight specific String 1' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'Headlight specific String 1' Preference
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Headlight specific String 1' Preference
 
 Comma separated string(s) to look for in the function labels of the locos in the consist to recognise the 'Headlight' function (normally F0).
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
@@ -398,7 +407,10 @@ For the 'Complex' option only. This preference is ignored if 'Simple' or 'Specia
 'Headlight specific Action 1' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'Headlight specific Action 1' Preference
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Headlight specific Action 1' Preference
 
 Which locos in the consist should react to the found headlight functions.
 
@@ -420,7 +432,10 @@ Note:
 String 2, 3, 4, 5 Preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: String 2, 3, 4, 5 Preferences
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: String 2, 3, 4, 5 Preferences
 
 This applies to String 2, String 3, String 4, String 5
 For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
@@ -428,7 +443,10 @@ For the 'Complex' option only. This preference is ignored if 'Simple' or 'Specia
 Action for String 2, 3, 4, 5 Preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Action for String 2, 3, 4, 5 Preferences
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: Action for String 2, 3, 4, 5 Preferences
 
 This applies to Action for String 2, Action for String 3, Action for String 4, Action for String 5.
 
@@ -439,7 +457,10 @@ For the 'Complex' option only. This preference is ignored if 'Simple' or 'Specia
 'Special' Consist Function Matching Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo:: 'Special' Consist Function Matching Options
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Special' Consist Function Matching Options
 
 You can now arrange the default function labels on ED any way you want, and as long as the equivalent function has a similar name it doesn't matter what function number it is, it will activate it correctly.
 Note, for these options to have any effect:
@@ -447,19 +468,33 @@ The 'Use default function labels' preference must be enabled.
 The loco (or locos in a consist) must be selected from the |ROSTER|
 Note: If 'Use Default function labels' is enabled, 'Special…' will also apply to the lead (or only) loco.
 
+|FORCE-BREAK|
 
 'Special - Exact Matching' Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'Special - Exact Matching' Option
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Special - Exact Matching' Option
+
+|FORCE-BREAK|
 
 'Special Partial Matching' Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'Special Partial Matching' Option
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Special Partial Matching' Option
+
+|FORCE-BREAK|
 
 'Special Partial - Contains Only' Options
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 'Special Partial - Contains Only' Option
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: 'Special Partial - Contains Only' Option
 

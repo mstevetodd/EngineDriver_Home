@@ -102,7 +102,12 @@ An indicator ``1``, ``2`` etc. will show near the throttle speed to indicate whi
   
   By default |ed| assumes you will only use 1 gamepad. Any subsequent gamepads connected to the device/phone will therefore control the same throttle as the first gamepad. To allow for more, to control separate throttles, than you must disable the :ref:`configuration/preferences:only one gamepad?` preference.
 
-.. todo:: If you turn the gamepad off...
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: If you turn the gamepad off...
+
+|FORCE-BREAK|
 
 Example Gamepads 
 -----------------
