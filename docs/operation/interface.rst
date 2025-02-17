@@ -1718,9 +1718,9 @@ Emergency Stop Button
    :align: right
    :scale: 50%
 
-The *Emergency Stop* Action Bar button is enabled with the :ref:`Emergency Stop button? <configuration/preferences:emergency stop button?>` preference.
-
 Clicking this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
+
+The *Emergency Stop* Action Bar button is enabled with the :ref:`Emergency Stop button? <configuration/preferences:emergency stop button?>` preference.
 
 Track Power Button
 """"""""""""""""""
@@ -1729,13 +1729,13 @@ Track Power Button
    :align: right
    :scale: 50%
 
-The *Track Power* Action Bar button is enabled with the :ref:`Layout Power button? <configuration/preferences:layout power button?>` preference.
-
 *Track Power*, when pressed will turn on/off the power to the track.  The colour of the button will change colour:
 
 * 'Amber' = unknown state
 * 'Red' = Power is Off
 * 'Green' = Power is On
+
+The *Track Power* Action Bar button is enabled with the :ref:`Layout Power button? <configuration/preferences:layout power button?>` preference.
 
 Flashlight Button
 """""""""""""""""
@@ -1744,11 +1744,11 @@ Flashlight Button
    :align: right
    :scale: 50%
 
-The *Flashlight* Action Bar button is enabled with the `Flashlight button? <../configuration/preferences.html#flashlight-button>`_ preference.
-
 *Flashlight*, when pressed will turn on/off the Device's camera light.
 
 The device / phone must have a camera to be able to use this feature.
+
+The *Flashlight* Action Bar button is enabled with the `Flashlight button? <../configuration/preferences.html#flashlight-button>`_ preference.
 
 Throttle Web View Button
 """"""""""""""""""""""""
@@ -1757,9 +1757,9 @@ Throttle Web View Button
    :align: right
    :scale: 50%
 
-The *Throttle Web View* Action Bar button is enabled with the `Throttle Web View button? <../configuration/preferences.html#throttle-web-view-button>`_ preference.
-
 *Throttle Web View*, when pressed will show or hide the :ref:`Throttle Web View <operation/interface:web view area (throttle web view)>` panel on the |T-S|.
+
+The *Throttle Web View* Action Bar button is enabled with the `Throttle Web View button? <../configuration/preferences.html#throttle-web-view-button>`_ preference.
 
 Note: the :ref:`Throttle Web View? <configuration/preferences:throttle web view?>` preference must be enabled for this to have an effect.
 
@@ -1776,7 +1776,11 @@ The *Layout Switch* Action Bar button is enabled with the `Show Layout Switch bu
 
 
 DCC-EX Button
-""""""""""""""""""""""""""
+"""""""""""""""
+
+.. image:: ../_static/images/parts/dcc_ex_button.png
+   :align: right
+   :scale: 50%
 
 The *DCC-EX* button, when clicked will open the `DCC-EX Screen`_.
 
@@ -1816,10 +1820,9 @@ Fast Clock
    :align: right
    :scale: 50%
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Fast Clock
+The Fast Clock is a non-real time clock used for compressing running times for scheduled running.
+
+JMRI and some Command Stations can broadcast a Fast Clock time continuously.  Enabling this preference will cause |ED| to display the Fast Clock time on the Action Bar.
 
 The *Fast Clock* Action Bar button is enabled with the `Fast Clock Display <../configuration/preferences.html#fast-clock-display>`_ preference.
 
@@ -1828,7 +1831,7 @@ The *Fast Clock* Action Bar button is enabled with the `Fast Clock Display <../c
 
   See `JMRI's Fast Clock page <https://www.jmri.org/help/en/package/jmri/jmrit/simpleclock/SimpleClockFrame.shtml>`_ for information on how to set up a Fast Clock.
 
-|BR|
+|FORCE-BREAK|
 
 Children's Timer Status and Countdown
 """""""""""""""""""""""""""""""""""""
@@ -1847,17 +1850,16 @@ Children's Timer Status and Countdown
 
    See the :ref:`Children's Timer part <operation/advanced:children's timer>` of the Advance Operation page for more information.
 
-|BR|
+|FORCE-BREAK|
 
 Full Screen or Action Bar Only left/right swipe
 """""""""""""""""""""""""""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Full Screen or Action Bar Only left/right swipe
+By default swiping left or right (almost) anywhere on a Main Screen will cause ED to take you one of the other `Main Screens`_.
 
-|FORCE-BREAK|
+While this is dependant on which screens you have :ref:`enabled for swiping through <configuration/preferences:left/right swipe preferences>`, it can also be changed so that the swipe only works on the Action Bar.  This is mostly advantageous when you use the `Web View Screen` where left/right swipes may ahve a different meaning or purpose.
+
+This option is also enabled/disabled in the :ref:`configuration/preferences:left/right swipe preferences`.
 
 WiThrottle Server Name
 """"""""""""""""""""""
@@ -1866,10 +1868,7 @@ WiThrottle Server Name
    :align: right
    :scale: 50%
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: WiThrottle Server Name
+|ED| can be configured to show the server name on the Action Bar. This option is also enabled/disabled in the :ref:`configuration/preferences:show server description` preference.
 
 |FORCE-BREAK|
 
