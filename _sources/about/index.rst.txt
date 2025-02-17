@@ -43,7 +43,7 @@ Supported |WTSS| include:
 
 You can customise |ed| extensively to meet your needs.
 
-Generally the |WTSS| that |ed| connects to are either DCC Command Stations, or are designed to talk to DCC Command Stations (e.g. |JMRI|) to subsequently talk to DCC Decoder equipped locos on a layout.  |EX-CS| also allows controlling DC locos or even Slot cars instead.
+Generally the |WTSS| that |ed| connects to are either |CSs|, or are designed to talk to |CSs| (e.g. |JMRI|) to subsequently talk to DCC Decoder equipped locos on a layout.  |EX-CS| also allows controlling DC locos or even Slot cars instead.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -69,7 +69,7 @@ The **WiThrottle Protocol** itself is a standard for how WiFi throttles can comm
 
 ----
 
-.. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has similar capabilities to Engine Driver. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the WiThrottle app and a number of other apps and DCC Command Stations. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
+.. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has similar capabilities to Engine Driver. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the WiThrottle app and a number of other apps and |CSs|. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
 
 
 WiThrottle protocol VS DCC-EX Native protocol

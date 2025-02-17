@@ -120,7 +120,7 @@ If |JMRI| does not receive any feedback from your device/phone within a configur
 Turn Track Power On
 ^^^^^^^^^^^^^^^^^^^
 
-Some DCC Command Stations need to be instructed to turn the Track Power on before you can use them.  This is not required by all Command Stations so check your manufacturer's instructions.
+Some |CSs| need to be instructed to turn the Track Power on before you can use them.  This is not required by all |CSs| so check your manufacturer's instructions.
 
 There are two ways to turn the Track Power on/off:
 

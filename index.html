@@ -280,7 +280,7 @@
 <li class="toctree-l4"><a class="reference internal" href="operation/interface.html#power-screen">Power Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="operation/interface.html#preferences-screen">Preferences Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="operation/interface.html#in-phone-loco-sounds-screen">In Phone Loco Sounds Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="operation/interface.html#id16">Function Defaults Screen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="operation/interface.html#id15">Function Defaults Screen</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="operation/interface.html#number-of-default-functions">Number of Default Functions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="operation/interface.html#number-of-default-functions-for-roster">Number of Default Functions for Roster</a></li>
 <li class="toctree-l5"><a class="reference internal" href="operation/interface.html#use-default-function-labels">Use Default Function Labels</a></li>
@@ -722,7 +722,7 @@
 <li class="toctree-l5"><a class="reference internal" href="configuration/preferences.html#show-withrottle-pom-page">Show WiThrottle PoM Page</a></li>
 <li class="toctree-l5"><a class="reference internal" href="configuration/preferences.html#background-alert">Background Alert</a></li>
 <li class="toctree-l5"><a class="reference internal" href="configuration/preferences.html#dcc-ex-ex-commandstation-preferences">DCC-EX EX-CommandStation Preferences</a><ul>
-<li class="toctree-l6"><a class="reference internal" href="configuration/preferences.html#use-native-dcc-ex-command">Use Native DCC-EX command</a></li>
+<li class="toctree-l6"><a class="reference internal" href="configuration/preferences.html#use-native-dcc-ex-commands">Use Native DCC-EX commands</a></li>
 <li class="toctree-l6"><a class="reference internal" href="configuration/preferences.html#show-protocol-option">Show protocol option</a></li>
 </ul>
 </li>
@@ -844,9 +844,9 @@
 <li class="toctree-l2"><a class="reference internal" href="contributing/index.html#contributing-to-the-localisation-languages">Contributing to the Localisation (Languages)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="contributing/index.html#contributing-to-the-documentation">Contributing to the Documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="contributing/index.html#style-guidelines">Style Guidelines</a></li>
+<li class="toctree-l3"><a class="reference internal" href="contributing/index.html#todo">TODO</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="contributing/index.html#todo">TODO</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="glossary/index.html">Glossary / References / Copyright</a><ul>
@@ -911,14 +911,18 @@ You can also control layout power, turnouts/points, routes, and access JMRI web 
 <section id="why-use-engine-driver">
 <h2>Why Use Engine Driver<a class="headerlink" href="#why-use-engine-driver" title="Link to this heading"></a></h2>
 <img alt="_images/throttle_buttons.png" class="align-left" src="_images/throttle_buttons.png" />
-<p>You can use <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to operate your DCC model train layout without being physically tethered by any wires. This allows you to walk around your layout, following your trains and/or position yourself anywhere around your layout (e.g. at your favourite viewing position).</p>
+<p>You can use <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to operate your DCC or DC <a class="footnote-reference brackets" href="#dc" id="id2" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a> model train layout without being physically tethered by any wires. This allows you to walk around your layout, following your trains and/or position yourself anywhere around your layout (e.g. at your favourite viewing position).</p>
 <p>You can add additional <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> controllers inexpensively using old Android phones or tablets, instead of proprietary controllers.  (You don’t need to have a sim card in the phone.)</p>
-<p>You only need to interact with JMRI and/or your DCC command station directly when setting up or re-configuring your layout. Once configured, you do not need to interact with either JMRI or your DCC command station directly while you are running your trains.</p>
+<p>You only need to interact with JMRI and/or your <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Station</abbr> directly when setting up or re-configuring your layout. Once configured, you do not need to interact with either JMRI or your <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Station</abbr> directly while you are running your trains.</p>
 <hr class="docutils" />
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="wit" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id1">1</a><span class="fn-bracket">]</span></span>
-<p>‘WiThrottle’ is a trademark owned by Brett Hoffman. It is also an <a class="reference external" href="https://www.withrottle.com/html/home.html">iOS app</a> developed by Brett Hoffman which has similar capabilities to <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>. <br />The ‘WiThrottle protocol’ is a communications protocol developed by Brett Hoffman.  It is used by JMRI, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, the wiThrottle app and a number of other apps and DCC Command Stations. <br />References in this website to a ‘<a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>’, refer to a server that can communicate using the ‘WiThrottle protocol’.</p>
+<p>‘WiThrottle’ is a trademark owned by Brett Hoffman. It is also an <a class="reference external" href="https://www.withrottle.com/html/home.html">iOS app</a> developed by Brett Hoffman which has similar capabilities to <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>. <br />The ‘WiThrottle protocol’ is a communications protocol developed by Brett Hoffman.  It is used by JMRI, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>, the wiThrottle app and a number of other apps and <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Stations</abbr>. <br />References in this website to a ‘<a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>’, refer to a server that can communicate using the ‘WiThrottle protocol’.</p>
+</aside>
+<aside class="footnote brackets" id="dc" role="doc-footnote">
+<span class="label"><span class="fn-bracket">[</span><a role="doc-backlink" href="#id2">2</a><span class="fn-bracket">]</span></span>
+<p>The <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> is capable of driving DC (PWM) outputs as well as, or instead of, DCC outputs.  <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> is therefor capable of running DC locos as easily as it does DCC locos.</p>
 </aside>
 </aside>
 </section>
@@ -941,7 +945,7 @@ You can also control layout power, turnouts/points, routes, and access JMRI web 
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f80c848a050>
+    <jinja2.runtime.BlockReference object at 0x7fd2f94c6dd0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

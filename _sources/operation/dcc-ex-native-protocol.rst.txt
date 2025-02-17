@@ -16,7 +16,7 @@ Features when using the Native Protocol when connected to a DCC-EX EX-CommandSta
       :local:
       :depth: 3
 
-By default, **Engine Driver** (ED) uses the **WiThrottle Protocol** to talk to all types of Command Station. 
+By default, **Engine Driver** (ED) uses the **WiThrottle Protocol** to talk to all types of |CS|. 
 
 When connecting to a **DCC-EX EX-CommandStation** it can optionally use the **DCC-EX Native Protocol**. 
 
@@ -36,14 +36,14 @@ How to enable the DCC-EX Native Protocol
 
 To enable the **DCC-EX Native Protocol** in |ED| do the following:
 
-Note this must be preformed *before* you connect to the command station.
+Note this must be preformed *before* you connect to the |CS|.
 
 * Start |ED|
 * Open the Menu --> Preferences
 * Find the section "Connect Preferences"
 * Open the sub-section "DCC-EX EX-CommandStation Preferences"
 * Enable the "Use Native DCC-EX commands"
-* If you also use other brands of Command Station (other than DCC-EX) 
+* If you also use other brands/types of |CS| (other than |EX-CS|) 
 
    * We recommend that you also enable the "Show protocol option"
 

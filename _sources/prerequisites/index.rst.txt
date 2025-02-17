@@ -79,7 +79,7 @@ Both of these should be added to Preferences, Start Up as well (:menuselection:`
    :scale: 60 %
    :align: right
 
-Note that if you are using an |EX-CS| as your command station connected to |JMRI| it is recommended to enable the "DCC++ over TCP Server" in Decoder-Pro (:menuselection:`DCC++/DCC-EX --> DCC++ over TCP Server`).  This will give you access to the advanced features provided by the |NATIVE| in addition to the |WIT|.
+Note that if you are using an |EX-CS| as your |CS|, connected to |JMRI|, it is recommended to enable the "DCC++ over TCP Server" in Decoder-Pro (:menuselection:`DCC++/DCC-EX --> DCC++ over TCP Server`).  This will give you access to the advanced features provided by the |NATIVE| in addition to the |WIT|.
 
 For DCC-EX WiFi
 """""""""""""""
