@@ -1216,11 +1216,6 @@ Long Press on the entry in the Recent Locos list, and enter a new name.
 Select from Recent Consists (MU) list
 """"""""""""""""""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-   HIGH: Select from Recent Consists List
-
 Shown if you select ``Recent Consists (MU)`` in the `Selection Method`_.
 
 Selecting a |consist| in the Recent Consists (MU) list will automatically add all the remembered locos, including their facing.
@@ -1775,41 +1770,28 @@ Layout Switch Button
    :align: right
    :scale: 50%
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Layout Switch Button
+The *Layout Switch* button, when pressed will swap the :ref:`Throttle Screen Layout <configuration/preferences:throttle screen layout>` between two predefined layouts.
 
 The *Layout Switch* Action Bar button is enabled with the `Show Layout Switch button <../configuration/preferences.html#show-layout-switch-button>`_ preference.
 
-The *Layout Switch* buttons, when pressed ...
 
 DCC-EX Button
 """"""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: DCC-EX Button
+The *DCC-EX* button, when clicked will open the `DCC-EX Screen`_.
 
-The *DCC-EX* Action Bar button is enabled with the `In Phone sounbds Button <../configuration/preferences.html#in-phone-sounds-button>`_ preference.
-
+The *DCC-EX* Action Bar button is enabled with the :ref:`configuration/preferences:dcc-ex button?` preference and is only available when connected to a |EX-CS| using the |NATIVE|. 
 
 In Phone Loco Sound Button
 """"""""""""""""""""""""""
-
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: In Phone Loco Sound Button
 
 .. image:: ../_static/images/parts/in_device_sounds_outline.png
    :align: right
    :scale: 50%
 
-The *In Phone Loco Sounds* Action Bar button is enabled with the :ref:`configuration/preferences:dcc-ex button?` preference.
+*In Phone Loco Sounds*, when clicked will open the `In Phone Loco Sounds Screen`_.
 
-*In Phone Loco Sounds*, when clicked ...
+The *In Phone Loco Sounds* Action Bar button is enabled with the :ref:`In Phone Loco Sounds Button <configuration/preferences:In Phone Sounds Button>` preferences.
 
 Children's Timer Button
 """""""""""""""""""""""
@@ -1818,9 +1800,9 @@ Children's Timer Button
    :align: right
    :scale: 50%
 
-The *Children's Timer Button* Action Bar button is enabled with the :ref:`configuration/preferences:show timer button?` preference.
-
 The *Children's Timer Button*, when pressed will activate the Timer for the preset time period.
+
+The *Children's Timer Button* Action Bar button is enabled with the :ref:`configuration/preferences:show timer button?` preference.
 
 .. note:: 
   :class: note-ed-hidden-title
