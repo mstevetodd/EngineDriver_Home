@@ -25,7 +25,9 @@ Engine Driver needs the **NOTIFICATION** permission to warn you when the app has
 
 Engine Driver needs the **READ_PHONE_STATE** permission to (optionally) stop your locos while you are using the phone.
 
-Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID.  Note: *Use Location* needs to be enabled in the Android system settings.
+Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID.  
+
+Note: *Use Location* must be enabled in the Android system settings for |ED| to 'find' servers on the network.
 
 
 Optional Permissions

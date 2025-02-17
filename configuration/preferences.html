@@ -10,7 +10,7 @@
   <title>Preferences &mdash; Engine Driver - Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=0161bf73" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=5fa33ab7" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -321,7 +321,7 @@
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#example-srt-throttle-with-no-or-little-decoder-momentum">Example: SRT throttle with no, or little, decoder momentum</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/semi-realistic-throttle.html#srt-detailed-operation"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="../operation/semi-realistic-throttle.html#detailed-operation">Detailed Operation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#a-throttle">a) Throttle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#b-direction">b) Direction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/semi-realistic-throttle.html#c-load">c) Load</a></li>
@@ -392,9 +392,17 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../operation/wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#ed-doesn-t-find-my-wts-dcc-ex"><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> Doesn’t Find My <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../operation/wifi_issues.html#use-location">Use location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/wifi_issues.html#bonjour-mdns">Bonjour/mDNS</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#routers-and-mesh-networks">Routers and Mesh networks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="../operation/wifi_issues.html#ghz-and-5ghz">4.5ghz and 5ghz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/wifi_issues.html#mesh-routers">Mesh Routers</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/wifi_issues.html#disconnections">Disconnections</a></li>
 </ul>
@@ -424,6 +432,7 @@
 <li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#changing-the-connection-screen">Changing the Connection screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#changing-the-turnouts-points-screen">Changing the turnouts/Points screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds / In Phone Loco Sounds (IPLS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/faq.html#dcc-ex-features">DCC-EX Features</a></li>
 </ul>
 </li>
@@ -1647,8 +1656,8 @@
 </section>
 <section id="display-speed-buttons">
 <h4><a class="toc-backref" href="#id305" role="doc-backlink">Display Speed buttons?</a><a class="headerlink" href="#display-speed-buttons" title="Link to this heading"></a></h4>
-<p>If this preference is enabled, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will display buttons (<code class="docutils literal notranslate"><span class="pre">++</span></code> and <code class="docutils literal notranslate"><span class="pre">--</span></code>) next to Speed Sliders to change loco speed.</p>
-<p>Clicking the <code class="docutils literal notranslate"><span class="pre">++</span></code> button will increase the speed of the Locos(s) by a preset amount. Clicking the <code class="docutils literal notranslate"><span class="pre">--</span></code> button will increase the speed of the Locos(s) by a preset amount.</p>
+<p>If this preference is enabled, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will display buttons (<span class="guilabel">++</span> and <span class="guilabel">–</span>) next to Speed Sliders to change loco speed.</p>
+<p>Clicking the <span class="guilabel">++</span> button will increase the speed of the Locos(s) by a preset amount. Clicking the <span class="guilabel">–</span> button will increase the speed of the Locos(s) by a preset amount.</p>
 <p>The amount the speed changes on each press can be changed with the <a class="reference internal" href="#speed-button-change-amount">Speed Button Change Amount</a> preference.  Note that this is independent of the <a class="reference internal" href="#speed-button-change-amount-volume">Speed Button Change Amount (Volume)</a> preference and the <a class="reference internal" href="#speed-button-change-amount-gamepad">Speed Button Change Amount (Gamepad)</a> preference.</p>
 <p>Holding down a button will increase / decrease the speed continuously by the preset amount, in series of steps.</p>
 <p>The time between steps can be changed with the <a class="reference internal" href="#speed-button-repeat-delay">Speed Button Repeat Delay</a> preference.  Note that this is independent of the <a class="reference internal" href="#speed-button-repeat-delay-gamepad">Speed Button Repeat Delay (Gamepad)</a> preference.  But the Volume button repeat Delay is linked to it.</p>
@@ -1668,8 +1677,8 @@
 <p>Only really of use on the ESU MCII</p>
 <p>This option is not relevant for the following Throttle Screen Layouts as they cannot be without the Speed buttons:</p>
 <ul class="simple">
-<li><p>Big Buttons - Left</p></li>
-<li><p>Big Buttons - Right</p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Big Buttons - Left</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Big Buttons - Right</span></a></p></li>
 </ul>
 </section>
 <section id="tick-marks-on-speed-sliders">
@@ -1681,12 +1690,10 @@
 <p>If this preferences is enabled, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will set the size of the dead zone, or detent, on the slider of the Switching/Shunting Throttle Screen.  The larger the size, the easier it is to find Zero on the slider.</p>
 <p>Only relevant to the following Throttle Screen layouts:</p>
 <ul class="simple">
-<li><p>Vertical Shunting <br /> Vertical Switching</p></li>
-<li><p>Vertical Shunting - Left <br /> Vertical Switching - Left</p></li>
-<li><p>Vertical Shunting - Right <br /> Vertical Switching - Right</p></li>
-<li><p>Horizontal Shunting <br /> Horizontal Switching</p></li>
-<li><p>Horizontal Shunting - Left <br /> Horizontal Switching - Left</p></li>
-<li><p>Horizontal Shunting - Right <br /> Horizontal Switching - Right</p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical Shunting/Switching</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical Shunting/Switching - Left</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical Shunting/Switching - Right</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Horizontal Shunting/Switching</span></a></p></li>
 </ul>
 </section>
 <section id="stop-button-vertical-margins">
@@ -1694,10 +1701,10 @@
 <p>If this preferences is enabled, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen.  This is useful if you find it difficult to get the zero speeds on the vertical sliders without accidently touching the Stop Button.</p>
 <p>Only relevant to the following Throttle Screen layouts:</p>
 <ul class="simple">
-<li><p>Vertical</p></li>
-<li><p>Vertical Shunting <br /> Vertical Switching</p></li>
-<li><p>Vertical Shunting - Left <br /> Vertical Switching - Left</p></li>
-<li><p>Vertical Shunting - Right <br /> Vertical Switching - Right</p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical Shunting/Switching</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical Shunting/Switching - Left</span></a></p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Vertical Shunting/Switching - Right</span></a></p></li>
 </ul>
 </section>
 </section>
@@ -1752,7 +1759,7 @@
 </section>
 <section id="long-press-swap-direction-buttons">
 <h4><a class="toc-backref" href="#id315" role="doc-backlink">Long press Swap Direction buttons?</a><a class="headerlink" href="#long-press-swap-direction-buttons" title="Link to this heading"></a></h4>
-<p>If this preferences is enabled, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will temporarily swap the two Direction buttons when you long press of either of the Direction buttons.</p>
+<p>If this preferences is enabled, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will temporarily swap the two Direction buttons, when you <em>long press</em> of either of the Direction buttons.</p>
 </section>
 <section id="direction-button-long-press-delay">
 <h4><a class="toc-backref" href="#id316" role="doc-backlink">Direction button Long Press Delay</a><a class="headerlink" href="#direction-button-long-press-delay" title="Link to this heading"></a></h4>
@@ -1761,22 +1768,22 @@
 <section id="left-direction-button-label">
 <h4><a class="toc-backref" href="#id317" role="doc-backlink">Left Direction button Label</a><a class="headerlink" href="#left-direction-button-label" title="Link to this heading"></a></h4>
 <p>This preference allows to change the labels for all LEFT direction buttons.</p>
-<p>Enter 'Forward' or blank for normal behaviour.</p>
+<p>Enter 'Forward' or blank for normal/default behaviour.</p>
 </section>
 <section id="right-direction-button-label">
 <h4><a class="toc-backref" href="#id318" role="doc-backlink">Right Direction button Label</a><a class="headerlink" href="#right-direction-button-label" title="Link to this heading"></a></h4>
 <p>This preference allows to change the labels for all RIGHT direction buttons.</p>
-<p>Enter 'Reverse' or blank for normal behaviour.</p>
+<p>Enter 'Reverse' or blank for normal/default behaviour.</p>
 </section>
 <section id="short-left-direction-button-label">
 <h4><a class="toc-backref" href="#id319" role="doc-backlink">Short Left Direction button Label</a><a class="headerlink" href="#short-left-direction-button-label" title="Link to this heading"></a></h4>
 <p>This preference allows to change the short labels for all LEFT direction buttons.</p>
-<p>Enter ‘Fwd’ or blank for normal behaviour.</p>
+<p>Enter ‘Fwd’ or blank for normal/default behaviour.</p>
 </section>
 <section id="short-right-direction-button-label">
 <h4><a class="toc-backref" href="#id320" role="doc-backlink">Short Right Direction button Label</a><a class="headerlink" href="#short-right-direction-button-label" title="Link to this heading"></a></h4>
 <p>This preference allows to change the short labels for all RIGHT direction buttons.</p>
-<p>Enter ‘Rev’ or blank for normal behaviour.</p>
+<p>Enter ‘Rev’ or blank for normal/default behaviour.</p>
 </section>
 </section>
 <section id="decrease-loco-no-height">
@@ -1785,11 +1792,12 @@
 </section>
 <section id="loco-address-instead-of-name">
 <h3><a class="toc-backref" href="#id295" role="doc-backlink">Loco Address instead of Name?</a><a class="headerlink" href="#loco-address-instead-of-name" title="Link to this heading"></a></h3>
-<p>If this preference is enabled <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will show loco DCC Address(es) instead of the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Name(s) on the <a class="reference internal" href="../operation/interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.  It will ignore the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> name for the <span class="guilabel">Select</span> button label.  This changes the label only.  It has no other functional effect.</p>
+<p>If this preference is enabled <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will show loco DCC Address(es) instead of the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Name(s) on the <a class="reference internal" href="../operation/interface.html#throttle-screen"><span class="std std-ref">Throttle Screen</span></a>.  It will ignore the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> name for the <span class="guilabel">Select</span> button label.</p>
+<p>This changes the button label only.  It has no other functional effect.</p>
 </section>
 <section id="default-function-preferences">
 <h3><a class="toc-backref" href="#id296" role="doc-backlink">Default Function Preferences</a><a class="headerlink" href="#default-function-preferences" title="Link to this heading"></a></h3>
-<p>The following preferences provide options for when and how the default Function Labels are displayed.</p>
+<p>The following preferences provide options for when and how the <a class="reference internal" href="../operation/interface.html#id17"><span class="std std-ref">Default Function Labels</span></a> are displayed.</p>
 <nav class="contents in-this-section local" id="id6">
 <p class="topic-title">In this Section</p>
 <ul class="simple">
@@ -1800,15 +1808,28 @@
 </nav>
 <section id="use-default-function-labels">
 <h4><a class="toc-backref" href="#id321" role="doc-backlink">Use default function labels?</a><a class="headerlink" href="#use-default-function-labels" title="Link to this heading"></a></h4>
-<p>If this preference is enabled <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will <em>always</em> display the default Function Labels (configured inside <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>) instead of labels from <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entries. It will ignore the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> for the Function button labels.  It changes the labels only.  It has no other functional effect.</p>
+<p>If this preference is enabled <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will <em>always</em> display the <a class="reference internal" href="../operation/interface.html#id17"><span class="std std-ref">Default Function Labels</span></a> (configured inside <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>) instead of labels from <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entries. It will ignore the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> for the Function button labels.</p>
+<p>This changes the button labels only.  It has no other functional effect.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>Also see the <a class="reference internal" href="../operation/interface.html#id17"><span class="std std-ref">Default Function Screen</span></a> for more information.</p>
+</div>
 </section>
 <section id="number-of-default-functions">
 <h4><a class="toc-backref" href="#id322" role="doc-backlink">Number of Default Functions</a><a class="headerlink" href="#number-of-default-functions" title="Link to this heading"></a></h4>
 <p>This preference is used to limit the number of Function Labels shown for selected locos that are not from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>, or where you have set the <a class="reference internal" href="#use-default-function-labels">Use default function labels?</a> preference.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>Also see the <a class="reference internal" href="../operation/interface.html#id17"><span class="std std-ref">Default Function Screen</span></a> for more information.</p>
+</div>
 </section>
 <section id="number-of-default-functions-for-roster">
 <h4><a class="toc-backref" href="#id323" role="doc-backlink">Number of Default Functions for Roster</a><a class="headerlink" href="#number-of-default-functions-for-roster" title="Link to this heading"></a></h4>
 <p>This preference is used to limit the number of Function Labels shown for <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> Entries that don’t have any function Labels configured.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>Also see the <a class="reference internal" href="../operation/interface.html#id17"><span class="std std-ref">Default Function Screen</span></a> for more information.</p>
+</div>
 </section>
 </section>
 <section id="function-buttons-area-size">
@@ -1816,7 +1837,7 @@
 <p>This preference is used to instruct <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to show some, or no, Function Buttons (0-4) below the Speed Slider the ‘Simple’ Throttle layout ONLY.</p>
 <p>Only relevant to the following Throttle Screen layouts:</p>
 <ul class="simple">
-<li><p>Simple</p></li>
+<li><p><a class="reference internal" href="setup_wizard.html#throttle-screen-layout"><span class="std std-ref">Simple</span></a></p></li>
 </ul>
 </section>
 <section id="throttle-web-view-preferences">
@@ -2005,7 +2026,7 @@ Requires restart of engine Driver after changing to take effect.</p>
 <section id="acceleration-speed-step-repeat-delay">
 <h4><a class="toc-backref" href="#id112" role="doc-backlink">Acceleration Speed Step Repeat Delay</a><a class="headerlink" href="#acceleration-speed-step-repeat-delay" title="Link to this heading"></a></h4>
 <p>This preference adjusts how long between acceleration speed steps repeats (in milliseconds).</p>
-<p>Smaller is faster.</p>
+<p><em>Smaller is faster.</em></p>
 <ul>
 <li><p>This setting (combined with the Speed Step Amount) is used to provide a basic level of <abbr title="Semi-Realistic Throttle">SRT</abbr> create momentum to loco movement.</p></li>
 <li><p>Think of it providing a smoothing function to the speed control (given that the Load settings will be the primary means of determining major impacts on train performance)</p></li>
@@ -2023,7 +2044,7 @@ Requires restart of engine Driver after changing to take effect.</p>
 <section id="deceleration-speed-step-repeat-delay">
 <h4><a class="toc-backref" href="#id113" role="doc-backlink">Deceleration Speed Step Repeat Delay</a><a class="headerlink" href="#deceleration-speed-step-repeat-delay" title="Link to this heading"></a></h4>
 <p>This preference adjusts how long between deceleration speed steps repeats (in milliseconds).</p>
-<p>Smaller is faster.</p>
+<p><em>Smaller is faster.</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> throttle and speed changes on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2032,7 +2053,7 @@ Requires restart of engine Driver after changing to take effect.</p>
 <section id="speed-step-amount">
 <h4><a class="toc-backref" href="#id114" role="doc-backlink">Speed Step Amount</a><a class="headerlink" href="#speed-step-amount" title="Link to this heading"></a></h4>
 <p>This preference adjusts how much the actual speed step jumps each step to the target speed.</p>
-<p>Larger is faster.</p>
+<p><em>Larger is faster.</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> throttle and speed changes on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2114,7 +2135,12 @@ Requires restart of engine Driver after changing to take effect.</p>
 </section>
 <section id="maximum-brake-percentage">
 <h4><a class="toc-backref" href="#id119" role="doc-backlink">Maximum Brake Percentage</a><a class="headerlink" href="#maximum-brake-percentage" title="Link to this heading"></a></h4>
-<p>This preference adjusts the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero</p>
+<p>This preference adjusts the maximum percentage of the Brake slider. <em>(5-100%) 100%=immediate zero</em></p>
+<p>Note: Setting the Maximum Brake to 100% will result in the unrealistic speed drop to zero almost immediately, if the Brake is dragged to the top of the slider.</p>
+<div class="note-ed-hidden-title admonition note">
+<p class="admonition-title">Note</p>
+<p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> Air Brakes on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
+</div>
 </section>
 <section id="disable-the-air-reservoir">
 <h4><a class="toc-backref" href="#id120" role="doc-backlink">Disable the Air Reservoir</a><a class="headerlink" href="#disable-the-air-reservoir" title="Link to this heading"></a></h4>
@@ -2127,7 +2153,7 @@ Requires restart of engine Driver after changing to take effect.</p>
 <section id="rate-the-air-brakes-refresh">
 <h4><a class="toc-backref" href="#id121" role="doc-backlink">Rate the air brakes refresh</a><a class="headerlink" href="#rate-the-air-brakes-refresh" title="Link to this heading"></a></h4>
 <p>This preference adjusts the rate that the Air Brakes will refresh/refill (in milliseconds).</p>
-<p>Smaller is faster.</p>
+<p><em>Smaller is faster.</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> Air Brakes on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2148,7 +2174,8 @@ Requires restart of engine Driver after changing to take effect.</p>
 </section>
 <section id="maximum-load-percentage">
 <h4><a class="toc-backref" href="#id123" role="doc-backlink">Maximum Load Percentage</a><a class="headerlink" href="#maximum-load-percentage" title="Link to this heading"></a></h4>
-<p>This preference adjusts the maximum percentage of the Load Slider. (100-2000%) 100% = loco alone</p>
+<p>This preference adjusts the maximum percentage of the Load Slider.</p>
+<p><em>(100-2000%) 100% = loco alone</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> Load Slider on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2164,7 +2191,8 @@ Requires restart of engine Driver after changing to take effect.</p>
 </section>
 <section id="decoder-low-function-number-s">
 <h4><a class="toc-backref" href="#id125" role="doc-backlink">Decoder Low Function Number(s)</a><a class="headerlink" href="#decoder-low-function-number-s" title="Link to this heading"></a></h4>
-<p>This preference sets which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)</p>
+<p>This preference sets which Decoder Function(s) to activate at Low Brake Value.</p>
+<p><em>(-1 to ignore)</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2180,7 +2208,8 @@ Requires restart of engine Driver after changing to take effect.</p>
 </section>
 <section id="decoder-mid-function-number-s">
 <h4><a class="toc-backref" href="#id127" role="doc-backlink">Decoder Mid Function Number(s)</a><a class="headerlink" href="#decoder-mid-function-number-s" title="Link to this heading"></a></h4>
-<p>This preference sets which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)</p>
+<p>This preference sets which Decoder Function(s) to activate at Mid Brake Value.</p>
+<p><em>(-1 to ignore)</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2196,7 +2225,8 @@ Requires restart of engine Driver after changing to take effect.</p>
 </section>
 <section id="decoder-high-function-number-s">
 <h4><a class="toc-backref" href="#id129" role="doc-backlink">Decoder High Function Number(s)</a><a class="headerlink" href="#decoder-high-function-number-s" title="Link to this heading"></a></h4>
-<p>This preference sets which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)</p>
+<p>This preference sets which Decoder Function(s) to activate at High Brake Value.</p>
+<p><em>(-1 to ignore)</em></p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See description of the <abbr title="Semi-Realistic Throttle">SRT</abbr> integration with decoder braking on the <a class="reference internal" href="../operation/semi-realistic-throttle.html"><span class="doc">Semi-Realistic Throttle (SRT)</span></a> page.</p>
@@ -2878,10 +2908,10 @@ Requires restart of engine Driver after changing to take effect.</p>
 <hr class="docutils" />
 <section id="additional-selected-loco-indicator">
 <h3><a class="toc-backref" href="#id375" role="doc-backlink">Additional selected loco Indicator</a><a class="headerlink" href="#additional-selected-loco-indicator" title="Link to this heading"></a></h3>
-<p>If this preference is enabled an additional highlight of the Loco Select button is displayed.</p>
+<p>If this preference is enabled additional highlights of the Loco <span class="guilabel">Select</span> button is displayed.</p>
 <p>Options include:</p>
 <ul class="simple">
-<li><p>none</p></li>
+<li><p>None</p></li>
 <li><p>Both Volume and Gamepad 1</p></li>
 <li><p>Gamepad 1 only</p></li>
 </ul>
@@ -3041,7 +3071,12 @@ i.e. It is not possible to Select (add or remove) locos if they are moving.</p>
 </section>
 <section id="in-phone-loco-sounds">
 <h2><a class="toc-backref" href="#id231" role="doc-backlink">In Phone Loco Sounds</a><a class="headerlink" href="#in-phone-loco-sounds" title="Link to this heading"></a></h2>
-<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can play synchronised loco sounds through the speaker of your Android device / phone, or through BlueTooth speakers connected to it.</p>
+<div class="important-float-right admonition important">
+<p class="admonition-title">Important</p>
+<p>The IPLS feature of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> uses the Notification features of Android, not the Media Player features.</p>
+<p>That means that, at the Android system level, the volume is controlled by the ‘Ring and Notification volume’ not the ‘Media volume’.</p>
+</div>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can play synchronised loco sounds through the speaker of your Android device/phone, or through BlueTooth speakers connected to your device/phone.</p>
 <p>There is built in Support for a number of different type of locos:</p>
 <ul class="simple">
 <li><p>Steam - 4 in-built profiles</p></li>
@@ -3462,7 +3497,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f09bc9b6950>
+    <jinja2.runtime.BlockReference object at 0x7fd3d3dc8490>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

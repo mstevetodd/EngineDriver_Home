@@ -408,9 +408,9 @@ Only relevant for the following Throttle Screen Layouts:
 Display Speed buttons?
 '''''''''''''''''''''''''''''''''''
 
-If this preference is enabled, |ED| will display buttons (``++`` and ``--``) next to Speed Sliders to change loco speed.  
+If this preference is enabled, |ED| will display buttons (:guilabel:`++` and :guilabel:`--`) next to Speed Sliders to change loco speed.  
 
-Clicking the ``++`` button will increase the speed of the Locos(s) by a preset amount. Clicking the ``--`` button will increase the speed of the Locos(s) by a preset amount.  
+Clicking the :guilabel:`++` button will increase the speed of the Locos(s) by a preset amount. Clicking the :guilabel:`--` button will increase the speed of the Locos(s) by a preset amount.  
 
 The amount the speed changes on each press can be changed with the `Speed Button Change Amount`_ preference.  Note that this is independent of the `Speed Button Change Amount (Volume)`_ preference and the `Speed Button Change Amount (Gamepad)`_ preference.
 
@@ -438,8 +438,8 @@ Only really of use on the ESU MCII
 
 This option is not relevant for the following Throttle Screen Layouts as they cannot be without the Speed buttons:
 
-* Big Buttons - Left
-* Big Buttons - Right
+* :ref:`Big Buttons - Left <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Big Buttons - Right <configuration/setup_wizard:throttle screen layout>`
 
 Tick Marks on Speed Sliders?
 '''''''''''''''''''''''''''''''''''
@@ -453,13 +453,10 @@ If this preferences is enabled, |ED| will set the size of the dead zone, or dete
 
 Only relevant to the following Throttle Screen layouts:
 
-* Vertical Shunting |BR| Vertical Switching
-* Vertical Shunting - Left |BR| Vertical Switching - Left
-* Vertical Shunting - Right |BR| Vertical Switching - Right
-* Horizontal Shunting |BR| Horizontal Switching
-* Horizontal Shunting - Left |BR| Horizontal Switching - Left
-* Horizontal Shunting - Right |BR| Horizontal Switching - Right
-
+* :ref:`Vertical Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching - Left <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching - Right <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Horizontal Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
 
 Stop Button Vertical Margins
 '''''''''''''''''''''''''''''''''''
@@ -468,10 +465,10 @@ If this preferences is enabled, |ED| will add the entered number of pixels to of
 
 Only relevant to the following Throttle Screen layouts:
 
-* Vertical
-* Vertical Shunting |BR| Vertical Switching
-* Vertical Shunting - Left |BR| Vertical Switching - Left
-* Vertical Shunting - Right |BR| Vertical Switching - Right
+* :ref:`Vertical <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching - Left <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching - Right <configuration/setup_wizard:throttle screen layout>`
 
 Haptic Feedback (Vibration) Preferences
 """""""""""""""""""""""""""""""""""""""
@@ -522,7 +519,7 @@ If this preferences is enabled, |ED| will permanently swap the two Direction but
 Long press Swap Direction buttons?
 '''''''''''''''''''''''''''''''''''
 
-If this preferences is enabled, |ED| will temporarily swap the two Direction buttons when you long press of either of the Direction buttons.
+If this preferences is enabled, |ED| will temporarily swap the two Direction buttons, when you *long press* of either of the Direction buttons.
 
 Direction button Long Press Delay
 '''''''''''''''''''''''''''''''''''
@@ -534,28 +531,28 @@ Left Direction button Label
 
 This preference allows to change the labels for all LEFT direction buttons. 
 
-Enter \'Forward\' or blank for normal behaviour.
+Enter \'Forward\' or blank for normal/default behaviour.
 
 Right Direction button Label
 '''''''''''''''''''''''''''''''''''
 
 This preference allows to change the labels for all RIGHT direction buttons.
 
-Enter \'Reverse\' or blank for normal behaviour.
+Enter \'Reverse\' or blank for normal/default behaviour.
 
 Short Left Direction button Label
 '''''''''''''''''''''''''''''''''''
 
 This preference allows to change the short labels for all LEFT direction buttons.
 
-Enter 'Fwd' or blank for normal behaviour.
+Enter 'Fwd' or blank for normal/default behaviour.
 
 Short Right Direction button Label
 '''''''''''''''''''''''''''''''''''
  
 This preference allows to change the short labels for all RIGHT direction buttons.
 
-Enter 'Rev' or blank for normal behaviour.
+Enter 'Rev' or blank for normal/default behaviour.
 
 Decrease Loco No. height?
 """""""""""""""""""""""""
@@ -565,12 +562,14 @@ If this preference is enabled |ed| will use smaller buttons for the Loco Number,
 Loco Address instead of Name?
 """""""""""""""""""""""""""""
 
-If this preference is enabled |ed| will show loco DCC Address(es) instead of the |ROSTER| Name(s) on the |T-S|.  It will ignore the |ROSTER| name for the :guilabel:`Select` button label.  This changes the label only.  It has no other functional effect.
+If this preference is enabled |ed| will show loco DCC Address(es) instead of the |ROSTER| Name(s) on the |T-S|.  It will ignore the |ROSTER| name for the :guilabel:`Select` button label.  
+
+This changes the button label only.  It has no other functional effect.
 
 Default Function Preferences
 """"""""""""""""""""""""""""
 
-The following preferences provide options for when and how the default Function Labels are displayed.
+The following preferences provide options for when and how the :ref:`Default Function Labels <operation/interface:function defaults screen>` are displayed.
 
 .. contents:: In this Section
     :depth: 1
@@ -580,17 +579,34 @@ The following preferences provide options for when and how the default Function 
 Use default function labels?
 '''''''''''''''''''''''''''''''''''
 
-If this preference is enabled |ed| will *always* display the default Function Labels (configured inside |ed|\ ) instead of labels from |ROSTER| entries. It will ignore the |ROSTER| for the Function button labels.  It changes the labels only.  It has no other functional effect.
+If this preference is enabled |ed| will *always* display the :ref:`Default Function Labels <operation/interface:function defaults screen>` (configured inside |ed|\ ) instead of labels from |ROSTER| entries. It will ignore the |ROSTER| for the Function button labels.  
+
+This changes the button labels only.  It has no other functional effect.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :ref:`Default Function Screen <operation/interface:function defaults screen>` for more information.
 
 Number of Default Functions
 '''''''''''''''''''''''''''''''''''
 
 This preference is used to limit the number of Function Labels shown for selected locos that are not from the |ROSTER|, or where you have set the `Use default function labels?`_ preference. 
 
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :ref:`Default Function Screen <operation/interface:function defaults screen>` for more information.
+
 Number of Default Functions for Roster
 ''''''''''''''''''''''''''''''''''''''
 
 This preference is used to limit the number of Function Labels shown for |ROSTER| Entries that don't have any function Labels configured.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  Also see the :ref:`Default Function Screen <operation/interface:function defaults screen>` for more information.
 
 Function Buttons Area size
 """"""""""""""""""""""""""
@@ -599,7 +615,7 @@ This preference is used to instruct |ed| to show some, or no, Function Buttons (
 
 Only relevant to the following Throttle Screen layouts:
 
-* Simple
+* :ref:`Simple <configuration/setup_wizard:throttle screen layout>`
 
 Throttle Web View Preferences
 """""""""""""""""""""""""""""
@@ -815,7 +831,7 @@ Acceleration Speed Step Repeat Delay
 
 This preference adjusts how long between acceleration speed steps repeats (in milliseconds). 
 
-Smaller is faster.
+*Smaller is faster.*
 
 * This setting (combined with the Speed Step Amount) is used to provide a basic level of |SRT| create momentum to loco movement. 
 * Think of it providing a smoothing function to the speed control (given that the Load settings will be the primary means of determining major impacts on train performance)
@@ -830,7 +846,7 @@ Deceleration Speed Step Repeat Delay
 
 This preference adjusts how long between deceleration speed steps repeats (in milliseconds). 
 
-Smaller is faster.
+*Smaller is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -842,7 +858,7 @@ Speed Step Amount
 
 This preference adjusts how much the actual speed step jumps each step to the target speed. 
 
-Larger is faster.
+*Larger is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -922,7 +938,14 @@ Notes:
 Maximum Brake Percentage
 ''''''''''''''''''''''''
 
-This preference adjusts the maximum percentage of the Brake slider. (5-100%) 100%=immediate zero
+This preference adjusts the maximum percentage of the Brake slider. *(5-100%) 100%=immediate zero*
+
+Note: Setting the Maximum Brake to 100% will result in the unrealistic speed drop to zero almost immediately, if the Brake is dragged to the top of the slider.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See description of the |SRT| Air Brakes on the :doc:`/operation/semi-realistic-throttle` page.
 
 Disable the Air Reservoir
 '''''''''''''''''''''''''
@@ -939,7 +962,7 @@ Rate the air brakes refresh
 
 This preference adjusts the rate that the Air Brakes will refresh/refill (in milliseconds). 
 
-Smaller is faster.
+*Smaller is faster.*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -964,7 +987,9 @@ Notes:
 Maximum Load Percentage
 '''''''''''''''''''''''
 
-This preference adjusts the maximum percentage of the Load Slider. (100-2000%) 100% = loco alone
+This preference adjusts the maximum percentage of the Load Slider. 
+
+*(100-2000%) 100% = loco alone*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -984,7 +1009,9 @@ This preference sets wehther or not to activate the Brake functions on the decod
 Decoder Low Function Number(s)
 ''''''''''''''''''''''''''''''
 
-This preference sets which Decoder Function(s) to activate at Low Brake Value. (-1 to ignore)
+This preference sets which Decoder Function(s) to activate at Low Brake Value. 
+
+*(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1004,7 +1031,9 @@ This preference sets what Percentage Brake to activate the Low Function(s)
 Decoder Mid Function Number(s)
 ''''''''''''''''''''''''''''''
 
-This preference sets which Decoder Function(s) to activate at Mid Brake Value. (-1 to ignore)
+This preference sets which Decoder Function(s) to activate at Mid Brake Value. 
+
+*(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1024,7 +1053,9 @@ This preference sets what Percentage Brake to activate the Mid Function(s)
 Decoder High Function Number(s)
 '''''''''''''''''''''''''''''''
 
-This preference sets which Decoder Function(s) to activate at High Brake Value. (-1 to ignore)
+This preference sets which Decoder Function(s) to activate at High Brake Value. 
+
+*(-1 to ignore)*
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1803,11 +1834,11 @@ Enable this preference to allow the control knob to be disabled by an action but
 Additional selected loco Indicator
 """"""""""""""""""""""""""""""""""
 
-If this preference is enabled an additional highlight of the Loco Select button is displayed.
+If this preference is enabled additional highlights of the Loco :guilabel:`Select` button is displayed.
 
 Options include:
 
-* none
+* None
 * Both Volume and Gamepad 1
 * Gamepad 1 only
 
@@ -1977,7 +2008,16 @@ If this preference is disabled, |ED| will use the default labels for locos selec
 In Phone Loco Sounds
 --------------------
 
-|ed| can play synchronised loco sounds through the speaker of your Android device / phone, or through BlueTooth speakers connected to it.
+
+.. important::
+  :class: important-float-right
+
+  The IPLS feature of |ED| uses the Notification features of Android, not the Media Player features.
+
+  That means that, at the Android system level, the volume is controlled by the 'Ring and Notification volume' not the 'Media volume'.
+
+
+|ed| can play synchronised loco sounds through the speaker of your Android device/phone, or through BlueTooth speakers connected to your device/phone.
 
 There is built in Support for a number of different type of locos:
 

@@ -9,7 +9,7 @@ Quick Start / Getting Started
 
 ----
 
-* Confirm that your devices meet the `Prerequisites <../prerequisites/index.html>`_
+* Confirm that your devices meet the :doc:`Prerequisites </prerequisites/index>`
 * Install |ed| from the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by `direct download <../downloads/index.html>`_ of the .apk. 
 * **Start your WiThrottle server**
 

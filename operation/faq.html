@@ -10,7 +10,7 @@
   <title>Frequently Asked Questions &mdash; Engine Driver - Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=0161bf73" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=5fa33ab7" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -321,7 +321,7 @@
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#example-srt-throttle-with-no-or-little-decoder-momentum">Example: SRT throttle with no, or little, decoder momentum</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="semi-realistic-throttle.html#srt-detailed-operation"><abbr title="Semi-Realistic Throttle">SRT</abbr> - Detailed Operation</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="semi-realistic-throttle.html#detailed-operation">Detailed Operation</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#a-throttle">a) Throttle</a></li>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#b-direction">b) Direction</a></li>
 <li class="toctree-l4"><a class="reference internal" href="semi-realistic-throttle.html#c-load">c) Load</a></li>
@@ -392,9 +392,17 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#wrong-network">Wrong Network</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#ed-doesn-t-find-my-wts-dcc-ex"><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> Doesn’t Find My <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a></a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#bonjour-mdns">Bonjour/mDNS</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#routers-and-mesh-networks">Routers and Mesh networks</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#ghz-and-5ghz">4.5ghz and 5ghz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#mesh-routers">Mesh Routers</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
 <li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#disconnections">Disconnections</a></li>
 </ul>
@@ -424,6 +432,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#changing-the-connection-screen">Changing the Connection screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#changing-the-turnouts-points-screen">Changing the turnouts/Points screen</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#conserving-power-on-your-phone-tablet">Conserving power on your phone/tablet</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#virtual-sounds-in-phone-loco-sounds-ipls">Virtual Sounds / In Phone Loco Sounds (IPLS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#dcc-ex-features">DCC-EX Features</a></li>
 </ul>
 </li>
@@ -905,7 +914,8 @@
 <li><p><a class="reference internal" href="#changing-the-connection-screen" id="id26">Changing the Connection screen</a></p></li>
 <li><p><a class="reference internal" href="#changing-the-turnouts-points-screen" id="id27">Changing the turnouts/Points screen</a></p></li>
 <li><p><a class="reference internal" href="#conserving-power-on-your-phone-tablet" id="id28">Conserving power on your phone/tablet</a></p></li>
-<li><p><a class="reference internal" href="#dcc-ex-features" id="id29">DCC-EX Features</a></p></li>
+<li><p><a class="reference internal" href="#virtual-sounds-in-phone-loco-sounds-ipls" id="id29">Virtual Sounds / In Phone Loco Sounds (IPLS)</a></p></li>
+<li><p><a class="reference internal" href="#dcc-ex-features" id="id30">DCC-EX Features</a></p></li>
 </ul>
 </nav>
 </aside>
@@ -954,8 +964,10 @@
 </ol>
 <blockquote>
 <div><p>I can manually connect to my Server / Railroad by entering an IP address, but it never finds it automatically.</p>
-<p>A1. One reason can be your router doesn’t not support the ‘Bonjour’ protocol. There is not much you can do if this is the case other than trying a different router.</p>
-<p>A2. 4.5ghz and 5ghz. <span style="color:red">TODO</span></p>
+<p>A1. Make sure that the Android System ‘Use Location’ is enabled.  This must be enabled for <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to ‘find’ servers on the network.</p>
+<p>A2. 4.5ghz and 5ghz.   Some routers do not transfer the mDNS messages between clients on the 4.5ghz and 5ghz channels.  So if your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> is using 4.5ghz, make sure you device/phone is using a 4.5ghz channel as well. (Or both use 5ghz channels.)</p>
+<p>A3. Mesh Routers.  Many Mesh routers will not transfer the mDNS messages to other connected routers / modems. If you are using a mesh network, make sure both the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> and the device/phone are using the same Mesh network.</p>
+<p>A4. One reason can be your router doesn’t not support the Bonjour/mDNS protocol. There is not much you can do if this is the case other than trying a different router.</p>
 </div></blockquote>
 <p><hr class="hr-dashed" /></p>
 <ol class="upperalpha simple" start="17">
@@ -1397,8 +1409,21 @@ The most common use of this (so far) is to remember the locos relevant to that r
 <p>See the <a class="reference internal" href="../configuration/conserving_power.html"><span class="doc">Conserving Battery Power</span></a> page for more information.</p>
 </div>
 </section>
+<section id="virtual-sounds-in-phone-loco-sounds-ipls">
+<h2><a class="toc-backref" href="#id29" role="doc-backlink">Virtual Sounds / In Phone Loco Sounds (IPLS)</a><a class="headerlink" href="#virtual-sounds-in-phone-loco-sounds-ipls" title="Link to this heading"></a></h2>
+<ol class="upperalpha simple" start="17">
+<li><p>I can’t hear the In Phone Loco Sounds (IPLS)</p></li>
+</ol>
+<blockquote>
+<div><ol class="upperalpha simple">
+<li><p>Adjust the ‘Ring and Notification volume’ in the Andrtoid System Settings. (the volume buttons on the side of the device/phone don’t adjust this setting by default.)</p></li>
+</ol>
+<p>The IPLS feature of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> uses the Notification features of Android, not the Media Player features.</p>
+<p>That means that, at the Android system level, the volume is controlled by the ‘Ring and Notification volume’ not the ‘Media volume’.</p>
+</div></blockquote>
+</section>
 <section id="dcc-ex-features">
-<h2><a class="toc-backref" href="#id29" role="doc-backlink">DCC-EX Features</a><a class="headerlink" href="#dcc-ex-features" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id30" role="doc-backlink">DCC-EX Features</a><a class="headerlink" href="#dcc-ex-features" title="Link to this heading"></a></h2>
 <div class="admonition-todo admonition" id="id10">
 <p class="admonition-title">Todo</p>
 <p>FAQ DCC-EX Features</p>
@@ -1424,7 +1449,7 @@ The most common use of this (so far) is to remember the locos relevant to that r
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f09bede97b0>
+    <jinja2.runtime.BlockReference object at 0x7fd3d396d0f0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
