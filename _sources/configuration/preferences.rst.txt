@@ -90,7 +90,7 @@ Themes provide different colours and textures to the buttons, backgrounds, slide
 
 There are a number themes to choose from:
 
-* Original 
+* Original (Checker Plate)
 * High contrast
 * High contrast *outline*
 * Dark
@@ -131,20 +131,21 @@ For English, it also changes the railroad/railway terminology (e.g. Selecting 'U
 
 Supported localisations are:
 
-* Use Phone's global setting |BR| -  Will use any of the localisations below depending on what your system is set to it
-* English (US) - Engine Driver's default
-* English (UK)
+* Use Phone's global setting |BR| -  Will use any of the localisations below depending on what your system is set to it |BR| *This the default setting*
+* English (US) |BR| *Engine Driver will default to this if no matching language is found for the previous option*
 * English (AUS)
 * English (NZ)
-* Italian
-* Portuguese
-* German
-* Spanish
+* English (UK)
 * Catalan
-* French (FR)
-* French (FA)
 * Czech
+* Italian
 * Japanese
+* Spanish
+* French (FR)
+* French (CA)
+* German (DE)
+* German (AT / CH / LI)
+* Portuguese
 
 Left/Right Swipe Preferences
 """"""""""""""""""""""""""""

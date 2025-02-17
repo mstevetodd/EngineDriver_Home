@@ -33,11 +33,11 @@ Supported |WTSS| include:
 * Up to six |locos_consists| can be controlled at the same time
 * Easily create and edit on-the-fly |consists| (software-defined)
 * Control layout power, turnouts/points, routes, and access JMRI web panels and windows
-* Play virtual loco sounds 
+* :doc:`Play virtual loco sounds </configuration/ipls>` 
 * Specific to the |EX-CS|, Engine Driver can also use the |NATIVE| to communicate which allows:
  
- * Program CVs (Service Mode and Operation Mode)
- * Control the TrackManager features
+ * :ref:`Program CVs <operation/dcc-ex-native-protocol:Read and write DCC addresses on the Programming Track>` (Service Mode and Operation Mode)
+ * Control the :ref:`TrackManager features <operation/dcc-ex-native-protocol:TrackManager control>`
  * Use some extended Route capabilities
  * Use the 'Request Loco ID' & 'Drive Away' feature from a Program track onto Mainline track
 
