@@ -134,6 +134,11 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   clear: none !important;
 }
 
+.todo-float-right {
+  float: right;
+  width: 40%;
+}
+
 html[data-theme='dark'] .important {
   background: #00211a !important;
   clear: none !important;

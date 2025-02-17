@@ -10,7 +10,7 @@
   <title>Consist Function Follow &mdash; Engine Driver - Documentation  documentation</title>
       <link rel="stylesheet" type="text/css" href="../_static/pygments.css?v=b86133f3" />
       <link rel="stylesheet" type="text/css" href="../_static/css/theme.css?v=19f00094" />
-      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=5fa33ab7" />
+      <link rel="stylesheet" type="text/css" href="../_static/css/engine_driver_home_theme.css?v=f24c1fd7" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/general.css?v=c0a7eb24" />
       <link rel="stylesheet" type="text/css" href="../_static/dark_mode_css/dark.css?v=bfd9ebc6" />
 
@@ -267,7 +267,7 @@
 <li class="toctree-l4"><a class="reference internal" href="interface.html#power-screen">Power Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#preferences-screen">Preferences Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#in-phone-loco-sounds-screen">In Phone Loco Sounds Screen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="interface.html#id17">Function Defaults Screen</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#id19">Function Defaults Screen</a><ul>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#number-of-default-functions">Number of Default Functions</a></li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#number-of-default-functions-for-roster">Number of Default Functions for Roster</a></li>
 <li class="toctree-l5"><a class="reference internal" href="interface.html#use-default-function-labels">Use Default Function Labels</a></li>
@@ -279,6 +279,7 @@
 <li class="toctree-l4"><a class="reference internal" href="interface.html#function-latching-settings-screen">Function Latching Settings Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#dcc-ex-function-settings-screen">DCC-EX Function Settings Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#dcc-ex-screen">DCC-EX Screen</a></li>
+<li class="toctree-l4"><a class="reference internal" href="interface.html#withrottle-programming-on-the-main-screen">WiThrottle - Programming on the Main Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#gamepad-test-screen">Gamepad Test Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#view-log-screen">View Log Screen</a></li>
 <li class="toctree-l4"><a class="reference internal" href="interface.html#about-screen">About Screen</a></li>
@@ -390,9 +391,9 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="wifi_issues.html">WiFi Issues</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#ed-doesn-t-find-my-wts-dcc-ex"><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> Doesn’t Find My <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#bonjour-mdns">Bonjour/mDNS</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#use-location">Use location</a></li>
-<li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#bonjour-mdns">Bonjour/mDNS</a></li>
+<li class="toctree-l4"><a class="reference internal" href="wifi_issues.html#incompatible-routers">Incompatible Routers</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="wifi_issues.html#firewalls">Firewalls</a></li>
@@ -705,6 +706,7 @@
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#socket-timeout">Socket Timeout</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#mobile-data-connection">Mobile Data connection?</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#feedback-on-disconnect">Feedback on Disconnect</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#show-withrottle-pom-page">Show WiThrottle PoM Page</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#background-alert">Background Alert</a></li>
 <li class="toctree-l5"><a class="reference internal" href="../configuration/preferences.html#dcc-ex-ex-commandstation-preferences">DCC-EX EX-CommandStation Preferences</a><ul>
 <li class="toctree-l6"><a class="reference internal" href="../configuration/preferences.html#use-native-dcc-ex-command">Use Native DCC-EX command</a></li>
@@ -1115,9 +1117,9 @@
 </section>
 <section id="special-partial-matching-option">
 <h5>‘Special Partial Matching’ Option<a class="headerlink" href="#special-partial-matching-option" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id2">
+<div class="todo-float-right admonition" id="id2">
 <p class="admonition-title">Todo</p>
-<p>‘Special Partial Matching’ Option</p>
+<p>LOW: ‘Special Partial Matching’ Option</p>
 </div>
 <p>IF</p>
 <ol class="loweralpha simple">
@@ -1221,27 +1223,27 @@
 </ul>
 <section id="if-all-matches-fail-action-preference">
 <h5>‘If All matches Fail Action’ Preference<a class="headerlink" href="#if-all-matches-fail-action-preference" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id3">
+<div class="todo-float-right admonition" id="id3">
 <p class="admonition-title">Todo</p>
-<p>‘If All matches Fail Action’ Preference</p>
+<p>LOW: ‘If All matches Fail Action’ Preference</p>
 </div>
 <p>Which locos in the consist should react to the function buttons if none of the rules below are met.</p>
 <p>For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or ‘Special’ options are selected in the ‘Consist Functions - Follow Rule Style’ preference.</p>
 </section>
 <section id="headlight-specific-string-1-preference">
 <h5>‘Headlight specific String 1’ Preference<a class="headerlink" href="#headlight-specific-string-1-preference" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id4">
+<div class="todo-float-right admonition" id="id4">
 <p class="admonition-title">Todo</p>
-<p>‘Headlight specific String 1’ Preference</p>
+<p>LOW: ‘Headlight specific String 1’ Preference</p>
 </div>
 <p>Comma separated string(s) to look for in the function labels of the locos in the consist to recognise the ‘Headlight’ function (normally F0).
 For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or ‘Special’ options are selected in the ‘Consist Functions - Follow Rule Style’ preference.</p>
 </section>
 <section id="headlight-specific-action-1-preference">
 <h5>‘Headlight specific Action 1’ Preference<a class="headerlink" href="#headlight-specific-action-1-preference" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id5">
+<div class="todo-float-right admonition" id="id5">
 <p class="admonition-title">Todo</p>
-<p>‘Headlight specific Action 1’ Preference</p>
+<p>LOW: ‘Headlight specific Action 1’ Preference</p>
 </div>
 <p>Which locos in the consist should react to the found headlight functions.</p>
 <p>For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or ‘Special’ options are selected in the ‘Consist Functions - Follow Rule Style’ preference.</p>
@@ -1261,18 +1263,18 @@ For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or
 </section>
 <section id="string-2-3-4-5-preferences">
 <h5>String 2, 3, 4, 5 Preferences<a class="headerlink" href="#string-2-3-4-5-preferences" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id6">
+<div class="todo-float-right admonition" id="id6">
 <p class="admonition-title">Todo</p>
-<p>String 2, 3, 4, 5 Preferences</p>
+<p>LOW: String 2, 3, 4, 5 Preferences</p>
 </div>
 <p>This applies to String 2, String 3, String 4, String 5
 For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or ‘Special’ options are selected in the ‘Consist Functions - Follow Rule Style’ preference.</p>
 </section>
 <section id="action-for-string-2-3-4-5-preferences">
 <h5>Action for String 2, 3, 4, 5 Preferences<a class="headerlink" href="#action-for-string-2-3-4-5-preferences" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id7">
+<div class="todo-float-right admonition" id="id7">
 <p class="admonition-title">Todo</p>
-<p>Action for String 2, 3, 4, 5 Preferences</p>
+<p>LOW: Action for String 2, 3, 4, 5 Preferences</p>
 </div>
 <p>This applies to Action for String 2, Action for String 3, Action for String 4, Action for String 5.</p>
 <p>For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or ‘Special’ options are selected in the ‘Consist Functions - Follow Rule Style’ preference.</p>
@@ -1281,34 +1283,37 @@ For the ‘Complex’ option only. This preference is ignored if ‘Simple’ or
 </section>
 <section id="special-consist-function-matching-options">
 <h4><a class="toc-backref" href="#id34" role="doc-backlink">‘Special’ Consist Function Matching Options</a><a class="headerlink" href="#special-consist-function-matching-options" title="Link to this heading"></a></h4>
-<div class="admonition-todo admonition" id="id8">
+<div class="todo-float-right admonition" id="id8">
 <p class="admonition-title">Todo</p>
-<p>‘Special’ Consist Function Matching Options</p>
+<p>LOW: ‘Special’ Consist Function Matching Options</p>
 </div>
 <p>You can now arrange the default function labels on ED any way you want, and as long as the equivalent function has a similar name it doesn’t matter what function number it is, it will activate it correctly.
 Note, for these options to have any effect:
 The ‘Use default function labels’ preference must be enabled.
 The loco (or locos in a consist) must be selected from the <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr>
 Note: If ‘Use Default function labels’ is enabled, ‘Special…’ will also apply to the lead (or only) loco.</p>
+<p><div style="display:block; box-sizing: border-box; clear: both;"> </div></p>
 <section id="special-exact-matching-options">
 <h5>‘Special - Exact Matching’ Options<a class="headerlink" href="#special-exact-matching-options" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id9">
+<div class="todo-float-right admonition" id="id9">
 <p class="admonition-title">Todo</p>
-<p>‘Special - Exact Matching’ Option</p>
+<p>LOW: ‘Special - Exact Matching’ Option</p>
 </div>
+<p><div style="display:block; box-sizing: border-box; clear: both;"> </div></p>
 </section>
 <section id="special-partial-matching-options">
 <h5>‘Special Partial Matching’ Options<a class="headerlink" href="#special-partial-matching-options" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id10">
+<div class="todo-float-right admonition" id="id10">
 <p class="admonition-title">Todo</p>
-<p>‘Special Partial Matching’ Option</p>
+<p>LOW: ‘Special Partial Matching’ Option</p>
 </div>
+<p><div style="display:block; box-sizing: border-box; clear: both;"> </div></p>
 </section>
 <section id="special-partial-contains-only-options">
 <h5>‘Special Partial - Contains Only’ Options<a class="headerlink" href="#special-partial-contains-only-options" title="Link to this heading"></a></h5>
-<div class="admonition-todo admonition" id="id11">
+<div class="todo-float-right admonition" id="id11">
 <p class="admonition-title">Todo</p>
-<p>‘Special Partial - Contains Only’ Option</p>
+<p>LOW: ‘Special Partial - Contains Only’ Option</p>
 </div>
 </section>
 </section>
@@ -1331,7 +1336,7 @@ Note: If ‘Use Default function labels’ is enabled, ‘Special…’ will als
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fd3d395a6e0>
+    <jinja2.runtime.BlockReference object at 0x7fe64d3e7460>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

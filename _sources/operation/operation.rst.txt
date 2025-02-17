@@ -713,7 +713,12 @@ The :ref:`Location Delimiter <configuration/preferences:location delimiter>` pre
 Recent Turnout/Point list
 """""""""""""""""""""""""
 
-  .. todo:: Recent Turnout/Point list
+.. todo:: 
+  :class: todo-float-right
+  
+  MEDIUM: Recent Turnout/Point list
+
+|FORCE-BREAK|
 
 Turnout/Point Preferences
 """"""""""""""""""""""""""

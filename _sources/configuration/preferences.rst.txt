@@ -1269,7 +1269,10 @@ Maximum throttle Change
 
 This preference allows you to set the Maximum allowed throttle change in % on all the throttles on the |T-S|.  
 
-.. todo::  Maximum throttle Change *Can't remember when this is used.*
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: Maximum throttle Change *Can't remember when this is used.*
 
 Speed button Change Amount
 """"""""""""""""""""""""""
@@ -1358,7 +1361,10 @@ These preferences allow for change the way DCC functions will behave in a |consi
 Consist Functions - Follow Rule Style
 """""""""""""""""""""""""""""""""""""
 
-.. todo::  Consist Functions - Follow Rule Style
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: Consist Functions - Follow Rule Style
 
 Which style of rules to follow in a consist when function buttons are pressed.
 
@@ -2171,10 +2177,24 @@ If this preference is enabled |ed| will play a sound (Audible alert) and will vi
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the `Disconnections <../operation/wifi_issues.html#disconnections>`_ section of the WiFi Issues page if you are having consistant disconnections.
+  See the `Disconnections <../operation/wifi_issues.html#disconnections>`_ section of the WiFi Issues page if you are having consistent disconnections.
+
+
+Show WiThrottle PoM Page
+"""""""""""""""""""""""""
+
+If this preference is enabled |ed| will show and additional item in the menu :menuselection:`Menu --> DCC-EX CV Prog on MAIN`.
+
+This additional menu option allows you to program CVs in decoders on the main (Operation mode programming) on *some* systems / command stations.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :ref:`operation/interface:WiThrottle - Programming on the Main Screen` for more information.
+
 
 Background Alert
-"""""""""""""""""""""""""
+"""""""""""""""""""
 
 If this preference is enabled |ed| will play a sound (Audible alert) when the app is sent to the background.
 
@@ -2435,7 +2455,10 @@ When enabled:
 Manual host specific import/export
 """"""""""""""""""""""""""""""""""
 
-.. todo:: Manual host specific import/export
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: Manual host specific import/export
 
 'Import' or 'Export' your preferences for a specific host to the  ``/Android/data/jmri.enginedriver/files/`` folder. The host must be in your recent connection list.
 

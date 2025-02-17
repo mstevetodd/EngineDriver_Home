@@ -145,7 +145,10 @@ Q. The loco list is too long, I can't find my locos easily
 
   A. You can use the filter option to reduce the list 
 
-  .. todo:: FAQ Selecting locomotives to control
+ .. todo:: 
+  :class: todo-float-right
+  
+  LOW: FAQ Selecting locomotives to control
 
 |HR-DASHED|
 
@@ -161,13 +164,19 @@ Q. How do I work with |Consists| / Multiple Units|
  
   Note you can't create a DCC 'Advanced Consists' (CV19) with |ed|, but you can control one if it has already been setup.
 
-  .. todo:: FAQ DCC 'Advanced Consists' (CV19)
+  .. todo:: 
+    :class: todo-float-right
+    
+    LOW: FAQ DCC 'Advanced Consists' (CV19)
 
   Remember that this type of |consist| can cause problems later if the loco has not been removed from the consist first and you want to control it as an individual loco. 
 
   A3. JMRI Consists
 
-  .. todo:: FAQ JMRI Consists
+  .. todo:: 
+    :class: todo-float-right
+    
+    LOW: FAQ JMRI Consists
 
   Creating |consists| in JMRI effectively create DCC 'Advanced Consists' (CV19) and appear in the loco list in |ed| much like any other loco. 
 
@@ -366,12 +375,19 @@ Swiping up from off screen will normally temporarily show the Android navigation
 Swiping up or Down
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: FAQ Swiping up or Down
+  :class: todo-float-right
+  
+  LOW: FAQ Swiping up or Down
+
+|FORCE-BREAK|
 
 Showing the web page at the bottom of the throttle screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: Showing the web page at the bottom of the throttle screen
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: Showing the web page at the bottom of the throttle screen
 
 See the Web Throttle view 
 
@@ -382,17 +398,26 @@ See the Web Throttle view preference
 Loco selection screen
 --------------------------------------------
 
-.. todo:: FAQ Loco selection screen
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: FAQ Loco selection screen
+
+|FORCE-BREAK|
 
 Locos in the roster not showing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: FAQ Locos in the roster not showing
+  .. todo:: 
+    :class: todo-float-right
+    
+    LOW: FAQ Locos in the roster not showing
 
   A1. check you don't have a filter 
 
   A2. ???
 
+|FORCE-BREAK|
 
 Changing the Connection screen
 --------------------------------------------
@@ -409,7 +434,12 @@ Q. You can't remove test server by swiping right
 Changing the turnouts/Points screen
 --------------------------------------------
 
-.. todo:: FAQ Changing the turnouts screen
+.. todo:: 
+  :class: todo-float-right
+  
+  LOW: FAQ Changing the turnouts screen
+
+|FORCE-BREAK|
 
 Conserving power on your phone/tablet
 -------------------------------------
@@ -447,4 +477,9 @@ Q. I can't hear the In Phone Loco Sounds (IPLS)
 DCC-EX Features
 --------------------------------------------
 
-.. TODO:: FAQ DCC-EX Features
+.. todo:: 
+  :class: todo-float-right
+  
+  MEDIUM: FAQ DCC-EX Features
+
+|FORCE-BREAK|
