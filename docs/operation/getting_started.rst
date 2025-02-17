@@ -53,7 +53,7 @@ Quick Start / Getting Started
        :align: right
 
     * If your |WTS-DCC-EX| does not show up, check that are on the same network as the |WTS-DCC-EX|.   
-    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS-DCC-EX| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/Command Station) and press :guilabel:`Connect`. |BR|\ Note: this situation is sometimes possible even if you are on the same network. |BR|\ |BR|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |BR|\ |BR|\ 
+    * If the server *never* appears in the discovered list, type in the IP address and Port of the |WTS-DCC-EX| (Using the values shown on the JMRI WiThrottle window, or from the documentation for your server/|CS|) and press :guilabel:`Connect`. |BR|\ Note: this situation is sometimes possible even if you are on the same network. |BR|\ |BR|\ See the `WiFi connection <./wifi_issues.html>`_ page for more assistance if you have connection issues. |BR|\ |BR|\ 
 
   |FORCE-BREAK|
 
@@ -65,7 +65,7 @@ Quick Start / Getting Started
       :scale: 11 %
       :align: right
 
-  * If needed, turn the track power on with :menuselection:`Menu --> Power` and confirm the button is 'green'  (This is not required by all DCC Command Stations.)
+  * If needed, turn the track power on with :menuselection:`Menu --> Power` and confirm the button is 'green'  (This is not required by all |CSs|.)
   
   |FORCE-BREAK|
 

@@ -45,13 +45,14 @@ Why Use Engine Driver
 .. image:: ./_static/images/screenshots/throttle_buttons.png
    :align: left
 
-You can use |ed| to operate your DCC model train layout without being physically tethered by any wires. This allows you to walk around your layout, following your trains and/or position yourself anywhere around your layout (e.g. at your favourite viewing position).
+You can use |ed| to operate your DCC or DC [#DC]_ model train layout without being physically tethered by any wires. This allows you to walk around your layout, following your trains and/or position yourself anywhere around your layout (e.g. at your favourite viewing position).
 
 You can add additional |ed| controllers inexpensively using old Android phones or tablets, instead of proprietary controllers.  (You don't need to have a sim card in the phone.)
 
-You only need to interact with JMRI and/or your DCC command station directly when setting up or re-configuring your layout. Once configured, you do not need to interact with either JMRI or your DCC command station directly while you are running your trains. 
+You only need to interact with JMRI and/or your |CS| directly when setting up or re-configuring your layout. Once configured, you do not need to interact with either JMRI or your |CS| directly while you are running your trains. 
 
 ----
 
-.. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has similar capabilities to |ed|. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the wiThrottle app and a number of other apps and DCC Command Stations. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
+.. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has similar capabilities to |ed|. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the wiThrottle app and a number of other apps and |CSs|. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
  
+.. [#DC] The |EX-CS| is capable of driving DC (PWM) outputs as well as, or instead of, DCC outputs.  |ED| is therefor capable of running DC locos as easily as it does DCC locos.

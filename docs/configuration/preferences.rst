@@ -2185,7 +2185,7 @@ Show WiThrottle PoM Page
 
 If this preference is enabled |ed| will show and additional item in the menu :menuselection:`Menu --> DCC-EX CV Prog on MAIN`.
 
-This additional menu option allows you to program CVs in decoders on the main (Operation mode programming) on *some* systems / command stations.
+This additional menu option allows you to program CVs in decoders on the main (Operation mode programming) on *some* systems / |CSs|.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -2206,21 +2206,34 @@ If this preference is enabled |ed| will play a sound (Audible alert) when the ap
 DCC-EX EX-CommandStation Preferences
 """"""""""""""""""""""""""""""""""""
 
-Use Native DCC-EX command
-'''''''''''''''''''''''''
+Use Native DCC-EX commands
+''''''''''''''''''''''''''
 
-If this preference is enabled |ED| will attempt to connect to all Command Stations using the DCC-EX Native Protocol not the WiThrottle protocol.
+This preference tells |ED| which protocol to use when connecting to the |SERVER|.
 
-This can ONLY when connecting to a DCC-EX EX-CommandStation. Using this with any other brand of Command Station will cause |ED| to fail to connect. 
+Options:
 
-When enabled, this provides additional features specific the DCC-EX EX-CommandStation.
+* Yes
+* No
+* Auto
 
-Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the Native DCC-EX Protocol when connecting to a **DCC-EX EX-CommandStation**.
+If this preference is set to ``Yes``, |ED| will attempt to connect to all |CS| using the |Native| not the |WIT|.
+
+  |ED| can then ONLY connect to a |EX-CS|. Using this with any other brand of |CS| Or JMRI will cause |ED| to fail to connect. 
+
+  When enabled, this provides additional features specific the |EX-CS|.
+
+  Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` for details on how to use the |ED| features that are only available when using the |Native| when connecting to a **DCC-EX EX-CommandStation**.
+
+If this preference is set to ``No``, |ED| will attempt to connect to all |CS| using the |WIT|.
+
+If this preference is set to ``Auto``, |ED| will attempt to connect to all any |CS| with "DCC-EX" or "DCCEX" in the server name, or any server with a port of 2560, using the |NATIVE|.  All other |CSs|, it will connect using the |WIT|.
+
 
 Show protocol option
 ''''''''''''''''''''
 
-If this preference is enabled |ED| will show an additional question on the |C-S| which allows you to easily change the `Use Native DCC-EX command` preference when connecting to different brands of Command Station.
+If this preference is enabled |ED| will show an additional question on the |C-S| which allows you to easily change the `Use Native DCC-EX command` preference when connecting to different brands of |CS|.
 
 Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
 

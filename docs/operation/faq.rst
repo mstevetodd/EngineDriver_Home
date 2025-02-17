@@ -43,7 +43,7 @@ Q. |ed| Connects, but I can't control any locos
 
   A. Powering the layout on
 
-  Some DCC command stations need you to turn the track power on before you can use it.
+  Some |CSs| need you to turn the track power on before you can use it.
 
   .. note:: 
     :class: note-ed-hidden-title

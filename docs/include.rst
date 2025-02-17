@@ -94,6 +94,14 @@
 
    :abbr:`Command Stations/Servers (JMRI, EX-CommandStation, WiFTrax, LnWi, etc.)`
 
+.. |CS| replace::
+
+   :abbr:`DCC Command Station (NCE, DigiTrax, EX-CommandStation, etc.)`
+
+.. |CSs| replace::
+
+   :abbr:`DCC Command Stations (NCE, DigiTrax, EX-CommandStation, etc.)`
+
 ..
 .. Use |ED|\ to remove the leading space if you need to follow it by a comma etc.
 ..

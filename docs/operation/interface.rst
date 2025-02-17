@@ -619,11 +619,6 @@ Background
 Immersive Mode (Full Screen)
 """"""""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Immersive Mode (Full Screen)
-
 Immersive mode hides the system navigation buttons at the bottom of the screen on the Throttle screen only, to give you more screen real estate for the throttle UI.
 
 It can optionally also hide the Android System Status Bar at the top of the page.
@@ -1513,7 +1508,7 @@ WiThrottle - Programming on the Main Screen
    :scale: 8 %
    :align: right
 
-This screen allows you to program CVs in decoders on the main (Operation mode programming) on *some* systems / command stations.
+This screen allows you to program CVs in decoders on the main (Operation mode programming) on *some* systems / |CSs|.
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> DCC-EX CV Prog on MAIN`.
 
@@ -1528,7 +1523,7 @@ note: You cannot **READ** CVs.  You can only write them.
 
 .. warning:: 
 
-  This feature only works on a very small number of Command Stations.  It works by sending a hex packet to the command station.
+  This feature only works on a very small number of |CSs|.  It works by sending a hex packet to the |CS|.
 
 |force-break|
 
@@ -1822,7 +1817,7 @@ Fast Clock
 
 The Fast Clock is a non-real time clock used for compressing running times for scheduled running.
 
-JMRI and some Command Stations can broadcast a Fast Clock time continuously.  Enabling this preference will cause |ED| to display the Fast Clock time on the Action Bar.
+|JMRI| and some |CSs| can broadcast a Fast Clock time continuously.  Enabling this preference will cause |ED| to display the Fast Clock time on the Action Bar.
 
 The *Fast Clock* Action Bar button is enabled with the `Fast Clock Display <../configuration/preferences.html#fast-clock-display>`_ preference.
 
