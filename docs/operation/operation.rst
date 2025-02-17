@@ -513,6 +513,13 @@ There are a number of preferences that can be used to override the default behav
 Virtual Sounds - In Phone Loco Sounds (IPLS)
 """"""""""""""""""""""""""""""""""""""""""""
 
+.. important::
+  :class: important-float-right
+
+  The IPLS feature of |ED| uses the Notification features of Android, not the Media Player features.
+
+  That means that, at the Android system level, the volume is controlled by the 'Ring and Notification volume' not the 'Media volume'.
+
 |ed| can play synchronised loco sounds through the speaker of your Android device / phone, or through BlueTooth speakers connected to it.
 
 There is built in Support for a number of different type of locos:
@@ -532,45 +539,45 @@ Each IPLS Profile has a different number of speed steps. As the loco speed incre
 
 The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be altered independently with the :ref:`In Phone Loco Sounds Volume <configuration/preferences:in phone loco sounds volume>`, the :ref:`In Phone Bell Sounds Volume <configuration/preferences:in phone bell sounds volume>` and the :ref:`In Phone Horn/Whistle Sounds Volume <configuration/preferences:in phone horn/whistle sounds volume>` preferences.
 
-  **Playing sounds**
+**Playing sounds**
 
-  Other than the speed steps sounds, which are automatic, there are three ways to play the additional sounds:
+Other than the speed steps sounds, which are automatic, there are three ways to play the additional sounds:
 
-  * IPLS specific buttons
-  * Via the DCC F0, F1, F2 DCC Functions (if set in the preferences)
-  * Gamepad keys (if connected)
+* IPLS specific buttons
+* Via the DCC F0, F1, F2 DCC Functions (if set in the preferences)
+* Gamepad keys (if connected)
 
 .. note:: 
   :class: note-ed-hidden-title
 
   See `In Phone Loco Sounds (IPLS) <../configuration/ipls.html>`_ for more information.
 
-  **Activating the IPLS Sounds via IPLS Buttons**
+**Activating the IPLS Sounds via IPLS Buttons**
 
-  Once an IPLS profile is selected for a throttle (either of the first two throttles), four new buttons will be shown near the DCC Function Buttons, with a 'headphones' symbol to distinguish them from the normal DCC Functions.
+Once an IPLS profile is selected for a throttle (either of the first two throttles), four new buttons will be shown near the DCC Function Buttons, with a 'headphones' symbol to distinguish them from the normal DCC Functions.
 
-  * Mute (IPLS)
-  * Bell (IPLS)
-  * Horn/Whistle (IPLS)
-  * Short Horn/Whistle (IPLS)
+* Mute (IPLS)
+* Bell (IPLS)
+* Horn/Whistle (IPLS)
+* Short Horn/Whistle (IPLS)
 
-    **Mute button**
+  **Mute button**
 
-    Clicking this will disable all IPLS sounds for this Throttle.
+  Clicking this will disable all IPLS sounds for this Throttle.
 
-    **Bell button** 
+  **Bell button** 
 
-    Clicking this will continuously play a bell sound until it is clicked again (latched)
+  Clicking this will continuously play a bell sound until it is clicked again (latched)
 
-    The Bell can be made non-latching by changing the :ref:`Bell button Latching/Momentary <configuration/preferences:bell button latching/momentary>` preference.
+  The Bell can be made non-latching by changing the :ref:`Bell button Latching/Momentary <configuration/preferences:bell button latching/momentary>` preference.
 
-    **Horn / Whistle button**
+  **Horn / Whistle button**
 
-    Clicking this will continuously play a horn or whistle sound (depending on the profile) until the button is released (non-latched)
+  Clicking this will continuously play a horn or whistle sound (depending on the profile) until the button is released (non-latched)
 
-    **Short Horn / Whistle button**
+  **Short Horn / Whistle button**
 
-    Clicking this will play a horn or whistle sound (depending on the profile) ones, regardless of how long the button is held down.
+  Clicking this will play a horn or whistle sound (depending on the profile) ones, regardless of how long the button is held down.
 
   **Activating the IPLS Sounds via DCC Functions / Function Buttons**
 

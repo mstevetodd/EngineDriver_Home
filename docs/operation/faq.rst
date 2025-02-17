@@ -56,9 +56,14 @@ Q. Why doesn't |ed| automatically find my |WTS-DCC-EX|?
 
   I can manually connect to my Server / Railroad by entering an IP address, but it never finds it automatically.
 
-  A1. One reason can be your router doesn't not support the 'Bonjour' protocol. There is not much you can do if this is the case other than trying a different router.
+  A1. Make sure that the Android System 'Use Location' is enabled.  This must be enabled for |ED| to 'find' servers on the network.
 
-  A2. 4.5ghz and 5ghz. |TODO|
+  A2. 4.5ghz and 5ghz.   Some routers do not transfer the mDNS messages between clients on the 4.5ghz and 5ghz channels.  So if your |SERVER| is using 4.5ghz, make sure you device/phone is using a 4.5ghz channel as well. (Or both use 5ghz channels.)
+
+  A3. Mesh Routers.  Many Mesh routers will not transfer the mDNS messages to other connected routers / modems. If you are using a mesh network, make sure both the |SERVER| and the device/phone are using the same Mesh network.
+
+  A4. One reason can be your router doesn't not support the Bonjour/mDNS protocol. There is not much you can do if this is the case other than trying a different router.
+
 
 |HR-DASHED|
 
@@ -426,6 +431,18 @@ Q. My Phone/table runs out of power too quickly
   :class: note-ed-hidden-title
 
   See the :doc:`../configuration/conserving_power` page for more information.
+
+
+Virtual Sounds / In Phone Loco Sounds (IPLS)
+--------------------------------------------
+
+Q. I can't hear the In Phone Loco Sounds (IPLS)
+
+  A. Adjust the 'Ring and Notification volume' in the Andrtoid System Settings. (the volume buttons on the side of the device/phone don't adjust this setting by default.)
+
+  The IPLS feature of |ED| uses the Notification features of Android, not the Media Player features.
+
+  That means that, at the Android system level, the volume is controlled by the 'Ring and Notification volume' not the 'Media volume'.
 
 DCC-EX Features
 --------------------------------------------

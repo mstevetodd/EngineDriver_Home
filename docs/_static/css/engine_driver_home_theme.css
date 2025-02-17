@@ -130,6 +130,33 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   background: #574903 !important;
 }
 
+.important {
+  clear: none !important;
+}
+
+html[data-theme='dark'] .important {
+  background: #00211a !important;
+  clear: none !important;
+}
+
+html[data-theme='dark'] .important p.admonition-title {
+  background: #1abc9c !important;
+}
+
+html[data-theme='dark'] .hint .admonition-title {
+  background-color: #006a56 !important;
+}
+
+.important-float-right {
+  float: right;
+  width: 40%;
+}
+
+.important-float-right-narrow {
+  float: right;
+  width: 20%;
+}
+
 .menuselection {
   border: 0px solid #ffffff00 !important;
   background:#b9b9b940 !important;

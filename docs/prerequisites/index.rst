@@ -37,6 +37,8 @@ Android Device/Phone
 
 |ed| will work on most Android devices (Phones and Tablets) made in the last 8-9 years. Currently it has a minSDKVersion 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN) but Android versions greater than 5.0 are recommended. Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
 
+A number of :ref:`permissions <about/privacy-policy:required permissions>` are required to be granted to |ED| for it to function.
+
 |FORCE-BREAK|
 
 ESU MobileControl II
