@@ -55,4 +55,4 @@ You only need to interact with JMRI and/or your |CS| directly when setting up or
 
 .. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has similar capabilities to |ed|. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the wiThrottle app and a number of other apps and |CSs|. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
  
-.. [#DC] The |EX-CS| is capable of driving DC (PWM) outputs as well as, or instead of, DCC outputs.  |ED| is therefor capable of running DC locos as easily as it does DCC locos.
+.. [#DC] The |EX-CS| is capable of driving DC Pulse Width Modulation (PWM) outputs as well as, or instead of, DCC outputs.  |ED| is therefor capable of running DC locos as easily as it does DCC locos.

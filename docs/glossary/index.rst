@@ -1,6 +1,6 @@
-*********************************
-Glossary / References / Copyright
-*********************************
+************************************
+Glossary / Copyright / Screenshots
+************************************
 .. meta::
    :keywords: glossary
 
@@ -53,11 +53,6 @@ Glossary
   * - WiThrottle protocol
     - proprietary protocol developed by Brett Hoffman
 
-References
-==========
-
-|TODO|
-
 Copyright
 =========
 
@@ -68,6 +63,23 @@ This documentation is free; you can redistribute it and/or modify it under the t
 This documentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with this program; if not, write to the Free Software Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+Attribution
+============
+
+* Blue background texture from `https://www.sketchuptextureclub.com/#google_vignette`
+* Semi-Realistic Throttle text by John Geddes
+* Consist Function Following Documentation by John Geddes
+* Translations by:
+
+  * Luis Zamora	
+  * Petr Šídlo
+  * Alain Carasso
+  * Yvéric Patry
+  * Daniel Sieber	
+  * Roberto Falorni	
+  * Luis Zamora	
+  * Futoshi Yanagi
 
 Screenshots
 ===========

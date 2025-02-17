@@ -20,7 +20,7 @@
 
 project = 'Engine Driver - Documentation'
 copyright = 'M Steve Todd'
-author = 'M Steve Todd, Peter Akers, Robert Posener'
+author = 'M Steve Todd, Peter Akers, Robert Posener, John Geddes'
 
 
 # -- General configuration ---------------------------------------------------

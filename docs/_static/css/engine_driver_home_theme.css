@@ -14,13 +14,14 @@ h2, .h2 {
   font-weight: 500 !important;
   font-size: 160% !important;
 
-  border-top: 1px solid;
+  border-top: 1px solid #404040;
   line-height: 200%;
   margin-bottom: 12px !important;
 }
 
 html[data-theme='dark'] h2, .h2 {
-  color: #c1b5a7 !important;
+  color: #c2b5a8 !important;
+  border-top: 1px solid #c2b5a8;
 }
 
 h3, .h3 {
@@ -29,11 +30,11 @@ h3, .h3 {
   font-weight: 500 !important;
   font-size: 140% !important;
   line-height: 160%;
-  border-top: 1px dashed #d2dfe3;;
+  border-top: 1px dashed #404040;;
 } 
 
 html[data-theme='dark'] h3, .h3 {
-  border-top: 1px dashed #554737;
+  border-top: 1px dashed #c2b5a8;
 }
 
 h4, .h4 {
@@ -137,6 +138,16 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
 .todo-float-right {
   float: right;
   width: 40%;
+  margin-bottom: 6px !important;
+}
+
+.todo-float-right p, .todo-float-right p.admonition-title {
+  font-size: 12px;
+  line-height: 14px;
+}
+
+html[data-theme='dark'] .todo-float-right p {
+  color: #404040;
 }
 
 html[data-theme='dark'] .important {
@@ -174,18 +185,40 @@ div#on-this-page ul.simple li ul li p {
   line-height: 120% !important;
 }
 
+.hr-dotted {
+  margin: -10px 0px -10px 0px; 
+  border-top: 1px dotted #404040;
+}
+
 .hr-dashed {
   margin: -10px 0px -10px 0px; 
-  border-top: 1px dashed #d2dfe3;
+  border-top: 1px dashed #404040;
 }
 
 .hr-heavy {
   margin: -10px 0px -10px 0px; 
-  border-top: 5px solid #d2dfe3;
+  border-top: 5px solid #404040;
+}
+
+.hr-double {
+  margin: -10px 0px -10px 0px; 
+  border-top: 9px double #404040;
+}
+
+html[data-theme='dark'] .hr-dotted {
+  border-top: 1px dotted #c2b5a8;
 }
 
 html[data-theme='dark'] .hr-dashed {
-  border-top: 1px dashed #554737;
+  border-top: 1px dashed #c2b5a8;
+}
+
+html[data-theme='dark'] .hr-heavy {
+  border-top: 5px solid #c2b5a8;
+}
+
+html[data-theme='dark'] .hr-double {
+  border-top: 9px double #c2b5a8;
 }
 
 /* sidebar level 3 bullet points */

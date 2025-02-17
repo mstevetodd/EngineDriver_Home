@@ -14,6 +14,10 @@
 
     </span>
 ..
+.. |hr-dotted| raw:: html
+
+   <hr class="hr-dotted" />
+..
 .. |hr-dashed| raw:: html
 
    <hr class="hr-dashed" />
@@ -21,6 +25,10 @@
 .. |hr-heavy| raw:: html
 
    <hr class="hr-heavy" />
+..
+.. |hr-double| raw:: html
+
+   <hr class="hr-double" />
 ..
 .. |force-break| raw:: html
 
@@ -42,21 +50,21 @@
    
    <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">JMRI Engine&nbsp;Driver Throttle</span>
 ..
-.. |WTS| raw:: html 
+.. |WTS| replace:: 
    
-   <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a>
+   :ref:`WiThrottle Server<about/index:what's a 'withrottle server'?>`
 ..
-.. |WTSS| raw:: html 
+.. |WTSS| replace:: 
    
-   <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Servers</a>
+   :ref:`WiThrottle Servers<about/index:what's a 'withrottle server'?>`
 ..
-.. |WTS-DCC-EX| raw:: html 
+.. |WTS-DCC-EX| replace:: 
    
-   <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle Server</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Server</a>
+   :ref:`WiThrottle Server<about/index:what's a 'withrottle server'?>` or :ref:`DCC-EX Server<about/index:withrottle protocol vs dcc-ex native protocol>` 
 ..
-.. |WTSS-DCC-EXS| raw:: html 
+.. |WTSS-DCC-EXS| replace:: 
    
-   <a href="../about/index.html#what-s-a-withrottle-server">WiThrottle</a> or <a href="../about/index.html##withrottle-protocol-vs-dcc-ex-native-protocol">DCC-EX Servers</a>
+   :ref:`WiThrottle Servers<about/index:what's a 'withrottle server'?>` or :ref:`DCC-EX Servers<about/index:withrottle protocol vs dcc-ex native protocol>` 
 ..
 .. |EX-CS| raw:: html
    
