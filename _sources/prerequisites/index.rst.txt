@@ -14,7 +14,7 @@ Prerequisites for Using Engine Driver
      :local:
 
 To Use Engine Driver You must...
---------------------------------
+---------------------------------
 
 1. Have a Android device/phone. |BR| |ED| can only be installed on an Android device/phone.
 
@@ -59,6 +59,8 @@ ESU MobileControl II
 WiThrottle and DCC-EX Native Servers
 ------------------------------------
 
+|ED| can connect to a number of different |SERVERS|.  Information for some of them is provided below.
+
 For JMRI
 """"""""
 
@@ -67,8 +69,8 @@ For JMRI
   :scale: 50%
 
 Verify your Android device can connect to your network via WiFi and obtain an IP address.
-Make sure you are running one of the latest versions of `JMRI <https://jmri.org/>`_ (4.20 or greater) on your PC, connected to your layout. 
-Start up JMRI and verify you can use JMRI's included 'Throttle' window to control a loco on your layout.
+Make sure you are running one of the latest versions of `JMRI <https://jmri.org/>`_ (5.0 or greater) on your PC or RPi, connected to your layout. 
+Start up |JMRI| and verify you can use JMRI's included 'Throttle' window to control a loco on your layout.
 
 Start the `WiThrottle <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/Protocol.shtml>`_ function of JMRI, located in DecoderPro under :menuselection:`Tools --> Throttles`.  
 
@@ -81,9 +83,15 @@ Both of these should be added to Preferences, Start Up as well (:menuselection:`
 
 Note that if you are using an |EX-CS| as your |CS|, connected to |JMRI|, it is recommended to enable the "DCC++ over TCP Server" in Decoder-Pro (:menuselection:`DCC++/DCC-EX --> DCC++ over TCP Server`).  This will give you access to the advanced features provided by the |NATIVE| in addition to the |WIT|.
 
+|FORCE-BREAK|
+
 For DCC-EX WiFi
 """""""""""""""
 
+.. image:: ../_static/images/wit_servers/dcc_ex_mega.png
+   :scale: 10 %
+   :align: right
+   
 |EX-CS| includes a built-in `WiThrottle Server <https://dcc-ex.com/throttles/protocols.html#the-withrottle-server>`_. Build your `DCC-EX Command Station <https://dcc-ex.com/get-started/index.html>`_, add `WiFi <https://dcc-ex.com/get-started/wifi-setup.html>`_, then connect EngineDriver following `these steps <https://dcc-ex.com/throttles/protocols.html#the-withrottle-server>`_.
 
 |ED| can communicate with |EX-CSS| using either |WIT| or the |NATIVE|. By default |ED| will use the |NATIVE| as long as the *name* of the server includes "DCC-EX" or "DCCEX" (upper or lower case) *or* the port is 2560.
