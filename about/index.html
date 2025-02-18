@@ -921,17 +921,17 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On This Page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#what-is-engine-driver" id="id5">What is ‘Engine Driver’</a></p></li>
-<li><p><a class="reference internal" href="#what-s-a-withrottle-server" id="id6">What’s a ‘WiThrottle Server’?</a></p></li>
-<li><p><a class="reference internal" href="#withrottle-protocol-vs-dcc-ex-native-protocol" id="id7">WiThrottle protocol VS DCC-EX Native protocol</a></p></li>
-<li><p><a class="reference internal" href="#where-can-i-get-engine-driver" id="id8">Where can I get Engine Driver</a></p></li>
-<li><p><a class="reference internal" href="#roadmap" id="id9">Roadmap</a></p></li>
-<li><p><a class="reference internal" href="#alternates-to-engine-driver" id="id10">Alternates to Engine Driver</a></p></li>
+<li><p><a class="reference internal" href="#what-is-engine-driver" id="id3">What is ‘Engine Driver’</a></p></li>
+<li><p><a class="reference internal" href="#what-s-a-withrottle-server" id="id4">What’s a ‘WiThrottle Server’?</a></p></li>
+<li><p><a class="reference internal" href="#withrottle-protocol-vs-dcc-ex-native-protocol" id="id5">WiThrottle protocol VS DCC-EX Native protocol</a></p></li>
+<li><p><a class="reference internal" href="#where-can-i-get-engine-driver" id="id6">Where can I get Engine Driver</a></p></li>
+<li><p><a class="reference internal" href="#roadmap" id="id7">Roadmap</a></p></li>
+<li><p><a class="reference internal" href="#alternates-to-engine-driver" id="id8">Alternates to Engine Driver</a></p></li>
 </ul>
 </nav>
 </aside>
 <section id="what-is-engine-driver">
-<h2><a class="toc-backref" href="#id5" role="doc-backlink">What is ‘Engine Driver’</a><a class="headerlink" href="#what-is-engine-driver" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id3" role="doc-backlink">What is ‘Engine Driver’</a><a class="headerlink" href="#what-is-engine-driver" title="Link to this heading"></a></h2>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver Throttle</span> (normally just referred to as <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> or just <strong>ED</strong>) is a free Android application that connects to a <a class="reference external" href="https://jmri.org/help/en/package/jmri/jmrit/withrottle/UserInterface.shtml">WiThrottle™ Server</a> <a class="footnote-reference brackets" href="#wit" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>  or <a class="reference external" href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> to control model trains.</p>
 <p>Supported <a class="reference internal" href="#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Servers</span></a> include:</p>
 <ul class="simple">
@@ -976,7 +976,7 @@ Info on minSDKVersion available in the <a class="reference external" href="https
 </aside>
 </section>
 <section id="what-s-a-withrottle-server">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">What’s a ‘WiThrottle Server’?</a><a class="headerlink" href="#what-s-a-withrottle-server" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id4" role="doc-backlink">What’s a ‘WiThrottle Server’?</a><a class="headerlink" href="#what-s-a-withrottle-server" title="Link to this heading"></a></h2>
 <p><strong>WiThrottle</strong> stands for ‘WiFi Throttle’, and a ‘WiThrottle Server’ is just software running on your JMRI computer, DCC-EX EX-CommandStation, or dedicated device. It’s called a ‘Server’ because it allows you to connect to it and it ‘serves’, or services, requests from another application. That application is called a ‘Client’. So in this case <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> is the client.</p>
 <p>The <strong>WiThrottle Protocol</strong> itself is a standard for how WiFi throttles can communicate with the WiThrottle Server, much like the DCC standard is a standard for how data packets communicate with decoders. What this means for you, is that <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can talk to any WiThrottle compatible server, which in turn can talk to the DCC decoders in your locos.</p>
 <div class="note-ed-hidden-title admonition note">
@@ -992,19 +992,18 @@ Info on minSDKVersion available in the <a class="reference external" href="https
 </aside>
 </section>
 <section id="withrottle-protocol-vs-dcc-ex-native-protocol">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">WiThrottle protocol VS DCC-EX Native protocol</a><a class="headerlink" href="#withrottle-protocol-vs-dcc-ex-native-protocol" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">WiThrottle protocol VS DCC-EX Native protocol</a><a class="headerlink" href="#withrottle-protocol-vs-dcc-ex-native-protocol" title="Link to this heading"></a></h2>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> traditionally used the WiThrottle Protocol (described above). When the <a href="https://dcc-ex.com/">DCC-EX</a> team designed the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> they found the WiThrottle Protocol too limiting and came up with a new protocol referred to originally as <strong>DCC++</strong> but later as <strong>Native DCC-EX Protocol</strong>.</p>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can use either protocol and, by default, will try to use the more powerful <strong>Native DCC-EX Protocol</strong> when connecting to a <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a>.</p>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can also use the Native DCC-EX Protocol to connect to a <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> via <a href="https://jmri.org/">JMRI</a> but you need to enable the “DCC++ over TCP Server” in the “DCC++” or “DCC-EX” menu in Decoder-Pro.</p>
 </section>
 <section id="where-can-i-get-engine-driver">
-<h2><a class="toc-backref" href="#id8" role="doc-backlink">Where can I get Engine Driver</a><a class="headerlink" href="#where-can-i-get-engine-driver" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Where can I get Engine Driver</a><a class="headerlink" href="#where-can-i-get-engine-driver" title="Link to this heading"></a></h2>
 <p>The current published version is available in the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> or by <a class="reference external" href="../_static/apk/EngineDriver.apk">direct download of the .apk file</a>.</p>
-<p>The Published version (v2.37.187) is available in the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> or by <a class="reference external" href="../_static/apk/EngineDriver.apk">direct download of the .apk file</a>.</p>
 <p>APK files for manual installation (including older versions) are available from the <a class="reference internal" href="../downloads/index.html"><span class="doc">Downloads page</span></a>.</p>
 </section>
 <section id="roadmap">
-<h2><a class="toc-backref" href="#id9" role="doc-backlink">Roadmap</a><a class="headerlink" href="#roadmap" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id7" role="doc-backlink">Roadmap</a><a class="headerlink" href="#roadmap" title="Link to this heading"></a></h2>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> doesn’t really have a roadmap.  Code changes (bug fixes and features) are done depending on several factors, including:</p>
 <ul class="simple">
 <li><p>Who is available to work on it</p></li>
@@ -1015,7 +1014,7 @@ Info on minSDKVersion available in the <a class="reference external" href="https
 <p>See the <a class="reference internal" href="../contact/index.html"><span class="doc">Support &amp; Contact</span></a> page if you are having problems or wish to make a suggestion.</p>
 </section>
 <section id="alternates-to-engine-driver">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Alternates to Engine Driver</a><a class="headerlink" href="#alternates-to-engine-driver" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id8" role="doc-backlink">Alternates to Engine Driver</a><a class="headerlink" href="#alternates-to-engine-driver" title="Link to this heading"></a></h2>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> is not the only app that can connect to JMRI, <a class="reference internal" href="#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Servers</span></a> or <a href="https://dcc-ex.com/">DCC-EX EX-CommandStations</a>, so it is worth your time to investigate the alternates.</p>
 <p>See the <a class="reference external" href="https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/UserInterface.shtml">JMRI WiThrottle page</a> for a list of similar or related apps.</p>
 <p>See the <a class="reference external" href="https://dcc-ex.com/throttles/index.html">DCC-EX page</a> for a list of similar or related apps.</p>
@@ -1040,7 +1039,7 @@ Info on minSDKVersion available in the <a class="reference external" href="https
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f5d4b4b7580>
+    <jinja2.runtime.BlockReference object at 0x7f0dfa6dc430>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
