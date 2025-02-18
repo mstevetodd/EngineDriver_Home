@@ -373,11 +373,6 @@ The *Function Buttons Scroll Area* is shown by default on all Throttle Screen la
 DCC Function buttons
 ''''''''''''''''''''
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: DCC Function buttons
-
 DCC Function Buttons are displayed here.  If there are too many to display in the screen area allocated, then the area becomes scrollable (without scroll bars) so that they can all be viewed and pressed as needed.  
 
 All throttle layouts other than the 'Simple' layout show a *Function Buttons Scroll Area* by default.  For the 'Simple' layout it must be enable in the preferences if required.
@@ -952,8 +947,6 @@ By default, you can Left/Right Swipe from any part of the screen, but this can b
 
   See the `Disable Full Screen Swipe prefernce <configuration/preferences.html#disable-full-screen-swipe>`_ to enable or disable the Swipe Action Bar only option.
 
-----
-
 Web View Screen
 ^^^^^^^^^^^^^^^
 
@@ -969,11 +962,6 @@ Accessed from any of the main screens by the menu :menuselection:`Menu --> Web` 
 It can also be accessed, if the ``Screen orientation`` preference is set to ``Auto Web``, by rotating the Android Device/Phone.
 
 This screen displays a web browser interface that lets you view any web page. Normally this will be a web page on your JMRI server. 
-
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Web View Screen
   
 From the JMRI web server you can view and interact with additional features of JMRI.  The menu at the top right of the web panel screen allows you to further display:
 
@@ -1065,10 +1053,9 @@ Specific to the |WV-S|, the Overflow Menu can display:
 Swipe Left / Right (Web View Screen)
 """"""""""""""""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Swipe Left / Right (Web View Screen)
+By default, swiping left or right or the `Main Screens`_ (of which the Web view is one) will take to one of the other `Main Screens`_.  This can be problematic on the Web View Screen as the swipes may mean something else on the web page.
+
+If the :ref:`configuration/preferences:disable full screen swipe?` preference is enabled, only the Action Bar can be swiped to change screens.  This is useful if you find it difficult to swipe left and right on either of the two Web Views without accidently changing screens.
 
 |FORCE-BREAK|
 
@@ -1483,16 +1470,16 @@ Function Latching Settings Screen
   :align: right
   :scale: 8%
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Function Latching Settings Screen
-
 The function list shows 32 functions with both a label and a drop-list to say if the function should be latching or not (momentary).
 
 This screen is only available in the menu if the `Override WiThrottle Default Latching`_ option is enabled on the `Function Defaults Screen`_ and you are are connected to a |WTS|. (Not an |EX-CS| using the |NATIVE|.)
 
 Accessed from the menu on the |T-S| as :menuselection:`Menu --> Function Latching Settings`.
+
+Each Function is listed (from the `Function Defaults Screen`_ with the option set the function to either:
+
+* Latching
+* Not Latching (Momentary)
 
 |force-break|
 
@@ -1642,12 +1629,18 @@ Displayed information includes:
 Reconnecting Screen
 ^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Reconnecting Screen
- 
+.. image:: ../_static/images/screenshots/reconnecting_screen.png
+  :align: right
+  :scale: 8%
+
 This screen displays if |ed| has not been able to communicate with the |WTS-DCC-EX| within a specified time.
+
+|ED| will attempt to reconnect to the |SERVER|.
+
+.. note::
+  :class: note-ed-hidden-title
+
+  See the :doc:`/operation/wifi_issues` page for more information on how to minimise disconnections.
 
 |force-break|
 
