@@ -12,13 +12,32 @@ Engine Driver
    prerequisites/index
    operation/index
    configuration/index
+
+.. toctree::
+   :hidden:
+   :includehidden:
+   :caption: Help & Support
+
    videos/index
+   contact/index
+
+
+.. toctree::
+   :hidden:
+   :includehidden:
+   :caption: Get Engine Driver
+
    downloads/index
    changes/index
-   contributing/index
-   glossary/index
+
+.. toctree::
+   :hidden:
+   :includehidden:
+   :caption: Additional Info
+
    about/privacy-policy
-   contact/index
+   glossary/index
+   contributing/index
 
 ----
   
