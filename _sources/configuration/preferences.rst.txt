@@ -809,7 +809,7 @@ Options include:
 
   **Center - No scaling**
 
-  Using this option will cause the image to be centered on the screen.  It will not be either shrunk or expanded.
+  Using this option will cause the image to be centred on the screen.  It will not be either shrunk or expanded.
 
   **Fit - Shrink only**
 
@@ -1000,7 +1000,7 @@ This preference adjusts the maximum percentage of the Load Slider.
 Decoder Brake Type
 ''''''''''''''''''
 
-This preference sets wehther or not to activate the Brake functions on the decoder.
+This preference sets whether or not to activate the Brake functions on the decoder.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1829,7 +1829,7 @@ This preference allows you to set the Control Knob zero trim setting. Smaller is
 Direction Change at end-stop
 '''''''''''''''''''''''''''''''''''
 
-If this preference is enabled |ED| will allow the Loco to chnage direction when the control knob is at counter-clockwise end-stop position.
+If this preference is enabled |ED| will allow the Loco to change direction when the control knob is at counter-clockwise end-stop position.
 
 Show disable Knob button
 ''''''''''''''''''''''''
@@ -1976,7 +1976,7 @@ This preference is used to set the maximum number of *Recent Locos* to show in t
 Control consist Lights on long click
 """"""""""""""""""""""""""""""""""""
 
-If this preference is enabled |ed| will llow you to change the Lights of the individual locos in a Consist with a long click on the Loco Select button.  You will be taken to the `Consist Lights Edit Screen <../operation/interface.html#consist-lights-edit-screen>`_.
+If this preference is enabled |ed| will allow you to change the Lights of the individual locos in a Consist with a long click on the Loco Select button.  You will be taken to the `Consist Lights Edit Screen <../operation/interface.html#consist-lights-edit-screen>`_.
 
 Note this only will work while the :guilabel:`Select` button is *Enabled*.  If the `Allow loco select while moving?`_ preference is disabled, the :guilabel:`Select` button is *Disabled* while the throttle is greater than zero.
 
