@@ -56,6 +56,10 @@ html[data-theme='dark'] .rst-content .toc-backref {
   background:#ffae00 !important; 
 }
 
+.wy-menu-vertical header, .wy-menu-vertical p.caption {
+  color: #ffae2f;
+}
+
 dl.footnote>dd p {
   font-size: .7rem !important;
   line-height: 15px !important;
