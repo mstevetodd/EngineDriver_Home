@@ -1252,7 +1252,7 @@ Edit Order & Facing
 
   Shown if you have one or locos already selected (acquired) for that throttle.
 
-  Clicking this button will show the `<Consist Edit Screen>`_.
+  Clicking this button will show the `<Consist (MU) Edit Screen>`_.
 
 Edit Lights
 '''''''''''
@@ -1268,70 +1268,97 @@ Loco Sounds
 
   Clicking this button will show `<In Phone Loco Sounds Screen>`_.
 
-Consist Edit Screen
-^^^^^^^^^^^^^^^^^^^
+Consist (MU) Edit Screen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 .. image:: ../_static/images/screenshots/consist_edit2.png
   :align: right
   :scale: 12%
 
+The **Consist (MU) Edit Screen** is automatically shown if you add a second, or subsequent, loco to a throttle via the :guilabel:`Select` button, or if you click on the :guilabel:`Edit Order & Facing` button on the `Loco Select Screen`_ (which will only be available if you have already acquired more than one loco on the throttle.)
 
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: Consist Edit Screen
+On this screen, for your on-the-fly you can:
 
-Shown if you add a second, or subsequent, loco to a throttle via the :guilabel:`Select` button, or if you click on the :guilabel:`Edit Order & Facing` button on the *Select Loco Screen* (which will only be available if you have already acquired more than one loco on the throttle.)
+* Change the `Lead Loco`_
+* Change the `Trailing Loco`_
+* `Change the facing <Chnage Facing>`_ of any loco
+* `Remove a loco`_
 
 |force-break|
 
 Lead Loco
 """""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: Lead Loco
+The ``Lead Loco`` drop down will show the current lead loco in the consist / multiple unit.
+
+With the ``Lead Loco`` drop down, you can change the lead loco to any other loco in the consist / multiple unit.
 
 |FORCE-BREAK|
 
 Trailing Loco
 """""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: Trailing Loco
+The ``Trailing Loco`` drop down will show the current trailing (last) loco in the consist / multiple unit.
+
+With the ``Trailing Loco`` drop down, you can change the trailing (last) loco to any other loco in the consist / multiple unit.
 
 |FORCE-BREAK|
 
-Consist Top
-"""""""""""
+Change Facing
+""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  HIGH: Consist Top
+The **All Locos in Consist (MU)** section of the Consist (MU) Edit Screen shows a list of all locos in the consist / multiple unit along with the facing of each loco.
 
-* Change Facing
+Clicking on the row of the loco changes the facing of that loco in the consist / multiple unit.
+
+This allows you to easily run a second (or more) loco facing rearwards/backwards in the consist / multiple unit train.
+
+Note that this **DOES NOT** alter the decoder CV for the default direction.  |ED| simply sends reverse speeds commands to the individual loco while it is sending forward speed commands to the other locos in the consist / multiple unit.
 
 |FORCE-BREAK|
 
-Consist Lights Edit Screen
+Remove a Loco
+""""""""""""""
+
+The **All Locos in Consist (MU)** section of the Consist (MU) Edit Screen shows a list of all locos in the consist / multiple unit along with the facing of each loco.
+
+Swiping *Right* on the row of the loco will remove that loco from the consist / multiple unit.
+
+Note that you can't remove the *Lead Loco*.
+
+|FORCE-BREAK|
+
+Consist (MU) Lights Edit Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../_static/images/screenshots/consist_lights_edit2.png
+.. image:: ../_static/images/screenshots/consist_lights_edit_screen.png
   :align: right
-  :scale: 12%
+  :scale: 8%
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Consist Lights Edit Screen
+The **Consist (MU) Lights Edit Screen** is shown if you click on the :guilabel:`Edit Lights` button on the `Loco Select Screen`_ (which will only be available if you have already acquired more than one loco on the throttle.)
+
+It will also be shown if you long press on the Loco :guilabel:`Select` button, a) if you have already acquired a consist / multiple unit, and b) if the :ref:`configuration/preferences:Control consist Lights on long click` preference is enabled. 
+
+The **Consist (MU) Lights Edit Screen**  shows a list of all locos in the consist / multiple unit along with the light rule for each loco in the consist / multiple unit.
+
+Clicking on the row of any entry will alter the light rule for that loco.
+
+The options are:
 
 * Unknown
 * Follow Fn Btn
+* On
 * Off
+
+**Unknown** means that rule has not been set so |ED| does not know the current state of the lights in that loco.
+
+**Follow Fn Btn** (Follow Function Button) means the that lights in the locos will obey whatever the Light Function (F0) is set to.
+
+**On** means that lights in that loco will be permanently turned on, and the Light Function (F0) will have no effect.
+
+**Off** means that lights in that loco will be permanently turned off, and the Light Function (F0) will have no effect.
+
+Note that the Lead Loco will always be ``Follow Fn Btn`` and cannot be changed. 
 
 |FORCE-BREAK|
 

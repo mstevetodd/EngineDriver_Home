@@ -193,7 +193,7 @@ One at a time
 
 Adding additional locos to the |consist| train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
 
-After selecting each additional loco, the Consist Edit screen will be shown. This allows you to:
+After selecting each additional loco, the :ref:`operation/interface:Consist (MU) Edit Screen` will be shown. This allows you to:
 
 * Change the facing of each loco (except the front loco)
 * Change the order of the locos in the |consist|
@@ -202,7 +202,7 @@ After selecting each additional loco, the Consist Edit screen will be shown. Thi
 Recent Consists
 '''''''''''''''
 
-Selecting a |consist| in the Recent Consists list will automatically add all the remembered locos, including their facing.
+Selecting a |consist| in the Recent Consists list will automatically add all the remembered locos, including their facing to the selected locos on the current throttle.
 
 .. note::
   :class: note-ed-hidden-title
@@ -713,10 +713,9 @@ The :ref:`Location Delimiter <configuration/preferences:location delimiter>` pre
 Recent Turnout/Point list
 """""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Recent Turnout/Point list
+|ed| remembers the last 10 Turnouts/Points that you have controlled.
+
+If the Turnouts/Points you want to control to is in the list, simply click on buttons next to the entry to control it.
 
 |FORCE-BREAK|
 
@@ -771,13 +770,13 @@ From the Server
 
 You can select the route from the list provider by your |SERVER|...
 
-Click on the :guilabel:`Set` buttonon the beside the entry to activate the Route.
+Click on the :guilabel:`Set` button beside the entry to activate the Route.
 
 Note, When using the |native| the |EX-CS| (only) can:
 
-* dynamically change the label on the the button
-* dynamically show or hide Routes
-* dynamically enable or disable Routes
+* Dynamically change the label on the the button
+* Dynamically show or hide Routes
+* Dynamically enable or disable Routes
 
 Filter by location (Routes)
 """"""""""""""""""""""""""""
