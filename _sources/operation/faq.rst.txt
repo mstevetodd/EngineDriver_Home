@@ -387,7 +387,7 @@ Showing the web page at the bottom of the throttle screen
 .. todo:: 
   :class: todo-float-right
   
-  LOW: Showing the web page at the bottom of the throttle screen
+  LOW: FAQ Showing the web page at the bottom of the throttle screen
 
 See the Web Throttle view 
 
