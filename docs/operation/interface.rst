@@ -119,8 +119,6 @@ Specific to the |C-S|, the Overflow Menu can display:
 
    See the `Overflow Menu`_  section for more information.
 
-----
-
 Throttle Screen
 ^^^^^^^^^^^^^^^
 
@@ -1544,12 +1542,32 @@ note: You cannot **READ** CVs.  You can only write them.
 Gamepad Test Screen
 ^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Gamepad Test Screen
+.. image:: ../_static/images/screenshots/gamepad_test_screen.png
+   :scale: 8 %
+   :align: right
 
-Accessed from the |T-S| via the :menuselection:`Menu --> Gamepads -> Gamepad Test X`. (where 'X' is the number of the gamepad.)
+This screen serves two purposes.  
+
+* If accessed from the preferences it allows to experiment with the difference gamepad types and different setting with the button configuration.
+* When automatically open when you first connect a gamepad from the `Throttle Screen`_ it is used to confirm that the Gamepad is configured sufficiently to control the throttle.
+
+The screen contains:
+
+* Gamepad 'Type' drop down
+* Indicators for all the possible supported gamepad buttons (Some may not be available for any given gamepad type.)
+* 'All Codes:' - this shows the up and down key codes as a button is pressed
+* 'Key Code:' - this shows the key code of the last pressed button
+* 'Function:' - this shows the function assigned to the last pressed button
+* 'Test Status:' - this Shows the status of the test. Only relevant for a Gamepad Test.
+
+Accessed from the |T-S| via the :menuselection:`Menu --> Gamepads -> Gamepad Test X`. (where 'X' is the number of the gamepad.) or from the :ref:`configuration/preferences:test gamepad settings now!` preference.
+
+.. note::
+  :class: note-ed-hidden-title
+
+  See the :ref:`configuration/preferences:gamepad preferences` for more information on configuring a gamepad.
+
+  See the :doc:`/operation/gamepads` page for more information on selecting and using gamepads.
 
 |FORCE-BREAK|
 

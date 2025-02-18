@@ -43,6 +43,8 @@ Appearance
    * `Switching/Shunting screen type <https://youtu.be/6HJF9dZvoPU>`_
    * `Shunting Switching/Screen and Background Images <https://youtu.be/e-2ZQqz5yhk>`_
    * `Throttle Page background images <https://youtu.be/F5RcTEoUrzE?si=6Dpzh2zevjRSwiw0>`_
+   * `Throttle Web View <https://youtu.be/KsnLvuOBZ9c>`_
+   * `Screen Real Estate <https://youtu.be/-sjrbvR5bq0>`_
 
 * Throttle Control
    * Loco Select |TODO|
@@ -50,6 +52,7 @@ Appearance
    * Consist Lights |TODO|
    * `'Pause' button <https://youtu.be/Wkz66HfibhY?si=pYZ12g2YBajeAZEH>`_
    * `'Limit Speed' button <https://youtu.be/SOKkMeZOfos?si=7OAIukRM4uiSriSp>`_
+   * `Directrion Buttons <https://youtu.be/DVoHBN3edhs>`_
 
 * `Improving screen real estate <https://youtu.be/-sjrbvR5bq0>`_ 
 * `In Phone Loco Sounds <https://youtu.be/jy-SEKp-mFs>`_
@@ -83,6 +86,11 @@ In Phone Loco Sounds (IPLS)
 
 * `In Phone Loco Sounds - full walkthrough / setting up <https://youtu.be/jy-SEKp-mFs?si=yKhv2u4ioiLMpcI8>`_
 * `Engine startup sounds <https://youtu.be/Fkz-0oJWaHQ?si=ZoaM1ZI7e5ikYxrU>`_
+
+Children's Timer
+===========================
+
+* `Children's Timer <https://youtu.be/qT6iERsQVWM>`_
 
 Import/Export/Reset Preferences
 ================================
