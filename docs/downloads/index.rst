@@ -35,6 +35,7 @@ Older or Other Versions - Manual Install
 
 **.apk files:**
 
+* `EngineDriver-2.39.194.apk (Alpha) <../_static/apk/EngineDriver-2.39.194.apk>`_
 * `EngineDriver-2.38.193.apk <../_static/apk/EngineDriver-2.38.193.apk>`_
 * `EngineDriver-2.37.187.apk <../_static/apk/EngineDriver-2.37.187.apk>`_
 * `EngineDriver-2.36.177.apk <../_static/apk/EngineDriver-2.36.177.apk>`_
