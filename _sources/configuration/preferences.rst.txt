@@ -609,6 +609,17 @@ This preference is used to limit the number of Function Labels shown for |ROSTER
 
   Also see the :ref:`Default Function Screen <operation/interface:function defaults screen>` for more information.
 
+Hide function buttons on non-selected throttle?
+""""""""""""""""""""""""""""""""""""""""""""""""
+
+If this preference is enabled, on the horizontal layouts the function buttons will be hidden for all bar the selected ``Volume`` throttle, indicated by a 'v'.
+
+When this preference is enabled, by default, to show the Function buttons of a different throttle you must click on the :ref:`operation/interface:speed indicator` area of a :ref:`throttle <operation/interface:throttle area>`.  You can set the `Volume keys follow touch?`_ preference to show the Function buttons on any touch of any buttons related to a throttle (except speed slider and speed buttons).
+
+.. note:: 
+
+  The speed slider and speed buttons are explicitly excluded from the `Volume keys follow touch?`_ preference, as they could potentially 'move' on the screen as you are pressing them, causing unwanted/unexpected button presses.
+
 Function Buttons Area size
 """"""""""""""""""""""""""
 
@@ -1174,10 +1185,17 @@ Enabling this preference shows the Throttle Layout Switch button in the |T-S| Ac
 
 Clicking on this button will immediately change the layout of the |T-S| between the layouts select in the `First Screen Layout`_ and `Second Screen Layout`_ preferences.
 
+Cycle Through All Layouts?
+'''''''''''''''''''''''''''''''''''
+
+Enabling this preference will change the Layout Switch Button such that it will cycle through *every* Throttle Layout, not just the two below.
+
 First Screen Layout
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to select one of the two Layouts that the Layout Switch Button will switch between.  (This throttle layout and the next preference.)
+
+Ignored in ``Cycle Through All Layouts?`` is enabled.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -1188,6 +1206,8 @@ Second Screen Layout
 '''''''''''''''''''''''''''''''''''
 
 This preference allows you to select one of the two Layouts that the Layout Switch Button will switch between.  (This throttle layout and the previous preference.)
+
+Ignored in ``Cycle Through All Layouts?`` is enabled.
 
 .. note:: 
   :class: note-ed-hidden-title

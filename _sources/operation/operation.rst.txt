@@ -903,7 +903,7 @@ Pushing the app to the Background
 
   |ed| *is not designed to run in background and its performance and continued operation is not reliable or predictable.*
 
-  You should not lock the the screen of you Android device/phone while using |ED| for the same reason.
+  You should not lock the screen of your Android device/phone while using |ED| for the same reason.
 
 .. image:: ../_static/images/parts/ed_in_background.png
   :align: right
@@ -971,4 +971,4 @@ Exiting |ed|:
 
   Android deliberately maintains fragments of every app that runs to make it faster to restart the apps if required.  Android will really kill the app from memory if some other app needs the memory.
 
-  When you see |ED| in this list it is not running *unless* you also see the small |ED| icon on the Android Status Bar at the top of the screen.  If the icon is there, then |ED| is still running.  Instead of exiting, it was pushed to background, where it will attempt to keep running.  As |ED| was not designed to run in background, Android may arbitrarily kill it at any time.
+  When you see |ED| in this list it is not 'running' *unless* you also see the small |ED| icon on the Android Status Bar at the top of the screen.  If the icon is there, then |ED| is still running.  Instead of exiting, it was pushed to background, where it will attempt to keep running.  As |ED| was not designed to run in background, Android may arbitrarily kill it at any time.

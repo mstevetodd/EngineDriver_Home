@@ -345,9 +345,11 @@ Q. I have a small screen Android device.  It doesn't fit well?
 
   A. 1. Try the 'Immersive mode' (Full Screen) preference. (see below)
 
-  A. 2. Reduce the height of the loco select and direction buttons
+  A. 2. :ref:`Reduce the height of the loco select and direction buttons <configuration/preferences:Decrease Loco No. height?>`
 
   A. 3. Keep the number of locos to 1 or two.
+
+  A. 4. If you are using one of the horizontal :ref:`Throttle Layouts <configuration/preferences:Throttle Screen Layout>`, try the :ref:`configuration/preferences:Hide function buttons on non-selected throttle?` preference.
 
 Direction Buttons
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
