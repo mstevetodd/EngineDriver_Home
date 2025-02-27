@@ -47,7 +47,7 @@ Changes included in Engine Driver Production version **2.38.193**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.38.195**:
+Changes included in Engine Driver Beta version **2.39.195**:
 
 * When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
 * Send additional resync requests after DCC-EX reconnect
