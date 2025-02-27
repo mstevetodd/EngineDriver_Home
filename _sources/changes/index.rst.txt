@@ -17,7 +17,7 @@ Changes / Updates
 Production Changes
 --------------------------------------------
 
-Changes included in Engine Driver production version **2.38.193**:
+Changes included in Engine Driver Production version **2.38.193**:
 
 * Preference to always show the Throw and Close buttons for Turnouts/Points
 * New 'Neon Blue' theme
@@ -46,6 +46,9 @@ Changes included in Engine Driver production version **2.38.193**:
 
 Beta Changes
 --------------------------------------------
+
+Changes included in Engine Driver Beta version **2.38.195**:
+
 * When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
 * Send additional resync requests after DCC-EX reconnect
 * Added option to sequence the loading of items on DCC-EX
