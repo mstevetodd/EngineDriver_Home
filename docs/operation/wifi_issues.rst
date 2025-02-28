@@ -27,12 +27,12 @@ Use location
 
 The Android System setting `Use Location` must be enabled for |ED| to be able to discover servers.
 
-If |ED| says that you are not connected to a network on the Connection screen, check the `Use Location` is enabled.
+If |ED| says that you are not connected to a network on the Connection screen, check that `Use Location` is enabled.
 
 Incompatible Routers
 ^^^^^^^^^^^^^^^^^^^^^
 
-While very uncommon, one reason why your |SERVER| may not be visible in the discovered list on the connection screen can be that your router doesn't not support the Bonjour/mDNS protocol. There is not much you can do if this is the case other than trying a different router.
+While uncommon, one reason why your |SERVER| may not be visible in the Discovered list on the connection screen can be that your router or network does not support the Bonjour/mDNS protocol. In this case, enter the server address and port manually, or select it from Recents.
 
 Firewalls
 ---------
@@ -42,15 +42,15 @@ Firewalls
   
   LOW: Firewalls
 
-Your PC's firewall software can prevent |ed| from connecting to JMRI. You may need to add an exception in your firewall software for JMRI or disable the firewall to allow |ed| to connect.
+Your PC's firewall software can prevent |ed| from connecting to your |SERVER|. You may need to add an exception in your firewall software for the incoming port or disable the firewall to allow |ed| to connect.
 
 Routers and Mesh networks
 -------------------------
 
-4.5ghz and 5ghz
+2.4GHz and 5GHz
 ^^^^^^^^^^^^^^^
 
-Some routers do not transfer the mDNS messages between clients on the 4.5ghz and 5ghz channels.  So if your |SERVER| is using 4.5ghz, make sure you device/phone is using a 4.5ghz channel as well. (Or both use 5ghz channels.)
+Some routers do not transfer the mDNS messages between clients on the 2.4GHz and 5ghz channels.  So if your |SERVER| is using 2.4GHz, make sure your device/phone is using a 2.4GHz channel as well. (Or both use 5GHz channels.)
 
 Mesh Routers
 ^^^^^^^^^^^^
@@ -94,7 +94,7 @@ Disconnections
 * objects in the way (particularly metal objects)
 * Interference  (Other electrical devices close to the phone or the router )
 
-If JMRI does not receive any feedback from your device/phone within a configured period, JMRI will stop all the locos you have selected on your device/phone.
+If the |SERVER| does not receive any feedback from your device/phone within a configured period, the |SERVER| should stop all the locos you have selected on your device/phone.
 
 * Disable haptic Alert
 
