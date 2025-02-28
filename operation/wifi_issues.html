@@ -417,7 +417,7 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#firewalls">Firewalls</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#routers-and-mesh-networks">Routers and Mesh networks</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ghz-and-5ghz">4.5ghz and 5ghz</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ghz-and-5ghz">2.4GHz and 5GHz</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#mesh-routers">Mesh Routers</a></li>
 </ul>
 </li>
@@ -935,7 +935,7 @@
 <li><p><a class="reference internal" href="#firewalls" id="id6">Firewalls</a></p></li>
 <li><p><a class="reference internal" href="#routers-and-mesh-networks" id="id7">Routers and Mesh networks</a></p>
 <ul>
-<li><p><a class="reference internal" href="#ghz-and-5ghz" id="id8">4.5ghz and 5ghz</a></p></li>
+<li><p><a class="reference internal" href="#ghz-and-5ghz" id="id8">2.4GHz and 5GHz</a></p></li>
 <li><p><a class="reference internal" href="#mesh-routers" id="id9">Mesh Routers</a></p></li>
 </ul>
 </li>
@@ -951,11 +951,11 @@
 <section id="use-location">
 <h3><a class="toc-backref" href="#id4" role="doc-backlink">Use location</a><a class="headerlink" href="#use-location" title="Link to this heading"></a></h3>
 <p>The Android System setting <cite>Use Location</cite> must be enabled for <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to be able to discover servers.</p>
-<p>If <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> says that you are not connected to a network on the Connection screen, check the <cite>Use Location</cite> is enabled.</p>
+<p>If <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> says that you are not connected to a network on the Connection screen, check that <cite>Use Location</cite> is enabled.</p>
 </section>
 <section id="incompatible-routers">
 <h3><a class="toc-backref" href="#id5" role="doc-backlink">Incompatible Routers</a><a class="headerlink" href="#incompatible-routers" title="Link to this heading"></a></h3>
-<p>While very uncommon, one reason why your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> may not be visible in the discovered list on the connection screen can be that your router doesn’t not support the Bonjour/mDNS protocol. There is not much you can do if this is the case other than trying a different router.</p>
+<p>While uncommon, one reason why your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> may not be visible in the Discovered list on the connection screen can be that your router or network does not support the Bonjour/mDNS protocol. In this case, enter the server address and port manually, or select it from Recents.</p>
 </section>
 </section>
 <section id="firewalls">
@@ -964,13 +964,13 @@
 <p class="admonition-title">Todo</p>
 <p>LOW: Firewalls</p>
 </div>
-<p>Your PC’s firewall software can prevent <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from connecting to JMRI. You may need to add an exception in your firewall software for JMRI or disable the firewall to allow <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to connect.</p>
+<p>Your PC’s firewall software can prevent <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from connecting to your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr>. You may need to add an exception in your firewall software for the incoming port or disable the firewall to allow <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to connect.</p>
 </section>
 <section id="routers-and-mesh-networks">
 <h2><a class="toc-backref" href="#id7" role="doc-backlink">Routers and Mesh networks</a><a class="headerlink" href="#routers-and-mesh-networks" title="Link to this heading"></a></h2>
 <section id="ghz-and-5ghz">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">4.5ghz and 5ghz</a><a class="headerlink" href="#ghz-and-5ghz" title="Link to this heading"></a></h3>
-<p>Some routers do not transfer the mDNS messages between clients on the 4.5ghz and 5ghz channels.  So if your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> is using 4.5ghz, make sure you device/phone is using a 4.5ghz channel as well. (Or both use 5ghz channels.)</p>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">2.4GHz and 5GHz</a><a class="headerlink" href="#ghz-and-5ghz" title="Link to this heading"></a></h3>
+<p>Some routers do not transfer the mDNS messages between clients on the 2.4GHz and 5ghz channels.  So if your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> is using 2.4GHz, make sure your device/phone is using a 2.4GHz channel as well. (Or both use 5GHz channels.)</p>
 </section>
 <section id="mesh-routers">
 <h3><a class="toc-backref" href="#id9" role="doc-backlink">Mesh Routers</a><a class="headerlink" href="#mesh-routers" title="Link to this heading"></a></h3>
@@ -1003,7 +1003,7 @@
 <li><p>objects in the way (particularly metal objects)</p></li>
 <li><p>Interference  (Other electrical devices close to the phone or the router )</p></li>
 </ul>
-<p>If JMRI does not receive any feedback from your device/phone within a configured period, JMRI will stop all the locos you have selected on your device/phone.</p>
+<p>If the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> does not receive any feedback from your device/phone within a configured period, the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> should stop all the locos you have selected on your device/phone.</p>
 <ul class="simple">
 <li><p>Disable haptic Alert</p></li>
 </ul>
@@ -1032,7 +1032,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f457322b3d0>
+    <jinja2.runtime.BlockReference object at 0x7f27c60da4a0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
