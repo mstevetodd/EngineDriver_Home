@@ -17,6 +17,15 @@ Changes / Updates
 Production Changes
 --------------------------------------------
 
+Changes included in Engine Driver Production version **2.39.195**:
+
+* When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
+* Send additional resync requests after DCC-EX reconnect
+* Added option to sequence the loading of items on DCC-EX
+* Bug fix for F0-F9 on some systems - Removed leading zero from FKey id when sending
+* Bug fix for Immersive mode
+* Cleanup of the Horizontal Throttle layouts. Fixing some height issues
+
 Changes included in Engine Driver Production version **2.38.193**:
 
 * Preference to always show the Throw and Close buttons for Turnouts/Points
@@ -47,14 +56,7 @@ Changes included in Engine Driver Production version **2.38.193**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.39.195**:
-
-* When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
-* Send additional resync requests after DCC-EX reconnect
-* Added option to sequence the loading of items on DCC-EX
-* Bug fix for F0-F9 on some systems - Removed leading zero from FKey id when sending
-* Bug fix for Immersive mode
-* Cleanup of the Horizontal Throttle layouts. Fixing some height issues
+no Beta at this time
 
 Complete ChangeLog
 --------------------------------------------
