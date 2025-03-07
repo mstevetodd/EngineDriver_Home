@@ -2490,17 +2490,15 @@ When enabled:
 Manual host specific import/export
 """"""""""""""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Manual host specific import/export
-
 'Import' or 'Export' your preferences for a specific host to the  ``/Android/data/jmri.enginedriver/files/`` folder. The host must be in your recent connection list.
+
+This is only relevant if you have, or have previously had, the `Auto host specific import/export?`_ preference enabled and have connected to a host (that you want to import the preferences for) at least once.
 
 Note: this preference is only available when not currently connected to a |WTS-DCC-EX|.  i.e. On the |C-S|.
 
 **WARNINGS:**
 
+* This will ovewrite the current preferences with the imported preferences.
 * The action will occur IMMEDIATELY on selecting the option and confirming the dialog.
 
 

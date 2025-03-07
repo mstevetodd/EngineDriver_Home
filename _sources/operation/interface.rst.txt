@@ -1103,14 +1103,11 @@ There are four ways you can choose a loco for the Throttle.  Select one of the r
 Select by DCC Address 
 """""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Select by DCC Address
-
 Shown if you select ``DCC Address`` in the `Selection Method`_.
 
 You can enter the loco's DCC address (verify short or long), and press :guilabel:`Acquire` to select the loco.  You will then be taken back to the |T-S| with that loco selected.
+
+Note that if you use the ``Auto`` option, any address below 128 is assumed to be ``Short`` and any address above 127 is assumed to be ``Long``.   For almost all commands stations this is correct, but few have different ranges.
 
 Select from Sever Roster
 """"""""""""""""""""""""
