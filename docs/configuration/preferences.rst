@@ -1290,10 +1290,11 @@ Maximum throttle Change
 
 This preference allows you to set the Maximum allowed throttle change in % on all the throttles on the |T-S|.  
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Maximum throttle Change *Can't remember when this is used.*
+This is used when a slider touched and held.  
+
+If the difference (as a percentage) between the current speed and the touched speed is greater than this value, the speed will change gradually (in steps) by the amount in the `Speed button Change Amount`_ preference, until the speed equals the touched speed.
+
+If the difference is less than the value in this preference, the speed will change immediately to the touched speed.
 
 Speed button Change Amount
 """"""""""""""""""""""""""

@@ -16,17 +16,14 @@ Prerequisites for Using Engine Driver
 To Use Engine Driver You must...
 ---------------------------------
 
-1. Have a Android device/phone. |BR| |ED| can only be installed on an Android device/phone.
+1. Have a Android device/phone. |BR| |ED| can only be installed on an Android device/phone (or an Android emulator on a PC.)
 
-*ALSO*
+   *ALSO*
  
-2. 
+2. A compatible server (software or device) connected to your model train layout for |ed| to connect to. Either:
 
-   a) A |WTS-DCC-EX| must be available on a device connected to your model train layout for |ED| to connect to.
-
-   **OR**
-
-   b) A |EX-CS| must be available on a device connected to your model train layout for |ed| to connect to.
+   a) A |WTS| |BR| **OR**
+   b) A |EX-CS|.
 
 Android Device/Phone
 --------------------
