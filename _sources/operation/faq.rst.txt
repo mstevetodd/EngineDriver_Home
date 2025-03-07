@@ -152,7 +152,9 @@ Q. The loco list is too long, I can't find my locos easily
  .. todo:: 
   :class: todo-float-right
   
-  LOW: FAQ Selecting locomotives to control
+  LOW: FAQ Selecting locomotives to control - filter option
+
+|FORCE-BREAK|
 
 |HR-DASHED|
 
@@ -162,16 +164,13 @@ Q. How do I work with |Consists| / Multiple Units|
 
     |ed| can create |consists| on-the-fly by simply selecting multiple locos, one after the other...
 
-    Note: Make sure that the ``Drop Loco before acquire?`` preference is set to 'No'.
+    Note: Make sure that the :ref:`configuration/preferences:Drop Loco before acquire?` preference is disabled (not selected).
 
   A. 2. DCC 'Advanced Consists' (CV19)
  
-    Note you can't create a DCC 'Advanced Consists' (CV19) with |ed|, but you can control one if it has already been setup.
+    If you are using |WIT| you can't create a DCC 'Advanced Consists' (CV19) with |ed|, but you can control one if it has already been setup.
 
-    .. todo:: 
-      :class: todo-float-right
-      
-      LOW: FAQ DCC 'Advanced Consists' (CV19)
+    If you are using |DCC-EX|, you can create a DCC 'Advanced Consists' (CV19) with |ed|.  See the :doc:`/operation/dcc-ex-native-protocol` page for more information on changing CVs.
 
     Remember that this type of |consist| can cause problems later if the loco has not been removed from the consist first and you want to control it as an individual loco. 
 
@@ -188,7 +187,7 @@ Q. How do I work with |Consists| / Multiple Units|
 
 Q. I can't create on-the-fly |consists| ?
 
-  A. Make sure that the ``Drop Loco before acquire?`` preference is set to 'No'.
+  A. Make sure that the :ref:`configuration/preferences:Drop Loco before acquire?` preference is disabled (not selected).
 
 |HR-DASHED|
 
@@ -196,7 +195,7 @@ Q. The lights of the locos in my consist are wrong?
 
   A. 1. If you use on-the-fly |consists|, you can control the lights by clicking ``Select`` then click on the ``Edit Lights`` button
 
-  A. 2. You can control the lights with a Long click on the ``Select`` Loco button, if you set the ``Control consist Lights on long click`` preference.
+  A. 2. You can control the lights with a Long click on the ``Select`` Loco button, if you enable the :ref:`configuration/preferences:Control consist Lights on long click` preference.
 
 |HR-DASHED|
 
