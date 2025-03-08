@@ -1525,10 +1525,7 @@ The menu option is only shown if the :ref:`configuration/preferences:Show WiThro
 
 note: You cannot **READ** CVs.  You can only write them.
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Programming on the Main Screen
+See the :doc:`/operation/pom` page for more information.
 
 .. warning:: 
 
