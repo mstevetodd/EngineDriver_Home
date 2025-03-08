@@ -393,19 +393,23 @@ Swiping up or Down
 
 |FORCE-BREAK|
 
-Showing the web page at the bottom of the throttle screen
+Showing the web page on the throttle screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: FAQ Showing the web page at the bottom of the throttle screen
+It is possible to show a web browser at the top or bottom of the throttle screen. Your JMRI Layout panels, Turnouts/Points or Routes can be displayed here if you have configured them in JMRI. 
 
-See the Web Throttle view 
+See the :ref:`operation/interface:Web View Area (Throttle Web View)` 
 
-See the Web Throttle view preference  
+See the :ref:`configuration/preferences:Throttle Web View Preferences` for more information.
 
-<also point to the swipe up option>
+Showing the Turnouts/Points or Routes on the throttle screen
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+Unfortunately it is not possible to show the |ED| Turnouts/Points screen or Routes screen on the throttle screen.  
+
+This is on our todo list, but it has no ETA.
+
+However if you are using JMRI, your Layout panels, Turnouts/Points or Routes can be displayed in a web page on the Throttle screen. See `Showing the web page on the throttle screen`_.
 
 Loco selection screen
 --------------------------------------------
