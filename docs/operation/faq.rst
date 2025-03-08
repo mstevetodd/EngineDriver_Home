@@ -145,19 +145,6 @@ Q. Why is my loco is not remembered in the recent locos list?
 
 |HR-DASHED|
 
-Q. The loco list is too long, I can't find my locos easily
-
-  A. You can use the filter option to reduce the list 
-
- .. todo:: 
-  :class: todo-float-right
-  
-  LOW: FAQ Selecting locomotives to control - filter option
-
-|FORCE-BREAK|
-
-|HR-DASHED|
-
 Q. How do I work with |Consists| / Multiple Units|
 
   A. 1. On the fly |Consists| in |ed| 
@@ -176,12 +163,9 @@ Q. How do I work with |Consists| / Multiple Units|
 
   A. 3. JMRI Consists
 
-    .. todo:: 
-      :class: todo-float-right
-      
-      LOW: FAQ JMRI Consists
+    Creating |consists| in JMRI effectively creates DCC 'Advanced Consists' (CV19) and appear in the loco list in |ed| much like any other loco. 
 
-    Creating |consists| in JMRI effectively create DCC 'Advanced Consists' (CV19) and appear in the loco list in |ed| much like any other loco. 
+    Refer to the `JMRI: Consisting Tool <https://www.jmri.org/help/en/html/tools/consisttool/ConsistTool.shtml>`_ for more information.
 
 |HR-DASHED|
 
@@ -355,18 +339,13 @@ Direction Buttons
 
 Q. I don't like the direction buttons in that order
 
-  A. If you tend to think that forward should be to the right and reverse to the left, you can change the buttons positions in the preferences.
+  A. If you tend to think that ``Forward`` should be to the right and ``Reverse`` to the left, you can change the buttons positions in using the :ref:`configuration/preferences:swap direction buttons?` preference.
 
-    You can also change them on the fly.
+    You can also swap the buttons on-the-fly by enabling the :ref:`configuration/preferences:long press swap direction buttons?` preference.
 
-    Labelling the direction buttons for the directions/conventions of your railroad/railway.
+    You can also change the labels of the direction buttons in the preferences.  See :ref:`configuration/preferences:direction button preferences`.
 
-    e.g. North South, West East, Up Down.
-
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: FAQ Direction Buttons
+    In combination these can be useful to label the direction buttons for the directions/conventions of your railroad/railway. e.g. North South, West East, Up Down.
 
 Hiding the title bar and navigation bar
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -382,16 +361,6 @@ It can optionally also hide the Android System Status Bar at the top of the page
 
 Swiping up from off screen will normally temporarily show the Android navigation buttons again.
 
-
-Swiping up or Down
-^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: FAQ LOW: FAQ Swiping up or Down
-
-|FORCE-BREAK|
 
 Showing the web page on the throttle screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -424,38 +393,34 @@ Loco selection screen
 Locos in the roster not showing
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-  .. todo:: 
-    :class: todo-float-right
-    
-    LOW: FAQ Locos in the roster not showing
+  A. 1. check you don't have a filter enabled. See :ref:`operation/interface:filter the roster` for more information.
 
-  A. 1. check you don't have a filter 
+  A. 2. The Roster takes a few seconds to load.  If you have a large roster, it wil take longer.  Until it is loaded, you will not see any roster entries.
 
-  A. 2. ???
+  A. 3. Some devices (e.g. LnWi) have no provision for a roster.
 
 |FORCE-BREAK|
 
 Changing the Connection screen
 --------------------------------------------
 
-Q. You can't remove test server by swiping right
+Q. I can't remove test server (jmri.mstevetodd.com) by swiping right.
 
-  A. you can't remove it with a swipe, but there is a preference to remove it.  
+  A. You can't remove it with a swipe, but there is a preference to remove it from the list. See the `Hide Demo Server <../configuration/preferences.html#hide-demo-server>`_ preference for more information.
 
-  .. note:: 
-    :class: note-ed-hidden-title
-
-    See the `Hide Demo Server <../configuration/preferences.html#hide-demo-server>`_ preference for more information.
-
-Changing the turnouts/Points screen
+Changing the Turnouts/Points screen
 --------------------------------------------
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: FAQ Changing the turnouts screen
+Q. I would like to change the |TP-S|.
 
-|FORCE-BREAK|
+  A. Other than filtering the list, you can't change/configure the |TP-S|.
+
+Changing the Routes screen
+--------------------------------------------
+
+Q. I would like to change the |R-S|.
+
+  A. Other than filtering the list, you can't change/configure the |R-S|.
 
 Conserving power on your phone/tablet
 -------------------------------------
@@ -490,12 +455,32 @@ Q. I can't hear the In Phone Loco Sounds (IPLS)
 
     That means that, at the Android system level, the volume is controlled by the 'Ring and Notification volume' not the 'Media volume'.
 
+Reading/Writing Decoder CVs
+--------------------------------------------
+
+Q. I would like to read and/or change my decoder CVs.
+
+  A. 1. If you are using |WIT|, you can't read CVs with |ed|.
+
+    Howerver, for *some* Command Stations it may be possible to write to decoders using Programming on the Main (PoM).
+
+    See the :doc:`/operation/pom` page for more information.
+
+  A. 2. If you are using |DCC-EX|, you can read and write CVs with |ed|.
+  
+    See the :doc:`/operation/dcc-ex-native-protocol` page for more information.
+
 DCC-EX Features
 --------------------------------------------
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: FAQ DCC-EX Features
+Q. I can't see the DCC-EX features when I connect to my |EX-CS|.
+
+  A. The DCC-EX features are only available when you connect to a |EX-CS| using the |NATIVE|.
+
+    To use the |NATIVE| you have to select it before you connect to your server.
+
+    While you can set the individual preferences, the easiest way do this is to re-run the :doc:`/configuration/setup_wizard` from the menu in |C-S| and select that you will be using a |EX-CS| on the last page of the Wizard.
+
+    Note: the :doc:`/configuration/setup_wizard` is only available from the menu in |C-S|!  Not from other screens. 
 
 |FORCE-BREAK|
