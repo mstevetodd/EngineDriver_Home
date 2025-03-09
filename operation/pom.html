@@ -921,20 +921,29 @@
   <section id="programming-on-the-main-pom">
 <h1>Programming on the Main (PoM)<a class="headerlink" href="#programming-on-the-main-pom" title="Link to this heading"></a></h1>
 <aside class="sidebar-on-this-page sidebar">
+<nav class="contents local" id="on-this-page">
+<p class="topic-title">On This Page</p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#write-cvs-of-decoders-on-the-main-track" id="id1">Write CVs of decoders on the Main Track</a></p></li>
+</ul>
+</nav>
 </aside>
-<p>The <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> allows <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to read and write CVs of decoders on both the Main ona Prog tracks.</p>
-<p>The <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a> does not provide for any CV programming.</p>
-<a class="reference internal image-reference" href="../_images/pom_screen.png"><img alt="../_images/pom_screen.png" class="align-right" src="../_images/pom_screen.png" style="width: 172.8px; height: 307.2px;" /></a>
-<p>However it is possible to use a feature implemented in some system to do programming on the main (Pom) to write to CVs (not read).</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
+<p>The <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> allows <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to read and write CVs of decoders on both the Main ona Prog tracks. The <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">Native DCC-EX Protocol</span></a> is only available when connectd to a <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> and is discussed on the <a class="reference internal" href="dcc-ex-native-protocol.html"><span class="doc">Features when using the Native Protocol when connected to a DCC-EX EX-CommandStation</span></a> page.</p>
+<p>The <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a>, which is used for connecting to Command Stations other that the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a>, does not provide for any CV programming.</p>
+<p>However it is possible to use a feature implemented in some system to do programming on the main (PoM) to write to CVs (not read).</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>This feature only works on a very small number of <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Stations</abbr>.  It works by sending a hex packet to the <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Station</abbr>.</p>
 </div>
-<p>To use this feature enable the <a class="reference internal" href="../configuration/preferences.html#show-withrottle-pom-page"><span class="std std-ref">Show WiThrottle PoM Page</span></a> preference.</p>
-<div class="todo-float-right admonition" id="id1">
-<p class="admonition-title">Todo</p>
-<p>MEDIUM: PoM page</p>
-</div>
+<p>To use this feature, enable the <a class="reference internal" href="../configuration/preferences.html#show-withrottle-pom-page"><span class="std std-ref">Show WiThrottle PoM Page</span></a> preference.</p>
+<section id="write-cvs-of-decoders-on-the-main-track">
+<h2><a class="toc-backref" href="#id1" role="doc-backlink">Write CVs of decoders on the Main Track</a><a class="headerlink" href="#write-cvs-of-decoders-on-the-main-track" title="Link to this heading"></a></h2>
+<a class="reference internal image-reference" href="../_images/pom_screen.png"><img alt="../_images/pom_screen.png" class="align-right" src="../_images/pom_screen.png" style="width: 172.8px; height: 307.2px;" /></a>
+<p>Note that you cannot read CVs or DCC Addresses on the main track.  You can only write CVs of a specified loco (DCC Address).</p>
+<p>To write a new CV value, enter the DCC address of the loco you want to change, enter the CV number into the ‘CV’ field, enter the new value in the ‘Value’ field and click <span class="guilabel">Write</span></p>
+<p>Optionally, you can use the <span class="guilabel">NRMA CVs</span> pulldown to select a common CV from a list.  This just enters the appropriate CV number in the ‘CV’ field.</p>
+<p><div style="display:block; box-sizing: border-box; clear: both;"> </div></p>
+</section>
 </section>
 
 
@@ -952,7 +961,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fe55127f100>
+    <jinja2.runtime.BlockReference object at 0x7fb573cbea40>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

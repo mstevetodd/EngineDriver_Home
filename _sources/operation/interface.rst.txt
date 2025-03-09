@@ -1527,7 +1527,7 @@ note: You cannot **READ** CVs.  You can only write them.
 
 See the :doc:`/operation/pom` page for more information.
 
-.. warning:: 
+.. important:: 
 
   This feature only works on a very small number of |CSs|.  It works by sending a hex packet to the |CS|.
 
@@ -1595,17 +1595,17 @@ To record a log file in EngineDriver....
 3. Click :guilabel:`Start recording to a file`
 4. Click :guilabel:`Close`
 5. Attempt whatever is causing the problem a few times
-6. Exit ED
+6. Exit |ED|
 7. Connect a USB cable to your phone and PC 
 8. Allow access if the phone asks.
 9. In some versions of Android you may also need to change the connection type on the phone from 'charging' to 'file transfer'
 10. Open a file manager and find the connected phone
 11. Browse down to the folder ``..\Internal shared storage\Android\data\jmri.enginedriver\files``
-12. Find the most resent file that looks like logcatxxxxxxxxxxxxx.txt     e.g. logcat1699833098998.txt
+12. Find the most recent file that looks like ``logcatxxxxxxxxxxxxx.txt``     e.g. logcat1699833098998.txt
 
-13a. Attach that file to a message in qroups.io using the paperclip button on the toolbar above the message content
-13b. Attach that file to a message in discord using the :guilabel:`+` button on the row of the message content
-13c. Attach that file to an email message and send to the developers
+13. a. Attach that file to a message in qroups.io using the paperclip button on the toolbar above the message content
+13. b. Attach that file to a message in discord using the :guilabel:`+` button on the row of the message content
+13. c. Attach that file to an email message and send to the developers
 
 |force-break|
 
