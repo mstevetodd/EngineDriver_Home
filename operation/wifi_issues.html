@@ -422,7 +422,13 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#using-mobile-data-instead-of-wifi">Using Mobile Data instead of WiFi</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#disconnections">Disconnections</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#disconnections">Disconnections</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#other-networks-on-the-same-channel">Other networks on the same channel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distance-to-router-location-of-the-router">Distance to router / location of the router</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#objects-in-the-way">Objects in the way</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#too-many-devices-are-connected">Too Many Devices Are Connected</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="faq.html">Frequently Asked Questions</a><ul>
@@ -928,91 +934,123 @@
 <nav class="contents local" id="on-this-page">
 <p class="topic-title">On This Page</p>
 <ul class="simple">
-<li><p><a class="reference internal" href="#bonjour-mdns" id="id3">Bonjour/mDNS</a></p>
+<li><p><a class="reference internal" href="#bonjour-mdns" id="id2">Bonjour/mDNS</a></p>
 <ul>
-<li><p><a class="reference internal" href="#use-location" id="id4">Use location</a></p></li>
-<li><p><a class="reference internal" href="#incompatible-routers" id="id5">Incompatible Routers</a></p></li>
+<li><p><a class="reference internal" href="#use-location" id="id3">Use location</a></p></li>
+<li><p><a class="reference internal" href="#incompatible-routers" id="id4">Incompatible Routers</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#firewalls" id="id6">Firewalls</a></p></li>
-<li><p><a class="reference internal" href="#routers-and-mesh-networks" id="id7">Routers and Mesh networks</a></p>
+<li><p><a class="reference internal" href="#firewalls" id="id5">Firewalls</a></p></li>
+<li><p><a class="reference internal" href="#routers-and-mesh-networks" id="id6">Routers and Mesh networks</a></p>
 <ul>
-<li><p><a class="reference internal" href="#ghz-and-5ghz" id="id8">2.4GHz and 5GHz</a></p></li>
-<li><p><a class="reference internal" href="#mesh-routers" id="id9">Mesh Routers</a></p></li>
+<li><p><a class="reference internal" href="#ghz-and-5ghz" id="id7">2.4GHz and 5GHz</a></p></li>
+<li><p><a class="reference internal" href="#mesh-routers" id="id8">Mesh Routers</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#using-mobile-data-instead-of-wifi" id="id10">Using Mobile Data instead of WiFi</a></p></li>
-<li><p><a class="reference internal" href="#disconnections" id="id11">Disconnections</a></p></li>
+<li><p><a class="reference internal" href="#using-mobile-data-instead-of-wifi" id="id9">Using Mobile Data instead of WiFi</a></p></li>
+<li><p><a class="reference internal" href="#disconnections" id="id10">Disconnections</a></p>
+<ul>
+<li><p><a class="reference internal" href="#other-networks-on-the-same-channel" id="id11">Other networks on the same channel</a></p></li>
+<li><p><a class="reference internal" href="#distance-to-router-location-of-the-router" id="id12">Distance to router / location of the router</a></p></li>
+<li><p><a class="reference internal" href="#objects-in-the-way" id="id13">Objects in the way</a></p></li>
+<li><p><a class="reference internal" href="#too-many-devices-are-connected" id="id14">Too Many Devices Are Connected</a></p></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
 <p>Many of the problems that people have with <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> relate to connection issues.</p>
 <p>Below are several common problems.</p>
 <section id="bonjour-mdns">
-<h2><a class="toc-backref" href="#id3" role="doc-backlink">Bonjour/mDNS</a><a class="headerlink" href="#bonjour-mdns" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id2" role="doc-backlink">Bonjour/mDNS</a><a class="headerlink" href="#bonjour-mdns" title="Link to this heading"></a></h2>
 <section id="use-location">
-<h3><a class="toc-backref" href="#id4" role="doc-backlink">Use location</a><a class="headerlink" href="#use-location" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id3" role="doc-backlink">Use location</a><a class="headerlink" href="#use-location" title="Link to this heading"></a></h3>
 <p>The Android System setting <cite>Use Location</cite> must be enabled for <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to be able to discover servers.</p>
 <p>If <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> says that you are not connected to a network on the Connection screen, check that <cite>Use Location</cite> is enabled.</p>
 </section>
 <section id="incompatible-routers">
-<h3><a class="toc-backref" href="#id5" role="doc-backlink">Incompatible Routers</a><a class="headerlink" href="#incompatible-routers" title="Link to this heading"></a></h3>
-<p>While uncommon, one reason why your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> may not be visible in the Discovered list on the connection screen can be that your router or network does not support the Bonjour/mDNS protocol. In this case, enter the server address and port manually, or select it from Recents.</p>
+<h3><a class="toc-backref" href="#id4" role="doc-backlink">Incompatible Routers</a><a class="headerlink" href="#incompatible-routers" title="Link to this heading"></a></h3>
+<p>While uncommon, one reason why your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> may not be visible in the Discovered list on the connection screen can be that your router or network does not support the Bonjour/mDNS protocol.</p>
+<p>In this case, enter the server address and port manually, or select it from Recents.</p>
 </section>
 </section>
 <section id="firewalls">
-<h2><a class="toc-backref" href="#id6" role="doc-backlink">Firewalls</a><a class="headerlink" href="#firewalls" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id5" role="doc-backlink">Firewalls</a><a class="headerlink" href="#firewalls" title="Link to this heading"></a></h2>
 <div class="todo-float-right admonition" id="id1">
 <p class="admonition-title">Todo</p>
 <p>LOW: Firewalls</p>
 </div>
-<p>Your PC’s firewall software can prevent <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from connecting to your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr>. You may need to add an exception in your firewall software for the incoming port or disable the firewall to allow <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to connect.</p>
+<p>Your PC’s firewall software can prevent <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> from connecting to your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr>.</p>
+<p>You may need to add an exception in your firewall software for the incoming port or disable the firewall to allow <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to connect.</p>
 </section>
 <section id="routers-and-mesh-networks">
-<h2><a class="toc-backref" href="#id7" role="doc-backlink">Routers and Mesh networks</a><a class="headerlink" href="#routers-and-mesh-networks" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id6" role="doc-backlink">Routers and Mesh networks</a><a class="headerlink" href="#routers-and-mesh-networks" title="Link to this heading"></a></h2>
 <section id="ghz-and-5ghz">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">2.4GHz and 5GHz</a><a class="headerlink" href="#ghz-and-5ghz" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id7" role="doc-backlink">2.4GHz and 5GHz</a><a class="headerlink" href="#ghz-and-5ghz" title="Link to this heading"></a></h3>
 <p>Some routers do not transfer the mDNS messages between clients on the 2.4GHz and 5ghz channels.  So if your <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> is using 2.4GHz, make sure your device/phone is using a 2.4GHz channel as well. (Or both use 5GHz channels.)</p>
+<p>The <a href="https://dcc-ex.com/">DCC-EX</a> <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> uses 2.4GHz WiFi only.  So if you are using one of these devices, make sure your device/phone is using a 2.4GHz channel as well.</p>
 </section>
 <section id="mesh-routers">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Mesh Routers</a><a class="headerlink" href="#mesh-routers" title="Link to this heading"></a></h3>
-<p>Many Mesh routers will not transfer the mDNS messages to other connected routers / modems. If you are using a mesh network, make sure both the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> and the device/phone are using the same Mesh network.</p>
+<h3><a class="toc-backref" href="#id8" role="doc-backlink">Mesh Routers</a><a class="headerlink" href="#mesh-routers" title="Link to this heading"></a></h3>
+<p>Many Mesh routers will not transfer the mDNS messages to other connected routers / modems.</p>
+<p>If you are using a mesh network, either:</p>
+<ul class="simple">
+<li><p>enter the server address and port manually, or select it from Recents</p></li>
+<li><p>make sure both the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> and the device/phone are using the same Mesh network, or</p></li>
+</ul>
 </section>
 </section>
 <section id="using-mobile-data-instead-of-wifi">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Using Mobile Data instead of WiFi</a><a class="headerlink" href="#using-mobile-data-instead-of-wifi" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id9" role="doc-backlink">Using Mobile Data instead of WiFi</a><a class="headerlink" href="#using-mobile-data-instead-of-wifi" title="Link to this heading"></a></h2>
 <p>Recent versions of Android have a very confusing <em>feature</em>, sometimes called ‘Smart Network Switching’, that will ignore a connected WiFi network if that network cannot reach the Internet.</p>
 <p>This can cause problems if you sometimes use your device to connect to the internet on one network, but your <a class="reference internal" href="../about/index.html#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Server</span></a> or <a class="reference internal" href="../about/index.html#withrottle-protocol-vs-dcc-ex-native-protocol"><span class="std std-ref">DCC-EX Server</span></a> is on a different network that does not have an internet connection.</p>
 <p>Sometimes, the network can show as connected, and EngineDriver server discovery works, but clicking on the discovered server or Connect button does not work.</p>
-<p>As of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> version 2.26.115, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> now handles this situation by “forcing” the local WiFi connection.  There is an <a class="reference internal" href="../configuration/preferences.html#mobile-data-connection"><span class="std std-ref">Allow Mobile Data Connection</span></a> preference that can be enabled if needed.</p>
-<p>EngineDriver will show a message “Using MOBILE network, not WiFi. check WiFi settings”, when this mode is encountered.</p>
 <p>Some devices have a setting to turn off this feature, some do not.</p>
 <p>Some provide a notification that “Wi-Fi has no internet access, Tap for options”, followed by “This network has no internet access. Stay connected?” that can be used to disable this feature and remain connected to the WiFi.</p>
 <p>If you missed the prompt, you can ‘forget’ the network, and re-enter your WiFi credentials to get the prompt again.</p>
 <p>Workaround: If you are unable to turn off the feature, you can enable <code class="docutils literal notranslate"><span class="pre">Airplane</span> <span class="pre">Mode</span></code>, then enable ONLY WiFi, and then connect your WiFi.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Recent versions of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> now try to handle this <em>feature</em> by “forcing” the local WiFi connection.</p>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will show a message “Using MOBILE network, not WiFi. check WiFi settings”, when this mode is encountered.</p>
+<p>There is an <a class="reference internal" href="../configuration/preferences.html#mobile-data-connection"><span class="std std-ref">Allow Mobile Data Connection</span></a> preference that can be enabled if you need to force <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> to access the mobile data.  (rarely needed)</p>
+</div>
 </section>
 <section id="disconnections">
-<h2><a class="toc-backref" href="#id11" role="doc-backlink">Disconnections</a><a class="headerlink" href="#disconnections" title="Link to this heading"></a></h2>
-<div class="todo-float-right admonition" id="id2">
-<p class="admonition-title">Todo</p>
-<p>MEDIUM: Disconnections</p>
-</div>
-<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> and/or the Android device can occasionally lose the connection even after it successfully connected.  There can be a lot of causes.  If ED does lose connection it will buzz, vibrate and take you to <em>Reconnecting Screen</em>.   It will repeatedly and indefinitely attempt to reconnect.</p>
+<h2><a class="toc-backref" href="#id10" role="doc-backlink">Disconnections</a><a class="headerlink" href="#disconnections" title="Link to this heading"></a></h2>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> and/or the Android device can occasionally lose the connection even after it successfully connected.</p>
+<p>There can be a lot of causes.  If ED does lose connection it will buzz, vibrate and take you to <em>Reconnecting Screen</em>.   It will repeatedly and indefinitely attempt to reconnect.</p>
+<p>Some possible causes include:</p>
 <ul class="simple">
-<li><p>Other networks on the same channel</p></li>
-<li><p>distance to router / location of the router</p></li>
-<li><p>Too Many Devices Are Connected</p></li>
-<li><p>objects in the way (particularly metal objects)</p></li>
+<li><p><a class="reference internal" href="#other-networks-on-the-same-channel">Other networks on the same channel</a></p></li>
+<li><p><a class="reference internal" href="#distance-to-router-location-of-the-router">Distance to router / location of the router</a></p></li>
+<li><p><a class="reference internal" href="#too-many-devices-are-connected">Too Many Devices Are Connected</a></p></li>
+<li><p><cite>Objects in the way</cite> (particularly metal objects)</p></li>
 <li><p>Interference  (Other electrical devices close to the phone or the router )</p></li>
 </ul>
 <p>If the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> does not receive any feedback from your device/phone within a configured period, the <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> should stop all the locos you have selected on your device/phone.</p>
-<ul class="simple">
-<li><p>Disable haptic Alert</p></li>
-</ul>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference external" href="../configuration/preferences.html#feedback-on-disconnect">Feedback on Disconnect preference on the Preferences page</a> to disable the audible and haptic warnings.</p>
 </div>
+<section id="other-networks-on-the-same-channel">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Other networks on the same channel</a><a class="headerlink" href="#other-networks-on-the-same-channel" title="Link to this heading"></a></h3>
+<p>One problem that can cause disconnections is if there are other, busy, networks on the same channel as your network.  You can use a WiFi analyzer app (e.g. <cite>WiFiAnalyzer (Open Source) &lt;https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&amp;hl=en_AU&gt;`_</cite> ) to see what channels are being used by other networks and change your network to a less used channel.  If your router (or Wifi CommandStation) is on a busy channel, try moving it to a less busy channel.</p>
+</section>
+<section id="distance-to-router-location-of-the-router">
+<h3><a class="toc-backref" href="#id12" role="doc-backlink">Distance to router / location of the router</a><a class="headerlink" href="#distance-to-router-location-of-the-router" title="Link to this heading"></a></h3>
+<p>One problem that can cause disconnections is if there you are too far from you router.  You can use a WiFi analyzer app (e.g. <cite>WiFiAnalyzer (Open Source) &lt;https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&amp;hl=en_AU&gt;`_</cite> ) to see what signal strength you have as your move around you layout.  If you are too far from the router, you may need to move the router closer to the layout, or add a WiFi extender.</p>
+</section>
+<section id="objects-in-the-way">
+<h3><a class="toc-backref" href="#id13" role="doc-backlink">Objects in the way</a><a class="headerlink" href="#objects-in-the-way" title="Link to this heading"></a></h3>
+<p>One problem that can cause disconnections is if there are objects in the way (particularly metal objects) in the part to your router. So it may be fine at one loaction, but not at another. You can use a WiFi analyzer app (e.g. <cite>WiFiAnalyzer (Open Source) &lt;https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&amp;hl=en_AU&gt;`_</cite> ) to see what signal strength you have as you move around your layout.  If you are find it drops at certain loacations, you may need to move the router closer to the layout, or add a WiFi extender.</p>
+</section>
+<section id="too-many-devices-are-connected">
+<h3><a class="toc-backref" href="#id14" role="doc-backlink">Too Many Devices Are Connected</a><a class="headerlink" href="#too-many-devices-are-connected" title="Link to this heading"></a></h3>
+<p>Most Wifi Command Stations support only a small number connectred devices/phones.  e.g. <strong>LnWi</strong> and the DIY version of the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> only support 4 connections. The prebuilt <a href="https://dcc-ex.com/">DCC-EX</a> EX-CSB1 supports 10 connections.</p>
+<p>When you try to connect to a <abbr title="JMRI, EX-CommandStation, WiFTrax, LnWi, etc.">Command Station/Server</abbr> that has reached its maximum number of connections, the results can be unpredictable.  You may be able to connect, but then get disconnected, you may not be able to connect at all, or you may connect but someone else will get disconnected.</p>
+<p><a href="https://jmri.org/">JMRI</a> does not have this limitaion.  It will accept as many connections as the Wifi Router can handle.</p>
+</section>
 </section>
 </section>
 
@@ -1034,7 +1072,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fb575b0ba00>
+    <jinja2.runtime.BlockReference object at 0x7f94dff9f7f0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
