@@ -266,6 +266,10 @@ html[data-theme='dark'] .wy-nav-content a:visited {
   font-size: 80% !important;
 }
 
+.wy-breadcrumbs>li {
+  vertical-align:top;
+}
+
 .wy-side-nav-search>a img.logo {
     width: 60%;
 }

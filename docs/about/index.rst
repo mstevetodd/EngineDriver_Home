@@ -100,7 +100,7 @@ Roadmap
 * Who among the available people is interested enough to do the work
 * Are there enough people likely to use it to make it worth the effort
 
-At the moment there are only a few of us doing any work on |ed|, so things happen when they happen.
+At the moment there are only a few of us doing any work on |ed|, so things happen when they happen. We prioritise bug fixes, but we also try to add new features when we can.
 
 See the :doc:`/contact/index` page if you are having problems or wish to make a suggestion.
 
@@ -109,6 +109,4 @@ Alternates to Engine Driver
 
 |ed| is not the only app that can connect to JMRI, |WTSS| or |EX-CSS|, so it is worth your time to investigate the alternates.
 
-See the `JMRI WiThrottle page <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/UserInterface.shtml>`_ for a list of similar or related apps.
-
-See the `DCC-EX page <https://dcc-ex.com/throttles/index.html>`_ for a list of similar or related apps.
+See the `JMRI WiThrottle page <https://www.jmri.org/help/en/package/jmri/jmrit/withrottle/UserInterface.shtml>`_ and `DCC-EX page <https://dcc-ex.com/throttles/index.html>`_ pages for lists of similar or related apps.
