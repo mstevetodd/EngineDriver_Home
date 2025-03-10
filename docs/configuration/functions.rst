@@ -82,22 +82,28 @@ These defaults can be overridden on either the :ref:`operation/interface:Functio
 Which locos in a Consist/Multiple Unit the functions are sent to 
 -------------------------------------------------------------------
 
-.. todo:: 
-  :class: todo-float-right
-  
-  MEDIUM: Which locos in a Consist/Multiple Unit the functions are sent to
-
-By Default, for a |loco_consist| only the first loco in the consists is sent any Function commands.
+By Default, for a |loco_consist| only the first loco in the |CONSIST| is sent any Function commands.
 
 This can be overridden with a number of preferences:
 
-* Lead Loco Sounds preference
-* Consist Follow Functions
+* `Lead Loco Sounds preferences`_
+* `Consist Follow Functions - Advanced Consist Function Mapping`_
 
-Advanced Consist Function Mapping
-==================================
+Lead Loco Sounds preferences
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Which style of rules to follow in a consist when function buttons are pressed.
+While the `Consist Follow Functions <Consist Follow Functions - Advanced Consist Function Mapping>`_ features provides comprehensive control over which loco in a consist is sent Function commands, there are three *basic* preferences that control which loco in a |CONSIST| is sent Function commands that can be used instead:
+
+* :ref:`configuration/preferences:Selective Lead Unit Sound?`
+* :ref:`configuration/preferences:Always treat F1 as Sound?`
+* :ref:`configuration/preferences:Always treat F2 as Sound?`
+
+If the :ref:`configuration/preferences:Selective Lead Unit Sound?` preference is enabled Engine Driver will send Horn/Bell functions to only the Lead unit in an EngineDriver |CONSIST|. (Only/any function with a 'label' that includes 'bell' 'horn' or 'whistle' as part of the label.)
+
+Consist Follow Functions - Advanced Consist Function Mapping
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The :doc:`/operation/consist-follow-functions` feature provides comprehensive contorl over which loco in a |CONSIST| is sent Function commands.
 
 .. note:: 
   :class: note-ed-hidden-title
