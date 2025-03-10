@@ -1383,26 +1383,23 @@ These preferences allow for change the way DCC functions will behave in a |consi
 Consist Functions - Follow Rule Style
 """""""""""""""""""""""""""""""""""""
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Consist Functions - Follow Rule Style
-
 Which style of rules to follow in a consist when function buttons are pressed.
 
-.. note:: 
-  :class: note-ed-hidden-title
+The :doc:`/operation/consist-follow-functions` feature provides comprehensive control over which loco(s) in a |CONSIST| is sent Function commands.
 
-  See the :doc:`/operation/consist-follow-functions` page for detailed information on the different rule types and how to use them.
-
-Note: If 'Use Default function labels' is enabled, 'Special...' will also apply to the lead (or only) loco.
-
-Options
+Options:
 
 * Simple text matching (original)
 * Complex text matching - Lead loco always activated, Trail follows rules below
 * Special Exact - Lead and All Trail activated if they exactly match the function labels
 * Special Partial - Lead and All Trail activated if they partially match the function labels
+
+Note: If `Use Default function labels?`_ is enabled, 'Special Exact' and/or 'Special Partial' will also apply to the lead (or only) loco.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the :doc:`/operation/consist-follow-functions` page for detailed information on the different rule types and how to use them.
 
 Selective Lead Unit Sound?
 """"""""""""""""""""""""""
@@ -1414,18 +1411,18 @@ If this preference is enabled |ED| will send Horn/Bell functions to only the Lea
 Always treat F1 as Sound?
 """""""""""""""""""""""""
 
-If this preference is enabled, F1 one is always treated as a sound and is always propagated to all locos in a consist.
+If this preference is enabled, ``F1`` one is always treated as a sound and is always propagated to all locos in a consist.
 
-Only relevant if the 'Selective Lead Unit Sound' preference is enabled.
+Only relevant if the `Selective Lead Unit Sound?`_ preference is enabled.
 
 This preference is ignored if 'Complex' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 Always treat F2 as Sound?
 """""""""""""""""""""""""
 
-If this preference is enabled, F2 one is always treated as a sound and is always propagated to all locos in a consist.
+If this preference is enabled, ``F2`` one is always treated as a sound and is always propagated to all locos in a consist.
 
-Only relevant if the 'Selective Lead Unit Sound' preference is enabled.
+Only relevant if the `Selective Lead Unit Sound?`_ preference is enabled.
 
 This preference is ignored if 'Complex' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
