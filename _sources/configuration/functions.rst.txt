@@ -46,13 +46,13 @@ By default, if a |loco_consist| is acquired from a DCC Address then the Function
 
 These defaults can be overridden on the :ref:`operation/interface:Function Defaults Screen`, including:
 
-* Number of Default Functions
-* Number of Default Functions for Roster
-* Use Default Function Labels
-* Override WiThrottle Default Latching
-* Use Defaults for Roster Entries With no functions
+* :ref:`configuration/preferences:Number of Default Functions`
+* :ref:`configuration/preferences:Number of Default Functions for Roster`
+* :ref:`configuration/preferences:Use Default Function Labels?`
+* :ref:`operation/interface:Override WiThrottle Default Latching`
+* :ref:`operation/interface:Use Defaults for Roster Entries With no functions`
 
-Also the order of the Default Functions and Labels of the Default Functions can be overridden.
+Also the order of the Default Functions and Labels of the Default Functions can be overridden in the :ref:`operation/interface:Function Defaults Screen`.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -66,18 +66,20 @@ Functions are either **Latching** or **Non Latching / Momentary**.
 
 By default, if a |loco_consist| is acquired from a |ROSTER| then the Function behaviour will be decided from |ROSTER| entry of the first/front loco in the |loco_consist|.
 
-By default, if a |loco_consist| is acquired from a DCC Address then the Function behaviour is a bit more complicated.
+By default, if a |loco_consist| is acquired from a **DCC Address** then the Function behaviour is a bit more complicated.
 
   For |JMRI| (and possibly other WiThrottle servers):
 
-  * By default, F2 is momentary, but all other functions are latching
-  * But this can be changed in the |JMRI| WiThrottle preferences
+  * By default, ``F2`` is momentary, but all other functions are latching
+  * But this can be changed in:
+  
+    * The |JMRI| WiThrottle preferences (in |JMRI|)
+    * In |EDs| :ref:`operation/interface:Function Latching Settings Screen`
 
-  For the |EX-CS|
+  For the |EX-CS|:
 
-  * The server treats all functions as latching, but |ED| mimics the WiThrottle behaviour and makes F2 is momentary
-
-These defaults can be overridden on either the :ref:`operation/interface:Function Latching Settings Screen` if using WiThrottle, or the :ref:`operation/interface:DCC-EX Function Settings Screen` if use |EX-CS|
+  * The server treats all functions as latching, but |ED| mimics the WiThrottle behaviour and makes F2 momentary.
+  * But this can be changed in |ED|'s :ref:`operation/interface:DCC-EX Function Settings Screen`.
 
 Which locos in a Consist/Multiple Unit the functions are sent to 
 -------------------------------------------------------------------
@@ -98,12 +100,12 @@ While the `Consist Follow Functions <Consist Follow Functions - Advanced Consist
 * :ref:`configuration/preferences:Always treat F1 as Sound?`
 * :ref:`configuration/preferences:Always treat F2 as Sound?`
 
-If the :ref:`configuration/preferences:Selective Lead Unit Sound?` preference is enabled Engine Driver will send Horn/Bell functions to only the Lead unit in an EngineDriver |CONSIST|. (Only/any function with a 'label' that includes 'bell' 'horn' or 'whistle' as part of the label.)
+If the :ref:`configuration/preferences:Selective Lead Unit Sound?` preference is enabled |ED| will send Horn/Bell functions to only the Lead unit in an EngineDriver |CONSIST|. (Only/any function with a 'label' that includes 'bell' 'horn' or 'whistle' as part of the label.)
 
 Consist Follow Functions - Advanced Consist Function Mapping
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The :doc:`/operation/consist-follow-functions` feature provides comprehensive contorl over which loco in a |CONSIST| is sent Function commands.
+The :doc:`/operation/consist-follow-functions` feature provides comprehensive control over which loco(s) in a |CONSIST| is sent Function commands.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -113,14 +115,14 @@ The :doc:`/operation/consist-follow-functions` feature provides comprehensive co
 Linking DCC Functions to IPLS buttons
 ======================================
 
-By Default, the |IPLS| buttons are the only way to activate |IPLS_SHORT| sounds inside the device/phone.
+By Default, the seperate |IPLS| buttons are the only way to activate |IPLS_SHORT| sounds inside the device/phone.
 
-|ED| can be configured to activate the corresponding |IPLS_SHORT| functions for the Bell and Horn by pressing F1 or F2, by enabling the :ref:`configuration/preferences:f1 and f2 activate bell and horn?` preference.  
+|ED| can be configured to activate the corresponding |IPLS_SHORT| functions for the 'Bell' and 'Horn' by pressing ``F1`` or ``F2``, by enabling the :ref:`configuration/preferences:f1 and f2 activate bell and horn?` preference.  
 
 Functions and Gamepads
 =======================
 
-If you have a Bluetooth Gamepad or USB volume control connected to you device/phone, then the physical buttons on the gamepad or volume control device.
+If you have a Bluetooth Gamepad or USB volume control connected to your device/phone, then the physical buttons on the gamepad or volume control device.
 
 .. note:: 
   :class: note-ed-hidden-title

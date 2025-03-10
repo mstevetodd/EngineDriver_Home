@@ -977,13 +977,13 @@
 <p>By default, if a <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> is acquired from a DCC Address then the Function labels from <a class="reference internal" href="../operation/interface.html#id6"><span class="std std-ref">Engine Driver Default Functions</span></a> are shown, and the number of function buttons shown is also dictated by the <a class="reference internal" href="../operation/interface.html#id6"><span class="std std-ref">Engine Driver Default Functions</span></a>.</p>
 <p>These defaults can be overridden on the <a class="reference internal" href="../operation/interface.html#id6"><span class="std std-ref">Function Defaults Screen</span></a>, including:</p>
 <ul class="simple">
-<li><p>Number of Default Functions</p></li>
-<li><p>Number of Default Functions for Roster</p></li>
-<li><p>Use Default Function Labels</p></li>
-<li><p>Override WiThrottle Default Latching</p></li>
-<li><p>Use Defaults for Roster Entries With no functions</p></li>
+<li><p><a class="reference internal" href="preferences.html#number-of-default-functions"><span class="std std-ref">Number of Default Functions</span></a></p></li>
+<li><p><a class="reference internal" href="preferences.html#number-of-default-functions-for-roster"><span class="std std-ref">Number of Default Functions for Roster</span></a></p></li>
+<li><p><a class="reference internal" href="preferences.html#use-default-function-labels"><span class="std std-ref">Use default function labels?</span></a></p></li>
+<li><p><a class="reference internal" href="../operation/interface.html#override-withrottle-default-latching"><span class="std std-ref">Override WiThrottle Default Latching</span></a></p></li>
+<li><p><a class="reference internal" href="../operation/interface.html#use-defaults-for-roster-entries-with-no-functions"><span class="std std-ref">Use Defaults for Roster Entries With no functions</span></a></p></li>
 </ul>
-<p>Also the order of the Default Functions and Labels of the Default Functions can be overridden.</p>
+<p>Also the order of the Default Functions and Labels of the Default Functions can be overridden in the <a class="reference internal" href="../operation/interface.html#id6"><span class="std std-ref">Function Defaults Screen</span></a>.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See the <a class="reference internal" href="../operation/interface.html#id6"><span class="std std-ref">Function Defaults Screen</span></a> for more information.</p>
@@ -993,19 +993,24 @@
 <h2><a class="toc-backref" href="#id3" role="doc-backlink">How Functions Behave</a><a class="headerlink" href="#how-functions-behave" title="Link to this heading"></a></h2>
 <p>Functions are either <strong>Latching</strong> or <strong>Non Latching / Momentary</strong>.</p>
 <p>By default, if a <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> is acquired from a <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> then the Function behaviour will be decided from <abbr title="list of locos supplied by the WiThrottle or DCC-EX server">Server Roster</abbr> entry of the first/front loco in the <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr>.</p>
-<p>By default, if a <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> is acquired from a DCC Address then the Function behaviour is a bit more complicated.</p>
+<p>By default, if a <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> is acquired from a <strong>DCC Address</strong> then the Function behaviour is a bit more complicated.</p>
 <blockquote>
 <div><p>For <a href="https://jmri.org/">JMRI</a> (and possibly other WiThrottle servers):</p>
 <ul class="simple">
-<li><p>By default, F2 is momentary, but all other functions are latching</p></li>
-<li><p>But this can be changed in the <a href="https://jmri.org/">JMRI</a> WiThrottle preferences</p></li>
+<li><p>By default, <code class="docutils literal notranslate"><span class="pre">F2</span></code> is momentary, but all other functions are latching</p></li>
+<li><p>But this can be changed in:</p>
+<ul>
+<li><p>The <a href="https://jmri.org/">JMRI</a> WiThrottle preferences (in <a href="https://jmri.org/">JMRI</a>)</p></li>
+<li><p>In <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver's</span> <a class="reference internal" href="../operation/interface.html#function-latching-settings-screen"><span class="std std-ref">Function Latching Settings Screen</span></a></p></li>
 </ul>
-<p>For the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a></p>
+</li>
+</ul>
+<p>For the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a>:</p>
 <ul class="simple">
-<li><p>The server treats all functions as latching, but <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> mimics the WiThrottle behaviour and makes F2 is momentary</p></li>
+<li><p>The server treats all functions as latching, but <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> mimics the WiThrottle behaviour and makes F2 momentary.</p></li>
+<li><p>But this can be changed in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>’s <a class="reference internal" href="../operation/interface.html#dcc-ex-function-settings-screen"><span class="std std-ref">DCC-EX Function Settings Screen</span></a>.</p></li>
 </ul>
 </div></blockquote>
-<p>These defaults can be overridden on either the <a class="reference internal" href="../operation/interface.html#function-latching-settings-screen"><span class="std std-ref">Function Latching Settings Screen</span></a> if using WiThrottle, or the <a class="reference internal" href="../operation/interface.html#dcc-ex-function-settings-screen"><span class="std std-ref">DCC-EX Function Settings Screen</span></a> if use <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a></p>
 <section id="which-locos-in-a-consist-multiple-unit-the-functions-are-sent-to">
 <h3><a class="toc-backref" href="#id4" role="doc-backlink">Which locos in a Consist/Multiple Unit the functions are sent to</a><a class="headerlink" href="#which-locos-in-a-consist-multiple-unit-the-functions-are-sent-to" title="Link to this heading"></a></h3>
 <p>By Default, for a <abbr title="One or more locos being controlled by a single throttle">Loco or Consist / Multiple Unit</abbr> only the first loco in the <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> is sent any Function commands.</p>
@@ -1022,11 +1027,11 @@
 <li><p><a class="reference internal" href="preferences.html#always-treat-f1-as-sound"><span class="std std-ref">Always treat F1 as Sound?</span></a></p></li>
 <li><p><a class="reference internal" href="preferences.html#always-treat-f2-as-sound"><span class="std std-ref">Always treat F2 as Sound?</span></a></p></li>
 </ul>
-<p>If the <a class="reference internal" href="preferences.html#selective-lead-unit-sound"><span class="std std-ref">Selective Lead Unit Sound?</span></a> preference is enabled Engine Driver will send Horn/Bell functions to only the Lead unit in an EngineDriver <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>. (Only/any function with a ‘label’ that includes ‘bell’ ‘horn’ or ‘whistle’ as part of the label.)</p>
+<p>If the <a class="reference internal" href="preferences.html#selective-lead-unit-sound"><span class="std std-ref">Selective Lead Unit Sound?</span></a> preference is enabled <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will send Horn/Bell functions to only the Lead unit in an EngineDriver <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr>. (Only/any function with a ‘label’ that includes ‘bell’ ‘horn’ or ‘whistle’ as part of the label.)</p>
 </section>
 <section id="consist-follow-functions-advanced-consist-function-mapping">
 <h4><a class="toc-backref" href="#id6" role="doc-backlink">Consist Follow Functions - Advanced Consist Function Mapping</a><a class="headerlink" href="#consist-follow-functions-advanced-consist-function-mapping" title="Link to this heading"></a></h4>
-<p>The <a class="reference internal" href="../operation/consist-follow-functions.html"><span class="doc">Consist Function Follow</span></a> feature provides comprehensive contorl over which loco in a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> is sent Function commands.</p>
+<p>The <a class="reference internal" href="../operation/consist-follow-functions.html"><span class="doc">Consist Function Follow</span></a> feature provides comprehensive control over which loco(s) in a <abbr title="More than one loco being controlled by a single throttle">Consist / Multiple Unit</abbr> is sent Function commands.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>Advanced Consist Function Mapping is described on the <a class="reference internal" href="../operation/consist-follow-functions.html"><span class="doc">Consist Function Follow</span></a> page.</p>
@@ -1036,12 +1041,12 @@
 </section>
 <section id="linking-dcc-functions-to-ipls-buttons">
 <h2><a class="toc-backref" href="#id7" role="doc-backlink">Linking DCC Functions to IPLS buttons</a><a class="headerlink" href="#linking-dcc-functions-to-ipls-buttons" title="Link to this heading"></a></h2>
-<p>By Default, the <a class="reference internal" href="ipls.html"><span class="doc">In Phone Loco Sounds</span></a> (IPLS) buttons are the only way to activate <a class="reference internal" href="ipls.html"><span class="doc">IPLS</span></a> (IPLS) sounds inside the device/phone.</p>
-<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can be configured to activate the corresponding <a class="reference internal" href="ipls.html"><span class="doc">IPLS</span></a> (IPLS) functions for the Bell and Horn by pressing F1 or F2, by enabling the <a class="reference internal" href="preferences.html#f1-and-f2-activate-bell-and-horn"><span class="std std-ref">F1 and F2 activate Bell and Horn?</span></a> preference.</p>
+<p>By Default, the seperate <a class="reference internal" href="ipls.html"><span class="doc">In Phone Loco Sounds</span></a> (IPLS) buttons are the only way to activate <a class="reference internal" href="ipls.html"><span class="doc">IPLS</span></a> (IPLS) sounds inside the device/phone.</p>
+<p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can be configured to activate the corresponding <a class="reference internal" href="ipls.html"><span class="doc">IPLS</span></a> (IPLS) functions for the ‘Bell’ and ‘Horn’ by pressing <code class="docutils literal notranslate"><span class="pre">F1</span></code> or <code class="docutils literal notranslate"><span class="pre">F2</span></code>, by enabling the <a class="reference internal" href="preferences.html#f1-and-f2-activate-bell-and-horn"><span class="std std-ref">F1 and F2 activate Bell and Horn?</span></a> preference.</p>
 </section>
 <section id="functions-and-gamepads">
 <h2><a class="toc-backref" href="#id8" role="doc-backlink">Functions and Gamepads</a><a class="headerlink" href="#functions-and-gamepads" title="Link to this heading"></a></h2>
-<p>If you have a Bluetooth Gamepad or USB volume control connected to you device/phone, then the physical buttons on the gamepad or volume control device.</p>
+<p>If you have a Bluetooth Gamepad or USB volume control connected to your device/phone, then the physical buttons on the gamepad or volume control device.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="gamepads.html"><span class="doc">Configuring Gamepads</span></a> for more information on configuring gamepad buttons.</p>
@@ -1068,7 +1073,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f9ab15fd9c0>
+    <jinja2.runtime.BlockReference object at 0x7fdd7e951a50>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
