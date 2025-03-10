@@ -78,7 +78,7 @@ Loco Functions or DCC Functions:
 
 These are the functions (F0, F1, F2, etc) that are programmed into a given loco decoder. The behaviour of a given Loco Function is set by this programming. Engine Drive activates these functions but cannot change them.
 
-|ROSTER| Entry Function Labels or |ROSTER| Functions: These are the function labels defined in the JMRI DecoderPro "Function Labels" panel of a given |ROSTER| entry. |ROSTER| Function Labels are mapped to a given Loco Function (e.g. F0, F1, F2, etc) by DecoderPro. The behaviour of a given locomotive function (F1, F2, etc.) is set by the programming of the decoder and is not changed by its label. |ed| uses these |ROSTER| Functions Labels but cannot change them. By definition a |ROSTER| Function is associated with a specific loco.
+|ROSTER| Entry Function Labels or |ROSTER| Functions: These are the function labels defined in the JMRI DecoderPro 'Function Labels' panel of a given |ROSTER| entry. |ROSTER| Function Labels are mapped to a given Loco Function (e.g. F0, F1, F2, etc) by DecoderPro. The behaviour of a given locomotive function (F1, F2, etc.) is set by the programming of the decoder and is not changed by its label. |ed| uses these |ROSTER| Functions Labels but cannot change them. By definition a |ROSTER| Function is associated with a specific loco.
 
 Default Function Labels or Default Functions: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -97,7 +97,7 @@ Default functions are defined as the pair for each button: a) Function Number, a
 Throttle Function Labels or Throttle Functions: 
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-These are the function labels are defined in JMRI (or EX-CommandStation) and are used by |ed| in the throttle display of a given locomotive or consist. Depending on |ed| preferences these are copied from the loco |ROSTER| Function Labels or from the |ed| Default Function Labels. 
+These are the function labels are defined in JMRI (or EX-CommandStation) and are used by |ed| in the throttle display of a given locomotive or |consist|. Depending on |ed| preferences these are copied from the loco |ROSTER| Function Labels or from the |ed| Default Function Labels. 
 
 In addition, when Default Functions are used, |ed| provides the ability to map a given Default Function to a loco |ROSTER| Function (and hence to a Loco Function).
 
@@ -120,7 +120,7 @@ Without Function Label Matching, Throttle Functions activate the associated Loco
 
 So rather than remapping all locos in a |ROSTER| to a standard function assignment, Function Label Matching feature can be used to provide a consistent throttle function display. Moreover, all locos in the |ROSTER| do not have to have the same ordered programmed function assignment.
 
-In the case of consists, Function Label Matching can be used to associate a given Throttle Function to a Loco Function via its match to its |ROSTER| Entry Function Label so that a particular function (or functions) can be activated on all locos in a consist.  
+In the case of |consists|, Function Label Matching can be used to associate a given Throttle Function to a Loco Function via its match to its |ROSTER| Entry Function Label so that a particular function (or functions) can be activated on all locos in a |consist|.  
 
 Default Function Label Preferences
 ----------------------------------
@@ -163,7 +163,7 @@ Function Label Matching
 NOTE: |ed| only uses Function Label Matching for the 'Special' options when:
 
 1. The 'Use default function labels' preference is enabled.
-2. The loco (or locos in a consist) are selected from the |ROSTER| and 
+2. The loco (or locos in a |consist|) are selected from the |ROSTER| and 
 3. One of the 'Consist Functions - Follow Rule Styles' preference is enabled. 
 
 *If not all the above is true, the functions are activated purely #based on the function number.*
@@ -185,13 +185,13 @@ Options for 'Consist Functions - Follow Rule Styles' preference are:
 
 Simple Function Label Matching - Single loco operation with Default Functions – Some of the 'common' Default Function Labels are matched to loco |ROSTER| Function Labels to determine which Loco Function is activated.
 
-These primarily handle F0 (Headlight), F1 (Bell) and F2 (Horn/Whistle), *NO other* functions are propagated to the remaining locos in the consist and no label matching is performed. That is, the Loco Function activated is determined by the position of the label in the throttle. e.g. the top-most function is F0.
+These primarily handle ``F0`` (Headlight), ``F1`` (Bell) and ``F2`` (Horn/Whistle), *NO other* functions are propagated to the remaining locos in the |consist| and no label matching is performed. That is, the Loco Function activated is determined by the position of the label in the throttle. e.g. the top-most function is ``F0``.
 
 The following additional preferences are enabled if the 'Simple Text Matching (original)' option is selected and impact how the functions behave:
 
-* 'Selective Lead Unit Sound?' preference
-* 'Always treat F1 as Sound?' preference
-* 'Always treat F2 as Sound?' preference
+* :ref:`configuration/preferences:Selective Lead Unit Sound?` preference
+* :ref:`configuration/preferences:Always treat F1 as Sound?` preference
+* :ref:`configuration/preferences:Always treat F2 as Sound?` preference
 
 This form of |ed| consisting is very simple to use and covers a large majority of situations in which the key functions restricted to the lead loco are Lights/Horn/Bell and the remainder are not propagated (or not used).
 
@@ -200,13 +200,13 @@ This form of |ed| consisting is very simple to use and covers a large majority o
 'Complex' Matching
 ~~~~~~~~~~~~~~~~~~
 
-Using the 'Complex' option, |ed| searches for user supplied text and applies user supplied rules (supplied in a group of |ed| preferences) for matching function labels in the locos in the |consist| train.
+Using the ``Complex`` option, |ed| searches for user supplied text and applies user supplied rules (supplied in a group of |ed| preferences) for matching function labels in the locos in the |consist| train.
 
 This form of |ed| consist function matching allows you to specify the labels of the functions for which you want to specify a given propagation rule. It does NOT rely on the |ROSTER| Function Labels of the lead loco nor the use of Default Functions. It is likely useful when there are only a few specific functions (e.g. other lights) that you do want propagated to the other locos in the |consist| train.
 
 *Note, for this option to have any effect:*
 
-* The loco (or locos in a consist) must be selected from the |ROSTER|.
+* The loco (or locos in a |CONSIST|) must be selected from the |ROSTER|.
 * Some or all the rules need to be configured
 
 |HR-DOTTED|
@@ -214,7 +214,7 @@ This form of |ed| consist function matching allows you to specify the labels of 
 The three 'Special' Matching Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-With the three 'Special' matching options you can specify the Throttle Function Label names to be matched (the base value), whether Exact or Partial matching is to be applied, and how the matched labels are to be propagated (to lead, lead and trail, or all locos). 
+With the three **'Special'** matching options you can specify the Throttle Function Label names to be matched (the base value), whether Exact or Partial matching is to be applied, and how the matched labels are to be propagated (to lead, lead and trail, or all locos). 
 
 **These options must be used** in conjunction with the use of **Default Functions**. Each Throttle Function Label (which will be the Default Function Label) of the lead loco is compared to the |ROSTER| Function Label of the consisted locos and the function propagation and, if matches, activates the functions. The propagation rules for each function are individually specified for each function.
 
@@ -222,14 +222,14 @@ When any of the 'Special' options are selected, a new menu item will be availabl
 
 This form of |ed| consist function matching provides the maximum flexibility for specifying individual propagation rules for given functions. A special simple screen is provided for setting up the rules for each function.
 
-For the three Special Label Matching |consist| options, the function labels of the locos in the consist are matched against the text in the Default Function Labels and the rule attached to each function to determine which Loco Function, in which locos in the consist, are activated (the nature of the matching is determined by rules in the 'Consist Function Follow' screen).
+For the three Special Label Matching |consist| options, the function labels of the locos in the |consist| are matched against the text in the Default Function Labels and the rule attached to each function to determine which Loco Function, in which locos in the |consist|, are activated (the nature of the matching is determined by rules in the 'Consist Function Follow' screen).
 
 *Note, for these options to have any effect:*
 
 * The 'Use default function labels' preference must be enabled.
 * The Default Function Labels need to be altered to suit your needs.
-* The Consist Function Defaults need to be altered to suit your needs.
-* The loco (or locos in a consist) must be selected from the |ROSTER| and have function labels assigned
+* The |consist| Function Defaults need to be altered to suit your needs.
+* The loco (or locos in a |consist|) must be selected from the |ROSTER| and have function labels assigned
 
 'Special - Exact Matching' Option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -245,14 +245,11 @@ Spaces (blanks) are treated in the same way as normal characters. e.g. "Horn" do
 'Special Partial Matching' Option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: 'Special Partial Matching' Option
+This option makes |ED| activate the function on the loco if the function label of the loco partly matches the function label.
 
-IF
+i.e. If:
 
-a) The whole of the default label is contained within the compared label. e.g. 
+a) The whole of the default label is contained within the compared label.
 b) The whole of the compared label if contained within the default label
 
 e.g. 
@@ -268,7 +265,7 @@ Special characters, case and blanks are handled in the same way as for Exact Mat
 'Special Partial - Contains Only' Option
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-The 'Special Partial - Contains Only' option is similar to Special Partial Matching, except that comparison is only one way.
+The ``Special Partial - Contains Only`` option is similar to Special Partial Matching, except that comparison is only one way.
 
 e.g. 
 
@@ -304,11 +301,11 @@ This preference sets which style of rules to follow in a |consist| train when fu
 
 Options:
 
-* Simple text matching (original)
-* Complex text matching
-* Special Exact
-* Special Partial
-* Special Partial - Contains Only 
+* ``Simple text matching (original)``
+* ``Complex text matching``
+* ``Special Exact``
+* ``Special Partial``
+* ``Special Partial - Contains Only``
 
 These options are described below in detail.
 
@@ -319,7 +316,7 @@ Simple Consisting Option and Related Preferences
 
 If you select the 'Simple' option in the 'Consist Functions - Follow Rule Style' preference…
 
-# The behaviour of F0 (Headlight) is determined by the Edit Consist Lights control on the throttle (select the consist on the throttle and then "Edit Lights" or simply long press on the consist to be taken directly to the 'Edit Lights' control.
+# The behaviour of F0 (Headlight) is determined by the Edit Consist Lights control on the throttle (select the |consist| on the throttle and then "Edit Lights" or simply long press on the |consist| to be taken directly to the 'Edit Lights' control.
 # The 'Selective Lead Unit Sound' preference prevents any Throttle Function Label of 'Horn', 'Bell' and 'Whistler' (in this case these specific labels are built into the software and cannot be changed) from being propagated.
 # The 'Always Treat F1 as Sound' preference will prevent F1 from being propagated regardless of function label.
 # The 'Always Treat F2 as Sound' preference will prevent F2 from being propagated regardless of function label.
@@ -329,21 +326,21 @@ This form of |ed| function response is very simple to use and covers a large maj
 'Selective Lead Unit Sound?' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If this preference is enabled, Horn/Bell functions are only the Lead unit in an |ed| consist.
+If this preference is enabled, Horn/Bell functions are only the Lead unit in an |ed| |consist|.
 
 Only/any function with a 'label' that includes 'bell', 'horn' or 'whistle' as part of the label.
 
 'Always treat F1 as Sound?' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If this preference is enabled, F1 one is always treated as a sound and is always propagated to all locos in a consist.
+If this preference is enabled, F1 one is always treated as a sound and is always propagated to all locos in a |consist|.
 
 This preference is ignored if 'Complex' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
 'Always treat F2 as Sound?' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-If this preference is enabled, F2 one is always treated as a sound and is always propagated to all locos in a consist.
+If this preference is enabled, F2 one is always treated as a sound and is always propagated to all locos in a |consist|.
 
 This preference is ignored if 'Complex' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
 
@@ -352,56 +349,56 @@ This preference is ignored if 'Complex' or 'Special' options are selected in the
 'Complex' Text matching Option
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Using the 'Complex' option, |ed| searches for text and applies a number of rules supplied in a group of |ed| preferences for matching labels in the locos.  The user entered string must match exactly against the labels assigned for each function in JMRI for the function to work on all locos in the consist.
+Using the 'Complex' option, |ed| searches for text and applies a number of rules supplied in a group of |ed| preferences for matching labels in the locos.  The user entered string must match exactly against the labels assigned for each function in JMRI for the function to work on all locos in the |consist|.
 
-These preferences (which are explained below) are only available to edit/change if 'Complex text matching' is selected for the 'Consist Functions - Follow Rule Style' Preference:
+These preferences (which are explained below) are only available to edit/change if ``Complex text matching`` is selected for the :ref:`configuration/preferences:Consist Functions - Follow Rule Style` Preference:
 
-* If All matches Fail Action
-* Headlight specific string 1
-* Headlight specific Action 1
-* String 2
-* Action for String 2
-* String 3
-* Action for String 3
-* String 4
-* Action for String 4
-* String 5
-* Action for String 5
+* :ref:`configuration/preferences:If All matches Fail Action`
+* :ref:`configuration/preferences:Headlight specific string 1`
+* :ref:`configuration/preferences:Headlight specific Action 1`
+* :ref:`String 2<configuration/preferences:String 2, 3, 4, 5>`
+* :ref:`Acton for String 2<configuration/preferences:Action for String 2, 3, 4, 5>`
+* :ref:`String 3<configuration/preferences:String 2, 3, 4, 5>`
+* :ref:`Acton for String 3<configuration/preferences:Action for String 2, 3, 4, 5>`
+* :ref:`String 4<configuration/preferences:String 2, 3, 4, 5>`
+* :ref:`Acton for String 4<configuration/preferences:Action for String 2, 3, 4, 5>`
+* :ref:`String 5<configuration/preferences:String 2, 3, 4, 5>`
+* :ref:`Acton for String 5<configuration/preferences:Action for String 2, 3, 4, 5>`
 
 *Note, for this option to have any effect:*
 
-* The loco (or locos in a consist) must be selected from the |ROSTER|.
+* The loco (or locos in a |consist|) must be selected from the |ROSTER|.
 * One or more of the preferences below must be set
 
 'If All matches Fail Action' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Which locos in the consist should react to the function buttons if none of the rules below are met.
+Which locos in the |consist| should react to the function buttons if none of the rules below are met.
 
-For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the :ref:`configuration/preferences:Consist Functions - Follow Rule Style` preference.
 
 'Headlight specific String 1' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Comma separated string(s) to look for in the function labels of the locos in the consist to recognise the 'Headlight' function (normally F0).
+Comma separated string(s) to look for in the function labels of the locos in the |consist| to recognise the 'Headlight' function (normally F0).
 
-For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the :ref:`configuration/preferences:Consist Functions - Follow Rule Style` preference.
  
 'Headlight specific Action 1' Preference
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Which locos in the consist should react to the found headlight functions.
+Which locos in the |consist| should react to the found headlight functions.
 
-For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the :ref:`configuration/preferences:Consist Functions - Follow Rule Style` preference.
 
 Each 'action' can be one of:
 
-* Lead Loco - Partial Match
-* Lead+Trail Locos - Partial Match
-* All Locos - Partial Match
-* Lead Loco - Exact Match
-* Lead+Trail Locos - Exact Match
-* All Locos - Exact Match
+* ``Lead Loco - Partial Match``
+* ``Lead+Trail Locos - Partial Match``
+* ``All Locos - Partial Match``
+* ``Lead Loco - Exact Match``
+* ``Lead+Trail Locos - Exact Match``
+* ``All Locos - Exact Match``
 
 Note:
 
@@ -413,62 +410,86 @@ String 2, 3, 4, 5 Preferences
 This applies to String 2, String 3, String 4, String 5
 For the 'Complex' option only. 
 
-This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+This preference is ignored if `Simple` or `Special` options are selected in the :ref:`configuration/preferences:Consist Functions - Follow Rule Style` preference.
 
 Action for String 2, 3, 4, 5 Preferences
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
 This applies to Action for String 2, Action for String 3, Action for String 4, Action for String 5.
 
-For the 'Complex' option only. This preference is ignored if 'Simple' or 'Special' options are selected in the 'Consist Functions - Follow Rule Style' preference.
+For the `Complex` option only. This preference is ignored if `Simple` or `Special` options are selected in the :ref:`configuration/preferences:Consist Functions - Follow Rule Style` preference.
 
 |HR-DASHED|
 
 'Special' Consist Function Matching Options
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: 'Special' Consist Function Matching Options
-
 You can now arrange the default function labels on ED any way you want, and as long as the equivalent function has a similar name it doesn't matter what function number it is, it will activate it correctly.
+
+The options are:
+
+* ``Special Exact``
+* ``Special Partial``
+* ``Special Partial - Contains Only``
 
 Note, for these options to have any effect:
 
-* The 'Use default function labels' preference must be enabled.
-* The loco (or locos in a consist) must be selected from the |ROSTER|
+* The :ref:`configuration/preferences:Use default function labels?` preference must be enabled.
+* The loco (or locos in a |consist|) must be selected from the |ROSTER|
 
-Note: If 'Use Default function labels' is enabled, 'Special…' will also apply to the lead (or only) loco.
+Note: If :ref:`configuration/preferences:Use Default function labels?` is enabled, the `Special…` options will also apply to the lead (or only) loco.
 
 |FORCE-BREAK|
 
-'Special - Exact Matching' Options
+'Special - Exact Matching'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: 'Special - Exact Matching' Option
+This option makes |ED| activate the function on the loco if the function label of the loco 'exaclty' matches the function label.
+
+i.e. The given label must exactly match the other. e.g. "Ditch Lights" matches "Ditch Lights" and does not match "Ditch", "Lights", "DitchLights" or "Ditch Light"
+
+Special characters are treated in the same way as normal characters. e.g. "Prime.Mover" does not match "PrimeMover".
+
+Character matching is case insensitive, e.g. "headlight" matches "Headlight".
+
+Spaces (blanks) are treated in the same way as normal characters. e.g. "Horn" does not match "Horn  " and "EBell" does not match "E Bell". **WARNING: ensure you do not have any unintended trailing blanks.**
 
 |FORCE-BREAK|
 
-'Special Partial Matching' Options
+'Special Partial Matching'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: 'Special Partial Matching' Option
+This option makes |ED| activate the function on the loco if the function label of the loco partly matches the function label.
+
+i.e. If:
+
+a) The whole of the default label is contained within the compared label.
+b) The whole of the compared label if contained within the default label
+
+e.g. 
+
+* "Light" (the base) will partially match to "Headlight" or "Ditch Light" (the compared).
+* "Headlight" (the base) will partially match to "Light" (the compared).
+* "Horn" (base) will partially match to "Horn K5LA"
+
+Caution: Using short base words can result in unwanted and unexpected partial matches. e.g. "Brake" will partial match "Dynamic Brake", "Independent Brake" and "Brake Set/Release OFF". "Light" will partially match to "FrtHeadlight" and "RrHeadlight".
+
+Special characters, case and blanks are handled in the same way as for Exact Matching.
 
 |FORCE-BREAK|
 
-'Special Partial - Contains Only' Options
+'Special Partial - Contains Only'
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: 'Special Partial - Contains Only' Option
+This option makes |ED| activate the function on the loco if the function label of the loco is 'contained' in the function label.
+
+The ``Special Partial - Contains Only`` option is similar to Special Partial Matching, except that comparison is only one way.
+
+e.g. 
+
+* "Light" (the base) will partially match to "Headlight" or "Ditch Light" (the compared).
+* "Headlight" (the base) WILL NOT partially match to "Light" (the compared).
+
+Special characters, case and blanks are handled in the same way as for Exact Matching.
 
 |FORCE-BREAK|
