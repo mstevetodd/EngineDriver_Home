@@ -205,20 +205,22 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`.` = Decrease Load
   * :guilabel:`,` = Increase Load
 
-* F00 - F28 = Function |BR|\ Must be :guilabel:`F` followed by two digits |BR|\  or :guilabel:`F11` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |BR|\ e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR|\ Without a preceding :guilabel:`F`, :guilabel:`S` or :guilabel:`L` |BR|\ or :guilabel:`F10` - :guilabel:`F9`  F10=0, F1-F9=1-9 |BR|\
-* S000 - S100 = Speed |BR|\ Must be :guilabel:`S` followed by three digits |BR|\  or :guilabel:`F12` followed by three :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |BR|\ e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed 056, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
+* **F00 - F28** = Function |BR| Must be :guilabel:`F` followed by two digits |BR|  or :guilabel:`F11` followed by two :guilabel:`F...` button equivalents :guilabel:`F10` =0, :guilabel:`F1` - :guilabel:`F9` =1-9 |BR| e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`F` , :guilabel:`S` or :guilabel:`L` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
+* **S000 - S100** = Speed |BR|\ Must be :guilabel:`S` followed by three digits |BR|\  or :guilabel:`F12` followed by three :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
 * :guilabel:`L` = Limit Speed
 * :guilabel:`P` = Pause Speed
-* In Phone Loco Sounds (IPLS)  
+* In Phone Loco Sounds (IPLS)
+
   * :guilabel:`B` = Bell 
   * :guilabel:`H` = Horn / Whistle 
   * :guilabel:`Shift` + :guilabel:`H` = Short Horn 
   * :guilabel:`M` or :guilabel:`Volume Mute` = Mute IPLS
-* T0 - T5 = Specify a throttle for next command |BR|\ Must be :guilabel:`T` followed by one digit |BR|\ or :guilabel:`Esc` followed by two :guilabel:`F` button equivalents F10=0, F1-F9=1-9 |BR|\ The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.
+
+* **T0 - T5** = Specify a throttle for next command |BR| Must be :guilabel:`T` followed by one digit |BR| or :guilabel:`Esc` followed by two :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The following command will sent to the specified throttle regardless of the currently selected gamepad throttle.
 
 All other keyCodes are ignored.
 
-Failure to follow the 'F', 'S' or 'L' with the correct number of digits will ignore the command.
+Failure to follow the 'F', 'S' or 'L' with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
