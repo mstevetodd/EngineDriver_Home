@@ -67,6 +67,10 @@ If your Android device/phone runs out of battery too quickly you can try the som
 Children's Timer
 ================
 
+.. image:: ../_static/images/parts/childrens_timer_countdown.png
+   :align: right
+   :scale: 50%
+
 |ED| provides options for time controlled running.  This was originally intended for providing a way to have children have a fair share of the use of a loco, but can be used for timed control for any purpose.
 
 Instructions:

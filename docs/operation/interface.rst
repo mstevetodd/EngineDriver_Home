@@ -1890,10 +1890,7 @@ Children's Timer Status and Countdown
    :align: right
    :scale: 50%
 
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Children's Timer Status and Countdown
+If configured and activated the tatus bar will show the remaining time available in the current session of the Children's Timer.
 
 .. note:: 
    :class: note-ed-hidden-title
