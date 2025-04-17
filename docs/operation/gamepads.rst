@@ -217,7 +217,7 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`Shift` + :guilabel:`H` = Short Horn 
   * :guilabel:`M` or :guilabel:`Volume Mute` = Mute IPLS
 
-* **T0 - T5** = Specify a throttle for next command |BR| Must be :guilabel:`T` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`T` :guilabel:`5` = Throttle **5**, or  :guilabel:`Esc` :guilabel:`F5` = Throttle **5** |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.
+* **T0 - T5** = Specify a throttle for next command |BR| Must be :guilabel:`T` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`T` :guilabel:`5` = Throttle **5**, or  :guilabel:`Esc` :guilabel:`F5` = Throttle **5** |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`T` :guilabel:`5`  :guilabel:`F`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot be used alone when specifying a throttle. Use the :guilabel:`F` commands instead.
 
 All other keyCodes are ignored.
 

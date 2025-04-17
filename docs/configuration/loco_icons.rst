@@ -28,7 +28,7 @@ There are three ways to load & store your Locomotive Icon Image in Engine Driver
   * Connect |ed| to JMRI |WTS| Discovered Server 'My JMRI Railroad' or type in the IP address : Port# 
   * Click ``Select`` and load your Locos then ``Release`` and repeat until you've loaded all the locomotives you require with Icons into a throttle. 
  
-  These Loco Icons will automatically be saved/cached on the Android device/phone in a new '/Android/data/jmri.enginedriver/files/recent_engine_list/**recent_engine_list**' folder for you.
+  These Loco Icons will automatically be saved/cached on the Android device/phone in a new ``/Android/data/jmri.enginedriver/files/recent_engine_list/recent_engine_list`` folder for you.
 
   Requirements for this to work:
 
@@ -38,7 +38,7 @@ There are three ways to load & store your Locomotive Icon Image in Engine Driver
 2. **Manually entered directly into your Android Engine Driver folder**
   
   * Capture then rename the image exactly like the Roster ID name in JMRI & EXRAIL and save as a .PNG file
-  * Then place the engine Image into your Android device/phone in the |BR|\ '/Android/data/jmri.enginedriver/files/recent_engine_list' folder |BR|\ example image name;  PE 1225.png
+  * Then place the engine Image into your Android device/phone in the |BR|\ ``/Android/data/jmri.enginedriver/files/recent_engine_list`` folder |BR|\ example image name;  ``PE 1225.png``
 
   Note: certain characters are not allowed in file names so need to be substituted with "_" (underscore) if you have used them in your roster name. They are:
 

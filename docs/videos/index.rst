@@ -54,6 +54,7 @@ Appearance
    * `'Limit Speed' button <https://youtu.be/SOKkMeZOfos?si=7OAIukRM4uiSriSp>`_
    * `Directrion Buttons <https://youtu.be/DVoHBN3edhs>`_
 
+* `DCC-EX - Native DCC-EX Command support <https://youtu.be/q5FezGEmAis>`_
 * `Improving screen real estate <https://youtu.be/-sjrbvR5bq0>`_ 
 * `In Phone Loco Sounds <https://youtu.be/jy-SEKp-mFs>`_
 
