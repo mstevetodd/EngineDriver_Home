@@ -56,7 +56,17 @@ Changes included in Engine Driver Production version **2.38.193**:
 Beta Changes
 --------------------------------------------
 
-no Beta at this time
+Changes included in Engine Driver Beta version **2.40.197**:
+
+* When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
+* Send additional resync requests after DCC-EX reconnect
+* DCC-EX Pref to sequence item requests
+* Bug fix for F0-F9 on some systems - Removed leading zero from FKey id when sending
+* Bug fix for Immersive mode
+* Cleanup of the Horizontal Throttle layouts. Fixing some height issues
+* only redraw Route list if actually changed
+* Bug fix for Non-English 'Auto' connection protocol option
+* Separate warning from when the 'Use Location' service is disabled (as different to no WiFi)
 
 Complete ChangeLog
 --------------------------------------------
