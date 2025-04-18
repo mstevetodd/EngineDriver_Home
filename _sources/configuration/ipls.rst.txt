@@ -19,9 +19,9 @@ Virtual Sounds / In Phone Loco Sounds (IPLS)
 
 |ed| can play synchronised locomotive sounds through your Android device/phones or through a BlueTooth speaker connected to it.
 
-To enable In Phone Loco Sounds (IPLS) select an option in `Throttle 1 Loco Sounds <./preferences.html#throttle-1-loco-sounds>`_ or `Throttle 2 Loco Sounds <./preferences.html#throttle-2-loco-sounds>`_ (or both) preferences. Once enabled for either throttle a new menu option will be available from Throttle Screen to make subsequent changes easier: :menuselection:`Menu --> Loco Sounds`
+To enable In Phone Loco Sounds (IPLS) select an option in :ref:`configuration/preferences:throttle 1 loco sounds` or :ref:`configuration/preferences:throttle 2 loco sounds` (or both) preferences. Once enabled for either throttle a new menu option will be available from Throttle Screen to make subsequent changes easier: :menuselection:`Menu --> Loco Sounds`
 
-To make it easy to switch sound profiles we recommend enabling the Action Bar button by setting the `In phone sounds button <./preferences.html#in-phone-sounds-button>`_ preferences: :menuselection:`Menu --> Preferences --> Throttle Screen Action Bar Preferences --> In phone sounds button`
+To make it easy to switch sound profiles we recommend enabling the Action Bar button by setting the :ref:`In phone sounds button <configuration/preferences:in phone loco sounds>` preferences: :menuselection:`Menu --> Preferences --> Throttle Screen Action Bar Preferences --> In phone sounds button`
 
 Loco Sounds
 -----------
@@ -32,19 +32,19 @@ There is built in Support for a number of different type of locos:
 * Diesel - 3 in-built profiles
 * Plus you can create you own Custom profiles (see below)
 
-Each IPLS Profile has a different number of speed steps. As the loco speed increases or decreases to a certain point a different sound will repeatedly play.  |ed| can't tell the actual speed of your loco, only the throttle setting.  This is most apparent when the loco has momentum configured in the decoder.  There is a preference that allows you to approximate the momentum of your loco for the IPLS in |ed| and an option to not clip the sounds (which enforces a minimum delay) These can be altered with the `In Phone Momentum <../configuration/preferences.html#in-phone-momentum>`_ and the `Don't clip loco step sounds <../configuration/preferences.html#don-t-clip-loco-step-sounds>`_ preferences.
+Each IPLS Profile has a different number of speed steps. As the loco speed increases or decreases to a certain point a different sound will repeatedly play.  |ed| can't tell the actual speed of your loco, only the throttle setting.  This is most apparent when the loco has momentum configured in the decoder.  There is a preference that allows you to approximate the momentum of your loco for the IPLS in |ed| and an option to not clip the sounds (which enforces a minimum delay) These can be altered with the :ref:`configuration/preferences:in phone momentum` and the :ref:`configuration/preferences:don't clip loco step sounds` preferences.
 
-The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be altered independently with the `In Phone Loco Sounds Volume <../configuration/preferences.html#in-phone-loco-sounds-volume>`_, the `In Phone Bell Sounds Volume <../configuration/preferences.html#in-phone-bell-sounds-volume>`_ and the `In Phone Horn/Whistle Sounds Volume <../configuration/preferences.html#in-phone-horn-whistle-sounds-volume>`_ preferences.
+The volume of the Loco Sounds, the Bell Sounds and the Horn/Whistle sound can be altered independently with the :ref:`configuration/preferences:in phone loco sounds volume`, the :ref:`configuration/preferences:in phone bell sounds volume` and the :ref:`configuration/preferences:in phone horn/whistle sounds volume` preferences.
 
 .. note:: 
   :class: note-ed-hidden-title
 
-   See `In Phone Loco Sounds (IPLS) <../operation/operation.html#virtual-sounds-in-phone-loco-sounds-ipls>`_ for details on how to activate and use the In Phone Loco sounds.
+   See :ref:`In Phone Loco Sounds (IPLS) <operation/operation:virtual sounds - in phone loco sounds (ipls)>` for details on how to activate and use the In Phone Loco sounds.
 
 Bell, Horn/Whistle
 ------------------
 
-The Bell and Horn/Whistle (long) can also be configured to be activated by the DCC Function buttons (F1 and F2) if the `F1 and F2 activate Bell and Horn? <../configuration/preferences.html#f1-and-f2-activate-bell-and-horn>`_ preference is set.
+The Bell and Horn/Whistle (long) can also be configured to be activated by the DCC Function buttons (F1 and F2) if the :ref:`F1 and F2 activate Bell and Horn? <configuration/preferences:f1 and f2 activate bell and horn?>` preference is set.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -119,7 +119,7 @@ e.g. **sample/bell_start.mp3**     - will look for **../Android/jmri.enginedrive
 Sample .ipls
 ------------
 
-The `sample files are available here <../_static/ipls/sample.zip>`_ as a compressed zip file.  To use it extract the files, including the subfolder to ``../Android/data/jmri.enginedriver/files/`` on your Android device.
+The :download:`sample files are available here <../_static/ipls/sample.zip>` as a compressed zip file.  To use it extract the files, including the subfolder to ``../Android/data/jmri.enginedriver/files/`` on your Android device.
 
 ::
 

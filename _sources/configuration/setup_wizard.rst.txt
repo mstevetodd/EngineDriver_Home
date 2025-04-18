@@ -130,7 +130,7 @@ Speed Sliders and Buttons
 
 The throttle screen can be customised to additional speed buttons (along with the slider).
 
-The throttle screen layout is described in detail in the :ref:`configuration/preferences:throttle screen layout` section of the Prefernces page.
+The throttle screen layout is described in detail in the :ref:`configuration/preferences:throttle screen layout` section of the Preferences page.
 
 |FORCE-BREAK|
 
@@ -141,7 +141,7 @@ DCC-EX
    :scale: 12 %
    :align: right
 
-|ED| can also use the |NATIVE| to connect to a |DCC-EX| |EX-CS|, and gains additional capabilities when doing so.
+|ED| can also use the |NATIVE| to connect to a |EX-CS|, and gains additional capabilities when doing so.
 
 If you expect to |EX-CS|, you should indicate so on this screen. 
 

@@ -56,7 +56,7 @@ Routers and Mesh networks
 
 Some routers do not transfer the mDNS messages between clients on the 2.4GHz and 5ghz channels.  So if your |SERVER| is using 2.4GHz, make sure your device/phone is using a 2.4GHz channel as well. (Or both use 5GHz channels.)
 
-The |DCC-EX| |EX-CS| uses 2.4GHz WiFi only.  So if you are using one of these devices, make sure your device/phone is using a 2.4GHz channel as well.
+The |EX-CS| uses 2.4GHz WiFi only.  So if you are using one of these devices, make sure your device/phone is using a 2.4GHz channel as well.
 
 Mesh Routers
 ^^^^^^^^^^^^
