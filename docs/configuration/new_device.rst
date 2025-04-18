@@ -50,4 +50,4 @@ connections_log.txt
 .. note:: 
   :class: note-ed-hidden-title
 
-   See the :ref:`Import, Export or Reset <preferences:import-export-or-reset>` preference for more information.
+   See the :ref:`Import, Export or Reset <configuration/preferences:import, export or reset>` preference for more information.

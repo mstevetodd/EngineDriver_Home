@@ -119,7 +119,7 @@ These are the gamepads that we have had the most success with…
 
 **Mocute 032**
 
-.. image:: ../_static/images/gamepads/bt_controller1.jpg
+.. image:: ../_static/images/gamepads/bt_controller1.png
    :scale: 50 %
 
 They are available from a variety of different sellers on eBay and elsewhere. 
@@ -127,7 +127,7 @@ Their build quality is not very robust, which is reflected in the price, so don'
 
 **MagicSeeR1**
 
-.. image:: ../_static/images/gamepads/bt_controller2.jpg
+.. image:: ../_static/images/gamepads/bt_controller2.png
    :scale: 40 %
 
 This one has been very successful, **but you need to re-select 'mode B' every time you switch it on.**  
@@ -177,8 +177,8 @@ Unsupported Gamepads
 
 Support for this type of gamepad was removed from |ed| as the device was so unreliable. (Mine had a bad solder join.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
 
-.. image:: ../_static/images/gamepads/vrbox.png
-   :scale: 70 %
+.. image:: ../_static/images/gamepads/vrbox2.png
+   :scale: 90 %
 
 
 
