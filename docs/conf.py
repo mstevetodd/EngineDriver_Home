@@ -42,6 +42,7 @@ extensions = [
     'sphinxcontrib.spelling',
     'sphinx_sitemap',
     'sphinx_rtd_dark_mode',
+    'notfound.extension',
     'sphinx_reredirects'
 ]
 
