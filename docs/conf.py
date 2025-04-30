@@ -140,7 +140,7 @@ html_js_files = [
 # <p>Try using the search box or go to the <a href="/index.html">homepage</a>.</p>
 # """,
 # }
-notfound_urls_prefix = "None"
+notfound_urls_prefix = ""
 
 redirects = {
 
