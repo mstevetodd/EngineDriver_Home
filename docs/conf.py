@@ -143,6 +143,7 @@ notfound_urls_prefix = "/mstevetodd.github.io/"
 
 redirects = {
 
+    "about": "./about/index.html",
     "connect": "./operation/operation.html#connecting",
 
     "consist-edit": "./operation/interface.html#consist-mu-edit-screen",
@@ -189,6 +190,7 @@ redirects = {
     "en/operation/index.html": "../../operation/index.html",
     "en/operation/interface.html": "../../operation/interface.html",
     "en/operation/operation.html": "../../operation/operation.html",
+    "en/operation/getting_started.html": "../../operation/getting_started.html",
     "en/operation/pom.html": "../../operation/pom.html",
     "en/operation/semi-realistic-throttle.html": "../../operation/semi-realistic-throttle.html",
     "en/operation/wifi_issues.html": "../../operation/wifi_issues.html",
@@ -200,16 +202,17 @@ redirects = {
 
 
     "index.php": "./index.html",
-    "index.php/": "./index.html",
+    "index.php/": "../index.html",
     "index.php/about": "../about/index.html",
     "index.php/changes": "../changes/index.html",
     "index.php/configuration": "../configuration/index.html",
     "index.php/consist-lights-edit": "../operation/interface.html#consist-mu-lights-edit-screen",
     "index.php/connect": "../operation/operation.html#connecting",
-    "index.php/contact": "../about/index.html",
+    "index.php/contact": "../contact/index.html",
     "index.php/downloads": "../downloads/index.html",
     "index.php/import-preferences": "../configuration/preferences.html#import-export-reset-log-preferences",
     "index.php/operation": "../operation/index.html",
+    "index.php/privacy-policy": "../about/privacy-policy.html",
     "index.php/Prerequisites": "../prerequisites/index.html",
     "index.php/roster-details": "../operation/operation.html#selecting-releasing-locos",
     "index.php/screenshots": "../glossary/index.html#screenshots",
@@ -218,6 +221,8 @@ redirects = {
     "index.php/simple-throttle-6": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/supported-withrottle-servers": "..//prerequisites/index.html#withrottle-and-dcc-ex-native-servers",
     "index.php/throttle-vertical-left": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-vertical-right": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-default": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/throttle-big-buttons": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/throttle-no-slider": "../configuration/preferences.html#speed-slider-and-buttons-preferences",
     "index.php/throttle-speed-buttons": "../operation/interface.html#speed-buttons",
