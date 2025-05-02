@@ -209,3 +209,8 @@
 .. |IPLS_SHORT| replace::
    
    :doc:`IPLS </configuration/ipls>` (IPLS)
+..
+.. |DC PWM| raw:: html
+   
+   <a href="https://dcc-ex.com/reference/hardware/dcc-vs-dc.html">DC Pulse Width Modulation (PWM)</a>
+..

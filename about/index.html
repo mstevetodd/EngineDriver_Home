@@ -949,11 +949,12 @@
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver Throttle</span> (normally just referred to as <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> or just <strong>ED</strong>) is a free Android application that connects to a <a class="reference external" href="https://jmri.org/help/en/package/jmri/jmrit/withrottle/UserInterface.shtml">WiThrottle™ Server</a> <a class="footnote-reference brackets" href="#wit" id="id1" role="doc-noteref"><span class="fn-bracket">[</span>2<span class="fn-bracket">]</span></a>  or <a class="reference external" href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> to control model trains.</p>
 <p>Supported <a class="reference internal" href="#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Servers</span></a> include:</p>
 <ul class="simple">
-<li><p><a href="https://jmri.org/">JMRI</a> (Using either the WiThrottle protocol or the Native DCC-EX protocol)</p></li>
-<li><p><a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> (Using either the WiThrottle protocol or the Native DCC-EX protocol)</p></li>
+<li><p><a href="https://jmri.org/">JMRI</a> <br /> <span style="font-size: 75%"> (Using either the WiThrottle protocol, or the Native DCC-EX protocol when JMRI is connected to an EX-CommandStation) </span></p></li>
+<li><p><a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> <br /> <span style="font-size: 75%"> (Using either the WiThrottle protocol or the Native DCC-EX protocol) </span></p></li>
 <li><p><a class="reference external" href="https://www.modelrectifier.com/category-s/332.htm">MRC Prodigy WiFi</a></p></li>
 <li><p><a class="reference external" href="https://www.digitrax.com/products/wireless/lnwi/">Digitrax LnWi</a></p></li>
 <li><p><a class="reference external" href="http://wifitrax.com/products/product-WFD-30-detail.html">WifiTrax (for NCE)</a></p></li>
+<li><p>Plus any system that supports the <a class="reference internal" href="#what-s-a-withrottle-server"><span class="std std-ref">WiThrottle Protocol</span></a>.</p></li>
 </ul>
 <a class="reference internal image-reference" href="../_images/throttle_horizontal_switching_colorful.png"><img alt="../_images/throttle_horizontal_switching_colorful.png" class="align-right" src="../_images/throttle_horizontal_switching_colorful.png" style="width: 115.2px; height: 204.8px;" /></a>
 <p><span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can:</p>
@@ -967,10 +968,11 @@
 </ul>
 <blockquote>
 <div><ul class="simple">
-<li><p><a class="reference internal" href="../operation/dcc-ex-native-protocol.html#read-and-write-dcc-addresses-on-the-programming-track"><span class="std std-ref">Program CVs</span></a> (Service Mode and Operation Mode)</p></li>
-<li><p>Control the <a class="reference internal" href="../operation/dcc-ex-native-protocol.html#trackmanager-control"><span class="std std-ref">TrackManager features</span></a></p></li>
-<li><p>Use some extended Route capabilities</p></li>
-<li><p>Use the ‘Request Loco ID’ &amp; ‘Drive Away’ feature from a Program track onto Mainline track</p></li>
+<li><p>Control DC locos as well as, or instead of, DCC locos using <a href="https://dcc-ex.com/reference/hardware/dcc-vs-dc.html">DC Pulse Width Modulation (PWM)</a></p></li>
+<li><p><a class="reference internal" href="../operation/dcc-ex-native-protocol.html#read-and-write-dcc-addresses-on-the-programming-track"><span class="std std-ref">Programing CVs</span></a> (Service Mode and Operation Mode)</p></li>
+<li><p>Controlling the <a class="reference internal" href="../operation/dcc-ex-native-protocol.html#trackmanager-control"><span class="std std-ref">TrackManager features</span></a></p></li>
+<li><p>Use of some extended Route capabilities</p></li>
+<li><p>Use of the ‘Request Loco ID’ &amp; ‘Drive Away’ feature from a Program track onto Mainline track</p></li>
 </ul>
 </div></blockquote>
 <p>You can customise <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> extensively to meet your needs.</p>
@@ -1052,7 +1054,7 @@ Info on minSDKVersion available in the <a class="reference external" href="https
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f8339554160>
+    <jinja2.runtime.BlockReference object at 0x7f83be1252d0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

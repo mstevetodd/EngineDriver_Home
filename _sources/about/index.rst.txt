@@ -17,11 +17,12 @@ What is 'Engine Driver'
 
 Supported |WTSS| include:
 
-* |JMRI| (Using either the WiThrottle protocol or the Native DCC-EX protocol)
-* |EX-CS| (Using either the WiThrottle protocol or the Native DCC-EX protocol)
+* |JMRI| |BR| |small-start| (Using either the WiThrottle protocol, or the Native DCC-EX protocol when JMRI is connected to an EX-CommandStation) |small-end|
+* |EX-CS| |BR| |small-start| (Using either the WiThrottle protocol or the Native DCC-EX protocol) |small-end|
 * `MRC Prodigy WiFi <https://www.modelrectifier.com/category-s/332.htm>`_
 * `Digitrax LnWi <https://www.digitrax.com/products/wireless/lnwi/>`_
 * `WifiTrax (for NCE) <http://wifitrax.com/products/product-WFD-30-detail.html>`_ 
+* Plus any system that supports the |wit|.
 
 .. image:: ../_static/images/screenshots/throttle_horizontal_switching_colorful.png
    :scale: 8 %
@@ -36,10 +37,11 @@ Supported |WTSS| include:
 * :doc:`Play virtual loco sounds </configuration/ipls>` 
 * Specific to the |EX-CS|, Engine Driver can also use the |NATIVE| to communicate which allows:
  
- * :ref:`Program CVs <operation/dcc-ex-native-protocol:Read and write DCC addresses on the Programming Track>` (Service Mode and Operation Mode)
- * Control the :ref:`TrackManager features <operation/dcc-ex-native-protocol:TrackManager control>`
- * Use some extended Route capabilities
- * Use the 'Request Loco ID' & 'Drive Away' feature from a Program track onto Mainline track
+ * Control DC locos as well as, or instead of, DCC locos using |DC PWM|
+ * :ref:`Programing CVs <operation/dcc-ex-native-protocol:Read and write DCC addresses on the Programming Track>` (Service Mode and Operation Mode)
+ * Controlling the :ref:`TrackManager features <operation/dcc-ex-native-protocol:TrackManager control>`
+ * Use of some extended Route capabilities
+ * Use of the 'Request Loco ID' & 'Drive Away' feature from a Program track onto Mainline track
 
 You can customise |ed| extensively to meet your needs.
 
