@@ -205,9 +205,10 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`.` = Decrease Load
   * :guilabel:`,` = Increase Load
 
-* :guilabel:`F` :guilabel:`0` :guilabel:`0` - :guilabel:`F` :guilabel:`2` :guilabel:`8` = Function |BR| Must be :guilabel:`F` followed by two digits |BR|  or :guilabel:`F11` followed by two :guilabel:`F...` button equivalents :guilabel:`F10` =0, :guilabel:`F1` - :guilabel:`F9` =1-9 |BR| e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`F` , :guilabel:`S` or :guilabel:`L` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
-* :guilabel:`S` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`S` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed |BR|\ Must be :guilabel:`S` followed by three digits |BR|\  or :guilabel:`F12` followed by three :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
+* :guilabel:`F` :guilabel:`0` :guilabel:`0` - :guilabel:`F` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`F` followed by two digits |BR|  or :guilabel:`F11` followed by two :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`F` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
+* :guilabel:`G` :guilabel:`0` :guilabel:`0` - :guilabel:`G` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`G` followed by two digits
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`F`, :guilabel:`G`, :guilabel:`S` or :guilabel:`L` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
+* :guilabel:`S` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`S` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`S` followed by three digits |BR|\  or :guilabel:`F12` followed by three :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`S` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` = Speed 056
 * :guilabel:`L` = Limit Speed
 * :guilabel:`P` = Pause Speed
 * In Phone Loco Sounds (IPLS)
@@ -221,6 +222,6 @@ For use when ``Keyboard`` is selected as the gamepad type:
 
 All other keyCodes are ignored.
 
-Failure to follow the :guilabel:`F`, :guilabel:`S` or :guilabel:`L` with the correct number of digits will cause the command to be ignored.
+Failure to follow the :guilabel:`F`, :guilabel:`G`, :guilabel:`S` or :guilabel:`L` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
