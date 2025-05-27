@@ -25,26 +25,25 @@ Connecting
 Preferences
 ==============================
 
-Appearance
--------------------
+* Appearance
 
-* Orientation  |TODO|
-* `Throttle Name <https://youtu.be/IgSCgUIYGls>`_
-* `Themes <https://youtu.be/wD-1l3iMtTs>`_ 
-* Throttle Screen
+   * Orientation  |TODO|
+   * `Throttle Name <https://youtu.be/IgSCgUIYGls>`_
+   * `Themes <https://youtu.be/wD-1l3iMtTs>`_ 
+   * Throttle Screen
 
-   * `Throttle Layouts <https://youtu.be/mhuUskTWJ2k>`_
-   * Status bar |TODO|
-   * `Number of throttles <https://youtu.be/L6ckXM7nrFg>`_ 
-   * `Slider speed and buttons <https://youtu.be/zH5CaSKaASQ>`_ 
-   * `Direction buttons <https://youtu.be/DVoHBN3edhs>`_  
-   * `Web View <https://youtu.be/KsnLvuOBZ9c>`_ 
-   * Swipe Up-Down |TODO|
-   * `Switching/Shunting screen type <https://youtu.be/6HJF9dZvoPU>`_
-   * `Shunting Switching/Screen and Background Images <https://youtu.be/e-2ZQqz5yhk>`_
-   * `Throttle Page background images <https://youtu.be/F5RcTEoUrzE?si=6Dpzh2zevjRSwiw0>`_
-   * `Throttle Web View <https://youtu.be/KsnLvuOBZ9c>`_
-   * `Screen Real Estate <https://youtu.be/-sjrbvR5bq0>`_
+      * `Throttle Layouts <https://youtu.be/mhuUskTWJ2k>`_
+      * Status bar |TODO|
+      * `Number of throttles <https://youtu.be/L6ckXM7nrFg>`_ 
+      * `Slider speed and buttons <https://youtu.be/zH5CaSKaASQ>`_ 
+      * `Direction buttons <https://youtu.be/DVoHBN3edhs>`_  
+      * `Web View <https://youtu.be/KsnLvuOBZ9c>`_ 
+      * Swipe Up-Down |TODO|
+      * `Switching/Shunting screen type <https://youtu.be/6HJF9dZvoPU>`_
+      * `Shunting Switching/Screen and Background Images <https://youtu.be/e-2ZQqz5yhk>`_
+      * `Throttle Page background images <https://youtu.be/F5RcTEoUrzE?si=6Dpzh2zevjRSwiw0>`_
+      * `Throttle Web View <https://youtu.be/KsnLvuOBZ9c>`_
+      * `Screen Real Estate <https://youtu.be/-sjrbvR5bq0>`_
 
 * Throttle Control
    * Loco Select |TODO|
