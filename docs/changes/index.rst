@@ -56,6 +56,16 @@ Changes included in Engine Driver Production version **2.38.193**:
 Beta Changes
 --------------------------------------------
 
+Changes included in Engine Driver Beta version **2.40.199**:
+
+* Bug fixes for the Semi-Realistic Throttle</li>
+* Changed the location permission warnings to a toast message</li>
+* Add option to the ED icon on the Action Bar, to return to the Throttle screen.  This will be enabled by default on new installs</li>
+* Changes to the Original, Colourful and Dark themes to make the buttons more three dimensional</li>
+* Rework of the Select Loco and DCC-EX screens to be more glyph based.</li>
+* Rearranged the Select Loco page for better fit of non-English text. (primarily German)</li>
+* New 'G' command for keyboard gamepad type to force a function even if it is momentary</li>
+
 Changes included in Engine Driver Beta version **2.40.197**:
 
 * When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
