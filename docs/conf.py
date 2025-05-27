@@ -42,6 +42,7 @@ extensions = [
     'sphinxcontrib.spelling',
     'sphinx_sitemap',
     'sphinx_rtd_dark_mode',
+    'notfound.extension',
     'sphinx_reredirects'
 ]
 
@@ -129,21 +130,34 @@ html_js_files = [
 ]
 
 # Configure sphinx-notfound-page
-notfound_context = {
-    "title": "Page Not Found",
-    "body": """
-<h1>Page Not Found</h1>
+# notfound_context = {
+#     "title": "Page Not Found",
+#     "body": """
+# <h1>Page Not Found</h1>
 
-<p>Sorry, we couldn't find that page.</p>
+# <p>Sorry, we couldn't find that page.</p>
 
-<p>Try using the search box or go to the <a href="/index.html">homepage</a>.</p>
-""",
-}
-notfound_urls_prefix = "/mstevetodd.github.io/"
+# <p>Try using the search box or go to the <a href="/index.html">homepage</a>.</p>
+# """,
+# }
+notfound_urls_prefix = ""
 
 redirects = {
 
+    "about": "./about/index.html",
     "connect": "./operation/operation.html#connecting",
+
+    "consist-edit": "./operation/interface.html#consist-mu-edit-screen",
+    "throttle-vertical-left": "./configuration/preferences.html#throttle-screen-layout",
+    "operation/selectingreleasinglocos": "./operation/operation.html#selecting-releasing-locos",
+    "simple-throttle-4": "./configuration/preferences.html#throttle-screen-layout",
+    "throttle-consist-and-10-step": "./configuration/preferences.html#throttle-screen-layout",
+    "select-loco-roster": "./operation/operation.html#selecting-releasing-locos",
+    "roster-details": "./operation/operation.html#selecting-releasing-locos",
+    "consist-lights-edit": "./operation/interface.html#consist-mu-lights-edit-screen",
+    "throttle-speed-buttons": "./operation/interface.html#speed-buttons",
+    "Prerequisites": "./prerequisites/index.html",
+    "throttle-vertical-right": "./configuration/preferences.html#throttle-screen-layout",
 
     "en/about/index.html": "../../about/index.html",
     "en/about/privacy-policy.html": "../../about/privacy-policy.html",
@@ -177,6 +191,8 @@ redirects = {
     "en/operation/index.html": "../../operation/index.html",
     "en/operation/interface.html": "../../operation/interface.html",
     "en/operation/operation.html": "../../operation/operation.html",
+    "en/operation/getting_started.html": "../../operation/getting_started.html",
+    "en/operation/pom.html": "../../operation/pom.html",
     "en/operation/semi-realistic-throttle.html": "../../operation/semi-realistic-throttle.html",
     "en/operation/wifi_issues.html": "../../operation/wifi_issues.html",
     "en/prerequisites/index.html": "../../prerequisites/index.html",
@@ -187,26 +203,47 @@ redirects = {
 
 
     "index.php": "./index.html",
-    "index.php/": "./index.html",
+    "index.php/": "../index.html",
+    "index.php/about": "../about/index.html",
+    "index.php/changes": "../changes/index.html",
     "index.php/configuration": "../configuration/index.html",
+    "index.php/consist-lights-edit": "../operation/interface.html#consist-mu-lights-edit-screen",
     "index.php/connect": "../operation/operation.html#connecting",
-    "index.php/contact": "../about/index.html",
+    "index.php/contact": "../contact/index.html",
     "index.php/downloads": "../downloads/index.html",
     "index.php/import-preferences": "../configuration/preferences.html#import-export-reset-log-preferences",
     "index.php/operation": "../operation/index.html",
+    "index.php/privacy-policy": "../about/privacy-policy.html",
+    "index.php/Prerequisites": "../prerequisites/index.html",
+    "index.php/roster-details": "../operation/operation.html#selecting-releasing-locos",
     "index.php/screenshots": "../glossary/index.html#screenshots",
+    "index.php/select-loco-roster": "../operation/operation.html#selecting-releasing-locos",
     "index.php/simple-throttle-4": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/simple-throttle-6": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/supported-withrottle-servers": "..//prerequisites/index.html#withrottle-and-dcc-ex-native-servers",
+    "index.php/throttle-vertical-left": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-vertical-right": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-default": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/throttle-big-buttons": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-no-slider": "../configuration/preferences.html#speed-slider-and-buttons-preferences",
+    "index.php/throttle-speed-buttons": "../operation/interface.html#speed-buttons",
     "index.php/throttle-type-big-buttons-left": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/throttle-vertical-right": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/throttle-consist-and-10-step": "../configuration/preferences.html#throttle-screen-layout",
+    "index.php/turnouts": "../operation/interface.html#turnouts-points-screen",
+    "index.php/vertical-slider": "../configuration/preferences.html#throttle-screen-layout",
     "index.php/videos": "../videos/index.html",
 
     "operation/import-preferences": "../configuration/preferences.html#import-export-reset-log-preferences",
     "operation/emergencystopbutton": "../operation/interface.html#emergency-stop-button",
     "operation/RecentTurnout/Pointlist": "../../operation/interface.html#turnouts-points-screen",
+    "operation/ByEnteringanAddress": "../operation/operation.html#dcc-address",
+    "operation/OverflowMenu(WebViewScreen)": "../operation/interface.html#web-view-screen",
+    "operation/Swipe(WebViewScreen)": "../operation/interface.html#web-view-screen",
 
     "privacy-policy": "./about/privacy-policy.html",
+
+    "_static/apk/EngineDriver-2.39.194.apk": "../../downloads/index.html",
 
     "screenshots": "./glossary/index.html#screenshots",
     "simple-throttle-6": "./configuration/preferences.html#throttle-screen-layout",

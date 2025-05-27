@@ -128,6 +128,55 @@ Q. How do I clear unwanted servers from the list
 
   A. Swipe right on an entry to remove it.
 
+Running Engine Driver in Background
+------------------------------------
+
+Q. Why do my trains stop when I run another app? |BR|
+Q. Why do my trains stop when I lock my phone screen?
+
+  A. |ed| is not designed to run in the background.  
+
+    .. warning:: 
+
+      |ed| *is not designed to run in background and its performance and continued operation is not reliable or predictable.*
+
+      You should not lock the screen of your Android device/phone while using |ED| for the same reason.
+
+    .. image:: ../_static/images/parts/ed_in_background.png
+      :align: right
+      :scale: 8%
+
+    By using the Android :guilabel:`Home` ( ○ ) or :guilabel:`Recent Apps` ( □ ) navigation buttons, or if you press the ``Power`` physical button, it is possible to push the |ed| app into the background.  |ed| will give a sound, warning and will add an entry to the Notification Shade when this happens.
+
+    While |ed| will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will consider this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.
+
+    In general avoid letting |ED| try to run in background.
+
+    Refer to :ref:`operation/operation:pushing the app to the background` for more information.
+
+|HR-DASHED|
+
+Q. Why is |ED| still running when I closed the app?
+
+  A. If you exit |ED| using the Android :guilabel:`Back` navigation button and answer `Yes` to the prompt, |ED| will close and stop running.
+
+    However, if you use the Android :guilabel:`Home` ( ○ ) or :guilabel:`Recent Apps` ( □ ) navigation buttons, or if you press the ``Power`` physical button, |ed| will continue to run in background.  |ed| will give a sound, warning and will add an entry to the Notification Shade when this happens.
+
+    **This is not the same as closing the app.**    
+    
+    Refer to :ref:`operation/operation:pushing the app to the background` for more information.
+
+|HR-DASHED|
+
+Q. Why is |ED| still running when I look at the running apps list?
+
+  A. Android *does not have* a 'running apps' list.  It has a 'recent apps' list.  This is a list of the apps you have used recently, not necessarily the ones that are running.
+
+    When you click the :guilabel:`Recent Apps` ( □ ) navigation button, |ed| may be in this list if you have used it recently, even if it is not running.
+
+    You can remove |ed| from this list by swiping it to the right or up, depending on the version of Android.
+
+
 Selecting locomotives to control
 --------------------------------
 
@@ -449,7 +498,7 @@ Virtual Sounds / In Phone Loco Sounds (IPLS)
 
 Q. I can't hear the In Phone Loco Sounds (IPLS)
 
-  A. Adjust the 'Ring and Notification volume' in the Andrtoid System Settings. (the volume buttons on the side of the device/phone don't adjust this setting by default.)
+  A. Adjust the 'Ring and Notification volume' in the Android System Settings. (the volume buttons on the side of the device/phone don't adjust this setting by default.)
 
     The IPLS feature of |ED| uses the Notification features of Android, not the Media Player features.
 

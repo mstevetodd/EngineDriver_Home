@@ -1,0 +1,11 @@
+:orphan:
+
+***************
+Page Not Found
+***************
+
+.. include:: ./include.rst
+
+Sorry, we couldn't find that page.
+
+Try using the search box or go to the :doc:`homepage<index>`.
