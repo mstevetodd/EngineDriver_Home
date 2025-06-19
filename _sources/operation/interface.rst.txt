@@ -492,14 +492,13 @@ Refer to the :doc:`/operation/semi-realistic-throttle` page for more information
 Web View Area (Throttle Web View)
 """""""""""""""""""""""""""""""""
    
-.. todo:: 
-  :class: todo-float-right
-  
-  LOW: Web View Area (Throttle Web View)
+.. image:: ../_static/images/screenshots/SRT-with-Turnout-List.png
+  :align: right
+  :scale: 20%
 
-Optional, shows a web browser in the lower half of the |T-S|.
+Optional, shows a web browser in the lower or upper half of the |T-S|.
 
-Your JMRI Layout panels can be displayed here if you have configured them in JMRI. 
+Your JMRI Layout panels and tables can be displayed here. 
 
 Anything that can be shown in the `Web View Screen`_ can equally be shown here, just in a smaller space.
 
