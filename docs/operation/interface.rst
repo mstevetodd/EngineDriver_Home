@@ -489,13 +489,13 @@ Refer to the :doc:`/operation/semi-realistic-throttle` page for more information
 
 |HR-DASHED|
 
+.. image:: ../_static/images/screenshots/SRT-with-Turnout-List.png
+  :align: right
+  :scale: 15%
+
 Web View Area (Throttle Web View)
 """""""""""""""""""""""""""""""""
    
-.. image:: ../_static/images/screenshots/SRT-with-Turnout-List.png
-  :align: right
-  :scale: 20%
-
 Optional, shows a web browser in the lower or upper half of the |T-S|.
 
 Your JMRI Layout panels and tables can be displayed here. 
