@@ -491,14 +491,14 @@ Refer to the :doc:`/operation/semi-realistic-throttle` page for more information
 
 .. image:: ../_static/images/screenshots/SRT-with-Turnout-List.png
   :align: right
-  :scale: 15%
+  :scale: 18%
 
 Web View Area (Throttle Web View)
 """""""""""""""""""""""""""""""""
    
 Optional, shows a web browser in the lower or upper half of the |T-S|.
 
-Your JMRI Layout panels and tables can be displayed here. 
+Your JMRI Layout panels and tables (or any web URL) can be displayed here. 
 
 Anything that can be shown in the `Web View Screen`_ can equally be shown here, just in a smaller space.
 
