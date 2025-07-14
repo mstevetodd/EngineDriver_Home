@@ -97,14 +97,15 @@ Instructions:
 
 Recommendations:
 
-- Enable the Action Bar button (:ref:`Show Timer button? <configuration/preferences:show timer button?>`)
-- Disable the hardware volume keys (:ref:`Disable Volume keys? <configuration/preferences:disable volume keys?>`)
-- Disable (:ref:`Swipe Through Turnouts/Points? <configuration/preferences:swipe through turnouts/points?>`)
-- Disable (:ref:`Swipe Through Routes? <configuration/preferences:swipe through routes?>`)
-- Disable (:ref:`Swipe Through Web? <configuration/preferences:swipe through web?>`)
+- Enable :ref:`Immersive Mode (Full Screen) <configuration/preferences:Use Immersive Mode for Throttle view?>` to hide the system status bar and navigation bar.
+- Enable the :ref:`Timer action bar button <configuration/preferences:show timer button?>`
+- Disable the :ref:`Hardware Volume keys <configuration/preferences:disable volume keys?>`
+- Disable :ref:`Swipe Through Turnouts/Points? <configuration/preferences:swipe through turnouts/points?>`
+- Disable :ref:`Swipe Through Routes? <configuration/preferences:swipe through routes?>`
+- Disable :ref:`Swipe Through Web? <configuration/preferences:swipe through web?>`
 - Disable all the :ref:`Action Bar buttons <configuration/preferences:throttle screen action bar preferences>` (except the Timer button)
 - Disable the :ref:`Swipe Up and Swipe Down <configuration/preferences:Swipe Up-Down preferences>` preferences
-- If you plan to :ref:`allow reverse <configuration/preferences:allow reverse?>`, then using one of the Switching/Shunting throttle layouts is easier to explain to children than layouts with the Forward/Reverse buttons.
-- Reduce the number of functions buttons to the minimum required.  i.e. if you have none sound locos, se the default to 1 (for the lights)
+- If you plan to :ref:`allow reverse <configuration/preferences:allow reverse?>`, then using one of the :ref:`Switching/Shunting throttle screen layouts <configuration/preferences:throttle screen layout>` is easier to explain to children than layouts with the Forward/Reverse buttons.
+- Reduce the number of functions buttons to the minimum required.  i.e. if you have locos with non-sound decoders, set the default to 1 (for the lights)
 - If you don't have sound locos, then you may wish to enable the :ref:`configuration/preferences:in phone loco sounds`
 
