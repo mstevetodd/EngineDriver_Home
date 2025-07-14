@@ -83,17 +83,19 @@ Instructions:
   - the :ref:`Time limited running <configuration/preferences:time limited running>` preference, (then return to the |T-S|) |BR| *or* 
   - the action button (:ref:`Show Timer button? <configuration/preferences:show timer button?>`)
   
-- The timer will start with the first increase in speed
+- The timer will start counting down with the first change in speed.
 - When the timer runs out:
 
   - Click the overflow menu.  Only the ``Timer`` option will be available.
   - Click ``Timer`` and a password will be requested.
   - Enter the password for either:
 
-    - to restart the timer (default 0000) to continue running for the next time period
-    - to end running (default 9999) and return to the |T-S|
+    - to restart the timer (default 0000) to continue running for the next time period.
+    - to end/cancel running (default 9999) and return to the |T-S|.
  
- The end of run password will allow you to regain access to the full |ED| functionality, including the ability to change the loco, change the speed, etc.
+ - While the timer is running, the ``Timer`` menu option will always be available. You can use this to restart or end/cancel the timer at any time.
+
+ The end/cancel password will allow you to regain access to the full |ED| functionality, including the ability to change the loco, change the speed, etc.
 
 Recommendations:
 
