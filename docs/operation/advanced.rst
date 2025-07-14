@@ -75,23 +75,37 @@ Children's Timer
 
 Instructions:
 
-- Select the loco first.
+- Set the default time in the :ref:`configuration/preferences:Children's (timer) Preferences` to the desired time. (e.g. 5 minutes.)
+- Set the two passwords in the :ref:`configuration/preferences:children's (timer) preferences` to the desired passwords (default 0000 and 9999) plus and any other desired options.
+- Select the loco (Before starting the timer the first time).
 - Enable the time limited running to the desired time, using either:
   
-  - the `Time limited running <../configuration/preferences.html#time-limited-running>`_ preference, (then return to the |T-S|) |BR| *or* 
-  - the action button (`Show Timer button? <../configuration/preferences.html#show-timer-button>`_)
+  - the :ref:`Time limited running <configuration/preferences:time limited running>` preference, (then return to the |T-S|) |BR| *or* 
+  - the action button (:ref:`Show Timer button? <configuration/preferences:show timer button?>`)
   
 - The timer will start with the first increase in speed
 - When the timer runs out:
 
-  - You must come back to this preference to reset the time (or clear it) |BR| *or* 
-  - click the action button again.
+  - Click the overflow menu.  Only the ``Timer`` option will be available.
+  - Click ``Timer`` and a password will be requested.
+  - Enter the password for either:
+
+    - to restart the timer (default 0000) to continue running for the next time period
+    - to end running (default 9999) and return to the |T-S|
  
+ The end of run password will allow you to regain access to the full |ED| functionality, including the ability to change the loco, change the speed, etc.
+
 Recommendations:
 
-- Enable the Action Bar button (`Show Timer button? <../configuration/preferences.html#show-timer-button>`_)
-- Disable the hardware volume keys (`Disable Volume keys? <./configuration/preferences.html#disable-volume-keys>`_)
-- Disable `Swipe Through Turnouts/Points? <./configuration/preferences.html#swipe-through-turnouts-points>`_ 
-- Disable `Swipe Through Routes? <./configuration/preferences.html#swipe-through-routes>`_
-- Disable the `Emergency Stop button? <./configuration/preferences.html#throttle-screen-action-bar-preferences>`_
+- Enable the Action Bar button (:ref:`Show Timer button? <configuration/preferences:show timer button?>`)
+- Disable the hardware volume keys (:ref:`Disable Volume keys? <configuration/preferences:disable volume keys?>`)
+- Disable (:ref:`Swipe Through Turnouts/Points? <configuration/preferences:swipe through turnouts/points?>`)
+- Disable (:ref:`Swipe Through Routes? <configuration/preferences:swipe through routes?>`)
+- Disable (:ref:`Swipe Through Web? <configuration/preferences:swipe through web?>`)
+- Disable the (:ref:`Emergency Stop button? <configuration/preferences:throttle screen action bar preferences>`)
+- Disable the :ref:`Swipe Up and Swipe Down <configuration/preferences:Swipe Up-Down preferences>` preferences
+- Disable all the :ref:`Action Bar buttons <configuration/preferences:throttle screen action bar preferences>`
+- If you plan to :ref:`allow reverse <configuration/preferences:allow reverse?>`, then using one of the Switching/Shunting throttle layouts is easier to explain to children than layouts with the Forward/Reverse buttons.
+- Reduce the number of functions buttons to the minimum required.  i.e. if you have none sound locos, se the default to 1 (for the lights)
+- If you don't have sound locos, then you may wish to enable the :ref:`configuration/preferences:in phone loco sounds`
 

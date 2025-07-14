@@ -2365,6 +2365,8 @@ Options:
 * Disabled
 * 1 minute
 * 2 minutes
+* 3 minutes
+* 4 minutes
 * 5 minutes
 * 10 minutes
 * Run complete  *Should not be manually selected - used by* |ed|
@@ -2409,6 +2411,8 @@ Options:
 * Disabled
 * 1 minute
 * 2 minutes
+* 3 minutes
+* 4 minutes
 * 5 minutes
 * 10 minutes
 * Run completed  *Should not be manually selected - used by* |ed|
