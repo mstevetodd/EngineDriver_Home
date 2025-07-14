@@ -2380,6 +2380,8 @@ This preference allows you to set the password to restart the children's timer w
 
 Defaults to "0000"
 
+Note: the current production version of |ED| allows characters and numbers, but the next version will only allow numbers.  i.e. The password will be numeric only.
+
 Reset/Disable Password
 """"""""""""""""""""""
 
@@ -2387,10 +2389,12 @@ This preference allows you to set the password to reset/disable the children's t
 
 Defaults to "9999"
 
+Note: the current production version of |ED| allows characters and numbers, but the next version will only allow numbers.  i.e. The password will be numeric only.
+
 Allow Reverse?
 """"""""""""""
 
-If this preference is enabled |ed| will enable the :guilabel:`Forward` and :guilabel:`Reverse` buttons while the children's timer is running. i.e. if you want them to be able to reverse the locos.
+If this preference is enabled |ed| will enable the :guilabel:`Forward` and :guilabel:`Reverse` buttons (in non-Switching/shunting throttle screen layouts) while the children's timer is running. i.e. if you want them to be able to reverse the locos.
 
 Show Timer button?
 """"""""""""""""""
@@ -2398,6 +2402,8 @@ Show Timer button?
 .. image:: ../_static/images/parts/timer.png
    :align: right
    :scale: 50%
+
+Recommended!
 
 If this preference is enabled |ed| will display the Timer Button on the Action Bar of the |T-S|, to easily activate the Children's timer.
 
