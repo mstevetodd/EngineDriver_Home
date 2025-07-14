@@ -102,9 +102,8 @@ Recommendations:
 - Disable (:ref:`Swipe Through Turnouts/Points? <configuration/preferences:swipe through turnouts/points?>`)
 - Disable (:ref:`Swipe Through Routes? <configuration/preferences:swipe through routes?>`)
 - Disable (:ref:`Swipe Through Web? <configuration/preferences:swipe through web?>`)
-- Disable the (:ref:`Emergency Stop button? <configuration/preferences:throttle screen action bar preferences>`)
+- Disable all the :ref:`Action Bar buttons <configuration/preferences:throttle screen action bar preferences>` (except the Timer button)
 - Disable the :ref:`Swipe Up and Swipe Down <configuration/preferences:Swipe Up-Down preferences>` preferences
-- Disable all the :ref:`Action Bar buttons <configuration/preferences:throttle screen action bar preferences>`
 - If you plan to :ref:`allow reverse <configuration/preferences:allow reverse?>`, then using one of the Switching/Shunting throttle layouts is easier to explain to children than layouts with the Forward/Reverse buttons.
 - Reduce the number of functions buttons to the minimum required.  i.e. if you have none sound locos, se the default to 1 (for the lights)
 - If you don't have sound locos, then you may wish to enable the :ref:`configuration/preferences:in phone loco sounds`
