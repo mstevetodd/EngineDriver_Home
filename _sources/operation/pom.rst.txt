@@ -16,7 +16,7 @@ Programming on the Main (PoM)
       :local:
       :depth: 3
 
-The |NATIVE| allows |ED| to read and write CVs of decoders on both the Main ona Prog tracks. The |NATIVE| is only available when connectd to a |EX-CS| and is discussed on the :doc:`/operation/dcc-ex-native-protocol` page.
+The |NATIVE| allows |ED| to read and write CVs of decoders on both the Main on a Prog tracks. The |NATIVE| is only available when connected to a |EX-CS| and is discussed on the :doc:`/operation/dcc-ex-native-protocol` page.
 
 The |WIT|, which is used for connecting to Command Stations other that the |EX-CS|, does not provide for any CV programming.
 
@@ -24,7 +24,7 @@ However it is possible to use a feature implemented in some system to do program
 
 .. important:: 
 
-  This feature only works on a very small number of |CSs|.  It works by sending a hex packet to the |CS|.
+  This feature only works on a very small number of DCC Command Stations.  It works by sending a hex packet to the DCC Command Station.
 
 To use this feature, enable the :ref:`configuration/preferences:Show WiThrottle PoM Page` preference.
 
