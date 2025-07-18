@@ -93,7 +93,7 @@ Instructions:
     - to restart the timer (default 0000) to continue running for the next time period.
     - to end/cancel running (default 9999) and return to the |T-S|.
  
- - While the timer is running, the ``Timer`` menu option will always be available. You can use this to restart or end/cancel the timer at any time.
+- While the timer is running, the ``Timer`` menu option will always be available. You can use this to restart or end/cancel the timer at any time.
 
  The end/cancel password will allow you to regain access to the full |ED| functionality, including the ability to change the loco, change the speed, etc.
 
