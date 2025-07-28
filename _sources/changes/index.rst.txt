@@ -56,27 +56,27 @@ Changes included in Engine Driver Production version **2.38.193**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.40.199**:
+Changes included in Engine Driver Beta version **2.40.201**:
 
 * Bug fixes for the Semi-Realistic Throttle
-* Changed the location permission warnings to a toast message
-* Add option to the ED icon on the Action Bar, to return to the Throttle screen.  This will be enabled by default on new installs
-* Changes to the Original, Colourful and Dark themes to make the buttons more three dimensional
-* Rework of the Select Loco and DCC-EX screens to be more glyph based.
-* Rearranged the Select Loco page for better fit of non-English text. (primarily German)
-* New 'G' command for keyboard gamepad type to force a function even if it is momentary
-
-Changes included in Engine Driver Beta version **2.40.197**:
-
-* When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
-* Send additional resync requests after DCC-EX reconnect
-* DCC-EX Pref to sequence item requests
-* Bug fix for F0-F9 on some systems - Removed leading zero from FKey id when sending
-* Bug fix for Immersive mode
-* Cleanup of the Horizontal Throttle layouts. Fixing some height issues
-* only redraw Route list if actually changed
-* Bug fix for Non-English 'Auto' connection protocol option
-* Separate warning from when the 'Use Location' service is disabled (as different to no WiFi)
+* added a new separate check for when the app is in background
+* reduce the amount of static text related to log messages
+* wholesale cleanup if the code to 'finish' an activity
+* Additional log messages in select_loco
+* Move to AndroidX libraries
+* Added support for ESU MC Pro. Additional + removed + default options for the MC Pro
+* Bug fix for PoM programming of DCC addresses 1 and 2
+* Preference to using large toolbar buttons. Defaults to large on screens larger than 6.7"/17cm.
+* Preference screen numeric input dialogs show the keypad not the full keyboard
+* ESU MC2/Pro fixes to support the SRT
+* Gradle upgrade
+* targetSDK raised to 35 - Had to go back to TargetSdk 35 from 36 to get around the edge-to-edge enforcement on Android 16
+* Children's timer changes. Passwords changed to PINs (numeric). Some bug fixes. Added Kiosk mode option. Added Demo mode option.
+* Bug fix for the brake slider on the ESU MC Pro
+* Bug fix for when changing to a throttle screen layout with more possible throttles
+* Added Option for single throttle EStop on long press of 'stop' button
+* Fix NPE when changing to a throttle screen layout with more possible throttles
+* Cleaned up some commented out code (toast commands that have been replaced with safeToast())
 
 Complete ChangeLog
 --------------------------------------------
