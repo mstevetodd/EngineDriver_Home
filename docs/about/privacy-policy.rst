@@ -19,13 +19,13 @@ Privacy Policy
 Required Permissions
 ====================
 
-These permissions are required to be granted to |ED| for it to function *at its best*, but as of Version 2.40.200 it will generally work without any of these additional permissions being granted.
+These permissions are required to be granted to |ED| for it to function *at its best*, but as of Version 2.40.200 it will generally work without any of these permissions being granted.
 
 * Engine Driver needs the **NOTIFICATION** permission to warn you when the app has been pushed into background. |BR| |BR|
 
 * Engine Driver needs the **READ_PHONE_STATE** permission to (optionally) stop your locos while you are using the phone. |BR| |BR|
 
-* Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID.  |BR| |BR|
+* Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID.
 
   This is used, in some cases, to determine the type of |server|.  
   
