@@ -19,19 +19,27 @@ Privacy Policy
 Required Permissions
 ====================
 
-|ED| requires some permission to function.
+These permissions are required to be granted to |ED| for it to function *at its best*, but as of Version 2.40.200 it will generally work without any of these additional permissions being granted.
 
 Engine Driver needs the **NOTIFICATION** permission to warn you when the app has been pushed into background.
 
 Engine Driver needs the **READ_PHONE_STATE** permission to (optionally) stop your locos while you are using the phone.
 
-Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID.  
+Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID. 
 
-Note: *Use Location* must be enabled in the Android system settings for |ED| to 'find' servers on the network.
+  This is used, in some cases, to determine the type of |server|.  
+  
+  If you are using a |EX-CS| in Access Point mode, this permission is needed to 'find' the server. If not granted, you will need to type in the IP address of the server manually.
+
+  If you are using an MRC or Digitrax |WTS| server, |ED| will alter some internal settings for better performance. If this permission is not granted |ED| may not perform optimally.
+
+Note: *Use Location* (in Android 8 or greater) must be enabled in the Android system settings for |ED| to 'find' servers on the network.
 
 
 Optional Permissions
 ====================
+
+These permissions are optional and can be granted to |ED| to enhance its functionality.
 
 |ED| can optional be granted some additional permissions.
 
