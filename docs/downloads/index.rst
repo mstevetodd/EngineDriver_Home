@@ -35,7 +35,7 @@ Older or Other Versions - Manual Install
 
 **.apk files:**
 
-* `EngineDriver-2.41.205.apk (Beta) <../_static/apk/EngineDriver-2.41.205.apk>`_
+* `EngineDriver-2.41.205.apk (Beta) <../_static/apk/EngineDriver-2.41.205.apk>`_ |BR| Last version to support Android 4.x
 * `EngineDriver-2.40.203.apk <../_static/apk/EngineDriver-2.40.203.apk>`_
 * `EngineDriver-2.39.195.apk <../_static/apk/EngineDriver-2.39.195.apk>`_
 * `EngineDriver-2.38.193.apk <../_static/apk/EngineDriver-2.38.193.apk>`_
@@ -48,7 +48,7 @@ Older or Other Versions - Manual Install
 * `EngineDriver-2.32.151.apk <../_static/apk/EngineDriver-2.32.151.apk>`_
 * `EngineDriver-2.31.139.apk <../_static/apk/EngineDriver-2.31.139.apk>`_
 * `EngineDriver-2.30.133.apk <../_static/apk/EngineDriver-2.30.133.apk>`_
-* `EngineDriver-2.29.127.apk <../_static/apk/EngineDriver-2.29.127.apk>`_
+* `EngineDriver-2.29.127.apk <../_static/apk/EngineDriver-2.29.127.apk>`_ |BR| Last version to support Android 4.0.4
 * `EngineDriver-2.28.123.apk <../_static/apk/EngineDriver-2.28.123.apk>`_
 * `EngineDriver-2.27.121.apk <../_static/apk/EngineDriver-2.27.121.apk>`_
 * `EngineDriver-2.26.115.apk <../_static/apk/EngineDriver-2.26.115.apk>`_
@@ -57,7 +57,7 @@ Older or Other Versions - Manual Install
 * `EngineDriver-2.23.83.apk <../_static/apk/EngineDriver-2.23.83.apk>`_
 * `EngineDriver-2.22.69.apk <../_static/apk/EngineDriver-2.22.69.apk>`_
 * `EngineDriver-2.21.65.apk <../_static/apk/EngineDriver-2.21.65.apk>`_
-* `EngineDriver-2.20.59.apk <../_static/apk/EngineDriver-2.20.59.apk>`_
+* `EngineDriver-2.20.59.apk <../_static/apk/EngineDriver-2.20.59.apk>`_ |BR| Last version to support Android versions 2.1 - 4.0.3
 * `EngineDriver-2.19.55.apk <../_static/apk/EngineDriver-2.19.55.apk>`_
 * `EngineDriver-2.18.1.apk <../_static/apk/EngineDriver-2.18.1.apk>`_
 * `EngineDriver-2.17.apk <../_static/apk/EngineDriver-2.17.apk>`_

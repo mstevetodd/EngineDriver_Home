@@ -28,7 +28,7 @@ As the **ESU Mobile Control 2** and **Mobile Control** Pro are built on an Andro
 
 .. warning::
   
-    The **ESU Mobile Control Pro** is currently being shipped with a version of |ED| pre-installed that is *not** compatible with its hardware.  It is also impossible to update the app on the device by downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We hope this will be addressed soon, but in the meantime there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
+    The **ESU Mobile Control Pro** is currently being shipped with a version of |ED| pre-installed that is **not** compatible with its hardware.  It is also impossible to update the app on the device by downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We hope this will be addressed soon, but in the meantime there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
 
 Operation
 ==========
@@ -103,15 +103,15 @@ If the ``Use Semi-Realistic Throttle setting`` option is selected, the physical 
 Updating Engine Driver on the ESU Mobile Control Pro
 ====================================================
 
-The ESU Mobile Control Pro is currently being shipped with a version of |ED| pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by downloading an APK from this site.  
+The ESU Mobile Control Pro is currently being shipped with a version of |ED| pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.
 
-These instructions will allow you to update the app on the device from one of the APKs on this website.  Note that currently only the ``EngineDriver-2.40.200a.apk (Alpha)``, or later, is compatible with the **ESU Mobile Control Pro**.
+These instructions will allow you to update the app on the device from one of the APKs on this website.  Note that currently only the ``EngineDriver-2.40.202.apk (Beta)``, or later, is compatible with the **ESU Mobile Control Pro**. (This version is also available on the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ but only if you sign up for the Beta program.  This should be made a production release soon.)
 
 1. You need to download a copy of ``adb.exe``    (e.g. https://developer.android.com/tools/releases/platform-tools )
 
 2. Then open a terminal (``cmd`` or ``powershell``) and navigate to the directory where adb.exe is located. 
 
-    For example, if you have adb.exe in C:\adb, then you would type:
+    For example, if you have ``adb.exe`` in the ``adb`` folder on the ``C:`` drive, then you would type:
     
     .. code-block::
   
