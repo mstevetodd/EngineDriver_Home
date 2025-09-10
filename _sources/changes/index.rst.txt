@@ -46,7 +46,7 @@ Changes included in Engine Driver Production version **2.40.203**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.41.207**:
+Changes included in Engine Driver Beta version **2.41.209**:
 
 * Last version of Engine Driver to support Android 4.x
 * Fix for Switching Throttle layouts going back to the connection screen
@@ -55,10 +55,10 @@ Changes included in Engine Driver Beta version **2.41.207**:
 * Bug fix for the Power Screen when an EX-CS has one of the tracks set for AUTO
 * Removed ability to share files to ED's scoped storage. Incompatible with version Android 4.x
 * Additional buttons on the Reconnection Screen
-
+* Additional French translations by Alain Carasso
+* Bug fixes from the previous beta
 
 Complete ChangeLog
 --------------------------------------------
 
 `view complete changelog <https://raw.githubusercontent.com/JMRI/EngineDriver/master/changelog-and-todo-list.txt>`_
-
