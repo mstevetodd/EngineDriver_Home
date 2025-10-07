@@ -186,7 +186,7 @@ Request Loco ID
 
 This option uses the |EX-CS| `DriveAway <https://dcc-ex.com/throttles/driveaway.html#gsc.tab=0>`_ feature to automatically read a loco's address on the programming track and then automatically acquire it on the throttle in |ED|.
 
-e.g. Place a DCC Engine on a programming track spur or siding, use ||ED| :guilabel:`Request Loco ID` button to automatically acquire & load the loco# into the Throttle, then just throttle-up and 'Drive Away' onto the main line tracks.
+e.g. Place a DCC Engine on a programming track spur or siding, use the |ED| :guilabel:`Request Loco ID` button to automatically acquire & load the loco# into the Throttle, then just throttle-up and 'Drive Away' onto the main line tracks.
 
 
 On the fly / In Phone Consists (Multiple Units)
