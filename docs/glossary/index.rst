@@ -29,13 +29,15 @@ Glossary
   * - Term
     - Meaning
   * - Command Station |BR| DCC Command Station |BR| DCC Base Station
-    - TODO
-  * - Consist |BR| Multiple Units
-    - Multiple locos hauling a singe train
+    - Refer to https://en.wikipedia.org/wiki/Digital_Command_Control
+  * - Consist |BR| Multiple Unit (MU)
+    - Multiple locos hauling a single train
   * - DC
     - Direct Current
   * - DCC
     - Digital Command Control
+  * - DCC-EX |BR| EX-CommandStation
+    - Refer to the `DCC-EX web site <https://dcc-ex.com>`_
   * - JMRI
     - Java Model Railroad Interface
   * - Loco |BR| Locomotive |BR| Engine
@@ -53,12 +55,12 @@ Glossary
   * - WiThrottle protocol
     - proprietary protocol developed by Brett Hoffman
 
-Copyright
-=========
+Copyright & Warranty
+====================
 
 Copyright (C) 2025 M. Steve Todd mstevetodd@mstevetodd.com
 
-This documentation is free; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
+This documentation is free; you can redistribute it and/or modify it under the terms of the `GNU General Public License <https://raw.githubusercontent.com/JMRI/EngineDriver/refs/heads/master/COPYING>`_ as published by the Free Software Foundation; either version 3 of the License, or (at your option) any later version.
 
 This documentation is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
