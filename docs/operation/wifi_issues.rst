@@ -118,17 +118,17 @@ If the |SERVER| does not receive any feedback from your device/phone within a co
 Other networks on the same channel
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-One problem that can cause disconnections is if there are other, busy, networks on the same channel as your network.  You can use a WiFi analyzer app (e.g. `WiFiAnalyzer (Open Source) <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&hl=en_AU>`_` ) to see what channels are being used by other networks and change your network to a less used channel.  If your router (or Wifi CommandStation) is on a busy channel, try moving it to a less busy channel.
+One problem that can cause disconnections is if there are other, busy, networks on the same channel as your network.  You can use a WiFi analyzer app (e.g. `WiFiAnalyzer (Open Source) <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&hl=en_AU>`_ ) to see what channels are being used by other networks and change your network to a less used channel.  If your router (or Wifi CommandStation) is on a busy channel, try moving it to a less busy channel.
 
 Distance to router / location of the router
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-One problem that can cause disconnections is if there you are too far from you router.  You can use a WiFi analyzer app (e.g. `WiFiAnalyzer (Open Source) <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&hl=en_AU>`_` ) to see what signal strength you have as your move around you layout.  If you are too far from the router, you may need to move the router closer to the layout, or add a WiFi extender.
+One problem that can cause disconnections is if there you are too far from you router.  You can use a WiFi analyzer app (e.g. `WiFiAnalyzer (Open Source) <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&hl=en_AU>`_ ) to see what signal strength you have as your move around you layout.  If you are too far from the router, you may need to move the router closer to the layout, or add a WiFi extender.
 
 Objects in the way
 ^^^^^^^^^^^^^^^^^^
 
-One problem that can cause disconnections is if there are objects in the way (particularly metal objects) in the part to your router. So it may be fine at one loaction, but not at another. You can use a WiFi analyzer app (e.g. `WiFiAnalyzer (Open Source) <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&hl=en_AU>`_` ) to see what signal strength you have as you move around your layout.  If you are find it drops at certain loacations, you may need to move the router closer to the layout, or add a WiFi extender.
+One problem that can cause disconnections is if there are objects in the way (particularly metal objects) in the path to your router. So it may be fine at one location, but not at another. You can use a WiFi analyzer app (e.g. `WiFiAnalyzer (Open Source) <https://play.google.com/store/apps/details?id=com.vrem.wifianalyzer&hl=en_AU>`_ ) to see what signal strength you have as you move around your layout.  If you are find it drops at certain loacations, you may need to move the router closer to the layout, or add a WiFi extender.
 
 Too Many Devices Are Connected
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
