@@ -38,18 +38,18 @@ A number of :ref:`permissions <about/privacy-policy:required permissions>` are r
 
 |FORCE-BREAK|
 
-ESU MobileControl II
-""""""""""""""""""""
+ESU Mobile Control II/Pro
+"""""""""""""""""""""""""
 .. image:: ../_static/images/gamepads/esu_mcii.png
    :scale: 25 %
    :align: right
 
-|ed| also fully supports the `ESU MobileControl II (MC2) <http://www.esu.eu/en/products/digital-control/mobile-control-ii/>`_ Android throttle.
+|ed| also fully supports the `ESU MobileControl 2/Pro (MC2 / MCPro) <http://www.esu.eu/en/products/digital-control/mobile-control-ii/>`_ Android throttle.
 
 .. note:: 
   :class: note-ed-hidden-title
   
-  See the `ESU MobileControl II <../operation/esu_mcii.html>`_ page for more information.
+  See the `ESU MobileControl 2/Pro <../operation/esu_mcii.html>`_ page for more information.
 
 |FORCE-BREAK|
 

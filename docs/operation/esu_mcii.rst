@@ -20,15 +20,22 @@ ESU Mobile Control 2/Pro
    :scale: 25 %
    :align: left
 
-As the **ESU Mobile Control 2** and **Mobile Control** Pro are built on an Android platform, and they have made the API available to external developers, |ed| can run on it and make use of the hardware knob and buttons.  Download it from the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by :ref:`direct download <downloads/index:older or other versions - manual install>` as you would any other app.
+As the **ESU Mobile Control 2** and **Mobile Control Pro** are built on an Android platform, and they have made the API available to external developers, |ed| can run on it and make use of the hardware knob and buttons.  
 
-.. warning::
-  
-    The **ESU Mobile Control 2** does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install |ed|. You will need to :ref:`download the APK file <downloads/index:older or other versions - manual install>` and install it manually.
+Download
+========
 
-.. warning::
-  
-    The **ESU Mobile Control Pro** is currently being shipped with a version of |ED| pre-installed that is **not** compatible with its hardware.  It is also impossible to update the app on the device by downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We hope this will be addressed soon, but in the meantime there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
+See below for information on how to download |ED| onto the device.
+
+ESU Mobile Control 2
+--------------------
+
+The **ESU Mobile Control 2** does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install |ed|. You will need to :ref:`download the APK file <downloads/index:older or other versions - manual install>` and install it manually.
+
+ESU Mobile Control Pro
+----------------------
+
+The **ESU Mobile Control Pro** is currently being shipped with a version of |ED| pre-installed that is **not** compatible with its hardware.  It is also impossible to update the app on the device by downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We hope this will be addressed soon, but in the meantime there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
 
 Operation
 ==========
