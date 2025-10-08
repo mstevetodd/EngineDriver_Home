@@ -1742,10 +1742,10 @@ If this preference is enabled, when a gamepad is used for the first time in a se
 
 ----
 
-ESU MobileControl II Options
-""""""""""""""""""""""""""""
+ESU Mobile Control 2/Pro Options
+""""""""""""""""""""""""""""""""
 
-The following preferences allow you to change the way a ESU MobileControl II behaves (if connected).
+The following preferences allow you to change the way a ESU Mobile Control 2/Pro behaves (if connected).
 
 .. contents:: In this Section
     :depth: 1
