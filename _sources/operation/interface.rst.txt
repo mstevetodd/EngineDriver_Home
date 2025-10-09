@@ -1087,17 +1087,18 @@ The |LS-S| allows you add locos to a (one of) throttle on the |T-S|.  It also pr
 
 The |LS-S| is only shown when you click a :guilabel:`Select` button on the |T-S|.
 
-Not that the :guilabel:`Select` button will should the Address(es) or the Name(s) of a|loco_consist| Train only the first loco is selected.  Click on the button will (while it is in this state) will again take to this screen to allow to you add additional Locos to the |consist| Train, or make other changes to the |consist| Train.
+Not that the :guilabel:`Select` button will should the Address(es) or the Name(s) of a |loco_consist| Train only the first loco is selected.  Click on the button will (while it is in this state) will again take to this screen to allow to you add additional Locos to the |consist| Train, or make other changes to the |consist| Train.
 
 Selection Method
 """"""""""""""""
 
-There are four ways you can choose a loco for the Throttle.  Select one of the radio buttons depending on how you want to the choose the loco:
+There are five ways you can choose a loco for the Throttle.  Select one of the buttons depending on how you want to the choose the loco:
 
 * DCC Address
 * Server Roster
 * Recent Locos
 * Recent Consists
+* Request Loco ID  (Available when using the |native| only.)
 
 Select by DCC Address 
 """""""""""""""""""""
@@ -1126,9 +1127,8 @@ As you type each character the filter will be applied and the list will be reduc
 
 The filter is case insensitive.
 
-
-Download to the Roster
-'''''''''''''''''''''''
+Download the Roster
+'''''''''''''''''''
 
 By clicking the :guilabel:`Download` button, all locos in the Server roster will be drawn in the 'Recent List' in |ED|.  
 
@@ -1209,6 +1209,19 @@ Remove Recent Consists (MU) Entries
 To remove a **single entry** from the recent Consists (MU) list, swipe right on that entry.
 
 To remove all entries, click the :guilabel:`CLear List` button.
+
+
+Select by Request Loco ID
+"""""""""""""""""""""""""
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  This option is available when using the |native| only.
+
+This option uses the |EX-CS| `DriveAway <https://dcc-ex.com/throttles/driveaway.html#gsc.tab=0>`_ feature to automatically read a loco's address on the programming track and then automatically acquire it on the throttle in |ED|.
+
+e.g. Place a DCC Engine on a programming track spur or siding, use ||ED| :guilabel:`Request Loco ID` button to automatically acquire & load the loco# into the Throttle, then just throttle-up and 'Drive Away' onto the main line tracks.
 
 
 Select Loco - Core On Screen Buttons
