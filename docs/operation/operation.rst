@@ -148,11 +148,12 @@ Selecting and releasing locos and |consists| is initiated from the Throttle Scre
 Selecting a Single loco
 """""""""""""""""""""""
 
-There three ways select a loco:
+There four ways select a loco:
 
 * By entering a `DCC Address`_
 * By selecting from the `Server Roster`_
 * By selecting a `Recent Loco <Recent Locos>`_
+* By selecting `Request Loco ID`_  (Available when using the |native| only.)
 
 DCC Address
 '''''''''''
@@ -174,6 +175,19 @@ Recent Locos
 |ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with :ref:`Maximum Recent Locos <configuration/preferences:maximum recent locos>` preference.)
 
 If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+
+Request Loco ID
+'''''''''''''''
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  This option is available when using the |native| only.
+
+This option uses the |EX-CS| `DriveAway <https://dcc-ex.com/throttles/driveaway.html#gsc.tab=0>`_ feature to automatically read a loco's address on the programming track and then automatically acquire it on the throttle in |ED|.
+
+e.g. Place a DCC Engine on a programming track spur or siding, use the |ED| :guilabel:`Request Loco ID` button to automatically acquire & load the loco# into the Throttle, then just throttle-up and 'Drive Away' onto the main line tracks.
+
 
 On the fly / In Phone Consists (Multiple Units)
 """"""""""""""""""""""""""""""""""""""""""""""""
