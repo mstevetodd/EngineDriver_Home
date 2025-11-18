@@ -46,7 +46,7 @@ Changes included in Engine Driver Production version **2.40.203**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.41.211**:
+Changes included in Engine Driver Beta version **2.41.213**:
 
   * Last version of Engine Driver to support Android 4.x
   * Fix for Switching Throttle layouts going back to the connection screen
@@ -54,6 +54,8 @@ Changes included in Engine Driver Beta version **2.41.211**:
   * Added preference for EStop all loco(s) on all throttles(s) when Engine Driver is pushed to background
   * Bug fix for the Power Screen when an EX-CS has one of the tracks set for AUTO
   * Removed ability to share files to ED's scoped storage. Incompatible with version Android 4.x
+  * Added Preference to not beep on WiThrottle Alerts and Messages
+  * Added Sort button for Recent Turnouts/Points
   * Additional buttons on the Reconnection Screen
   * Additional French translations by Alain Carasso
   * Bug fixes from the previous beta
