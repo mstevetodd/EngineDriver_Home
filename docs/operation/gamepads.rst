@@ -20,15 +20,20 @@ Connecting your Gamepad
 The following instructions work for the **Mocute 032** and **MagicSeeR1** gamepads. 
 Other devices require similar steps, but the mechanism to change the ``mode`` may be different. 
 
-* Turn on
-  
-  * For the **Mocute 032** gamepads
-  
-    * On the gamepad, the small button is Start/Power. Press for a couple seconds until LED comes on. 
+|force-break|
 
-  * For the **MagicSeeR1** gamepads (Mode B)
+.. warning:: 
+  :class: warning-float-right
 
-    * There is a dedicated on/off switch. 
+  The **Mocute 032** gamepads are of questionable quality and durability, and may not last long.  We recommend the **MagicSeeR1** gamepad instead.
+  
+* For the **Mocute 032** gamepads
+
+  * On the gamepad, the small button is Start/Power. Press for a couple seconds until LED comes on. 
+
+* For the **MagicSeeR1** gamepads (Mode B)
+
+  * There is a dedicated on/off switch. 
 
 * On your **Android device** go to the settings, then Bluetooth, and make sure Bluetooth is turned ON. 
 * Now click ``More Settings``. Within a few seconds a new device should appear in the ``Available devices`` section. (The name of the device may make it apparent that it is the gamepad, but it may just be a string of hexadecimal numbers.) 
@@ -119,11 +124,18 @@ These are the gamepads that we have had the most success with…
 
 **Mocute 032**
 
+.. warning:: 
+  :class: warning-float-right
+
+  The **Mocute 032** gamepads are of questionable quality and durability, and may not last long.  We recommend the **MagicSeeR1** gamepad instead.
+  
 .. image:: ../_static/images/gamepads/bt_controller1.png
    :scale: 50 %
 
 They are available from a variety of different sellers on eBay and elsewhere. 
-Their build quality is not very robust, which is reflected in the price, so don't expect a long life from them.
+Their build quality is not poor, which is reflected in the price, so don't expect a long life from them.
+
+These have been most successful when set to **MTK mode** (see above).  Hovever some newer versions of the device seem to be incapable of changing to MTK mode, so try the game mode if you have problems.
 
 **MagicSeeR1**
 
@@ -175,7 +187,7 @@ Unsupported Gamepads
 
 **VR Box**
 
-Support for this type of gamepad was removed from |ed| as the device was so unreliable. (Mine had a bad solder join.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
+Support for this type of gamepad was removed from |ed| as the device was so unreliable. (Mine had a bad solder join that I was able to fix.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
 
 .. image:: ../_static/images/gamepads/vrbox2.png
    :scale: 90 %

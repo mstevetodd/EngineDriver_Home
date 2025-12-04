@@ -145,6 +145,12 @@ html[data-theme='dark'] .admonition-todo p.admonition-title {
   margin-bottom: 6px !important;
 }
 
+.warning-float-right {
+  float: right;
+  width: 40%;
+  margin-bottom: 6px !important;
+}
+
 .todo-float-right p, .todo-float-right p.admonition-title {
   font-size: 12px;
   line-height: 14px;

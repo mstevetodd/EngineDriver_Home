@@ -33,18 +33,19 @@ extensions = [
    # 'sphinx.ext.intersphinx',
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.todo',
-   # 'sphinx.ext.coverage',
-   # 'sphinx.ext.mathjax',
-   # 'sphinx.ext.ifconfig',
-   # 'sphinx.ext.viewcode',
-   # 'sphinx.ext.graphviz',
-   # 'sphinx.ext.inheritance_diagram',
     'sphinxcontrib.spelling',
     'sphinx_sitemap',
     'sphinx_rtd_dark_mode',
     'notfound.extension',
     'sphinx_reredirects'
 ]
+
+   # 'sphinx.ext.coverage',
+   # 'sphinx.ext.mathjax',
+   # 'sphinx.ext.ifconfig',
+   # 'sphinx.ext.viewcode',
+   # 'sphinx.ext.graphviz',
+   # 'sphinx.ext.inheritance_diagram',
 
 # Make sure the target is unique
 autosectionlabel_prefix_document = True
