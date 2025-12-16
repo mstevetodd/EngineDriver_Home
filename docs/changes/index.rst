@@ -17,36 +17,7 @@ Changes / Updates
 Production Changes
 --------------------------------------------
 
-Changes included in Engine Driver Production version **2.40.203**:
-
-* Move to AndroidX libraries
-* Support for ESU MC II/Pro
-* Preference to use large toolbar buttons. Defaults to large on screens >= 6.7"/17cm.
-* Bug fixes for the Semi-Realistic Throttle
-* Changed the location permission warnings to a toast message
-* Add option to the ED icon on the Action Bar, to return to the Throttle screen. This will be enabled by default on new installs
-* Changes to the Original, Colourful and Dark themes to make the buttons more three dimensional
-* Rework of the Select Loco and DCC-EX screens to be more glyph based.
-* Rearranged the Select Loco page for better fit of non-English text. (primarily German)
-* New 'G' command for keyboard gamepad type to force a function even if it is momentary
-* When you change throttle layouts, and the new layout supports a range of throttles, Engine Driver will ask for the number.
-* Send additional resync requests after DCC-EX reconnect
-* DCC-EX Pref to sequence item requests
-* Bug fix for F0-F9 on some systems - Removed leading zero from FKey id when sending
-* Bug fix for Immersive mode
-* Cleanup of the Horizontal Throttle layouts. Fixing some height issues
-* Only redraw Route list if actually changed
-* Bug fix for Non-English 'Auto' connection protocol option
-* Separate warning from when the 'Use Location' service is disabled (as different to no WiFi)
-* Fixes and changes to the Children's Timer. Added Kiosk mode option.
-* New preference to send a single throttle EStop on long press of the stop button
-* Added ability to share the log files, or any file from ED's scoped (private) storage
-* Added ability to share any file to ED's scoped (private) storage
-
-Beta Changes
---------------------------------------------
-
-Changes included in Engine Driver Beta version **2.41.215**:
+Changes included in Engine Driver Production version **2.41.215**:
 
   * Last version of Engine Driver to support Android 4.x
   * Fix for Switching Throttle layouts going back to the connection screen
@@ -65,6 +36,12 @@ Changes included in Engine Driver Beta version **2.41.215**:
   * New preference to use the WiThrottle 'd'ispatch command instead of the 'r'elease command when releasing a loco
   * Search feature added to Preferences
   * Initial Chinese translations by jsky8785
+
+Beta Changes
+--------------------------------------------
+
+none yet
+
 
 Complete ChangeLog
 --------------------------------------------
