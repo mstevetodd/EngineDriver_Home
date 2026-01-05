@@ -391,8 +391,24 @@
 <li class="toctree-l3"><a class="reference internal" href="../operation/gamepads.html#remapping-gamepad-buttons">Remapping gamepad buttons</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/gamepads.html#multiple-gamepads">Multiple gamepads</a></li>
 <li class="toctree-l3"><a class="reference internal" href="../operation/gamepads.html#example-gamepads">Example Gamepads</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../operation/gamepads.html#tested-gamepads">Tested Gamepads</a></li>
-<li class="toctree-l4"><a class="reference internal" href="../operation/gamepads.html#not-recommended-gamepads">Not Recommended Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/gamepads.html#tested-gamepads">Tested Gamepads</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#mocute-032">Mocute 032</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#magicseer1">MagicSeeR1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#flydigi-wee-2">Flydigi Wee 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#utopia-360">Utopia 360</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#diy-arduino-esp32-keypad-rotary-encoder">DIY Arduino ESP32 + keypad + Rotary Encoder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#normal-keyboard">Normal Keyboard</a></li>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#usb-volume-dial">USB Volume dial</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/gamepads.html#future-support-planned">Future Support Planned</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#xbox-360-controller">XBOX 360 Controller</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="../operation/gamepads.html#not-recommended-gamepads">Not Recommended Gamepads</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../operation/gamepads.html#vr-box">VR Box</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../operation/gamepads.html#unsupported-gamepads">Unsupported Gamepads</a></li>
 </ul>
 </li>
@@ -831,7 +847,10 @@
 </ul>
 </li>
 <li class="toctree-l3 current"><a class="current reference internal" href="#">Gamepads</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#selecting-a-gamepad-type">Selecting a Gamepad Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#selecting-a-gamepad-type">Selecting a Gamepad Type</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#choose-a-mode-if-applicable">Choose a Mode (if applicable)</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#configuring-the-buttons">Configuring the buttons</a></li>
 </ul>
 </li>
@@ -958,17 +977,26 @@
 <li><p>Utopia 360</p></li>
 <li><p>Auvisio</p></li>
 <li><p>DIY Arduino ESP32 + keypad + Rotary Encoder</p></li>
-<li><p>Normal Keyboard</p>
+<li><p>Normal Keyboard</p></li>
+<li><p>USB Volume dial</p></li>
+<li><p>XBOX 360 Controller (future support planned)</p></li>
+<li><p>VR Box (future support planned)</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference internal" href="../operation/gamepads.html#example-gamepads"><span class="std std-ref">Selecting Gamepads</span></a> for more information.</p>
 </div>
 </li>
 </ul>
+<section id="choose-a-mode-if-applicable">
+<h3>Choose a Mode (if applicable)<a class="headerlink" href="#choose-a-mode-if-applicable" title="Link to this heading"></a></h3>
+<p>Some of the gamepads have multiple modes.  See <a class="reference internal" href="../operation/gamepads.html#example-gamepads"><span class="std std-ref">Selecting Gamepads</span></a> for more information on the modes available for each gamepad.</p>
+<p>Note: not all modes on all gamepads are supported by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>. Some modes reduce the number of buttons that can be used by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
+<p>Each gamepad mode will need to be selected on the gamepad itself, usually by holding down a button while powering on the gamepad.  See the gamepad’s instructions for more information.  For some, like the MagicSee R1, you need to slect the mode every time you turn the device on.</p>
+</section>
 </section>
 <section id="configuring-the-buttons">
 <h2>Configuring the buttons<a class="headerlink" href="#configuring-the-buttons" title="Link to this heading"></a></h2>
-<p>All the buttons, plus the four directions of the DPad, can be set to any of the following actions:</p>
+<p>All the usable buttons, plus the four directions of the DPad, can be set to any of the following actions:</p>
 <ul class="simple">
 <li><p>Emergency Stop <br />Stops all locos controlled by the device only.</p></li>
 <li><p>Stop</p></li>
@@ -1020,6 +1048,7 @@
 <li><p>Increase Load (Semi-Realistic Throttle layout only)</p></li>
 <li><p>Decrease Load (Semi-Realistic Throttle layout only)</p></li>
 </ul>
+<p>Note: for some gamepads, not all the buttons are able to be used by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
 </section>
 </section>
 
@@ -1041,7 +1070,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f46c9101510>
+    <jinja2.runtime.BlockReference object at 0x7f283b86b0d0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

@@ -122,7 +122,8 @@ Tested Gamepads
 
 These are the gamepads that we have had the most success with…
 
-**Mocute 032**
+Mocute 032
+~~~~~~~~~~
 
 .. warning:: 
   :class: warning-float-right
@@ -137,7 +138,8 @@ Their build quality is not poor, which is reflected in the price, so don't expec
 
 These have been most successful when set to **MTK mode** (see above).  Hovever some newer versions of the device seem to be incapable of changing to MTK mode, so try the game mode if you have problems.
 
-**MagicSeeR1**
+MagicSeeR1
+~~~~~~~~~~
 
 .. image:: ../_static/images/gamepads/bt_controller2.png
    :scale: 40 %
@@ -145,21 +147,24 @@ These have been most successful when set to **MTK mode** (see above).  Hovever s
 This one has been very successful, **but you need to re-select 'mode B' every time you switch it on.**  
 These seem to be a better quality than the one above, but are more expensive.
 
-**Flydigi Wee 2**
+Flydigi Wee 2
+~~~~~~~~~~~~~~
 
 .. image:: ../_static/images/gamepads/flydigi_wee_2.png
    :scale: 40 %
 
 This has been successful.
 
-**Utopia 360**
+Utopia 360
+~~~~~~~~~~
 
 .. image:: ../_static/images/gamepads/utopia_360.png
    :scale: 75 %
 
 This has been successful with the 'Android C' mode.
 
-**DIY Arduino ESP32 + keypad + Rotary Encoder**
+DIY Arduino ESP32 + keypad + Rotary Encoder
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 This is a DIY gamepad with a keypad and physical dial.
 
@@ -168,11 +173,32 @@ This is a DIY gamepad with a keypad and physical dial.
 
   See https://github.com/flash62au/WiTcontroller for details.
 
-**Normal Keyboard**
+Normal Keyboard
+~~~~~~~~~~~~~~~~
 
 This has been successful.  See below for the keystroke meanings when using a keyboard.
 
 Note: In the gamepad test screen, just select 'Skip' to use the keyboard.
+
+USB Volume dial
+~~~~~~~~~~~~~~~~~
+
+Various USB or Bluetooth volume dials have been found to work successfully as a gamepad for controlling speed. 
+
+Volume dials will work without any special configuration because |ED| always had the ability to change loco speed with any volume control.  But if you select the 'USB Volume dial' as a gamepad type, you will have the ability to remap any additional buttons that come with the dial.
+
+Future Support Planned
+^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: ../_static/images/gamepads/xbox.png
+   :scale: 45 %
+
+XBOX 360 Controller
+~~~~~~~~~~~~~~~~~~~
+
+Support for this gamepad will be added in future releases.  (It is currently in the Alpha builds.)
+
+Note: not all the buttons are able to be used.
 
 
 Not Recommended Gamepads
@@ -180,18 +206,22 @@ Not Recommended Gamepads
 
 These work, but have issues which make them not recommended. 
 
-* none currently identified
-
-Unsupported Gamepads
-^^^^^^^^^^^^^^^^^^^^
-
-**VR Box**
+VR Box
+~~~~~~~
 
 Support for this type of gamepad was removed from |ed| as the device was so unreliable. (Mine had a bad solder join that I was able to fix.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
+
+Support for Mode B on this gamepad will be re-added in future releases.  (It is currently in the Alpha builds.)
+
+With VR Box Mode B it is important to enable the 'Ignore Joystick Actions' preference, as the DPad/joystick sends both joystick events and keystroke events, which interfere with each other.
 
 .. image:: ../_static/images/gamepads/vrbox2.png
    :scale: 90 %
 
+Unsupported Gamepads
+^^^^^^^^^^^^^^^^^^^^
+
+* none currently identified
 
 
 Keyboard Commands

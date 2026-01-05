@@ -391,8 +391,24 @@
 <li class="toctree-l3"><a class="reference internal" href="#remapping-gamepad-buttons">Remapping gamepad buttons</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#multiple-gamepads">Multiple gamepads</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#example-gamepads">Example Gamepads</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#tested-gamepads">Tested Gamepads</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#not-recommended-gamepads">Not Recommended Gamepads</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tested-gamepads">Tested Gamepads</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#mocute-032">Mocute 032</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#magicseer1">MagicSeeR1</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#flydigi-wee-2">Flydigi Wee 2</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#utopia-360">Utopia 360</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#diy-arduino-esp32-keypad-rotary-encoder">DIY Arduino ESP32 + keypad + Rotary Encoder</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#normal-keyboard">Normal Keyboard</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#usb-volume-dial">USB Volume dial</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#future-support-planned">Future Support Planned</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#xbox-360-controller">XBOX 360 Controller</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#not-recommended-gamepads">Not Recommended Gamepads</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#vr-box">VR Box</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="#unsupported-gamepads">Unsupported Gamepads</a></li>
 </ul>
 </li>
@@ -831,7 +847,10 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="../configuration/gamepads.html">Gamepads</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="../configuration/gamepads.html#selecting-a-gamepad-type">Selecting a Gamepad Type</a></li>
+<li class="toctree-l4"><a class="reference internal" href="../configuration/gamepads.html#selecting-a-gamepad-type">Selecting a Gamepad Type</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="../configuration/gamepads.html#choose-a-mode-if-applicable">Choose a Mode (if applicable)</a></li>
+</ul>
+</li>
 <li class="toctree-l4"><a class="reference internal" href="../configuration/gamepads.html#configuring-the-buttons">Configuring the buttons</a></li>
 </ul>
 </li>
@@ -957,12 +976,31 @@
 <li><p><a class="reference internal" href="#multiple-gamepads" id="id5">Multiple gamepads</a></p></li>
 <li><p><a class="reference internal" href="#example-gamepads" id="id6">Example Gamepads</a></p>
 <ul>
-<li><p><a class="reference internal" href="#tested-gamepads" id="id7">Tested Gamepads</a></p></li>
-<li><p><a class="reference internal" href="#not-recommended-gamepads" id="id8">Not Recommended Gamepads</a></p></li>
-<li><p><a class="reference internal" href="#unsupported-gamepads" id="id9">Unsupported Gamepads</a></p></li>
+<li><p><a class="reference internal" href="#tested-gamepads" id="id7">Tested Gamepads</a></p>
+<ul>
+<li><p><a class="reference internal" href="#mocute-032" id="id8">Mocute 032</a></p></li>
+<li><p><a class="reference internal" href="#magicseer1" id="id9">MagicSeeR1</a></p></li>
+<li><p><a class="reference internal" href="#flydigi-wee-2" id="id10">Flydigi Wee 2</a></p></li>
+<li><p><a class="reference internal" href="#utopia-360" id="id11">Utopia 360</a></p></li>
+<li><p><a class="reference internal" href="#diy-arduino-esp32-keypad-rotary-encoder" id="id12">DIY Arduino ESP32 + keypad + Rotary Encoder</a></p></li>
+<li><p><a class="reference internal" href="#normal-keyboard" id="id13">Normal Keyboard</a></p></li>
+<li><p><a class="reference internal" href="#usb-volume-dial" id="id14">USB Volume dial</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#keyboard-commands" id="id10">Keyboard Commands</a></p></li>
+<li><p><a class="reference internal" href="#future-support-planned" id="id15">Future Support Planned</a></p>
+<ul>
+<li><p><a class="reference internal" href="#xbox-360-controller" id="id16">XBOX 360 Controller</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#not-recommended-gamepads" id="id17">Not Recommended Gamepads</a></p>
+<ul>
+<li><p><a class="reference internal" href="#vr-box" id="id18">VR Box</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#unsupported-gamepads" id="id19">Unsupported Gamepads</a></p></li>
+</ul>
+</li>
+<li><p><a class="reference internal" href="#keyboard-commands" id="id20">Keyboard Commands</a></p></li>
 </ul>
 </nav>
 </aside>
@@ -1075,7 +1113,8 @@ Other devices require similar steps, but the mechanism to change the <code class
 <section id="tested-gamepads">
 <h3><a class="toc-backref" href="#id7" role="doc-backlink">Tested Gamepads</a><a class="headerlink" href="#tested-gamepads" title="Link to this heading"></a></h3>
 <p>These are the gamepads that we have had the most success with…</p>
-<p><strong>Mocute 032</strong></p>
+<section id="mocute-032">
+<h4><a class="toc-backref" href="#id8" role="doc-backlink">Mocute 032</a><a class="headerlink" href="#mocute-032" title="Link to this heading"></a></h4>
 <div class="warning-float-right admonition warning">
 <p class="admonition-title">Warning</p>
 <p>The <strong>Mocute 032</strong> gamepads are of questionable quality and durability, and may not last long.  We recommend the <strong>MagicSeeR1</strong> gamepad instead.</p>
@@ -1084,42 +1123,71 @@ Other devices require similar steps, but the mechanism to change the <code class
 <p>They are available from a variety of different sellers on eBay and elsewhere.
 Their build quality is not poor, which is reflected in the price, so don’t expect a long life from them.</p>
 <p>These have been most successful when set to <strong>MTK mode</strong> (see above).  Hovever some newer versions of the device seem to be incapable of changing to MTK mode, so try the game mode if you have problems.</p>
-<p><strong>MagicSeeR1</strong></p>
+</section>
+<section id="magicseer1">
+<h4><a class="toc-backref" href="#id9" role="doc-backlink">MagicSeeR1</a><a class="headerlink" href="#magicseer1" title="Link to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/bt_controller2.png"><img alt="../_images/bt_controller2.png" src="../_images/bt_controller2.png" style="width: 218.8px; height: 203.60000000000002px;" /></a>
 <p>This one has been very successful, <strong>but you need to re-select ‘mode B’ every time you switch it on.</strong>
 These seem to be a better quality than the one above, but are more expensive.</p>
-<p><strong>Flydigi Wee 2</strong></p>
+</section>
+<section id="flydigi-wee-2">
+<h4><a class="toc-backref" href="#id10" role="doc-backlink">Flydigi Wee 2</a><a class="headerlink" href="#flydigi-wee-2" title="Link to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/flydigi_wee_2.png"><img alt="../_images/flydigi_wee_2.png" src="../_images/flydigi_wee_2.png" style="width: 254.0px; height: 148.8px;" /></a>
 <p>This has been successful.</p>
-<p><strong>Utopia 360</strong></p>
+</section>
+<section id="utopia-360">
+<h4><a class="toc-backref" href="#id11" role="doc-backlink">Utopia 360</a><a class="headerlink" href="#utopia-360" title="Link to this heading"></a></h4>
 <a class="reference internal image-reference" href="../_images/utopia_360.png"><img alt="../_images/utopia_360.png" src="../_images/utopia_360.png" style="width: 255.75px; height: 129.0px;" /></a>
 <p>This has been successful with the ‘Android C’ mode.</p>
-<p><strong>DIY Arduino ESP32 + keypad + Rotary Encoder</strong></p>
+</section>
+<section id="diy-arduino-esp32-keypad-rotary-encoder">
+<h4><a class="toc-backref" href="#id12" role="doc-backlink">DIY Arduino ESP32 + keypad + Rotary Encoder</a><a class="headerlink" href="#diy-arduino-esp32-keypad-rotary-encoder" title="Link to this heading"></a></h4>
 <p>This is a DIY gamepad with a keypad and physical dial.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>See <a class="reference external" href="https://github.com/flash62au/WiTcontroller">https://github.com/flash62au/WiTcontroller</a> for details.</p>
 </div>
-<p><strong>Normal Keyboard</strong></p>
+</section>
+<section id="normal-keyboard">
+<h4><a class="toc-backref" href="#id13" role="doc-backlink">Normal Keyboard</a><a class="headerlink" href="#normal-keyboard" title="Link to this heading"></a></h4>
 <p>This has been successful.  See below for the keystroke meanings when using a keyboard.</p>
 <p>Note: In the gamepad test screen, just select ‘Skip’ to use the keyboard.</p>
 </section>
+<section id="usb-volume-dial">
+<h4><a class="toc-backref" href="#id14" role="doc-backlink">USB Volume dial</a><a class="headerlink" href="#usb-volume-dial" title="Link to this heading"></a></h4>
+<p>Various USB or Bluetooth volume dials have been found to work successfully as a gamepad for controlling speed.</p>
+<p>Volume dials will work without any special configuration because <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> always had the ability to change loco speed with any volume control.  But if you select the ‘USB Volume dial’ as a gamepad type, you will have the ability to remap any additional buttons that come with the dial.</p>
+</section>
+</section>
+<section id="future-support-planned">
+<h3><a class="toc-backref" href="#id15" role="doc-backlink">Future Support Planned</a><a class="headerlink" href="#future-support-planned" title="Link to this heading"></a></h3>
+<a class="reference internal image-reference" href="../_images/xbox.png"><img alt="../_images/xbox.png" src="../_images/xbox.png" style="width: 323.55px; height: 235.8px;" /></a>
+<section id="xbox-360-controller">
+<h4><a class="toc-backref" href="#id16" role="doc-backlink">XBOX 360 Controller</a><a class="headerlink" href="#xbox-360-controller" title="Link to this heading"></a></h4>
+<p>Support for this gamepad will be added in future releases.  (It is currently in the Alpha builds.)</p>
+<p>Note: not all the buttons are able to be used.</p>
+</section>
+</section>
 <section id="not-recommended-gamepads">
-<h3><a class="toc-backref" href="#id8" role="doc-backlink">Not Recommended Gamepads</a><a class="headerlink" href="#not-recommended-gamepads" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id17" role="doc-backlink">Not Recommended Gamepads</a><a class="headerlink" href="#not-recommended-gamepads" title="Link to this heading"></a></h3>
 <p>These work, but have issues which make them not recommended.</p>
+<section id="vr-box">
+<h4><a class="toc-backref" href="#id18" role="doc-backlink">VR Box</a><a class="headerlink" href="#vr-box" title="Link to this heading"></a></h4>
+<p>Support for this type of gamepad was removed from <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> as the device was so unreliable. (Mine had a bad solder join that I was able to fix.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.</p>
+<p>Support for Mode B on this gamepad will be re-added in future releases.  (It is currently in the Alpha builds.)</p>
+<p>With VR Box Mode B it is important to enable the ‘Ignore Joystick Actions’ preference, as the DPad/joystick sends both joystick events and keystroke events, which interfere with each other.</p>
+<a class="reference internal image-reference" href="../_images/vrbox2.png"><img alt="../_images/vrbox2.png" src="../_images/vrbox2.png" style="width: 278.1px; height: 109.8px;" /></a>
+</section>
+</section>
+<section id="unsupported-gamepads">
+<h3><a class="toc-backref" href="#id19" role="doc-backlink">Unsupported Gamepads</a><a class="headerlink" href="#unsupported-gamepads" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>none currently identified</p></li>
 </ul>
 </section>
-<section id="unsupported-gamepads">
-<h3><a class="toc-backref" href="#id9" role="doc-backlink">Unsupported Gamepads</a><a class="headerlink" href="#unsupported-gamepads" title="Link to this heading"></a></h3>
-<p><strong>VR Box</strong></p>
-<p>Support for this type of gamepad was removed from <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> as the device was so unreliable. (Mine had a bad solder join that I was able to fix.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.</p>
-<a class="reference internal image-reference" href="../_images/vrbox2.png"><img alt="../_images/vrbox2.png" src="../_images/vrbox2.png" style="width: 278.1px; height: 109.8px;" /></a>
-</section>
 </section>
 <section id="keyboard-commands">
-<h2><a class="toc-backref" href="#id10" role="doc-backlink">Keyboard Commands</a><a class="headerlink" href="#keyboard-commands" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id20" role="doc-backlink">Keyboard Commands</a><a class="headerlink" href="#keyboard-commands" title="Link to this heading"></a></h2>
 <p>For use when <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code> is selected as the gamepad type:</p>
 <ul class="simple">
 <li><p><span class="guilabel">Up</span> or <span class="guilabel">Page Up</span> or <span class="guilabel">+</span> or <span class="guilabel">=</span> = Increase Speed</p></li>
@@ -1181,7 +1249,7 @@ These seem to be a better quality than the one above, but are more expensive.</p
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f46c90aba90>
+    <jinja2.runtime.BlockReference object at 0x7f283c553e20>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
