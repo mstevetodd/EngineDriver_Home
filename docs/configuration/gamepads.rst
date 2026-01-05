@@ -19,16 +19,28 @@ Choose a gamepad type in the :ref:`Gamepad type <configuration/preferences:gamep
 * Auvisio
 * DIY Arduino ESP32 + keypad + Rotary Encoder
 * Normal Keyboard
+* USB Volume dial
+* XBOX 360 Controller (future support planned)
+* VR Box (future support planned)
  
   .. note:: 
     :class: note-ed-hidden-title
 
     See :ref:`Selecting Gamepads <operation/gamepads:example gamepads>` for more information.
 
+Choose a Mode (if applicable)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Some of the gamepads have multiple modes.  See :ref:`Selecting Gamepads <operation/gamepads:example gamepads>` for more information on the modes available for each gamepad.
+
+Note: not all modes on all gamepads are supported by |ED|. Some modes reduce the number of buttons that can be used by |ED|.
+
+Each gamepad mode will need to be selected on the gamepad itself, usually by holding down a button while powering on the gamepad.  See the gamepad's instructions for more information.  For some, like the MagicSee R1, you need to slect the mode every time you turn the device on.
+
 Configuring the buttons
 ^^^^^^^^^^^^^^^^^^^^^^^
 
-All the buttons, plus the four directions of the DPad, can be set to any of the following actions:
+All the usable buttons, plus the four directions of the DPad, can be set to any of the following actions:
 
 * Emergency Stop |BR|\ Stops all locos controlled by the device only.
 * Stop
@@ -79,3 +91,5 @@ All the buttons, plus the four directions of the DPad, can be set to any of the 
 * Decrease Brake (Semi-Realistic Throttle layout only)
 * Increase Load (Semi-Realistic Throttle layout only)
 * Decrease Load (Semi-Realistic Throttle layout only)
+
+Note: for some gamepads, not all the buttons are able to be used by |ED|.
