@@ -20,8 +20,6 @@ Connecting your Gamepad
 The following instructions work for the **Mocute 032** and **MagicSeeR1** gamepads. 
 Other devices require similar steps, but the mechanism to change the ``mode`` may be different. 
 
-|force-break|
-
 .. warning:: 
   :class: warning-float-right
 
@@ -98,8 +96,7 @@ Multiple gamepads
 
 |ed| supports up to 4 gamepads at the same time.  All the gamepads must be of the same type.
 
-
-As you connect each gamepad, you will be force to go to the gamepad test screen.  The new gamepad will be automatically assigned to the next throttle that does not have a gamepad assigned to it.
+As you connect each gamepad, you will be forced to go to the gamepad test screen (unleess you have disabled the 'Enforce gamepad testing?' preference).  The new gamepad will be automatically assigned to the next throttle that does not have a gamepad assigned to it.
 
 An indicator ``1``, ``2`` etc. will show near the throttle speed to indicate which throttle each gamepad is controlling.  Only one gamepad can be active on a single throttle at one time.
 
@@ -134,9 +131,9 @@ Mocute 032
    :scale: 50 %
 
 They are available from a variety of different sellers on eBay and elsewhere. 
-Their build quality is not poor, which is reflected in the price, so don't expect a long life from them.
+Their build quality is very poor, which is reflected in the price, so don't expect a long life from them.
 
-These have been most successful when set to **MTK mode** (see above).  Hovever some newer versions of the device seem to be incapable of changing to MTK mode, so try the game mode if you have problems.
+These have been most successful when set to **MTK mode** (see above).  Hovever some newer versions of the device seem to be incapable of changing to MTK mode, so try the 'game' mode if you have problems.
 
 MagicSeeR1
 ~~~~~~~~~~
@@ -144,8 +141,8 @@ MagicSeeR1
 .. image:: ../_static/images/gamepads/bt_controller2.png
    :scale: 40 %
 
-This one has been very successful, **but you need to re-select 'mode B' every time you switch it on.**  
-These seem to be a better quality than the one above, but are more expensive.
+This one has been very successful on Mode B, **but you need to re-select 'mode B' every time you switch it on.**  
+These seem to be a far better quality than the one above, but are more expensive.
 
 Flydigi Wee 2
 ~~~~~~~~~~~~~~
@@ -199,7 +196,6 @@ XBOX 360 Controller
 Support for this gamepad will be added in future releases.  (It is currently in the Alpha builds.)
 
 Note: not all the buttons are able to be used.
-
 
 Not Recommended Gamepads
 ^^^^^^^^^^^^^^^^^^^^^^^^

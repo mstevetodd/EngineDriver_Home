@@ -428,7 +428,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#other-configuration">Other Configuration</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#updating-engine-driver-on-the-esu-mobile-control-pro">Updating Engine Driver on the ESU Mobile Control Pro</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#updating-engine-driver-on-the-esu-mobile-control-pro">Updating Engine Driver on the ESU Mobile Control Pro</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#instructions">instructions</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#alternate-instructions">Alternate instructions</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="advanced.html">Advanced Operation</a><ul>
@@ -985,7 +989,12 @@
 <li><p><a class="reference internal" href="#other-configuration" id="id8">Other Configuration</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#updating-engine-driver-on-the-esu-mobile-control-pro" id="id9">Updating Engine Driver on the ESU Mobile Control Pro</a></p></li>
+<li><p><a class="reference internal" href="#updating-engine-driver-on-the-esu-mobile-control-pro" id="id9">Updating Engine Driver on the ESU Mobile Control Pro</a></p>
+<ul>
+<li><p><a class="reference internal" href="#instructions" id="id10">instructions</a></p></li>
+<li><p><a class="reference internal" href="#alternate-instructions" id="id11">Alternate instructions</a></p></li>
+</ul>
+</li>
 </ul>
 </nav>
 </aside>
@@ -1071,8 +1080,32 @@ In addition, you can use the Stop button to pause the currently operated train, 
 <hr class="docutils" />
 <section id="updating-engine-driver-on-the-esu-mobile-control-pro">
 <h2><a class="toc-backref" href="#id9" role="doc-backlink">Updating Engine Driver on the ESU Mobile Control Pro</a><a class="headerlink" href="#updating-engine-driver-on-the-esu-mobile-control-pro" title="Link to this heading"></a></h2>
-<p>The ESU Mobile Control Pro is currently being shipped with a version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.</p>
-<p>These instructions will allow you to update the app on the device from one of the APKs on this website.  Note that currently only the <code class="docutils literal notranslate"><span class="pre">EngineDriver-2.40.202.apk</span> <span class="pre">(Beta)</span></code>, or later, is compatible with the <strong>ESU Mobile Control Pro</strong>. (This version is also available on the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> but only if you sign up for the Beta program.  This should be made a production release soon.)</p>
+<p>The ESU Mobile Control Pro was initally shipped with a version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.  (This should be fixed in the current production releases of the device.)</p>
+<p>These instructions will allow you to update the app on the device from one of the APKs on this website.  Note that currently only the <code class="docutils literal notranslate"><span class="pre">EngineDriver-2.40.203.apk</span></code>, or later, is compatible with the <strong>ESU Mobile Control Pro</strong>. (Version 2.40.215 and later are available on the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> or the installed <strong>Aurora Store</strong> app.)</p>
+<section id="instructions">
+<h3><a class="toc-backref" href="#id10" role="doc-backlink">instructions</a><a class="headerlink" href="#instructions" title="Link to this heading"></a></h3>
+<ol class="arabic simple">
+<li><p>Update the <strong>MC Pro App</strong> to the latest version (at least version 2.0.8) first. <br /> (Cick the Burger-Menu (the three bars, not three dots) -&gt; App Settings -&gt; Check for updates)</p></li>
+<li><p>Run the <strong>MC Pro App</strong>, and click the Burger-Menu (the three bars).</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/esu_mcpro_update_1.jpg"><img alt="../_images/esu_mcpro_update_1.jpg" src="../_images/esu_mcpro_update_1.jpg" style="width: 156.75px; height: 264.0px;" /></a>
+<ol class="arabic simple" start="3">
+<li><p>Select the last entry “App settings”</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/esu_mcpro_update_2.png"><img alt="../_images/esu_mcpro_update_2.png" src="../_images/esu_mcpro_update_2.png" style="width: 158.4px; height: 266.64px;" /></a>
+<ol class="arabic simple" start="4">
+<li><p>Select “About Mobile Control”</p></li>
+</ol>
+<a class="reference internal image-reference" href="../_images/esu_mcpro_update_3.png"><img alt="../_images/esu_mcpro_update_3.png" src="../_images/esu_mcpro_update_3.png" style="width: 158.4px; height: 266.64px;" /></a>
+<ol class="arabic simple" start="5">
+<li><p>Select “REMOVE LEGACY ENGINE DRIVER APP”</p></li>
+</ol>
+<p>This will delete the old app from the device.</p>
+<p>After a reboot, it will be gone. You can then download the latest version using the <strong>Aurora Store</strong> that is installed on the device <br /> <em>OR</em> you can download the latest <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> apk from the <a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install"><span class="std std-ref">downloads page</span></a></p>
+</section>
+<section id="alternate-instructions">
+<h3><a class="toc-backref" href="#id11" role="doc-backlink">Alternate instructions</a><a class="headerlink" href="#alternate-instructions" title="Link to this heading"></a></h3>
+<p>This appraoch will work if the instructions above do not work for you, but should only be used as a last resort.</p>
 <ol class="arabic">
 <li><p>You need to download a copy of <code class="docutils literal notranslate"><span class="pre">adb.exe</span></code>    (e.g. <a class="reference external" href="https://developer.android.com/tools/releases/platform-tools">https://developer.android.com/tools/releases/platform-tools</a> )</p></li>
 <li><p>Then open a terminal (<code class="docutils literal notranslate"><span class="pre">cmd</span></code> or <code class="docutils literal notranslate"><span class="pre">powershell</span></code>) and navigate to the directory where adb.exe is located.</p>
@@ -1113,11 +1146,12 @@ $ reboot
 </ol>
 <blockquote>
 <div><ul class="simple">
-<li><p>Open the Chrome browser on the MC Pro</p></li>
-<li><p>Navigate to the Engine Driver downloads page: <a class="reference external" href="https://www.jmri.org/downloads">https://www.jmri.org/downloads</a></p></li>
+<li><p>Open the Chrome browser on the <strong>MC Pro</strong></p></li>
+<li><p>Navigate to the <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> <a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install"><span class="std std-ref">downloads page</span></a></p></li>
 <li><p>click the .APK you wish to download</p></li>
 </ul>
 </div></blockquote>
+</section>
 </section>
 </section>
 
@@ -1139,7 +1173,7 @@ $ reboot
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f283af82e60>
+    <jinja2.runtime.BlockReference object at 0x7f4a6c8757e0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
