@@ -112,39 +112,58 @@ Updating Engine Driver on the ESU Mobile Control Pro
 
 The ESU Mobile Control Pro was initally shipped with a version of |ED| pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.  (This should be fixed in the current production releases of the device.)
 
-These instructions will allow you to update the app on the device from one of the APKs on this website.  Note that currently only the ``EngineDriver-2.40.203.apk``, or later, is compatible with the **ESU Mobile Control Pro**. (Version 2.40.215 and later are available on the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or the installed **Aurora Store** app.)
+These instructions will allow you to update the app on the device from the **Aurora Store** or one of the :ref:`APKs <downloads/index:older or other versions - manual install>` on this website.  
 
-instructions
+Note that currently only the ``EngineDriver-2.40.203.apk``, or later, is compatible with the **ESU Mobile Control Pro**. (Version 2.40.215 and later are available on the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or the from the installed **Aurora Store** app.)
+
+Instructions
 -------------
 
-1. Update the **MC Pro App** to the latest version (at least version 2.0.8) first. |BR| (Cick the Burger-Menu (the three bars, not three dots) -> App Settings -> Check for updates)
-2. Run the **MC Pro App**, and click the Burger-Menu (the three bars).
+1. Update the **MC Pro App** to the latest version (at least version 2.0.8) first. 
+
+  In the **MC Pro App** 
+  
+  a) Connect to a server as normal, or select 'Demo mode' from the Overflow Menu (three dots) in the top-right corner.
+  b) Cick the Burger-Menu (the three bars, not the three dots) 
+  c) Then "App Settings"
+  d) Then "Check for updates"
+
+2. Run the **MC Pro App**, 
+
+3. Connect to a server as normal, or select 'Demo mode' from the Overflow Menu (three dots) in the top-right corner.
+
+4. Click the Burger-Menu (the three bars).
  
 .. image:: ../_static/images/esu_mcii/esu_mcpro_update_1.jpg
    :scale: 33 %
 
-3. Select the last entry "App settings"
+5. Select the last entry "App settings"
  
 .. image:: ../_static/images/esu_mcii/esu_mcpro_update_2.png
    :scale: 33 %
 
-4. Select "About Mobile Control"
+6. Select "About Mobile Control"
 
 .. image:: ../_static/images/esu_mcii/esu_mcpro_update_3.png
    :scale: 33 %
 
-5. Select "REMOVE LEGACY ENGINE DRIVER APP"
+7. Select "REMOVE LEGACY ENGINE DRIVER APP"
 
-This will delete the old app from the device. 
+  This will delete the old app from the device. 
 
-After a reboot, it will be gone. You can then download the latest version using the **Aurora Store** that is installed on the device |br| *OR* you can download the latest |ED| apk from the :ref:`downloads page <downloads/index:older or other versions - manual install>`
+8. Reboot the **MC Pro**.
+
+  After a reboot, it will be gone. 
+
+You can then download the latest version using the **Aurora Store** that is installed on the the **MC Pro** (Search for "Engine Driver Throttle") 
+
+*OR* You can download the latest |ED| .apk from the :ref:`downloads page <downloads/index:older or other versions - manual install>` on this website using the Chrome browser on the **MC Pro**.
  
-
 
 Alternate instructions
 -----------------------
 
-This appraoch will work if the instructions above do not work for you, but should only be used as a last resort.
+The following appraoch will work if the instructions above do not work for you, but should only be used as a last resort.
 
 1. You need to download a copy of ``adb.exe``    (e.g. https://developer.android.com/tools/releases/platform-tools )
 
