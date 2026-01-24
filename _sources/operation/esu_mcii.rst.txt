@@ -163,7 +163,7 @@ You can then download the latest version using the **Aurora Store** that is inst
 Alternate instructions
 -----------------------
 
-The following approach will work if the instructions above do not work for you, but should only be used as a last resort.
+The following approach will work if the instructions above do not work for you.
 
 1. You need to download a copy of ``adb.exe``    (e.g. https://developer.android.com/tools/releases/platform-tools )
 
