@@ -32,7 +32,8 @@ Android Device/Phone
    :scale: 15%
    :align: right
 
-|ed| will work on most Android devices (Phones and Tablets) made in the last 8-9 years. Currently it has a minSDKVersion 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN) but Android versions greater than 5.0 are recommended. Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
+|ed| will work on most Android devices (Phones and Tablets) made in the last 7-8 years. Currently it has a minSDKVersion 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN) but Android versions greater than 5.0 are recommended as support for version 4.x will be dropped in the next production release. Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
+Note that the current beta version of |ED| requires Android 5.0 or greater.  
 
 A number of :ref:`permissions <about/privacy-policy:required permissions>` are required to be granted to |ED| for it to function at its best, but as of Version 2.40.200 it will generally work without any additional permissions.
 
