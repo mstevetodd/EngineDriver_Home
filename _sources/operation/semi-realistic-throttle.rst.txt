@@ -62,8 +62,8 @@ Example: SRT throttle with decoder momentum
 * Operator increases or decreases the speed control,
 * The |SRT| moderates the speed commands sent to the loco based on the Load, Brake (and other) settings of the |SRT| with the result that the loco sees speed commands that increase and decrease gradually over time,
 * Depending on the decoder momentum settings; 
-   * If the decoder momentum settings are more extreme than the |SRT|, the loco's physical speed increases or decreases more even more slowly than in the Normal throttle case because the decoder momentum is being applied to the slower speed commands coming from the |SRT|.
-   * If the decoder momentum setting are less than the |SRT|, the loco's physical speed increases or decreases as pre the setting in the |SRT|,
+   * If the decoder momentum settings are more extreme than the |SRT|, the loco's physical speed increases or decreases even more more slowly than in the Normal throttle case because the decoder momentum is being applied to the slower speed commands coming from the |SRT|.
+   * If the decoder momentum setting are less than the |SRT|, the loco's physical speed increases or decreases as per the setting in the |SRT|,
 
 Example: SRT throttle with no, or little, decoder momentum
 ----------------------------------------------------------

@@ -145,6 +145,7 @@ Supported localisations are:
 * French (CA)
 * German (DE)
 * German (AT / CH / LI)
+* Chinese (CN)
 * Portuguese
 
 Left/Right Swipe Preferences
@@ -351,6 +352,10 @@ Throttle Screen Layout
     * - .. image:: ../_static/images/screenshots/throttle_simple_high_contrast.png 
           :scale: 8%
       - Simple
+    * - 
+      - Tablet Vertical Left 
+    * - 
+      - Tablet Switching Left |BR| Tablet Shunting Left 
     * - .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png 
           :scale: 8%
       - Semi-Realistic 
@@ -372,9 +377,10 @@ Only available for the following Throttle Screen Layouts:
 * Horizontal (1-3)
 * Horizontal Shunting / Horizontal Switching (1-3)
 * Simple (1-6)
+* Tablet Vertical Left (1-6)
+* Tablet Switching Left / Tablet Shunting Left (1-6)
 
-All other layouts will automatically change this preference to the fixed number for that particular layout.
-
+All other layouts will automatically change this preference to the fixed number for that particular layout and disable the prefernce.
 
 Speed Slider and Buttons Preferences
 """"""""""""""""""""""""""""""""""""
@@ -1745,7 +1751,9 @@ If this preference is enabled, when a gamepad is used for the first time in a se
 ESU Mobile Control 2/Pro Options
 """"""""""""""""""""""""""""""""
 
-The following preferences allow you to change the way a ESU Mobile Control 2/Pro behaves (if connected).
+The following preferences allow you to change the way a **ESU Mobile Control 2** or **ESU Mobile Control Pro** behave (if connected).
+
+Note that since the **ESU Mobile Control 2** uses Android 4.x, from the next production release of |ED| you will need to use an older version of |ED|.  The last version of |ED| that supports Android 4.x is version 2.41.215, which is available from the :ref:`downloads page <downloads/index:older or other versions - manual install>` on this website.
 
 .. contents:: In this Section
     :depth: 1
@@ -1755,7 +1763,7 @@ The following preferences allow you to change the way a ESU Mobile Control 2/Pro
 Device Stop button options
 """"""""""""""""""""""""""
 
-The following preferences allow you to change the way the *Device Stop button* on a ESU MobileControl II behaves (if connected).
+The following preferences allow you to change the way the *Device Stop button* on a ESU MobileControl II/Pro behaves (if connected).
 
 .. contents:: In this Section
     :depth: 1
@@ -1777,7 +1785,7 @@ If this preference is enabled |ED| will respond to a 'short-press' to pause the 
 Device side button options
 """"""""""""""""""""""""""
 
-The following preferences allow you to change the way the *Device Side button* on a ESU MobileControl II behaves (if connected).
+The following preferences allow you to change the way the *Device Side button* on a ESU MobileControl II/Pro behaves (if connected).
 
 .. contents:: In this Section
     :depth: 1
@@ -1832,7 +1840,7 @@ This preference allows you to adjust how long is required between repeats on dev
 Control Knob options
 """""""""""""""""""""""""
 
-The following preferences allow you to change the way the *Control Knob* on a ESU MobileControl II behaves (if connected).
+The following preferences allow you to change the way the *Control Knob* on a ESU MobileControl II/Pro behaves (if connected).
 
 .. contents:: In this Section
     :depth: 1
