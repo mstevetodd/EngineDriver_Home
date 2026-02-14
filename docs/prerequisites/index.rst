@@ -52,6 +52,8 @@ ESU Mobile Control II/Pro
   
   See the `ESU MobileControl 2/Pro <../operation/esu_mcii.html>`_ page for more information.
 
+  Note that since the **ESU Mobile Control 2** uses Android 4.x, from the next production release of |ED| you will need to use an older version of |ED|.
+
 |FORCE-BREAK|
 
 WiThrottle and DCC-EX Native Servers
