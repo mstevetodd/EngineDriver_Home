@@ -40,22 +40,21 @@ Changes included in Engine Driver Production version **2.41.215**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.42.217**:
+Changes included in Engine Driver Beta version **2.42.219**:
 
   * First version to only support Android 5 and above
-  * Added preferences for action bar buttons to navigate between Throttle, Turnouts/Points and Routes
-  * Added preference for medium size toolbar/action bar buttons
-  * Added preference to automatically connect to a specified IP and port, even if it is not discovered
-  * Added preference to start logging immediately after app startup.  Resets itself after use
-  * Added preference to hide the Advanced Consist (CV19) action bar button
-  * Preferences screen now shows the current value of a list or text preference without needing to open it
-  * For DCC-EX automations, you are asked which loco to send on the automation. (Defaults to the currently selected loco if any.)
-  * Reinstated the log and file sharing capability
-  * Added XBox and VRBox Mode B gamepad types support
   * Bug fix for: gamepad calibration; gamepads with the IPLS; F11 in the keyboard gamepad 'type'
+  * Added XBox and VRBox Mode B gamepad types support
+  * Add options for action bar buttons to navigate between Throttle, Turnouts/Points and Routes
+  * Added option for medium size toolbar/action bar buttons
+  * Reinstate the log and file sharing capability
+  * Immersive mode fixes for targetSdk 36 - enforced edge-to-edge mode
+  * Added option to automatically connect to a specified IP and port, even if it is not discovered
   * Visual improvements
-  * Significant behind-the-scenes changes to support targetSdk 36, including enforced edge-to-edge mode
-  * Various other bug fixes and code improvements
+  * Added the missing menu items for Gamepads 4-6
+  * Added localisation files for English (Singapore) and English (India)
+  * Added support for the new DCC-EX EStop Pause/Resume
+  * User chosen background image applied to all common activities
 
 Complete ChangeLog
 --------------------------------------------
