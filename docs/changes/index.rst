@@ -43,18 +43,19 @@ Beta Changes
 Changes included in Engine Driver Beta version **2.42.219**:
 
   * First version to only support Android 5 and above
-  * Bug fix for: gamepad calibration; gamepads with the IPLS; F11 in the keyboard gamepad 'type'
+  * Bug fixes for: multiple gamepads; gamepad calibration; gamepads with the IPLS; F11 in the keyboard gamepad 'type'
+  * DCC-EX Bug fixes for: auto-connect to address and port; handoff dialog;
   * Added XBox and VRBox Mode B gamepad types support
-  * Add options for action bar buttons to navigate between Throttle, Turnouts/Points and Routes
+  * Added options for action bar buttons to navigate between Throttle, Turnouts/Points and Routes
   * Added option for medium size toolbar/action bar buttons
-  * Reinstate the log and file sharing capability
+  * Reinstated the log and file sharing capability
   * Immersive mode fixes for targetSdk 36 - enforced edge-to-edge mode
   * Added option to automatically connect to a specified IP and port, even if it is not discovered
   * Visual improvements
   * Added the missing menu items for Gamepads 4-6
   * Added localisation files for English (Singapore) and English (India)
   * Added support for the new DCC-EX EStop Pause/Resume
-  * User chosen background image applied to all common activities
+  * User chosen background image now applied to all common activities
 
 Complete ChangeLog
 --------------------------------------------
