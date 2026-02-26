@@ -35,7 +35,7 @@ Older or Other Versions - Manual Install
 
 **.apk files:**
 
-* `EngineDriver-2.42.219.apk <../_static/apk/EngineDriver-2.42.219.apk>`_
+* `EngineDriver-2.42.221.apk <../_static/apk/EngineDriver-2.42.221.apk>`_
 * `EngineDriver-2.41.215.apk <../_static/apk/EngineDriver-2.41.215.apk>`_ | Last version to support Android 4.x
 * `EngineDriver-2.40.203.apk <../_static/apk/EngineDriver-2.40.203.apk>`_
 * `EngineDriver-2.39.195.apk <../_static/apk/EngineDriver-2.39.195.apk>`_

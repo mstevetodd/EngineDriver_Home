@@ -40,7 +40,7 @@ Changes included in Engine Driver Production version **2.41.215**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.42.219**:
+Changes included in Engine Driver Beta version **2.42.221**:
 
   * First version to only support Android 5 and above
   * Bug fixes for: multiple gamepads; gamepad calibration; gamepads with the IPLS; F11 in the keyboard gamepad 'type'
@@ -56,6 +56,7 @@ Changes included in Engine Driver Beta version **2.42.219**:
   * Added localisation files for English (Singapore) and English (India)
   * Added support for the new DCC-EX EStop Pause/Resume
   * User chosen background image now applied to all common activities
+  * Fix: Don't send blank rosterName to WiThrottle (caused reconnect loop)
 
 Complete ChangeLog
 --------------------------------------------
