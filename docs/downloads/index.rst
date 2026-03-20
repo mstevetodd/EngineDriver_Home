@@ -16,7 +16,7 @@ Play Store & Downloads
 Production Version
 ------------------
 
-The current Production version (**v2.41.215**) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by direct download of the .apk file below.
+The current Production version (**v2.42.221**) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by direct download of the .apk file below.
 
 Installing from the Play Store is preferred as you will automatically receive updates to the app, as long as your device/phone periodically connects to the internet.
  
