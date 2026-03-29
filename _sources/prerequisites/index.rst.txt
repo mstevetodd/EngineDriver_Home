@@ -53,10 +53,9 @@ ESU Mobile Control Pro
 
 .. note:: 
   
-  Support for the ESU MobileControl II (MCII) was dropped in Version 2.42.222 as it uses Android 4.
+  Support for the **ESU MobileControl II (MCII)** was dropped in Version 2.42.222 as it uses Android 4.
   
   Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
-
 
 |FORCE-BREAK|
 

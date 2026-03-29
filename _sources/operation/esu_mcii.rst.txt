@@ -24,7 +24,7 @@ As the **ESU Mobile Control 2** and **Mobile Control Pro** are built on an Andro
 
 .. note:: 
   
-  Support for the ESU MobileControl II (MCII) was dropped in Version 2.42.222 as it uses Android 4.  Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
+  Support for the **ESU MobileControl 2 (MCII)** was dropped in Version 2.42.222 as it uses Android 4.  Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
 
 Download
 ========
@@ -41,7 +41,7 @@ ESU Mobile Control 2
 
 The **ESU Mobile Control 2** does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install |ed|. You will need to :ref:`download the APK file <downloads/index:older or other versions - manual install>` and install it manually.  
 
-You will need to install a versin prior to 1.5.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as it uses Android 4.
+You will need to install a version prior to 2.42.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as it uses Android 4.
 
 Operation
 ==========
