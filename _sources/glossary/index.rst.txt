@@ -70,6 +70,7 @@ Attribution
 ============
 
 * Blue background texture from `https://www.sketchuptextureclub.com/#google_vignette`
+* Paper background texture from `https://www.sketchuptextureclub.com/textures/materials/paper/cotton-paper-texture-seamless-10870`
 * Semi-Realistic Throttle text by John Geddes
 * Consist Function Following Documentation by John Geddes
 * Translations by:
