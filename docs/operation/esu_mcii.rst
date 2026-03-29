@@ -24,7 +24,7 @@ As the **ESU Mobile Control 2** and **Mobile Control Pro** are built on an Andro
 
 .. note:: 
   
-  Support for the **ESU MobileControl 2 (MCII)** was dropped in Version 2.42.222 as it uses Android 4.  Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
+  Support for the **ESU MobileControl 2 (MCII)** was dropped in Version 2.42.222 as the MCII uses Android 4.  Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
 
 Download
 ========
@@ -34,14 +34,16 @@ See below for information on how to download |ED| onto the device.
 ESU Mobile Control Pro
 ----------------------
 
-The **ESU Mobile Control Pro** is currently being shipped with a version of |ED| pre-installed that is **not** compatible with its hardware.  It is also impossible to update the app on the device by downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We hope this will be addressed soon, but in the meantime there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
+Early verions of the **ESU Mobile Control Pro** were shipped with a version of |ED| pre-installed that is **not** compatible with its hardware.  It is also impossible to update the app on those device by simply downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We believe this was addressed in later releases. 
+
+If you have a device with the incompatible version of |ED| there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
 
 ESU Mobile Control 2
 --------------------
 
 The **ESU Mobile Control 2** does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install |ed|. You will need to :ref:`download the APK file <downloads/index:older or other versions - manual install>` and install it manually.  
 
-You will need to install a version prior to 2.42.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as it uses Android 4.
+You will need to install a version prior to 2.42.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as the MCII uses Android 4.
 
 Operation
 ==========
@@ -52,7 +54,7 @@ Up to three trains can be controlled at once - the train being operated by the c
 buttons to switch to the next operated train - by default, the bottom-right button is assigned to this function.
 
 When assigned to control a train, the Green LED is lit. When no trains are assigned, the Green LED flashes.
-In addition, you can use the Stop button to pause the currently operated train, or to stop all controlled trains. A short press of the Stop button (default, less than 1/2 second) pauses operation of the currently controlled train. The Red LED will flash quickly to denote this. On a second press of the Stop button, the currently operated train will resume at the previous set speed. A long press of the Stop button (default, greater than 1/2 second) will stop all controlled trains. The Red LED will flash slowly to denote this. On a second press of the Stop button, all controlled trains will remain stationary and it will be possible to again control the currently selected train.
+In addition, you can use the :guilabel:`Stop` button to pause the currently operated train, or to stop all controlled trains. A short press of the :guilabel:`Stop` button (default, less than 1/2 second) pauses operation of the currently controlled train. The Red LED will flash quickly to denote this. On a second press of the :guilabel:`Stop` button, the currently operated train will resume at the previous set speed. A long press of the :guilabel:`Stop` button (default, greater than 1/2 second) will stop all controlled trains. The Red LED will flash slowly to denote this. On a second press of the :guilabel:`Stop` button, all controlled trains will remain stationary and it will be possible to again control the currently selected train.
 
 Whilst in stop mode, the on-screen speed change buttons and bar are disabled for currently stopped throttles. Switching between controlled throttles is also disabled. 
 
@@ -116,7 +118,7 @@ If the ``Use Semi-Realistic Throttle setting`` option is selected, the physical 
 Updating Engine Driver on the ESU Mobile Control Pro
 ====================================================
 
-The ESU Mobile Control Pro was initally shipped with a version of |ED| pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.  (This should be fixed in the current production releases of the device.)
+The ESU Mobile Control Pro was initally shipped with a version of |ED| pre-installed that is not compatible with the MCpro hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.  (This should be fixed in the current production releases of the device.)
 
 These instructions will allow you to update the app on the device from the **Aurora Store** or one of the :ref:`APKs <downloads/index:older or other versions - manual install>` on this website.  
 
@@ -169,7 +171,7 @@ You can then download the latest version using the **Aurora Store** that is inst
 Alternate instructions
 -----------------------
 
-The following appraoch will work if the instructions above do not work for you, but should only be used as a last resort.
+The following approach will work if the instructions above do not work for you, but should only be used as a last resort.
 
 1. You need to download a copy of ``adb.exe``    (e.g. https://developer.android.com/tools/releases/platform-tools )
 
