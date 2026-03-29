@@ -1002,19 +1002,20 @@
 <p>As the <strong>ESU Mobile Control 2</strong> and <strong>Mobile Control Pro</strong> are built on an Android platform, and they have made the API available to external developers, <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can run on it and make use of the hardware knob and buttons.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Support for the <strong>ESU MobileControl 2 (MCII)</strong> was dropped in Version 2.42.222 as it uses Android 4.  Older versions of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can still be downloaded from the <a class="reference internal" href="../downloads/index.html"><span class="doc">Play Store &amp; Downloads</span></a> page if you have an MCII and want to use it with <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
+<p>Support for the <strong>ESU MobileControl 2 (MCII)</strong> was dropped in Version 2.42.222 as the MCII uses Android 4.  Older versions of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> can still be downloaded from the <a class="reference internal" href="../downloads/index.html"><span class="doc">Play Store &amp; Downloads</span></a> page if you have an MCII and want to use it with <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>.</p>
 </div>
 <section id="download">
 <h2><a class="toc-backref" href="#id1" role="doc-backlink">Download</a><a class="headerlink" href="#download" title="Link to this heading"></a></h2>
 <p>See below for information on how to download <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> onto the device.</p>
 <section id="esu-mobile-control-pro">
 <h3><a class="toc-backref" href="#id2" role="doc-backlink">ESU Mobile Control Pro</a><a class="headerlink" href="#esu-mobile-control-pro" title="Link to this heading"></a></h3>
-<p>The <strong>ESU Mobile Control Pro</strong> is currently being shipped with a version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> pre-installed that is <strong>not</strong> compatible with its hardware.  It is also impossible to update the app on the device by downloading an <a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install"><span class="std std-ref">APK from this site</span></a>.  We hope this will be addressed soon, but in the meantime there are some <a class="reference external" href="UpdatingEngineDriverontheESUMobileControlPro">instructions below</a> on how to update the app on the device.</p>
+<p>Early verions of the <strong>ESU Mobile Control Pro</strong> were shipped with a version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> pre-installed that is <strong>not</strong> compatible with its hardware.  It is also impossible to update the app on those device by simply downloading an <a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install"><span class="std std-ref">APK from this site</span></a>.  We believe this was addressed in later releases.</p>
+<p>If you have a device with the incompatible version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> there are some <a class="reference external" href="UpdatingEngineDriverontheESUMobileControlPro">instructions below</a> on how to update the app on the device.</p>
 </section>
 <section id="esu-mobile-control-2">
 <h3><a class="toc-backref" href="#id3" role="doc-backlink">ESU Mobile Control 2</a><a class="headerlink" href="#esu-mobile-control-2" title="Link to this heading"></a></h3>
 <p>The <strong>ESU Mobile Control 2</strong> does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span>. You will need to <a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install"><span class="std std-ref">download the APK file</span></a> and install it manually.</p>
-<p>You will need to install a version prior to 2.42.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as it uses Android 4.</p>
+<p>You will need to install a version prior to 2.42.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as the MCII uses Android 4.</p>
 </section>
 </section>
 <section id="operation">
@@ -1023,7 +1024,7 @@
 <p>Up to three trains can be controlled at once - the train being operated by the control knob is highlighted by the small ‘v’ in the speed indicator. Switch between operated trains by clicking the appropriate speed indicator. It is also possible to assign one of the device side
 buttons to switch to the next operated train - by default, the bottom-right button is assigned to this function.</p>
 <p>When assigned to control a train, the Green LED is lit. When no trains are assigned, the Green LED flashes.
-In addition, you can use the Stop button to pause the currently operated train, or to stop all controlled trains. A short press of the Stop button (default, less than 1/2 second) pauses operation of the currently controlled train. The Red LED will flash quickly to denote this. On a second press of the Stop button, the currently operated train will resume at the previous set speed. A long press of the Stop button (default, greater than 1/2 second) will stop all controlled trains. The Red LED will flash slowly to denote this. On a second press of the Stop button, all controlled trains will remain stationary and it will be possible to again control the currently selected train.</p>
+In addition, you can use the <span class="guilabel">Stop</span> button to pause the currently operated train, or to stop all controlled trains. A short press of the <span class="guilabel">Stop</span> button (default, less than 1/2 second) pauses operation of the currently controlled train. The Red LED will flash quickly to denote this. On a second press of the <span class="guilabel">Stop</span> button, the currently operated train will resume at the previous set speed. A long press of the <span class="guilabel">Stop</span> button (default, greater than 1/2 second) will stop all controlled trains. The Red LED will flash slowly to denote this. On a second press of the <span class="guilabel">Stop</span> button, all controlled trains will remain stationary and it will be possible to again control the currently selected train.</p>
 <p>Whilst in stop mode, the on-screen speed change buttons and bar are disabled for currently stopped throttles. Switching between controlled throttles is also disabled.</p>
 </section>
 <section id="configuration">
@@ -1085,7 +1086,7 @@ In addition, you can use the Stop button to pause the currently operated train, 
 <hr class="docutils" />
 <section id="updating-engine-driver-on-the-esu-mobile-control-pro">
 <h2><a class="toc-backref" href="#id9" role="doc-backlink">Updating Engine Driver on the ESU Mobile Control Pro</a><a class="headerlink" href="#updating-engine-driver-on-the-esu-mobile-control-pro" title="Link to this heading"></a></h2>
-<p>The ESU Mobile Control Pro was initally shipped with a version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> pre-installed that is not compatible with its hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.  (This should be fixed in the current production releases of the device.)</p>
+<p>The ESU Mobile Control Pro was initally shipped with a version of <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> pre-installed that is not compatible with the MCpro hardware.  It is also impossible to update the app on the device by simply downloading an APK from this site.  (This should be fixed in the current production releases of the device.)</p>
 <p>These instructions will allow you to update the app on the device from the <strong>Aurora Store</strong> or one of the <a class="reference internal" href="../downloads/index.html#older-or-other-versions-manual-install"><span class="std std-ref">APKs</span></a> on this website.</p>
 <p>Note that currently only the <code class="docutils literal notranslate"><span class="pre">EngineDriver-2.40.203.apk</span></code>, or later, is compatible with the <strong>ESU Mobile Control Pro</strong>. (Version 2.40.215 and later are available on the <a class="reference external" href="https://play.google.com/store/apps/details?id=jmri.enginedriver">Google Play Store</a> or the from the installed <strong>Aurora Store</strong> app.)</p>
 <section id="instructions">
@@ -1133,7 +1134,7 @@ In addition, you can use the Stop button to pause the currently operated train, 
 </section>
 <section id="alternate-instructions">
 <h3><a class="toc-backref" href="#id11" role="doc-backlink">Alternate instructions</a><a class="headerlink" href="#alternate-instructions" title="Link to this heading"></a></h3>
-<p>The following appraoch will work if the instructions above do not work for you, but should only be used as a last resort.</p>
+<p>The following approach will work if the instructions above do not work for you, but should only be used as a last resort.</p>
 <ol class="arabic">
 <li><p>You need to download a copy of <code class="docutils literal notranslate"><span class="pre">adb.exe</span></code>    (e.g. <a class="reference external" href="https://developer.android.com/tools/releases/platform-tools">https://developer.android.com/tools/releases/platform-tools</a> )</p></li>
 <li><p>Then open a terminal (<code class="docutils literal notranslate"><span class="pre">cmd</span></code> or <code class="docutils literal notranslate"><span class="pre">powershell</span></code>) and navigate to the directory where adb.exe is located.</p>
@@ -1201,7 +1202,7 @@ $ reboot
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f2ef4337760>
+    <jinja2.runtime.BlockReference object at 0x7fa81a7501c0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
