@@ -22,20 +22,26 @@ ESU Mobile Control 2/Pro
 
 As the **ESU Mobile Control 2** and **Mobile Control Pro** are built on an Android platform, and they have made the API available to external developers, |ed| can run on it and make use of the hardware knob and buttons.  
 
+.. note:: 
+  
+  Support for the ESU MobileControl II (MCII) was dropped in Version 2.42.222 as it uses Android 4.  Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
+
 Download
 ========
 
 See below for information on how to download |ED| onto the device.
 
-ESU Mobile Control 2
---------------------
-
-The **ESU Mobile Control 2** does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install |ed|. You will need to :ref:`download the APK file <downloads/index:older or other versions - manual install>` and install it manually.
-
 ESU Mobile Control Pro
 ----------------------
 
 The **ESU Mobile Control Pro** is currently being shipped with a version of |ED| pre-installed that is **not** compatible with its hardware.  It is also impossible to update the app on the device by downloading an :ref:`APK from this site <downloads/index:older or other versions - manual install>`.  We hope this will be addressed soon, but in the meantime there are some `instructions below <Updating Engine Driver on the ESU Mobile Control Pro>`_ on how to update the app on the device.
+
+ESU Mobile Control 2
+--------------------
+
+The **ESU Mobile Control 2** does not have a Google Play Services installed, so you will not be able to use the Google Play Store to install |ed|. You will need to :ref:`download the APK file <downloads/index:older or other versions - manual install>` and install it manually.  
+
+You will need to install a versin prior to 1.5.222, as support for the ESU Mobile Control 2 was dropped in Version 2.42.222 as it uses Android 4.
 
 Operation
 ==========

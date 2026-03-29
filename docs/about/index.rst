@@ -102,6 +102,8 @@ Roadmap
 * Who among the available people is interested enough to do the work
 * Are there enough people likely to use it to make it worth the effort
 
+There is a wish list of items that we would like to add, but it is not a formal roadmap and there are no timelines for when any of the items might be added.  See the `The TODO List <https://github.com/JMRI/EngineDriver/blob/master/changelog-and-todo-list.txt>`_ (bottom of the page) for details.
+
 At the moment there are only a few of us doing any work on |ed|, so things happen when they happen. We prioritise bug fixes, but we also try to add new features when we can.
 
 See the :doc:`/contact/index` page if you are having problems or wish to make a suggestion.

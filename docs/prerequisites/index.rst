@@ -32,24 +32,31 @@ Android Device/Phone
    :scale: 15%
    :align: right
 
-|ed| will work on most Android devices (Phones and Tablets) made in the last 8-9 years. Currently it has a minSDKVersion 16, which equates to minimum Android OS version of 4.1 (JELLYBEAN) but Android versions greater than 5.0 are recommended. Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
+|ed| will work on most Android devices (Phones and Tablets) made in the last 5-6 years. Currently it has a minSDKVersion 21, which equates to minimum Android OS version of 5.0 (Lollipop). Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
 
 A number of :ref:`permissions <about/privacy-policy:required permissions>` are required to be granted to |ED| for it to function at its best, but as of Version 2.40.200 it will generally work without any additional permissions.
 
 |FORCE-BREAK|
 
-ESU Mobile Control II/Pro
-"""""""""""""""""""""""""
+ESU Mobile Control Pro
+"""""""""""""""""""""""
 .. image:: ../_static/images/gamepads/esu_mcii.png
    :scale: 25 %
    :align: right
 
-|ed| also fully supports the `ESU MobileControl 2/Pro (MC2 / MCPro) <http://www.esu.eu/en/products/digital-control/mobile-control-ii/>`_ Android throttle.
+|ed| also fully supports the `ESU MobileControl Pro (MCPro) <http://www.esu.eu/en/products/digital-control/mobile-control-ii/>`_ Android throttle.
 
 .. note:: 
   :class: note-ed-hidden-title
   
-  See the `ESU MobileControl 2/Pro <../operation/esu_mcii.html>`_ page for more information.
+  See the `ESU MobileControl Pro <../operation/esu_mcii.html>`_ page for more information.
+
+.. note:: 
+  
+  Support for the ESU MobileControl II (MCII) was dropped in Version 2.42.222 as it uses Android 4.
+  
+  Older versions of |ED| can still be downloaded from the :doc:`/downloads/index` page if you have an MCII and want to use it with |ED|.
+
 
 |FORCE-BREAK|
 
