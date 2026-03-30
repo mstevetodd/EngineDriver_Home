@@ -38,6 +38,8 @@ Changes included in Engine Driver Production version **2.42.221**:
 Beta Changes
 --------------------------------------------
 
+Changes included in Engine Driver Beta version **2.43.223**:
+
   * New themes. 'Neon Green' and 'Paper'
   * Added 'Drop loco before Acquire' toggle button on the Select Loco screen
   * Added support to DCC-EX MAIN_INV track type
