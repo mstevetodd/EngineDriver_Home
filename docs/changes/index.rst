@@ -38,12 +38,17 @@ Changes included in Engine Driver Production version **2.42.221**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.43.223**:
+Changes included in Engine Driver Beta version **2.43.225**:
 
   * New themes. 'Neon Green' and 'Paper'
   * Added 'Drop loco before Acquire' toggle button on the Select Loco screen
   * Added support to DCC-EX MAIN_INV track type
-  
+  * Added 'Return' button on the Edit Consist page
+  * Cosmetic improvements to the Preferences page  
+  * Bug fixes from the previous beta release
+  * Added notching on the throttle sliders when using other than 126 or percent options
+  * Added preference to hide the additional button text on the Select Screen
+ 
 Complete ChangeLog
 --------------------------------------------
 
