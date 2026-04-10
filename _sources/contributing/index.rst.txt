@@ -41,8 +41,8 @@ Here are all the steps needed for Microsoft Windows:
   * Take the :menuselection:`Run --> Run... --> Edit Configurations` option
   * In the Run/Debug Configurations window, press the :guilabel:`+`, then Android App
   * Enter Name "EngineDriver", and select Module: EngineDriver
-  * Click :guilabel:`Run`.
-  * You will likely get one or more error messages about missing components. Click on the link in each message and Android Studio will automatically download the missing components.
+  * Press :guilabel:`Run`.
+  * You will likely get one or more error messages about missing components. Tap on the link in each message and Android Studio will automatically download the missing components.
 
 To test your changes:
 

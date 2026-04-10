@@ -84,7 +84,7 @@ Discovered Servers List
   :align: right
   :name: Discovered Servers
 
-**This is the most common way to connect.** If the |SERVER| you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+**This is the most common way to connect.** If the |SERVER| you want to connect to is in the list, simply tap it and you will be taken to the |T-S|.
 
 If the |SERVER| does not appear in the recent list try one of the other two methods.  
 Your |SERVER| not appearing in the recent list is not necessarily a problem  See :doc:`Connection issues </operation/wifi_issues>` for more information.
@@ -97,7 +97,7 @@ Recent Server List
   :align: right
   :name: Recent Severs
 
-If the |SERVER| you want to connect to is in the list, simply click on it and you will be taken to the |T-S|.
+If the |SERVER| you want to connect to is in the list, simply tap it and you will be taken to the |T-S|.
 
 Note: A |SERVER| being in this list *does not* necessarily mean that you will be able to connect it *now*. It just means that you have successfully connected to it in the past.
 
@@ -129,7 +129,7 @@ There are two ways to turn the Track Power on/off:
  
 The *Power Screen* can be accessed from the :menuselection:`Menu --> Power`.  This will open the Power Screen where there is a simple button that to turn the power on or off. Use Android's ``Back`` button to return to the Throttle Screen.
 
-If the *Power Action Bar button* is enabled, simply click on it to turn track power on or off.
+If the *Power Action Bar button* is enabled, simply press it to turn track power on or off.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -141,7 +141,7 @@ If the *Power Action Bar button* is enabled, simply click on it to turn track po
 Selecting & Releasing Locos
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-Selecting and releasing locos and |consists| is initiated from the Throttle Screen, by clicking on the :guilabel:`Select` button of one of the Throttles on the screen.
+Selecting and releasing locos and |consists| is initiated from the Throttle Screen, by pressing the :guilabel:`Select` button of one of the Throttles on the screen.
 
 (The |T-S| may have from 1 to 6 throttles on it, depending on the :ref:`Throttle Screen Layout preference <configuration/preferences:throttle screen appearance preferences>` you have chosen.)
 
@@ -163,7 +163,7 @@ You can enter the loco's DCC address (verify short or long), and press :guilabel
 Server Roster
 ''''''''''''''
 
-If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+If the loco you want to control is in the list, simply tap on it and you will be taken back to the |T-S| with that loco selected.
 
 For this to be possible, the Loco you want to control needs to be in the |ROSTER| of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support a |ROSTER|.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a roster.
 
@@ -174,7 +174,7 @@ Recent Locos
 
 |ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with :ref:`Maximum Recent Locos <configuration/preferences:maximum recent locos>` preference.)
 
-If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+If the loco you want to control to is in the list, simply tap on it and you will be taken back to the |T-S| with that loco selected.
 
 Request Loco ID
 '''''''''''''''
@@ -205,7 +205,7 @@ There two ways create a |consist| train:
 One at a time
 '''''''''''''
 
-Adding additional locos to the |consist| train is identical to the process of selecting a single loco.  Simply click on the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
+Adding additional locos to the |consist| train is identical to the process of selecting a single loco.  Simply press the :guilabel:`Select` button, which will be showing the name or address of any locos already selected.
 
 After selecting each additional loco, the :ref:`operation/interface:Consist (MU) Edit Screen` will be shown. This allows you to:
 
@@ -279,9 +279,9 @@ Speed Buttons
 
 The Throttles on the Thro|T-S| may configured have ``++`` and ``--`` *Speed Buttons* that allow you to increase or decrease the loco's speed.  
 
-Click on the ``Forward`` or ``Reverse`` buttons to increase of decrease the speed in by a defined Amount.
+Press the ``Forward`` or ``Reverse`` buttons to increase of decrease the speed in by a defined Amount.
 
-Click and Hold on the button continually increase the speed by a defined steps.
+Press and Hold on the button will continually increase the speed by a defined steps.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -290,28 +290,28 @@ Click and Hold on the button continually increase the speed by a defined steps.
 
   See the :ref:`Throttle Screen Layout preference on the Preferences page <configuration/preferences:throttle screen layout>` for more information on the Throttle Screen Layouts that support *Speed Buttons*.
 
-  See the :ref:`Speed button Change Amount preference in the Throttle Control Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on changing how much the speed changes on each click.
+  See the :ref:`Speed button Change Amount preference in the Throttle Control Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on changing how much the speed changes on each press.
 
 Stop button
 '''''''''''
 
-Click on the :guilabel:`Stop` button of a Throttle on the |T-S| to stop all the select Locos for that Throttle.  If you have momentum configured for in the decoders in the locos, they will gradually come to a stop.
+Press the :guilabel:`Stop` button of a Throttle on the |T-S| to stop all the select Locos for that Throttle.  If you have momentum configured for in the decoders in the locos, they will gradually come to a stop.
 
 Volume Keys
 ''''''''''''
 
 The :guilabel:`Volume Up` and :guilabel:`Volume Down` hardware keys of your device / phone act exactly the same at as the Speed Buttons of the 'current' Throttle. 
 
-Click on the :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to increase of decrease the speed in by a defined Amount.
+Press the :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons to increase of decrease the speed in by a defined Amount.
 
-Click and Hold on the button continually increase the speed by a defined steps.
+Press and Hold on the button to continually increase the speed by a defined steps.
 
-The *Volume Keys* can only affect one throttle at a time.  Which throttle is being controlled by a small 'V' in the Throttle Speed amount area. To change to another Throttle, click on the Throttle Speed amount area of another Throttle.
+The *Volume Keys* can only affect one throttle at a time.  Which throttle is being controlled by a small 'V' in the Throttle Speed amount area. To change to another Throttle, tap on the Throttle Speed amount area of another Throttle.
 
 .. note:: 
   :class: note-ed-hidden-title
 
-  See the :ref:`Volume Button Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on disabling the Volume Keys and changing how much the speed changes on each click. 
+  See the :ref:`Volume Button Preferences section on the Preferences page <configuration/preferences:speed button change amount>` for more information on disabling the Volume Keys and changing how much the speed changes on each press. 
 
 Emergency Stop - Action Bar button
 ''''''''''''''''''''''''''''''''''
@@ -336,7 +336,7 @@ Pause button
   :align: right
   :scale: 50%
 
-If enabled, the :guilabel:`Pause` button will gradually bring the Loco (or |consists|) on the Throttle to gradually step down to the zero speed.  Clicking the button again will gradually return the Loco (or |consist|) on the Throttle back to the speed that it was before you fist pressed the button.
+If enabled, the :guilabel:`Pause` button will gradually bring the Loco (or |consists|) on the Throttle to gradually step down to the zero speed.  Pressing the button again will gradually return the Loco (or |consist|) on the Throttle back to the speed that it was before you fist pressed the button.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -350,7 +350,7 @@ Limit Speed button
   :align: right
   :scale: 50%
 
-If enabled, the :guilabel:`Limit Speed` button will restrict the maximum speed on the Throttle to predefined amount. (Default is 50%)  Clicking the button again will take off the restriction. (i.e. back to 100%)
+If enabled, the :guilabel:`Limit Speed` button will restrict the maximum speed on the Throttle to predefined amount. (Default is 50%)  Pressing the button again will take off the restriction. (i.e. back to 100%)
 
 This is commonly used for Switching/Shunting work VS mainline running.
 
@@ -394,7 +394,7 @@ Direction Buttons
 
 Throttles on Throttle Screen Layout that are *not* of the Switching/Shunting type have :guilabel:`Forward` and :guilabel:`Reverse` *Direction Buttons* for each throttle.  
 
-Clicking on a button will change the direction of the loco ( or |consist|) if it is not already moving in that direction. 
+Pressing a button will change the direction of the loco ( or |consist|) if it is not already moving in that direction. 
 
 The *Direction Buttons* can be:
 * Disabled while the loco (or |consist|) is moving. (i.e. the speed in either direction is greater that zero.)
@@ -462,7 +462,7 @@ The DCC functions can be impacted depending on the settings and preferences you 
 Activating DCC Functions via the Function Buttons
 '''''''''''''''''''''''''''''''''''''''''''''''''
 
-Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Clicking a button will send that function to the Loco (or lead loco of a |consist|.)  This behaviour can be altered in the preferences.
+Most (all bar one) Throttle Layouts show a number of DCC Function Buttons below or beside the Sliders for the individual Throttles on the Screen.  Pressing a button will send that function to the Loco (or lead loco of a |consist|.)  This behaviour can be altered in the preferences.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -577,21 +577,21 @@ Once an IPLS profile is selected for a throttle (either of the first two throttl
 
   **Mute button**
 
-  Clicking this will disable all IPLS sounds for this Throttle.
+  Pressing this will disable all IPLS sounds for this Throttle.
 
   **Bell button** 
 
-  Clicking this will continuously play a bell sound until it is clicked again (latched)
+  Pressing this will continuously play a bell sound until it is pressed again (latched)
 
   The Bell can be made non-latching by changing the :ref:`Bell button Latching/Momentary <configuration/preferences:bell button latching/momentary>` preference.
 
   **Horn / Whistle button**
 
-  Clicking this will continuously play a horn or whistle sound (depending on the profile) until the button is released (non-latched)
+  Pressing this will continuously play a horn or whistle sound (depending on the profile) until the button is released (non-latched)
 
   **Short Horn / Whistle button**
 
-  Clicking this will play a horn or whistle sound (depending on the profile) ones, regardless of how long the button is held down.
+  Pressing this will play a horn or whistle sound (depending on the profile) once, regardless of how long the button is held down.
 
   **Activating the IPLS Sounds via DCC Functions / Function Buttons**
 
@@ -705,12 +705,12 @@ Server Defined Turnout/Point list
 
 By selecting the 'JMRI Defined' radio button, |ED| will show the Turnouts/Points defined in the |SERVER|.
 
-Click on the button(s) on the beside the entry to :guilabel:`Throw`` or :guilabel:`Close` the Turnout/Point.
+Press the button(s) on the beside the entry to :guilabel:`Throw`` or :guilabel:`Close` the Turnout/Point.
 
 Note:
 
-* If the Turnout/Point button says 'Thrown', then clicking on the button will **'Close'** the Turnout/Point and the button will then say 'Closed'.
-* If the Turnout/Point button says 'Closed', then clicking on the button will **'Throw'** the Turnout/Point and the button will then say 'Thrown'.
+* If the Turnout/Point button says 'Thrown', then Pressing the button will **'Close'** the Turnout/Point and the button will then say 'Closed'.
+* If the Turnout/Point button says 'Closed', then Pressing the button will **'Throw'** the Turnout/Point and the button will then say 'Thrown'.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -729,7 +729,7 @@ Recent Turnout/Point list
 
 |ed| remembers the last 10 Turnouts/Points that you have controlled.
 
-If the Turnouts/Points you want to control to is in the list, simply click on buttons next to the entry to control it.
+If the Turnouts/Points you want to control to is in the list, simply pressing the button next to the entry to control it.
 
 |FORCE-BREAK|
 
@@ -777,14 +777,14 @@ The |R-S| can be accessed two ways:
 By System name
 """"""""""""""
 
-You can enter the route ID and click :guilabel:`Set` button to activate a route.
+You can enter the route ID and Press :guilabel:`Set` button to activate a route.
 
 From the Server
 """""""""""""""
 
 You can select the route from the list provider by your |SERVER|...
 
-Click on the :guilabel:`Set` button beside the entry to activate the Route.
+Press the :guilabel:`Set` button beside the entry to activate the Route.
 
 Note, When using the |native| the |EX-CS| (only) can:
 
@@ -929,7 +929,7 @@ By using the Android :guilabel:`Home` ( ○ ) or :guilabel:`Recent Apps` ( □ )
   :align: right
   :scale: 8%
 
-Clicking on the Notification Shade entry or the app icon will return you to the same screen your were in when you pushed the app to the background.
+Tapping the Notification Shade entry or the app icon will return you to the same screen your were in when you pushed the app to the background.
 
 While |ed| will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will consider this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.
 
@@ -981,7 +981,7 @@ Exiting |ed|:
 
   This is a common misunderstanding.  
   
-  The list of apps that shows when you click on the :guilabel:`Recent Apps` ( □ ) navigation button, the square button on the Android Navigation Bar, is **NOT** a list of **Running Apps**.  It is a list of **Recently Used Apps**.
+  The list of apps that shows when you press the :guilabel:`Recent Apps` ( □ ) navigation button, the square button on the Android Navigation Bar, is **NOT** a list of **Running Apps**.  It is a list of **Recently Used Apps**.
 
   Android deliberately maintains fragments of every app that runs to make it faster to restart the apps if required.  Android will really kill the app from memory if some other app needs the memory.
 

@@ -49,11 +49,11 @@ Note this must be preformed *before* you connect to the |CS|.
 
 * Optionally you can enable a button on the Action Bar in |ED|
 
-   * Close the "DCC-EX EX-CommandStation Preferences" sub-group (click the Android Back button), but stay in the preferences
+   * Close the "DCC-EX EX-CommandStation Preferences" sub-group (tap the Android Back button), but stay in the preferences
    * Find the "Throttle Screen Action Bar Preferences" section
    * Enable the "DCC-EX button?"
 
-* close preferences (click the Android Back button) to go back to the Connect Screen
+* close preferences (tap the Android Back button) to go back to the Connect Screen
 
 Now connect to the **DCC-EX EX-CommandStation**
 
@@ -81,9 +81,9 @@ Read and write DCC addresses on the Programming Track
 
 To read and write DCC addresses on the Programming Track select "Programming Track (Service Mode)" in the Action pulldown.
 
-To read the address, put your loco on the programming track and click the :guilabel:`Read` button on the same line as the 'DCC Address' label.
+To read the address, put your loco on the programming track and press the :guilabel:`Read` button on the same line as the 'DCC Address' label.
 
-To write a new address, enter the address in the 'DCC Address' field and click :guilabel:`Write`
+To write a new address, enter the address in the 'DCC Address' field and press :guilabel:`Write`
 
 |force-break|
 
@@ -93,9 +93,9 @@ Read and write CVs of decoders on the Programming Track
 
 To read and write CVs of decoders on the Programming Track select "Programming Track (Service Mode)" in the Action pulldown.
 
-To read a CV, put your loco on the programming track, enter the CV number into the 'CV' field, and click the :guilabel:`Read` button on the same line as the 'CV' label.
+To read a CV, put your loco on the programming track, enter the CV number into the 'CV' field, and press the :guilabel:`Read` button on the same line as the 'CV' label.
 
-To write a new CV value, enter the CV number into the 'CV' field, enter the new value in the 'Value' field and click :guilabel:`Write`
+To write a new CV value, enter the CV number into the 'CV' field, enter the new value in the 'Value' field and press :guilabel:`Write`
 
 Optionally, you can use the 'NRMA CVs' pulldown to select a common CV from a list.  This just enters the appropriate CV number in the 'CV' field.
 
@@ -112,7 +112,7 @@ To write CVs of decoders on the Main Track select "Program on Main (Operation Mo
 
 Note that you cannot read CVs or DCC Addresses on the main track.  You can only write CVs of a specified loco (DCC Address).
 
-To write a new CV value, enter the DCC address of the loco you want to change, enter the CV number into the 'CV' field, enter the new value in the 'Value' field and click :guilabel:`Write`
+To write a new CV value, enter the DCC address of the loco you want to change, enter the CV number into the 'CV' field, enter the new value in the 'Value' field and press :guilabel:`Write`
 
 Optionally, you can use the 'NRMA CVs' pulldown to select a common CV from a list.  This just enters the appropriate CV number in the 'CV' field.
 
@@ -121,7 +121,7 @@ Issue Native commands to the DCC-EX EX-CommandStation
 
 To issue Native commands to the **DCC-EX EX-CommandStation** select any option in the Action pulldown. (it is available for all)
 
-To issue a command to the **DCC-EX EX-CommandStation** end the command in the 'DCC-EX Cmd' field, without the opening and closing angle brackets (i.e. Don't enter '<' or '>'), then click :guilabel:`Send`
+To issue a command to the **DCC-EX EX-CommandStation** end the command in the 'DCC-EX Cmd' field, without the opening and closing angle brackets (i.e. Don't enter '<' or '>'), then press :guilabel:`Send`
 
 Optionally, you can use the 'Common CMDs' pulldown to select a command from a list.  This just enters the appropriate command in the 'DC-EX Cmd' field.
 
@@ -141,14 +141,18 @@ Depending on the Motor Shields you have on you **DCC-EX EX-CommandStation** you 
 The states will be one of:
 
 * DCC MAIN 
+* DCC MAIN Inverted
 * DCC PROG
 * DC 
 * DC reversed polarity (DCX)
+* AUTO - Auto Reverse DCC MAIN
+* EXT (not selectable)
+* BOOST (not selectable)
 * NONE
 
 Each of the tracks/channels of the Motor Shield(s) can be changed to any one of the states above.
 
-To change the simply select the state in the pulldown in the desired track (or tracks) and click :guilabel:`Set`
+To change the simply select the state in the pulldown in the desired track (or tracks) and press :guilabel:`Set`
 
 Note that if you select `DC` or `DC reversed polarity (DCX)` you must also enter the Address that the track should respond to. 
 

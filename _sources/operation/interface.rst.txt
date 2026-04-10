@@ -65,7 +65,7 @@ Connection Method Options
 IP Address and Port
 '''''''''''''''''''
 
-  Enter the IP address or URI of the server in the first field, and the port in the second field, then click :guilabel:`Connect`. |ed| will attempt to connect to it, and the |T-S| will be displayed.
+  Enter the IP address or URI of the server in the first field, and the port in the second field, then press :guilabel:`Connect`. |ed| will attempt to connect to it, and the |T-S| will be displayed.
 
 Discovered Servers
 ''''''''''''''''''
@@ -74,12 +74,12 @@ Discovered Servers
 
   Your |WTS-DCC-EX| will attempt to broadcast its details so that apps like |ED| can automatically find it.  If |ED| does find it, it will be listed here.
 
-  To connect to any |WTS-DCC-EX| in this list, simply click on the row.  |ed| will attempt to connect to it, and the |T-S| will be displayed.
+  To connect to any |WTS-DCC-EX| in this list, simply tap on the row.  |ed| will attempt to connect to it, and the |T-S| will be displayed.
 
 Recent Servers
 ''''''''''''''
 
-  To connect to any |WTS-DCC-EX| in this list, simply click on the row.  |ed| will attempt to connect to it.  If successful the |T-S| will be displayed.
+  To connect to any |WTS-DCC-EX| in this list, simply tap on the row.  |ed| will attempt to connect to it.  If successful the |T-S| will be displayed.
 
   Note that, just because it is in this list, it does not mean that you can connect to it now. It only means that you have successfully connected to it in the past.
 
@@ -178,11 +178,11 @@ Each *Throttle Area* allows you to:
 Loco Select Button
 ''''''''''''''''''''''''''''''''
 
-The loco :guilabel:`Select` button in the Throttle Area allows to select or release locos for that particular Throttle.  Click on the button and you will be taken to the Select Loco screen.
+The loco :guilabel:`Select` button in the Throttle Area allows to select or release locos for that particular Throttle.  Press the button and you will be taken to the Select Loco screen.
 
 Once you have selected a loco, the label on the button will change to the DCC Address(s) or the |ROSTER| name(s) of the Loco depending on how you selected the loco in the |LS-S|, and if you have the enabled the :ref:`Loco Address instead of Name? <configuration/preferences:loco address instead of name?>` preference.
 
-When the button is displaying DCC Address(s) or the |ROSTER| name(s), click on the button again and you will be taken to the |LS-S| where you can de-select the loco(s), select additional locos to make a |consist| train, edit the locos in the consist, or edit the lights of the locos in the |consist|.
+When the button is displaying DCC Address(s) or the |ROSTER| name(s), press the button again and you will be taken to the |LS-S| where you can de-select the loco(s), select additional locos to make a |consist| train, edit the locos in the consist, or edit the lights of the locos in the |consist|.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -293,7 +293,7 @@ Stop Button
 .. image:: ../_static/images/parts/stop_button_horizontal.png
    :scale: 80 %
 
-Clicking the ``Stop`` button of a throttle will the |loco_consist| controlled by that throttle.  If the locos have momentum configured in the decoder it/they will come slowly to a stop.  i.e. it obeys the momentum CV settings.
+Pressing the ``Stop`` button of a throttle will the |loco_consist| controlled by that throttle.  If the locos have momentum configured in the decoder it/they will come slowly to a stop.  i.e. it obeys the momentum CV settings.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -387,7 +387,7 @@ If the loco (or first loco of a |consist|) was added by entering its DCC Address
 
 The behaviour of the Function Buttons for locos selected from the |WTS-DCC-EX| |ROSTER| can be overridden with the :ref:`Use default function labels? <configuration/preferences:use default function labels?>` preference.  If this is enabled, the locos selected from the |WTS-DCC-EX| |ROSTER| will also show the Default Functions labels.
 
-Clicking on any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of different ways.
+Pressing any function button will instruct the loco to activate that DCC Function in the loco.  By default this is only sent to the Lead loco, however this can be overridden in a number of different ways.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -415,9 +415,9 @@ These are optional buttons that, if enabled, appear in the same areas as the Fun
 
 **Pause Button** 
 
-When clicked while the |loco_consist| is moving, the :guilabel:`Pause` button will gradually slow the train down zero and a predefined rate.  The rate can be altered in the preferences.
+When pressed while the |loco_consist| is moving, the :guilabel:`Pause` button will gradually slow the train down zero and a predefined rate.  The rate can be altered in the preferences.
 
-When subsequently clicked while the |loco_consist| is stationary, the :guilabel:`Pause` button will gradually increase the speed of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
+When subsequently pressed while the |loco_consist| is stationary, the :guilabel:`Pause` button will gradually increase the speed of the train till it is at the speed that it was at when the button was first pressed. i.e. its original speed.
 
 **Alternate Pause Button** 
 
@@ -425,7 +425,7 @@ An 'alternate Pause button' can be enabled in the preferences.  This behaves exa
 
 **Limit Speed Button** 
 
-When enabled by clicking on the :guilabel:`Limit Speed` button, |ED| will restrict the maximum speed on the throttle to the predefined amount.  By default the speed will be 50%, but this can be changed in preferences.
+When enabled by pressing the :guilabel:`Limit Speed` button, |ED| will restrict the maximum speed on the throttle to the predefined amount.  By default the speed will be 50%, but this can be changed in preferences.
 
   .. note:: 
     :class: note-ed-hidden-title
@@ -695,7 +695,7 @@ This screen allows you to display all Turnouts/Points that have been defined in 
 * From the Defined Turnout/Point list provided by the |WTS-DCC-EX| (JMRI)
 * From the Recent Turnout/Point list
 
-Turnouts/Points can be changed from 'Closed' to 'Thrown' and vice versa be pressing on either the :guilabel:`Closed` or :guilabel:`Thrown` buttons
+Turnouts/Points can be changed from 'Closed' to 'Thrown' and vice versa be pressing either the :guilabel:`Closed` or :guilabel:`Thrown` buttons
 
 .. image:: ../_static/images/screenshots/turnouts_jmri.png
   :align: right
@@ -705,12 +705,12 @@ Turnouts/Points can be changed from 'Closed' to 'Thrown' and vice versa be press
 
 By selecting the 'JMRI Defined' radio button, |ED| will show the Turnouts/Points defined in the |SERVER|.
 
-Click on the button(s) on the beside the entry to :guilabel:`Throw`` or :guilabel:`Close` the Turnout/Point.
+Press the button(s) on the beside the entry to :guilabel:`Throw`` or :guilabel:`Close` the Turnout/Point.
 
 Note:
 
-* If the Turnout/Point button says 'Thrown', then clicking on the button will **'Close'** the Turnout/Point and the button will then say 'Closed'.
-* If the Turnout/Point button says 'Closed', then clicking on the button will **'Throw'** the Turnout/Point and the button will then say 'Thrown'.
+* If the Turnout/Point button says 'Thrown', then pressing the button will **'Close'** the Turnout/Point and the button will then say 'Closed'.
+* If the Turnout/Point button says 'Closed', then pressing the button will **'Throw'** the Turnout/Point and the button will then say 'Thrown'.
 
 .. note:: 
   :class: note-ed-hidden-title
@@ -737,7 +737,7 @@ Enter the address of the Turnout/Point and press any of the buttons:
 
 By selecting the 'Address/Recent' radio button, |ED| will allow you to throw/close any recently used Turnout/Point.
 
-Click on the buttons on the beside the entry to 'Throw' or 'Close' the Turnout/Point.
+Press the buttons on the beside the entry to 'Throw' or 'Close' the Turnout/Point.
 
 |FORCE-BREAK|
 
@@ -843,13 +843,13 @@ This screen displays all Routes that have been defined in your |SERVER| and allo
 
 **By System name**
 
-You can enter the route ID and click :guilabel:`Set` button to activate a route.
+You can enter the route ID and press :guilabel:`Set` button to activate a route.
 
 **Via the List from the Server**
 
 You can select the route from the list provider by your |SERVER|...
 
-Click on the :guilabel:`Set` buttonon the beside the entry to activate the Route.
+Presson the :guilabel:`Set` buttonon the beside the entry to activate the Route.
 
 Note, When using the |native| the |EX-CS| (only) can:
 
@@ -1085,9 +1085,9 @@ Loco Select Screen
 
 The |LS-S| allows you add locos to a (one of) throttle on the |T-S|.  It also provides access to the additional screens for 'Editing the Consist', 'Editing Lights' and editing the 'In Phone Locos Sounds'.
 
-The |LS-S| is only shown when you click a :guilabel:`Select` button on the |T-S|.
+The |LS-S| is only shown when you press a :guilabel:`Select` button on the |T-S|.
 
-Not that the :guilabel:`Select` button will should the Address(es) or the Name(s) of a |loco_consist| Train only the first loco is selected.  Click on the button will (while it is in this state) will again take to this screen to allow to you add additional Locos to the |consist| Train, or make other changes to the |consist| Train.
+Not that the :guilabel:`Select` button will should the Address(es) or the Name(s) of a |loco_consist| Train only the first loco is selected.  Pressing the button will (while it is in this state) again take to this screen to allow to you add additional Locos to the |consist| Train, or make other changes to the |consist| Train.
 
 Selection Method
 """"""""""""""""
@@ -1114,7 +1114,7 @@ Select from Sever Roster
 
 Shown if you select ``Server Roster`` in the `Selection Method`_.
 
-If the loco you want to control is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+If the loco you want to control is in the list, simply press it and you will be taken back to the |T-S| with that loco selected.
 
 For this to be possible, the Loco you want to control needs to be in the |ROSTER| of the |WTS-DCC-EX|.  Not all |WTS-DCC-EX| support a |ROSTER|.  Refer to the JMRI documentation or your |WTS-DCC-EX| device's documentation for creating a |ROSTER|.
 
@@ -1130,7 +1130,7 @@ The filter is case insensitive.
 Download the Roster
 '''''''''''''''''''
 
-By clicking the :guilabel:`Download` button, all locos in the Server roster will be drawn in the 'Recent List' in |ED|.  
+By pressing the :guilabel:`Download` button, all locos in the Server roster will be drawn in the 'Recent List' in |ED|.  
 
 For this the filter is ignored. i.e. the Whole Server Roster is downloaded, not just what you can see on screen.
 
@@ -1173,14 +1173,14 @@ Shown if you select ``Recent Locos`` in the `Selection Method`_.
 
 |ed| remembers the last 10 locos that you have selected. (That number can be increased or decreased with :ref:`Maximum Recent Locos <configuration/preferences:maximum recent locos>` preference.)
 
-If the loco you want to control to is in the list, simply click on it and you will be taken back to the |T-S| with that loco selected.
+If the loco you want to control to is in the list, simply press it and you will be taken back to the |T-S| with that loco selected.
 
 Remove Recent Loco entries
 '''''''''''''''''''''''''''
 
 To remove a **single entry** from the recent Locos list, swipe right on that entry.
 
-To remove all entries, click the :guilabel:`CLear List` button.
+To remove all entries, press the :guilabel:`CLear List` button.
 
 Naming a Recent Loco
 ''''''''''''''''''''
@@ -1208,7 +1208,7 @@ Remove Recent Consists (MU) Entries
 
 To remove a **single entry** from the recent Consists (MU) list, swipe right on that entry.
 
-To remove all entries, click the :guilabel:`CLear List` button.
+To remove all entries, press the :guilabel:`CLear List` button.
 
 
 Select by Request Loco ID
@@ -1239,28 +1239,28 @@ Release
 
   Shown if you have one or locos already selected (acquired) for that throttle.
 
-  Clicking this button will release all the locos currently controlled by the throttle.
+  Pressing this button will release all the locos currently controlled by the throttle.
 
 Edit Order & Facing
 '''''''''''''''''''
 
   Shown if you have one or locos already selected (acquired) for that throttle.
 
-  Clicking this button will show the `<Consist (MU) Edit Screen>`_.
+  Pressing this button will show the `<Consist (MU) Edit Screen>`_.
 
 Edit Lights
 '''''''''''
 
   Shown if you have one or locos already selected (acquired) for that throttle.
 
-  Clicking this button will show the `<Consist Lights Edit Screen>`_.
+  Pressing this button will show the `<Consist Lights Edit Screen>`_.
 
 Loco Sounds
 ''''''''''''
 
   Shown if you have one or locos already selected (acquired) for that throttle.
 
-  Clicking this button will show `<In Phone Loco Sounds Screen>`_.
+  Pressing this button will show `<In Phone Loco Sounds Screen>`_.
 
 Consist (MU) Edit Screen
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -1269,7 +1269,7 @@ Consist (MU) Edit Screen
   :align: right
   :scale: 12%
 
-The **Consist (MU) Edit Screen** is automatically shown if you add a second, or subsequent, loco to a throttle via the :guilabel:`Select` button, or if you click on the :guilabel:`Edit Order & Facing` button on the `Loco Select Screen`_ (which will only be available if you have already acquired more than one loco on the throttle.)
+The **Consist (MU) Edit Screen** is automatically shown if you add a second, or subsequent, loco to a throttle via the :guilabel:`Select` button, or if you press the :guilabel:`Edit Order & Facing` button on the `Loco Select Screen`_ (which will only be available if you have already acquired more than one loco on the throttle.)
 
 On this screen, for your on-the-fly you can:
 
@@ -1303,7 +1303,7 @@ Change Facing
 
 The **All Locos in Consist (MU)** section of the Consist (MU) Edit Screen shows a list of all locos in the consist / multiple unit along with the facing of each loco.
 
-Clicking on the row of the loco changes the facing of that loco in the consist / multiple unit.
+Tapping on the row of the loco changes the facing of that loco in the consist / multiple unit.
 
 This allows you to easily run a second (or more) loco facing rearwards/backwards in the consist / multiple unit train.
 
@@ -1329,13 +1329,13 @@ Consist (MU) Lights Edit Screen
   :align: right
   :scale: 8%
 
-The **Consist (MU) Lights Edit Screen** is shown if you click on the :guilabel:`Edit Lights` button on the `Loco Select Screen`_ (which will only be available if you have already acquired more than one loco on the throttle.)
+The **Consist (MU) Lights Edit Screen** is shown if you press the :guilabel:`Edit Lights` button on the `Loco Select Screen`_ (which will only be available if you have already acquired more than one loco on the throttle.)
 
-It will also be shown if you long press on the Loco :guilabel:`Select` button, a) if you have already acquired a consist / multiple unit, and b) if the :ref:`configuration/preferences:Control consist Lights on long click` preference is enabled. 
+It will also be shown if you long press on the Loco :guilabel:`Select` button, a) if you have already acquired a consist / multiple unit, and b) if the :ref:`configuration/preferences:Control consist Lights on long press` preference is enabled. 
 
 The **Consist (MU) Lights Edit Screen**  shows a list of all locos in the consist / multiple unit along with the light rule for each loco in the consist / multiple unit.
 
-Clicking on the row of any entry will alter the light rule for that loco.
+Tapping the row of any entry will alter the light rule for that loco.
 
 The options are:
 
@@ -1460,7 +1460,7 @@ Function List
 
 The function list shows up to 32 functions with both a number and a label.
 
-The **Function Number** defines which DCC function number should be activated when you click the corresponding button on the Throttle Screen.
+The **Function Number** defines which DCC function number should be activated when you press the corresponding button on the Throttle Screen.
 
 Not all numbers (0-31) need be included.
 
@@ -1604,8 +1604,8 @@ To record a log file in EngineDriver....
 
 1. Start |ED|.
 2. From the menu, select :guilabel:`View Log`
-3. Click :guilabel:`Start recording to a file`
-4. Click :guilabel:`Close`
+3. Press :guilabel:`Start recording to a file`
+4. Press :guilabel:`Close`
 5. Attempt whatever is causing the problem a few times
 6. Exit |ED|
 7. Connect a USB cable to your phone and PC 
@@ -1781,7 +1781,7 @@ Emergency Stop Button
    :align: right
    :scale: 50%
 
-Clicking this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
+Pressing this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
 
 The *Emergency Stop* Action Bar button is enabled with the :ref:`Emergency Stop button? <configuration/preferences:emergency stop button?>` preference.
 
@@ -1844,7 +1844,7 @@ DCC-EX Button
    :align: right
    :scale: 50%
 
-The *DCC-EX* button, when clicked will open the `DCC-EX Screen`_.
+The *DCC-EX* button, when pressed will open the `DCC-EX Screen`_.
 
 The *DCC-EX* Action Bar button is enabled with the :ref:`configuration/preferences:dcc-ex button?` preference and is only available when connected to a |EX-CS| using the |NATIVE|. 
 
@@ -1855,7 +1855,7 @@ In Phone Loco Sound Button
    :align: right
    :scale: 50%
 
-*In Phone Loco Sounds*, when clicked will open the `In Phone Loco Sounds Screen`_.
+*In Phone Loco Sounds*, when pressed will open the `In Phone Loco Sounds Screen`_.
 
 The *In Phone Loco Sounds* Action Bar button is enabled with the :ref:`In Phone Loco Sounds Button <configuration/preferences:In Phone Sounds Button>` preferences.
 

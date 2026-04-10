@@ -50,7 +50,7 @@ Operation
 
 As well as being able to control speed of the selected throttle with the control knob, it's also possible to switch direction via the zero-position end-stop switch.
 
-Up to three trains can be controlled at once - the train being operated by the control knob is highlighted by the small 'v' in the speed indicator. Switch between operated trains by clicking the appropriate speed indicator. It is also possible to assign one of the device side
+Up to three trains can be controlled at once - the train being operated by the control knob is highlighted by the small 'v' in the speed indicator. Switch between operated trains by tapping the appropriate speed indicator. It is also possible to assign one of the device side
 buttons to switch to the next operated train - by default, the bottom-right button is assigned to this function.
 
 When assigned to control a train, the Green LED is lit. When no trains are assigned, the Green LED flashes.
@@ -140,7 +140,7 @@ Instructions
 
 3. Connect to a server as normal, or select 'Demo mode' from the Overflow Menu (three dots) in the top-right corner.
 
-4. Click the Burger-Menu (the three bars).
+4. Tap the Burger-Menu (the three bars).
  
 .. image:: ../_static/images/esu_mcii/esu_mcpro_update_1.jpg
    :scale: 33 %

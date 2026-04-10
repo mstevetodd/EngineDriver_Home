@@ -86,8 +86,8 @@ Instructions:
 - The timer will start counting down with the first change in speed.
 - When the timer runs out:
 
-  - Click the overflow menu.  Only the ``Timer`` option will be available.
-  - Click ``Timer`` and a password will be requested.
+  - Tap the overflow menu.  Only the ``Timer`` option will be available.
+  - Tap ``Timer`` and a password will be requested.
   - Enter the password for either:
 
     - to restart the timer (default 0000) to continue running for the next time period.

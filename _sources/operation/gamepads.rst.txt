@@ -34,9 +34,9 @@ Other devices require similar steps, but the mechanism to change the ``mode`` ma
   * There is a dedicated on/off switch. 
 
 * On your **Android device** go to the settings, then Bluetooth, and make sure Bluetooth is turned ON. 
-* Now click ``More Settings``. Within a few seconds a new device should appear in the ``Available devices`` section. (The name of the device may make it apparent that it is the gamepad, but it may just be a string of hexadecimal numbers.) 
+* Now press ``More Settings``. Within a few seconds a new device should appear in the ``Available devices`` section. (The name of the device may make it apparent that it is the gamepad, but it may just be a string of hexadecimal numbers.) 
 * Select the new device. Many devices will be paired at this point, but if it asks for a pairing code try ``0000`` or ``1234`` (check the instructions that came with the gamepad.) 
-* After pairing you should see an item in the Notifications regarding the gamepad. Click that item and make sure that “Show virtual keyboard” is ON. 
+* After pairing you should see an item in the Notifications regarding the gamepad. Press that item and make sure that “Show virtual keyboard” is ON. 
 * Set the mode of the gamepad:
 
   * For the **Mocute 032** gamepads (MTK mode)

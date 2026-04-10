@@ -46,7 +46,7 @@ Quick Start / Getting Started
 
   c. Wait for your |WTSS-DCC-EXS| to show up in 'Discovered Servers'
 
-  d. Click on the appropriate *Discovered server*
+  d. Tap on the appropriate *Discovered server*
 
     .. image:: ../_static/images/parts/connecting_discovered_servers.png
        :scale: 40 %
@@ -73,7 +73,7 @@ Quick Start / Getting Started
        :scale: 28 %
        :align: right
 
-  * On the Throttle screen, click on the :guilabel:`Select` loco button
+  * On the Throttle screen, press on the :guilabel:`Select` loco button
  
   |FORCE-BREAK|
 
@@ -83,7 +83,7 @@ Quick Start / Getting Started
         :scale: 150 %
         :align: right
         
-    * Click on a loco from the |ROSTER| or Recent lists |BR| or
+    * Tap on a loco from the |ROSTER| or Recent lists |BR| or
     * Enter the loco address (verify short or long), and press :guilabel:`Acquire`
 
       You will be returned to the |T-S|.
@@ -107,7 +107,7 @@ Quick Start / Getting Started
 
     * You can also 'swipe/fling' left or right to jump quickly back and forth between the Throttle, Routes, Turnouts/Points and Web pages. (Use Preferences to choose which are in the left / right swipe list) |BR|\ |BR|\ 
 
-  j. To release a single loco (or |consist|), click :guilabel:`Select` again and click the :guilabel:`Release` button
+  j. To release a single loco (or |consist|), press :guilabel:`Select` again and press the :guilabel:`Release` button
 
   k. To release all locos, just press the :guilabel:`Back` button and exit the app. |BR|\ This will also stop your locos (can be overridden in preferences)
 
