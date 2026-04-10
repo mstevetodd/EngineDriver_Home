@@ -152,7 +152,7 @@ The DCC-EX options are described in detail in the :doc:`/operation/dcc-ex-native
 Ready
 -----
 
-You are now ready to use |ED|.  Click the 'Right Arrow' button to close the Setup Wizard. 
+You are now ready to use |ED|.  Press the 'Right Arrow' button to close the Setup Wizard. 
 
 .. image:: ../_static/images/setup_wizard/setup6.png
    :scale: 12 %

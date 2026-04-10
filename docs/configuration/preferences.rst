@@ -411,7 +411,7 @@ Display Speed buttons?
 
 If this preference is enabled, |ED| will display buttons (:guilabel:`++` and :guilabel:`--`) next to Speed Sliders to change loco speed.  
 
-Clicking the :guilabel:`++` button will increase the speed of the Locos(s) by a preset amount. Clicking the :guilabel:`--` button will increase the speed of the Locos(s) by a preset amount.  
+Pressing the :guilabel:`++` button will increase the speed of the Locos(s) by a preset amount. Pressing the :guilabel:`--` button will increase the speed of the Locos(s) by a preset amount.  
 
 The amount the speed changes on each press can be changed with the `Speed Button Change Amount`_ preference.  Note that this is independent of the `Speed Button Change Amount (Volume)`_ preference and the `Speed Button Change Amount (Gamepad)`_ preference.
 
@@ -614,7 +614,7 @@ Hide function buttons on non-selected throttle?
 
 If this preference is enabled, on the horizontal layouts the function buttons will be hidden for all bar the selected ``Volume`` throttle, indicated by a 'v'.
 
-When this preference is enabled, by default, to show the Function buttons of a different throttle you must click on the :ref:`operation/interface:speed indicator` area of a :ref:`throttle <operation/interface:throttle area>`.  You can set the `Volume keys follow touch?`_ preference to show the Function buttons on any touch of any buttons related to a throttle (except speed slider and speed buttons).
+When this preference is enabled, by default, to show the Function buttons of a different throttle you must tap on the :ref:`operation/interface:speed indicator` area of a :ref:`throttle <operation/interface:throttle area>`.  You can set the `Volume keys follow touch?`_ preference to show the Function buttons on any touch of any buttons related to a throttle (except speed slider and speed buttons).
 
 .. note:: 
 
@@ -787,7 +787,7 @@ Background Image File Name
 
 This preference is used to select a image file that will be used as the background o the |T-S|.  This has no effect unless the `Background Image`_ preference is enabled.
 
-Clicking on this preference launches your image chooser app.  As this can be different on different devices / manufacturers, it is impossible to describe the required steps here.  In general, use the app's navigation features to find the image you want and select it.
+Selecting this preference launches your image chooser app.  As this can be different on different devices / manufacturers, it is impossible to describe the required steps here.  In general, use the app's navigation features to find the image you want and select it.
 
 Note: You can install additional apps to do the same job for the Play Store.
 
@@ -1108,7 +1108,7 @@ Emergency Stop button?
 
 If this preference is enabled |ED| will display an Emergency Stop button in Action Bar of most of the Main Screens.
 
-Clicking this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
+Pressing this button will attempt to quickly stop all locos controlled by the device / phone.  Locos controlled by other people/devices are not stopped.
 
 Layout Power button?
 """"""""""""""""""""
@@ -1119,7 +1119,7 @@ Layout Power button?
 
 If this preference is enabled |ED| will display a *Layout Power button* in Action Bar of most of the Main Screens.
 
-Clicking this button will turn on/off the power to the track. The colour of the button will change colour:
+Pressing this button will turn on/off the power to the track. The colour of the button will change colour:
 
 * 'Amber' = unknown state
 * 'Red' = Power is Off
@@ -1134,7 +1134,7 @@ Flashlight button?
 
 If this preference is enabled |ED| will display a *Flashlight* button in action bar of the |T-S|.
 
-Clicking this button will turn on/off the Device's camera light.
+Pressing this button will turn on/off the Device's camera light.
 
 This preference will be disabled (unable to be set) if the device does not have a camera.
 
@@ -1160,7 +1160,7 @@ Throttle Web View button?
 
 If this preference is enabled |ED| will display a button in action bar of the |T-S| to show/hide *Throttle Web View*. Requires `Throttle Web View?`_ preference to be enabled.
 
-Clicking this button will show / hide the *Throttle Web View* on the |T-S|.
+Pressing this button will show / hide the *Throttle Web View* on the |T-S|.
 
 Note: If the `Throttle Web View?`_ preference is not enabled the button will do nothing.
 
@@ -1183,7 +1183,7 @@ Show Layout Switch button?
 
 Enabling this preference shows the Throttle Layout Switch button in the |T-S| Action Bar to allow quick changing between to preset Throttle Layouts.
 
-Clicking on this button will immediately change the layout of the |T-S| between the layouts select in the `First Screen Layout`_ and `Second Screen Layout`_ preferences.
+Pressing this button will immediately change the layout of the |T-S| between the layouts select in the `First Screen Layout`_ and `Second Screen Layout`_ preferences.
 
 Cycle Through All Layouts?
 '''''''''''''''''''''''''''''''''''
@@ -1223,7 +1223,7 @@ In phone sounds button
 
 If this preference is enabled |ED| will show an action bar button on the |T-S| to easily change the in *phone loco sounds* options.  
 
-Clicking the button shows the `In Phone Loco Sounds Screen <../operation/interface.html#in-phone-loco-sounds-screen>`_. 
+Pressing the button shows the `In Phone Loco Sounds Screen <../operation/interface.html#in-phone-loco-sounds-screen>`_. 
 
 Show Server Description
 """""""""""""""""""""""
@@ -1301,7 +1301,7 @@ Speed button Change Amount
 
 This preference allows you to set how much the Speed buttons jump/change the speed.
 
-Note that this works in the units chosen in the `Speed Units` preference. i.e. If your Speed Units are '8 Steps' and your Speed button change amount is '4' then just two click will get you from zero to 100% speed.
+Note that this works in the units chosen in the `Speed Units` preference. i.e. If your Speed Units are '8 Steps' and your Speed button change amount is '4' then just two presses will get you from zero to 100% speed.
 
 Speed button Repeat Delay
 """""""""""""""""""""""""
@@ -1328,7 +1328,7 @@ If this preference is enabled |ED| will allow you to change the direction of the
 Stop on direction change?
 """""""""""""""""""""""""
 
-If this preference is enabled |ED| will stop the locos controlled by a throttle if you click the opposite direction while the loco(s) are moving.  Effectively this means that the 'opposite' direction will (also) act like a stop button.
+If this preference is enabled |ED| will stop the locos controlled by a throttle if you press the opposite direction button while the loco(s) are moving.  Effectively this means that the 'opposite' direction will (also) act like a stop button.
 
 'Limit Speed' & 'Pause' button Preferences
 """"""""""""""""""""""""""""""""""""""""""
@@ -1340,12 +1340,12 @@ Show 'Limit Speed' button?
 
 If this preference is enabled |ED| will show a :guilabel:`Limit Speed` button in all the throttles in the |T-S|. 
 
-When clicked, |ED| will temporarily restrict the maximum speed on the individual throttle.  The speed that it limits to is set with the `'Limit Speed' button`_ preference.
+When pressed, |ED| will temporarily restrict the maximum speed on the individual throttle.  The speed that it limits to is set with the `'Limit Speed' button`_ preference.
 
 'Limit Speed' button
 '''''''''''''''''''''''''''''''''''
 
-This preference is used to set the amount, as a percentage (\%), of the throttle that the speed will be temporarily limited to when you click the :guilabel:`Limit Speed` button. 
+This preference is used to set the amount, as a percentage (\%), of the throttle that the speed will be temporarily limited to when you press the :guilabel:`Limit Speed` button. 
 
 Note: If the `Show 'Limit Speed' button?`_ preference is not enabled this has no effect.
 
@@ -1354,7 +1354,7 @@ Show 'Pause' button?
 
 If this preference is enabled |ED| will show a :guilabel:`Pause` button in all the throttles in the Throttle Screen. 
 
-When clicked, |ED| will gradually slow and stop the loco(s) of a throttle. When pressed again |ED| will return the loco(s) to original speed.
+When pressed, |ED| will gradually slow and stop the loco(s) of a throttle. When pressed again |ED| will return the loco(s) to original speed.
 
 'Pause' button Rate
 '''''''''''''''''''''''''''''''''''
@@ -1366,7 +1366,7 @@ Only relevant is the `Show 'Pause' button?`_ preference is enabled.
 'Pause' button Step
 '''''''''''''''''''''''''''''''''''
 
-This preference is used to set amount, as a percentage (\%), of the throttle that the speed will change by (step) each time after the ``Pause`` is clicked.
+This preference is used to set amount, as a percentage (\%), of the throttle that the speed will change by (step) each time after the ``Pause`` is pressed.
 
 Only relevant is the `Show 'Pause' button?`_ preference is enabled.
 
@@ -1520,7 +1520,7 @@ Volume Button Preferences
 Speed button Change Amount (Volume)
 '''''''''''''''''''''''''''''''''''
 
-This preference allows you to set the amount, as a percentage (\%), of the throttle that the speed will change by (step) each time the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons are clicked.
+This preference allows you to set the amount, as a percentage (\%), of the throttle that the speed will change by (step) each time the device/phone's hardware :guilabel:`Volume Up` and :guilabel:`Volume Down` buttons are pressed.
 
 Only relevant is the `Disable Volume keys?`_ preference is DISABLED.
 
@@ -1991,10 +1991,10 @@ Maximum Recent Locos
 
 This preference is used to set the maximum number of *Recent Locos* to show in the Recent Locos list on the *Loco Select* screen.
 
-Control consist Lights on long click
+Control consist Lights on long press
 """"""""""""""""""""""""""""""""""""
 
-If this preference is enabled |ed| will allow you to change the Lights of the individual locos in a Consist with a long click on the Loco Select button.  You will be taken to the `Consist Lights Edit Screen <../operation/interface.html#consist-lights-edit-screen>`_.
+If this preference is enabled |ed| will allow you to change the Lights of the individual locos in a Consist with a long press on the Loco Select button.  You will be taken to the `Consist Lights Edit Screen <../operation/interface.html#consist-lights-edit-screen>`_.
 
 Note this only will work while the :guilabel:`Select` button is *Enabled*.  If the `Allow loco select while moving?`_ preference is disabled, the :guilabel:`Select` button is *Disabled* while the throttle is greater than zero.
 
@@ -2134,7 +2134,7 @@ This preference allows you to set the volume for *Horn/Whistle sounds* in the ph
 Bell button Latching/Momentary
 ''''''''''''''''''''''''''''''
 
-If this preference is enabled, the :guilabel:`Bell` button will be momentary (not latching).  i.e. That the Bell sound will only play while the button is being clicked. As apposed the default state where the Bell starts playing on the first press and stops in the next click.
+If this preference is enabled, the :guilabel:`Bell` button will be momentary (not latching).  i.e. That the Bell sound will only play while the button is being pressed. As apposed the default state where the Bell starts playing on the first press and stops in the next press.
 
 F1 and F2 activate Bell and Horn?
 '''''''''''''''''''''''''''''''''
@@ -2464,7 +2464,7 @@ Auto import from all Servers?
 
 |ed| is able to automatically import a preference file from a |WTS-DCC-EX| if it exists.
 
-If this preference is enabled |ed| will automatically import the preferences from all servers (if they exists) on connection.  i.e. If the file ``<jmri railroad base folder>/prefs/engine_driver/auto_preferences.ed`` is on the server and if it is more recent that the last time checked.
+If this preference is enabled |ed| will automatically import the preferences from all servers (if they exists) on connection.  i.e. If the file ``<jmri railroad base folder>/prefs/engine_driver/auto_preferences.ed`` is on the server and if it is more recent than the last time checked.
 
 Include recent loco list?
 """""""""""""""""""""""""

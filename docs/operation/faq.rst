@@ -77,7 +77,7 @@ Q. If |ed| can't find my Server/Railroad automatically
 
   A. Look for the IP address and port in the WiThrottle window in JMRI 
 
-    Type them in the two fields and click :guilabel:`Connect`
+    Type them in the two fields and press :guilabel:`Connect`
 
 |HR-DASHED|
 
@@ -172,7 +172,7 @@ Q. Why is |ED| still running when I look at the running apps list?
 
   A. Android *does not have* a 'running apps' list.  It has a 'recent apps' list.  This is a list of the apps you have used recently, not necessarily the ones that are running.
 
-    When you click the :guilabel:`Recent Apps` ( □ ) navigation button, |ed| may be in this list if you have used it recently, even if it is not running.
+    When you press the :guilabel:`Recent Apps` ( □ ) navigation button, |ed| may be in this list if you have used it recently, even if it is not running.
 
     You can remove |ed| from this list by swiping it to the right or up, depending on the version of Android.
 
@@ -226,9 +226,9 @@ Q. I can't create on-the-fly |consists| ?
 
 Q. The lights of the locos in my consist are wrong?
 
-  A. 1. If you use on-the-fly |consists|, you can control the lights by clicking ``Select`` then click on the ``Edit Lights`` button
+  A. 1. If you use on-the-fly |consists|, you can control the lights by pressing ``Select`` then press on the ``Edit Lights`` button
 
-  A. 2. You can control the lights with a Long click on the ``Select`` Loco button, if you enable the :ref:`configuration/preferences:Control consist Lights on long click` preference.
+  A. 2. You can control the lights with a Long press on the ``Select`` Loco button, if you enable the :ref:`configuration/preferences:Control consist Lights on long press` preference.
 
 |HR-DASHED|
 

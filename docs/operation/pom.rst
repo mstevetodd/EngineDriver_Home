@@ -38,7 +38,7 @@ Write CVs of decoders on the Main Track
 
 Note that you cannot read CVs or DCC Addresses on the main track.  You can only write CVs of a specified loco (DCC Address).
 
-To write a new CV value, enter the DCC address of the loco you want to change, enter the CV number into the 'CV' field, enter the new value in the 'Value' field and click :guilabel:`Write`
+To write a new CV value, enter the DCC address of the loco you want to change, enter the CV number into the 'CV' field, enter the new value in the 'Value' field and press :guilabel:`Write`
 
 Optionally, you can use the :guilabel:`NRMA CVs` pulldown to select a common CV from a list.  This just enters the appropriate CV number in the 'CV' field.
 

@@ -75,7 +75,7 @@ Recent versions of Android have a very confusing *feature*, sometimes called 'Sm
 
 This can cause problems if you sometimes use your device to connect to the internet on one network, but your |WTS-DCC-EX| is on a different network that does not have an internet connection. 
 
-Sometimes, the network can show as connected, and EngineDriver server discovery works, but clicking on the discovered server or Connect button does not work.
+Sometimes, the network can show as connected, and EngineDriver server discovery works, but tapping on the discovered server or Connect button does not work.
 
 Some devices have a setting to turn off this feature, some do not. 
 

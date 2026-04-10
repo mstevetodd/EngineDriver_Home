@@ -26,7 +26,7 @@ There are three ways to load & store your Locomotive Icon Image in Engine Driver
   * Start the |WTS|.
   * Start the Web Server.
   * Connect |ed| to JMRI |WTS| Discovered Server 'My JMRI Railroad' or type in the IP address : Port# 
-  * Click ``Select`` and load your Locos then ``Release`` and repeat until you've loaded all the locomotives you require with Icons into a throttle. 
+  * Press ``Select`` and load your Locos then ``Release`` and repeat until you've loaded all the locomotives you require with Icons into a throttle. 
  
   These Loco Icons will automatically be saved/cached on the Android device/phone in a new ``/Android/data/jmri.enginedriver/files/recent_engine_list/recent_engine_list`` folder for you.
 
@@ -54,10 +54,10 @@ There are three ways to load & store your Locomotive Icon Image in Engine Driver
 
  * In the **Roster List** on the Select Loco screen
 
-   * Long press on the loco
-   * press the :guilabel:`New Image` button, which will launch the Android system's default app for choosing images 
-   * find and select an image
-   * click :guilabel:`Save` |BR|\ |BR|\ You can replace an image with the :guilabel:`New Image` button or remove it with the :guilabel:`Remove` button
+   * Long press the loco
+   * Press the :guilabel:`New Image` button, which will launch the Android system's default app for choosing images 
+   * Find and select an image
+   * Press :guilabel:`Save` |BR|\ |BR|\ You can replace an image with the :guilabel:`New Image` button or remove it with the :guilabel:`Remove` button
 
 **General Notes on the Local Loco Icons:**
 
