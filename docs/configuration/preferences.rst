@@ -513,6 +513,8 @@ Tick Marks on Speed Sliders?
 
 If this preferences is enabled, |ED| will show tick marks on the background of the Speed Sliders.
 
+.. _switching-shunting-throttle-dead-zone:
+
 Switching/Shunting throttle Dead Zone
 ''''''''''''''''''''''''''''''''''''''
 

@@ -280,7 +280,7 @@ Several preferences can change the appearance or actions of the *Speed Slider*\:
 * :ref:`Throttle Speed Slider Margin <configuration/preferences:throttle speed slider margin>` |BR| When set, this changes the space between either the edge of the screen and the ends of the Slider, or if the Speed Buttons are enabled, the edge of the Speed Buttons and the ends of the Slider. Specific in pixels haw far to offset
 * :ref:`Hide Speed Slider? <configuration/preferences:hide speed slider?>` |BR| When this preferences is set, |ed| will not show speed slider, use speed buttons instead
 * :ref:`Tick Marks on Speed Sliders? <configuration/preferences:tick marks on speed sliders?>` |BR| When this preferences is set, |ED| will show tick marks on the background of the Speed Sliders
-* :ref:`Switching throttle Dead Zone <configuration/preferences:switching throttle dead zone>` |BR| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
+* :ref:`Switching throttle Dead Zone <switching-shunting-throttle-dead-zone>` |BR| When this preferences is set, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting |T-S|
 * :ref:`Stop Button Vertical Margins <configuration/preferences:stop button vertical margins>` |BR| When this preferences is set, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen
 
 .. [#PCT] The actual amounts shown in the *Speed Indicator* will depend on the ``Speed Units`` chosen in the :ref:`Speed Units preference <configuration/preferences:speed units>`.
