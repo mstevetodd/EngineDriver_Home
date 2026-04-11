@@ -96,6 +96,8 @@ There are a number themes to choose from:
 * Dark
 * Colourful
 * Neon Blue
+* Neon Green
+* Paper
 
 .. list-table::
     :widths: auto
@@ -121,6 +123,12 @@ There are a number themes to choose from:
     * - .. image:: ../_static/images/screenshots/throttle_semi_realistic_neon_blue_theme.png
           :scale: 8%
       - Neon Blue theme
+    * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_neon_green_theme.png
+          :scale: 11%
+      - Neon Green theme
+    * - .. image:: ../_static/images/screenshots/throttle_vertical_switching_paper_theme.png
+          :scale: 11%
+      - Paper theme
 
 Localisation
 """"""""""""
@@ -137,6 +145,7 @@ Supported localisations are:
 * English (NZ)
 * English (UK)
 * Catalan
+* Chinese
 * Czech
 * Italian
 * Japanese
@@ -178,15 +187,61 @@ Swipe through Routes?
 
 If this preference is enabled, the |R-S| is included in the list of screens when swiping left/right between screens.
 
+Left/Right Swipe changes speed?
+'''''''''''''''''''''''''''''''''''
+
+If checked, swipes on the main part of the screen will increase/decrease speed. Title Only swipe will be enabled for swipes between screens
+
+Speed Sep for Swipes?
+'''''''''''''''''''''''''''''''''''
+
+Speed Step amount to use for the Up, Down or Left/Right swipes are set to change speed
+
 Double Back Button to Exit?
 """""""""""""""""""""""""""
 
 If this preference is enabled, pressing the Android System ``Back`` button twice quickly from the |T-S| will exit the app.
 
+Alerts and Instructional Hints
+"""""""""""""""""""""""""""""""
+
 Hide Instructional Hints 
-""""""""""""""""""""""""
+'''''''''''''''''''''''''
 
 If this preference is enabled, most of the less important 'Toast' message will not be shown.
+
+Also the Wizard and Preference toolbar buttons on the connection page will be hidden.
+
+Show Additional Button Text?
+''''''''''''''''''''''''''''
+
+Show additional text below image buttons. (Not recommended for small screens)
+
+Beep on Alerts?
+'''''''''''''''''''''''''
+
+Play beep sound on Alert \'toast\' popup messages
+
+Background Alert
+"""""""""""""""""""
+
+If this preference is enabled |ed| will play a sound (Audible alert) when the app is sent to the background.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the `Pushing the app to the Background <../operation/operation.html#pushing-the-app-to-the-background>`_ section of the Operation - Details Instructions page for more information.
+
+Feedback on Disconnect
+"""""""""""""""""""""""""
+
+If this preference is enabled |ed| will play a sound (Audible alert) and will vibrate if there is an unexpected disconnection from the |WTS-DCC-EX|.
+
+.. note:: 
+  :class: note-ed-hidden-title
+
+  See the `Disconnections <../operation/wifi_issues.html#disconnections>`_ section of the WiFi Issues page if you are having consistent disconnections.
+
 
 Throttle Screen Appearance Preferences
 --------------------------------------
@@ -406,6 +461,18 @@ Only relevant for the following Throttle Screen Layouts:
 * Horizontal (1-3)
 * Horizontal Shunting / Horizontal Switching (1-3)
 
+Stop Button Vertical Margins
+'''''''''''''''''''''''''''''''''''
+   
+If this preferences is enabled, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen.  This is useful if you find it difficult to get the zero speeds on the vertical sliders without accidently touching the Stop Button.
+
+Only relevant to the following Throttle Screen layouts:
+
+* :ref:`Vertical <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching - Left <configuration/setup_wizard:throttle screen layout>`
+* :ref:`Vertical Shunting/Switching - Right <configuration/setup_wizard:throttle screen layout>`
+
 Display Speed buttons?
 '''''''''''''''''''''''''''''''''''
 
@@ -418,7 +485,6 @@ The amount the speed changes on each press can be changed with the `Speed Button
 Holding down a button will increase / decrease the speed continuously by the preset amount, in series of steps.
 
 The time between steps can be changed with the `Speed Button Repeat Delay`_ preference.  Note that this is independent of the `Speed Button Repeat Delay (Gamepad)`_ preference.  But the Volume button repeat Delay is linked to it.
-
 
 Hide Speed Slider?
 '''''''''''''''''''''''''''''''''''
@@ -447,8 +513,8 @@ Tick Marks on Speed Sliders?
 
 If this preferences is enabled, |ED| will show tick marks on the background of the Speed Sliders.
 
-Switching throttle Dead Zone
-'''''''''''''''''''''''''''''''''''
+Switching/Shunting throttle Dead Zone
+''''''''''''''''''''''''''''''''''''''
 
 If this preferences is enabled, |ED| will set the size of the dead zone, or detent, on the slider of the Switching/Shunting Throttle Screen.  The larger the size, the easier it is to find Zero on the slider.
 
@@ -458,18 +524,6 @@ Only relevant to the following Throttle Screen layouts:
 * :ref:`Vertical Shunting/Switching - Left <configuration/setup_wizard:throttle screen layout>`
 * :ref:`Vertical Shunting/Switching - Right <configuration/setup_wizard:throttle screen layout>`
 * :ref:`Horizontal Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
-
-Stop Button Vertical Margins
-'''''''''''''''''''''''''''''''''''
-   
-If this preferences is enabled, |ED| will add the entered number of pixels to offset margins of the stop button from the speed buttons and bottom of screen.  This is useful if you find it difficult to get the zero speeds on the vertical sliders without accidently touching the Stop Button.
-
-Only relevant to the following Throttle Screen layouts:
-
-* :ref:`Vertical <configuration/setup_wizard:throttle screen layout>`
-* :ref:`Vertical Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
-* :ref:`Vertical Shunting/Switching - Left <configuration/setup_wizard:throttle screen layout>`
-* :ref:`Vertical Shunting/Switching - Right <configuration/setup_wizard:throttle screen layout>`
 
 Haptic Feedback (Vibration) Preferences
 """""""""""""""""""""""""""""""""""""""
@@ -567,6 +621,17 @@ If this preference is enabled |ed| will show loco DCC Address(es) instead of the
 
 This changes the button label only.  It has no other functional effect.
 
+Additional selected loco Indicator
+""""""""""""""""""""""""""""""""""
+
+If this preference is enabled additional highlights of the Loco :guilabel:`Select` button is displayed.
+
+Options include:
+
+* None
+* Both Volume and Gamepad 1
+* Gamepad 1 only
+
 Default Function Preferences
 """"""""""""""""""""""""""""
 
@@ -588,6 +653,16 @@ This changes the button labels only.  It has no other functional effect.
   :class: note-ed-hidden-title
 
   Also see the :ref:`Default Function Screen <operation/interface:function defaults screen>` for more information.
+
+Override WiThrottle Function Latching?
+'''''''''''''''''''''''''''''''''''''''
+
+Use Engine Driver\'s default latching for non-roster locos, rather than the defaults provided by WiThrottle.
+
+Use Defaults for Roster Entries With No Functions?
+''''''''''''''''''''''''''''''''''''''''''''''''''
+
+Use Engine Driver\'s default Functions for roster entries with no function labels.
 
 Number of Default Functions
 '''''''''''''''''''''''''''''''''''
@@ -668,6 +743,11 @@ Enter the initial Web Page (such as '/panel') for the |WV-S|
 
 Note that this is different to the 'Web View Screen' initial Web Page which is set with the `Initial Web Screen Page`_ preference.
 
+Use Immersive Mode for Throttle view?
+'''''''''''''''''''''''''''''''''''''
+
+If this preference is enabled, |ED| will display the Throttle view full screen.  The Navigation bar and the Status Bar will be hidden, Swiping down from off the screen will temporarily show them again.
+
 Swipe Up-Down Preferences
 """""""""""""""""""""""""
 
@@ -677,12 +757,6 @@ The following preferences provide options for options for swipe up or down on th
     :depth: 1
     :local:
     :class: in-this-section
-
-
-Use Immersive Mode for Throttle view?
-'''''''''''''''''''''''''''''''''''''
-
-If this preference is enabled, |ED| will display the Throttle view full screen.  The Navigation bar and the Status Bar will be hidden, Swiping down from off the screen will temporarily show them again.
 
 Hide Toolbar in Immersive Mode?
 '''''''''''''''''''''''''''''''''''
@@ -702,10 +776,7 @@ Options:
 * Hide Web View |BR| (requires `Throttle Web View?`_ preference to be set)
 * Lock and Dim Screen
 * Dim Screen
-* Immersive Mode temporarily enable-disable
 * Switch Throttle Screen Layouts
-
-
 
 Swipe up action in the Throttle screen?
 '''''''''''''''''''''''''''''''''''''''
@@ -718,9 +789,7 @@ Options:
 * Hide Web View |BR| (requires `Throttle Web View?`_ preference to be set)
 * Lock and Dim Screen
 * Dim Screen
-* Immersive Mode temporarily enable-disable
 * Switch Throttle Screen Layouts
-
 
 Screen Dimming % Value
 '''''''''''''''''''''''''''''''''''
@@ -754,7 +823,6 @@ Options:
 * Hide Web View |BR| (requires `Throttle Web View?`_ preference to be set)
 * Lock and Dim Screen
 * Dim Screen
-* Immersive Mode temporarily enable-disable
 * Switch Throttle Screen Layouts
 
 Shake Threshold
@@ -1099,6 +1167,18 @@ The following preferences provide options for showing additional buttons on the 
     :local:
     :class: in-this-section
 
+Toolbar Button Size
+""""""""""""""""""""
+
+Set the size of the toolbar buttons. (Re-start required to fully complete the change.)
+
+Options include:
+
+* Auto - will attempt to automatically set the size based on the screen size and resolution.  This is the default setting.
+* Small
+* Medium
+* Large
+
 Emergency Stop button?
 """"""""""""""""""""""
 
@@ -1124,6 +1204,7 @@ Pressing this button will turn on/off the power to the track. The colour of the 
 * 'Amber' = unknown state
 * 'Red' = Power is Off
 * 'Green' = Power is On
+* 'Half Green' and 'Half Red' = DCC-EX only. Power is On for some outputs but not all.
 
 Flashlight button?
 """"""""""""""""""
@@ -1253,6 +1334,37 @@ If this preference is enabled |ED| to show an additional button on the Action Ba
 
 Refer to :doc:`this page <../operation/dcc-ex-native-protocol>` additional information.
 
+Throttle button?
+""""""""""""""""
+
+Show button in action bar to switch to the Throttle Screen.
+
+
+Turnouts/Points button?
+"""""""""""""""""""""""
+
+Show button in action bar to switch to the Turnouts/Points Screen.
+
+Routes button?
+""""""""""""""""
+
+Show button in action bar to switch to the Routes Screen.
+
+Web button?
+""""""""""""""""
+
+Show button in action bar to switch to the Web Screen.
+
+Advanced Consist (CV19) button?
+"""""""""""""""""""""""""""""""
+
+Show button in action bar, int the Select Loco Screen, to open the Advanced Consist (CV19) Screen.
+
+DCC-EX In Command Station Consist button?
+"""""""""""""""""""""""""""""""""""""""""
+
+Show button in action bar, int the Select Loco Screen, to open the DCC-EX In Command Station Consist Screen.
+
 Throttle Control Preferences
 ----------------------------
 
@@ -1319,6 +1431,27 @@ Stop on Phone call?
 """""""""""""""""""
 
 If this preference is enabled |ED| will stop all loco(s) controlled by the device /phone when a phone call is answered or placed.
+
+EStop On Stop Long Press?
+"""""""""""""""""""""""""
+
+Emergency Stop all locos on the current throttle on a long press of the \'Stop\' button.
+
+
+Stop button Long Press Delay
+""""""""""""""""""""""""""""
+
+How many milliseconds constitutes a long press for the Stop buttons, to initiate EStop.
+
+EStop on Background?
+""""""""""""""""""""
+
+Emergency Stop all locos on all throttles when Engine Driver is pushed to background.
+
+DCC-EX - Use EStop Pause/Resume
+"""""""""""""""""""""""""""""""
+
+Use the DCC-EX Emergency Stop Pause/Resume feature instead of a simple Emergency Stop.
 
 Direction change while moving?
 """"""""""""""""""""""""""""""
@@ -1854,18 +1987,6 @@ Show disable Knob button
 
 Enable this preference to allow the control knob to be disabled by an action button on the |T-S|
 
-----
-
-Additional selected loco Indicator
-""""""""""""""""""""""""""""""""""
-
-If this preference is enabled additional highlights of the Loco :guilabel:`Select` button is displayed.
-
-Options include:
-
-* None
-* Both Volume and Gamepad 1
-* Gamepad 1 only
 
 Voice Response Preferences
 """"""""""""""""""""""""""
@@ -2188,17 +2309,6 @@ If this preference is enabled |ED| will allow your device to connect to JMRI, or
 
   See the `Using Mobile Data instead of WiFi <../operation/wifi_issues.html#using-mobile-data-instead-of-wifi>`_ section of the WiFi Issues page for more information on the use of this preference.
 
-Feedback on Disconnect
-"""""""""""""""""""""""""
-
-If this preference is enabled |ed| will play a sound (Audible alert) and will vibrate if there is an unexpected disconnection from the |WTS-DCC-EX|.
-
-.. note:: 
-  :class: note-ed-hidden-title
-
-  See the `Disconnections <../operation/wifi_issues.html#disconnections>`_ section of the WiFi Issues page if you are having consistent disconnections.
-
-
 Show WiThrottle PoM Page
 """""""""""""""""""""""""
 
@@ -2211,16 +2321,6 @@ This additional menu option allows you to program CVs in decoders on the main (O
 
   See the :ref:`operation/interface:WiThrottle - Programming on the Main Screen` for more information.
 
-
-Background Alert
-"""""""""""""""""""
-
-If this preference is enabled |ed| will play a sound (Audible alert) when the app is sent to the background.
-
-.. note:: 
-  :class: note-ed-hidden-title
-
-  See the `Pushing the app to the Background <../operation/operation.html#pushing-the-app-to-the-background>`_ section of the Operation - Details Instructions page for more information.
 
 DCC-EX EX-CommandStation Preferences
 """"""""""""""""""""""""""""""""""""
