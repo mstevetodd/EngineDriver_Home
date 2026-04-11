@@ -74,7 +74,7 @@ The **WiThrottle Protocol** itself is a standard for how WiFi throttles can comm
 
 ----
 
-.. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has similar capabilities to Engine Driver. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the WiThrottle app and a number of other apps and |CSs|. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
+.. [#WIT] 'WiThrottle' is a trademark owned by Brett Hoffman. It is also an `iOS app <https://www.withrottle.com/html/home.html>`_ developed by Brett Hoffman which has a subset of the capabilities of Engine Driver. |BR|\ The 'WiThrottle protocol' is a communications protocol developed by Brett Hoffman.  It is used by JMRI, |ed|, the WiThrottle app and a number of other apps and |CSs|. |BR|\ References in this website to a '|WTS|', refer to a server that can communicate using the 'WiThrottle protocol'.
 
 
 WiThrottle protocol VS DCC-EX Native protocol

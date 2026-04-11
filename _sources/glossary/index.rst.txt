@@ -41,19 +41,19 @@ Glossary
   * - JMRI
     - Java Model Railroad Interface
   * - Loco |BR| Locomotive |BR| Engine
-    - TODO
+    - A powered rail vehicle that provides the motive power for a train.
   * - Main Screens
     - The screens: 'Throttle', 'Turnouts/Points', 'Routes', 'Web' and, to a lesser extent, 'Connection'.
   * - Switching |BR| Shunting
-    - The process of moving individual carriages to/from specific locations on yards or sidings.
+    - The process of moving individual carriages to/from specific locations on yards or sidings. |BR| In North America this is called 'Switching' and in the rest of the English speaking world it is called 'Shunting'.
   * - Turnouts |BR| Points
-    - TODO
+    - Track devices that allow trains to change from one track to another. |BR| In the North America they are called 'Turnouts' and in the rest of the English speaking world they are called 'Points'.
   * - USB
     - Universal Serial Bus
   * - WiThrottle
-    - \ 1. Trademark owned by Brett Hoffman |BR| 2. proprietary iOS app developed by Brett Hoffman
+    - \ 1. Trademark owned by Brett Hoffman |BR| 2. Proprietary iOS app developed by Brett Hoffman
   * - WiThrottle protocol
-    - proprietary protocol developed by Brett Hoffman
+    - Proprietary protocol developed by Brett Hoffman
 
 Copyright & Warranty
 ====================

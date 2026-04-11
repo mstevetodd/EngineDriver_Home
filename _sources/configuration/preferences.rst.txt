@@ -14,7 +14,7 @@ Preferences
 
    .. contents:: On This Page
       :local:
-      :depth: 3
+      :depth: 2
 
 .. image:: ../_static/images/parts/menu_throttle_neon_blue_theme.png
    :scale: 20%
