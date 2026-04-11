@@ -1630,6 +1630,11 @@ For the 'Complex' option only. This preference is ignored if 'Simple' or 'Specia
 
   Also see the :doc:`/operation/consist-follow-functions` page for information on the different rule types and how to use them.
 
+Control Consist (MU) lights on long press?
+'''''''''''''''''''''''''''''''''''''''''''
+
+Control Consist (MU) lights on long press.
+
 Additional Throttle Control Source Preferences
 ----------------------------------------------
 
