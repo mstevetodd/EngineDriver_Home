@@ -192,7 +192,7 @@ Left/Right Swipe changes speed?
 
 If checked, swipes on the main part of the screen will increase/decrease speed. Title Only swipe will be enabled for swipes between screens
 
-Speed Sep for Swipes?
+Speed Step for Swipes?
 '''''''''''''''''''''''''''''''''''
 
 Speed Step amount to use for the Up, Down or Left/Right swipes are set to change speed
@@ -425,11 +425,13 @@ This preference allows you to set how many throttles to display on the |T-S|. (L
 Only available for the following Throttle Screen Layouts:
 
 * Horizontal (1-3)
-* Horizontal Shunting / Horizontal Switching (1-3)
+* Horizontal Shunting/Switching (1-3)
 * Simple (1-6)
+* Tablet Switching/Shunting Left (1-6)
+* Tablet Switching/Shunting Right (1-6)
+* Tablet Vertical Left (1-6)
 
 All other layouts will automatically change this preference to the fixed number for that particular layout.
-
 
 Speed Slider and Buttons Preferences
 """"""""""""""""""""""""""""""""""""
@@ -449,7 +451,7 @@ If this preference is enabled, this preference will show a taller Slider, or Spe
 Only relevant for the following Throttle Screen Layouts:
 
 * Horizontal (1-3)
-* Horizontal Shunting / Horizontal Switching (1-3)
+* Horizontal Shunting/Switching (1-3)
 
 Throttle Speed Slider Margin
 '''''''''''''''''''''''''''''''''''
@@ -459,7 +461,7 @@ If this preference is enabled, this changes the space between either the edge of
 Only relevant for the following Throttle Screen Layouts:
 
 * Horizontal (1-3)
-* Horizontal Shunting / Horizontal Switching (1-3)
+* Horizontal Shunting/Switching (1-3)
 
 Stop Button Vertical Margins
 '''''''''''''''''''''''''''''''''''
@@ -491,10 +493,11 @@ Hide Speed Slider?
 
 If this preference is enabled, |ED| will not show speed slider, use speed buttons instead.
 
-This option is not relevant for the following Throttle Screen Layouts as they cannot have a slider:
+This option is *not* relevant for the following Throttle Screen Layouts as they cannot have a slider:
 
 * Big Buttons - Left
 * Big Buttons - Right
+* Semi-Realistic
 
 Hide Slider AND Speed Buttons?
 '''''''''''''''''''''''''''''''''''
@@ -526,6 +529,8 @@ Only relevant to the following Throttle Screen layouts:
 * :ref:`Vertical Shunting/Switching - Left <configuration/setup_wizard:throttle screen layout>`
 * :ref:`Vertical Shunting/Switching - Right <configuration/setup_wizard:throttle screen layout>`
 * :ref:`Horizontal Shunting/Switching <configuration/setup_wizard:throttle screen layout>`
+
+Note that if you set the `Speed Units <speed units>`_ to 8, 10, 14 or 28, this preference will become less effective, and generally unnecessary.
 
 Haptic Feedback (Vibration) Preferences
 """""""""""""""""""""""""""""""""""""""
