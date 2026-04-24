@@ -1615,9 +1615,10 @@ To record a log file in EngineDriver....
 11. Browse down to the folder ``..\Internal shared storage\Android\data\jmri.enginedriver\files``
 12. Find the most recent file that looks like ``logcatxxxxxxxxxxxxx.txt``     e.g. logcat1699833098998.txt
 
-13. a. Attach that file to a message in qroups.io using the paperclip button on the toolbar above the message content
-13. b. Attach that file to a message in discord using the :guilabel:`+` button on the row of the message content
-13. c. Attach that file to an email message and send to the developers
+13. 
+  a. Attach that file to a message in qroups.io using the paperclip button on the toolbar above the message content
+  b. or, Attach that file to a message in discord using the :guilabel:`+` button on the row of the message content
+  c. or, Attach that file to an email message and send to the developers
 
 From Engine Driver version 2.42.217 (beta) you can also do the following if you have internet and email connections on your phone.
 
