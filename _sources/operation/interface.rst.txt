@@ -1619,6 +1619,21 @@ To record a log file in EngineDriver....
 13. b. Attach that file to a message in discord using the :guilabel:`+` button on the row of the message content
 13. c. Attach that file to an email message and send to the developers
 
+From Engine Driver version 2.42.217 (beta) you can also do the following if you have internet and email connections on your phone.
+
+1. Start ED.
+2. From the menu, select 'View Log'
+3. Click 'Start recording to a file'
+4. Click 'Close'
+5. Attempt whatever is causing the problem a few times
+6. From the menu, select 'View Log'
+7. Click 'Stop recording'
+8. Click 'Share'
+9. Select the most recent file (it will be at the top of this list)
+10. Select 'Gmail' 
+11. Select an address to email it, add a subject line and click 'Send'
+
+
 |force-break|
 
 About Screen
