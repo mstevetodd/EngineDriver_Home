@@ -160,6 +160,14 @@ Utopia 360
 
 This has been successful with the 'Android C' mode.
 
+XBOX 360 Controller
+~~~~~~~~~~~~~~~~~~~
+
+.. image:: ../_static/images/gamepads/xbox.png
+   :scale: 45 %
+
+Note: not all the buttons are able to be used.
+
 DIY Arduino ESP32 + keypad + Rotary Encoder
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -187,15 +195,7 @@ Volume dials will work without any special configuration because |ED| always had
 Future Support Planned
 ^^^^^^^^^^^^^^^^^^^^^^
 
-.. image:: ../_static/images/gamepads/xbox.png
-   :scale: 45 %
-
-XBOX 360 Controller
-~~~~~~~~~~~~~~~~~~~
-
-Support for this gamepad will be added in future releases.  (It is currently in the Alpha builds.)
-
-Note: not all the buttons are able to be used.
+* none currently identified
 
 Not Recommended Gamepads
 ^^^^^^^^^^^^^^^^^^^^^^^^
