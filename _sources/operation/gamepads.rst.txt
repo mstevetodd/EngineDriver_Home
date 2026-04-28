@@ -205,9 +205,9 @@ These work, but have issues which make them not recommended.
 VR Box
 ~~~~~~~
 
-Support for this type of gamepad was removed from |ed| as the device was so unreliable. (Mine had a bad solder join that I was able to fix.) However is very similar to the Utopia 360, so if you have one that works, try the Utopia 360 options.
+Support for this type of gamepad was previously removed from |ed| as the device was so unreliable. (Mine had a bad solder join that I was able to fix.) 
 
-Support for Mode B on this gamepad will be re-added in future releases.  (It is currently in the Alpha builds.)
+However support for Mode B on this gamepad was later re-added.
 
 With VR Box Mode B it is important to enable the 'Ignore Joystick Actions' preference, as the DPad/joystick sends both joystick events and keystroke events, which interfere with each other.
 
