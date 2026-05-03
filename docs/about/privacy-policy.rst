@@ -29,20 +29,17 @@ These permissions are required to be granted to |ED| for it to function *at its 
 
   This is used, in some cases, to determine the type of |server|.  
   
-  If you are using a |EX-CS| in Access Point mode, this permission is needed to 'find' the server. If not granted, you will need to type in the IP address of the server manually.
+  If you are using an |EX-CS| in Access Point mode, this permission is needed to 'find' the server. If not granted, you will need to type in the IP address of the server manually.
 
   If you are using an MRC or Digitrax |WTS| server, |ED| will alter some internal settings for better performance. If this permission is not granted |ED| may not perform optimally.
 
 Note: *Use Location* (in Android 8 or greater) must be enabled in the Android system settings for |ED| to 'find' servers on the network.
-
 
 Optional Permissions
 ====================
 
 These permissions are optional and can be granted to |ED| to enhance its functionality.
 
-* Engine Driver needs **STORAGE** permissions to load background images. |BR| |BR|
+* Engine Driver needs **READ_MEDIA_IMAGES** permissions to load background images. |BR| As of version 2.43.226, this permission is no longer required to load background images. |BR| |BR|
 
-* Engine Driver needs **READ_MEDIA_PERMISSIONS** permissions to load background images. |BR| |BR|
-
-* Engine Driver needs **READ_MEDIA_VISUAL_USER_SELECTED** permissions to load background images.
+* Engine Driver needs **READ_MEDIA_VISUAL_USER_SELECTED** permissions to load background images. |BR| As of version 2.43.226, this permission is no longer required to load background images.
