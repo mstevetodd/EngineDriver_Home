@@ -520,8 +520,11 @@
 </section>
 <section id="how-to-enable-the-dcc-ex-native-protocol">
 <h2><a class="toc-backref" href="#id2" role="doc-backlink">How to enable the DCC-EX Native Protocol</a><a class="headerlink" href="#how-to-enable-the-dcc-ex-native-protocol" title="Link to this heading"></a></h2>
-<p>To enable the <strong>DCC-EX Native Protocol</strong> in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> do the following:</p>
-<p>Note this must be preformed <em>before</em> you connect to the <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Station</abbr>.</p>
+<p>To enable the <strong>DCC-EX Native Protocol</strong> in <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> do one of the following:</p>
+<p>Note these must be preformed <em>before</em> you connect to the <abbr title="NCE, DigiTrax, EX-CommandStation, etc.">DCC Command Station</abbr>.</p>
+<ol class="arabic">
+<li><p>Re-run the Startup Wizard (Menu –&gt; Startup Wizard) and select ‘Yes’ when asked you you will use an <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> on the second last page. <br /> Doing so will enable all the prferences listed below. <br /> <br /> or <br /> <br /></p></li>
+<li><p>You can enable it in the preferences:</p>
 <ul>
 <li><p>Start <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span></p></li>
 <li><p>Open the Menu –&gt; Preferences</p></li>
@@ -546,7 +549,9 @@
 </li>
 <li><p>close preferences (tap the Android Back button) to go back to the Connect Screen</p></li>
 </ul>
-<p>Now connect to the <strong>DCC-EX EX-CommandStation</strong></p>
+</li>
+</ol>
+<p>Now connect to the <strong>DCC-EX EX-CommandStation</strong>.  As long as the name of the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a> contains “DCC-EX” or “DCCEX” (case insensitive) or connects on port 2560 <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will automatically use the <strong>DCC-EX Native Protocol</strong> to talk to the <a href="https://dcc-ex.com/">DCC-EX EX-CommandStation</a>.</p>
 </section>
 <section id="using-the-dcc-ex-native-features">
 <h2><a class="toc-backref" href="#id3" role="doc-backlink">Using the DCC-EX Native Features</a><a class="headerlink" href="#using-the-dcc-ex-native-features" title="Link to this heading"></a></h2>
@@ -631,7 +636,7 @@
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fbccbbb29b0>
+    <jinja2.runtime.BlockReference object at 0x7f91cbe9a620>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>

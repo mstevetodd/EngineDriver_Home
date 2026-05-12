@@ -34,28 +34,33 @@ These |ED| features are only available when the **DCC-EX Native Protocol** prefe
 How to enable the DCC-EX Native Protocol
 ========================================
 
-To enable the **DCC-EX Native Protocol** in |ED| do the following:
+To enable the **DCC-EX Native Protocol** in |ED| do one of the following:
 
-Note this must be preformed *before* you connect to the |CS|.
+Note these must be preformed *before* you connect to the |CS|.
 
-* Start |ED|
-* Open the Menu --> Preferences
-* Find the section "Connect Preferences"
-* Open the sub-section "DCC-EX EX-CommandStation Preferences"
-* Enable the "Use Native DCC-EX commands"
-* If you also use other brands/types of |CS| (other than |EX-CS|) 
 
-   * We recommend that you also enable the "Show protocol option"
+1. Re-run the Startup Wizard (Menu --> Startup Wizard) and select 'Yes' when asked you you will use an |EX-CS| on the second last page. |BR| Doing so will enable all the prferences listed below. |BR| |BR| or |BR| |BR|
 
-* Optionally you can enable a button on the Action Bar in |ED|
+2. You can enable it in the preferences:
 
-   * Close the "DCC-EX EX-CommandStation Preferences" sub-group (tap the Android Back button), but stay in the preferences
-   * Find the "Throttle Screen Action Bar Preferences" section
-   * Enable the "DCC-EX button?"
+   * Start |ED|
+   * Open the Menu --> Preferences
+   * Find the section "Connect Preferences"
+   * Open the sub-section "DCC-EX EX-CommandStation Preferences"
+   * Enable the "Use Native DCC-EX commands"
+   * If you also use other brands/types of |CS| (other than |EX-CS|) 
 
-* close preferences (tap the Android Back button) to go back to the Connect Screen
+      * We recommend that you also enable the "Show protocol option"
 
-Now connect to the **DCC-EX EX-CommandStation**
+   * Optionally you can enable a button on the Action Bar in |ED|
+
+      * Close the "DCC-EX EX-CommandStation Preferences" sub-group (tap the Android Back button), but stay in the preferences
+      * Find the "Throttle Screen Action Bar Preferences" section
+      * Enable the "DCC-EX button?"
+
+   * close preferences (tap the Android Back button) to go back to the Connect Screen
+
+Now connect to the **DCC-EX EX-CommandStation**.  As long as the name of the |EX-CS| contains "DCC-EX" or "DCCEX" (case insensitive) or connects on port 2560 |ED| will automatically use the **DCC-EX Native Protocol** to talk to the |EX-CS|.
 
 Using the DCC-EX Native Features
 ================================
