@@ -16,7 +16,7 @@ Features when using the Native Protocol when connected to a DCC-EX EX-CommandSta
       :local:
       :depth: 3
 
-By default, **Engine Driver** (ED) uses the **WiThrottle Protocol** to talk to all types of |CS|. 
+By default, **Engine Driver** (ED) uses the **WiThrottle Protocol** to talk to all types of |EX-CS|. 
 
 When connecting to a **DCC-EX EX-CommandStation** it can optionally use the **DCC-EX Native Protocol**. 
 
@@ -29,7 +29,7 @@ These |ED| features are only available when the **DCC-EX Native Protocol** prefe
 * Read and write CVs of decoders on the Programming Track
 * Write CVs of decoders on the Main Track
 * Issue Native commands to the DCC-EX EX-CommandStation
-* TrackManager control - able to change the type and state of each Track/Channel (e.g DCC and DC))
+* TrackManager control - able to change the type and state of each Track/Channel (e.g DCC and DC)
 
 How to enable the DCC-EX Native Protocol
 ========================================
