@@ -19,11 +19,19 @@ Production Version
 The current Production version (**v2.42.221**) is available in the `Google Play Store <https://play.google.com/store/apps/details?id=jmri.enginedriver>`_ or by direct download of the .apk file below.
 
 Installing from the Play Store is preferred as you will automatically receive updates to the app, as long as your device/phone periodically connects to the internet.
- 
+
+.. note:: 
+
+   If you hava an **Amazon Fire Tablet**, the version of |ED| on the **Amazon Appstore** has not been updated for some time as the store has become too difficult to work with. If you have an Amazon device, you can still install the latest version by manuallly installing the .apk file below. See instructions below.  
+   
+   It is also possible to install the **Google Play Store** on some Amazon devices, which would allow you to get updates automatically.  See `Installing Google Play Store on Amazon Devices <https://www.howtogeek.com/196968/how-to-install-the-google-play-store-on-your-amazon-fire-tablet/>`_ for instructions. Or see a `video walkthrough of the process <https://youtu.be/BQ5_H5Aoua0?si=c_HC2kZNNZxKjZ7->`_.
+
 Beta Versions
 -------------
 
-If you'd like to help test early versions, please join the `Beta program <https://play.google.com/apps/testing/jmri.enginedriver>`_.
+If you'd like to help test early versions, please join the `Beta program <https://play.google.com/apps/testing/jmri.enginedriver>`_.  
+
+Clicking the link will take you to the Play Store where you can click "Become a tester" and then install the beta version of the app.  Beta versions are updated more frequently than production versions, but may be less stable.  You can leave the beta program at any time by clicking "Leave the program" on the same page. 
 
 Older or Other Versions - Manual Install
 ----------------------------------------
@@ -37,7 +45,7 @@ Older or Other Versions - Manual Install
 
 * `EngineDriver-2.43.227.apk <../_static/apk/EngineDriver-2.43.227.apk>`_
 * `EngineDriver-2.42.221.apk <../_static/apk/EngineDriver-2.42.221.apk>`_
-* `EngineDriver-2.41.215.apk <../_static/apk/EngineDriver-2.41.215.apk>`_ | Last version to support Android 4.x
+* `EngineDriver-2.41.215.apk <../_static/apk/EngineDriver-2.41.215.apk>`_ | Last version to support Android 4.x (including the ESU MCII)
 * `EngineDriver-2.40.203.apk <../_static/apk/EngineDriver-2.40.203.apk>`_
 * `EngineDriver-2.39.195.apk <../_static/apk/EngineDriver-2.39.195.apk>`_
 * `EngineDriver-2.38.193.apk <../_static/apk/EngineDriver-2.38.193.apk>`_
