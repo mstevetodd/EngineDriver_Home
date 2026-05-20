@@ -34,7 +34,7 @@ Android Device/Phone
 
 |ed| will work on most Android devices (Phones and Tablets) made in the last 5-6 years. Currently it has a minSDKVersion 21, which equates to minimum Android OS version of 5.0 (Lollipop). Info on minSDKVersion available in the `Engine Driver manifest <https://developer.android.com/guide/topics/manifest/uses-sdk-element#ApiLevels>`_.
 
-A number of :ref:`permissions <about/privacy-policy:required permissions>` are required to be granted to |ED| for it to function at its best, but as of Version 2.40.200 it will generally work without any additional permissions.
+A number of :ref:`permissions <about/privacy-policy:Recommended permissions>` are required to be granted to |ED| for it to function at its best, but as of Version 2.40.200 it will generally work without any additional permissions.
 
 |FORCE-BREAK|
 
