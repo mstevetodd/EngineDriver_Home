@@ -16,16 +16,16 @@ Privacy Policy
 
 |ED| does not transmit any information from the phone, other than the model train information, to any other app, site or person.  Model train information within the app is only used within the app, or to instruct a server to operate your model trains.
 
-Required Permissions
-====================
+Recommended Permissions
+=======================
 
 As of Version 2.40.200, |ED| does not *require* any additional permissions to function. 
 
-|ED| will generally work without any of these permissions being granted, however these permissions are recommended to be granted to it for it to function *at its best*.
+|ED| will generally work without any of these permissions being granted, however these permissions are recommended to be granted for it to function *at its best*.
 
 * Engine Driver needs the **NOTIFICATION** permission to warn you when the app has been pushed into background. |BR| |BR|
 
-* Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID.
+* Engine Driver needs the **ACCESS_FINE_LOCATION** permission for the app to read the WiFi SSID (Network Name).
 
   This is used, in some cases, to determine the type of |server|.  
   
@@ -33,7 +33,7 @@ As of Version 2.40.200, |ED| does not *require* any additional permissions to fu
 
   If you are using an MRC or Digitrax |WTS| server, |ED| will alter some internal settings for better performance. If this permission is not granted |ED| may not perform optimally.
 
-Note: The *Use Location* (in Android 8 or greater) feature must be enabled in the Android system settings for |ED| to 'find' servers on the network.
+Note: The *Use Location* (in Android 8 or greater) feature *must be enabled* in the Android system settings for |ED| to 'find' servers on the network.
 
 Optional Permissions
 ====================
