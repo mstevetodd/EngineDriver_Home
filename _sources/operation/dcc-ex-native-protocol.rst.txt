@@ -1,11 +1,9 @@
-:orphan:
-
-*************************************************************************************
-Features when using the Native Protocol when connected to a DCC-EX EX-CommandStation
-*************************************************************************************
+***********************************************
+Using the DCC-EX Native Protocol
+***********************************************
 
 .. meta::
-   :keywords: gamepad
+   :keywords: DCC-EX, Native Protocol, DCC-EX Native Protocol
 
 .. include:: ../include.rst
 
@@ -20,10 +18,10 @@ By default, **Engine Driver** (ED) uses the **WiThrottle Protocol** to talk to a
 
 When connecting to a **DCC-EX EX-CommandStation** it can optionally use the **DCC-EX Native Protocol**. 
 
-Specific Features - when using the DCC-EX Native Protocol
-=========================================================
+Native Protocol Specific Features with a DCC-EX EX-CommandStation
+=================================================================
 
-These |ED| features are only available when the **DCC-EX Native Protocol** preference is enabled:
+The following |ED| features are only available when the **DCC-EX Native Protocol** preference is enabled:
 
 * Read and write DCC addresses on the Programming Track
 * Read and write CVs of decoders on the Programming Track
