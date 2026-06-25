@@ -21,6 +21,7 @@ See:
    getting_started
    operation
    interface
+   dcc-ex-native-protocol
    semi-realistic-throttle
    gamepads
    esu_mcii

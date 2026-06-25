@@ -30,7 +30,7 @@ author = 'M Steve Todd, Peter Akers, Robert Posener, John Geddes'
 # ones.
 extensions = [
     'sphinx.ext.autodoc',
-   # 'sphinx.ext.intersphinx',
+#    'sphinx.ext.intersphinx',
     'sphinx.ext.autosectionlabel',
     'sphinx.ext.todo',
     'sphinxcontrib.spelling',

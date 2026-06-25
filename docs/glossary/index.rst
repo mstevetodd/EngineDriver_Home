@@ -69,8 +69,9 @@ You should have received a copy of the GNU General Public License along with thi
 Attribution
 ============
 
-* Blue background texture from `https://www.sketchuptextureclub.com/#google_vignette`
-* Paper background texture from `https://www.sketchuptextureclub.com/textures/materials/paper/cotton-paper-texture-seamless-10870`
+* Blue background texture from https://www.sketchuptextureclub.com
+* Paper background texture from https://www.sketchuptextureclub.com/textures/materials/paper/cotton-paper-texture-seamless-10870
+* Bronze background texture from https://www.sketchuptextureclub.com/textures/materials/metals/basic-metals/dark-bronze-with-rust-accents-metal-texture-seamless-09770
 * Semi-Realistic Throttle text by John Geddes
 * Consist Function Following Documentation by John Geddes
 * Translations by:
