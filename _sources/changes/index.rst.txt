@@ -38,19 +38,20 @@ Changes included in Engine Driver Production version **2.42.221**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.43.227**:
+Changes included in Engine Driver Beta version **2.43.229**:
 
-  * New themes. 'Neon Green' and 'Paper'
-  * Added 'Drop loco before Acquire' toggle button on the Select Loco screen
-  * Added support to DCC-EX MAIN_INV track type
-  * Added 'Return' button on the Edit Consist page
-  * Cosmetic improvements to the Preferences page
-  * Bug fixes from the previous beta release
-  * Added notching on the throttle sliders when using other than 126 or percent options
-  * Added preference to hide the additional button text on the Select Screen
-  * New Throttle layout - Tablet Vertical Left - two function columns (1-6)
-  * Added preferences to customise the Thrown/Closed button labels for DCC-EX
-  * Removed need for READ_MEDIA_IMAGES Permission. Will need to reselect a background if you have one
+  * New themes. 'Neon Green', 'Paper' and 'Bronze'</li>
+  * Added 'Drop loco before Acquire' toggle button on the Select Loco screen</li>
+  * Added support for DCC-EX MAIN_INV track type</li>
+  * Added 'Return' button on the Edit Consist/MU page</li>
+  * Cosmetic improvements to the Preferences page</li>
+  * Bug fixes from the previous beta release</li>
+  * Added notching on the throttle sliders when using other than 126 or percent options</li>
+  * Added preference to hide the additional button text on the Select Screen</li>
+  * New Throttle layout - Tablet Vertical Left - two function columns (1-6)</li>
+  * Added preferences to customise the Thrown/Closed button labels for DCC-EX</li>
+  * Removed need for READ_MEDIA_IMAGES Permission. Will need to reselect a background if you have one</li>
+  * Additional French Translations by Alain Carasso</li>
  
 Complete ChangeLog
 --------------------------------------------
