@@ -935,6 +935,10 @@ While |ed| will attempt to continue to run in background, it is at the mercy of 
 
 In general avoid letting |ED| try to run in background.
 
+If you wish to increase the chance that |ED| will continue to run in background, make sure to enable the ``Android System Setting -> Apps -> Engine Driver -> App Battery Usage -> Allow Background Usage``
+
+Note that using Android's *multi-window feature* (split screen) or Android 17's *bubble feature* do not push |ED| in the background, so will continue running safely.
+
 .. note:: 
   :class: note-ed-hidden-title
 

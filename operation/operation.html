@@ -1284,6 +1284,8 @@ You can also swipe right from the <a class="reference internal" href="interface.
 <p>Tapping the Notification Shade entry or the app icon will return you to the same screen your were in when you pushed the app to the background.</p>
 <p>While <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will attempt to continue to run in background, it is at the mercy of the Android OS. Android itself is designed to kill dormant apps, which it will consider this to be, if it thinks there is a better use of the memory or processor, so it can be terminated at any time without warning.</p>
 <p>In general avoid letting <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> try to run in background.</p>
+<p>If you wish to increase the chance that <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> will continue to run in background, make sure to enable the <code class="docutils literal notranslate"><span class="pre">Android</span> <span class="pre">System</span> <span class="pre">Setting</span> <span class="pre">-&gt;</span> <span class="pre">Apps</span> <span class="pre">-&gt;</span> <span class="pre">Engine</span> <span class="pre">Driver</span> <span class="pre">-&gt;</span> <span class="pre">App</span> <span class="pre">Battery</span> <span class="pre">Usage</span> <span class="pre">-&gt;</span> <span class="pre">Allow</span> <span class="pre">Background</span> <span class="pre">Usage</span></code></p>
+<p>Note that using Android’s <em>multi-window feature</em> (split screen) or Android 17’s <em>bubble feature</em> do not push <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> in the background, so will continue running safely.</p>
 <div class="note-ed-hidden-title admonition note">
 <p class="admonition-title">Note</p>
 <p>If you are concerned about preserving the battery, there are options.  See the <a class="reference internal" href="../configuration/conserving_power.html"><span class="doc">Conserving Power</span></a> page for more information.</p>
@@ -1347,7 +1349,7 @@ You can also swipe right from the <a class="reference internal" href="interface.
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7fbce7c3dea0>
+    <jinja2.runtime.BlockReference object at 0x7f77783b6230>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
