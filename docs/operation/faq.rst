@@ -152,6 +152,10 @@ Q. Why do my trains stop when I lock my phone screen?
 
     In general avoid letting |ED| try to run in background.
 
+    If you wish to increase the chance that |ED| will continue to run in background, make sure to enable the ``Android System Setting -> Apps -> Engine Driver -> App Battery Usage -> Allow Background Usage``
+
+    Note that using Android's *multi-window feature* (split screen) or Android 17's *bubble feature* do not push |ED| in the background, so will continue running safely.
+
     Refer to :ref:`operation/operation:pushing the app to the background` for more information.
 
 |HR-DASHED|
