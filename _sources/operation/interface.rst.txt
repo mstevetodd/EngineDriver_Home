@@ -226,7 +226,7 @@ Depending on the :ref:`Speed Units Preference <configuration/preferences:speed u
     - 28
   * - 128 steps
     - 0
-    - 128
+    - 126
 
 Also, if one of the :ref:`Shunting/Switching layouts <configuration/preferences:throttle screen layout>` is selected, the high number will be negative ('-') when reversed (e.g. -100 - 0 - 100)
 

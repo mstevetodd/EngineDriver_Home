@@ -38,7 +38,7 @@ Quick Start / Getting Started
        :scale: 13 %
        :align: right
 
-    * The first time you run |ED| you will need to go through the Setup Wizard to agree to the :ref:`permissions <about/privacy-policy:Recommended Permissions>` and select a few key preferences  .
+    * The first time you run |ED| you will need to go through the Setup Wizard to agree, or disagree, to the :ref:`permissions <about/privacy-policy:Recommended Permissions>` and select a few key preferences.
    
       See the `Setup Wizard <../configuration/setup_wizard.html>`_ page for more information.
 
