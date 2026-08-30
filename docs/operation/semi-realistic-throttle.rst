@@ -86,7 +86,7 @@ a) Throttle
    :scale: 15 %
    :align: right
 
-The throttle can be set to show either a `percentage slider or a slider with a distinct number of throttle steps/notches <Throttle Notches>`_.  The throttle can also optionally be set to show Increase (:guilabel:`+ +`) and decrease (:guilabel:`- -`) speed buttons in the preferences.
+The throttle can be set to show either a :ref:`percentage slider or a slider with a distinct number of throttle steps/notches <operation/semi-realistic-throttle:Throttle Notches>`.  The throttle can also optionally be set to show Increase (:guilabel:`+ +`) and decrease (:guilabel:`- -`) speed buttons in the preferences.
 
 To increase or decrease speed you can either i) drag the throttle slider up and down, or ii) press the increase or decrease buttons.
 
@@ -297,7 +297,7 @@ Options are:
 * Percentage
 * 8 steps
 * 28 steps
-* 128 steps
+* 128 steps (0-126)
 
 Stop Button Action
 ------------------
