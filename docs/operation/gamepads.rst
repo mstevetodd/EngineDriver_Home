@@ -225,7 +225,7 @@ Keyboard Commands
 
 For use when ``Keyboard`` is selected as the gamepad type:
 
-Note: all keys are lower case unless otherwise specified.
+Note: all keys are lowercase unless otherwise specified.
 
 * :guilabel:`Up` or :guilabel:`Page Up` or :guilabel:`+` or :guilabel:`=` = Increase Speed
 * :guilabel:`Media Next` = Increase Speed * 2
@@ -238,6 +238,8 @@ Note: all keys are lower case unless otherwise specified.
 * :guilabel:`n` = Next Throttle
 * :guilabel:`End` or :guilabel:`z` = Emergency stop |BR|\
 * Semi-Realistic Throttle Only:
+* :guilabel:`l` = Limit Speed Toggle
+* :guilabel:`p` = Pause Speed toggle
 
   * :guilabel:`\\` = Neutral
   * :guilabel:`PgUp` or :guilabel:`'` = Decrease Brake
@@ -247,7 +249,7 @@ Note: all keys are lower case unless otherwise specified.
 
 * :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
 * :guilabel:`g` :guilabel:`0` :guilabel:`0` - :guilabel:`g` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`g` followed by two digits
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s` or :guilabel:`l` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
 * :guilabel:`s` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`s` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`s` followed by three digits |BR| or :guilabel:`f12` followed by three : :guilabel:`f...` button equivalents :guilabel:`f10` = 0, :guilabel:`f1`-:guilabel:`f9` = 1-9 |BR| e.g. :guilabel:`s` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`f12` :guilabel:`f10` :guilabel:`f5``
 * In Phone Loco Sounds (IPLS)
 
@@ -266,6 +268,6 @@ Note: all keys are lower case unless otherwise specified.
 
 All other keyCodes are ignored.
 
-Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`l`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
+Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
