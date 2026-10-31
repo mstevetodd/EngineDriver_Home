@@ -258,6 +258,12 @@ Note: all keys are lower case unless otherwise specified.
 
 * :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`f`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`f` commands instead.
 
+* :guilabel:`u` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`u` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Toggle Turnout\/Point. Must be :guilabel:`u` followed by three digits
+
+* :guilabel:`i` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`i` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Throw Turnout\/Point. Must be :guilabel:`i` followed by three digits
+
+:guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. Must be :guilabel:`o` followed by three digits
+
 All other keyCodes are ignored.
 
 Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s` or :guilabel:`l` with the correct number of digits will cause the command to be ignored.
