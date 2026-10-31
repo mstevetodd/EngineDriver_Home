@@ -34,12 +34,12 @@ Changes included in Engine Driver Production version **2.43.227**:
 Beta Changes
 --------------------------------------------
 
-Changes included in Engine Driver Beta version **2.44.235**:
+Changes included in Engine Driver Beta version **2.44.237**:
 
   * New theme 'Bronze'
   * Additional French Translations by Alain Carasso
   * Support for UDP connection to DCC-EX EX-CommandStations
-  * Bug fixes and code improvements
+  * More bug fixes and code improvements
  
 Complete ChangeLog
 --------------------------------------------
