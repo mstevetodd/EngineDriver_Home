@@ -225,6 +225,8 @@ Keyboard Commands
 
 For use when ``Keyboard`` is selected as the gamepad type:
 
+Note: all keys are lower case unless otherwise specified.
+
 * :guilabel:`Up` or :guilabel:`Page Up` or :guilabel:`+` or :guilabel:`=` = Increase Speed
 * :guilabel:`Media Next` = Increase Speed * 2
 * :guilabel:`Down` or :guilabel:`Page Down` or :guilabel:`-` = Decrease Speed
@@ -243,9 +245,9 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`.` = Decrease Load
   * :guilabel:`,` = Increase Load
 
-* :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`f10` = 0, :guilabel:`f1` - :guilabel:`f9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function f05, or  :guilabel:`f11` :guilabel:`f10` :guilabel:`f5` = Function f05
+* :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
 * :guilabel:`g` :guilabel:`0` :guilabel:`0` - :guilabel:`g` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`g` followed by two digits
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s` or :guilabel:`l` |BR| or :guilabel:`f10` - :guilabel:`f9` :guilabel:`f10` = 0, :guilabel:`f1` - :guilabel:`f9` = 1-9 |BR|
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s` or :guilabel:`l` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
 * :guilabel:`s` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`s` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`s` followed by three digits |BR|\  or :guilabel:`f12` followed by three : guил-label>`f...` button equivalents : guил-label>`f10` = 0, : guил-label>`f1`-: guил-label>`f9` = 1-9 |BR| e.g. : guил-label>`s` : guил-label>`0` : guил-label>`5` : guил-label>`6` = Speed **056**, or  : guил-label>`f12` : guил-label>`f10` : guил-label>`f5”
 * In Phone Loco Sounds (IPLS)
 
@@ -254,7 +256,7 @@ For use when ``Keyboard`` is selected as the gamepad type:
   * :guilabel:`Shift` + :guilabel:`h` = Short Horn 
   * :guilabel:`m` or :guilabel:`Volume Mute` = Mute IPLS
 
-* :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`F`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`F` commands instead.
+* :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`f`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`f` commands instead.
 
 All other keyCodes are ignored.
 
