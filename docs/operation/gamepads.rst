@@ -236,7 +236,8 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`d` = Direction - Toggle Forward/Reverse
 * :guilabel:`n` = Next Throttle
-* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR| |BR|
+* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR| |BR| |BR|
+
 * Semi-Realistic Throttle Only:
 * :guilabel:`l` = Limit Speed Toggle
 * :guilabel:`p` = Pause Speed toggle
@@ -245,15 +246,16 @@ Note: all keys are lowercase unless otherwise specified.
   * :guilabel:`PgUp` or :guilabel:`'` = Decrease Brake
   * :guilabel:`PgDn` or :guilabel:`;` = Increase Brake
   * :guilabel:`.` = Decrease Load
-  * :guilabel:`,` = Increase Load |BR| |BR|
+  * :guilabel:`,` = Increase Load |BR| |BR| |BR|
 
 * :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
 
-* :guilabel:`g` :guilabel:`0` :guilabel:`0` - :guilabel:`g` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`g` followed by two digits
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = Function 1-9 |BR|
+
+
+* :guilabel:`g` :guilabel:`0` :guilabel:`0` - :guilabel:`g` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`g` followed by two digits |BR| |BR|
 
 * :guilabel:`w` :guilabel:`0` :guilabel:`0` :guilabel:`0` :guilabel:`1` - :guilabel:`w` :guilabel:`9` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Force the next function to act as a latching function for the specified period |BR| Must be :guilabel:`w` followed by four digits |BR| This actually works on any next function ('0'-'9', 'F10'-'F9' and 'f' '0' '0' - 'f' '3' '1'), even if there are intervening commands. Which means that you can select the next command to go to another throttle (e.g. 't' '1') and the next function command on throttle 1 will have the delay. |BR| Note: Issuing a second delay command on the same function before the first delay has been completed will cause inconsistencies.
-
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = Function 1-9 |BR|
 
 * :guilabel:`s` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`s` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`s` followed by three digits |BR| or :guilabel:`F12` followed by three : :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`s` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` |BR| |BR|
 
@@ -271,7 +273,8 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. |BR| Must be :guilabel:`o` followed by three digits |BR| |BR|
 
 * :guilabel:`e` = Toggle track power 
-* :guilabel:`r` :guilabel:`1` - :guilabel:`r` :guilabel:`0` = Track Power on (1) or off (0)
+* :guilabel:`r` :guilabel:`1` - :guilabel:`r` :guilabel:`0` = Track Power on (1) or off (0) |BR| |BR|
+
 * :guilabel:`y` :guilabel:`0` - :guilabel:`y` :guilabel:`7` = DCC-EX Toggle individual Track Power (0-7 = A-H) |BR| Must be :guilabel:`y` followed by one digit
 * :guilabel:`k` :guilabel:`0` :guilabel:`1` - :guilabel:`k` :guilabel:`7` :guilabel:`0` = DCC-EX individual Track Power on or off |BR| Must be :guilabel:`u` followed by three digits |BR| First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))
 
