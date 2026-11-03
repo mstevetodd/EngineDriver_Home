@@ -735,7 +735,7 @@ These seem to be a far better quality than the one above, but are more expensive
 <li><p><span class="guilabel">Right</span> or <span class="guilabel">]</span> = Forward (Ahead) (Reverse if buttons swapped in preferences)</p></li>
 <li><p><span class="guilabel">d</span> = Direction - Toggle Forward/Reverse</p></li>
 <li><p><span class="guilabel">n</span> = Next Throttle</p></li>
-<li><p><span class="guilabel">End</span> or <span class="guilabel">z</span> = Emergency stop <br /> <br /></p></li>
+<li><p><span class="guilabel">End</span> or <span class="guilabel">z</span> = Emergency stop <br /> <br /> <br /></p></li>
 <li><p>Semi-Realistic Throttle Only:</p></li>
 <li><p><span class="guilabel">l</span> = Limit Speed Toggle</p></li>
 <li><p><span class="guilabel">p</span> = Pause Speed toggle</p>
@@ -744,13 +744,13 @@ These seem to be a far better quality than the one above, but are more expensive
 <li><p><span class="guilabel">PgUp</span> or <span class="guilabel">‘</span> = Decrease Brake</p></li>
 <li><p><span class="guilabel">PgDn</span> or <span class="guilabel">;</span> = Increase Brake</p></li>
 <li><p><span class="guilabel">.</span> = Decrease Load</p></li>
-<li><p><span class="guilabel">,</span> = Increase Load <br /> <br /></p></li>
+<li><p><span class="guilabel">,</span> = Increase Load <br /> <br /> <br /></p></li>
 </ul>
 </li>
 <li><p><span class="guilabel">f</span> <span class="guilabel">0</span> <span class="guilabel">0</span> - <span class="guilabel">f</span> <span class="guilabel">3</span> <span class="guilabel">1</span> = Function <br /> Must be <span class="guilabel">f</span> followed by two digits <br />  or <span class="guilabel">f11</span> followed by two <span class="guilabel">f…</span> button equivalents <span class="guilabel">F10</span> = 0, <span class="guilabel">F1</span> - <span class="guilabel">F9</span> = 1-9 <br /> e.g. <span class="guilabel">f</span> <span class="guilabel">0</span> <span class="guilabel">5</span> = Function F05, or  <span class="guilabel">F11</span> <span class="guilabel">F10</span> <span class="guilabel">F5</span> = Function F05</p></li>
-<li><p><span class="guilabel">g</span> <span class="guilabel">0</span> <span class="guilabel">0</span> - <span class="guilabel">g</span> <span class="guilabel">3</span> <span class="guilabel">1</span> = Force function to act as a latching function <br /> Must be <span class="guilabel">g</span> followed by two digits</p></li>
-<li><p><span class="guilabel">w</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">1</span> - <span class="guilabel">w</span> <span class="guilabel">9</span> <span class="guilabel">9</span> <span class="guilabel">9</span> <span class="guilabel">9</span> = Force the next function to act as a latching function for the specified period <br /> Must be <span class="guilabel">w</span> followed by four digits <br /> This actually works on any next function (‘0’-‘9’, ‘F10’-‘F9’ and ‘f’ ‘0’ ‘0’ - ‘f’ ‘3’ ‘1’), even if there are intervening commands. Which means that you can select the next command to go to another throttle (e.g. ‘t’ ‘1’) and the next function command on throttle 1 will have the delay. <br /> Note: Issuing a second delay command on the same function before the first delay has been completed will cause inconsistencies.</p></li>
 <li><p><span class="guilabel">0</span> - <span class="guilabel">9</span> = Functions 0-9 <br /> Without a preceding <span class="guilabel">f</span>, <span class="guilabel">g</span>, <span class="guilabel">s</span>, <span class="guilabel">u</span>, <span class="guilabel">i</span> or <span class="guilabel">o</span> <br /> or <span class="guilabel">F10</span> - <span class="guilabel">F9</span> <span class="guilabel">F10</span> = 0, <span class="guilabel">F1</span> - <span class="guilabel">F9</span> = Function 1-9 <br /></p></li>
+<li><p><span class="guilabel">g</span> <span class="guilabel">0</span> <span class="guilabel">0</span> - <span class="guilabel">g</span> <span class="guilabel">3</span> <span class="guilabel">1</span> = Force function to act as a latching function <br /> Must be <span class="guilabel">g</span> followed by two digits <br /> <br /></p></li>
+<li><p><span class="guilabel">w</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">1</span> - <span class="guilabel">w</span> <span class="guilabel">9</span> <span class="guilabel">9</span> <span class="guilabel">9</span> <span class="guilabel">9</span> = Force the next function to act as a latching function for the specified period <br /> Must be <span class="guilabel">w</span> followed by four digits <br /> This actually works on any next function (‘0’-‘9’, ‘F10’-‘F9’ and ‘f’ ‘0’ ‘0’ - ‘f’ ‘3’ ‘1’), even if there are intervening commands. Which means that you can select the next command to go to another throttle (e.g. ‘t’ ‘1’) and the next function command on throttle 1 will have the delay. <br /> Note: Issuing a second delay command on the same function before the first delay has been completed will cause inconsistencies.</p></li>
 <li><p><span class="guilabel">s</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">0</span> - <span class="guilabel">s</span> <span class="guilabel">1</span> <span class="guilabel">0</span> <span class="guilabel">0</span> = Speed (in percent) <br />Must be <span class="guilabel">s</span> followed by three digits <br /> or <span class="guilabel">F12</span> followed by three : <span class="guilabel">F…</span> button equivalents <span class="guilabel">F10</span> = 0, <span class="guilabel">F1</span>-<span class="guilabel">F9</span> = 1-9 <br /> e.g. <span class="guilabel">s</span> <span class="guilabel">0</span> <span class="guilabel">5</span> <span class="guilabel">6</span> = Speed <strong>056</strong>, or  <span class="guilabel">F12</span> <span class="guilabel">F10</span> <span class="guilabel">F5</span> <span class="guilabel">F6</span> <br /> <br /></p></li>
 <li><p>In Phone Loco Sounds (IPLS)</p>
 <ul>
@@ -765,7 +765,7 @@ These seem to be a far better quality than the one above, but are more expensive
 <li><p><span class="guilabel">i</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">0</span> - <span class="guilabel">i</span> <span class="guilabel">9</span> <span class="guilabel">9</span> <span class="guilabel">9</span> = Throw Turnout/Point. <br /> Must be <span class="guilabel">i</span> followed by three digits</p></li>
 <li><p><span class="guilabel">o</span> <span class="guilabel">0</span> <span class="guilabel">0</span> <span class="guilabel">0</span> - <span class="guilabel">o</span> <span class="guilabel">9</span> <span class="guilabel">9</span> <span class="guilabel">9</span> = Close Turnout/Point. <br /> Must be <span class="guilabel">o</span> followed by three digits <br /> <br /></p></li>
 <li><p><span class="guilabel">e</span> = Toggle track power</p></li>
-<li><p><span class="guilabel">r</span> <span class="guilabel">1</span> - <span class="guilabel">r</span> <span class="guilabel">0</span> = Track Power on (1) or off (0)</p></li>
+<li><p><span class="guilabel">r</span> <span class="guilabel">1</span> - <span class="guilabel">r</span> <span class="guilabel">0</span> = Track Power on (1) or off (0) <br /> <br /></p></li>
 <li><p><span class="guilabel">y</span> <span class="guilabel">0</span> - <span class="guilabel">y</span> <span class="guilabel">7</span> = DCC-EX Toggle individual Track Power (0-7 = A-H) <br /> Must be <span class="guilabel">y</span> followed by one digit</p></li>
 <li><p><span class="guilabel">k</span> <span class="guilabel">0</span> <span class="guilabel">1</span> - <span class="guilabel">k</span> <span class="guilabel">7</span> <span class="guilabel">0</span> = DCC-EX individual Track Power on or off <br /> Must be <span class="guilabel">u</span> followed by three digits <br /> First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))</p></li>
 </ul>
@@ -793,7 +793,7 @@ These seem to be a far better quality than the one above, but are more expensive
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f21f6d47fa0>
+    <jinja2.runtime.BlockReference object at 0x7f1ab76a17b0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
