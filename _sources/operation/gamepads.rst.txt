@@ -255,26 +255,24 @@ Note: all keys are lowercase unless otherwise specified.
 
 * :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = Function 1-9 |BR|
 
-* :guilabel:`s` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`s` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`s` followed by three digits |BR| or :guilabel:`F12` followed by three : :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`s` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6`
+* :guilabel:`s` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`s` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`s` followed by three digits |BR| or :guilabel:`F12` followed by three : :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`s` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6` |BR| |BR|
 
 * In Phone Loco Sounds (IPLS)
 
   * :guilabel:`b` = Bell 
   * :guilabel:`h` = Horn / Whistle 
   * :guilabel:`Shift` + :guilabel:`h` = Short Horn 
-  * :guilabel:`m` or :guilabel:`Volume Mute` = Mute IPLS
+  * :guilabel:`m` or :guilabel:`Volume Mute` = Mute IPLS |BR| |BR|
 
-* :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`f`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`f` commands instead.
+* :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`f`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`f` commands instead. |BR| |BR|
 
 * :guilabel:`u` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`u` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Toggle Turnout\/Point. |BR| Must be :guilabel:`u` followed by three digits
-
 * :guilabel:`i` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`i` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Throw Turnout\/Point. |BR| Must be :guilabel:`i` followed by three digits
-
-* :guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. |BR| Must be :guilabel:`o` followed by three digits
+* :guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. |BR| Must be :guilabel:`o` followed by three digits |BR| |BR|
 
 * :guilabel:`e` = Toggle track power 
 * :guilabel:`r` :guilabel:`1` - :guilabel:`r` :guilabel:`0` = Track Power on (1) or off (0)
-* :guilabel:`y` :guilabel:`0` - :guilabel:`y` :guilabel:`7` = DCC-EX Toggle individual Track Power (0-7 = A-H)
+* :guilabel:`y` :guilabel:`0` - :guilabel:`y` :guilabel:`7` = DCC-EX Toggle individual Track Power (0-7 = A-H) |BR| Must be :guilabel:`y` followed by one digit
 * :guilabel:`k` :guilabel:`0` :guilabel:`1` - :guilabel:`k` :guilabel:`7` :guilabel:`0` = DCC-EX individual Track Power on or off |BR| Must be :guilabel:`u` followed by three digits |BR| First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))
 
 All other keyCodes are ignored.
