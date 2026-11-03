@@ -248,9 +248,15 @@ Note: all keys are lowercase unless otherwise specified.
   * :guilabel:`,` = Increase Load
 
 * :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
+
 * :guilabel:`g` :guilabel:`0` :guilabel:`0` - :guilabel:`g` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`g` followed by two digits
-* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR|
+
+* :guilabel:`w` :guilabel:`0` :guilabel:`0` :guilabel:`0` :guilabel:`1` - :guilabel:`w` :guilabel:`9` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Force the next function to act as a latching function for the specified period |BR| Must be :guilabel:`w` followed by four digits |BR| This actually works on any next function ('0'-'9', 'F10'-'F9' and 'f' '0' '0' - 'f' '3' '1'), even if there are intervening commands. Which means that you can select the next command to go to another throttle (e.g. 't' '1') and the next function command on throttle 1 will have the delay. |BR| Note: Issuing a second delay command on the same function before the first delay has been completed will cause inconsistencies.
+
+* :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = Function 1-9 |BR|
+
 * :guilabel:`s` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`s` :guilabel:`1` :guilabel:`0` :guilabel:`0` = Speed (in percent) |BR|\ Must be :guilabel:`s` followed by three digits |BR| or :guilabel:`F12` followed by three : :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`s` :guilabel:`0` :guilabel:`5` :guilabel:`6` = Speed **056**, or  :guilabel:`F12` :guilabel:`F10` :guilabel:`F5` :guilabel:`F6`
+
 * In Phone Loco Sounds (IPLS)
 
   * :guilabel:`b` = Bell 
@@ -260,14 +266,19 @@ Note: all keys are lowercase unless otherwise specified.
 
 * :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`f`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`f` commands instead.
 
-* :guilabel:`u` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`u` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Toggle Turnout\/Point. Must be :guilabel:`u` followed by three digits
+* :guilabel:`u` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`u` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Toggle Turnout\/Point. |BR| Must be :guilabel:`u` followed by three digits
 
-* :guilabel:`i` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`i` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Throw Turnout\/Point. Must be :guilabel:`i` followed by three digits
+* :guilabel:`i` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`i` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Throw Turnout\/Point. |BR| Must be :guilabel:`i` followed by three digits
 
-:guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. Must be :guilabel:`o` followed by three digits
+* :guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. |BR| Must be :guilabel:`o` followed by three digits
+
+* :guilabel:`e` = Toggle track power 
+* :guilabel:`r` :guilabel:`1` - :guilabel:`r` :guilabel:`0` = Track Power on (1) or off (0)
+* :guilabel:`y` :guilabel:`0` - :guilabel:`y` :guilabel:`7` = DCC-EX Toggle individual Track Power (0-7 = A-H)
+* :guilabel:`k` :guilabel:`0` :guilabel:`1` - :guilabel:`k` :guilabel:`7` :guilabel:`0` = DCC-EX individual Track Power on or off |BR| Must be :guilabel:`u` followed by three digits |BR| First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))
 
 All other keyCodes are ignored.
 
-Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
+Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` , :guilabel:`e` , :guilabel:`y` , :guilabel:`k` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
