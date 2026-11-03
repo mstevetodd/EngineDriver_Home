@@ -236,7 +236,7 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`d` = Direction - Toggle Forward/Reverse
 * :guilabel:`n` = Next Throttle
-* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR|\
+* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR| |BR|
 * Semi-Realistic Throttle Only:
 * :guilabel:`l` = Limit Speed Toggle
 * :guilabel:`p` = Pause Speed toggle
@@ -245,7 +245,7 @@ Note: all keys are lowercase unless otherwise specified.
   * :guilabel:`PgUp` or :guilabel:`'` = Decrease Brake
   * :guilabel:`PgDn` or :guilabel:`;` = Increase Brake
   * :guilabel:`.` = Decrease Load
-  * :guilabel:`,` = Increase Load
+  * :guilabel:`,` = Increase Load |BR| |BR|
 
 * :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
 
