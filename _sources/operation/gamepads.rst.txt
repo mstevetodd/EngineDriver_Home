@@ -227,16 +227,19 @@ For use when ``Keyboard`` is selected as the gamepad type:
 
 Note: all keys are lowercase unless otherwise specified.
 
-* :guilabel:`Up` or :guilabel:`Page Up` or :guilabel:`+` or :guilabel:`=` = Increase Speed
+* :guilabel:`Up`, :guilabel:`+` or :guilabel:`=` = Increase Speed - Will auto-increment if you hold down the key.
 * :guilabel:`Media Next` = Increase Speed * 2
-* :guilabel:`Down` or :guilabel:`Page Down` or :guilabel:`-` = Decrease Speed
+* :guilabel:`Down`, :guilabel:`-` = Decrease Speed - Will auto-increment if you hold down the key.
+* :guilabel:`Media Previous` = Decrease Speed * 2
+* :guilabel:`NumPad *` (multiply) = Increase Speed - Will *not* auto-increment if you hold down the key. |BR| recommended for encoders
+* :guilabel:`NumPad /` (divide) = Decrease Speed - Will *not* auto-increment if you hold down the key. |BR| recommended for encoders
 * :guilabel:`Media Previous` = Decrease Speed * 2
 * :guilabel:`Home` or :guilabel:`x` = Stop
 * :guilabel:`Left` or :guilabel:`[` = Reverse (Forward if buttons swapped in preferences)
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`d` = Direction - Toggle Forward/Reverse
 * :guilabel:`n` = Next Throttle
-* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR| |BR| |BR|
+* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR| |BR|
 
 * Semi-Realistic Throttle Only:
 * :guilabel:`l` = Limit Speed Toggle
@@ -246,7 +249,7 @@ Note: all keys are lowercase unless otherwise specified.
   * :guilabel:`PgUp` or :guilabel:`'` = Decrease Brake
   * :guilabel:`PgDn` or :guilabel:`;` = Increase Brake
   * :guilabel:`.` = Decrease Load
-  * :guilabel:`,` = Increase Load |BR| |BR| |BR|
+  * :guilabel:`,` = Increase Load |BR| |BR|
 
 * :guilabel:`f` :guilabel:`0` :guilabel:`0` - :guilabel:`f` :guilabel:`3` :guilabel:`1` = Function |BR| Must be :guilabel:`f` followed by two digits |BR|  or :guilabel:`f11` followed by two :guilabel:`f...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = 1-9 |BR| e.g. :guilabel:`f` :guilabel:`0` :guilabel:`5` = Function F05, or  :guilabel:`F11` :guilabel:`F10` :guilabel:`F5` = Function F05
 
