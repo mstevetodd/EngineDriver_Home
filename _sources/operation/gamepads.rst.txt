@@ -228,11 +228,11 @@ For use when ``Keyboard`` is selected as the gamepad type:
 Note: all keys are lowercase unless otherwise specified.
 
 * :guilabel:`Up`, :guilabel:`+` or :guilabel:`=` = Increase Speed - Will auto-increment if you hold down the key.
-* :guilabel:`Media Next` = Increase Speed * 2
+* :guilabel:`Media Next` = Increase Speed * 2 - Will auto-increment if you hold down the key.
 * :guilabel:`Down`, :guilabel:`-` = Decrease Speed - Will auto-increment if you hold down the key.
-* :guilabel:`Media Previous` = Decrease Speed * 2
-* :guilabel:`NumPad *` (multiply) = Increase Speed - Will *not* auto-increment if you hold down the key. |BR| recommended for encoders
-* :guilabel:`NumPad /` (divide) = Decrease Speed - Will *not* auto-increment if you hold down the key. |BR| recommended for encoders
+* :guilabel:`Media Previous` = Decrease Speed * 2 - Will auto-increment if you hold down the key.
+* :guilabel:`NumPad *` (multiply) = Increase Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders
+* :guilabel:`NumPad /` (divide) = Decrease Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders
 * :guilabel:`Media Previous` = Decrease Speed * 2
 * :guilabel:`Home` or :guilabel:`x` = Stop
 * :guilabel:`Left` or :guilabel:`[` = Reverse (Forward if buttons swapped in preferences)
@@ -276,13 +276,16 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`o` :guilabel:`0` :guilabel:`0` :guilabel:`0` - :guilabel:`o` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Close Turnout\/Point. |BR| Must be :guilabel:`o` followed by three digits |BR| |BR|
 
 * :guilabel:`e` = Toggle track power 
-* :guilabel:`r` :guilabel:`1` - :guilabel:`r` :guilabel:`0` = Track Power on (1) or off (0) |BR| |BR|
+* :guilabel:`r` :guilabel:`1` - :guilabel:`r` :guilabel:`0` = Track Power on (1) or off (0) [#1]_ [#2]_ |BR| |BR|
 
-* :guilabel:`y` :guilabel:`0` - :guilabel:`y` :guilabel:`7` = DCC-EX Toggle individual Track Power (0-7 = A-H) |BR| Must be :guilabel:`y` followed by one digit
-* :guilabel:`k` :guilabel:`0` :guilabel:`1` - :guilabel:`k` :guilabel:`7` :guilabel:`0` = DCC-EX individual Track Power on or off |BR| Must be :guilabel:`u` followed by three digits |BR| First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))
+* :guilabel:`y` :guilabel:`0` - :guilabel:`y` :guilabel:`7` = DCC-EX Toggle individual Track Power (0-7 = A-H) [#1]_ [#2]_ |BR| Must be :guilabel:`y` followed by one digit
+* :guilabel:`k` :guilabel:`0` :guilabel:`1` - :guilabel:`k` :guilabel:`7` :guilabel:`0` = DCC-EX individual Track Power on or off [#1]_ [#2]_ |BR| Must be :guilabel:`u` followed by three digits |BR| First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))
 
 All other keyCodes are ignored.
 
 Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` , :guilabel:`e` , :guilabel:`y` , :guilabel:`k` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
+
+.. [#1] Available in Engine Driver 2.44.238 and later only. Earlier versions will ignore these commands.
+.. [#2] Require a connection to a DCC-EX EX-CommandStation using the DCC-EX- Native protocol.
