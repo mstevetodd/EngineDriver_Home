@@ -238,8 +238,8 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`Left` or :guilabel:`[` = Reverse (Forward if buttons swapped in preferences)
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`d` = Direction - Toggle Forward/Reverse
-* :guilabel:`n` = Next Throttle
-* :guilabel:`End` or :guilabel:`z` = Emergency stop |BR| |BR|
+* :guilabel:`n` = Make the Next Available Throttle the current throttle
+* :guilabel:`j` :guilabel:`0` - :guilabel:`j` :guilabel:`5` = Specify a throttle to be the current throttle |BR| Must be :guilabel:`j` followed by one digit[#1]_
 
 * Semi-Realistic Throttle Only:
 * :guilabel:`l` = Limit Speed Toggle
@@ -283,7 +283,7 @@ Note: all keys are lowercase unless otherwise specified.
 
 All other keyCodes are ignored.
 
-Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` , :guilabel:`e` , :guilabel:`y` , :guilabel:`k` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
+Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` , :guilabel:`e` , :guilabel:`y` , :guilabel:`k` , :guilabel:`j` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
 

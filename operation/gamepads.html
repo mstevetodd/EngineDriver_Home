@@ -737,8 +737,8 @@ These seem to be a far better quality than the one above, but are more expensive
 <li><p><span class="guilabel">Left</span> or <span class="guilabel">[</span> = Reverse (Forward if buttons swapped in preferences)</p></li>
 <li><p><span class="guilabel">Right</span> or <span class="guilabel">]</span> = Forward (Ahead) (Reverse if buttons swapped in preferences)</p></li>
 <li><p><span class="guilabel">d</span> = Direction - Toggle Forward/Reverse</p></li>
-<li><p><span class="guilabel">n</span> = Next Throttle</p></li>
-<li><p><span class="guilabel">End</span> or <span class="guilabel">z</span> = Emergency stop <br /> <br /></p></li>
+<li><p><span class="guilabel">n</span> = Make the Next Available Throttle the current throttle</p></li>
+<li><p><span class="guilabel">j</span> <span class="guilabel">0</span> - <span class="guilabel">j</span> <span class="guilabel">5</span> = Specify a throttle to be the current throttle <br /> Must be <span class="guilabel">j</span> followed by one digit[#1]_</p></li>
 <li><p>Semi-Realistic Throttle Only:</p></li>
 <li><p><span class="guilabel">l</span> = Limit Speed Toggle</p></li>
 <li><p><span class="guilabel">p</span> = Pause Speed toggle</p>
@@ -773,7 +773,7 @@ These seem to be a far better quality than the one above, but are more expensive
 <li><p><span class="guilabel">k</span> <span class="guilabel">0</span> <span class="guilabel">1</span> - <span class="guilabel">k</span> <span class="guilabel">7</span> <span class="guilabel">0</span> = DCC-EX individual Track Power on or off <a class="footnote-reference brackets" href="#id10" id="id8" role="doc-noteref"><span class="fn-bracket">[</span>3<span class="fn-bracket">]</span></a> <a class="footnote-reference brackets" href="#id11" id="id9" role="doc-noteref"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></a> <br /> Must be <span class="guilabel">u</span> followed by three digits <br /> First digit is the track (0-7 = A-H). Second digit is the power state (on (1) or off (0))</p></li>
 </ul>
 <p>All other keyCodes are ignored.</p>
-<p>Failure to follow the <span class="guilabel">f</span>, <span class="guilabel">g</span>, <span class="guilabel">s</span>, <span class="guilabel">u</span>, <span class="guilabel">i</span> , <span class="guilabel">e</span> , <span class="guilabel">y</span> , <span class="guilabel">k</span> or <span class="guilabel">o</span> with the correct number of digits will cause the command to be ignored.</p>
+<p>Failure to follow the <span class="guilabel">f</span>, <span class="guilabel">g</span>, <span class="guilabel">s</span>, <span class="guilabel">u</span>, <span class="guilabel">i</span> , <span class="guilabel">e</span> , <span class="guilabel">y</span> , <span class="guilabel">k</span> , <span class="guilabel">j</span> or <span class="guilabel">o</span> with the correct number of digits will cause the command to be ignored.</p>
 <p>These same keycodes are used by the DIY Arduino controllers.</p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id10" role="doc-footnote">
@@ -808,7 +808,7 @@ These seem to be a far better quality than the one above, but are more expensive
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f542284a950>
+    <jinja2.runtime.BlockReference object at 0x7f0b9774bfd0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
