@@ -239,7 +239,7 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`d` = Direction - Toggle Forward/Reverse
 * :guilabel:`n` = Make the Next Available Throttle the current throttle
-* :guilabel:`j` :guilabel:`0` - :guilabel:`j` :guilabel:`5` = Specify a throttle to be the current throttle |BR| Must be :guilabel:`j` followed by one digit[#1]_
+* :guilabel:`j` :guilabel:`0` - :guilabel:`j` :guilabel:`5` = Specify a throttle to be the current throttle |BR| Must be :guilabel:`j` followed by one digit [#1]_
 
 * Semi-Realistic Throttle Only:
 * :guilabel:`l` = Limit Speed Toggle
