@@ -230,9 +230,14 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`Up`, :guilabel:`+` or :guilabel:`=` = Increase Speed - Will auto-increment if you hold down the key.
 * :guilabel:`Media Next` = Increase Speed * 2 - Will auto-increment if you hold down the key.
 * :guilabel:`Down`, :guilabel:`-` = Decrease Speed - Will auto-increment if you hold down the key.
-* :guilabel:`Media Previous` = Decrease Speed * 2 - Will auto-increment if you hold down the key.
-* :guilabel:`NumPad *` (multiply) = Increase Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders
-* :guilabel:`NumPad /` (divide) = Decrease Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders
+* :guilabel:`Media Previous` = Decrease Speed * 2 - Will auto-increment if you hold down the key. |BR| |BR|
+
+* :guilabel:`NumPad *` (multiply) = Increase Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders [#3]_ 
+* :guilabel:`NumPad /` (divide) = Decrease Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders [#3]_
+
+* :guilabel:`q` :guilabel:`0` :guilabel:`1` - :guilabel:`q` :guilabel:`9` :guilabel:`9` = Increase Speed by a specific amount [#1]_ |BR| Must be :guilabel:`q` followed by two digits |BR| recommended for encoders [#3]_ 
+* :guilabel:`a` :guilabel:`0` :guilabel:`1` - :guilabel:`a` :guilabel:`9` :guilabel:`9` = Decrease Speed by a specific amount [#1]_ |BR| Must be :guilabel:`a` followed by two digits |BR| recommended for encoders [#3]_ |BR| |BR|
+
 * :guilabel:`Media Previous` = Decrease Speed * 2
 * :guilabel:`Home` or :guilabel:`x` = Stop
 * :guilabel:`End` or :guilabel:`z` = Emergency Stop (E Stop)
@@ -284,9 +289,10 @@ Note: all keys are lowercase unless otherwise specified.
 
 All other keyCodes are ignored.
 
-Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` , :guilabel:`e` , :guilabel:`y` , :guilabel:`k` , :guilabel:`j` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
+Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i`, :guilabel:`e`, :guilabel:`y`, :guilabel:`k`, :guilabel:`j`, :guilabel:`q`, :guilabel:`a` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
 
 .. [#1] Available in Engine Driver 2.44.238 and later only. Earlier versions will ignore these commands.
 .. [#2] Require a connection to a DCC-EX EX-CommandStation using the DCC-EX- Native protocol.
+.. [#3] These keys/commands are recommended for use with encoders because they do not auto-increment when held down, which is the desired behavior for encoders. And they also take advantage of the a) the dead zone for shunting/switching throttle layouts, and b) they obey the speed change acceleration setting in ED.
