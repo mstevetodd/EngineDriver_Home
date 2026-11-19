@@ -93,3 +93,9 @@ All the usable buttons, plus the four directions of the DPad, can be set to any 
 * Decrease Load (Semi-Realistic Throttle layout only)
 
 Note: for some gamepads, not all the buttons are able to be used by |ED|.
+
+
+Physical Keyboards 
+^^^^^^^^^^^^^^^^^^^^^
+
+For keyboards, including programmable physical keyboards, the keys can not be set inside |ED|, but there are specific keys/keystrokes to achieve any of the above and more.  See :ref:`Keyboard Commands <operation/gamepads:keyboard commands>` for more information on how to configure a physical keyboard.
