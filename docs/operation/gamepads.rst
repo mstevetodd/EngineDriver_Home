@@ -235,6 +235,7 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`NumPad /` (divide) = Decrease Speed - Will *not* auto-increment if you hold down the key. [#1]_ |BR| recommended for encoders
 * :guilabel:`Media Previous` = Decrease Speed * 2
 * :guilabel:`Home` or :guilabel:`x` = Stop
+* :guilabel:`End` or :guilabel:`z` = Emergency Stop (E Stop)
 * :guilabel:`Left` or :guilabel:`[` = Reverse (Forward if buttons swapped in preferences)
 * :guilabel:`Right` or :guilabel:`]` = Forward (Ahead) (Reverse if buttons swapped in preferences)
 * :guilabel:`d` = Direction - Toggle Forward/Reverse
