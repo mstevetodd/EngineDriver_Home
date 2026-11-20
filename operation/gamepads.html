@@ -524,18 +524,19 @@
 <li><p><a class="reference internal" href="#diy-arduino-esp32-keypad-rotary-encoder" id="id31">DIY Arduino ESP32 + keypad + Rotary Encoder</a></p></li>
 <li><p><a class="reference internal" href="#normal-keyboard" id="id32">Normal Keyboard</a></p></li>
 <li><p><a class="reference internal" href="#usb-volume-dial" id="id33">USB Volume dial</a></p></li>
+<li><p><a class="reference internal" href="#programmable-mini-keyboards" id="id34">Programmable Mini-Keyboards</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#future-support-planned" id="id34">Future Support Planned</a></p></li>
-<li><p><a class="reference internal" href="#not-recommended-gamepads" id="id35">Not Recommended Gamepads</a></p>
+<li><p><a class="reference internal" href="#future-support-planned" id="id35">Future Support Planned</a></p></li>
+<li><p><a class="reference internal" href="#not-recommended-gamepads" id="id36">Not Recommended Gamepads</a></p>
 <ul>
-<li><p><a class="reference internal" href="#vr-box" id="id36">VR Box</a></p></li>
+<li><p><a class="reference internal" href="#vr-box" id="id37">VR Box</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#unsupported-gamepads" id="id37">Unsupported Gamepads</a></p></li>
+<li><p><a class="reference internal" href="#unsupported-gamepads" id="id38">Unsupported Gamepads</a></p></li>
 </ul>
 </li>
-<li><p><a class="reference internal" href="#keyboard-commands" id="id38">Keyboard Commands</a></p></li>
+<li><p><a class="reference internal" href="#keyboard-commands" id="id39">Keyboard Commands</a></p></li>
 </ul>
 </nav>
 </aside>
@@ -697,18 +698,24 @@ These seem to be a far better quality than the one above, but are more expensive
 <p>Various USB or Bluetooth volume dials have been found to work successfully as a gamepad for controlling speed.</p>
 <p>Volume dials will work without any special configuration because <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> always had the ability to change loco speed with any volume control.  But if you select the ‘USB Volume dial’ as a gamepad type, you will have the ability to remap any additional buttons that come with the dial.</p>
 </section>
+<section id="programmable-mini-keyboards">
+<h4><a class="toc-backref" href="#id34" role="doc-backlink">Programmable Mini-Keyboards</a><a class="headerlink" href="#programmable-mini-keyboards" title="Link to this heading"></a></h4>
+<a class="reference internal image-reference" href="../_images/mini-keyboard.png"><img alt="../_images/mini-keyboard.png" src="../_images/mini-keyboard.png" style="width: 250.65px; height: 224.55px;" /></a>
+<p>Any programmable mini-keyboard that can be configured to send the keystrokes listed below will work.</p>
+<p>Sumner has written an excellent article on using a mini-keyboard as a gamepad. See <a class="reference external" href="https://1fatgmc.com/RailRoad/DCC/page-100.html">https://1fatgmc.com/RailRoad/DCC/page-100.html</a></p>
+</section>
 </section>
 <section id="future-support-planned">
-<h3><a class="toc-backref" href="#id34" role="doc-backlink">Future Support Planned</a><a class="headerlink" href="#future-support-planned" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id35" role="doc-backlink">Future Support Planned</a><a class="headerlink" href="#future-support-planned" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>none currently identified</p></li>
 </ul>
 </section>
 <section id="not-recommended-gamepads">
-<h3><a class="toc-backref" href="#id35" role="doc-backlink">Not Recommended Gamepads</a><a class="headerlink" href="#not-recommended-gamepads" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id36" role="doc-backlink">Not Recommended Gamepads</a><a class="headerlink" href="#not-recommended-gamepads" title="Link to this heading"></a></h3>
 <p>These work, but have issues which make them not recommended.</p>
 <section id="vr-box">
-<h4><a class="toc-backref" href="#id36" role="doc-backlink">VR Box</a><a class="headerlink" href="#vr-box" title="Link to this heading"></a></h4>
+<h4><a class="toc-backref" href="#id37" role="doc-backlink">VR Box</a><a class="headerlink" href="#vr-box" title="Link to this heading"></a></h4>
 <p>Support for this type of gamepad was previously removed from <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> as the device was so unreliable. (Mine had a bad solder join that I was able to fix.)</p>
 <p>However support for Mode B on this gamepad was later re-added.</p>
 <p>With VR Box Mode B it is important to enable the ‘Ignore Joystick Actions’ preference, as the DPad/joystick sends both joystick events and keystroke events, which interfere with each other.</p>
@@ -716,14 +723,14 @@ These seem to be a far better quality than the one above, but are more expensive
 </section>
 </section>
 <section id="unsupported-gamepads">
-<h3><a class="toc-backref" href="#id37" role="doc-backlink">Unsupported Gamepads</a><a class="headerlink" href="#unsupported-gamepads" title="Link to this heading"></a></h3>
+<h3><a class="toc-backref" href="#id38" role="doc-backlink">Unsupported Gamepads</a><a class="headerlink" href="#unsupported-gamepads" title="Link to this heading"></a></h3>
 <ul class="simple">
 <li><p>none currently identified</p></li>
 </ul>
 </section>
 </section>
 <section id="keyboard-commands">
-<h2><a class="toc-backref" href="#id38" role="doc-backlink">Keyboard Commands</a><a class="headerlink" href="#keyboard-commands" title="Link to this heading"></a></h2>
+<h2><a class="toc-backref" href="#id39" role="doc-backlink">Keyboard Commands</a><a class="headerlink" href="#keyboard-commands" title="Link to this heading"></a></h2>
 <p>For use when <code class="docutils literal notranslate"><span class="pre">Keyboard</span></code> is selected as the gamepad type:</p>
 <p>Note: all keys are lowercase unless otherwise specified.</p>
 <ul class="simple">
@@ -783,6 +790,17 @@ These seem to be a far better quality than the one above, but are more expensive
 <p>All other keyCodes are ignored.</p>
 <p>Failure to follow the <span class="guilabel">f</span>, <span class="guilabel">g</span>, <span class="guilabel">s</span>, <span class="guilabel">u</span>, <span class="guilabel">i</span>, <span class="guilabel">e</span>, <span class="guilabel">y</span>, <span class="guilabel">k</span>, <span class="guilabel">j</span>, <span class="guilabel">q</span>, <span class="guilabel">a</span> or <span class="guilabel">o</span> with the correct number of digits will cause the command to be ignored.</p>
 <p>These same keycodes are used by the DIY Arduino controllers.</p>
+<p><hr class="hr-dashed" /></p>
+<p>Notes for using the mini-keyboard app:</p>
+<ul>
+<li><p>To get the number keys to work you must use the keys on the top row, above the letters, not the number pad on the right side of the keyboard.  The number pad keys are at the bottom of the letters and are not recognized by <span style="font-weight: bold; font-style: italic; font-size: 110%; color: #db4700;">Engine&nbsp;Driver</span> as number keys.</p>
+<p>Use these</p>
+<a class="reference internal image-reference" href="../_images/mini-keyboard-numbers.png"><img alt="../_images/mini-keyboard-numbers.png" src="../_images/mini-keyboard-numbers.png" style="width: 467.55px; height: 30.6px;" /></a>
+<p>NOT these</p>
+<a class="reference internal image-reference" href="../_images/mini-keyboard-numpad-numbers.png"><img alt="../_images/mini-keyboard-numpad-numbers.png" src="../_images/mini-keyboard-numpad-numbers.png" style="width: 460.35px; height: 30.150000000000002px;" /></a>
+</li>
+</ul>
+<p><hr class="hr-dashed" /></p>
 <aside class="footnote-list brackets">
 <aside class="footnote brackets" id="id17" role="doc-footnote">
 <span class="label"><span class="fn-bracket">[</span>4<span class="fn-bracket">]</span></span>
@@ -821,7 +839,7 @@ These seem to be a far better quality than the one above, but are more expensive
     <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
     provided by <a href="https://readthedocs.org">Read the Docs</a>.
    
-    <jinja2.runtime.BlockReference object at 0x7f8077ae0430>
+    <jinja2.runtime.BlockReference object at 0x7fd1195db5b0>
     <div class="topOfPage">
     <button onclick="document.body.scrollTop=0;document.documentElement.scrollTop=0;" class="topOfPageBtn" id="topOfPageBtn" title="Go to top">Top</button>
     </div>
