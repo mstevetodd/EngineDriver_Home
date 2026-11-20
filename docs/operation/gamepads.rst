@@ -192,6 +192,16 @@ Various USB or Bluetooth volume dials have been found to work successfully as a 
 
 Volume dials will work without any special configuration because |ED| always had the ability to change loco speed with any volume control.  But if you select the 'USB Volume dial' as a gamepad type, you will have the ability to remap any additional buttons that come with the dial.
 
+Programmable Mini-Keyboards
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: ../_static/images/gamepads/mini-keyboard.png
+   :scale: 45 %
+
+Any programmable mini-keyboard that can be configured to send the keystrokes listed below will work.
+
+Sumner has written an excellent article on using a mini-keyboard as a gamepad. See https://1fatgmc.com/RailRoad/DCC/page-100.html
+
 Future Support Planned
 ^^^^^^^^^^^^^^^^^^^^^^
 
@@ -294,6 +304,24 @@ All other keyCodes are ignored.
 Failure to follow the :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i`, :guilabel:`e`, :guilabel:`y`, :guilabel:`k`, :guilabel:`j`, :guilabel:`q`, :guilabel:`a` or :guilabel:`o` with the correct number of digits will cause the command to be ignored.
 
 These same keycodes are used by the DIY Arduino controllers.
+
+|HR-DASHED|
+
+Notes for using the mini-keyboard app:
+
+* To get the number keys to work you must use the keys on the top row, above the letters, not the number pad on the right side of the keyboard.  The number pad keys are at the bottom of the letters and are not recognized by |ED| as number keys.
+
+  Use these 
+
+  .. image:: ../_static/images/gamepads/mini-keyboard-numbers.png
+   :scale: 45 %
+
+  NOT these 
+
+  .. image:: ../_static/images/gamepads/mini-keyboard-numpad-numbers.png
+   :scale: 45 %
+
+|HR-DASHED|
 
 .. [#1] Available in Engine Driver 2.44.238 and later only. Earlier versions will ignore these commands.
 .. [#2] Require a connection to a DCC-EX EX-CommandStation using the DCC-EX- Native protocol.
