@@ -238,7 +238,6 @@ Note: all keys are lowercase unless otherwise specified.
 * :guilabel:`q` :guilabel:`0` :guilabel:`1` - :guilabel:`q` :guilabel:`9` :guilabel:`9` = Increase Speed by a specific amount [#1]_ |BR| Must be :guilabel:`q` followed by two digits |BR| recommended for encoders [#3]_ 
 * :guilabel:`a` :guilabel:`0` :guilabel:`1` - :guilabel:`a` :guilabel:`9` :guilabel:`9` = Decrease Speed by a specific amount [#1]_ |BR| Must be :guilabel:`a` followed by two digits |BR| recommended for encoders [#3]_ |BR| |BR|
 
-* :guilabel:`Media Previous` = Decrease Speed * 2
 * :guilabel:`Home` or :guilabel:`x` = Stop
 * :guilabel:`End` or :guilabel:`z` = Emergency Stop (E Stop)
 * :guilabel:`Left` or :guilabel:`[` = Reverse (Forward if buttons swapped in preferences)
@@ -261,7 +260,6 @@ Note: all keys are lowercase unless otherwise specified.
 
 * :guilabel:`0` - :guilabel:`9` = Functions 0-9 |BR| Without a preceding :guilabel:`f`, :guilabel:`g`, :guilabel:`s`, :guilabel:`u`, :guilabel:`i` or :guilabel:`o` |BR| or :guilabel:`F10` - :guilabel:`F9` :guilabel:`F10` = 0, :guilabel:`F1` - :guilabel:`F9` = Function 1-9 |BR|
 
-
 * :guilabel:`g` :guilabel:`0` :guilabel:`0` - :guilabel:`g` :guilabel:`3` :guilabel:`1` = Force function to act as a latching function |BR| Must be :guilabel:`g` followed by two digits |BR| |BR|
 
 * :guilabel:`w` :guilabel:`0` :guilabel:`0` :guilabel:`0` :guilabel:`1` - :guilabel:`w` :guilabel:`9` :guilabel:`9` :guilabel:`9` :guilabel:`9` = Force the next function to act as a latching function for the specified period |BR| Must be :guilabel:`w` followed by four digits |BR| This actually works on any next function ('0'-'9', 'F10'-'F9' and 'f' '0' '0' - 'f' '3' '1'), even if there are intervening commands. Which means that you can select the next command to go to another throttle (e.g. 't' '1') and the next function command on throttle 1 will have the delay. |BR| Note: Issuing a second delay command on the same function before the first delay has been completed will cause inconsistencies.
@@ -274,6 +272,10 @@ Note: all keys are lowercase unless otherwise specified.
   * :guilabel:`h` = Horn / Whistle 
   * :guilabel:`Shift` + :guilabel:`h` = Short Horn 
   * :guilabel:`m` or :guilabel:`Volume Mute` = Mute IPLS |BR| |BR|
+
+* Text to Speech (TTS)
+
+  * :guilabel:`v` = Speak Speed of the current loco |BR| Voice Response preference must be enabled.
 
 * :guilabel:`t` :guilabel:`0` - :guilabel:`t` :guilabel:`5` = Specify a throttle for next command |BR| Must be :guilabel:`t` followed by one digit |BR| or :guilabel:`Esc` followed by one :guilabel:`F...` button equivalents :guilabel:`F10` = 0, :guilabel:`F1`-:guilabel:`F9` = 1-9 |BR| The *immediately following command* will sent to the specified throttle regardless of the currently selected gamepad throttle.  |BR| e.g. :guilabel:`t` :guilabel:`5`  :guilabel:`f`  :guilabel:`0`  :guilabel:`1` = Activate function **1** on Throttle **5** |BR| *Note:* The :guilabel:`0` - :guilabel:`9` keys cannot currently be used alone when specifying a throttle. Use the :guilabel:`f` commands instead. |BR| |BR|
 
